@@ -25,9 +25,9 @@ void AI::makeMove() {
 }
 
 AI create_AI(BoardEval_logic&& evaluate){
-    return AI([evaluate(std::move(evaluate))] (const BoardState& board) -> unsigned char {
-        auto validChoices=board.getValidChoices();
-        unsigned char size=validChoices.size();
+    return AI([evaluate(std::move(evaluate))] [[gnu::const]](const BoardState& board) -> unsigned char {
+        const auto validChoices=board.getValidChoices();
+        const unsigned char size=validChoices.size();
         std::vector<float> scores(size);
 
         unsigned char max=0;
