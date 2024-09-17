@@ -40,3 +40,12 @@ void Mankala::makeStats(const unsigned int numOfPlays) {
     std::cout<<"Player1 percentage: " << (double) p1_wins/numOfPlays << std::endl
              <<"Player2 percentage: " << (double) p2_wins/numOfPlays << std::endl;
 }
+
+void tester(Mankala& mankala, unsigned numOfGames){
+    auto start = std::chrono::high_resolution_clock::now();
+    mankala.makeStats(numOfGames);
+    auto end = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double, std::micro> duration = end - start;
+    std::cout << "A single game on average: " << duration.count()/numOfGames << " microseconds" << std::endl;
+}

@@ -24,5 +24,5 @@ public:
 };
 AI create_AI(BoardEval_logic&& evaluate);
 
-extern AI randy, randy2;
+extern AI randy, randy2, randy3, minimax;
 #endif //MANKALA5_AI_H

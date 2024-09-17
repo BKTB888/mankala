@@ -5,9 +5,8 @@
 #ifndef MANKALA5_MANKALA_H
 #define MANKALA5_MANKALA_H
 
-
+#include <chrono>
 #include <utility>
-
 #include "AI.h"
 
 enum class Result{
@@ -28,5 +27,5 @@ public:
     void makeStats(unsigned numOfPlays);
 };
 
-
+void tester(Mankala& mankala, unsigned numOfGames);
 #endif //MANKALA5_MANKALA_H

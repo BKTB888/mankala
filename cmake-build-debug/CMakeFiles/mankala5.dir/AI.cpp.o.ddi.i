@@ -108172,10 +108172,10 @@ public:
 };
 AI create_AI(BoardEval_logic&& evaluate);
 
-extern AI randy, randy2;
+extern AI randy, randy2, randy3, minimax;
 # 5 "/home/bktivadar/CLionProjects/mankala/AI.cpp" 2
 # 1 "/home/bktivadar/CLionProjects/mankala/Helper.h" 1
-# 12 "/home/bktivadar/CLionProjects/mankala/Helper.h"
+# 13 "/home/bktivadar/CLionProjects/mankala/Helper.h"
 class Random {
     static std::mt19937 gen;
 public:
@@ -108210,7 +108210,7 @@ AI randy([](const BoardState& board) -> unsigned char{
 
 AI randy2([](const BoardState& board) -> unsigned char{
     auto vec=board.getValidChoices();
-    return Random::randomElement(std::span<unsigned char>(vec));
+    return Random::randomElement((vec));
 });
 
 void AI::setBoard(BoardState* const _board) {
@@ -108238,3 +108238,12 @@ AI create_AI(BoardEval_logic&& evaluate){
         return validChoices[max];
     });
 }
+
+AI minimax = create_AI([] [[gnu::const]](const BoardState& board) -> float {
+
+    const auto opSide=board.getOpponentSide();
+    const unsigned char ballsInPlay =72 - board.getMyTrash() - board.getOpponentsTrash();
+    const unsigned char opBalls = std::accumulate(opSide.begin(), opSide.end(), 0);
+
+    return (float) opBalls/ballsInPlay;
+});

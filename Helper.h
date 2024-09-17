@@ -9,6 +9,7 @@
 #include <random>
 #include <span>
 
+
 class Random {
     static std::mt19937 gen;
 public:

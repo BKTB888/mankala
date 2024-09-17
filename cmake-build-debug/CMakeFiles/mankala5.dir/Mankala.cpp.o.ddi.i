@@ -9,12 +9,20 @@
 
 
 # 1 "/home/bktivadar/CLionProjects/mankala/Mankala.h" 1
-# 9 "/home/bktivadar/CLionProjects/mankala/Mankala.h"
-# 1 "/usr/include/c++/14/utility" 1 3
-# 58 "/usr/include/c++/14/utility" 3
+
+
+
+
+
+
+
+# 1 "/usr/include/c++/14/chrono" 1 3
+# 33 "/usr/include/c++/14/chrono" 3
        
-# 59 "/usr/include/c++/14/utility" 3
-# 67 "/usr/include/c++/14/utility" 3
+# 34 "/usr/include/c++/14/chrono" 3
+
+# 1 "/usr/include/c++/14/bits/requires_hosted.h" 1 3
+# 31 "/usr/include/c++/14/bits/requires_hosted.h" 3
 # 1 "/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h" 1 3
 # 33 "/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h" 3
        
@@ -139,42 +147,29 @@ namespace __gnu_cxx
 # 887 "/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h" 3
 # 1 "/usr/include/c++/14/pstl/pstl_config.h" 1 3
 # 888 "/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h" 2 3
-# 68 "/usr/include/c++/14/utility" 2 3
-# 1 "/usr/include/c++/14/bits/stl_relops.h" 1 3
-# 62 "/usr/include/c++/14/bits/stl_relops.h" 3
-namespace std __attribute__ ((__visibility__ ("default")))
-{
+# 32 "/usr/include/c++/14/bits/requires_hosted.h" 2 3
+# 36 "/usr/include/c++/14/chrono" 2 3
 
 
-  namespace rel_ops
-  {
-# 86 "/usr/include/c++/14/bits/stl_relops.h" 3
-    template <class _Tp>
-      inline bool
-      operator!=(const _Tp& __x, const _Tp& __y)
-      { return !(__x == __y); }
-# 99 "/usr/include/c++/14/bits/stl_relops.h" 3
-    template <class _Tp>
-      inline bool
-      operator>(const _Tp& __x, const _Tp& __y)
-      { return __y < __x; }
-# 112 "/usr/include/c++/14/bits/stl_relops.h" 3
-    template <class _Tp>
-      inline bool
-      operator<=(const _Tp& __x, const _Tp& __y)
-      { return !(__y < __x); }
-# 125 "/usr/include/c++/14/bits/stl_relops.h" 3
-    template <class _Tp>
-      inline bool
-      operator>=(const _Tp& __x, const _Tp& __y)
-      { return !(__x < __y); }
-  }
 
 
-}
-# 69 "/usr/include/c++/14/utility" 2 3
-# 1 "/usr/include/c++/14/bits/stl_pair.h" 1 3
-# 60 "/usr/include/c++/14/bits/stl_pair.h" 3
+
+# 1 "/usr/include/c++/14/bits/chrono.h" 1 3
+# 33 "/usr/include/c++/14/bits/chrono.h" 3
+       
+# 34 "/usr/include/c++/14/bits/chrono.h" 3
+
+
+
+# 1 "/usr/include/c++/14/ratio" 1 3
+# 33 "/usr/include/c++/14/ratio" 3
+       
+# 34 "/usr/include/c++/14/ratio" 3
+
+
+
+
+
 # 1 "/usr/include/c++/14/type_traits" 1 3
 # 32 "/usr/include/c++/14/type_traits" 3
        
@@ -3508,382 +3503,4020 @@ template<typename _Ret, typename _Fn, typename... _Args>
 
 
 }
-# 61 "/usr/include/c++/14/bits/stl_pair.h" 2 3
-# 1 "/usr/include/c++/14/bits/move.h" 1 3
-# 40 "/usr/include/c++/14/bits/move.h" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 40 "/usr/include/c++/14/ratio" 2 3
+# 1 "/usr/include/c++/14/cstdint" 1 3
+# 32 "/usr/include/c++/14/cstdint" 3
+       
+# 33 "/usr/include/c++/14/cstdint" 3
+# 45 "/usr/include/c++/14/cstdint" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h" 1 3 4
+# 9 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h" 3 4
+# 1 "/usr/include/stdint.h" 1 3 4
+# 26 "/usr/include/stdint.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 27 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
+# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+
+
+
+
+
+
+
+typedef long int __intmax_t;
+typedef unsigned long int __uintmax_t;
+# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
+# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+
+
+
+
+typedef int __sig_atomic_t;
+# 28 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 29 "/usr/include/stdint.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 30 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+typedef __int8_t int8_t;
+typedef __int16_t int16_t;
+typedef __int32_t int32_t;
+typedef __int64_t int64_t;
+# 35 "/usr/include/stdint.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
+typedef __uint8_t uint8_t;
+typedef __uint16_t uint16_t;
+typedef __uint32_t uint32_t;
+typedef __uint64_t uint64_t;
+# 38 "/usr/include/stdint.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
+typedef __int_least8_t int_least8_t;
+typedef __int_least16_t int_least16_t;
+typedef __int_least32_t int_least32_t;
+typedef __int_least64_t int_least64_t;
+
+
+typedef __uint_least8_t uint_least8_t;
+typedef __uint_least16_t uint_least16_t;
+typedef __uint_least32_t uint_least32_t;
+typedef __uint_least64_t uint_least64_t;
+# 42 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+
+typedef signed char int_fast8_t;
+
+typedef long int int_fast16_t;
+typedef long int int_fast32_t;
+typedef long int int_fast64_t;
+# 60 "/usr/include/stdint.h" 3 4
+typedef unsigned char uint_fast8_t;
+
+typedef unsigned long int uint_fast16_t;
+typedef unsigned long int uint_fast32_t;
+typedef unsigned long int uint_fast64_t;
+# 76 "/usr/include/stdint.h" 3 4
+typedef long int intptr_t;
+
+
+typedef unsigned long int uintptr_t;
+# 90 "/usr/include/stdint.h" 3 4
+typedef __intmax_t intmax_t;
+typedef __uintmax_t uintmax_t;
+# 10 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h" 2 3 4
+# 46 "/usr/include/c++/14/cstdint" 2 3
+
+
+namespace std
 {
 
+  using ::int8_t;
+  using ::int16_t;
+  using ::int32_t;
+  using ::int64_t;
 
+  using ::int_fast8_t;
+  using ::int_fast16_t;
+  using ::int_fast32_t;
+  using ::int_fast64_t;
 
+  using ::int_least8_t;
+  using ::int_least16_t;
+  using ::int_least32_t;
+  using ::int_least64_t;
 
+  using ::intmax_t;
+  using ::intptr_t;
 
+  using ::uint8_t;
+  using ::uint16_t;
+  using ::uint32_t;
+  using ::uint64_t;
 
+  using ::uint_fast8_t;
+  using ::uint_fast16_t;
+  using ::uint_fast32_t;
+  using ::uint_fast64_t;
 
-  template<typename _Tp>
-    inline constexpr _Tp*
-    __addressof(_Tp& __r) noexcept
-    { return __builtin_addressof(__r); }
-# 67 "/usr/include/c++/14/bits/move.h" 3
-  template<typename _Tp>
-    [[__nodiscard__]]
-    constexpr _Tp&&
-    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
-    { return static_cast<_Tp&&>(__t); }
+  using ::uint_least8_t;
+  using ::uint_least16_t;
+  using ::uint_least32_t;
+  using ::uint_least64_t;
 
-
-
-
-
-
-
-  template<typename _Tp>
-    [[__nodiscard__]]
-    constexpr _Tp&&
-    forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
-    {
-      static_assert(!std::is_lvalue_reference<_Tp>::value,
-   "std::forward must not be used to convert an rvalue to an lvalue");
-      return static_cast<_Tp&&>(__t);
-    }
-
-
-  template<typename _Tp, typename _Up>
-  [[nodiscard]]
-  constexpr decltype(auto)
-  forward_like(_Up&& __x) noexcept
-  {
-    constexpr bool __as_rval = is_rvalue_reference_v<_Tp&&>;
-
-    if constexpr (is_const_v<remove_reference_t<_Tp>>)
-      {
- using _Up2 = remove_reference_t<_Up>;
- if constexpr (__as_rval)
-   return static_cast<const _Up2&&>(__x);
- else
-   return static_cast<const _Up2&>(__x);
-      }
-    else
-      {
- if constexpr (__as_rval)
-   return static_cast<remove_reference_t<_Up>&&>(__x);
- else
-   return static_cast<_Up&>(__x);
-      }
-  }
-
-  template<typename _Tp, typename _Up>
-    using __like_t = decltype(std::forward_like<_Tp>(std::declval<_Up>()));
-
-
-
-
-
-
-
-  template<typename _Tp>
-    [[__nodiscard__]]
-    constexpr typename std::remove_reference<_Tp>::type&&
-    move(_Tp&& __t) noexcept
-    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
-
-
-  template<typename _Tp>
-    struct __move_if_noexcept_cond
-    : public __and_<__not_<is_nothrow_move_constructible<_Tp>>,
-                    is_copy_constructible<_Tp>>::type { };
-# 143 "/usr/include/c++/14/bits/move.h" 3
-  template<typename _Tp>
-    [[__nodiscard__]]
-    constexpr
-    __conditional_t<__move_if_noexcept_cond<_Tp>::value, const _Tp&, _Tp&&>
-    move_if_noexcept(_Tp& __x) noexcept
-    { return std::move(__x); }
-# 159 "/usr/include/c++/14/bits/move.h" 3
-  template<typename _Tp>
-    [[__nodiscard__]]
-    inline constexpr _Tp*
-    addressof(_Tp& __r) noexcept
-    { return std::__addressof(__r); }
-
-
-
-  template<typename _Tp>
-    const _Tp* addressof(const _Tp&&) = delete;
-
-
-  template <typename _Tp, typename _Up = _Tp>
-    constexpr
-    inline _Tp
-    __exchange(_Tp& __obj, _Up&& __new_val)
-    {
-      _Tp __old_val = std::move(__obj);
-      __obj = std::forward<_Up>(__new_val);
-      return __old_val;
-    }
-# 203 "/usr/include/c++/14/bits/move.h" 3
-  template<typename _Tp>
-    constexpr
-    inline
-
-    typename enable_if<__and_<__not_<__is_tuple_like<_Tp>>,
-         is_move_constructible<_Tp>,
-         is_move_assignable<_Tp>>::value>::type
-
-
-
-    swap(_Tp& __a, _Tp& __b)
-    noexcept(__and_<is_nothrow_move_constructible<_Tp>, is_nothrow_move_assignable<_Tp>>::value)
-
-    {
-
-
-
-
-      _Tp __tmp = std::move(__a);
-      __a = std::move(__b);
-      __b = std::move(__tmp);
-    }
-
-
-
-
-  template<typename _Tp, size_t _Nm>
-    constexpr
-    inline
-
-    typename enable_if<__is_swappable<_Tp>::value>::type
-
-
-
-    swap(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])
-    noexcept(__is_nothrow_swappable<_Tp>::value)
-    {
-      for (size_t __n = 0; __n < _Nm; ++__n)
- swap(__a[__n], __b[__n]);
-    }
-
-
-
+  using ::uintmax_t;
+  using ::uintptr_t;
+# 142 "/usr/include/c++/14/cstdint" 3
 }
-# 62 "/usr/include/c++/14/bits/stl_pair.h" 2 3
-# 1 "/usr/include/c++/14/bits/utility.h" 1 3
-# 36 "/usr/include/c++/14/bits/utility.h" 3
-       
-# 37 "/usr/include/c++/14/bits/utility.h" 3
-
-
-
-
-
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-
-
-  template<typename _Tp>
-    struct tuple_size;
-
-
-
-
-
-  template<typename _Tp,
-    typename _Up = typename remove_cv<_Tp>::type,
-    typename = typename enable_if<is_same<_Tp, _Up>::value>::type,
-    size_t = tuple_size<_Tp>::value>
-    using __enable_if_has_tuple_size = _Tp;
-
-  template<typename _Tp>
-    struct tuple_size<const __enable_if_has_tuple_size<_Tp>>
-    : public tuple_size<_Tp> { };
-
-  template<typename _Tp>
-    struct tuple_size<volatile __enable_if_has_tuple_size<_Tp>>
-    : public tuple_size<_Tp> { };
-
-  template<typename _Tp>
-    struct tuple_size<const volatile __enable_if_has_tuple_size<_Tp>>
-    : public tuple_size<_Tp> { };
-
-
-  template<typename _Tp>
-    inline constexpr size_t tuple_size_v = tuple_size<_Tp>::value;
-
-
-
-  template<size_t __i, typename _Tp>
-    struct tuple_element;
-
-
-  template<size_t __i, typename _Tp>
-    using __tuple_element_t = typename tuple_element<__i, _Tp>::type;
-
-  template<size_t __i, typename _Tp>
-    struct tuple_element<__i, const _Tp>
-    {
-      using type = const __tuple_element_t<__i, _Tp>;
-    };
-
-  template<size_t __i, typename _Tp>
-    struct tuple_element<__i, volatile _Tp>
-    {
-      using type = volatile __tuple_element_t<__i, _Tp>;
-    };
-
-  template<size_t __i, typename _Tp>
-    struct tuple_element<__i, const volatile _Tp>
-    {
-      using type = const volatile __tuple_element_t<__i, _Tp>;
-    };
-
-
-
-
-
-  template<typename _Tp, typename... _Types>
-    constexpr size_t
-    __find_uniq_type_in_pack()
-    {
-      constexpr size_t __sz = sizeof...(_Types);
-      constexpr bool __found[__sz] = { __is_same(_Tp, _Types) ... };
-      size_t __n = __sz;
-      for (size_t __i = 0; __i < __sz; ++__i)
- {
-   if (__found[__i])
-     {
-       if (__n < __sz)
-  return __sz;
-       __n = __i;
-     }
- }
-      return __n;
-    }
-# 134 "/usr/include/c++/14/bits/utility.h" 3
-  template<size_t __i, typename _Tp>
-    using tuple_element_t = typename tuple_element<__i, _Tp>::type;
-
-
-
-
-  template<size_t... _Indexes> struct _Index_tuple { };
-
-
-  template<size_t _Num>
-    struct _Build_index_tuple
-    {
-# 154 "/usr/include/c++/14/bits/utility.h" 3
-      using __type = _Index_tuple<__integer_pack(_Num)...>;
-
-    };
-
-
-
-
-  template<typename _Tp, _Tp... _Idx>
-    struct integer_sequence
-    {
-
-      static_assert(is_integral_v<_Tp>);
-
-      typedef _Tp value_type;
-      static constexpr size_t size() noexcept { return sizeof...(_Idx); }
-    };
-
-
-  template<typename _Tp, _Tp _Num>
-    using make_integer_sequence
-
-
-
-      = integer_sequence<_Tp, __integer_pack(_Num)...>;
-
-
-
-  template<size_t... _Idx>
-    using index_sequence = integer_sequence<size_t, _Idx...>;
-
-
-  template<size_t _Num>
-    using make_index_sequence = make_integer_sequence<size_t, _Num>;
-
-
-  template<typename... _Types>
-    using index_sequence_for = make_index_sequence<sizeof...(_Types)>;
-
-
-
-
-  struct in_place_t {
-    explicit in_place_t() = default;
-  };
-
-  inline constexpr in_place_t in_place{};
-
-  template<typename _Tp> struct in_place_type_t
-  {
-    explicit in_place_type_t() = default;
-  };
-
-  template<typename _Tp>
-    inline constexpr in_place_type_t<_Tp> in_place_type{};
-
-  template<size_t _Idx> struct in_place_index_t
-  {
-    explicit in_place_index_t() = default;
-  };
-
-  template<size_t _Idx>
-    inline constexpr in_place_index_t<_Idx> in_place_index{};
-
-  template<typename>
-    inline constexpr bool __is_in_place_type_v = false;
-
-  template<typename _Tp>
-    inline constexpr bool __is_in_place_type_v<in_place_type_t<_Tp>> = true;
-
-  template<typename _Tp>
-    using __is_in_place_type = bool_constant<__is_in_place_type_v<_Tp>>;
-
-  template<typename>
-    inline constexpr bool __is_in_place_index_v = false;
-
-  template<size_t _Nm>
-    inline constexpr bool __is_in_place_index_v<in_place_index_t<_Nm>> = true;
-
-
-
-
-  template<size_t _Np, typename... _Types>
-    struct _Nth_type
-    { using type = __type_pack_element<_Np, _Types...>; };
-# 276 "/usr/include/c++/14/bits/utility.h" 3
-  namespace ranges::__detail
-  {
-    template<typename _Range>
-      inline constexpr bool __is_subrange = false;
-  }
-
-
-
-}
-# 63 "/usr/include/c++/14/bits/stl_pair.h" 2 3
-
-
-# 1 "/usr/include/c++/14/compare" 1 3
-# 33 "/usr/include/c++/14/compare" 3
-       
-# 34 "/usr/include/c++/14/compare" 3
+# 41 "/usr/include/c++/14/ratio" 2 3
 
 
 # 1 "/usr/include/c++/14/bits/version.h" 1 3
 # 47 "/usr/include/c++/14/bits/version.h" 3
        
 # 48 "/usr/include/c++/14/bits/version.h" 3
-# 37 "/usr/include/c++/14/compare" 2 3
+# 44 "/usr/include/c++/14/ratio" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 59 "/usr/include/c++/14/ratio" 3
+  template<intmax_t _Pn>
+    struct __static_sign
+    : integral_constant<intmax_t, (_Pn < 0) ? -1 : 1>
+    { };
+
+  template<intmax_t _Pn>
+    struct __static_abs
+    : integral_constant<intmax_t, _Pn * __static_sign<_Pn>::value>
+    { };
+
+  template<intmax_t _Pn, intmax_t _Qn>
+    struct __static_gcd
+    : __static_gcd<_Qn, (_Pn % _Qn)>
+    { };
+
+  template<intmax_t _Pn>
+    struct __static_gcd<_Pn, 0>
+    : integral_constant<intmax_t, __static_abs<_Pn>::value>
+    { };
+
+  template<intmax_t _Qn>
+    struct __static_gcd<0, _Qn>
+    : integral_constant<intmax_t, __static_abs<_Qn>::value>
+    { };
 
 
+
+
+
+
+
+  template<intmax_t _Pn, intmax_t _Qn>
+    struct __safe_multiply
+    {
+    private:
+      static const uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
+
+      static const uintmax_t __a0 = __static_abs<_Pn>::value % __c;
+      static const uintmax_t __a1 = __static_abs<_Pn>::value / __c;
+      static const uintmax_t __b0 = __static_abs<_Qn>::value % __c;
+      static const uintmax_t __b1 = __static_abs<_Qn>::value / __c;
+
+      static_assert(__a1 == 0 || __b1 == 0,
+      "overflow in multiplication");
+      static_assert(__a0 * __b1 + __b0 * __a1 < (__c >> 1),
+      "overflow in multiplication");
+      static_assert(__b0 * __a0 <= 0x7fffffffffffffffL,
+      "overflow in multiplication");
+      static_assert((__a0 * __b1 + __b0 * __a1) * __c
+      <= 0x7fffffffffffffffL - __b0 * __a0,
+      "overflow in multiplication");
+
+    public:
+      static const intmax_t value = _Pn * _Qn;
+    };
+
+
+
+  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
+    struct __big_less
+    : integral_constant<bool, (__hi1 < __hi2
+          || (__hi1 == __hi2 && __lo1 < __lo2))>
+    { };
+
+  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
+    struct __big_add
+    {
+      static constexpr uintmax_t __lo = __lo1 + __lo2;
+      static constexpr uintmax_t __hi = (__hi1 + __hi2 +
+      (__lo1 + __lo2 < __lo1));
+    };
+
+
+  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
+    struct __big_sub
+    {
+      static_assert(!__big_less<__hi1, __lo1, __hi2, __lo2>::value,
+      "Internal library error");
+      static constexpr uintmax_t __lo = __lo1 - __lo2;
+      static constexpr uintmax_t __hi = (__hi1 - __hi2 -
+      (__lo1 < __lo2));
+    };
+
+
+  template<uintmax_t __x, uintmax_t __y>
+    struct __big_mul
+    {
+    private:
+      static constexpr uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
+      static constexpr uintmax_t __x0 = __x % __c;
+      static constexpr uintmax_t __x1 = __x / __c;
+      static constexpr uintmax_t __y0 = __y % __c;
+      static constexpr uintmax_t __y1 = __y / __c;
+      static constexpr uintmax_t __x0y0 = __x0 * __y0;
+      static constexpr uintmax_t __x0y1 = __x0 * __y1;
+      static constexpr uintmax_t __x1y0 = __x1 * __y0;
+      static constexpr uintmax_t __x1y1 = __x1 * __y1;
+      static constexpr uintmax_t __mix = __x0y1 + __x1y0;
+      static constexpr uintmax_t __mix_lo = __mix * __c;
+      static constexpr uintmax_t __mix_hi
+      = __mix / __c + ((__mix < __x0y1) ? __c : 0);
+      typedef __big_add<__mix_hi, __mix_lo, __x1y1, __x0y0> _Res;
+    public:
+      static constexpr uintmax_t __hi = _Res::__hi;
+      static constexpr uintmax_t __lo = _Res::__lo;
+    };
+
+
+
+  template<uintmax_t __n1, uintmax_t __n0, uintmax_t __d>
+    struct __big_div_impl
+    {
+    private:
+      static_assert(__d >= (uintmax_t(1) << (sizeof(intmax_t) * 8 - 1)),
+      "Internal library error");
+      static_assert(__n1 < __d, "Internal library error");
+      static constexpr uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
+      static constexpr uintmax_t __d1 = __d / __c;
+      static constexpr uintmax_t __d0 = __d % __c;
+
+      static constexpr uintmax_t __q1x = __n1 / __d1;
+      static constexpr uintmax_t __r1x = __n1 % __d1;
+      static constexpr uintmax_t __m = __q1x * __d0;
+      static constexpr uintmax_t __r1y = __r1x * __c + __n0 / __c;
+      static constexpr uintmax_t __r1z = __r1y + __d;
+      static constexpr uintmax_t __r1
+      = ((__r1y < __m) ? ((__r1z >= __d) && (__r1z < __m))
+  ? (__r1z + __d) : __r1z : __r1y) - __m;
+      static constexpr uintmax_t __q1
+      = __q1x - ((__r1y < __m)
+   ? ((__r1z >= __d) && (__r1z < __m)) ? 2 : 1 : 0);
+      static constexpr uintmax_t __q0x = __r1 / __d1;
+      static constexpr uintmax_t __r0x = __r1 % __d1;
+      static constexpr uintmax_t __n = __q0x * __d0;
+      static constexpr uintmax_t __r0y = __r0x * __c + __n0 % __c;
+      static constexpr uintmax_t __r0z = __r0y + __d;
+      static constexpr uintmax_t __r0
+      = ((__r0y < __n) ? ((__r0z >= __d) && (__r0z < __n))
+  ? (__r0z + __d) : __r0z : __r0y) - __n;
+      static constexpr uintmax_t __q0
+      = __q0x - ((__r0y < __n) ? ((__r0z >= __d)
+      && (__r0z < __n)) ? 2 : 1 : 0);
+
+    public:
+      static constexpr uintmax_t __quot = __q1 * __c + __q0;
+      static constexpr uintmax_t __rem = __r0;
+
+    private:
+      typedef __big_mul<__quot, __d> _Prod;
+      typedef __big_add<_Prod::__hi, _Prod::__lo, 0, __rem> _Sum;
+      static_assert(_Sum::__hi == __n1 && _Sum::__lo == __n0,
+      "Internal library error");
+  };
+
+  template<uintmax_t __n1, uintmax_t __n0, uintmax_t __d>
+    struct __big_div
+    {
+    private:
+      static_assert(__d != 0, "Internal library error");
+      static_assert(sizeof (uintmax_t) == sizeof (unsigned long long),
+      "This library calls __builtin_clzll on uintmax_t, which "
+      "is unsafe on your platform. Please complain to "
+      "http://gcc.gnu.org/bugzilla/");
+      static constexpr int __shift = __builtin_clzll(__d);
+      static constexpr int __coshift_ = sizeof(uintmax_t) * 8 - __shift;
+      static constexpr int __coshift = (__shift != 0) ? __coshift_ : 0;
+      static constexpr uintmax_t __c1 = uintmax_t(1) << __shift;
+      static constexpr uintmax_t __c2 = uintmax_t(1) << __coshift;
+      static constexpr uintmax_t __new_d = __d * __c1;
+      static constexpr uintmax_t __new_n0 = __n0 * __c1;
+      static constexpr uintmax_t __n1_shifted = (__n1 % __d) * __c1;
+      static constexpr uintmax_t __n0_top = (__shift != 0) ? (__n0 / __c2) : 0;
+      static constexpr uintmax_t __new_n1 = __n1_shifted + __n0_top;
+      typedef __big_div_impl<__new_n1, __new_n0, __new_d> _Res;
+
+    public:
+      static constexpr uintmax_t __quot_hi = __n1 / __d;
+      static constexpr uintmax_t __quot_lo = _Res::__quot;
+      static constexpr uintmax_t __rem = _Res::__rem / __c1;
+
+    private:
+      typedef __big_mul<__quot_lo, __d> _P0;
+      typedef __big_mul<__quot_hi, __d> _P1;
+      typedef __big_add<_P0::__hi, _P0::__lo, _P1::__lo, __rem> _Sum;
+
+      static_assert(_P1::__hi == 0, "Internal library error");
+      static_assert(_Sum::__hi >= _P0::__hi, "Internal library error");
+
+      static_assert(_Sum::__hi == __n1 && _Sum::__lo == __n0,
+      "Internal library error");
+      static_assert(__rem < __d, "Internal library error");
+    };
+# 268 "/usr/include/c++/14/ratio" 3
+  template<intmax_t _Num, intmax_t _Den = 1>
+    struct ratio
+    {
+      static_assert(_Den != 0, "denominator cannot be zero");
+      static_assert(_Num >= -0x7fffffffffffffffL && _Den >= -0x7fffffffffffffffL,
+      "out of range");
+
+
+      static constexpr intmax_t num =
+        _Num * __static_sign<_Den>::value / __static_gcd<_Num, _Den>::value;
+
+      static constexpr intmax_t den =
+        __static_abs<_Den>::value / __static_gcd<_Num, _Den>::value;
+
+      typedef ratio<num, den> type;
+    };
+# 295 "/usr/include/c++/14/ratio" 3
+  template<typename _Tp>
+    struct __is_ratio
+    : std::false_type
+    { };
+
+  template<intmax_t _Num, intmax_t _Den>
+    struct __is_ratio<ratio<_Num, _Den>>
+    : std::true_type
+    { };
+
+
+  template<typename _Tp>
+    constexpr bool __is_ratio_v = false;
+  template<intmax_t _Num, intmax_t _Den>
+    constexpr bool __is_ratio_v<ratio<_Num, _Den>> = true;
+
+
+  template<typename _R1, typename _R2>
+    constexpr bool
+    __are_both_ratios() noexcept
+    {
+
+      if constexpr (__is_ratio_v<_R1>)
+ if constexpr (__is_ratio_v<_R2>)
+   return true;
+      return false;
+
+
+
+    }
+
+  template<typename _R1, typename _R2>
+    struct __ratio_multiply
+    {
+      static_assert(std::__are_both_ratios<_R1, _R2>(),
+      "both template arguments must be a std::ratio");
+
+    private:
+      static const intmax_t __gcd1 =
+        __static_gcd<_R1::num, _R2::den>::value;
+      static const intmax_t __gcd2 =
+        __static_gcd<_R2::num, _R1::den>::value;
+
+    public:
+      typedef ratio<
+        __safe_multiply<(_R1::num / __gcd1),
+                        (_R2::num / __gcd2)>::value,
+        __safe_multiply<(_R1::den / __gcd2),
+                        (_R2::den / __gcd1)>::value> type;
+
+      static constexpr intmax_t num = type::num;
+      static constexpr intmax_t den = type::den;
+    };
+# 360 "/usr/include/c++/14/ratio" 3
+  template<typename _R1, typename _R2>
+    using ratio_multiply = typename __ratio_multiply<_R1, _R2>::type;
+
+
+
+  template<typename _R1, typename _R2>
+    struct __ratio_divide
+    {
+      static_assert(_R2::num != 0, "division by 0");
+
+      typedef typename __ratio_multiply<
+        _R1,
+        ratio<_R2::den, _R2::num>>::type type;
+
+      static constexpr intmax_t num = type::num;
+      static constexpr intmax_t den = type::den;
+    };
+# 389 "/usr/include/c++/14/ratio" 3
+  template<typename _R1, typename _R2>
+    using ratio_divide = typename __ratio_divide<_R1, _R2>::type;
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_equal
+    : integral_constant<bool, _R1::num == _R2::num && _R1::den == _R2::den>
+    {
+      static_assert(std::__are_both_ratios<_R1, _R2>(),
+      "both template arguments must be a std::ratio");
+    };
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_not_equal
+    : integral_constant<bool, !ratio_equal<_R1, _R2>::value>
+    { };
+
+
+
+
+  template<typename _R1, typename _R2,
+           typename _Left = __big_mul<_R1::num,_R2::den>,
+           typename _Right = __big_mul<_R2::num,_R1::den> >
+    struct __ratio_less_impl_1
+    : integral_constant<bool, __big_less<_Left::__hi, _Left::__lo,
+           _Right::__hi, _Right::__lo>::value>
+    { };
+
+  template<typename _R1, typename _R2,
+    bool = (_R1::num == 0 || _R2::num == 0
+     || (__static_sign<_R1::num>::value
+         != __static_sign<_R2::num>::value)),
+    bool = (__static_sign<_R1::num>::value == -1
+     && __static_sign<_R2::num>::value == -1)>
+    struct __ratio_less_impl
+    : __ratio_less_impl_1<_R1, _R2>::type
+    { };
+
+  template<typename _R1, typename _R2>
+    struct __ratio_less_impl<_R1, _R2, true, false>
+    : integral_constant<bool, _R1::num < _R2::num>
+    { };
+
+  template<typename _R1, typename _R2>
+    struct __ratio_less_impl<_R1, _R2, false, true>
+    : __ratio_less_impl_1<ratio<-_R2::num, _R2::den>,
+           ratio<-_R1::num, _R1::den> >::type
+    { };
+
+
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_less
+    : __ratio_less_impl<_R1, _R2>::type
+    {
+      static_assert(std::__are_both_ratios<_R1, _R2>(),
+      "both template arguments must be a std::ratio");
+    };
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_less_equal
+    : integral_constant<bool, !ratio_less<_R2, _R1>::value>
+    { };
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_greater
+    : integral_constant<bool, ratio_less<_R2, _R1>::value>
+    { };
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_greater_equal
+    : integral_constant<bool, !ratio_less<_R1, _R2>::value>
+    { };
+
+
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_equal_v = ratio_equal<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_not_equal_v = ratio_not_equal<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_less_v = ratio_less<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_less_equal_v
+      = ratio_less_equal<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_greater_v = ratio_greater<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_greater_equal_v
+      = ratio_greater_equal<_R1, _R2>::value;
+
+
+
+
+  template<typename _R1, typename _R2,
+      bool = (_R1::num >= 0),
+      bool = (_R2::num >= 0),
+      bool = ratio_less<ratio<__static_abs<_R1::num>::value, _R1::den>,
+        ratio<__static_abs<_R2::num>::value, _R2::den> >::value>
+    struct __ratio_add_impl
+    {
+    private:
+      typedef typename __ratio_add_impl<
+        ratio<-_R1::num, _R1::den>,
+        ratio<-_R2::num, _R2::den> >::type __t;
+    public:
+      typedef ratio<-__t::num, __t::den> type;
+    };
+
+
+  template<typename _R1, typename _R2, bool __b>
+    struct __ratio_add_impl<_R1, _R2, true, true, __b>
+    {
+    private:
+      static constexpr uintmax_t __g = __static_gcd<_R1::den, _R2::den>::value;
+      static constexpr uintmax_t __d2 = _R2::den / __g;
+      typedef __big_mul<_R1::den, __d2> __d;
+      typedef __big_mul<_R1::num, _R2::den / __g> __x;
+      typedef __big_mul<_R2::num, _R1::den / __g> __y;
+      typedef __big_add<__x::__hi, __x::__lo, __y::__hi, __y::__lo> __n;
+      static_assert(__n::__hi >= __x::__hi, "Internal library error");
+      typedef __big_div<__n::__hi, __n::__lo, __g> __ng;
+      static constexpr uintmax_t __g2 = __static_gcd<__ng::__rem, __g>::value;
+      typedef __big_div<__n::__hi, __n::__lo, __g2> __n_final;
+      static_assert(__n_final::__rem == 0, "Internal library error");
+      static_assert(__n_final::__quot_hi == 0 &&
+        __n_final::__quot_lo <= 0x7fffffffffffffffL, "overflow in addition");
+      typedef __big_mul<_R1::den / __g2, __d2> __d_final;
+      static_assert(__d_final::__hi == 0 &&
+        __d_final::__lo <= 0x7fffffffffffffffL, "overflow in addition");
+    public:
+      typedef ratio<__n_final::__quot_lo, __d_final::__lo> type;
+    };
+
+  template<typename _R1, typename _R2>
+    struct __ratio_add_impl<_R1, _R2, false, true, true>
+    : __ratio_add_impl<_R2, _R1>
+    { };
+
+
+  template<typename _R1, typename _R2>
+    struct __ratio_add_impl<_R1, _R2, true, false, false>
+    {
+    private:
+      static constexpr uintmax_t __g = __static_gcd<_R1::den, _R2::den>::value;
+      static constexpr uintmax_t __d2 = _R2::den / __g;
+      typedef __big_mul<_R1::den, __d2> __d;
+      typedef __big_mul<_R1::num, _R2::den / __g> __x;
+      typedef __big_mul<-_R2::num, _R1::den / __g> __y;
+      typedef __big_sub<__x::__hi, __x::__lo, __y::__hi, __y::__lo> __n;
+      typedef __big_div<__n::__hi, __n::__lo, __g> __ng;
+      static constexpr uintmax_t __g2 = __static_gcd<__ng::__rem, __g>::value;
+      typedef __big_div<__n::__hi, __n::__lo, __g2> __n_final;
+      static_assert(__n_final::__rem == 0, "Internal library error");
+      static_assert(__n_final::__quot_hi == 0 &&
+        __n_final::__quot_lo <= 0x7fffffffffffffffL, "overflow in addition");
+      typedef __big_mul<_R1::den / __g2, __d2> __d_final;
+      static_assert(__d_final::__hi == 0 &&
+        __d_final::__lo <= 0x7fffffffffffffffL, "overflow in addition");
+    public:
+      typedef ratio<__n_final::__quot_lo, __d_final::__lo> type;
+    };
+
+  template<typename _R1, typename _R2>
+    struct __ratio_add
+    {
+      static_assert(std::__are_both_ratios<_R1, _R2>(),
+      "both template arguments must be a std::ratio");
+
+      typedef typename __ratio_add_impl<_R1, _R2>::type type;
+      static constexpr intmax_t num = type::num;
+      static constexpr intmax_t den = type::den;
+    };
+# 578 "/usr/include/c++/14/ratio" 3
+  template<typename _R1, typename _R2>
+    using ratio_add = typename __ratio_add<_R1, _R2>::type;
+
+
+
+  template<typename _R1, typename _R2>
+    struct __ratio_subtract
+    {
+      typedef typename __ratio_add<
+        _R1,
+        ratio<-_R2::num, _R2::den>>::type type;
+
+      static constexpr intmax_t num = type::num;
+      static constexpr intmax_t den = type::den;
+    };
+# 605 "/usr/include/c++/14/ratio" 3
+  template<typename _R1, typename _R2>
+    using ratio_subtract = typename __ratio_subtract<_R1, _R2>::type;
+# 618 "/usr/include/c++/14/ratio" 3
+  using atto = ratio< 1, 1000000000000000000>;
+  using femto = ratio< 1, 1000000000000000>;
+  using pico = ratio< 1, 1000000000000>;
+  using nano = ratio< 1, 1000000000>;
+  using micro = ratio< 1, 1000000>;
+  using milli = ratio< 1, 1000>;
+  using centi = ratio< 1, 100>;
+  using deci = ratio< 1, 10>;
+  using deca = ratio< 10, 1>;
+  using hecto = ratio< 100, 1>;
+  using kilo = ratio< 1000, 1>;
+  using mega = ratio< 1000000, 1>;
+  using giga = ratio< 1000000000, 1>;
+  using tera = ratio< 1000000000000, 1>;
+  using peta = ratio< 1000000000000000, 1>;
+  using exa = ratio< 1000000000000000000, 1>;
+# 646 "/usr/include/c++/14/ratio" 3
+
+}
+# 38 "/usr/include/c++/14/bits/chrono.h" 2 3
+
+# 1 "/usr/include/c++/14/limits" 1 3
+# 40 "/usr/include/c++/14/limits" 3
+       
+# 41 "/usr/include/c++/14/limits" 3
+# 158 "/usr/include/c++/14/limits" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+
+
+
+  enum float_round_style
+  {
+    round_indeterminate = -1,
+    round_toward_zero = 0,
+    round_to_nearest = 1,
+    round_toward_infinity = 2,
+    round_toward_neg_infinity = 3
+  };
+
+
+
+
+
+
+
+  enum float_denorm_style
+  {
+
+    denorm_indeterminate = -1,
+
+    denorm_absent = 0,
+
+    denorm_present = 1
+  };
+# 202 "/usr/include/c++/14/limits" 3
+  struct __numeric_limits_base
+  {
+
+
+    static constexpr bool is_specialized = false;
+
+
+
+
+    static constexpr int digits = 0;
+
+
+    static constexpr int digits10 = 0;
+
+
+
+
+    static constexpr int max_digits10 = 0;
+
+
+
+    static constexpr bool is_signed = false;
+
+
+    static constexpr bool is_integer = false;
+
+
+
+
+    static constexpr bool is_exact = false;
+
+
+
+    static constexpr int radix = 0;
+
+
+
+    static constexpr int min_exponent = 0;
+
+
+
+    static constexpr int min_exponent10 = 0;
+
+
+
+
+    static constexpr int max_exponent = 0;
+
+
+
+    static constexpr int max_exponent10 = 0;
+
+
+    static constexpr bool has_infinity = false;
+
+
+
+    static constexpr bool has_quiet_NaN = false;
+
+
+
+    static constexpr bool has_signaling_NaN = false;
+
+
+    static constexpr float_denorm_style has_denorm = denorm_absent;
+
+
+
+    static constexpr bool has_denorm_loss = false;
+
+
+
+    static constexpr bool is_iec559 = false;
+
+
+
+
+    static constexpr bool is_bounded = false;
+# 288 "/usr/include/c++/14/limits" 3
+    static constexpr bool is_modulo = false;
+
+
+    static constexpr bool traps = false;
+
+
+    static constexpr bool tinyness_before = false;
+
+
+
+
+    static constexpr float_round_style round_style =
+          round_toward_zero;
+  };
+# 311 "/usr/include/c++/14/limits" 3
+  template<typename _Tp>
+    struct numeric_limits : public __numeric_limits_base
+    {
+
+
+      static constexpr _Tp
+      min() noexcept { return _Tp(); }
+
+
+      static constexpr _Tp
+      max() noexcept { return _Tp(); }
+
+
+
+
+      static constexpr _Tp
+      lowest() noexcept { return _Tp(); }
+
+
+
+
+      static constexpr _Tp
+      epsilon() noexcept { return _Tp(); }
+
+
+      static constexpr _Tp
+      round_error() noexcept { return _Tp(); }
+
+
+      static constexpr _Tp
+      infinity() noexcept { return _Tp(); }
+
+
+
+      static constexpr _Tp
+      quiet_NaN() noexcept { return _Tp(); }
+
+
+
+      static constexpr _Tp
+      signaling_NaN() noexcept { return _Tp(); }
+
+
+
+
+      static constexpr _Tp
+      denorm_min() noexcept { return _Tp(); }
+    };
+
+
+
+
+  template<typename _Tp>
+    struct numeric_limits<const _Tp>
+    : public numeric_limits<_Tp> { };
+
+  template<typename _Tp>
+    struct numeric_limits<volatile _Tp>
+    : public numeric_limits<_Tp> { };
+
+  template<typename _Tp>
+    struct numeric_limits<const volatile _Tp>
+    : public numeric_limits<_Tp> { };
+# 383 "/usr/include/c++/14/limits" 3
+  template<>
+    struct numeric_limits<bool>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr bool
+      min() noexcept { return false; }
+
+      static constexpr bool
+      max() noexcept { return true; }
+
+
+      static constexpr bool
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = 1;
+      static constexpr int digits10 = 0;
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr bool
+      epsilon() noexcept { return false; }
+
+      static constexpr bool
+      round_error() noexcept { return false; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr bool
+      infinity() noexcept { return false; }
+
+      static constexpr bool
+      quiet_NaN() noexcept { return false; }
+
+      static constexpr bool
+      signaling_NaN() noexcept { return false; }
+
+      static constexpr bool
+      denorm_min() noexcept { return false; }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+
+
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<char>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char
+      min() noexcept { return (((char)(-1) < 0) ? -(((char)(-1) < 0) ? (((((char)1 << ((sizeof(char) * 8 - ((char)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char)0) - 1 : (char)0); }
+
+      static constexpr char
+      max() noexcept { return (((char)(-1) < 0) ? (((((char)1 << ((sizeof(char) * 8 - ((char)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char)0); }
+
+
+      static constexpr char
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(char) * 8 - ((char)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(char) * 8 - ((char)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = ((char)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char
+      epsilon() noexcept { return 0; }
+
+      static constexpr char
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr
+      char infinity() noexcept { return char(); }
+
+      static constexpr char
+      quiet_NaN() noexcept { return char(); }
+
+      static constexpr char
+      signaling_NaN() noexcept { return char(); }
+
+      static constexpr char
+      denorm_min() noexcept { return static_cast<char>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<signed char>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr signed char
+      min() noexcept { return -0x7f - 1; }
+
+      static constexpr signed char
+      max() noexcept { return 0x7f; }
+
+
+      static constexpr signed char
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(signed char) * 8 - ((signed char)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(signed char) * 8 - ((signed char)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr signed char
+      epsilon() noexcept { return 0; }
+
+      static constexpr signed char
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr signed char
+      infinity() noexcept { return static_cast<signed char>(0); }
+
+      static constexpr signed char
+      quiet_NaN() noexcept { return static_cast<signed char>(0); }
+
+      static constexpr signed char
+      signaling_NaN() noexcept
+      { return static_cast<signed char>(0); }
+
+      static constexpr signed char
+      denorm_min() noexcept
+      { return static_cast<signed char>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned char>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned char
+      min() noexcept { return 0; }
+
+      static constexpr unsigned char
+      max() noexcept { return 0x7f * 2U + 1; }
+
+
+      static constexpr unsigned char
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned char) * 8 - ((unsigned char)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned char) * 8 - ((unsigned char)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned char
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned char
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned char
+      infinity() noexcept
+      { return static_cast<unsigned char>(0); }
+
+      static constexpr unsigned char
+      quiet_NaN() noexcept
+      { return static_cast<unsigned char>(0); }
+
+      static constexpr unsigned char
+      signaling_NaN() noexcept
+      { return static_cast<unsigned char>(0); }
+
+      static constexpr unsigned char
+      denorm_min() noexcept
+      { return static_cast<unsigned char>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<wchar_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr wchar_t
+      min() noexcept { return (((wchar_t)(-1) < 0) ? -(((wchar_t)(-1) < 0) ? (((((wchar_t)1 << ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(wchar_t)0) - 1 : (wchar_t)0); }
+
+      static constexpr wchar_t
+      max() noexcept { return (((wchar_t)(-1) < 0) ? (((((wchar_t)1 << ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(wchar_t)0); }
+
+
+      static constexpr wchar_t
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = ((wchar_t)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr wchar_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr wchar_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr wchar_t
+      infinity() noexcept { return wchar_t(); }
+
+      static constexpr wchar_t
+      quiet_NaN() noexcept { return wchar_t(); }
+
+      static constexpr wchar_t
+      signaling_NaN() noexcept { return wchar_t(); }
+
+      static constexpr wchar_t
+      denorm_min() noexcept { return wchar_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+
+  template<>
+    struct numeric_limits<char8_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char8_t
+      min() noexcept { return (((char8_t)(-1) < 0) ? -(((char8_t)(-1) < 0) ? (((((char8_t)1 << ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char8_t)0) - 1 : (char8_t)0); }
+
+      static constexpr char8_t
+      max() noexcept { return (((char8_t)(-1) < 0) ? (((((char8_t)1 << ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char8_t)0); }
+
+      static constexpr char8_t
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = (sizeof(char8_t) * 8 - ((char8_t)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) * 643L / 2136);
+      static constexpr int max_digits10 = 0;
+      static constexpr bool is_signed = ((char8_t)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char8_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr char8_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+ = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr char8_t
+      infinity() noexcept { return char8_t(); }
+
+      static constexpr char8_t
+      quiet_NaN() noexcept { return char8_t(); }
+
+      static constexpr char8_t
+      signaling_NaN() noexcept { return char8_t(); }
+
+      static constexpr char8_t
+      denorm_min() noexcept { return char8_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+ = round_toward_zero;
+    };
+
+
+
+
+  template<>
+    struct numeric_limits<char16_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char16_t
+      min() noexcept { return (((char16_t)(-1) < 0) ? -(((char16_t)(-1) < 0) ? (((((char16_t)1 << ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char16_t)0) - 1 : (char16_t)0); }
+
+      static constexpr char16_t
+      max() noexcept { return (((char16_t)(-1) < 0) ? (((((char16_t)1 << ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char16_t)0); }
+
+      static constexpr char16_t
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = (sizeof(char16_t) * 8 - ((char16_t)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) * 643L / 2136);
+      static constexpr int max_digits10 = 0;
+      static constexpr bool is_signed = ((char16_t)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char16_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr char16_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr char16_t
+      infinity() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      quiet_NaN() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      signaling_NaN() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      denorm_min() noexcept { return char16_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<char32_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char32_t
+      min() noexcept { return (((char32_t)(-1) < 0) ? -(((char32_t)(-1) < 0) ? (((((char32_t)1 << ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char32_t)0) - 1 : (char32_t)0); }
+
+      static constexpr char32_t
+      max() noexcept { return (((char32_t)(-1) < 0) ? (((((char32_t)1 << ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char32_t)0); }
+
+      static constexpr char32_t
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = (sizeof(char32_t) * 8 - ((char32_t)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) * 643L / 2136);
+      static constexpr int max_digits10 = 0;
+      static constexpr bool is_signed = ((char32_t)(-1) < 0);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char32_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr char32_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr char32_t
+      infinity() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      quiet_NaN() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      signaling_NaN() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      denorm_min() noexcept { return char32_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style = round_toward_zero;
+    };
+
+
+
+  template<>
+    struct numeric_limits<short>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr short
+      min() noexcept { return -0x7fff - 1; }
+
+      static constexpr short
+      max() noexcept { return 0x7fff; }
+
+
+      static constexpr short
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(short) * 8 - ((short)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(short) * 8 - ((short)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr short
+      epsilon() noexcept { return 0; }
+
+      static constexpr short
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr short
+      infinity() noexcept { return short(); }
+
+      static constexpr short
+      quiet_NaN() noexcept { return short(); }
+
+      static constexpr short
+      signaling_NaN() noexcept { return short(); }
+
+      static constexpr short
+      denorm_min() noexcept { return short(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned short>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned short
+      min() noexcept { return 0; }
+
+      static constexpr unsigned short
+      max() noexcept { return 0x7fff * 2U + 1; }
+
+
+      static constexpr unsigned short
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned short) * 8 - ((unsigned short)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned short) * 8 - ((unsigned short)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned short
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned short
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned short
+      infinity() noexcept
+      { return static_cast<unsigned short>(0); }
+
+      static constexpr unsigned short
+      quiet_NaN() noexcept
+      { return static_cast<unsigned short>(0); }
+
+      static constexpr unsigned short
+      signaling_NaN() noexcept
+      { return static_cast<unsigned short>(0); }
+
+      static constexpr unsigned short
+      denorm_min() noexcept
+      { return static_cast<unsigned short>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<int>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr int
+      min() noexcept { return -0x7fffffff - 1; }
+
+      static constexpr int
+      max() noexcept { return 0x7fffffff; }
+
+
+      static constexpr int
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(int) * 8 - ((int)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(int) * 8 - ((int)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr int
+      epsilon() noexcept { return 0; }
+
+      static constexpr int
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr int
+      infinity() noexcept { return static_cast<int>(0); }
+
+      static constexpr int
+      quiet_NaN() noexcept { return static_cast<int>(0); }
+
+      static constexpr int
+      signaling_NaN() noexcept { return static_cast<int>(0); }
+
+      static constexpr int
+      denorm_min() noexcept { return static_cast<int>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned int>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned int
+      min() noexcept { return 0; }
+
+      static constexpr unsigned int
+      max() noexcept { return 0x7fffffff * 2U + 1; }
+
+
+      static constexpr unsigned int
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned int) * 8 - ((unsigned int)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned int) * 8 - ((unsigned int)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned int
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned int
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned int
+      infinity() noexcept { return static_cast<unsigned int>(0); }
+
+      static constexpr unsigned int
+      quiet_NaN() noexcept
+      { return static_cast<unsigned int>(0); }
+
+      static constexpr unsigned int
+      signaling_NaN() noexcept
+      { return static_cast<unsigned int>(0); }
+
+      static constexpr unsigned int
+      denorm_min() noexcept
+      { return static_cast<unsigned int>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<long>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr long
+      min() noexcept { return -0x7fffffffffffffffL - 1; }
+
+      static constexpr long
+      max() noexcept { return 0x7fffffffffffffffL; }
+
+
+      static constexpr long
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits = (sizeof(long) * 8 - ((long)(-1) < 0));
+      static constexpr int digits10 = ((sizeof(long) * 8 - ((long)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr long
+      epsilon() noexcept { return 0; }
+
+      static constexpr long
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr long
+      infinity() noexcept { return static_cast<long>(0); }
+
+      static constexpr long
+      quiet_NaN() noexcept { return static_cast<long>(0); }
+
+      static constexpr long
+      signaling_NaN() noexcept { return static_cast<long>(0); }
+
+      static constexpr long
+      denorm_min() noexcept { return static_cast<long>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned long>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned long
+      min() noexcept { return 0; }
+
+      static constexpr unsigned long
+      max() noexcept { return 0x7fffffffffffffffL * 2UL + 1; }
+
+
+      static constexpr unsigned long
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned long) * 8 - ((unsigned long)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned long) * 8 - ((unsigned long)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned long
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned long
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned long
+      infinity() noexcept
+      { return static_cast<unsigned long>(0); }
+
+      static constexpr unsigned long
+      quiet_NaN() noexcept
+      { return static_cast<unsigned long>(0); }
+
+      static constexpr unsigned long
+      signaling_NaN() noexcept
+      { return static_cast<unsigned long>(0); }
+
+      static constexpr unsigned long
+      denorm_min() noexcept
+      { return static_cast<unsigned long>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<long long>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr long long
+      min() noexcept { return -0x7fffffffffffffffLL - 1; }
+
+      static constexpr long long
+      max() noexcept { return 0x7fffffffffffffffLL; }
+
+
+      static constexpr long long
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(long long) * 8 - ((long long)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(long long) * 8 - ((long long)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr long long
+      epsilon() noexcept { return 0; }
+
+      static constexpr long long
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr long long
+      infinity() noexcept { return static_cast<long long>(0); }
+
+      static constexpr long long
+      quiet_NaN() noexcept { return static_cast<long long>(0); }
+
+      static constexpr long long
+      signaling_NaN() noexcept
+      { return static_cast<long long>(0); }
+
+      static constexpr long long
+      denorm_min() noexcept { return static_cast<long long>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+
+
+  template<>
+    struct numeric_limits<unsigned long long>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr unsigned long long
+      min() noexcept { return 0; }
+
+      static constexpr unsigned long long
+      max() noexcept { return 0x7fffffffffffffffLL * 2ULL + 1; }
+
+
+      static constexpr unsigned long long
+      lowest() noexcept { return min(); }
+
+
+      static constexpr int digits
+       = (sizeof(unsigned long long) * 8 - ((unsigned long long)(-1) < 0));
+      static constexpr int digits10
+       = ((sizeof(unsigned long long) * 8 - ((unsigned long long)(-1) < 0)) * 643L / 2136);
+
+      static constexpr int max_digits10 = 0;
+
+      static constexpr bool is_signed = false;
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr unsigned long long
+      epsilon() noexcept { return 0; }
+
+      static constexpr unsigned long long
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm
+       = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr unsigned long long
+      infinity() noexcept
+      { return static_cast<unsigned long long>(0); }
+
+      static constexpr unsigned long long
+      quiet_NaN() noexcept
+      { return static_cast<unsigned long long>(0); }
+
+      static constexpr unsigned long long
+      signaling_NaN() noexcept
+      { return static_cast<unsigned long long>(0); }
+
+      static constexpr unsigned long long
+      denorm_min() noexcept
+      { return static_cast<unsigned long long>(0); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = true;
+
+      static constexpr bool traps = true;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+       = round_toward_zero;
+    };
+# 1637 "/usr/include/c++/14/limits" 3
+  __extension__ template<> struct numeric_limits<__int128> { static constexpr bool is_specialized = true; static constexpr __int128 min() noexcept { return (((__int128)(-1) < 0) ? -(((__int128)(-1) < 0) ? (((((__int128)1 << ((128 - ((__int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(__int128)0) - 1 : (__int128)0); } static constexpr __int128 max() noexcept { return (((__int128)(-1) < 0) ? (((((__int128)1 << ((128 - ((__int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(__int128)0); } static constexpr int digits = 128 - 1; static constexpr int digits10 = (128 - 1) * 643L / 2136; static constexpr bool is_signed = true; static constexpr bool is_integer = true; static constexpr bool is_exact = true; static constexpr int radix = 2; static constexpr __int128 epsilon() noexcept { return 0; } static constexpr __int128 round_error() noexcept { return 0; } static constexpr __int128 lowest() noexcept { return min(); } static constexpr int max_digits10 = 0; static constexpr int min_exponent = 0; static constexpr int min_exponent10 = 0; static constexpr int max_exponent = 0; static constexpr int max_exponent10 = 0; static constexpr bool has_infinity = false; static constexpr bool has_quiet_NaN = false; static constexpr bool has_signaling_NaN = false; static constexpr float_denorm_style has_denorm = denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr __int128 infinity() noexcept { return static_cast<__int128>(0); } static constexpr __int128 quiet_NaN() noexcept { return static_cast<__int128>(0); } static constexpr __int128 signaling_NaN() noexcept { return static_cast<__int128>(0); } static constexpr __int128 denorm_min() noexcept { return static_cast<__int128>(0); } static constexpr bool is_iec559 = false; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = true; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_toward_zero; }; __extension__ template<> struct numeric_limits<unsigned __int128> { static constexpr bool is_specialized = true; static constexpr unsigned __int128 min() noexcept { return 0; } static constexpr unsigned __int128 max() noexcept { return (((unsigned __int128)(-1) < 0) ? (((((unsigned __int128)1 << ((128 - ((unsigned __int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(unsigned __int128)0); } static constexpr unsigned __int128 lowest() noexcept { return min(); } static constexpr int max_digits10 = 0; static constexpr int digits = 128; static constexpr int digits10 = 128 * 643L / 2136; static constexpr bool is_signed = false; static constexpr bool is_integer = true; static constexpr bool is_exact = true; static constexpr int radix = 2; static constexpr unsigned __int128 epsilon() noexcept { return 0; } static constexpr unsigned __int128 round_error() noexcept { return 0; } static constexpr int min_exponent = 0; static constexpr int min_exponent10 = 0; static constexpr int max_exponent = 0; static constexpr int max_exponent10 = 0; static constexpr bool has_infinity = false; static constexpr bool has_quiet_NaN = false; static constexpr bool has_signaling_NaN = false; static constexpr float_denorm_style has_denorm = denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr unsigned __int128 infinity() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 quiet_NaN() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 signaling_NaN() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 denorm_min() noexcept { return static_cast<unsigned __int128>(0); } static constexpr bool is_iec559 = false; static constexpr bool is_bounded = true; static constexpr bool is_modulo = true; static constexpr bool traps = true; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_toward_zero; };
+# 1669 "/usr/include/c++/14/limits" 3
+  template<>
+    struct numeric_limits<float>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr float
+      min() noexcept { return 1.17549435082228750796873653722224568e-38F; }
+
+      static constexpr float
+      max() noexcept { return 3.40282346638528859811704183484516925e+38F; }
+
+
+      static constexpr float
+      lowest() noexcept { return -3.40282346638528859811704183484516925e+38F; }
+
+
+      static constexpr int digits = 24;
+      static constexpr int digits10 = 6;
+
+      static constexpr int max_digits10
+  = (2 + (24) * 643L / 2136);
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr float
+      epsilon() noexcept { return 1.19209289550781250000000000000000000e-7F; }
+
+      static constexpr float
+      round_error() noexcept { return 0.5F; }
+
+      static constexpr int min_exponent = (-125);
+      static constexpr int min_exponent10 = (-37);
+      static constexpr int max_exponent = 128;
+      static constexpr int max_exponent10 = 38;
+
+      static constexpr bool has_infinity = 1;
+      static constexpr bool has_quiet_NaN = 1;
+      static constexpr bool has_signaling_NaN = has_quiet_NaN;
+      static constexpr float_denorm_style has_denorm
+ = bool(1) ? denorm_present : denorm_absent;
+      static constexpr bool has_denorm_loss
+       = false;
+
+      static constexpr float
+      infinity() noexcept { return __builtin_huge_valf(); }
+
+      static constexpr float
+      quiet_NaN() noexcept { return __builtin_nanf(""); }
+
+      static constexpr float
+      signaling_NaN() noexcept { return __builtin_nansf(""); }
+
+      static constexpr float
+      denorm_min() noexcept { return 1.40129846432481707092372958328991613e-45F; }
+
+      static constexpr bool is_iec559
+ = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before
+       = false;
+      static constexpr float_round_style round_style
+       = round_to_nearest;
+    };
+
+
+
+
+
+
+  template<>
+    struct numeric_limits<double>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr double
+      min() noexcept { return double(2.22507385850720138309023271733240406e-308L); }
+
+      static constexpr double
+      max() noexcept { return double(1.79769313486231570814527423731704357e+308L); }
+
+
+      static constexpr double
+      lowest() noexcept { return -double(1.79769313486231570814527423731704357e+308L); }
+
+
+      static constexpr int digits = 53;
+      static constexpr int digits10 = 15;
+
+      static constexpr int max_digits10
+  = (2 + (53) * 643L / 2136);
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr double
+      epsilon() noexcept { return double(2.22044604925031308084726333618164062e-16L); }
+
+      static constexpr double
+      round_error() noexcept { return 0.5; }
+
+      static constexpr int min_exponent = (-1021);
+      static constexpr int min_exponent10 = (-307);
+      static constexpr int max_exponent = 1024;
+      static constexpr int max_exponent10 = 308;
+
+      static constexpr bool has_infinity = 1;
+      static constexpr bool has_quiet_NaN = 1;
+      static constexpr bool has_signaling_NaN = has_quiet_NaN;
+      static constexpr float_denorm_style has_denorm
+ = bool(1) ? denorm_present : denorm_absent;
+      static constexpr bool has_denorm_loss
+        = false;
+
+      static constexpr double
+      infinity() noexcept { return __builtin_huge_val(); }
+
+      static constexpr double
+      quiet_NaN() noexcept { return __builtin_nan(""); }
+
+      static constexpr double
+      signaling_NaN() noexcept { return __builtin_nans(""); }
+
+      static constexpr double
+      denorm_min() noexcept { return double(4.94065645841246544176568792868221372e-324L); }
+
+      static constexpr bool is_iec559
+ = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before
+       = false;
+      static constexpr float_round_style round_style
+       = round_to_nearest;
+    };
+
+
+
+
+
+
+  template<>
+    struct numeric_limits<long double>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr long double
+      min() noexcept { return 3.36210314311209350626267781732175260e-4932L; }
+
+      static constexpr long double
+      max() noexcept { return 1.18973149535723176502126385303097021e+4932L; }
+
+
+      static constexpr long double
+      lowest() noexcept { return -1.18973149535723176502126385303097021e+4932L; }
+
+
+      static constexpr int digits = 64;
+      static constexpr int digits10 = 18;
+
+      static constexpr int max_digits10
+  = (2 + (64) * 643L / 2136);
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr long double
+      epsilon() noexcept { return 1.08420217248550443400745280086994171e-19L; }
+
+      static constexpr long double
+      round_error() noexcept { return 0.5L; }
+
+      static constexpr int min_exponent = (-16381);
+      static constexpr int min_exponent10 = (-4931);
+      static constexpr int max_exponent = 16384;
+      static constexpr int max_exponent10 = 4932;
+
+      static constexpr bool has_infinity = 1;
+      static constexpr bool has_quiet_NaN = 1;
+      static constexpr bool has_signaling_NaN = has_quiet_NaN;
+      static constexpr float_denorm_style has_denorm
+ = bool(1) ? denorm_present : denorm_absent;
+      static constexpr bool has_denorm_loss
+ = false;
+
+      static constexpr long double
+      infinity() noexcept { return __builtin_huge_vall(); }
+
+      static constexpr long double
+      quiet_NaN() noexcept { return __builtin_nanl(""); }
+
+      static constexpr long double
+      signaling_NaN() noexcept { return __builtin_nansl(""); }
+
+      static constexpr long double
+      denorm_min() noexcept { return 3.64519953188247460252840593361941982e-4951L; }
+
+      static constexpr bool is_iec559
+ = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before =
+      false;
+      static constexpr float_round_style round_style =
+            round_to_nearest;
+    };
+# 1986 "/usr/include/c++/14/limits" 3
+__extension__ template<> struct numeric_limits<_Float16> { static constexpr bool is_specialized = true; static constexpr _Float16 min() noexcept { return 6.10351562500000000000000000000000000e-5F16; } static constexpr _Float16 max() noexcept { return 6.55040000000000000000000000000000000e+4F16; } static constexpr _Float16 lowest() noexcept { return -6.55040000000000000000000000000000000e+4F16; } static constexpr int digits = 11; static constexpr int digits10 = 3; static constexpr int max_digits10 = (2 + (11) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float16 epsilon() noexcept { return 9.76562500000000000000000000000000000e-4F16; } static constexpr _Float16 round_error() noexcept { return 0.5F16; } static constexpr int min_exponent = (-13); static constexpr int min_exponent10 = (-4); static constexpr int max_exponent = 16; static constexpr int max_exponent10 = 4; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float16 infinity() noexcept { return __builtin_huge_valf16(); } static constexpr _Float16 quiet_NaN() noexcept { return __builtin_nanf16(""); } static constexpr _Float16 signaling_NaN() noexcept { return __builtin_nansf16(""); } static constexpr _Float16 denorm_min() noexcept { return 5.96046447753906250000000000000000000e-8F16; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
+
+
+__extension__ template<> struct numeric_limits<_Float32> { static constexpr bool is_specialized = true; static constexpr _Float32 min() noexcept { return 1.17549435082228750796873653722224568e-38F32; } static constexpr _Float32 max() noexcept { return 3.40282346638528859811704183484516925e+38F32; } static constexpr _Float32 lowest() noexcept { return -3.40282346638528859811704183484516925e+38F32; } static constexpr int digits = 24; static constexpr int digits10 = 6; static constexpr int max_digits10 = (2 + (24) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float32 epsilon() noexcept { return 1.19209289550781250000000000000000000e-7F32; } static constexpr _Float32 round_error() noexcept { return 0.5F32; } static constexpr int min_exponent = (-125); static constexpr int min_exponent10 = (-37); static constexpr int max_exponent = 128; static constexpr int max_exponent10 = 38; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float32 infinity() noexcept { return __builtin_huge_valf32(); } static constexpr _Float32 quiet_NaN() noexcept { return __builtin_nanf32(""); } static constexpr _Float32 signaling_NaN() noexcept { return __builtin_nansf32(""); } static constexpr _Float32 denorm_min() noexcept { return 1.40129846432481707092372958328991613e-45F32; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
+
+
+__extension__ template<> struct numeric_limits<_Float64> { static constexpr bool is_specialized = true; static constexpr _Float64 min() noexcept { return 2.22507385850720138309023271733240406e-308F64; } static constexpr _Float64 max() noexcept { return 1.79769313486231570814527423731704357e+308F64; } static constexpr _Float64 lowest() noexcept { return -1.79769313486231570814527423731704357e+308F64; } static constexpr int digits = 53; static constexpr int digits10 = 15; static constexpr int max_digits10 = (2 + (53) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float64 epsilon() noexcept { return 2.22044604925031308084726333618164062e-16F64; } static constexpr _Float64 round_error() noexcept { return 0.5F64; } static constexpr int min_exponent = (-1021); static constexpr int min_exponent10 = (-307); static constexpr int max_exponent = 1024; static constexpr int max_exponent10 = 308; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float64 infinity() noexcept { return __builtin_huge_valf64(); } static constexpr _Float64 quiet_NaN() noexcept { return __builtin_nanf64(""); } static constexpr _Float64 signaling_NaN() noexcept { return __builtin_nansf64(""); } static constexpr _Float64 denorm_min() noexcept { return 4.94065645841246544176568792868221372e-324F64; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
+
+
+__extension__ template<> struct numeric_limits<_Float128> { static constexpr bool is_specialized = true; static constexpr _Float128 min() noexcept { return 3.36210314311209350626267781732175260e-4932F128; } static constexpr _Float128 max() noexcept { return 1.18973149535723176508575932662800702e+4932F128; } static constexpr _Float128 lowest() noexcept { return -1.18973149535723176508575932662800702e+4932F128; } static constexpr int digits = 113; static constexpr int digits10 = 33; static constexpr int max_digits10 = (2 + (113) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float128 epsilon() noexcept { return 1.92592994438723585305597794258492732e-34F128; } static constexpr _Float128 round_error() noexcept { return 0.5F128; } static constexpr int min_exponent = (-16381); static constexpr int min_exponent10 = (-4931); static constexpr int max_exponent = 16384; static constexpr int max_exponent10 = 4932; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float128 infinity() noexcept { return __builtin_huge_valf128(); } static constexpr _Float128 quiet_NaN() noexcept { return __builtin_nanf128(""); } static constexpr _Float128 signaling_NaN() noexcept { return __builtin_nansf128(""); } static constexpr _Float128 denorm_min() noexcept { return 6.47517511943802511092443895822764655e-4966F128; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
+# 2006 "/usr/include/c++/14/limits" 3
+  __extension__
+  template<>
+    struct numeric_limits<__gnu_cxx::__bfloat16_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      min() noexcept
+      { return 1.17549435082228750796873653722224568e-38BF16; }
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      max() noexcept
+      { return 3.38953138925153547590470800371487867e+38BF16; }
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      lowest() noexcept
+      { return -3.38953138925153547590470800371487867e+38BF16; }
+
+      static constexpr int digits = 8;
+      static constexpr int digits10 = 2;
+
+      static constexpr int max_digits10
+ = (2 + (8) * 643L / 2136);
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      epsilon() noexcept
+      { return 7.81250000000000000000000000000000000e-3BF16; }
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      round_error() noexcept { return 0.5BF16; }
+
+      static constexpr int min_exponent = (-125);
+      static constexpr int min_exponent10 = (-37);
+      static constexpr int max_exponent = 128;
+      static constexpr int max_exponent10 = 38;
+
+      static constexpr bool has_infinity
+ = 1;
+      static constexpr bool has_quiet_NaN
+ = 1;
+      static constexpr bool has_signaling_NaN = has_quiet_NaN;
+      static constexpr float_denorm_style has_denorm
+ = bool(1) ? denorm_present : denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      infinity() noexcept
+      { return __gnu_cxx::__bfloat16_t(__builtin_huge_valf()); }
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      quiet_NaN() noexcept
+      { return __gnu_cxx::__bfloat16_t(__builtin_nanf("")); }
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      signaling_NaN() noexcept
+      { return __builtin_nansf16b(""); }
+
+      static constexpr __gnu_cxx::__bfloat16_t
+      denorm_min() noexcept
+      { return 9.18354961579912115600575419704879436e-41BF16; }
+
+      static constexpr bool is_iec559
+ = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+ = round_to_nearest;
+    };
+
+
+
+
+
+  __extension__
+  template<>
+    struct numeric_limits<__float128>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr __float128
+      min() noexcept
+      {
+
+
+
+
+ return __extension__ 0x1.0p-16382Q;
+
+      }
+
+      static constexpr __float128
+      max() noexcept
+      {
+
+
+
+
+
+
+
+ return __extension__ 0x1.ffffffffffffffffffffffffffffp+16383Q;
+
+      }
+
+      static constexpr __float128
+      lowest() noexcept
+      { return -max(); }
+
+      static constexpr int digits = 113;
+      static constexpr int digits10 = 33;
+
+      static constexpr int max_digits10 = 35;
+
+      static constexpr bool is_signed = true;
+      static constexpr bool is_integer = false;
+      static constexpr bool is_exact = false;
+      static constexpr int radix = 2;
+
+      static constexpr __float128
+      epsilon() noexcept
+      { return double(1.9259299443872359e-34); }
+
+      static constexpr __float128
+      round_error() noexcept { return 0.5; }
+
+      static constexpr int min_exponent = -16381;
+      static constexpr int min_exponent10 = -4931;
+      static constexpr int max_exponent = 16384;
+      static constexpr int max_exponent10 = 4932;
+
+      static constexpr bool has_infinity = 1;
+      static constexpr bool has_quiet_NaN = 1;
+
+
+      static constexpr bool has_signaling_NaN = true;
+
+
+
+      static constexpr float_denorm_style has_denorm
+ = denorm_present;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr __float128
+      infinity() noexcept
+      { return __builtin_huge_val(); }
+
+      static constexpr __float128
+      quiet_NaN() noexcept
+      { return __builtin_nan(""); }
+
+      static constexpr __float128
+      signaling_NaN() noexcept
+      {
+
+ return __builtin_nansq("");
+
+
+
+
+
+      }
+
+      static constexpr __float128
+      denorm_min() noexcept
+      {
+
+
+
+
+ return __extension__ 0x1.0p-16494Q;
+
+      }
+
+      static constexpr bool is_iec559 = has_signaling_NaN;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = false;
+
+      static constexpr bool traps = false;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style
+ = round_to_nearest;
+# 2218 "/usr/include/c++/14/limits" 3
+    };
+
+
+
+
+}
+# 40 "/usr/include/c++/14/bits/chrono.h" 2 3
+# 1 "/usr/include/c++/14/ctime" 1 3
+# 39 "/usr/include/c++/14/ctime" 3
+       
+# 40 "/usr/include/c++/14/ctime" 3
+
+
+# 1 "/usr/include/time.h" 1 3 4
+# 29 "/usr/include/time.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h" 1 3 4
+# 214 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h" 3 4
+typedef long unsigned int size_t;
+# 30 "/usr/include/time.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/time.h" 1 3 4
+# 73 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timex.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h" 1 3 4
+
+
+
+
+
+
+
+struct timeval
+{
+
+
+
+
+  __time_t tv_sec;
+  __suseconds_t tv_usec;
+
+};
+# 23 "/usr/include/x86_64-linux-gnu/bits/timex.h" 2 3 4
+
+
+
+struct timex
+{
+# 58 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
+  unsigned int modes;
+  __syscall_slong_t offset;
+  __syscall_slong_t freq;
+  __syscall_slong_t maxerror;
+  __syscall_slong_t esterror;
+  int status;
+  __syscall_slong_t constant;
+  __syscall_slong_t precision;
+  __syscall_slong_t tolerance;
+  struct timeval time;
+  __syscall_slong_t tick;
+  __syscall_slong_t ppsfreq;
+  __syscall_slong_t jitter;
+  int shift;
+  __syscall_slong_t stabil;
+  __syscall_slong_t jitcnt;
+  __syscall_slong_t calcnt;
+  __syscall_slong_t errcnt;
+  __syscall_slong_t stbcnt;
+
+  int tai;
+
+
+  int :32; int :32; int :32; int :32;
+  int :32; int :32; int :32; int :32;
+  int :32; int :32; int :32;
+
+};
+# 74 "/usr/include/x86_64-linux-gnu/bits/time.h" 2 3 4
+
+extern "C" {
+
+
+extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) noexcept (true) __attribute__ ((__nonnull__ (2)));
+# 90 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
+}
+# 34 "/usr/include/time.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/clock_t.h" 1 3 4
+
+
+
+
+
+
+typedef __clock_t clock_t;
+# 38 "/usr/include/time.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 3 4
+typedef __time_t time_t;
+# 39 "/usr/include/time.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h" 1 3 4
+
+
+
+
+
+
+struct tm
+{
+  int tm_sec;
+  int tm_min;
+  int tm_hour;
+  int tm_mday;
+  int tm_mon;
+  int tm_year;
+  int tm_wday;
+  int tm_yday;
+  int tm_isdst;
+
+
+  long int tm_gmtoff;
+  const char *tm_zone;
+
+
+
+
+};
+# 40 "/usr/include/time.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 1 3 4
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/endian.h" 1 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/endian.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/endianness.h" 1 3 4
+# 36 "/usr/include/x86_64-linux-gnu/bits/endian.h" 2 3 4
+# 7 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 2 3 4
+
+
+
+
+struct timespec
+{
+
+
+
+  __time_t tv_sec;
+
+
+
+
+  __syscall_slong_t tv_nsec;
+# 31 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
+};
+# 43 "/usr/include/time.h" 2 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h" 1 3 4
+
+
+
+
+
+
+typedef __clockid_t clockid_t;
+# 47 "/usr/include/time.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/timer_t.h" 1 3 4
+
+
+
+
+
+
+typedef __timer_t timer_t;
+# 48 "/usr/include/time.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h" 1 3 4
+
+
+
+
+
+
+
+struct itimerspec
+  {
+    struct timespec it_interval;
+    struct timespec it_value;
+  };
+# 49 "/usr/include/time.h" 2 3 4
+struct sigevent;
+
+
+
+
+typedef __pid_t pid_t;
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
+struct __locale_struct
+{
+
+  struct __locale_data *__locales[13];
+
+
+  const unsigned short int *__ctype_b;
+  const int *__ctype_tolower;
+  const int *__ctype_toupper;
+
+
+  const char *__names[13];
+};
+
+typedef struct __locale_struct *__locale_t;
+# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
+
+typedef __locale_t locale_t;
+# 61 "/usr/include/time.h" 2 3 4
+
+
+
+
+
+
+
+extern "C" {
+
+
+
+extern clock_t clock (void) noexcept (true);
+
+
+
+extern time_t time (time_t *__timer) noexcept (true);
+
+
+extern double difftime (time_t __time1, time_t __time0)
+     noexcept (true) __attribute__ ((__const__));
+
+
+extern time_t mktime (struct tm *__tp) noexcept (true);
+# 100 "/usr/include/time.h" 3 4
+extern size_t strftime (char *__restrict __s, size_t __maxsize,
+   const char *__restrict __format,
+   const struct tm *__restrict __tp)
+   noexcept (true) __attribute__ ((__nonnull__ (1, 3, 4)));
+
+
+
+
+extern char *strptime (const char *__restrict __s,
+         const char *__restrict __fmt, struct tm *__tp)
+     noexcept (true);
+
+
+
+
+
+
+extern size_t strftime_l (char *__restrict __s, size_t __maxsize,
+     const char *__restrict __format,
+     const struct tm *__restrict __tp,
+     locale_t __loc) noexcept (true);
+
+
+
+extern char *strptime_l (const char *__restrict __s,
+    const char *__restrict __fmt, struct tm *__tp,
+    locale_t __loc) noexcept (true);
+
+
+
+
+
+
+extern struct tm *gmtime (const time_t *__timer) noexcept (true);
+
+
+
+extern struct tm *localtime (const time_t *__timer) noexcept (true);
+# 155 "/usr/include/time.h" 3 4
+extern struct tm *gmtime_r (const time_t *__restrict __timer,
+       struct tm *__restrict __tp) noexcept (true);
+
+
+
+extern struct tm *localtime_r (const time_t *__restrict __timer,
+          struct tm *__restrict __tp) noexcept (true);
+# 180 "/usr/include/time.h" 3 4
+extern char *asctime (const struct tm *__tp) noexcept (true);
+
+
+
+extern char *ctime (const time_t *__timer) noexcept (true);
+# 198 "/usr/include/time.h" 3 4
+extern char *asctime_r (const struct tm *__restrict __tp,
+   char *__restrict __buf) noexcept (true);
+
+
+
+extern char *ctime_r (const time_t *__restrict __timer,
+        char *__restrict __buf) noexcept (true);
+# 218 "/usr/include/time.h" 3 4
+extern char *__tzname[2];
+extern int __daylight;
+extern long int __timezone;
+
+
+
+
+extern char *tzname[2];
+
+
+
+extern void tzset (void) noexcept (true);
+
+
+
+extern int daylight;
+extern long int timezone;
+# 247 "/usr/include/time.h" 3 4
+extern time_t timegm (struct tm *__tp) noexcept (true);
+# 264 "/usr/include/time.h" 3 4
+extern time_t timelocal (struct tm *__tp) noexcept (true);
+
+
+
+
+
+
+
+extern int dysize (int __year) noexcept (true) __attribute__ ((__const__));
+# 282 "/usr/include/time.h" 3 4
+extern int nanosleep (const struct timespec *__requested_time,
+        struct timespec *__remaining);
+
+
+extern int clock_getres (clockid_t __clock_id, struct timespec *__res) noexcept (true);
+
+
+extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp)
+     noexcept (true) __attribute__ ((__nonnull__ (2)));
+
+
+extern int clock_settime (clockid_t __clock_id, const struct timespec *__tp)
+     noexcept (true) __attribute__ ((__nonnull__ (2)));
+# 324 "/usr/include/time.h" 3 4
+extern int clock_nanosleep (clockid_t __clock_id, int __flags,
+       const struct timespec *__req,
+       struct timespec *__rem);
+# 339 "/usr/include/time.h" 3 4
+extern int clock_getcpuclockid (pid_t __pid, clockid_t *__clock_id) noexcept (true);
+
+
+
+
+extern int timer_create (clockid_t __clock_id,
+    struct sigevent *__restrict __evp,
+    timer_t *__restrict __timerid) noexcept (true);
+
+
+extern int timer_delete (timer_t __timerid) noexcept (true);
+
+
+
+extern int timer_settime (timer_t __timerid, int __flags,
+     const struct itimerspec *__restrict __value,
+     struct itimerspec *__restrict __ovalue) noexcept (true);
+
+
+extern int timer_gettime (timer_t __timerid, struct itimerspec *__value)
+     noexcept (true);
+# 377 "/usr/include/time.h" 3 4
+extern int timer_getoverrun (timer_t __timerid) noexcept (true);
+
+
+
+
+
+
+extern int timespec_get (struct timespec *__ts, int __base)
+     noexcept (true) __attribute__ ((__nonnull__ (1)));
+# 400 "/usr/include/time.h" 3 4
+extern int timespec_getres (struct timespec *__ts, int __base)
+     noexcept (true);
+# 426 "/usr/include/time.h" 3 4
+extern int getdate_err;
+# 435 "/usr/include/time.h" 3 4
+extern struct tm *getdate (const char *__string);
+# 449 "/usr/include/time.h" 3 4
+extern int getdate_r (const char *__restrict __string,
+        struct tm *__restrict __resbufp);
+
+
+}
+# 43 "/usr/include/c++/14/ctime" 2 3
+# 58 "/usr/include/c++/14/ctime" 3
+namespace std
+{
+  using ::clock_t;
+  using ::time_t;
+  using ::tm;
+
+  using ::clock;
+  using ::difftime;
+  using ::mktime;
+  using ::time;
+  using ::asctime;
+  using ::ctime;
+  using ::gmtime;
+  using ::localtime;
+  using ::strftime;
+}
+
+
+
+namespace std
+{
+  using ::timespec;
+  using ::timespec_get;
+}
+# 41 "/usr/include/c++/14/bits/chrono.h" 2 3
+# 1 "/usr/include/c++/14/bits/parse_numbers.h" 1 3
+# 33 "/usr/include/c++/14/bits/parse_numbers.h" 3
+       
+# 34 "/usr/include/c++/14/bits/parse_numbers.h" 3
+
+
+
+
+
+
+# 1 "/usr/include/c++/14/ext/numeric_traits.h" 1 3
+# 32 "/usr/include/c++/14/ext/numeric_traits.h" 3
+       
+# 33 "/usr/include/c++/14/ext/numeric_traits.h" 3
+
+# 1 "/usr/include/c++/14/bits/cpp_type_traits.h" 1 3
+# 35 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
+       
+# 36 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
+# 67 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
+extern "C++" {
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  struct __true_type { };
+  struct __false_type { };
+
+  template<bool>
+    struct __truth_type
+    { typedef __false_type __type; };
+
+  template<>
+    struct __truth_type<true>
+    { typedef __true_type __type; };
+
+
+
+  template<class _Sp, class _Tp>
+    struct __traitor
+    {
+      enum { __value = bool(_Sp::__value) || bool(_Tp::__value) };
+      typedef typename __truth_type<__value>::__type __type;
+    };
+
+
+  template<typename, typename>
+    struct __are_same
+    {
+      enum { __value = 0 };
+      typedef __false_type __type;
+    };
+
+  template<typename _Tp>
+    struct __are_same<_Tp, _Tp>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+  template<typename _Tp>
+    struct __is_void
+    {
+      enum { __value = 0 };
+      typedef __false_type __type;
+    };
+
+  template<>
+    struct __is_void<void>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+
+  template<typename _Tp>
+    struct __is_integer
+    {
+      enum { __value = 0 };
+      typedef __false_type __type;
+    };
+
+
+
+
+
+  template<>
+    struct __is_integer<bool>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<char>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<signed char>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<unsigned char>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+  template<>
+    struct __is_integer<wchar_t>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+  template<>
+    struct __is_integer<char8_t>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+  template<>
+    struct __is_integer<char16_t>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<char32_t>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+  template<>
+    struct __is_integer<short>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<unsigned short>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<int>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<unsigned int>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<long>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<unsigned long>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<long long>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_integer<unsigned long long>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+# 272 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
+__extension__ template<> struct __is_integer<__int128> { enum { __value = 1 }; typedef __true_type __type; }; __extension__ template<> struct __is_integer<unsigned __int128> { enum { __value = 1 }; typedef __true_type __type; };
+# 289 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
+  template<typename _Tp>
+    struct __is_floating
+    {
+      enum { __value = 0 };
+      typedef __false_type __type;
+    };
+
+
+  template<>
+    struct __is_floating<float>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_floating<double>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_floating<long double>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+  template<>
+    struct __is_floating<_Float16>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+  template<>
+    struct __is_floating<_Float32>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+  template<>
+    struct __is_floating<_Float64>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+  template<>
+    struct __is_floating<_Float128>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+  template<>
+    struct __is_floating<__gnu_cxx::__bfloat16_t>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+
+
+  template<typename _Tp>
+    struct __is_pointer
+    {
+      enum { __value = 0 };
+      typedef __false_type __type;
+    };
+
+  template<typename _Tp>
+    struct __is_pointer<_Tp*>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+
+  template<typename _Tp>
+    struct __is_arithmetic
+    : public __traitor<__is_integer<_Tp>, __is_floating<_Tp> >
+    { };
+
+
+
+
+  template<typename _Tp>
+    struct __is_scalar
+    : public __traitor<__is_arithmetic<_Tp>, __is_pointer<_Tp> >
+    { };
+
+
+
+
+  template<typename _Tp>
+    struct __is_char
+    {
+      enum { __value = 0 };
+      typedef __false_type __type;
+    };
+
+  template<>
+    struct __is_char<char>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+  template<>
+    struct __is_char<wchar_t>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+  template<typename _Tp>
+    struct __is_byte
+    {
+      enum { __value = 0 };
+      typedef __false_type __type;
+    };
+
+  template<>
+    struct __is_byte<char>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_byte<signed char>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+  template<>
+    struct __is_byte<unsigned char>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+  enum class byte : unsigned char;
+
+  template<>
+    struct __is_byte<byte>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+
+  template<>
+    struct __is_byte<char8_t>
+    {
+      enum { __value = 1 };
+      typedef __true_type __type;
+    };
+
+
+  template<typename> struct iterator_traits;
+
+
+  template<typename _Tp>
+    struct __is_nonvolatile_trivially_copyable
+    {
+      enum { __value = __is_trivially_copyable(_Tp) };
+    };
+
+
+
+
+  template<typename _Tp>
+    struct __is_nonvolatile_trivially_copyable<volatile _Tp>
+    {
+      enum { __value = 0 };
+    };
+
+
+  template<typename _OutputIter, typename _InputIter>
+    struct __memcpyable
+    {
+      enum { __value = 0 };
+    };
+
+  template<typename _Tp>
+    struct __memcpyable<_Tp*, _Tp*>
+    : __is_nonvolatile_trivially_copyable<_Tp>
+    { };
+
+  template<typename _Tp>
+    struct __memcpyable<_Tp*, const _Tp*>
+    : __is_nonvolatile_trivially_copyable<_Tp>
+    { };
+
+
+
+
+
+
+  template<typename _Iter1, typename _Iter2>
+    struct __memcmpable
+    {
+      enum { __value = 0 };
+    };
+
+
+  template<typename _Tp>
+    struct __memcmpable<_Tp*, _Tp*>
+    : __is_nonvolatile_trivially_copyable<_Tp>
+    { };
+
+  template<typename _Tp>
+    struct __memcmpable<const _Tp*, _Tp*>
+    : __is_nonvolatile_trivially_copyable<_Tp>
+    { };
+
+  template<typename _Tp>
+    struct __memcmpable<_Tp*, const _Tp*>
+    : __is_nonvolatile_trivially_copyable<_Tp>
+    { };
+
+
+
+
+
+
+
+  template<typename _Tp, bool _TreatAsBytes =
+
+
+
+ __is_byte<_Tp>::__value
+
+    >
+    struct __is_memcmp_ordered
+    {
+      static const bool __value = _Tp(-1) > _Tp(1);
+    };
+
+  template<typename _Tp>
+    struct __is_memcmp_ordered<_Tp, false>
+    {
+      static const bool __value = false;
+    };
+
+
+  template<typename _Tp, typename _Up, bool = sizeof(_Tp) == sizeof(_Up)>
+    struct __is_memcmp_ordered_with
+    {
+      static const bool __value = __is_memcmp_ordered<_Tp>::__value
+ && __is_memcmp_ordered<_Up>::__value;
+    };
+
+  template<typename _Tp, typename _Up>
+    struct __is_memcmp_ordered_with<_Tp, _Up, false>
+    {
+      static const bool __value = false;
+    };
+# 579 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
+  template<>
+    struct __is_memcmp_ordered_with<std::byte, std::byte, true>
+    { static constexpr bool __value = true; };
+
+  template<typename _Tp, bool _SameSize>
+    struct __is_memcmp_ordered_with<_Tp, std::byte, _SameSize>
+    { static constexpr bool __value = false; };
+
+  template<typename _Up, bool _SameSize>
+    struct __is_memcmp_ordered_with<std::byte, _Up, _SameSize>
+    { static constexpr bool __value = false; };
+
+
+
+
+
+  template<typename _Tp>
+    struct __is_move_iterator
+    {
+      enum { __value = 0 };
+      typedef __false_type __type;
+    };
+
+
+
+  template<typename _Iterator>
+    constexpr
+    inline _Iterator
+    __miter_base(_Iterator __it)
+    { return __it; }
+
+
+}
+}
+# 35 "/usr/include/c++/14/ext/numeric_traits.h" 2 3
+# 1 "/usr/include/c++/14/ext/type_traits.h" 1 3
+# 32 "/usr/include/c++/14/ext/type_traits.h" 3
+       
+# 33 "/usr/include/c++/14/ext/type_traits.h" 3
+
+
+
+
+extern "C++" {
+
+namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+  template<bool, typename>
+    struct __enable_if
+    { };
+
+  template<typename _Tp>
+    struct __enable_if<true, _Tp>
+    { typedef _Tp __type; };
+
+
+
+  template<bool _Cond, typename _Iftrue, typename _Iffalse>
+    struct __conditional_type
+    { typedef _Iftrue __type; };
+
+  template<typename _Iftrue, typename _Iffalse>
+    struct __conditional_type<false, _Iftrue, _Iffalse>
+    { typedef _Iffalse __type; };
+
+
+
+  template<typename _Tp>
+    struct __add_unsigned
+    {
+    private:
+      typedef __enable_if<std::__is_integer<_Tp>::__value, _Tp> __if_type;
+
+    public:
+      typedef typename __if_type::__type __type;
+    };
+
+  template<>
+    struct __add_unsigned<char>
+    { typedef unsigned char __type; };
+
+  template<>
+    struct __add_unsigned<signed char>
+    { typedef unsigned char __type; };
+
+  template<>
+    struct __add_unsigned<short>
+    { typedef unsigned short __type; };
+
+  template<>
+    struct __add_unsigned<int>
+    { typedef unsigned int __type; };
+
+  template<>
+    struct __add_unsigned<long>
+    { typedef unsigned long __type; };
+
+  template<>
+    struct __add_unsigned<long long>
+    { typedef unsigned long long __type; };
+
+
+  template<>
+    struct __add_unsigned<bool>;
+
+  template<>
+    struct __add_unsigned<wchar_t>;
+
+
+
+  template<typename _Tp>
+    struct __remove_unsigned
+    {
+    private:
+      typedef __enable_if<std::__is_integer<_Tp>::__value, _Tp> __if_type;
+
+    public:
+      typedef typename __if_type::__type __type;
+    };
+
+  template<>
+    struct __remove_unsigned<char>
+    { typedef signed char __type; };
+
+  template<>
+    struct __remove_unsigned<unsigned char>
+    { typedef signed char __type; };
+
+  template<>
+    struct __remove_unsigned<unsigned short>
+    { typedef short __type; };
+
+  template<>
+    struct __remove_unsigned<unsigned int>
+    { typedef int __type; };
+
+  template<>
+    struct __remove_unsigned<unsigned long>
+    { typedef long __type; };
+
+  template<>
+    struct __remove_unsigned<unsigned long long>
+    { typedef long long __type; };
+
+
+  template<>
+    struct __remove_unsigned<bool>;
+
+  template<>
+    struct __remove_unsigned<wchar_t>;
+
+
+
+  template<typename _Type>
+    constexpr
+    inline bool
+    __is_null_pointer(_Type* __ptr)
+    { return __ptr == 0; }
+
+  template<typename _Type>
+    constexpr
+    inline bool
+    __is_null_pointer(_Type)
+    { return false; }
+
+
+  constexpr bool
+  __is_null_pointer(std::nullptr_t)
+  { return true; }
+
+
+
+
+  template<typename _Tp, bool = std::__is_integer<_Tp>::__value>
+    struct __promote
+    { typedef double __type; };
+
+
+
+
+  template<typename _Tp>
+    struct __promote<_Tp, false>
+    { };
+
+  template<>
+    struct __promote<long double>
+    { typedef long double __type; };
+
+  template<>
+    struct __promote<double>
+    { typedef double __type; };
+
+  template<>
+    struct __promote<float>
+    { typedef float __type; };
+
+
+  template<>
+    struct __promote<_Float16>
+    { typedef _Float16 __type; };
+
+
+
+  template<>
+    struct __promote<_Float32>
+    { typedef _Float32 __type; };
+
+
+
+  template<>
+    struct __promote<_Float64>
+    { typedef _Float64 __type; };
+
+
+
+  template<>
+    struct __promote<_Float128>
+    { typedef _Float128 __type; };
+
+
+
+  template<>
+    struct __promote<__gnu_cxx::__bfloat16_t>
+    { typedef __gnu_cxx::__bfloat16_t __type; };
+
+
+
+
+  template<typename... _Tp>
+    using __promoted_t = decltype((typename __promote<_Tp>::__type(0) + ...));
+
+
+
+  template<typename _Tp, typename _Up>
+    using __promote_2 = __promote<__promoted_t<_Tp, _Up>>;
+
+  template<typename _Tp, typename _Up, typename _Vp>
+    using __promote_3 = __promote<__promoted_t<_Tp, _Up, _Vp>>;
+
+  template<typename _Tp, typename _Up, typename _Vp, typename _Wp>
+    using __promote_4 = __promote<__promoted_t<_Tp, _Up, _Vp, _Wp>>;
+# 269 "/usr/include/c++/14/ext/type_traits.h" 3
+
+}
+}
+# 36 "/usr/include/c++/14/ext/numeric_traits.h" 2 3
+
+namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
+{
+
+# 50 "/usr/include/c++/14/ext/numeric_traits.h" 3
+  template<typename _Tp>
+    struct __is_integer_nonstrict
+    : public std::__is_integer<_Tp>
+    {
+      using std::__is_integer<_Tp>::__value;
+
+
+      enum { __width = __value ? sizeof(_Tp) * 8 : 0 };
+    };
+
+  template<typename _Value>
+    struct __numeric_traits_integer
+    {
+
+      static_assert(__is_integer_nonstrict<_Value>::__value,
+      "invalid specialization");
+
+
+
+
+      static const bool __is_signed = (_Value)(-1) < 0;
+      static const int __digits
+ = __is_integer_nonstrict<_Value>::__width - __is_signed;
+
+
+      static const _Value __max = __is_signed
+ ? (((((_Value)1 << (__digits - 1)) - 1) << 1) + 1)
+ : ~(_Value)0;
+      static const _Value __min = __is_signed ? -__max - 1 : (_Value)0;
+    };
+
+  template<typename _Value>
+    const _Value __numeric_traits_integer<_Value>::__min;
+
+  template<typename _Value>
+    const _Value __numeric_traits_integer<_Value>::__max;
+
+  template<typename _Value>
+    const bool __numeric_traits_integer<_Value>::__is_signed;
+
+  template<typename _Value>
+    const int __numeric_traits_integer<_Value>::__digits;
+# 137 "/usr/include/c++/14/ext/numeric_traits.h" 3
+  template<typename _Tp>
+    using __int_traits = __numeric_traits_integer<_Tp>;
+# 157 "/usr/include/c++/14/ext/numeric_traits.h" 3
+  template<typename _Value>
+    struct __numeric_traits_floating
+    {
+
+      static const int __max_digits10 = (2 + (std::__are_same<_Value, float>::__value ? 24 : std::__are_same<_Value, double>::__value ? 53 : 64) * 643L / 2136);
+
+
+      static const bool __is_signed = true;
+      static const int __digits10 = (std::__are_same<_Value, float>::__value ? 6 : std::__are_same<_Value, double>::__value ? 15 : 18);
+      static const int __max_exponent10 = (std::__are_same<_Value, float>::__value ? 38 : std::__are_same<_Value, double>::__value ? 308 : 4932);
+    };
+
+  template<typename _Value>
+    const int __numeric_traits_floating<_Value>::__max_digits10;
+
+  template<typename _Value>
+    const bool __numeric_traits_floating<_Value>::__is_signed;
+
+  template<typename _Value>
+    const int __numeric_traits_floating<_Value>::__digits10;
+
+  template<typename _Value>
+    const int __numeric_traits_floating<_Value>::__max_exponent10;
+
+
+
+
+
+
+  template<typename _Value>
+    struct __numeric_traits
+    : public __numeric_traits_integer<_Value>
+    { };
+
+  template<>
+    struct __numeric_traits<float>
+    : public __numeric_traits_floating<float>
+    { };
+
+  template<>
+    struct __numeric_traits<double>
+    : public __numeric_traits_floating<double>
+    { };
+
+  template<>
+    struct __numeric_traits<long double>
+    : public __numeric_traits_floating<long double>
+    { };
+# 238 "/usr/include/c++/14/ext/numeric_traits.h" 3
+
+}
+# 41 "/usr/include/c++/14/bits/parse_numbers.h" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+namespace __parse_int
+{
+  template<unsigned _Base, char _Dig>
+    struct _Digit;
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '0'> : integral_constant<unsigned, 0>
+    {
+      using __valid = true_type;
+    };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '1'> : integral_constant<unsigned, 1>
+    {
+      using __valid = true_type;
+    };
+
+  template<unsigned _Base, unsigned _Val>
+    struct _Digit_impl : integral_constant<unsigned, _Val>
+    {
+      static_assert(_Base > _Val, "invalid digit");
+      using __valid = true_type;
+    };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '2'> : _Digit_impl<_Base, 2>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '3'> : _Digit_impl<_Base, 3>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '4'> : _Digit_impl<_Base, 4>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '5'> : _Digit_impl<_Base, 5>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '6'> : _Digit_impl<_Base, 6>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '7'> : _Digit_impl<_Base, 7>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '8'> : _Digit_impl<_Base, 8>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '9'> : _Digit_impl<_Base, 9>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'a'> : _Digit_impl<_Base, 0xa>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'A'> : _Digit_impl<_Base, 0xa>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'b'> : _Digit_impl<_Base, 0xb>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'B'> : _Digit_impl<_Base, 0xb>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'c'> : _Digit_impl<_Base, 0xc>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'C'> : _Digit_impl<_Base, 0xc>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'd'> : _Digit_impl<_Base, 0xd>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'D'> : _Digit_impl<_Base, 0xd>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'e'> : _Digit_impl<_Base, 0xe>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'E'> : _Digit_impl<_Base, 0xe>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'f'> : _Digit_impl<_Base, 0xf>
+    { };
+
+  template<unsigned _Base>
+    struct _Digit<_Base, 'F'> : _Digit_impl<_Base, 0xf>
+    { };
+
+
+  template<unsigned _Base>
+    struct _Digit<_Base, '\''> : integral_constant<unsigned, 0>
+    {
+      using __valid = false_type;
+    };
+
+
+
+  template<unsigned long long _Val>
+    using __ull_constant = integral_constant<unsigned long long, _Val>;
+
+  template<unsigned _Base, char _Dig, char... _Digs>
+    struct _Power_help
+    {
+      using __next = typename _Power_help<_Base, _Digs...>::type;
+      using __valid_digit = typename _Digit<_Base, _Dig>::__valid;
+      using type
+ = __ull_constant<__next::value * (__valid_digit{} ? _Base : 1ULL)>;
+    };
+
+  template<unsigned _Base, char _Dig>
+    struct _Power_help<_Base, _Dig>
+    {
+      using __valid_digit = typename _Digit<_Base, _Dig>::__valid;
+      using type = __ull_constant<__valid_digit::value>;
+    };
+
+  template<unsigned _Base, char... _Digs>
+    struct _Power : _Power_help<_Base, _Digs...>::type
+    { };
+
+  template<unsigned _Base>
+    struct _Power<_Base> : __ull_constant<0>
+    { };
+
+
+
+  template<unsigned _Base, unsigned long long _Pow, char _Dig, char... _Digs>
+    struct _Number_help
+    {
+      using __digit = _Digit<_Base, _Dig>;
+      using __valid_digit = typename __digit::__valid;
+      using __next = _Number_help<_Base,
+      __valid_digit::value ? _Pow / _Base : _Pow,
+      _Digs...>;
+      using type = __ull_constant<_Pow * __digit::value + __next::type::value>;
+      static_assert((type::value / _Pow) == __digit::value,
+      "integer literal does not fit in unsigned long long");
+    };
+
+
+  template<unsigned _Base, unsigned long long _Pow, char _Dig, char..._Digs>
+    struct _Number_help<_Base, _Pow, '\'', _Dig, _Digs...>
+    : _Number_help<_Base, _Pow, _Dig, _Digs...>
+    { };
+
+
+  template<unsigned _Base, char _Dig>
+    struct _Number_help<_Base, 1ULL, _Dig>
+    {
+      using type = __ull_constant<_Digit<_Base, _Dig>::value>;
+    };
+
+  template<unsigned _Base, char... _Digs>
+    struct _Number
+    : _Number_help<_Base, _Power<_Base, _Digs...>::value, _Digs...>::type
+    { };
+
+  template<unsigned _Base>
+    struct _Number<_Base>
+    : __ull_constant<0>
+    { };
+
+
+
+  template<char... _Digs>
+    struct _Parse_int;
+
+  template<char... _Digs>
+    struct _Parse_int<'0', 'b', _Digs...>
+    : _Number<2U, _Digs...>::type
+    { };
+
+  template<char... _Digs>
+    struct _Parse_int<'0', 'B', _Digs...>
+    : _Number<2U, _Digs...>::type
+    { };
+
+  template<char... _Digs>
+    struct _Parse_int<'0', 'x', _Digs...>
+    : _Number<16U, _Digs...>::type
+    { };
+
+  template<char... _Digs>
+    struct _Parse_int<'0', 'X', _Digs...>
+    : _Number<16U, _Digs...>::type
+    { };
+
+  template<char... _Digs>
+    struct _Parse_int<'0', _Digs...>
+    : _Number<8U, _Digs...>::type
+    { };
+
+  template<char... _Digs>
+    struct _Parse_int
+    : _Number<10U, _Digs...>::type
+    { };
+
+}
+
+
+namespace __select_int
+{
+  template<unsigned long long _Val, typename... _Ints>
+    struct _Select_int_base;
+
+  template<unsigned long long _Val, typename _IntType, typename... _Ints>
+    struct _Select_int_base<_Val, _IntType, _Ints...>
+    : __conditional_t<(_Val <= __gnu_cxx::__int_traits<_IntType>::__max),
+        integral_constant<_IntType, (_IntType)_Val>,
+        _Select_int_base<_Val, _Ints...>>
+    { };
+
+  template<unsigned long long _Val>
+    struct _Select_int_base<_Val>
+    { };
+
+  template<char... _Digs>
+    using _Select_int = typename _Select_int_base<
+ __parse_int::_Parse_int<_Digs...>::value,
+ unsigned char,
+ unsigned short,
+ unsigned int,
+ unsigned long,
+ unsigned long long
+      >::type;
+
+}
+
+
+}
+# 42 "/usr/include/c++/14/bits/chrono.h" 2 3
 
 # 1 "/usr/include/c++/14/concepts" 1 3
 # 33 "/usr/include/c++/14/concepts" 3
@@ -4236,7 +7869,22 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 41 "/usr/include/c++/14/compare" 2 3
+# 44 "/usr/include/c++/14/bits/chrono.h" 2 3
+# 1 "/usr/include/c++/14/compare" 1 3
+# 33 "/usr/include/c++/14/compare" 3
+       
+# 34 "/usr/include/c++/14/compare" 3
+
+
+# 1 "/usr/include/c++/14/bits/version.h" 1 3
+# 47 "/usr/include/c++/14/bits/version.h" 3
+       
+# 48 "/usr/include/c++/14/bits/version.h" 3
+# 37 "/usr/include/c++/14/compare" 2 3
+
+
+
+
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -5389,1863 +9037,1611 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 66 "/usr/include/c++/14/bits/stl_pair.h" 2 3
+# 45 "/usr/include/c++/14/bits/chrono.h" 2 3
 
 
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-# 79 "/usr/include/c++/14/bits/stl_pair.h" 3
-  struct piecewise_construct_t { explicit piecewise_construct_t() = default; };
-
-
-  inline constexpr piecewise_construct_t piecewise_construct =
-    piecewise_construct_t();
-
-
-
-
-  template<typename _T1, typename _T2>
-    struct pair;
-
-  template<typename...>
-    class tuple;
-
-
-
-
-
-  template<typename _Tp, size_t _Nm>
-    struct array;
-
-  template<size_t...>
-    struct _Index_tuple;
-
-  template<size_t _Int, class _Tp1, class _Tp2>
-    constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&
-    get(pair<_Tp1, _Tp2>& __in) noexcept;
-
-  template<size_t _Int, class _Tp1, class _Tp2>
-    constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&&
-    get(pair<_Tp1, _Tp2>&& __in) noexcept;
-
-  template<size_t _Int, class _Tp1, class _Tp2>
-    constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&
-    get(const pair<_Tp1, _Tp2>& __in) noexcept;
-
-  template<size_t _Int, class _Tp1, class _Tp2>
-    constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&&
-    get(const pair<_Tp1, _Tp2>&& __in) noexcept;
-
-  template<size_t __i, typename... _Elements>
-    constexpr __tuple_element_t<__i, tuple<_Elements...>>&
-    get(tuple<_Elements...>& __t) noexcept;
-
-  template<size_t __i, typename... _Elements>
-    constexpr const __tuple_element_t<__i, tuple<_Elements...>>&
-    get(const tuple<_Elements...>& __t) noexcept;
-
-  template<size_t __i, typename... _Elements>
-    constexpr __tuple_element_t<__i, tuple<_Elements...>>&&
-    get(tuple<_Elements...>&& __t) noexcept;
-
-  template<size_t __i, typename... _Elements>
-    constexpr const __tuple_element_t<__i, tuple<_Elements...>>&&
-    get(const tuple<_Elements...>&& __t) noexcept;
-
-  template<size_t _Int, typename _Tp, size_t _Nm>
-    constexpr _Tp&
-    get(array<_Tp, _Nm>&) noexcept;
-
-  template<size_t _Int, typename _Tp, size_t _Nm>
-    constexpr _Tp&&
-    get(array<_Tp, _Nm>&&) noexcept;
-
-  template<size_t _Int, typename _Tp, size_t _Nm>
-    constexpr const _Tp&
-    get(const array<_Tp, _Nm>&) noexcept;
-
-  template<size_t _Int, typename _Tp, size_t _Nm>
-    constexpr const _Tp&&
-    get(const array<_Tp, _Nm>&&) noexcept;
-# 221 "/usr/include/c++/14/bits/stl_pair.h" 3
-  template<typename _Tp>
-    inline constexpr bool __is_tuple_v = false;
-
-  template<typename... _Ts>
-    inline constexpr bool __is_tuple_v<tuple<_Ts...>> = true;
-
-
-  template<typename _Tp>
-    inline constexpr bool __is_tuple_like_v = false;
-
-  template<typename... _Elements>
-    inline constexpr bool __is_tuple_like_v<tuple<_Elements...>> = true;
-
-  template<typename _T1, typename _T2>
-    inline constexpr bool __is_tuple_like_v<pair<_T1, _T2>> = true;
-
-  template<typename _Tp, size_t _Nm>
-    inline constexpr bool __is_tuple_like_v<array<_Tp, _Nm>> = true;
-
-
-
-  template<typename _Tp>
-    concept __tuple_like = __is_tuple_like_v<remove_cvref_t<_Tp>>;
-
-  template<typename _Tp>
-    concept __pair_like = __tuple_like<_Tp> && tuple_size_v<remove_cvref_t<_Tp>> == 2;
-
-  template<typename _Tp, typename _Tuple>
-    concept __eligible_tuple_like
-      = __detail::__different_from<_Tp, _Tuple> && __tuple_like<_Tp>
- && (tuple_size_v<remove_cvref_t<_Tp>> == tuple_size_v<_Tuple>)
- && !ranges::__detail::__is_subrange<remove_cvref_t<_Tp>>;
-
-  template<typename _Tp, typename _Pair>
-    concept __eligible_pair_like
-      = __detail::__different_from<_Tp, _Pair> && __pair_like<_Tp>
- && !ranges::__detail::__is_subrange<remove_cvref_t<_Tp>>;
-
-
-  template<typename _U1, typename _U2> class __pair_base
-  {
-
-
-
-
-
-
-
-  };
-# 283 "/usr/include/c++/14/bits/stl_pair.h" 3
-  template<typename _T1, typename _T2>
-    struct pair
-    : public __pair_base<_T1, _T2>
-    {
-      typedef _T1 first_type;
-      typedef _T2 second_type;
-
-      _T1 first;
-      _T2 second;
-
-
-      constexpr pair(const pair&) = default;
-      constexpr pair(pair&&) = default;
-
-      template<typename... _Args1, typename... _Args2>
- constexpr
- pair(piecewise_construct_t, tuple<_Args1...>, tuple<_Args2...>);
-
-
-      constexpr void
-      swap(pair& __p)
-      noexcept(__and_<__is_nothrow_swappable<_T1>,
-        __is_nothrow_swappable<_T2>>::value)
-      {
- using std::swap;
- swap(first, __p.first);
- swap(second, __p.second);
-      }
-# 319 "/usr/include/c++/14/bits/stl_pair.h" 3
-      constexpr void
-      swap(const pair& __p) const
-      noexcept(__and_v<__is_nothrow_swappable<const _T1>,
-         __is_nothrow_swappable<const _T2>>)
-      requires is_swappable_v<const _T1> && is_swappable_v<const _T2>
-      {
- using std::swap;
- swap(first, __p.first);
- swap(second, __p.second);
-      }
-
-
-    private:
-      template<typename... _Args1, size_t... _Indexes1,
-        typename... _Args2, size_t... _Indexes2>
- constexpr
- pair(tuple<_Args1...>&, tuple<_Args2...>&,
-      _Index_tuple<_Indexes1...>, _Index_tuple<_Indexes2...>);
-    public:
-
-
-
-
-
-      constexpr
-      explicit(__not_<__and_<__is_implicitly_default_constructible<_T1>,
-        __is_implicitly_default_constructible<_T2>>>())
-      pair()
-      requires is_default_constructible_v<_T1>
-        && is_default_constructible_v<_T2>
-      : first(), second()
-      { }
-
-    private:
-
-
-      template<typename _U1, typename _U2>
- static constexpr bool
- _S_constructible()
- {
-   if constexpr (is_constructible_v<_T1, _U1>)
-     return is_constructible_v<_T2, _U2>;
-   return false;
- }
-
-      template<typename _U1, typename _U2>
- static constexpr bool
- _S_nothrow_constructible()
- {
-   if constexpr (is_nothrow_constructible_v<_T1, _U1>)
-     return is_nothrow_constructible_v<_T2, _U2>;
-   return false;
- }
-
-      template<typename _U1, typename _U2>
- static constexpr bool
- _S_convertible()
- {
-   if constexpr (is_convertible_v<_U1, _T1>)
-     return is_convertible_v<_U2, _T2>;
-   return false;
- }
-
-
-      template<typename _U1, typename _U2>
- static constexpr bool
- _S_dangles()
- {
-
-   if constexpr (__reference_constructs_from_temporary(_T1, _U1&&))
-     return true;
-   else
-     return __reference_constructs_from_temporary(_T2, _U2&&);
-
-
-
- }
-
-
-      template<typename _UPair>
- static constexpr bool
- _S_constructible_from_pair_like()
- {
-   return _S_constructible<decltype(std::get<0>(std::declval<_UPair>())),
-      decltype(std::get<1>(std::declval<_UPair>()))>();
- }
-
-      template<typename _UPair>
- static constexpr bool
- _S_convertible_from_pair_like()
- {
-   return _S_convertible<decltype(std::get<0>(std::declval<_UPair>())),
-    decltype(std::get<1>(std::declval<_UPair>()))>();
- }
-
-      template<typename _UPair>
- static constexpr bool
- _S_dangles_from_pair_like()
- {
-   return _S_dangles<decltype(std::get<0>(std::declval<_UPair>())),
-       decltype(std::get<1>(std::declval<_UPair>()))>();
- }
-
-
-
-    public:
-
-
-      constexpr explicit(!_S_convertible<const _T1&, const _T2&>())
-      pair(const _T1& __x, const _T2& __y)
-      noexcept(_S_nothrow_constructible<const _T1&, const _T2&>())
-      requires (_S_constructible<const _T1&, const _T2&>())
-      : first(__x), second(__y)
-      { }
-
-
-
-      template<typename _U1 = _T1, typename _U2 = _T2>
-
-
-
- requires (_S_constructible<_U1, _U2>()) && (!_S_dangles<_U1, _U2>())
- constexpr explicit(!_S_convertible<_U1, _U2>())
- pair(_U1&& __x, _U2&& __y)
- noexcept(_S_nothrow_constructible<_U1, _U2>())
- : first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y))
- { }
-
-
-      template<typename _U1 = _T1, typename _U2 = _T2>
-
-
-
- requires (_S_constructible<_U1, _U2>()) && (_S_dangles<_U1, _U2>())
- constexpr explicit(!_S_convertible<_U1, _U2>())
- pair(_U1&&, _U2&&) = delete;
-
-
-      template<typename _U1, typename _U2>
- requires (_S_constructible<const _U1&, const _U2&>())
-   && (!_S_dangles<_U1, _U2>())
- constexpr explicit(!_S_convertible<const _U1&, const _U2&>())
- pair(const pair<_U1, _U2>& __p)
- noexcept(_S_nothrow_constructible<const _U1&, const _U2&>())
- : first(__p.first), second(__p.second)
- { }
-
-      template<typename _U1, typename _U2>
- requires (_S_constructible<const _U1&, const _U2&>())
-       && (_S_dangles<const _U1&, const _U2&>())
- constexpr explicit(!_S_convertible<const _U1&, const _U2&>())
- pair(const pair<_U1, _U2>&) = delete;
-
-
-      template<typename _U1, typename _U2>
- requires (_S_constructible<_U1, _U2>()) && (!_S_dangles<_U1, _U2>())
- constexpr explicit(!_S_convertible<_U1, _U2>())
- pair(pair<_U1, _U2>&& __p)
- noexcept(_S_nothrow_constructible<_U1, _U2>())
- : first(std::forward<_U1>(__p.first)),
-   second(std::forward<_U2>(__p.second))
- { }
-
-      template<typename _U1, typename _U2>
- requires (_S_constructible<_U1, _U2>()) && (_S_dangles<_U1, _U2>())
- constexpr explicit(!_S_convertible<_U1, _U2>())
- pair(pair<_U1, _U2>&&) = delete;
-
-
-
-      template<typename _U1, typename _U2>
- requires (_S_constructible<_U1&, _U2&>()) && (!_S_dangles<_U1&, _U2&>())
- constexpr explicit(!_S_convertible<_U1&, _U2&>())
- pair(pair<_U1, _U2>& __p)
- noexcept(_S_nothrow_constructible<_U1&, _U2&>())
- : first(__p.first), second(__p.second)
- { }
-
-      template<typename _U1, typename _U2>
- requires (_S_constructible<_U1&, _U2&>()) && (_S_dangles<_U1&, _U2&>())
- constexpr explicit(!_S_convertible<_U1&, _U2&>())
- pair(pair<_U1, _U2>&) = delete;
-
-
-      template<typename _U1, typename _U2>
- requires (_S_constructible<const _U1, const _U2>())
-   && (!_S_dangles<const _U1, const _U2>())
- constexpr explicit(!_S_convertible<const _U1, const _U2>())
- pair(const pair<_U1, _U2>&& __p)
- noexcept(_S_nothrow_constructible<const _U1, const _U2>())
- : first(std::forward<const _U1>(__p.first)),
-   second(std::forward<const _U2>(__p.second))
- { }
-
-      template<typename _U1, typename _U2>
- requires (_S_constructible<const _U1, const _U2>())
-   && (_S_dangles<const _U1, const _U2>())
- constexpr explicit(!_S_convertible<const _U1, const _U2>())
- pair(const pair<_U1, _U2>&&) = delete;
-
-
-
-      template<__eligible_pair_like<pair> _UPair>
- requires (_S_constructible_from_pair_like<_UPair>())
-   && (!_S_dangles_from_pair_like<_UPair>())
- constexpr explicit(!_S_convertible_from_pair_like<_UPair>())
- pair(_UPair&& __p)
- : first(std::get<0>(std::forward<_UPair>(__p))),
-   second(std::get<1>(std::forward<_UPair>(__p)))
- { }
-
-      template<__eligible_pair_like<pair> _UPair>
- requires (_S_constructible_from_pair_like<_UPair>())
-   && (_S_dangles_from_pair_like<_UPair>())
- constexpr explicit(!_S_convertible_from_pair_like<_UPair>())
- pair(_UPair&&) = delete;
-
-
-  private:
-
-      template<typename _U1, typename _U2>
- static constexpr bool
- _S_assignable()
- {
-   if constexpr (is_assignable_v<_T1&, _U1>)
-     return is_assignable_v<_T2&, _U2>;
-   return false;
- }
-
-      template<typename _U1, typename _U2>
- static constexpr bool
- _S_const_assignable()
- {
-   if constexpr (is_assignable_v<const _T1&, _U1>)
-     return is_assignable_v<const _T2&, _U2>;
-   return false;
- }
-
-      template<typename _U1, typename _U2>
- static constexpr bool
- _S_nothrow_assignable()
- {
-   if constexpr (is_nothrow_assignable_v<_T1&, _U1>)
-     return is_nothrow_assignable_v<_T2&, _U2>;
-   return false;
- }
-
-
-      template<typename _UPair>
- static constexpr bool
- _S_assignable_from_tuple_like()
- {
-   return _S_assignable<decltype(std::get<0>(std::declval<_UPair>())),
-          decltype(std::get<1>(std::declval<_UPair>()))>();
- }
-
-      template<typename _UPair>
- static constexpr bool
- _S_const_assignable_from_tuple_like()
- {
-   return _S_const_assignable<decltype(std::get<0>(std::declval<_UPair>())),
-         decltype(std::get<1>(std::declval<_UPair>()))>();
- }
-
-
-
-  public:
-
-      pair& operator=(const pair&) = delete;
-
-
-      constexpr pair&
-      operator=(const pair& __p)
-      noexcept(_S_nothrow_assignable<const _T1&, const _T2&>())
-      requires (_S_assignable<const _T1&, const _T2&>())
-      {
- first = __p.first;
- second = __p.second;
- return *this;
-      }
-
-
-      constexpr pair&
-      operator=(pair&& __p)
-      noexcept(_S_nothrow_assignable<_T1, _T2>())
-      requires (_S_assignable<_T1, _T2>())
-      {
- first = std::forward<first_type>(__p.first);
- second = std::forward<second_type>(__p.second);
- return *this;
-      }
-
-
-      template<typename _U1, typename _U2>
- constexpr pair&
- operator=(const pair<_U1, _U2>& __p)
- noexcept(_S_nothrow_assignable<const _U1&, const _U2&>())
- requires (_S_assignable<const _U1&, const _U2&>())
- {
-   first = __p.first;
-   second = __p.second;
-   return *this;
- }
-
-
-      template<typename _U1, typename _U2>
- constexpr pair&
- operator=(pair<_U1, _U2>&& __p)
- noexcept(_S_nothrow_assignable<_U1, _U2>())
- requires (_S_assignable<_U1, _U2>())
- {
-   first = std::forward<_U1>(__p.first);
-   second = std::forward<_U2>(__p.second);
-   return *this;
- }
-
-
-
-      constexpr const pair&
-      operator=(const pair& __p) const
-      requires (_S_const_assignable<const first_type&, const second_type&>())
-      {
- first = __p.first;
- second = __p.second;
- return *this;
-      }
-
-
-      constexpr const pair&
-      operator=(pair&& __p) const
-      requires (_S_const_assignable<first_type, second_type>())
-      {
- first = std::forward<first_type>(__p.first);
- second = std::forward<second_type>(__p.second);
- return *this;
-      }
-
-
-      template<typename _U1, typename _U2>
- constexpr const pair&
- operator=(const pair<_U1, _U2>& __p) const
- requires (_S_const_assignable<const _U1&, const _U2&>())
- {
-   first = __p.first;
-   second = __p.second;
-   return *this;
- }
-
-
-      template<typename _U1, typename _U2>
- constexpr const pair&
- operator=(pair<_U1, _U2>&& __p) const
- requires (_S_const_assignable<_U1, _U2>())
- {
-   first = std::forward<_U1>(__p.first);
-   second = std::forward<_U2>(__p.second);
-   return *this;
- }
-
-
-
-      template<__eligible_pair_like<pair> _UPair>
- requires (_S_assignable_from_tuple_like<_UPair>())
- constexpr pair&
- operator=(_UPair&& __p)
- {
-   first = std::get<0>(std::forward<_UPair>(__p));
-   second = std::get<1>(std::forward<_UPair>(__p));
-   return *this;
- }
-
-      template<__eligible_pair_like<pair> _UPair>
- requires (_S_const_assignable_from_tuple_like<_UPair>())
- constexpr const pair&
- operator=(_UPair&& __p) const
- {
-   first = std::get<0>(std::forward<_UPair>(__p));
-   second = std::get<1>(std::forward<_UPair>(__p));
-   return *this;
- }
-# 995 "/usr/include/c++/14/bits/stl_pair.h" 3
-    };
-
-
-
-
-  template<typename _T1, typename _T2> pair(_T1, _T2) -> pair<_T1, _T2>;
-
-
-
-  template<typename _T1, typename _T2>
-    inline constexpr bool
-    operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
-    { return __x.first == __y.first && __x.second == __y.second; }
-
-
-  template<typename _T1, typename _T2>
-    constexpr common_comparison_category_t<__detail::__synth3way_t<_T1>,
-        __detail::__synth3way_t<_T2>>
-    operator<=>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
-    {
-      if (auto __c = __detail::__synth3way(__x.first, __y.first); __c != 0)
- return __c;
-      return __detail::__synth3way(__x.second, __y.second);
-    }
-# 1064 "/usr/include/c++/14/bits/stl_pair.h" 3
-  template<typename _T1, typename _T2>
-    constexpr inline
-
-
-    typename enable_if<__and_<__is_swappable<_T1>,
-                              __is_swappable<_T2>>::value>::type
-
-
-
-    swap(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)
-    noexcept(noexcept(__x.swap(__y)))
-    { __x.swap(__y); }
-
-
-  template<typename _T1, typename _T2>
-    requires is_swappable_v<const _T1> && is_swappable_v<const _T2>
-    constexpr void
-    swap(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
-    noexcept(noexcept(__x.swap(__y)))
-    { __x.swap(__y); }
-
-
-
-  template<typename _T1, typename _T2>
-    typename enable_if<!__and_<__is_swappable<_T1>,
-          __is_swappable<_T2>>::value>::type
-    swap(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;
-# 1113 "/usr/include/c++/14/bits/stl_pair.h" 3
-  template<typename _T1, typename _T2>
-    constexpr pair<typename __decay_and_strip<_T1>::__type,
-                   typename __decay_and_strip<_T2>::__type>
-    make_pair(_T1&& __x, _T2&& __y)
-    {
-      typedef typename __decay_and_strip<_T1>::__type __ds_type1;
-      typedef typename __decay_and_strip<_T2>::__type __ds_type2;
-      typedef pair<__ds_type1, __ds_type2> __pair_type;
-      return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
-    }
-# 1136 "/usr/include/c++/14/bits/stl_pair.h" 3
-  template<typename _T1, typename _T2>
-    struct __is_tuple_like_impl<pair<_T1, _T2>> : true_type
-    { };
-
-
-
-  template<class _Tp1, class _Tp2>
-    struct tuple_size<pair<_Tp1, _Tp2>>
-    : public integral_constant<size_t, 2> { };
-
-
-  template<class _Tp1, class _Tp2>
-    struct tuple_element<0, pair<_Tp1, _Tp2>>
-    { typedef _Tp1 type; };
-
-
-  template<class _Tp1, class _Tp2>
-    struct tuple_element<1, pair<_Tp1, _Tp2>>
-    { typedef _Tp2 type; };
-
-
-
-  template<size_t __i, typename... _Types>
-    struct tuple_element<__i, tuple<_Types...>>;
-
-
-  template<typename _Tp1, typename _Tp2>
-    inline constexpr size_t tuple_size_v<pair<_Tp1, _Tp2>> = 2;
-
-  template<typename _Tp1, typename _Tp2>
-    inline constexpr size_t tuple_size_v<const pair<_Tp1, _Tp2>> = 2;
-
-  template<typename _Tp>
-    inline constexpr bool __is_pair = false;
-
-  template<typename _Tp, typename _Up>
-    inline constexpr bool __is_pair<pair<_Tp, _Up>> = true;
-
-
-
-  template<size_t _Int>
-    struct __pair_get;
-
-  template<>
-    struct __pair_get<0>
-    {
-      template<typename _Tp1, typename _Tp2>
- static constexpr _Tp1&
- __get(pair<_Tp1, _Tp2>& __pair) noexcept
- { return __pair.first; }
-
-      template<typename _Tp1, typename _Tp2>
- static constexpr _Tp1&&
- __move_get(pair<_Tp1, _Tp2>&& __pair) noexcept
- { return std::forward<_Tp1>(__pair.first); }
-
-      template<typename _Tp1, typename _Tp2>
- static constexpr const _Tp1&
- __const_get(const pair<_Tp1, _Tp2>& __pair) noexcept
- { return __pair.first; }
-
-      template<typename _Tp1, typename _Tp2>
- static constexpr const _Tp1&&
- __const_move_get(const pair<_Tp1, _Tp2>&& __pair) noexcept
- { return std::forward<const _Tp1>(__pair.first); }
-    };
-
-  template<>
-    struct __pair_get<1>
-    {
-      template<typename _Tp1, typename _Tp2>
- static constexpr _Tp2&
- __get(pair<_Tp1, _Tp2>& __pair) noexcept
- { return __pair.second; }
-
-      template<typename _Tp1, typename _Tp2>
- static constexpr _Tp2&&
- __move_get(pair<_Tp1, _Tp2>&& __pair) noexcept
- { return std::forward<_Tp2>(__pair.second); }
-
-      template<typename _Tp1, typename _Tp2>
- static constexpr const _Tp2&
- __const_get(const pair<_Tp1, _Tp2>& __pair) noexcept
- { return __pair.second; }
-
-      template<typename _Tp1, typename _Tp2>
- static constexpr const _Tp2&&
- __const_move_get(const pair<_Tp1, _Tp2>&& __pair) noexcept
- { return std::forward<const _Tp2>(__pair.second); }
-    };
-
-
-
-
-
-
-  template<size_t _Int, class _Tp1, class _Tp2>
-    constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&
-    get(pair<_Tp1, _Tp2>& __in) noexcept
-    { return __pair_get<_Int>::__get(__in); }
-
-  template<size_t _Int, class _Tp1, class _Tp2>
-    constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&&
-    get(pair<_Tp1, _Tp2>&& __in) noexcept
-    { return __pair_get<_Int>::__move_get(std::move(__in)); }
-
-  template<size_t _Int, class _Tp1, class _Tp2>
-    constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&
-    get(const pair<_Tp1, _Tp2>& __in) noexcept
-    { return __pair_get<_Int>::__const_get(__in); }
-
-  template<size_t _Int, class _Tp1, class _Tp2>
-    constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&&
-    get(const pair<_Tp1, _Tp2>&& __in) noexcept
-    { return __pair_get<_Int>::__const_move_get(std::move(__in)); }
-
-
-
-  template <typename _Tp, typename _Up>
-    constexpr _Tp&
-    get(pair<_Tp, _Up>& __p) noexcept
-    { return __p.first; }
-
-  template <typename _Tp, typename _Up>
-    constexpr const _Tp&
-    get(const pair<_Tp, _Up>& __p) noexcept
-    { return __p.first; }
-
-  template <typename _Tp, typename _Up>
-    constexpr _Tp&&
-    get(pair<_Tp, _Up>&& __p) noexcept
-    { return std::move(__p.first); }
-
-  template <typename _Tp, typename _Up>
-    constexpr const _Tp&&
-    get(const pair<_Tp, _Up>&& __p) noexcept
-    { return std::move(__p.first); }
-
-  template <typename _Tp, typename _Up>
-    constexpr _Tp&
-    get(pair<_Up, _Tp>& __p) noexcept
-    { return __p.second; }
-
-  template <typename _Tp, typename _Up>
-    constexpr const _Tp&
-    get(const pair<_Up, _Tp>& __p) noexcept
-    { return __p.second; }
-
-  template <typename _Tp, typename _Up>
-    constexpr _Tp&&
-    get(pair<_Up, _Tp>&& __p) noexcept
-    { return std::move(__p.second); }
-
-  template <typename _Tp, typename _Up>
-    constexpr const _Tp&&
-    get(const pair<_Up, _Tp>&& __p) noexcept
-    { return std::move(__p.second); }
-
-
-
-
-  template<typename _T1, typename _T2, typename _U1, typename _U2,
-    template<typename> class _TQual, template<typename> class _UQual>
-    requires requires { typename pair<common_reference_t<_TQual<_T1>, _UQual<_U1>>,
-          common_reference_t<_TQual<_T2>, _UQual<_U2>>>; }
-  struct basic_common_reference<pair<_T1, _T2>, pair<_U1, _U2>, _TQual, _UQual>
-  {
-    using type = pair<common_reference_t<_TQual<_T1>, _UQual<_U1>>,
-        common_reference_t<_TQual<_T2>, _UQual<_U2>>>;
-  };
-
-  template<typename _T1, typename _T2, typename _U1, typename _U2>
-    requires requires { typename pair<common_type_t<_T1, _U1>, common_type_t<_T2, _U2>>; }
-  struct common_type<pair<_T1, _T2>, pair<_U1, _U2>>
-  { using type = pair<common_type_t<_T1, _U1>, common_type_t<_T2, _U2>>; };
-
-
-
-
-
-
-}
-# 70 "/usr/include/c++/14/utility" 2 3
-
-
-
-# 1 "/usr/include/c++/14/initializer_list" 1 3
-# 33 "/usr/include/c++/14/initializer_list" 3
-       
-# 34 "/usr/include/c++/14/initializer_list" 3
-
-
-
-
-
-
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-  template<class _E>
-    class initializer_list
-    {
-    public:
-      typedef _E value_type;
-      typedef const _E& reference;
-      typedef const _E& const_reference;
-      typedef size_t size_type;
-      typedef const _E* iterator;
-      typedef const _E* const_iterator;
-
-    private:
-      iterator _M_array;
-      size_type _M_len;
-
-
-      constexpr initializer_list(const_iterator __a, size_type __l)
-      : _M_array(__a), _M_len(__l) { }
-
-    public:
-      constexpr initializer_list() noexcept
-      : _M_array(0), _M_len(0) { }
-
-
-      constexpr size_type
-      size() const noexcept { return _M_len; }
-
-
-      constexpr const_iterator
-      begin() const noexcept { return _M_array; }
-
-
-      constexpr const_iterator
-      end() const noexcept { return begin() + size(); }
-    };
-
-
-
-
-
-
-
-  template<class _Tp>
-    constexpr const _Tp*
-    begin(initializer_list<_Tp> __ils) noexcept
-    { return __ils.begin(); }
-
-
-
-
-
-
-
-  template<class _Tp>
-    constexpr const _Tp*
-    end(initializer_list<_Tp> __ils) noexcept
-    { return __ils.end(); }
-}
-# 74 "/usr/include/c++/14/utility" 2 3
-
-
-
-
-
-# 1 "/usr/include/c++/14/ext/numeric_traits.h" 1 3
-# 32 "/usr/include/c++/14/ext/numeric_traits.h" 3
-       
-# 33 "/usr/include/c++/14/ext/numeric_traits.h" 3
-
-# 1 "/usr/include/c++/14/bits/cpp_type_traits.h" 1 3
-# 35 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
-       
-# 36 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
-# 67 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
-extern "C++" {
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-
-  struct __true_type { };
-  struct __false_type { };
-
-  template<bool>
-    struct __truth_type
-    { typedef __false_type __type; };
-
-  template<>
-    struct __truth_type<true>
-    { typedef __true_type __type; };
-
-
-
-  template<class _Sp, class _Tp>
-    struct __traitor
-    {
-      enum { __value = bool(_Sp::__value) || bool(_Tp::__value) };
-      typedef typename __truth_type<__value>::__type __type;
-    };
-
-
-  template<typename, typename>
-    struct __are_same
-    {
-      enum { __value = 0 };
-      typedef __false_type __type;
-    };
-
-  template<typename _Tp>
-    struct __are_same<_Tp, _Tp>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-  template<typename _Tp>
-    struct __is_void
-    {
-      enum { __value = 0 };
-      typedef __false_type __type;
-    };
-
-  template<>
-    struct __is_void<void>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-
-  template<typename _Tp>
-    struct __is_integer
-    {
-      enum { __value = 0 };
-      typedef __false_type __type;
-    };
-
-
-
-
-
-  template<>
-    struct __is_integer<bool>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<char>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<signed char>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<unsigned char>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-  template<>
-    struct __is_integer<wchar_t>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-  template<>
-    struct __is_integer<char8_t>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-  template<>
-    struct __is_integer<char16_t>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<char32_t>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-  template<>
-    struct __is_integer<short>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<unsigned short>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<int>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<unsigned int>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<long>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<unsigned long>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<long long>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_integer<unsigned long long>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-# 272 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
-__extension__ template<> struct __is_integer<__int128> { enum { __value = 1 }; typedef __true_type __type; }; __extension__ template<> struct __is_integer<unsigned __int128> { enum { __value = 1 }; typedef __true_type __type; };
-# 289 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
-  template<typename _Tp>
-    struct __is_floating
-    {
-      enum { __value = 0 };
-      typedef __false_type __type;
-    };
-
-
-  template<>
-    struct __is_floating<float>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_floating<double>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_floating<long double>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-  template<>
-    struct __is_floating<_Float16>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-  template<>
-    struct __is_floating<_Float32>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-  template<>
-    struct __is_floating<_Float64>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-  template<>
-    struct __is_floating<_Float128>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-  template<>
-    struct __is_floating<__gnu_cxx::__bfloat16_t>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-
-
-  template<typename _Tp>
-    struct __is_pointer
-    {
-      enum { __value = 0 };
-      typedef __false_type __type;
-    };
-
-  template<typename _Tp>
-    struct __is_pointer<_Tp*>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-
-  template<typename _Tp>
-    struct __is_arithmetic
-    : public __traitor<__is_integer<_Tp>, __is_floating<_Tp> >
-    { };
-
-
-
-
-  template<typename _Tp>
-    struct __is_scalar
-    : public __traitor<__is_arithmetic<_Tp>, __is_pointer<_Tp> >
-    { };
-
-
-
-
-  template<typename _Tp>
-    struct __is_char
-    {
-      enum { __value = 0 };
-      typedef __false_type __type;
-    };
-
-  template<>
-    struct __is_char<char>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-  template<>
-    struct __is_char<wchar_t>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-  template<typename _Tp>
-    struct __is_byte
-    {
-      enum { __value = 0 };
-      typedef __false_type __type;
-    };
-
-  template<>
-    struct __is_byte<char>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_byte<signed char>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-  template<>
-    struct __is_byte<unsigned char>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-  enum class byte : unsigned char;
-
-  template<>
-    struct __is_byte<byte>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-
-  template<>
-    struct __is_byte<char8_t>
-    {
-      enum { __value = 1 };
-      typedef __true_type __type;
-    };
-
-
-  template<typename> struct iterator_traits;
-
-
-  template<typename _Tp>
-    struct __is_nonvolatile_trivially_copyable
-    {
-      enum { __value = __is_trivially_copyable(_Tp) };
-    };
-
-
-
-
-  template<typename _Tp>
-    struct __is_nonvolatile_trivially_copyable<volatile _Tp>
-    {
-      enum { __value = 0 };
-    };
-
-
-  template<typename _OutputIter, typename _InputIter>
-    struct __memcpyable
-    {
-      enum { __value = 0 };
-    };
-
-  template<typename _Tp>
-    struct __memcpyable<_Tp*, _Tp*>
-    : __is_nonvolatile_trivially_copyable<_Tp>
-    { };
-
-  template<typename _Tp>
-    struct __memcpyable<_Tp*, const _Tp*>
-    : __is_nonvolatile_trivially_copyable<_Tp>
-    { };
-
-
-
-
-
-
-  template<typename _Iter1, typename _Iter2>
-    struct __memcmpable
-    {
-      enum { __value = 0 };
-    };
-
-
-  template<typename _Tp>
-    struct __memcmpable<_Tp*, _Tp*>
-    : __is_nonvolatile_trivially_copyable<_Tp>
-    { };
-
-  template<typename _Tp>
-    struct __memcmpable<const _Tp*, _Tp*>
-    : __is_nonvolatile_trivially_copyable<_Tp>
-    { };
-
-  template<typename _Tp>
-    struct __memcmpable<_Tp*, const _Tp*>
-    : __is_nonvolatile_trivially_copyable<_Tp>
-    { };
-
-
-
-
-
-
-
-  template<typename _Tp, bool _TreatAsBytes =
-
-
-
- __is_byte<_Tp>::__value
-
-    >
-    struct __is_memcmp_ordered
-    {
-      static const bool __value = _Tp(-1) > _Tp(1);
-    };
-
-  template<typename _Tp>
-    struct __is_memcmp_ordered<_Tp, false>
-    {
-      static const bool __value = false;
-    };
-
-
-  template<typename _Tp, typename _Up, bool = sizeof(_Tp) == sizeof(_Up)>
-    struct __is_memcmp_ordered_with
-    {
-      static const bool __value = __is_memcmp_ordered<_Tp>::__value
- && __is_memcmp_ordered<_Up>::__value;
-    };
-
-  template<typename _Tp, typename _Up>
-    struct __is_memcmp_ordered_with<_Tp, _Up, false>
-    {
-      static const bool __value = false;
-    };
-# 579 "/usr/include/c++/14/bits/cpp_type_traits.h" 3
-  template<>
-    struct __is_memcmp_ordered_with<std::byte, std::byte, true>
-    { static constexpr bool __value = true; };
-
-  template<typename _Tp, bool _SameSize>
-    struct __is_memcmp_ordered_with<_Tp, std::byte, _SameSize>
-    { static constexpr bool __value = false; };
-
-  template<typename _Up, bool _SameSize>
-    struct __is_memcmp_ordered_with<std::byte, _Up, _SameSize>
-    { static constexpr bool __value = false; };
-
-
-
-
-
-  template<typename _Tp>
-    struct __is_move_iterator
-    {
-      enum { __value = 0 };
-      typedef __false_type __type;
-    };
-
-
-
-  template<typename _Iterator>
-    constexpr
-    inline _Iterator
-    __miter_base(_Iterator __it)
-    { return __it; }
-
-
-}
-}
-# 35 "/usr/include/c++/14/ext/numeric_traits.h" 2 3
-# 1 "/usr/include/c++/14/ext/type_traits.h" 1 3
-# 32 "/usr/include/c++/14/ext/type_traits.h" 3
-       
-# 33 "/usr/include/c++/14/ext/type_traits.h" 3
-
-
-
-
-extern "C++" {
-
-namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
-{
-
-
-
-  template<bool, typename>
-    struct __enable_if
-    { };
-
-  template<typename _Tp>
-    struct __enable_if<true, _Tp>
-    { typedef _Tp __type; };
-
-
-
-  template<bool _Cond, typename _Iftrue, typename _Iffalse>
-    struct __conditional_type
-    { typedef _Iftrue __type; };
-
-  template<typename _Iftrue, typename _Iffalse>
-    struct __conditional_type<false, _Iftrue, _Iffalse>
-    { typedef _Iffalse __type; };
-
-
-
-  template<typename _Tp>
-    struct __add_unsigned
-    {
-    private:
-      typedef __enable_if<std::__is_integer<_Tp>::__value, _Tp> __if_type;
-
-    public:
-      typedef typename __if_type::__type __type;
-    };
-
-  template<>
-    struct __add_unsigned<char>
-    { typedef unsigned char __type; };
-
-  template<>
-    struct __add_unsigned<signed char>
-    { typedef unsigned char __type; };
-
-  template<>
-    struct __add_unsigned<short>
-    { typedef unsigned short __type; };
-
-  template<>
-    struct __add_unsigned<int>
-    { typedef unsigned int __type; };
-
-  template<>
-    struct __add_unsigned<long>
-    { typedef unsigned long __type; };
-
-  template<>
-    struct __add_unsigned<long long>
-    { typedef unsigned long long __type; };
-
-
-  template<>
-    struct __add_unsigned<bool>;
-
-  template<>
-    struct __add_unsigned<wchar_t>;
-
-
-
-  template<typename _Tp>
-    struct __remove_unsigned
-    {
-    private:
-      typedef __enable_if<std::__is_integer<_Tp>::__value, _Tp> __if_type;
-
-    public:
-      typedef typename __if_type::__type __type;
-    };
-
-  template<>
-    struct __remove_unsigned<char>
-    { typedef signed char __type; };
-
-  template<>
-    struct __remove_unsigned<unsigned char>
-    { typedef signed char __type; };
-
-  template<>
-    struct __remove_unsigned<unsigned short>
-    { typedef short __type; };
-
-  template<>
-    struct __remove_unsigned<unsigned int>
-    { typedef int __type; };
-
-  template<>
-    struct __remove_unsigned<unsigned long>
-    { typedef long __type; };
-
-  template<>
-    struct __remove_unsigned<unsigned long long>
-    { typedef long long __type; };
-
-
-  template<>
-    struct __remove_unsigned<bool>;
-
-  template<>
-    struct __remove_unsigned<wchar_t>;
-
-
-
-  template<typename _Type>
-    constexpr
-    inline bool
-    __is_null_pointer(_Type* __ptr)
-    { return __ptr == 0; }
-
-  template<typename _Type>
-    constexpr
-    inline bool
-    __is_null_pointer(_Type)
-    { return false; }
-
-
-  constexpr bool
-  __is_null_pointer(std::nullptr_t)
-  { return true; }
-
-
-
-
-  template<typename _Tp, bool = std::__is_integer<_Tp>::__value>
-    struct __promote
-    { typedef double __type; };
-
-
-
-
-  template<typename _Tp>
-    struct __promote<_Tp, false>
-    { };
-
-  template<>
-    struct __promote<long double>
-    { typedef long double __type; };
-
-  template<>
-    struct __promote<double>
-    { typedef double __type; };
-
-  template<>
-    struct __promote<float>
-    { typedef float __type; };
-
-
-  template<>
-    struct __promote<_Float16>
-    { typedef _Float16 __type; };
-
-
-
-  template<>
-    struct __promote<_Float32>
-    { typedef _Float32 __type; };
-
-
-
-  template<>
-    struct __promote<_Float64>
-    { typedef _Float64 __type; };
-
-
-
-  template<>
-    struct __promote<_Float128>
-    { typedef _Float128 __type; };
-
-
-
-  template<>
-    struct __promote<__gnu_cxx::__bfloat16_t>
-    { typedef __gnu_cxx::__bfloat16_t __type; };
-
-
-
-
-  template<typename... _Tp>
-    using __promoted_t = decltype((typename __promote<_Tp>::__type(0) + ...));
-
-
-
-  template<typename _Tp, typename _Up>
-    using __promote_2 = __promote<__promoted_t<_Tp, _Up>>;
-
-  template<typename _Tp, typename _Up, typename _Vp>
-    using __promote_3 = __promote<__promoted_t<_Tp, _Up, _Vp>>;
-
-  template<typename _Tp, typename _Up, typename _Vp, typename _Wp>
-    using __promote_4 = __promote<__promoted_t<_Tp, _Up, _Vp, _Wp>>;
-# 269 "/usr/include/c++/14/ext/type_traits.h" 3
-
-}
-}
-# 36 "/usr/include/c++/14/ext/numeric_traits.h" 2 3
-
-namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
-{
-
-# 50 "/usr/include/c++/14/ext/numeric_traits.h" 3
-  template<typename _Tp>
-    struct __is_integer_nonstrict
-    : public std::__is_integer<_Tp>
-    {
-      using std::__is_integer<_Tp>::__value;
-
-
-      enum { __width = __value ? sizeof(_Tp) * 8 : 0 };
-    };
-
-  template<typename _Value>
-    struct __numeric_traits_integer
-    {
-
-      static_assert(__is_integer_nonstrict<_Value>::__value,
-      "invalid specialization");
-
-
-
-
-      static const bool __is_signed = (_Value)(-1) < 0;
-      static const int __digits
- = __is_integer_nonstrict<_Value>::__width - __is_signed;
-
-
-      static const _Value __max = __is_signed
- ? (((((_Value)1 << (__digits - 1)) - 1) << 1) + 1)
- : ~(_Value)0;
-      static const _Value __min = __is_signed ? -__max - 1 : (_Value)0;
-    };
-
-  template<typename _Value>
-    const _Value __numeric_traits_integer<_Value>::__min;
-
-  template<typename _Value>
-    const _Value __numeric_traits_integer<_Value>::__max;
-
-  template<typename _Value>
-    const bool __numeric_traits_integer<_Value>::__is_signed;
-
-  template<typename _Value>
-    const int __numeric_traits_integer<_Value>::__digits;
-# 137 "/usr/include/c++/14/ext/numeric_traits.h" 3
-  template<typename _Tp>
-    using __int_traits = __numeric_traits_integer<_Tp>;
-# 157 "/usr/include/c++/14/ext/numeric_traits.h" 3
-  template<typename _Value>
-    struct __numeric_traits_floating
-    {
-
-      static const int __max_digits10 = (2 + (std::__are_same<_Value, float>::__value ? 24 : std::__are_same<_Value, double>::__value ? 53 : 64) * 643L / 2136);
-
-
-      static const bool __is_signed = true;
-      static const int __digits10 = (std::__are_same<_Value, float>::__value ? 6 : std::__are_same<_Value, double>::__value ? 15 : 18);
-      static const int __max_exponent10 = (std::__are_same<_Value, float>::__value ? 38 : std::__are_same<_Value, double>::__value ? 308 : 4932);
-    };
-
-  template<typename _Value>
-    const int __numeric_traits_floating<_Value>::__max_digits10;
-
-  template<typename _Value>
-    const bool __numeric_traits_floating<_Value>::__is_signed;
-
-  template<typename _Value>
-    const int __numeric_traits_floating<_Value>::__digits10;
-
-  template<typename _Value>
-    const int __numeric_traits_floating<_Value>::__max_exponent10;
-
-
-
-
-
-
-  template<typename _Value>
-    struct __numeric_traits
-    : public __numeric_traits_integer<_Value>
-    { };
-
-  template<>
-    struct __numeric_traits<float>
-    : public __numeric_traits_floating<float>
-    { };
-
-  template<>
-    struct __numeric_traits<double>
-    : public __numeric_traits_floating<double>
-    { };
-
-  template<>
-    struct __numeric_traits<long double>
-    : public __numeric_traits_floating<long double>
-    { };
-# 238 "/usr/include/c++/14/ext/numeric_traits.h" 3
-
-}
-# 80 "/usr/include/c++/14/utility" 2 3
-# 96 "/usr/include/c++/14/utility" 3
 # 1 "/usr/include/c++/14/bits/version.h" 1 3
 # 47 "/usr/include/c++/14/bits/version.h" 3
        
 # 48 "/usr/include/c++/14/bits/version.h" 3
-# 97 "/usr/include/c++/14/utility" 2 3
+# 48 "/usr/include/c++/14/bits/chrono.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
 
 
+  namespace filesystem { struct __file_clock; };
 
-  template <typename _Tp, typename _Up = _Tp>
-    constexpr
-    inline _Tp
-    exchange(_Tp& __obj, _Up&& __new_val)
-    noexcept(__and_<is_nothrow_move_constructible<_Tp>,
-      is_nothrow_assignable<_Tp&, _Up>>::value)
-    { return std::__exchange(__obj, std::forward<_Up>(__new_val)); }
+
+  namespace chrono
+  {
 
 
 
-  template<typename _Tp>
-    [[nodiscard]]
-    constexpr add_const_t<_Tp>&
-    as_const(_Tp& __t) noexcept
-    { return __t; }
 
-  template<typename _Tp>
-    void as_const(const _Tp&&) = delete;
+    template<typename _Rep, typename _Period = ratio<1>>
+      class duration;
 
 
+    template<typename _Clock, typename _Dur = typename _Clock::duration>
+      class time_point;
 
-  template<typename _Tp, typename _Up>
-    constexpr bool
-    cmp_equal(_Tp __t, _Up __u) noexcept
+  }
+# 79 "/usr/include/c++/14/bits/chrono.h" 3
+  template<typename _CT, typename _Period1, typename _Period2, typename = void>
+    struct __duration_common_type
+    { };
+
+  template<typename _CT, typename _Period1, typename _Period2>
+    struct __duration_common_type<_CT, _Period1, _Period2,
+      __void_t<typename _CT::type>>
     {
-      static_assert(__is_standard_integer<_Tp>::value);
-      static_assert(__is_standard_integer<_Up>::value);
+    private:
+      using __gcd_num = __static_gcd<_Period1::num, _Period2::num>;
+      using __gcd_den = __static_gcd<_Period1::den, _Period2::den>;
+      using __cr = typename _CT::type;
+      using __r = ratio<__gcd_num::value,
+   (_Period1::den / __gcd_den::value) * _Period2::den>;
 
-      if constexpr (is_signed_v<_Tp> == is_signed_v<_Up>)
- return __t == __u;
-      else if constexpr (is_signed_v<_Tp>)
- return __t >= 0 && make_unsigned_t<_Tp>(__t) == __u;
-      else
- return __u >= 0 && __t == make_unsigned_t<_Up>(__u);
-    }
+    public:
+      using type = chrono::duration<__cr, typename __r::type>;
+    };
 
-  template<typename _Tp, typename _Up>
-    constexpr bool
-    cmp_not_equal(_Tp __t, _Up __u) noexcept
-    { return !std::cmp_equal(__t, __u); }
 
-  template<typename _Tp, typename _Up>
-    constexpr bool
-    cmp_less(_Tp __t, _Up __u) noexcept
+
+
+
+
+
+  template<typename _Rep1, typename _Period1, typename _Rep2, typename _Period2>
+    struct common_type<chrono::duration<_Rep1, _Period1>,
+         chrono::duration<_Rep2, _Period2>>
+    : __duration_common_type<common_type<_Rep1, _Rep2>,
+        typename _Period1::type,
+        typename _Period2::type>
+    { };
+
+
+  template<typename _Rep, typename _Period>
+    struct common_type<chrono::duration<_Rep, _Period>,
+         chrono::duration<_Rep, _Period>>
     {
-      static_assert(__is_standard_integer<_Tp>::value);
-      static_assert(__is_standard_integer<_Up>::value);
+      using type = chrono::duration<typename common_type<_Rep>::type,
+        typename _Period::type>;
+    };
 
-      if constexpr (is_signed_v<_Tp> == is_signed_v<_Up>)
- return __t < __u;
-      else if constexpr (is_signed_v<_Tp>)
- return __t < 0 || make_unsigned_t<_Tp>(__t) < __u;
-      else
- return __u >= 0 && __t < make_unsigned_t<_Up>(__u);
-    }
 
-  template<typename _Tp, typename _Up>
-    constexpr bool
-    cmp_greater(_Tp __t, _Up __u) noexcept
-    { return std::cmp_less(__u, __t); }
-
-  template<typename _Tp, typename _Up>
-    constexpr bool
-    cmp_less_equal(_Tp __t, _Up __u) noexcept
-    { return !std::cmp_less(__u, __t); }
-
-  template<typename _Tp, typename _Up>
-    constexpr bool
-    cmp_greater_equal(_Tp __t, _Up __u) noexcept
-    { return !std::cmp_less(__t, __u); }
-
-  template<typename _Res, typename _Tp>
-    constexpr bool
-    in_range(_Tp __t) noexcept
+  template<typename _Rep, typename _Period>
+    struct common_type<chrono::duration<_Rep, _Period>>
     {
-      static_assert(__is_standard_integer<_Res>::value);
-      static_assert(__is_standard_integer<_Tp>::value);
-      using __gnu_cxx::__int_traits;
-
-      if constexpr (is_signed_v<_Tp> == is_signed_v<_Res>)
- return __int_traits<_Res>::__min <= __t
-   && __t <= __int_traits<_Res>::__max;
-      else if constexpr (is_signed_v<_Tp>)
- return __t >= 0
-   && make_unsigned_t<_Tp>(__t) <= __int_traits<_Res>::__max;
-      else
- return __t <= make_unsigned_t<_Res>(__int_traits<_Res>::__max);
-    }
+      using type = chrono::duration<typename common_type<_Rep>::type,
+        typename _Period::type>;
+    };
 
 
 
 
-  template<typename _Tp>
-    [[nodiscard]]
-    constexpr underlying_type_t<_Tp>
-    to_underlying(_Tp __value) noexcept
-    { return static_cast<underlying_type_t<_Tp>>(__value); }
-# 216 "/usr/include/c++/14/utility" 3
-  [[noreturn,__gnu__::__always_inline__]]
-  inline void
-  unreachable()
+
+
+  template<typename _CT, typename _Clock, typename = void>
+    struct __timepoint_common_type
+    { };
+
+  template<typename _CT, typename _Clock>
+    struct __timepoint_common_type<_CT, _Clock, __void_t<typename _CT::type>>
+    {
+      using type = chrono::time_point<_Clock, typename _CT::type>;
+    };
+
+
+
+
+
+
+
+  template<typename _Clock, typename _Duration1, typename _Duration2>
+    struct common_type<chrono::time_point<_Clock, _Duration1>,
+         chrono::time_point<_Clock, _Duration2>>
+    : __timepoint_common_type<common_type<_Duration1, _Duration2>, _Clock>
+    { };
+
+
+  template<typename _Clock, typename _Duration>
+    struct common_type<chrono::time_point<_Clock, _Duration>,
+         chrono::time_point<_Clock, _Duration>>
+    { using type = chrono::time_point<_Clock, _Duration>; };
+
+
+  template<typename _Clock, typename _Duration>
+    struct common_type<chrono::time_point<_Clock, _Duration>>
+    { using type = chrono::time_point<_Clock, _Duration>; };
+
+
+
+
+  namespace chrono
   {
 
 
 
 
 
-    __builtin_unreachable();
 
+    template<typename _ToDur, typename _CF, typename _CR,
+      bool _NumIsOne = false, bool _DenIsOne = false>
+      struct __duration_cast_impl
+      {
+ template<typename _Rep, typename _Period>
+   static constexpr _ToDur
+   __cast(const duration<_Rep, _Period>& __d)
+   {
+     typedef typename _ToDur::rep __to_rep;
+     return _ToDur(static_cast<__to_rep>(static_cast<_CR>(__d.count())
+       * static_cast<_CR>(_CF::num)
+       / static_cast<_CR>(_CF::den)));
+   }
+      };
+
+    template<typename _ToDur, typename _CF, typename _CR>
+      struct __duration_cast_impl<_ToDur, _CF, _CR, true, true>
+      {
+ template<typename _Rep, typename _Period>
+   static constexpr _ToDur
+   __cast(const duration<_Rep, _Period>& __d)
+   {
+     typedef typename _ToDur::rep __to_rep;
+     return _ToDur(static_cast<__to_rep>(__d.count()));
+   }
+      };
+
+    template<typename _ToDur, typename _CF, typename _CR>
+      struct __duration_cast_impl<_ToDur, _CF, _CR, true, false>
+      {
+ template<typename _Rep, typename _Period>
+   static constexpr _ToDur
+   __cast(const duration<_Rep, _Period>& __d)
+   {
+     typedef typename _ToDur::rep __to_rep;
+     return _ToDur(static_cast<__to_rep>(
+       static_cast<_CR>(__d.count()) / static_cast<_CR>(_CF::den)));
+   }
+      };
+
+    template<typename _ToDur, typename _CF, typename _CR>
+      struct __duration_cast_impl<_ToDur, _CF, _CR, false, true>
+      {
+ template<typename _Rep, typename _Period>
+   static constexpr _ToDur
+   __cast(const duration<_Rep, _Period>& __d)
+   {
+     typedef typename _ToDur::rep __to_rep;
+     return _ToDur(static_cast<__to_rep>(
+       static_cast<_CR>(__d.count()) * static_cast<_CR>(_CF::num)));
+   }
+      };
+
+    template<typename _Tp>
+      struct __is_duration
+      : std::false_type
+      { };
+
+    template<typename _Rep, typename _Period>
+      struct __is_duration<duration<_Rep, _Period>>
+      : std::true_type
+      { };
+
+    template<typename _Tp>
+      using __enable_if_is_duration
+ = typename enable_if<__is_duration<_Tp>::value, _Tp>::type;
+
+    template<typename _Tp>
+      using __disable_if_is_duration
+ = typename enable_if<!__is_duration<_Tp>::value, _Tp>::type;
+
+
+    template<typename _Tp>
+      inline constexpr bool __is_duration_v = false;
+    template<typename _Rep, typename _Period>
+      inline constexpr bool __is_duration_v<duration<_Rep, _Period>> = true;
+    template<typename _Tp>
+      inline constexpr bool __is_time_point_v = false;
+    template<typename _Clock, typename _Dur>
+      inline constexpr bool __is_time_point_v<time_point<_Clock, _Dur>> = true;
+# 272 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _ToDur, typename _Rep, typename _Period>
+      [[__nodiscard__]]
+      constexpr __enable_if_is_duration<_ToDur>
+      duration_cast(const duration<_Rep, _Period>& __d)
+      {
+
+ if constexpr (is_same_v<_ToDur, duration<_Rep, _Period>>)
+   return __d;
+ else
+   {
+
+   using __to_period = typename _ToDur::period;
+   using __to_rep = typename _ToDur::rep;
+   using __cf = ratio_divide<_Period, __to_period>;
+   using __cr = typename common_type<__to_rep, _Rep, intmax_t>::type;
+   using __dc = __duration_cast_impl<_ToDur, __cf, __cr,
+         __cf::num == 1, __cf::den == 1>;
+   return __dc::__cast(__d);
+
+   }
+
+      }
+# 306 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _Rep>
+      struct treat_as_floating_point
+      : is_floating_point<_Rep>
+      { };
+
+
+    template <typename _Rep>
+      inline constexpr bool treat_as_floating_point_v =
+ treat_as_floating_point<_Rep>::value;
+
+    template<>
+      inline constexpr bool treat_as_floating_point_v<int> = false;
+    template<>
+      inline constexpr bool treat_as_floating_point_v<long> = false;
+    template<>
+      inline constexpr bool treat_as_floating_point_v<long long> = false;
+    template<>
+      inline constexpr bool treat_as_floating_point_v<float> = true;
+    template<>
+      inline constexpr bool treat_as_floating_point_v<double> = true;
+    template<>
+      inline constexpr bool treat_as_floating_point_v<long double> = true;
+
+
+
+
+    template<typename _Tp>
+      inline constexpr bool is_clock_v = false;
+
+    template<typename _Tp>
+      requires requires {
+ typename _Tp::rep;
+ typename _Tp::period;
+ typename _Tp::duration;
+ typename _Tp::time_point::clock;
+ typename _Tp::time_point::duration;
+ { &_Tp::is_steady } -> same_as<const bool*>;
+ { _Tp::now() } -> same_as<typename _Tp::time_point>;
+ requires same_as<typename _Tp::duration,
+    duration<typename _Tp::rep, typename _Tp::period>>;
+ requires same_as<typename _Tp::time_point::duration,
+    typename _Tp::duration>;
+      }
+    inline constexpr bool is_clock_v<_Tp> = true;
+# 369 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _Tp>
+      struct is_clock
+      : bool_constant<is_clock_v<_Tp>>
+      { };
+# 386 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _ToDur, typename _Rep, typename _Period>
+      [[nodiscard]] constexpr __enable_if_is_duration<_ToDur>
+      floor(const duration<_Rep, _Period>& __d)
+      {
+ auto __to = chrono::duration_cast<_ToDur>(__d);
+ if (__to > __d)
+   return __to - _ToDur{1};
+ return __to;
+      }
+# 406 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _ToDur, typename _Rep, typename _Period>
+      [[nodiscard]] constexpr __enable_if_is_duration<_ToDur>
+      ceil(const duration<_Rep, _Period>& __d)
+      {
+ auto __to = chrono::duration_cast<_ToDur>(__d);
+ if (__to < __d)
+   return __to + _ToDur{1};
+ return __to;
+      }
+# 427 "/usr/include/c++/14/bits/chrono.h" 3
+    template <typename _ToDur, typename _Rep, typename _Period>
+      [[nodiscard]] constexpr
+      enable_if_t<
+ __and_<__is_duration<_ToDur>,
+        __not_<treat_as_floating_point<typename _ToDur::rep>>>::value,
+ _ToDur>
+      round(const duration<_Rep, _Period>& __d)
+      {
+ _ToDur __t0 = chrono::floor<_ToDur>(__d);
+ _ToDur __t1 = __t0 + _ToDur{1};
+ auto __diff0 = __d - __t0;
+ auto __diff1 = __t1 - __d;
+ if (__diff0 == __diff1)
+   {
+     if (__t0.count() & 1)
+       return __t1;
+     return __t0;
+   }
+ else if (__diff0 < __diff1)
+   return __t0;
+ return __t1;
+      }
+
+
+
+
+
+
+
+    template<typename _Rep, typename _Period>
+      [[nodiscard]] constexpr
+      enable_if_t<numeric_limits<_Rep>::is_signed, duration<_Rep, _Period>>
+      abs(duration<_Rep, _Period> __d)
+      {
+ if (__d >= __d.zero())
+   return __d;
+ return -__d;
+      }
+
+
+    namespace __detail { using chrono::ceil; }
+# 494 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _Rep>
+      struct duration_values
+      {
+ static constexpr _Rep
+ zero() noexcept
+ { return _Rep(0); }
+
+ static constexpr _Rep
+ max() noexcept
+ { return numeric_limits<_Rep>::max(); }
+
+ static constexpr _Rep
+ min() noexcept
+ { return numeric_limits<_Rep>::lowest(); }
+      };
+
+    template<typename _Rep, typename _Period>
+      class duration
+      {
+ static_assert(!__is_duration<_Rep>::value,
+        "rep cannot be a std::chrono::duration");
+ static_assert(__is_ratio<_Period>::value,
+        "period must be a specialization of std::ratio");
+ static_assert(_Period::num > 0, "period must be positive");
+
+ template<typename _Rep2>
+   using __is_float = treat_as_floating_point<_Rep2>;
+
+ static constexpr intmax_t
+ _S_gcd(intmax_t __m, intmax_t __n) noexcept
+ {
+
+
+
+   do
+     {
+       intmax_t __rem = __m % __n;
+       __m = __n;
+       __n = __rem;
+     }
+   while (__n != 0);
+   return __m;
+
+
+
+
+
+ }
+
+
+
+
+
+ template<typename _R1, typename _R2,
+   intmax_t __gcd1 = _S_gcd(_R1::num, _R2::num),
+   intmax_t __gcd2 = _S_gcd(_R1::den, _R2::den)>
+   using __divide = ratio<(_R1::num / __gcd1) * (_R2::den / __gcd2),
+     (_R1::den / __gcd2) * (_R2::num / __gcd1)>;
+
+
+ template<typename _Period2>
+   using __is_harmonic
+     = __bool_constant<__divide<_Period2, _Period>::den == 1>;
+
+      public:
+
+ using rep = _Rep;
+ using period = typename _Period::type;
+
+
+ constexpr duration() = default;
+
+ duration(const duration&) = default;
+
+
+
+ template<typename _Rep2, typename = _Require<
+   is_convertible<const _Rep2&, rep>,
+   __or_<__is_float<rep>, __not_<__is_float<_Rep2>>>>>
+   constexpr explicit duration(const _Rep2& __rep)
+   : __r(static_cast<rep>(__rep)) { }
+
+ template<typename _Rep2, typename _Period2, typename = _Require<
+   is_convertible<const _Rep2&, rep>,
+   __or_<__is_float<rep>,
+         __and_<__is_harmonic<_Period2>,
+         __not_<__is_float<_Rep2>>>>>>
+   constexpr duration(const duration<_Rep2, _Period2>& __d)
+   : __r(duration_cast<duration>(__d).count()) { }
+
+ ~duration() = default;
+ duration& operator=(const duration&) = default;
+
+
+ constexpr rep
+ count() const
+ { return __r; }
+
+
+
+ constexpr duration<typename common_type<rep>::type, period>
+ operator+() const
+ { return duration<typename common_type<rep>::type, period>(__r); }
+
+ constexpr duration<typename common_type<rep>::type, period>
+ operator-() const
+ { return duration<typename common_type<rep>::type, period>(-__r); }
+
+ constexpr duration&
+ operator++()
+ {
+   ++__r;
+   return *this;
+ }
+
+ constexpr duration
+ operator++(int)
+ { return duration(__r++); }
+
+ constexpr duration&
+ operator--()
+ {
+   --__r;
+   return *this;
+ }
+
+ constexpr duration
+ operator--(int)
+ { return duration(__r--); }
+
+ constexpr duration&
+ operator+=(const duration& __d)
+ {
+   __r += __d.count();
+   return *this;
+ }
+
+ constexpr duration&
+ operator-=(const duration& __d)
+ {
+   __r -= __d.count();
+   return *this;
+ }
+
+ constexpr duration&
+ operator*=(const rep& __rhs)
+ {
+   __r *= __rhs;
+   return *this;
+ }
+
+ constexpr duration&
+ operator/=(const rep& __rhs)
+ {
+   __r /= __rhs;
+   return *this;
+ }
+
+
+ template<typename _Rep2 = rep>
+   constexpr
+   __enable_if_t<!treat_as_floating_point<_Rep2>::value, duration&>
+   operator%=(const rep& __rhs)
+   {
+     __r %= __rhs;
+     return *this;
+   }
+
+ template<typename _Rep2 = rep>
+   constexpr
+   __enable_if_t<!treat_as_floating_point<_Rep2>::value, duration&>
+   operator%=(const duration& __d)
+   {
+     __r %= __d.count();
+     return *this;
+   }
+
+
+ static constexpr duration
+ zero() noexcept
+ { return duration(duration_values<rep>::zero()); }
+
+ static constexpr duration
+ min() noexcept
+ { return duration(duration_values<rep>::min()); }
+
+ static constexpr duration
+ max() noexcept
+ { return duration(duration_values<rep>::max()); }
+
+      private:
+ rep __r;
+      };
+
+
+
+
+
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr typename common_type<duration<_Rep1, _Period1>,
+         duration<_Rep2, _Period2>>::type
+      operator+(const duration<_Rep1, _Period1>& __lhs,
+  const duration<_Rep2, _Period2>& __rhs)
+      {
+ typedef duration<_Rep1, _Period1> __dur1;
+ typedef duration<_Rep2, _Period2> __dur2;
+ typedef typename common_type<__dur1,__dur2>::type __cd;
+ return __cd(__cd(__lhs).count() + __cd(__rhs).count());
+      }
+
+
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr typename common_type<duration<_Rep1, _Period1>,
+         duration<_Rep2, _Period2>>::type
+      operator-(const duration<_Rep1, _Period1>& __lhs,
+  const duration<_Rep2, _Period2>& __rhs)
+      {
+ typedef duration<_Rep1, _Period1> __dur1;
+ typedef duration<_Rep2, _Period2> __dur2;
+ typedef typename common_type<__dur1,__dur2>::type __cd;
+ return __cd(__cd(__lhs).count() - __cd(__rhs).count());
+      }
+# 727 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _Rep1, typename _Rep2,
+      typename _CRep = typename common_type<_Rep1, _Rep2>::type>
+      using __common_rep_t = typename
+ enable_if<is_convertible<const _Rep2&, _CRep>::value, _CRep>::type;
+# 739 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _Rep1, typename _Period, typename _Rep2>
+      constexpr duration<__common_rep_t<_Rep1, _Rep2>, _Period>
+      operator*(const duration<_Rep1, _Period>& __d, const _Rep2& __s)
+      {
+ typedef duration<typename common_type<_Rep1, _Rep2>::type, _Period>
+   __cd;
+ return __cd(__cd(__d).count() * __s);
+      }
+
+    template<typename _Rep1, typename _Rep2, typename _Period>
+      constexpr duration<__common_rep_t<_Rep2, _Rep1>, _Period>
+      operator*(const _Rep1& __s, const duration<_Rep2, _Period>& __d)
+      { return __d * __s; }
+
+    template<typename _Rep1, typename _Period, typename _Rep2>
+      constexpr
+      duration<__common_rep_t<_Rep1, __disable_if_is_duration<_Rep2>>, _Period>
+      operator/(const duration<_Rep1, _Period>& __d, const _Rep2& __s)
+      {
+ typedef duration<typename common_type<_Rep1, _Rep2>::type, _Period>
+   __cd;
+ return __cd(__cd(__d).count() / __s);
+      }
+
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr typename common_type<_Rep1, _Rep2>::type
+      operator/(const duration<_Rep1, _Period1>& __lhs,
+  const duration<_Rep2, _Period2>& __rhs)
+      {
+ typedef duration<_Rep1, _Period1> __dur1;
+ typedef duration<_Rep2, _Period2> __dur2;
+ typedef typename common_type<__dur1,__dur2>::type __cd;
+ return __cd(__lhs).count() / __cd(__rhs).count();
+      }
+
+
+    template<typename _Rep1, typename _Period, typename _Rep2>
+      constexpr
+      duration<__common_rep_t<_Rep1, __disable_if_is_duration<_Rep2>>, _Period>
+      operator%(const duration<_Rep1, _Period>& __d, const _Rep2& __s)
+      {
+ typedef duration<typename common_type<_Rep1, _Rep2>::type, _Period>
+   __cd;
+ return __cd(__cd(__d).count() % __s);
+      }
+
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr typename common_type<duration<_Rep1, _Period1>,
+         duration<_Rep2, _Period2>>::type
+      operator%(const duration<_Rep1, _Period1>& __lhs,
+  const duration<_Rep2, _Period2>& __rhs)
+      {
+ typedef duration<_Rep1, _Period1> __dur1;
+ typedef duration<_Rep2, _Period2> __dur2;
+ typedef typename common_type<__dur1,__dur2>::type __cd;
+ return __cd(__cd(__lhs).count() % __cd(__rhs).count());
+      }
+# 807 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr bool
+      operator==(const duration<_Rep1, _Period1>& __lhs,
+   const duration<_Rep2, _Period2>& __rhs)
+      {
+ typedef duration<_Rep1, _Period1> __dur1;
+ typedef duration<_Rep2, _Period2> __dur2;
+ typedef typename common_type<__dur1,__dur2>::type __ct;
+ return __ct(__lhs).count() == __ct(__rhs).count();
+      }
+
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr bool
+      operator<(const duration<_Rep1, _Period1>& __lhs,
+  const duration<_Rep2, _Period2>& __rhs)
+      {
+ typedef duration<_Rep1, _Period1> __dur1;
+ typedef duration<_Rep2, _Period2> __dur2;
+ typedef typename common_type<__dur1,__dur2>::type __ct;
+ return __ct(__lhs).count() < __ct(__rhs).count();
+      }
+
+
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      requires three_way_comparable<common_type_t<_Rep1, _Rep2>>
+      constexpr auto
+      operator<=>(const duration<_Rep1, _Period1>& __lhs,
+    const duration<_Rep2, _Period2>& __rhs)
+      {
+ using __ct = common_type_t<duration<_Rep1, _Period1>,
+       duration<_Rep2, _Period2>>;
+ return __ct(__lhs).count() <=> __ct(__rhs).count();
+      }
+# 852 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr bool
+      operator<=(const duration<_Rep1, _Period1>& __lhs,
+   const duration<_Rep2, _Period2>& __rhs)
+      { return !(__rhs < __lhs); }
+
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr bool
+      operator>(const duration<_Rep1, _Period1>& __lhs,
+  const duration<_Rep2, _Period2>& __rhs)
+      { return __rhs < __lhs; }
+
+    template<typename _Rep1, typename _Period1,
+      typename _Rep2, typename _Period2>
+      constexpr bool
+      operator>=(const duration<_Rep1, _Period1>& __lhs,
+   const duration<_Rep2, _Period2>& __rhs)
+      { return !(__lhs < __rhs); }
+# 888 "/usr/include/c++/14/bits/chrono.h" 3
+    using nanoseconds = duration<int64_t, nano>;
+
+
+    using microseconds = duration<int64_t, micro>;
+
+
+    using milliseconds = duration<int64_t, milli>;
+
+
+    using seconds = duration<int64_t>;
+
+
+    using minutes = duration<int64_t, ratio< 60>>;
+
+
+    using hours = duration<int64_t, ratio<3600>>;
+
+
+
+    using days = duration<int64_t, ratio<86400>>;
+
+
+    using weeks = duration<int64_t, ratio<604800>>;
+
+
+    using years = duration<int64_t, ratio<31556952>>;
+
+
+    using months = duration<int64_t, ratio<2629746>>;
+
+
+
+
+    template<typename _Clock, typename _Dur>
+      class time_point
+      {
+ static_assert(__is_duration<_Dur>::value,
+     "duration must be a specialization of std::chrono::duration");
+
+      public:
+ typedef _Clock clock;
+ typedef _Dur duration;
+ typedef typename duration::rep rep;
+ typedef typename duration::period period;
+
+ constexpr time_point() : __d(duration::zero())
+ { }
+
+ constexpr explicit time_point(const duration& __dur)
+ : __d(__dur)
+ { }
+
+
+ template<typename _Dur2,
+   typename = _Require<is_convertible<_Dur2, _Dur>>>
+   constexpr time_point(const time_point<clock, _Dur2>& __t)
+   : __d(__t.time_since_epoch())
+   { }
+
+
+ constexpr duration
+ time_since_epoch() const
+ { return __d; }
+
+
+ constexpr time_point&
+ operator++()
+ {
+   ++__d;
+   return *this;
+ }
+
+ constexpr time_point
+ operator++(int)
+ { return time_point{__d++}; }
+
+ constexpr time_point&
+ operator--()
+ {
+   --__d;
+   return *this;
+ }
+
+ constexpr time_point
+ operator--(int)
+ { return time_point{__d--}; }
+
+
+
+ constexpr time_point&
+ operator+=(const duration& __dur)
+ {
+   __d += __dur;
+   return *this;
+ }
+
+ constexpr time_point&
+ operator-=(const duration& __dur)
+ {
+   __d -= __dur;
+   return *this;
+ }
+
+
+ static constexpr time_point
+ min() noexcept
+ { return time_point(duration::min()); }
+
+ static constexpr time_point
+ max() noexcept
+ { return time_point(duration::max()); }
+
+      private:
+ duration __d;
+      };
+# 1016 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _ToDur, typename _Clock, typename _Dur>
+      [[__nodiscard__]] constexpr
+      __enable_if_t<__is_duration<_ToDur>::value, time_point<_Clock, _ToDur>>
+      time_point_cast(const time_point<_Clock, _Dur>& __t)
+      {
+ typedef time_point<_Clock, _ToDur> __time_point;
+ return __time_point(duration_cast<_ToDur>(__t.time_since_epoch()));
+      }
+# 1038 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _ToDur, typename _Clock, typename _Dur>
+      [[nodiscard]] constexpr
+      enable_if_t<__is_duration_v<_ToDur>, time_point<_Clock, _ToDur>>
+      floor(const time_point<_Clock, _Dur>& __tp)
+      {
+ return time_point<_Clock, _ToDur>{
+     chrono::floor<_ToDur>(__tp.time_since_epoch())};
+      }
+# 1059 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _ToDur, typename _Clock, typename _Dur>
+      [[nodiscard]] constexpr
+      enable_if_t<__is_duration_v<_ToDur>, time_point<_Clock, _ToDur>>
+      ceil(const time_point<_Clock, _Dur>& __tp)
+      {
+ return time_point<_Clock, _ToDur>{
+     chrono::ceil<_ToDur>(__tp.time_since_epoch())};
+      }
+# 1081 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _ToDur, typename _Clock, typename _Dur>
+      [[nodiscard]] constexpr
+      enable_if_t<__is_duration_v<_ToDur>
+      && !treat_as_floating_point_v<typename _ToDur::rep>,
+    time_point<_Clock, _ToDur>>
+      round(const time_point<_Clock, _Dur>& __tp)
+      {
+ return time_point<_Clock, _ToDur>{
+     chrono::round<_ToDur>(__tp.time_since_epoch())};
+      }
+
+
+
+
+
+
+    template<typename _Clock, typename _Dur1,
+      typename _Rep2, typename _Period2>
+      constexpr time_point<_Clock,
+ typename common_type<_Dur1, duration<_Rep2, _Period2>>::type>
+      operator+(const time_point<_Clock, _Dur1>& __lhs,
+  const duration<_Rep2, _Period2>& __rhs)
+      {
+ typedef duration<_Rep2, _Period2> __dur2;
+ typedef typename common_type<_Dur1,__dur2>::type __ct;
+ typedef time_point<_Clock, __ct> __time_point;
+ return __time_point(__lhs.time_since_epoch() + __rhs);
+      }
+
+
+    template<typename _Rep1, typename _Period1,
+      typename _Clock, typename _Dur2>
+      constexpr time_point<_Clock,
+ typename common_type<duration<_Rep1, _Period1>, _Dur2>::type>
+      operator+(const duration<_Rep1, _Period1>& __lhs,
+  const time_point<_Clock, _Dur2>& __rhs)
+      {
+ typedef duration<_Rep1, _Period1> __dur1;
+ typedef typename common_type<__dur1,_Dur2>::type __ct;
+ typedef time_point<_Clock, __ct> __time_point;
+ return __time_point(__rhs.time_since_epoch() + __lhs);
+      }
+
+
+    template<typename _Clock, typename _Dur1,
+      typename _Rep2, typename _Period2>
+      constexpr time_point<_Clock,
+ typename common_type<_Dur1, duration<_Rep2, _Period2>>::type>
+      operator-(const time_point<_Clock, _Dur1>& __lhs,
+  const duration<_Rep2, _Period2>& __rhs)
+      {
+ typedef duration<_Rep2, _Period2> __dur2;
+ typedef typename common_type<_Dur1,__dur2>::type __ct;
+ typedef time_point<_Clock, __ct> __time_point;
+ return __time_point(__lhs.time_since_epoch() -__rhs);
+      }
+
+
+    template<typename _Clock, typename _Dur1, typename _Dur2>
+      constexpr typename common_type<_Dur1, _Dur2>::type
+      operator-(const time_point<_Clock, _Dur1>& __lhs,
+  const time_point<_Clock, _Dur2>& __rhs)
+      { return __lhs.time_since_epoch() - __rhs.time_since_epoch(); }
+
+
+
+
+
+
+
+    template<typename _Clock, typename _Dur1, typename _Dur2>
+      constexpr bool
+      operator==(const time_point<_Clock, _Dur1>& __lhs,
+   const time_point<_Clock, _Dur2>& __rhs)
+      { return __lhs.time_since_epoch() == __rhs.time_since_epoch(); }
+
+
+    template<typename _Clock, typename _Dur1,
+      three_way_comparable_with<_Dur1> _Dur2>
+      constexpr auto
+      operator<=>(const time_point<_Clock, _Dur1>& __lhs,
+    const time_point<_Clock, _Dur2>& __rhs)
+      { return __lhs.time_since_epoch() <=> __rhs.time_since_epoch(); }
+# 1172 "/usr/include/c++/14/bits/chrono.h" 3
+    template<typename _Clock, typename _Dur1, typename _Dur2>
+      constexpr bool
+      operator<(const time_point<_Clock, _Dur1>& __lhs,
+  const time_point<_Clock, _Dur2>& __rhs)
+      { return __lhs.time_since_epoch() < __rhs.time_since_epoch(); }
+
+    template<typename _Clock, typename _Dur1, typename _Dur2>
+      constexpr bool
+      operator<=(const time_point<_Clock, _Dur1>& __lhs,
+   const time_point<_Clock, _Dur2>& __rhs)
+      { return !(__rhs < __lhs); }
+
+    template<typename _Clock, typename _Dur1, typename _Dur2>
+      constexpr bool
+      operator>(const time_point<_Clock, _Dur1>& __lhs,
+  const time_point<_Clock, _Dur2>& __rhs)
+      { return __rhs < __lhs; }
+
+    template<typename _Clock, typename _Dur1, typename _Dur2>
+      constexpr bool
+      operator>=(const time_point<_Clock, _Dur1>& __lhs,
+   const time_point<_Clock, _Dur2>& __rhs)
+      { return !(__lhs < __rhs); }
+# 1217 "/usr/include/c++/14/bits/chrono.h" 3
+inline namespace _V2 {
+
+
+
+
+
+
+
+    struct system_clock
+    {
+      typedef chrono::nanoseconds duration;
+      typedef duration::rep rep;
+      typedef duration::period period;
+      typedef chrono::time_point<system_clock, duration> time_point;
+
+      static_assert(system_clock::duration::min()
+      < system_clock::duration::zero(),
+      "a clock's minimum duration cannot be less than its epoch");
+
+      static constexpr bool is_steady = false;
+
+      static time_point
+      now() noexcept;
+
+
+     
+      static std::time_t
+      to_time_t(const time_point& __t) noexcept
+      {
+ return std::time_t(duration_cast<chrono::seconds>
+      (__t.time_since_epoch()).count());
+      }
+
+     
+      static time_point
+      from_time_t(std::time_t __t) noexcept
+      {
+ typedef chrono::time_point<system_clock, seconds> __from;
+ return time_point_cast<system_clock::duration>
+        (__from(chrono::seconds(__t)));
+      }
+    };
+# 1267 "/usr/include/c++/14/bits/chrono.h" 3
+    struct steady_clock
+    {
+      typedef chrono::nanoseconds duration;
+      typedef duration::rep rep;
+      typedef duration::period period;
+      typedef chrono::time_point<steady_clock, duration> time_point;
+
+      static constexpr bool is_steady = true;
+
+      static time_point
+      now() noexcept;
+    };
+# 1289 "/usr/include/c++/14/bits/chrono.h" 3
+    using high_resolution_clock = system_clock;
+
+}
+
+
+
+
+    template<typename _Duration>
+      using sys_time = time_point<system_clock, _Duration>;
+    using sys_seconds = sys_time<seconds>;
+    using sys_days = sys_time<days>;
+
+    using file_clock = ::std::filesystem::__file_clock;
+
+    template<typename _Duration>
+      using file_time = time_point<file_clock, _Duration>;
+
+    template<> struct is_clock<system_clock> : true_type { };
+    template<> struct is_clock<steady_clock> : true_type { };
+    template<> struct is_clock<file_clock> : true_type { };
+
+    template<> inline constexpr bool is_clock_v<system_clock> = true;
+    template<> inline constexpr bool is_clock_v<steady_clock> = true;
+    template<> inline constexpr bool is_clock_v<file_clock> = true;
+
+
+  }
+
+
+  inline namespace literals
+  {
+# 1344 "/usr/include/c++/14/bits/chrono.h" 3
+  inline namespace chrono_literals
+  {
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wliteral-suffix"
+
+    template<typename _Dur, char... _Digits>
+      constexpr _Dur __check_overflow()
+      {
+ using _Val = __parse_int::_Parse_int<_Digits...>;
+ constexpr typename _Dur::rep __repval = _Val::value;
+ static_assert(__repval >= 0 && __repval == _Val::value,
+        "literal value cannot be represented by duration type");
+ return _Dur(__repval);
+      }
+
+
+
+    constexpr chrono::duration<long double, ratio<3600,1>>
+    operator""h(long double __hours)
+    { return chrono::duration<long double, ratio<3600,1>>{__hours}; }
+
+
+    template <char... _Digits>
+      constexpr chrono::hours
+      operator""h()
+      { return __check_overflow<chrono::hours, _Digits...>(); }
+
+
+    constexpr chrono::duration<long double, ratio<60,1>>
+    operator""min(long double __mins)
+    { return chrono::duration<long double, ratio<60,1>>{__mins}; }
+
+
+    template <char... _Digits>
+      constexpr chrono::minutes
+      operator""min()
+      { return __check_overflow<chrono::minutes, _Digits...>(); }
+
+
+    constexpr chrono::duration<long double>
+    operator""s(long double __secs)
+    { return chrono::duration<long double>{__secs}; }
+
+
+    template <char... _Digits>
+      constexpr chrono::seconds
+      operator""s()
+      { return __check_overflow<chrono::seconds, _Digits...>(); }
+
+
+    constexpr chrono::duration<long double, milli>
+    operator""ms(long double __msecs)
+    { return chrono::duration<long double, milli>{__msecs}; }
+
+
+    template <char... _Digits>
+      constexpr chrono::milliseconds
+      operator""ms()
+      { return __check_overflow<chrono::milliseconds, _Digits...>(); }
+
+
+    constexpr chrono::duration<long double, micro>
+    operator""us(long double __usecs)
+    { return chrono::duration<long double, micro>{__usecs}; }
+
+
+    template <char... _Digits>
+      constexpr chrono::microseconds
+      operator""us()
+      { return __check_overflow<chrono::microseconds, _Digits...>(); }
+
+
+    constexpr chrono::duration<long double, nano>
+    operator""ns(long double __nsecs)
+    { return chrono::duration<long double, nano>{__nsecs}; }
+
+
+    template <char... _Digits>
+      constexpr chrono::nanoseconds
+      operator""ns()
+      { return __check_overflow<chrono::nanoseconds, _Digits...>(); }
+
+#pragma GCC diagnostic pop
+
+  }
+  }
+
+  namespace chrono
+  {
+    using namespace literals::chrono_literals;
+  }
+
+
+
+  namespace filesystem
+  {
+    struct __file_clock
+    {
+      using duration = chrono::nanoseconds;
+      using rep = duration::rep;
+      using period = duration::period;
+      using time_point = chrono::time_point<__file_clock>;
+      static constexpr bool is_steady = false;
+
+      static time_point
+      now() noexcept
+      { return _S_from_sys(chrono::system_clock::now()); }
+
+
+      template<typename _Dur>
+ static
+ chrono::file_time<common_type_t<_Dur, chrono::seconds>>
+ from_sys(const chrono::sys_time<_Dur>& __t) noexcept
+ { return _S_from_sys(__t); }
+
+
+      template<typename _Dur>
+ static
+ chrono::sys_time<common_type_t<_Dur, chrono::seconds>>
+ to_sys(const chrono::file_time<_Dur>& __t) noexcept
+ { return _S_to_sys(__t); }
+
+
+    private:
+      using __sys_clock = chrono::system_clock;
+
+
+
+
+      static constexpr chrono::seconds _S_epoch_diff{6437664000};
+
+    protected:
+
+      template<typename _Dur>
+ static
+ chrono::time_point<__file_clock, common_type_t<_Dur, chrono::seconds>>
+ _S_from_sys(const chrono::time_point<__sys_clock, _Dur>& __t) noexcept
+ {
+   using _CDur = common_type_t<_Dur, chrono::seconds>;
+   using __file_time = chrono::time_point<__file_clock, _CDur>;
+   return __file_time{__t.time_since_epoch()} - _S_epoch_diff;
+ }
+
+
+      template<typename _Dur>
+ static
+ chrono::time_point<__sys_clock, common_type_t<_Dur, chrono::seconds>>
+ _S_to_sys(const chrono::time_point<__file_clock, _Dur>& __t) noexcept
+ {
+   using _CDur = common_type_t<_Dur, chrono::seconds>;
+   using __sys_time = chrono::time_point<__sys_clock, _CDur>;
+   return __sys_time{__t.time_since_epoch()} + _S_epoch_diff;
+ }
+    };
   }
 
 
 
 }
-# 10 "/home/bktivadar/CLionProjects/mankala/Mankala.h" 2
-
-# 1 "/home/bktivadar/CLionProjects/mankala/AI.h" 1
+# 42 "/usr/include/c++/14/chrono" 2 3
 
 
-
-
-
-
-# 1 "/home/bktivadar/CLionProjects/mankala/BoardState.h" 1
-
-
-
-
-
-
-# 1 "/usr/include/c++/14/iostream" 1 3
-# 36 "/usr/include/c++/14/iostream" 3
+# 1 "/usr/include/c++/14/bit" 1 3
+# 32 "/usr/include/c++/14/bit" 3
        
-# 37 "/usr/include/c++/14/iostream" 3
-
-# 1 "/usr/include/c++/14/bits/requires_hosted.h" 1 3
-# 39 "/usr/include/c++/14/iostream" 2 3
-
-
-# 1 "/usr/include/c++/14/ostream" 1 3
-# 36 "/usr/include/c++/14/ostream" 3
+# 33 "/usr/include/c++/14/bit" 3
+# 61 "/usr/include/c++/14/bit" 3
+# 1 "/usr/include/c++/14/bits/version.h" 1 3
+# 47 "/usr/include/c++/14/bits/version.h" 3
        
-# 37 "/usr/include/c++/14/ostream" 3
+# 48 "/usr/include/c++/14/bits/version.h" 3
+# 62 "/usr/include/c++/14/bit" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 85 "/usr/include/c++/14/bit" 3
+  template<typename _To, typename _From>
+    [[nodiscard]]
+    constexpr _To
+    bit_cast(const _From& __from) noexcept
+
+    requires (sizeof(_To) == sizeof(_From))
+      && is_trivially_copyable_v<_To> && is_trivially_copyable_v<_From>
+
+    {
+      return __builtin_bit_cast(_To, __from);
+    }
+# 107 "/usr/include/c++/14/bit" 3
+  template<integral _Tp>
+    [[nodiscard]]
+    constexpr _Tp
+    byteswap(_Tp __value) noexcept
+    {
+      if constexpr (sizeof(_Tp) == 1)
+ return __value;
+
+      if !consteval
+ {
+   if constexpr (sizeof(_Tp) == 2)
+     return __builtin_bswap16(__value);
+   if constexpr (sizeof(_Tp) == 4)
+     return __builtin_bswap32(__value);
+   if constexpr (sizeof(_Tp) == 8)
+     return __builtin_bswap64(__value);
+   if constexpr (sizeof(_Tp) == 16)
+
+     return __builtin_bswap128(__value);
+
+
+
+
+ }
+
+
+
+      using _Up = typename __make_unsigned<__remove_cv_t<_Tp>>::__type;
+      size_t __diff = 8 * (sizeof(_Tp) - 1);
+      _Up __mask1 = static_cast<unsigned char>(~0);
+      _Up __mask2 = __mask1 << __diff;
+      _Up __val = __value;
+      for (size_t __i = 0; __i < sizeof(_Tp) / 2; ++__i)
+ {
+   _Up __byte1 = __val & __mask1;
+   _Up __byte2 = __val & __mask2;
+   __val = (__val ^ __byte1 ^ __byte2
+     ^ (__byte1 << __diff) ^ (__byte2 >> __diff));
+   __mask1 <<= 8;
+   __mask2 >>= 8;
+   __diff -= 2 * 8;
+ }
+      return __val;
+    }
+
+
+
+
+  template<typename _Tp>
+    constexpr _Tp
+    __rotl(_Tp __x, int __s) noexcept
+    {
+      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
+      if constexpr ((_Nd & (_Nd - 1)) == 0)
+ {
+
+
+   constexpr unsigned __uNd = _Nd;
+   const unsigned __r = __s;
+   return (__x << (__r % __uNd)) | (__x >> ((-__r) % __uNd));
+ }
+      const int __r = __s % _Nd;
+      if (__r == 0)
+ return __x;
+      else if (__r > 0)
+ return (__x << __r) | (__x >> ((_Nd - __r) % _Nd));
+      else
+ return (__x >> -__r) | (__x << ((_Nd + __r) % _Nd));
+    }
+
+  template<typename _Tp>
+    constexpr _Tp
+    __rotr(_Tp __x, int __s) noexcept
+    {
+      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
+      if constexpr ((_Nd & (_Nd - 1)) == 0)
+ {
+
+
+   constexpr unsigned __uNd = _Nd;
+   const unsigned __r = __s;
+   return (__x >> (__r % __uNd)) | (__x << ((-__r) % __uNd));
+ }
+      const int __r = __s % _Nd;
+      if (__r == 0)
+ return __x;
+      else if (__r > 0)
+ return (__x >> __r) | (__x << ((_Nd - __r) % _Nd));
+      else
+ return (__x << -__r) | (__x >> ((_Nd + __r) % _Nd));
+    }
+
+  template<typename _Tp>
+    constexpr int
+    __countl_zero(_Tp __x) noexcept
+    {
+      using __gnu_cxx::__int_traits;
+      constexpr auto _Nd = __int_traits<_Tp>::__digits;
+
+      if (__x == 0)
+        return _Nd;
+
+      constexpr auto _Nd_ull = __int_traits<unsigned long long>::__digits;
+      constexpr auto _Nd_ul = __int_traits<unsigned long>::__digits;
+      constexpr auto _Nd_u = __int_traits<unsigned>::__digits;
+
+      if constexpr (_Nd <= _Nd_u)
+ {
+   constexpr int __diff = _Nd_u - _Nd;
+   return __builtin_clz(__x) - __diff;
+ }
+      else if constexpr (_Nd <= _Nd_ul)
+ {
+   constexpr int __diff = _Nd_ul - _Nd;
+   return __builtin_clzl(__x) - __diff;
+ }
+      else if constexpr (_Nd <= _Nd_ull)
+ {
+   constexpr int __diff = _Nd_ull - _Nd;
+   return __builtin_clzll(__x) - __diff;
+ }
+      else
+ {
+   static_assert(_Nd <= (2 * _Nd_ull),
+   "Maximum supported integer size is 128-bit");
+
+   unsigned long long __high = __x >> _Nd_ull;
+   if (__high != 0)
+     {
+       constexpr int __diff = (2 * _Nd_ull) - _Nd;
+       return __builtin_clzll(__high) - __diff;
+     }
+   constexpr auto __max_ull = __int_traits<unsigned long long>::__max;
+   unsigned long long __low = __x & __max_ull;
+   return (_Nd - _Nd_ull) + __builtin_clzll(__low);
+ }
+    }
+
+  template<typename _Tp>
+    constexpr int
+    __countl_one(_Tp __x) noexcept
+    {
+      return std::__countl_zero<_Tp>((_Tp)~__x);
+    }
+
+  template<typename _Tp>
+    constexpr int
+    __countr_zero(_Tp __x) noexcept
+    {
+      using __gnu_cxx::__int_traits;
+      constexpr auto _Nd = __int_traits<_Tp>::__digits;
+
+      if (__x == 0)
+        return _Nd;
+
+      constexpr auto _Nd_ull = __int_traits<unsigned long long>::__digits;
+      constexpr auto _Nd_ul = __int_traits<unsigned long>::__digits;
+      constexpr auto _Nd_u = __int_traits<unsigned>::__digits;
+
+      if constexpr (_Nd <= _Nd_u)
+ return __builtin_ctz(__x);
+      else if constexpr (_Nd <= _Nd_ul)
+ return __builtin_ctzl(__x);
+      else if constexpr (_Nd <= _Nd_ull)
+ return __builtin_ctzll(__x);
+      else
+ {
+   static_assert(_Nd <= (2 * _Nd_ull),
+   "Maximum supported integer size is 128-bit");
+
+   constexpr auto __max_ull = __int_traits<unsigned long long>::__max;
+   unsigned long long __low = __x & __max_ull;
+   if (__low != 0)
+     return __builtin_ctzll(__low);
+   unsigned long long __high = __x >> _Nd_ull;
+   return __builtin_ctzll(__high) + _Nd_ull;
+ }
+    }
+
+  template<typename _Tp>
+    constexpr int
+    __countr_one(_Tp __x) noexcept
+    {
+      return std::__countr_zero((_Tp)~__x);
+    }
+
+  template<typename _Tp>
+    constexpr int
+    __popcount(_Tp __x) noexcept
+    {
+      using __gnu_cxx::__int_traits;
+      constexpr auto _Nd = __int_traits<_Tp>::__digits;
+
+      constexpr auto _Nd_ull = __int_traits<unsigned long long>::__digits;
+      constexpr auto _Nd_ul = __int_traits<unsigned long>::__digits;
+      constexpr auto _Nd_u = __int_traits<unsigned>::__digits;
+
+      if constexpr (_Nd <= _Nd_u)
+ return __builtin_popcount(__x);
+      else if constexpr (_Nd <= _Nd_ul)
+ return __builtin_popcountl(__x);
+      else if constexpr (_Nd <= _Nd_ull)
+ return __builtin_popcountll(__x);
+      else
+ {
+   static_assert(_Nd <= (2 * _Nd_ull),
+   "Maximum supported integer size is 128-bit");
+
+   constexpr auto __max_ull = __int_traits<unsigned long long>::__max;
+   unsigned long long __low = __x & __max_ull;
+   unsigned long long __high = __x >> _Nd_ull;
+   return __builtin_popcountll(__low) + __builtin_popcountll(__high);
+ }
+    }
+
+  template<typename _Tp>
+    constexpr bool
+    __has_single_bit(_Tp __x) noexcept
+    { return std::__popcount(__x) == 1; }
+
+  template<typename _Tp>
+    constexpr _Tp
+    __bit_ceil(_Tp __x) noexcept
+    {
+      using __gnu_cxx::__int_traits;
+      constexpr auto _Nd = __int_traits<_Tp>::__digits;
+      if (__x == 0 || __x == 1)
+        return 1;
+      auto __shift_exponent = _Nd - std::__countl_zero((_Tp)(__x - 1u));
+
+
+
+
+      if (!std::__is_constant_evaluated())
+ {
+   do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(__shift_exponent != __int_traits<_Tp>::__digits), false)) std::__glibcxx_assert_fail(); } while (false);
+ }
+
+      using __promoted_type = decltype(__x << 1);
+      if constexpr (!is_same<__promoted_type, _Tp>::value)
+ {
+
+
+
+
+
+   const int __extra_exp = sizeof(__promoted_type) / sizeof(_Tp) / 2;
+   __shift_exponent |= (__shift_exponent & _Nd) << __extra_exp;
+ }
+      return (_Tp)1u << __shift_exponent;
+    }
+
+  template<typename _Tp>
+    constexpr _Tp
+    __bit_floor(_Tp __x) noexcept
+    {
+      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
+      if (__x == 0)
+        return 0;
+      return (_Tp)1u << (_Nd - std::__countl_zero((_Tp)(__x >> 1)));
+    }
+
+  template<typename _Tp>
+    constexpr int
+    __bit_width(_Tp __x) noexcept
+    {
+      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
+      return _Nd - std::__countl_zero(__x);
+    }
+
+
+
+
+
+
+  template<typename _Tp>
+    concept __unsigned_integer = __is_unsigned_integer<_Tp>::value;
+
+
+
+
+
+  template<__unsigned_integer _Tp>
+    [[nodiscard]] constexpr _Tp
+    rotl(_Tp __x, int __s) noexcept
+    { return std::__rotl(__x, __s); }
+
+
+  template<__unsigned_integer _Tp>
+    [[nodiscard]] constexpr _Tp
+    rotr(_Tp __x, int __s) noexcept
+    { return std::__rotr(__x, __s); }
+
+
+
+
+  template<__unsigned_integer _Tp>
+    constexpr int
+    countl_zero(_Tp __x) noexcept
+    { return std::__countl_zero(__x); }
+
+
+  template<__unsigned_integer _Tp>
+    constexpr int
+    countl_one(_Tp __x) noexcept
+    { return std::__countl_one(__x); }
+
+
+  template<__unsigned_integer _Tp>
+    constexpr int
+    countr_zero(_Tp __x) noexcept
+    { return std::__countr_zero(__x); }
+
+
+  template<__unsigned_integer _Tp>
+    constexpr int
+    countr_one(_Tp __x) noexcept
+    { return std::__countr_one(__x); }
+
+
+  template<__unsigned_integer _Tp>
+    constexpr int
+    popcount(_Tp __x) noexcept
+    { return std::__popcount(__x); }
+
+
+
+
+
+
+  template<__unsigned_integer _Tp>
+    constexpr bool
+    has_single_bit(_Tp __x) noexcept
+    { return std::__has_single_bit(__x); }
+
+
+  template<__unsigned_integer _Tp>
+    constexpr _Tp
+    bit_ceil(_Tp __x) noexcept
+    { return std::__bit_ceil(__x); }
+
+
+  template<__unsigned_integer _Tp>
+    constexpr _Tp
+    bit_floor(_Tp __x) noexcept
+    { return std::__bit_floor(__x); }
+
+
+
+
+  template<__unsigned_integer _Tp>
+    constexpr int
+    bit_width(_Tp __x) noexcept
+    { return std::__bit_width(__x); }
+# 472 "/usr/include/c++/14/bit" 3
+  enum class endian
+  {
+    little = 1234,
+    big = 4321,
+    native = 1234
+  };
+
+
+
+
+
+}
+# 45 "/usr/include/c++/14/chrono" 2 3
+# 1 "/usr/include/c++/14/sstream" 1 3
+# 36 "/usr/include/c++/14/sstream" 3
+       
+# 37 "/usr/include/c++/14/sstream" 3
+
+
+
+# 1 "/usr/include/c++/14/istream" 1 3
+# 36 "/usr/include/c++/14/istream" 3
+       
+# 37 "/usr/include/c++/14/istream" 3
 
 
 
@@ -7392,8 +10788,6 @@ namespace __cxx11 {
 
 
 # 1 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h" 1 3 4
-# 214 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h" 3 4
-typedef long unsigned int size_t;
 # 36 "/usr/include/wchar.h" 2 3 4
 
 
@@ -7406,15 +10800,7 @@ typedef __builtin_va_list __gnuc_va_list;
 
 
 typedef __gnuc_va_list va_list;
-
-
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
-# 52 "/usr/include/wchar.h" 2 3 4
+# 52 "/usr/include/wchar.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 1 3 4
 # 20 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 3 4
 typedef unsigned int wint_t;
@@ -7456,31 +10842,6 @@ struct _IO_FILE;
 
 typedef struct _IO_FILE FILE;
 # 58 "/usr/include/wchar.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
-struct __locale_struct
-{
-
-  struct __locale_data *__locales[13];
-
-
-  const unsigned short int *__ctype_b;
-  const int *__ctype_tolower;
-  const int *__ctype_toupper;
-
-
-  const char *__names[13];
-};
-
-typedef struct __locale_struct *__locale_t;
-# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
-
-typedef __locale_t locale_t;
-# 61 "/usr/include/wchar.h" 2 3 4
 # 90 "/usr/include/wchar.h" 3 4
 extern "C" {
 
@@ -9767,6 +13128,166 @@ namespace std
 
 #pragma GCC visibility pop
 # 39 "/usr/include/c++/14/bits/exception_ptr.h" 2 3
+
+
+# 1 "/usr/include/c++/14/bits/move.h" 1 3
+# 40 "/usr/include/c++/14/bits/move.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+
+
+
+  template<typename _Tp>
+    inline constexpr _Tp*
+    __addressof(_Tp& __r) noexcept
+    { return __builtin_addressof(__r); }
+# 67 "/usr/include/c++/14/bits/move.h" 3
+  template<typename _Tp>
+    [[__nodiscard__]]
+    constexpr _Tp&&
+    forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+    { return static_cast<_Tp&&>(__t); }
+
+
+
+
+
+
+
+  template<typename _Tp>
+    [[__nodiscard__]]
+    constexpr _Tp&&
+    forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+    {
+      static_assert(!std::is_lvalue_reference<_Tp>::value,
+   "std::forward must not be used to convert an rvalue to an lvalue");
+      return static_cast<_Tp&&>(__t);
+    }
+
+
+  template<typename _Tp, typename _Up>
+  [[nodiscard]]
+  constexpr decltype(auto)
+  forward_like(_Up&& __x) noexcept
+  {
+    constexpr bool __as_rval = is_rvalue_reference_v<_Tp&&>;
+
+    if constexpr (is_const_v<remove_reference_t<_Tp>>)
+      {
+ using _Up2 = remove_reference_t<_Up>;
+ if constexpr (__as_rval)
+   return static_cast<const _Up2&&>(__x);
+ else
+   return static_cast<const _Up2&>(__x);
+      }
+    else
+      {
+ if constexpr (__as_rval)
+   return static_cast<remove_reference_t<_Up>&&>(__x);
+ else
+   return static_cast<_Up&>(__x);
+      }
+  }
+
+  template<typename _Tp, typename _Up>
+    using __like_t = decltype(std::forward_like<_Tp>(std::declval<_Up>()));
+
+
+
+
+
+
+
+  template<typename _Tp>
+    [[__nodiscard__]]
+    constexpr typename std::remove_reference<_Tp>::type&&
+    move(_Tp&& __t) noexcept
+    { return static_cast<typename std::remove_reference<_Tp>::type&&>(__t); }
+
+
+  template<typename _Tp>
+    struct __move_if_noexcept_cond
+    : public __and_<__not_<is_nothrow_move_constructible<_Tp>>,
+                    is_copy_constructible<_Tp>>::type { };
+# 143 "/usr/include/c++/14/bits/move.h" 3
+  template<typename _Tp>
+    [[__nodiscard__]]
+    constexpr
+    __conditional_t<__move_if_noexcept_cond<_Tp>::value, const _Tp&, _Tp&&>
+    move_if_noexcept(_Tp& __x) noexcept
+    { return std::move(__x); }
+# 159 "/usr/include/c++/14/bits/move.h" 3
+  template<typename _Tp>
+    [[__nodiscard__]]
+    inline constexpr _Tp*
+    addressof(_Tp& __r) noexcept
+    { return std::__addressof(__r); }
+
+
+
+  template<typename _Tp>
+    const _Tp* addressof(const _Tp&&) = delete;
+
+
+  template <typename _Tp, typename _Up = _Tp>
+    constexpr
+    inline _Tp
+    __exchange(_Tp& __obj, _Up&& __new_val)
+    {
+      _Tp __old_val = std::move(__obj);
+      __obj = std::forward<_Up>(__new_val);
+      return __old_val;
+    }
+# 203 "/usr/include/c++/14/bits/move.h" 3
+  template<typename _Tp>
+    constexpr
+    inline
+
+    typename enable_if<__and_<__not_<__is_tuple_like<_Tp>>,
+         is_move_constructible<_Tp>,
+         is_move_assignable<_Tp>>::value>::type
+
+
+
+    swap(_Tp& __a, _Tp& __b)
+    noexcept(__and_<is_nothrow_move_constructible<_Tp>, is_nothrow_move_assignable<_Tp>>::value)
+
+    {
+
+
+
+
+      _Tp __tmp = std::move(__a);
+      __a = std::move(__b);
+      __b = std::move(__tmp);
+    }
+
+
+
+
+  template<typename _Tp, size_t _Nm>
+    constexpr
+    inline
+
+    typename enable_if<__is_swappable<_Tp>::value>::type
+
+
+
+    swap(_Tp (&__a)[_Nm], _Tp (&__b)[_Nm])
+    noexcept(__is_nothrow_swappable<_Tp>::value)
+    {
+      for (size_t __n = 0; __n < _Nm; ++__n)
+ swap(__a[__n], __b[__n]);
+    }
+
+
+
+}
+# 42 "/usr/include/c++/14/bits/exception_ptr.h" 2 3
 # 50 "/usr/include/c++/14/bits/exception_ptr.h" 3
 extern "C++" {
 
@@ -12971,154 +16492,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 # 1 "/usr/include/ctype.h" 1 3 4
-# 26 "/usr/include/ctype.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 2 3 4
-# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-
-
-typedef unsigned char __u_char;
-typedef unsigned short int __u_short;
-typedef unsigned int __u_int;
-typedef unsigned long int __u_long;
-
-
-typedef signed char __int8_t;
-typedef unsigned char __uint8_t;
-typedef signed short int __int16_t;
-typedef unsigned short int __uint16_t;
-typedef signed int __int32_t;
-typedef unsigned int __uint32_t;
-
-typedef signed long int __int64_t;
-typedef unsigned long int __uint64_t;
-
-
-
-
-
-
-typedef __int8_t __int_least8_t;
-typedef __uint8_t __uint_least8_t;
-typedef __int16_t __int_least16_t;
-typedef __uint16_t __uint_least16_t;
-typedef __int32_t __int_least32_t;
-typedef __uint32_t __uint_least32_t;
-typedef __int64_t __int_least64_t;
-typedef __uint64_t __uint_least64_t;
-
-
-
-typedef long int __quad_t;
-typedef unsigned long int __u_quad_t;
-
-
-
-
-
-
-
-typedef long int __intmax_t;
-typedef unsigned long int __uintmax_t;
-# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
-# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
-# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
-
-
-typedef unsigned long int __dev_t;
-typedef unsigned int __uid_t;
-typedef unsigned int __gid_t;
-typedef unsigned long int __ino_t;
-typedef unsigned long int __ino64_t;
-typedef unsigned int __mode_t;
-typedef unsigned long int __nlink_t;
-typedef long int __off_t;
-typedef long int __off64_t;
-typedef int __pid_t;
-typedef struct { int __val[2]; } __fsid_t;
-typedef long int __clock_t;
-typedef unsigned long int __rlim_t;
-typedef unsigned long int __rlim64_t;
-typedef unsigned int __id_t;
-typedef long int __time_t;
-typedef unsigned int __useconds_t;
-typedef long int __suseconds_t;
-typedef long int __suseconds64_t;
-
-typedef int __daddr_t;
-typedef int __key_t;
-
-
-typedef int __clockid_t;
-
-
-typedef void * __timer_t;
-
-
-typedef long int __blksize_t;
-
-
-
-
-typedef long int __blkcnt_t;
-typedef long int __blkcnt64_t;
-
-
-typedef unsigned long int __fsblkcnt_t;
-typedef unsigned long int __fsblkcnt64_t;
-
-
-typedef unsigned long int __fsfilcnt_t;
-typedef unsigned long int __fsfilcnt64_t;
-
-
-typedef long int __fsword_t;
-
-typedef long int __ssize_t;
-
-
-typedef long int __syscall_slong_t;
-
-typedef unsigned long int __syscall_ulong_t;
-
-
-
-typedef __off64_t __loff_t;
-typedef char *__caddr_t;
-
-
-typedef long int __intptr_t;
-
-
-typedef unsigned int __socklen_t;
-
-
-
-
-typedef int __sig_atomic_t;
-# 27 "/usr/include/ctype.h" 2 3 4
-
+# 28 "/usr/include/ctype.h" 3 4
 extern "C" {
-# 39 "/usr/include/ctype.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/endian.h" 1 3 4
-# 35 "/usr/include/x86_64-linux-gnu/bits/endian.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/endianness.h" 1 3 4
-# 36 "/usr/include/x86_64-linux-gnu/bits/endian.h" 2 3 4
-# 40 "/usr/include/ctype.h" 2 3 4
-
-
-
-
-
-
+# 46 "/usr/include/ctype.h" 3 4
 enum
 {
   _ISupper = ((0) < 8 ? ((1 << (0)) << 8) : ((1 << (0)) >> 8)),
@@ -13428,37 +16804,7 @@ namespace __cxx11 {
 # 29 "/usr/include/sched.h" 3 4
 # 1 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h" 1 3 4
 # 30 "/usr/include/sched.h" 2 3 4
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/bits/types/time_t.h" 3 4
-typedef __time_t time_t;
-# 32 "/usr/include/sched.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 1 3 4
-# 11 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
-struct timespec
-{
-
-
-
-  __time_t tv_sec;
-
-
-
-
-  __syscall_slong_t tv_nsec;
-# 31 "/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h" 3 4
-};
-# 33 "/usr/include/sched.h" 2 3 4
-
-
-
-
-
-typedef __pid_t pid_t;
-
-
-
-
+# 43 "/usr/include/sched.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/sched.h" 1 3 4
 # 80 "/usr/include/x86_64-linux-gnu/bits/sched.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h" 1 3 4
@@ -13559,331 +16905,7 @@ extern int sched_getaffinity (__pid_t __pid, size_t __cpusetsize,
 
 }
 # 23 "/usr/include/pthread.h" 2 3 4
-# 1 "/usr/include/time.h" 1 3 4
-# 29 "/usr/include/time.h" 3 4
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h" 1 3 4
-# 30 "/usr/include/time.h" 2 3 4
 
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/time.h" 1 3 4
-# 73 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/timex.h" 1 3 4
-# 22 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h" 1 3 4
-
-
-
-
-
-
-
-struct timeval
-{
-
-
-
-
-  __time_t tv_sec;
-  __suseconds_t tv_usec;
-
-};
-# 23 "/usr/include/x86_64-linux-gnu/bits/timex.h" 2 3 4
-
-
-
-struct timex
-{
-# 58 "/usr/include/x86_64-linux-gnu/bits/timex.h" 3 4
-  unsigned int modes;
-  __syscall_slong_t offset;
-  __syscall_slong_t freq;
-  __syscall_slong_t maxerror;
-  __syscall_slong_t esterror;
-  int status;
-  __syscall_slong_t constant;
-  __syscall_slong_t precision;
-  __syscall_slong_t tolerance;
-  struct timeval time;
-  __syscall_slong_t tick;
-  __syscall_slong_t ppsfreq;
-  __syscall_slong_t jitter;
-  int shift;
-  __syscall_slong_t stabil;
-  __syscall_slong_t jitcnt;
-  __syscall_slong_t calcnt;
-  __syscall_slong_t errcnt;
-  __syscall_slong_t stbcnt;
-
-  int tai;
-
-
-  int :32; int :32; int :32; int :32;
-  int :32; int :32; int :32; int :32;
-  int :32; int :32; int :32;
-
-};
-# 74 "/usr/include/x86_64-linux-gnu/bits/time.h" 2 3 4
-
-extern "C" {
-
-
-extern int clock_adjtime (__clockid_t __clock_id, struct timex *__utx) noexcept (true) __attribute__ ((__nonnull__ (2)));
-# 90 "/usr/include/x86_64-linux-gnu/bits/time.h" 3 4
-}
-# 34 "/usr/include/time.h" 2 3 4
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/clock_t.h" 1 3 4
-
-
-
-
-
-
-typedef __clock_t clock_t;
-# 38 "/usr/include/time.h" 2 3 4
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h" 1 3 4
-
-
-
-
-
-
-struct tm
-{
-  int tm_sec;
-  int tm_min;
-  int tm_hour;
-  int tm_mday;
-  int tm_mon;
-  int tm_year;
-  int tm_wday;
-  int tm_yday;
-  int tm_isdst;
-
-
-  long int tm_gmtoff;
-  const char *tm_zone;
-
-
-
-
-};
-# 40 "/usr/include/time.h" 2 3 4
-
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h" 1 3 4
-
-
-
-
-
-
-typedef __clockid_t clockid_t;
-# 47 "/usr/include/time.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/timer_t.h" 1 3 4
-
-
-
-
-
-
-typedef __timer_t timer_t;
-# 48 "/usr/include/time.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h" 1 3 4
-
-
-
-
-
-
-
-struct itimerspec
-  {
-    struct timespec it_interval;
-    struct timespec it_value;
-  };
-# 49 "/usr/include/time.h" 2 3 4
-struct sigevent;
-# 68 "/usr/include/time.h" 3 4
-extern "C" {
-
-
-
-extern clock_t clock (void) noexcept (true);
-
-
-
-extern time_t time (time_t *__timer) noexcept (true);
-
-
-extern double difftime (time_t __time1, time_t __time0)
-     noexcept (true) __attribute__ ((__const__));
-
-
-extern time_t mktime (struct tm *__tp) noexcept (true);
-# 100 "/usr/include/time.h" 3 4
-extern size_t strftime (char *__restrict __s, size_t __maxsize,
-   const char *__restrict __format,
-   const struct tm *__restrict __tp)
-   noexcept (true) __attribute__ ((__nonnull__ (1, 3, 4)));
-
-
-
-
-extern char *strptime (const char *__restrict __s,
-         const char *__restrict __fmt, struct tm *__tp)
-     noexcept (true);
-
-
-
-
-
-
-extern size_t strftime_l (char *__restrict __s, size_t __maxsize,
-     const char *__restrict __format,
-     const struct tm *__restrict __tp,
-     locale_t __loc) noexcept (true);
-
-
-
-extern char *strptime_l (const char *__restrict __s,
-    const char *__restrict __fmt, struct tm *__tp,
-    locale_t __loc) noexcept (true);
-
-
-
-
-
-
-extern struct tm *gmtime (const time_t *__timer) noexcept (true);
-
-
-
-extern struct tm *localtime (const time_t *__timer) noexcept (true);
-# 155 "/usr/include/time.h" 3 4
-extern struct tm *gmtime_r (const time_t *__restrict __timer,
-       struct tm *__restrict __tp) noexcept (true);
-
-
-
-extern struct tm *localtime_r (const time_t *__restrict __timer,
-          struct tm *__restrict __tp) noexcept (true);
-# 180 "/usr/include/time.h" 3 4
-extern char *asctime (const struct tm *__tp) noexcept (true);
-
-
-
-extern char *ctime (const time_t *__timer) noexcept (true);
-# 198 "/usr/include/time.h" 3 4
-extern char *asctime_r (const struct tm *__restrict __tp,
-   char *__restrict __buf) noexcept (true);
-
-
-
-extern char *ctime_r (const time_t *__restrict __timer,
-        char *__restrict __buf) noexcept (true);
-# 218 "/usr/include/time.h" 3 4
-extern char *__tzname[2];
-extern int __daylight;
-extern long int __timezone;
-
-
-
-
-extern char *tzname[2];
-
-
-
-extern void tzset (void) noexcept (true);
-
-
-
-extern int daylight;
-extern long int timezone;
-# 247 "/usr/include/time.h" 3 4
-extern time_t timegm (struct tm *__tp) noexcept (true);
-# 264 "/usr/include/time.h" 3 4
-extern time_t timelocal (struct tm *__tp) noexcept (true);
-
-
-
-
-
-
-
-extern int dysize (int __year) noexcept (true) __attribute__ ((__const__));
-# 282 "/usr/include/time.h" 3 4
-extern int nanosleep (const struct timespec *__requested_time,
-        struct timespec *__remaining);
-
-
-extern int clock_getres (clockid_t __clock_id, struct timespec *__res) noexcept (true);
-
-
-extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-extern int clock_settime (clockid_t __clock_id, const struct timespec *__tp)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
-# 324 "/usr/include/time.h" 3 4
-extern int clock_nanosleep (clockid_t __clock_id, int __flags,
-       const struct timespec *__req,
-       struct timespec *__rem);
-# 339 "/usr/include/time.h" 3 4
-extern int clock_getcpuclockid (pid_t __pid, clockid_t *__clock_id) noexcept (true);
-
-
-
-
-extern int timer_create (clockid_t __clock_id,
-    struct sigevent *__restrict __evp,
-    timer_t *__restrict __timerid) noexcept (true);
-
-
-extern int timer_delete (timer_t __timerid) noexcept (true);
-
-
-
-extern int timer_settime (timer_t __timerid, int __flags,
-     const struct itimerspec *__restrict __value,
-     struct itimerspec *__restrict __ovalue) noexcept (true);
-
-
-extern int timer_gettime (timer_t __timerid, struct itimerspec *__value)
-     noexcept (true);
-# 377 "/usr/include/time.h" 3 4
-extern int timer_getoverrun (timer_t __timerid) noexcept (true);
-
-
-
-
-
-
-extern int timespec_get (struct timespec *__ts, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 400 "/usr/include/time.h" 3 4
-extern int timespec_getres (struct timespec *__ts, int __base)
-     noexcept (true);
-# 426 "/usr/include/time.h" 3 4
-extern int getdate_err;
-# 435 "/usr/include/time.h" 3 4
-extern struct tm *getdate (const char *__string);
-# 449 "/usr/include/time.h" 3 4
-extern int getdate_r (const char *__restrict __string,
-        struct tm *__restrict __resbufp);
-
-
-}
-# 24 "/usr/include/pthread.h" 2 3 4
 
 
 # 1 "/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h" 1 3 4
@@ -15835,7 +18857,211 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 47 "/usr/include/c++/14/string" 2 3
 
 # 1 "/usr/include/c++/14/bits/stl_iterator.h" 1 3
-# 85 "/usr/include/c++/14/bits/stl_iterator.h" 3
+# 82 "/usr/include/c++/14/bits/stl_iterator.h" 3
+# 1 "/usr/include/c++/14/bits/utility.h" 1 3
+# 36 "/usr/include/c++/14/bits/utility.h" 3
+       
+# 37 "/usr/include/c++/14/bits/utility.h" 3
+
+
+
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+  template<typename _Tp>
+    struct tuple_size;
+
+
+
+
+
+  template<typename _Tp,
+    typename _Up = typename remove_cv<_Tp>::type,
+    typename = typename enable_if<is_same<_Tp, _Up>::value>::type,
+    size_t = tuple_size<_Tp>::value>
+    using __enable_if_has_tuple_size = _Tp;
+
+  template<typename _Tp>
+    struct tuple_size<const __enable_if_has_tuple_size<_Tp>>
+    : public tuple_size<_Tp> { };
+
+  template<typename _Tp>
+    struct tuple_size<volatile __enable_if_has_tuple_size<_Tp>>
+    : public tuple_size<_Tp> { };
+
+  template<typename _Tp>
+    struct tuple_size<const volatile __enable_if_has_tuple_size<_Tp>>
+    : public tuple_size<_Tp> { };
+
+
+  template<typename _Tp>
+    inline constexpr size_t tuple_size_v = tuple_size<_Tp>::value;
+
+
+
+  template<size_t __i, typename _Tp>
+    struct tuple_element;
+
+
+  template<size_t __i, typename _Tp>
+    using __tuple_element_t = typename tuple_element<__i, _Tp>::type;
+
+  template<size_t __i, typename _Tp>
+    struct tuple_element<__i, const _Tp>
+    {
+      using type = const __tuple_element_t<__i, _Tp>;
+    };
+
+  template<size_t __i, typename _Tp>
+    struct tuple_element<__i, volatile _Tp>
+    {
+      using type = volatile __tuple_element_t<__i, _Tp>;
+    };
+
+  template<size_t __i, typename _Tp>
+    struct tuple_element<__i, const volatile _Tp>
+    {
+      using type = const volatile __tuple_element_t<__i, _Tp>;
+    };
+
+
+
+
+
+  template<typename _Tp, typename... _Types>
+    constexpr size_t
+    __find_uniq_type_in_pack()
+    {
+      constexpr size_t __sz = sizeof...(_Types);
+      constexpr bool __found[__sz] = { __is_same(_Tp, _Types) ... };
+      size_t __n = __sz;
+      for (size_t __i = 0; __i < __sz; ++__i)
+ {
+   if (__found[__i])
+     {
+       if (__n < __sz)
+  return __sz;
+       __n = __i;
+     }
+ }
+      return __n;
+    }
+# 134 "/usr/include/c++/14/bits/utility.h" 3
+  template<size_t __i, typename _Tp>
+    using tuple_element_t = typename tuple_element<__i, _Tp>::type;
+
+
+
+
+  template<size_t... _Indexes> struct _Index_tuple { };
+
+
+  template<size_t _Num>
+    struct _Build_index_tuple
+    {
+# 154 "/usr/include/c++/14/bits/utility.h" 3
+      using __type = _Index_tuple<__integer_pack(_Num)...>;
+
+    };
+
+
+
+
+  template<typename _Tp, _Tp... _Idx>
+    struct integer_sequence
+    {
+
+      static_assert(is_integral_v<_Tp>);
+
+      typedef _Tp value_type;
+      static constexpr size_t size() noexcept { return sizeof...(_Idx); }
+    };
+
+
+  template<typename _Tp, _Tp _Num>
+    using make_integer_sequence
+
+
+
+      = integer_sequence<_Tp, __integer_pack(_Num)...>;
+
+
+
+  template<size_t... _Idx>
+    using index_sequence = integer_sequence<size_t, _Idx...>;
+
+
+  template<size_t _Num>
+    using make_index_sequence = make_integer_sequence<size_t, _Num>;
+
+
+  template<typename... _Types>
+    using index_sequence_for = make_index_sequence<sizeof...(_Types)>;
+
+
+
+
+  struct in_place_t {
+    explicit in_place_t() = default;
+  };
+
+  inline constexpr in_place_t in_place{};
+
+  template<typename _Tp> struct in_place_type_t
+  {
+    explicit in_place_type_t() = default;
+  };
+
+  template<typename _Tp>
+    inline constexpr in_place_type_t<_Tp> in_place_type{};
+
+  template<size_t _Idx> struct in_place_index_t
+  {
+    explicit in_place_index_t() = default;
+  };
+
+  template<size_t _Idx>
+    inline constexpr in_place_index_t<_Idx> in_place_index{};
+
+  template<typename>
+    inline constexpr bool __is_in_place_type_v = false;
+
+  template<typename _Tp>
+    inline constexpr bool __is_in_place_type_v<in_place_type_t<_Tp>> = true;
+
+  template<typename _Tp>
+    using __is_in_place_type = bool_constant<__is_in_place_type_v<_Tp>>;
+
+  template<typename>
+    inline constexpr bool __is_in_place_index_v = false;
+
+  template<size_t _Nm>
+    inline constexpr bool __is_in_place_index_v<in_place_index_t<_Nm>> = true;
+
+
+
+
+  template<size_t _Np, typename... _Types>
+    struct _Nth_type
+    { using type = __type_pack_element<_Np, _Types...>; };
+# 276 "/usr/include/c++/14/bits/utility.h" 3
+  namespace ranges::__detail
+  {
+    template<typename _Range>
+      inline constexpr bool __is_subrange = false;
+  }
+
+
+
+}
+# 83 "/usr/include/c++/14/bits/stl_iterator.h" 2 3
+
+
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
@@ -19534,7 +22760,797 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 50 "/usr/include/c++/14/string" 2 3
 
 # 1 "/usr/include/c++/14/bits/stl_algobase.h" 1 3
-# 69 "/usr/include/c++/14/bits/stl_algobase.h" 3
+# 64 "/usr/include/c++/14/bits/stl_algobase.h" 3
+# 1 "/usr/include/c++/14/bits/stl_pair.h" 1 3
+# 68 "/usr/include/c++/14/bits/stl_pair.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 79 "/usr/include/c++/14/bits/stl_pair.h" 3
+  struct piecewise_construct_t { explicit piecewise_construct_t() = default; };
+
+
+  inline constexpr piecewise_construct_t piecewise_construct =
+    piecewise_construct_t();
+
+
+
+
+  template<typename _T1, typename _T2>
+    struct pair;
+
+  template<typename...>
+    class tuple;
+
+
+
+
+
+  template<typename _Tp, size_t _Nm>
+    struct array;
+
+  template<size_t...>
+    struct _Index_tuple;
+
+  template<size_t _Int, class _Tp1, class _Tp2>
+    constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&
+    get(pair<_Tp1, _Tp2>& __in) noexcept;
+
+  template<size_t _Int, class _Tp1, class _Tp2>
+    constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&&
+    get(pair<_Tp1, _Tp2>&& __in) noexcept;
+
+  template<size_t _Int, class _Tp1, class _Tp2>
+    constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&
+    get(const pair<_Tp1, _Tp2>& __in) noexcept;
+
+  template<size_t _Int, class _Tp1, class _Tp2>
+    constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&&
+    get(const pair<_Tp1, _Tp2>&& __in) noexcept;
+
+  template<size_t __i, typename... _Elements>
+    constexpr __tuple_element_t<__i, tuple<_Elements...>>&
+    get(tuple<_Elements...>& __t) noexcept;
+
+  template<size_t __i, typename... _Elements>
+    constexpr const __tuple_element_t<__i, tuple<_Elements...>>&
+    get(const tuple<_Elements...>& __t) noexcept;
+
+  template<size_t __i, typename... _Elements>
+    constexpr __tuple_element_t<__i, tuple<_Elements...>>&&
+    get(tuple<_Elements...>&& __t) noexcept;
+
+  template<size_t __i, typename... _Elements>
+    constexpr const __tuple_element_t<__i, tuple<_Elements...>>&&
+    get(const tuple<_Elements...>&& __t) noexcept;
+
+  template<size_t _Int, typename _Tp, size_t _Nm>
+    constexpr _Tp&
+    get(array<_Tp, _Nm>&) noexcept;
+
+  template<size_t _Int, typename _Tp, size_t _Nm>
+    constexpr _Tp&&
+    get(array<_Tp, _Nm>&&) noexcept;
+
+  template<size_t _Int, typename _Tp, size_t _Nm>
+    constexpr const _Tp&
+    get(const array<_Tp, _Nm>&) noexcept;
+
+  template<size_t _Int, typename _Tp, size_t _Nm>
+    constexpr const _Tp&&
+    get(const array<_Tp, _Nm>&&) noexcept;
+# 221 "/usr/include/c++/14/bits/stl_pair.h" 3
+  template<typename _Tp>
+    inline constexpr bool __is_tuple_v = false;
+
+  template<typename... _Ts>
+    inline constexpr bool __is_tuple_v<tuple<_Ts...>> = true;
+
+
+  template<typename _Tp>
+    inline constexpr bool __is_tuple_like_v = false;
+
+  template<typename... _Elements>
+    inline constexpr bool __is_tuple_like_v<tuple<_Elements...>> = true;
+
+  template<typename _T1, typename _T2>
+    inline constexpr bool __is_tuple_like_v<pair<_T1, _T2>> = true;
+
+  template<typename _Tp, size_t _Nm>
+    inline constexpr bool __is_tuple_like_v<array<_Tp, _Nm>> = true;
+
+
+
+  template<typename _Tp>
+    concept __tuple_like = __is_tuple_like_v<remove_cvref_t<_Tp>>;
+
+  template<typename _Tp>
+    concept __pair_like = __tuple_like<_Tp> && tuple_size_v<remove_cvref_t<_Tp>> == 2;
+
+  template<typename _Tp, typename _Tuple>
+    concept __eligible_tuple_like
+      = __detail::__different_from<_Tp, _Tuple> && __tuple_like<_Tp>
+ && (tuple_size_v<remove_cvref_t<_Tp>> == tuple_size_v<_Tuple>)
+ && !ranges::__detail::__is_subrange<remove_cvref_t<_Tp>>;
+
+  template<typename _Tp, typename _Pair>
+    concept __eligible_pair_like
+      = __detail::__different_from<_Tp, _Pair> && __pair_like<_Tp>
+ && !ranges::__detail::__is_subrange<remove_cvref_t<_Tp>>;
+
+
+  template<typename _U1, typename _U2> class __pair_base
+  {
+
+
+
+
+
+
+
+  };
+# 283 "/usr/include/c++/14/bits/stl_pair.h" 3
+  template<typename _T1, typename _T2>
+    struct pair
+    : public __pair_base<_T1, _T2>
+    {
+      typedef _T1 first_type;
+      typedef _T2 second_type;
+
+      _T1 first;
+      _T2 second;
+
+
+      constexpr pair(const pair&) = default;
+      constexpr pair(pair&&) = default;
+
+      template<typename... _Args1, typename... _Args2>
+ constexpr
+ pair(piecewise_construct_t, tuple<_Args1...>, tuple<_Args2...>);
+
+
+      constexpr void
+      swap(pair& __p)
+      noexcept(__and_<__is_nothrow_swappable<_T1>,
+        __is_nothrow_swappable<_T2>>::value)
+      {
+ using std::swap;
+ swap(first, __p.first);
+ swap(second, __p.second);
+      }
+# 319 "/usr/include/c++/14/bits/stl_pair.h" 3
+      constexpr void
+      swap(const pair& __p) const
+      noexcept(__and_v<__is_nothrow_swappable<const _T1>,
+         __is_nothrow_swappable<const _T2>>)
+      requires is_swappable_v<const _T1> && is_swappable_v<const _T2>
+      {
+ using std::swap;
+ swap(first, __p.first);
+ swap(second, __p.second);
+      }
+
+
+    private:
+      template<typename... _Args1, size_t... _Indexes1,
+        typename... _Args2, size_t... _Indexes2>
+ constexpr
+ pair(tuple<_Args1...>&, tuple<_Args2...>&,
+      _Index_tuple<_Indexes1...>, _Index_tuple<_Indexes2...>);
+    public:
+
+
+
+
+
+      constexpr
+      explicit(__not_<__and_<__is_implicitly_default_constructible<_T1>,
+        __is_implicitly_default_constructible<_T2>>>())
+      pair()
+      requires is_default_constructible_v<_T1>
+        && is_default_constructible_v<_T2>
+      : first(), second()
+      { }
+
+    private:
+
+
+      template<typename _U1, typename _U2>
+ static constexpr bool
+ _S_constructible()
+ {
+   if constexpr (is_constructible_v<_T1, _U1>)
+     return is_constructible_v<_T2, _U2>;
+   return false;
+ }
+
+      template<typename _U1, typename _U2>
+ static constexpr bool
+ _S_nothrow_constructible()
+ {
+   if constexpr (is_nothrow_constructible_v<_T1, _U1>)
+     return is_nothrow_constructible_v<_T2, _U2>;
+   return false;
+ }
+
+      template<typename _U1, typename _U2>
+ static constexpr bool
+ _S_convertible()
+ {
+   if constexpr (is_convertible_v<_U1, _T1>)
+     return is_convertible_v<_U2, _T2>;
+   return false;
+ }
+
+
+      template<typename _U1, typename _U2>
+ static constexpr bool
+ _S_dangles()
+ {
+
+   if constexpr (__reference_constructs_from_temporary(_T1, _U1&&))
+     return true;
+   else
+     return __reference_constructs_from_temporary(_T2, _U2&&);
+
+
+
+ }
+
+
+      template<typename _UPair>
+ static constexpr bool
+ _S_constructible_from_pair_like()
+ {
+   return _S_constructible<decltype(std::get<0>(std::declval<_UPair>())),
+      decltype(std::get<1>(std::declval<_UPair>()))>();
+ }
+
+      template<typename _UPair>
+ static constexpr bool
+ _S_convertible_from_pair_like()
+ {
+   return _S_convertible<decltype(std::get<0>(std::declval<_UPair>())),
+    decltype(std::get<1>(std::declval<_UPair>()))>();
+ }
+
+      template<typename _UPair>
+ static constexpr bool
+ _S_dangles_from_pair_like()
+ {
+   return _S_dangles<decltype(std::get<0>(std::declval<_UPair>())),
+       decltype(std::get<1>(std::declval<_UPair>()))>();
+ }
+
+
+
+    public:
+
+
+      constexpr explicit(!_S_convertible<const _T1&, const _T2&>())
+      pair(const _T1& __x, const _T2& __y)
+      noexcept(_S_nothrow_constructible<const _T1&, const _T2&>())
+      requires (_S_constructible<const _T1&, const _T2&>())
+      : first(__x), second(__y)
+      { }
+
+
+
+      template<typename _U1 = _T1, typename _U2 = _T2>
+
+
+
+ requires (_S_constructible<_U1, _U2>()) && (!_S_dangles<_U1, _U2>())
+ constexpr explicit(!_S_convertible<_U1, _U2>())
+ pair(_U1&& __x, _U2&& __y)
+ noexcept(_S_nothrow_constructible<_U1, _U2>())
+ : first(std::forward<_U1>(__x)), second(std::forward<_U2>(__y))
+ { }
+
+
+      template<typename _U1 = _T1, typename _U2 = _T2>
+
+
+
+ requires (_S_constructible<_U1, _U2>()) && (_S_dangles<_U1, _U2>())
+ constexpr explicit(!_S_convertible<_U1, _U2>())
+ pair(_U1&&, _U2&&) = delete;
+
+
+      template<typename _U1, typename _U2>
+ requires (_S_constructible<const _U1&, const _U2&>())
+   && (!_S_dangles<_U1, _U2>())
+ constexpr explicit(!_S_convertible<const _U1&, const _U2&>())
+ pair(const pair<_U1, _U2>& __p)
+ noexcept(_S_nothrow_constructible<const _U1&, const _U2&>())
+ : first(__p.first), second(__p.second)
+ { }
+
+      template<typename _U1, typename _U2>
+ requires (_S_constructible<const _U1&, const _U2&>())
+       && (_S_dangles<const _U1&, const _U2&>())
+ constexpr explicit(!_S_convertible<const _U1&, const _U2&>())
+ pair(const pair<_U1, _U2>&) = delete;
+
+
+      template<typename _U1, typename _U2>
+ requires (_S_constructible<_U1, _U2>()) && (!_S_dangles<_U1, _U2>())
+ constexpr explicit(!_S_convertible<_U1, _U2>())
+ pair(pair<_U1, _U2>&& __p)
+ noexcept(_S_nothrow_constructible<_U1, _U2>())
+ : first(std::forward<_U1>(__p.first)),
+   second(std::forward<_U2>(__p.second))
+ { }
+
+      template<typename _U1, typename _U2>
+ requires (_S_constructible<_U1, _U2>()) && (_S_dangles<_U1, _U2>())
+ constexpr explicit(!_S_convertible<_U1, _U2>())
+ pair(pair<_U1, _U2>&&) = delete;
+
+
+
+      template<typename _U1, typename _U2>
+ requires (_S_constructible<_U1&, _U2&>()) && (!_S_dangles<_U1&, _U2&>())
+ constexpr explicit(!_S_convertible<_U1&, _U2&>())
+ pair(pair<_U1, _U2>& __p)
+ noexcept(_S_nothrow_constructible<_U1&, _U2&>())
+ : first(__p.first), second(__p.second)
+ { }
+
+      template<typename _U1, typename _U2>
+ requires (_S_constructible<_U1&, _U2&>()) && (_S_dangles<_U1&, _U2&>())
+ constexpr explicit(!_S_convertible<_U1&, _U2&>())
+ pair(pair<_U1, _U2>&) = delete;
+
+
+      template<typename _U1, typename _U2>
+ requires (_S_constructible<const _U1, const _U2>())
+   && (!_S_dangles<const _U1, const _U2>())
+ constexpr explicit(!_S_convertible<const _U1, const _U2>())
+ pair(const pair<_U1, _U2>&& __p)
+ noexcept(_S_nothrow_constructible<const _U1, const _U2>())
+ : first(std::forward<const _U1>(__p.first)),
+   second(std::forward<const _U2>(__p.second))
+ { }
+
+      template<typename _U1, typename _U2>
+ requires (_S_constructible<const _U1, const _U2>())
+   && (_S_dangles<const _U1, const _U2>())
+ constexpr explicit(!_S_convertible<const _U1, const _U2>())
+ pair(const pair<_U1, _U2>&&) = delete;
+
+
+
+      template<__eligible_pair_like<pair> _UPair>
+ requires (_S_constructible_from_pair_like<_UPair>())
+   && (!_S_dangles_from_pair_like<_UPair>())
+ constexpr explicit(!_S_convertible_from_pair_like<_UPair>())
+ pair(_UPair&& __p)
+ : first(std::get<0>(std::forward<_UPair>(__p))),
+   second(std::get<1>(std::forward<_UPair>(__p)))
+ { }
+
+      template<__eligible_pair_like<pair> _UPair>
+ requires (_S_constructible_from_pair_like<_UPair>())
+   && (_S_dangles_from_pair_like<_UPair>())
+ constexpr explicit(!_S_convertible_from_pair_like<_UPair>())
+ pair(_UPair&&) = delete;
+
+
+  private:
+
+      template<typename _U1, typename _U2>
+ static constexpr bool
+ _S_assignable()
+ {
+   if constexpr (is_assignable_v<_T1&, _U1>)
+     return is_assignable_v<_T2&, _U2>;
+   return false;
+ }
+
+      template<typename _U1, typename _U2>
+ static constexpr bool
+ _S_const_assignable()
+ {
+   if constexpr (is_assignable_v<const _T1&, _U1>)
+     return is_assignable_v<const _T2&, _U2>;
+   return false;
+ }
+
+      template<typename _U1, typename _U2>
+ static constexpr bool
+ _S_nothrow_assignable()
+ {
+   if constexpr (is_nothrow_assignable_v<_T1&, _U1>)
+     return is_nothrow_assignable_v<_T2&, _U2>;
+   return false;
+ }
+
+
+      template<typename _UPair>
+ static constexpr bool
+ _S_assignable_from_tuple_like()
+ {
+   return _S_assignable<decltype(std::get<0>(std::declval<_UPair>())),
+          decltype(std::get<1>(std::declval<_UPair>()))>();
+ }
+
+      template<typename _UPair>
+ static constexpr bool
+ _S_const_assignable_from_tuple_like()
+ {
+   return _S_const_assignable<decltype(std::get<0>(std::declval<_UPair>())),
+         decltype(std::get<1>(std::declval<_UPair>()))>();
+ }
+
+
+
+  public:
+
+      pair& operator=(const pair&) = delete;
+
+
+      constexpr pair&
+      operator=(const pair& __p)
+      noexcept(_S_nothrow_assignable<const _T1&, const _T2&>())
+      requires (_S_assignable<const _T1&, const _T2&>())
+      {
+ first = __p.first;
+ second = __p.second;
+ return *this;
+      }
+
+
+      constexpr pair&
+      operator=(pair&& __p)
+      noexcept(_S_nothrow_assignable<_T1, _T2>())
+      requires (_S_assignable<_T1, _T2>())
+      {
+ first = std::forward<first_type>(__p.first);
+ second = std::forward<second_type>(__p.second);
+ return *this;
+      }
+
+
+      template<typename _U1, typename _U2>
+ constexpr pair&
+ operator=(const pair<_U1, _U2>& __p)
+ noexcept(_S_nothrow_assignable<const _U1&, const _U2&>())
+ requires (_S_assignable<const _U1&, const _U2&>())
+ {
+   first = __p.first;
+   second = __p.second;
+   return *this;
+ }
+
+
+      template<typename _U1, typename _U2>
+ constexpr pair&
+ operator=(pair<_U1, _U2>&& __p)
+ noexcept(_S_nothrow_assignable<_U1, _U2>())
+ requires (_S_assignable<_U1, _U2>())
+ {
+   first = std::forward<_U1>(__p.first);
+   second = std::forward<_U2>(__p.second);
+   return *this;
+ }
+
+
+
+      constexpr const pair&
+      operator=(const pair& __p) const
+      requires (_S_const_assignable<const first_type&, const second_type&>())
+      {
+ first = __p.first;
+ second = __p.second;
+ return *this;
+      }
+
+
+      constexpr const pair&
+      operator=(pair&& __p) const
+      requires (_S_const_assignable<first_type, second_type>())
+      {
+ first = std::forward<first_type>(__p.first);
+ second = std::forward<second_type>(__p.second);
+ return *this;
+      }
+
+
+      template<typename _U1, typename _U2>
+ constexpr const pair&
+ operator=(const pair<_U1, _U2>& __p) const
+ requires (_S_const_assignable<const _U1&, const _U2&>())
+ {
+   first = __p.first;
+   second = __p.second;
+   return *this;
+ }
+
+
+      template<typename _U1, typename _U2>
+ constexpr const pair&
+ operator=(pair<_U1, _U2>&& __p) const
+ requires (_S_const_assignable<_U1, _U2>())
+ {
+   first = std::forward<_U1>(__p.first);
+   second = std::forward<_U2>(__p.second);
+   return *this;
+ }
+
+
+
+      template<__eligible_pair_like<pair> _UPair>
+ requires (_S_assignable_from_tuple_like<_UPair>())
+ constexpr pair&
+ operator=(_UPair&& __p)
+ {
+   first = std::get<0>(std::forward<_UPair>(__p));
+   second = std::get<1>(std::forward<_UPair>(__p));
+   return *this;
+ }
+
+      template<__eligible_pair_like<pair> _UPair>
+ requires (_S_const_assignable_from_tuple_like<_UPair>())
+ constexpr const pair&
+ operator=(_UPair&& __p) const
+ {
+   first = std::get<0>(std::forward<_UPair>(__p));
+   second = std::get<1>(std::forward<_UPair>(__p));
+   return *this;
+ }
+# 995 "/usr/include/c++/14/bits/stl_pair.h" 3
+    };
+
+
+
+
+  template<typename _T1, typename _T2> pair(_T1, _T2) -> pair<_T1, _T2>;
+
+
+
+  template<typename _T1, typename _T2>
+    inline constexpr bool
+    operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+    { return __x.first == __y.first && __x.second == __y.second; }
+
+
+  template<typename _T1, typename _T2>
+    constexpr common_comparison_category_t<__detail::__synth3way_t<_T1>,
+        __detail::__synth3way_t<_T2>>
+    operator<=>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+    {
+      if (auto __c = __detail::__synth3way(__x.first, __y.first); __c != 0)
+ return __c;
+      return __detail::__synth3way(__x.second, __y.second);
+    }
+# 1064 "/usr/include/c++/14/bits/stl_pair.h" 3
+  template<typename _T1, typename _T2>
+    constexpr inline
+
+
+    typename enable_if<__and_<__is_swappable<_T1>,
+                              __is_swappable<_T2>>::value>::type
+
+
+
+    swap(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)
+    noexcept(noexcept(__x.swap(__y)))
+    { __x.swap(__y); }
+
+
+  template<typename _T1, typename _T2>
+    requires is_swappable_v<const _T1> && is_swappable_v<const _T2>
+    constexpr void
+    swap(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+    noexcept(noexcept(__x.swap(__y)))
+    { __x.swap(__y); }
+
+
+
+  template<typename _T1, typename _T2>
+    typename enable_if<!__and_<__is_swappable<_T1>,
+          __is_swappable<_T2>>::value>::type
+    swap(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;
+# 1113 "/usr/include/c++/14/bits/stl_pair.h" 3
+  template<typename _T1, typename _T2>
+    constexpr pair<typename __decay_and_strip<_T1>::__type,
+                   typename __decay_and_strip<_T2>::__type>
+    make_pair(_T1&& __x, _T2&& __y)
+    {
+      typedef typename __decay_and_strip<_T1>::__type __ds_type1;
+      typedef typename __decay_and_strip<_T2>::__type __ds_type2;
+      typedef pair<__ds_type1, __ds_type2> __pair_type;
+      return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
+    }
+# 1136 "/usr/include/c++/14/bits/stl_pair.h" 3
+  template<typename _T1, typename _T2>
+    struct __is_tuple_like_impl<pair<_T1, _T2>> : true_type
+    { };
+
+
+
+  template<class _Tp1, class _Tp2>
+    struct tuple_size<pair<_Tp1, _Tp2>>
+    : public integral_constant<size_t, 2> { };
+
+
+  template<class _Tp1, class _Tp2>
+    struct tuple_element<0, pair<_Tp1, _Tp2>>
+    { typedef _Tp1 type; };
+
+
+  template<class _Tp1, class _Tp2>
+    struct tuple_element<1, pair<_Tp1, _Tp2>>
+    { typedef _Tp2 type; };
+
+
+
+  template<size_t __i, typename... _Types>
+    struct tuple_element<__i, tuple<_Types...>>;
+
+
+  template<typename _Tp1, typename _Tp2>
+    inline constexpr size_t tuple_size_v<pair<_Tp1, _Tp2>> = 2;
+
+  template<typename _Tp1, typename _Tp2>
+    inline constexpr size_t tuple_size_v<const pair<_Tp1, _Tp2>> = 2;
+
+  template<typename _Tp>
+    inline constexpr bool __is_pair = false;
+
+  template<typename _Tp, typename _Up>
+    inline constexpr bool __is_pair<pair<_Tp, _Up>> = true;
+
+
+
+  template<size_t _Int>
+    struct __pair_get;
+
+  template<>
+    struct __pair_get<0>
+    {
+      template<typename _Tp1, typename _Tp2>
+ static constexpr _Tp1&
+ __get(pair<_Tp1, _Tp2>& __pair) noexcept
+ { return __pair.first; }
+
+      template<typename _Tp1, typename _Tp2>
+ static constexpr _Tp1&&
+ __move_get(pair<_Tp1, _Tp2>&& __pair) noexcept
+ { return std::forward<_Tp1>(__pair.first); }
+
+      template<typename _Tp1, typename _Tp2>
+ static constexpr const _Tp1&
+ __const_get(const pair<_Tp1, _Tp2>& __pair) noexcept
+ { return __pair.first; }
+
+      template<typename _Tp1, typename _Tp2>
+ static constexpr const _Tp1&&
+ __const_move_get(const pair<_Tp1, _Tp2>&& __pair) noexcept
+ { return std::forward<const _Tp1>(__pair.first); }
+    };
+
+  template<>
+    struct __pair_get<1>
+    {
+      template<typename _Tp1, typename _Tp2>
+ static constexpr _Tp2&
+ __get(pair<_Tp1, _Tp2>& __pair) noexcept
+ { return __pair.second; }
+
+      template<typename _Tp1, typename _Tp2>
+ static constexpr _Tp2&&
+ __move_get(pair<_Tp1, _Tp2>&& __pair) noexcept
+ { return std::forward<_Tp2>(__pair.second); }
+
+      template<typename _Tp1, typename _Tp2>
+ static constexpr const _Tp2&
+ __const_get(const pair<_Tp1, _Tp2>& __pair) noexcept
+ { return __pair.second; }
+
+      template<typename _Tp1, typename _Tp2>
+ static constexpr const _Tp2&&
+ __const_move_get(const pair<_Tp1, _Tp2>&& __pair) noexcept
+ { return std::forward<const _Tp2>(__pair.second); }
+    };
+
+
+
+
+
+
+  template<size_t _Int, class _Tp1, class _Tp2>
+    constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&
+    get(pair<_Tp1, _Tp2>& __in) noexcept
+    { return __pair_get<_Int>::__get(__in); }
+
+  template<size_t _Int, class _Tp1, class _Tp2>
+    constexpr typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&&
+    get(pair<_Tp1, _Tp2>&& __in) noexcept
+    { return __pair_get<_Int>::__move_get(std::move(__in)); }
+
+  template<size_t _Int, class _Tp1, class _Tp2>
+    constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&
+    get(const pair<_Tp1, _Tp2>& __in) noexcept
+    { return __pair_get<_Int>::__const_get(__in); }
+
+  template<size_t _Int, class _Tp1, class _Tp2>
+    constexpr const typename tuple_element<_Int, pair<_Tp1, _Tp2>>::type&&
+    get(const pair<_Tp1, _Tp2>&& __in) noexcept
+    { return __pair_get<_Int>::__const_move_get(std::move(__in)); }
+
+
+
+  template <typename _Tp, typename _Up>
+    constexpr _Tp&
+    get(pair<_Tp, _Up>& __p) noexcept
+    { return __p.first; }
+
+  template <typename _Tp, typename _Up>
+    constexpr const _Tp&
+    get(const pair<_Tp, _Up>& __p) noexcept
+    { return __p.first; }
+
+  template <typename _Tp, typename _Up>
+    constexpr _Tp&&
+    get(pair<_Tp, _Up>&& __p) noexcept
+    { return std::move(__p.first); }
+
+  template <typename _Tp, typename _Up>
+    constexpr const _Tp&&
+    get(const pair<_Tp, _Up>&& __p) noexcept
+    { return std::move(__p.first); }
+
+  template <typename _Tp, typename _Up>
+    constexpr _Tp&
+    get(pair<_Up, _Tp>& __p) noexcept
+    { return __p.second; }
+
+  template <typename _Tp, typename _Up>
+    constexpr const _Tp&
+    get(const pair<_Up, _Tp>& __p) noexcept
+    { return __p.second; }
+
+  template <typename _Tp, typename _Up>
+    constexpr _Tp&&
+    get(pair<_Up, _Tp>&& __p) noexcept
+    { return std::move(__p.second); }
+
+  template <typename _Tp, typename _Up>
+    constexpr const _Tp&&
+    get(const pair<_Up, _Tp>&& __p) noexcept
+    { return std::move(__p.second); }
+
+
+
+
+  template<typename _T1, typename _T2, typename _U1, typename _U2,
+    template<typename> class _TQual, template<typename> class _UQual>
+    requires requires { typename pair<common_reference_t<_TQual<_T1>, _UQual<_U1>>,
+          common_reference_t<_TQual<_T2>, _UQual<_U2>>>; }
+  struct basic_common_reference<pair<_T1, _T2>, pair<_U1, _U2>, _TQual, _UQual>
+  {
+    using type = pair<common_reference_t<_TQual<_T1>, _UQual<_U1>>,
+        common_reference_t<_TQual<_T2>, _UQual<_U2>>>;
+  };
+
+  template<typename _T1, typename _T2, typename _U1, typename _U2>
+    requires requires { typename pair<common_type_t<_T1, _U1>, common_type_t<_T2, _U2>>; }
+  struct common_type<pair<_T1, _T2>, pair<_U1, _U2>>
+  { using type = pair<common_type_t<_T1, _U1>, common_type_t<_T2, _U2>>; };
+
+
+
+
+
+
+}
+# 65 "/usr/include/c++/14/bits/stl_algobase.h" 2 3
+
+
+
+
 # 1 "/usr/include/c++/14/debug/debug.h" 1 3
 # 48 "/usr/include/c++/14/debug/debug.h" 3
 namespace std
@@ -19928,410 +23944,7 @@ namespace __ops
 }
 }
 # 72 "/usr/include/c++/14/bits/stl_algobase.h" 2 3
-
-
-
-
-# 1 "/usr/include/c++/14/bit" 1 3
-# 32 "/usr/include/c++/14/bit" 3
-       
-# 33 "/usr/include/c++/14/bit" 3
-# 61 "/usr/include/c++/14/bit" 3
-# 1 "/usr/include/c++/14/bits/version.h" 1 3
-# 47 "/usr/include/c++/14/bits/version.h" 3
-       
-# 48 "/usr/include/c++/14/bits/version.h" 3
-# 62 "/usr/include/c++/14/bit" 2 3
-
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-# 85 "/usr/include/c++/14/bit" 3
-  template<typename _To, typename _From>
-    [[nodiscard]]
-    constexpr _To
-    bit_cast(const _From& __from) noexcept
-
-    requires (sizeof(_To) == sizeof(_From))
-      && is_trivially_copyable_v<_To> && is_trivially_copyable_v<_From>
-
-    {
-      return __builtin_bit_cast(_To, __from);
-    }
-# 107 "/usr/include/c++/14/bit" 3
-  template<integral _Tp>
-    [[nodiscard]]
-    constexpr _Tp
-    byteswap(_Tp __value) noexcept
-    {
-      if constexpr (sizeof(_Tp) == 1)
- return __value;
-
-      if !consteval
- {
-   if constexpr (sizeof(_Tp) == 2)
-     return __builtin_bswap16(__value);
-   if constexpr (sizeof(_Tp) == 4)
-     return __builtin_bswap32(__value);
-   if constexpr (sizeof(_Tp) == 8)
-     return __builtin_bswap64(__value);
-   if constexpr (sizeof(_Tp) == 16)
-
-     return __builtin_bswap128(__value);
-
-
-
-
- }
-
-
-
-      using _Up = typename __make_unsigned<__remove_cv_t<_Tp>>::__type;
-      size_t __diff = 8 * (sizeof(_Tp) - 1);
-      _Up __mask1 = static_cast<unsigned char>(~0);
-      _Up __mask2 = __mask1 << __diff;
-      _Up __val = __value;
-      for (size_t __i = 0; __i < sizeof(_Tp) / 2; ++__i)
- {
-   _Up __byte1 = __val & __mask1;
-   _Up __byte2 = __val & __mask2;
-   __val = (__val ^ __byte1 ^ __byte2
-     ^ (__byte1 << __diff) ^ (__byte2 >> __diff));
-   __mask1 <<= 8;
-   __mask2 >>= 8;
-   __diff -= 2 * 8;
- }
-      return __val;
-    }
-
-
-
-
-  template<typename _Tp>
-    constexpr _Tp
-    __rotl(_Tp __x, int __s) noexcept
-    {
-      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
-      if constexpr ((_Nd & (_Nd - 1)) == 0)
- {
-
-
-   constexpr unsigned __uNd = _Nd;
-   const unsigned __r = __s;
-   return (__x << (__r % __uNd)) | (__x >> ((-__r) % __uNd));
- }
-      const int __r = __s % _Nd;
-      if (__r == 0)
- return __x;
-      else if (__r > 0)
- return (__x << __r) | (__x >> ((_Nd - __r) % _Nd));
-      else
- return (__x >> -__r) | (__x << ((_Nd + __r) % _Nd));
-    }
-
-  template<typename _Tp>
-    constexpr _Tp
-    __rotr(_Tp __x, int __s) noexcept
-    {
-      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
-      if constexpr ((_Nd & (_Nd - 1)) == 0)
- {
-
-
-   constexpr unsigned __uNd = _Nd;
-   const unsigned __r = __s;
-   return (__x >> (__r % __uNd)) | (__x << ((-__r) % __uNd));
- }
-      const int __r = __s % _Nd;
-      if (__r == 0)
- return __x;
-      else if (__r > 0)
- return (__x >> __r) | (__x << ((_Nd - __r) % _Nd));
-      else
- return (__x << -__r) | (__x >> ((_Nd + __r) % _Nd));
-    }
-
-  template<typename _Tp>
-    constexpr int
-    __countl_zero(_Tp __x) noexcept
-    {
-      using __gnu_cxx::__int_traits;
-      constexpr auto _Nd = __int_traits<_Tp>::__digits;
-
-      if (__x == 0)
-        return _Nd;
-
-      constexpr auto _Nd_ull = __int_traits<unsigned long long>::__digits;
-      constexpr auto _Nd_ul = __int_traits<unsigned long>::__digits;
-      constexpr auto _Nd_u = __int_traits<unsigned>::__digits;
-
-      if constexpr (_Nd <= _Nd_u)
- {
-   constexpr int __diff = _Nd_u - _Nd;
-   return __builtin_clz(__x) - __diff;
- }
-      else if constexpr (_Nd <= _Nd_ul)
- {
-   constexpr int __diff = _Nd_ul - _Nd;
-   return __builtin_clzl(__x) - __diff;
- }
-      else if constexpr (_Nd <= _Nd_ull)
- {
-   constexpr int __diff = _Nd_ull - _Nd;
-   return __builtin_clzll(__x) - __diff;
- }
-      else
- {
-   static_assert(_Nd <= (2 * _Nd_ull),
-   "Maximum supported integer size is 128-bit");
-
-   unsigned long long __high = __x >> _Nd_ull;
-   if (__high != 0)
-     {
-       constexpr int __diff = (2 * _Nd_ull) - _Nd;
-       return __builtin_clzll(__high) - __diff;
-     }
-   constexpr auto __max_ull = __int_traits<unsigned long long>::__max;
-   unsigned long long __low = __x & __max_ull;
-   return (_Nd - _Nd_ull) + __builtin_clzll(__low);
- }
-    }
-
-  template<typename _Tp>
-    constexpr int
-    __countl_one(_Tp __x) noexcept
-    {
-      return std::__countl_zero<_Tp>((_Tp)~__x);
-    }
-
-  template<typename _Tp>
-    constexpr int
-    __countr_zero(_Tp __x) noexcept
-    {
-      using __gnu_cxx::__int_traits;
-      constexpr auto _Nd = __int_traits<_Tp>::__digits;
-
-      if (__x == 0)
-        return _Nd;
-
-      constexpr auto _Nd_ull = __int_traits<unsigned long long>::__digits;
-      constexpr auto _Nd_ul = __int_traits<unsigned long>::__digits;
-      constexpr auto _Nd_u = __int_traits<unsigned>::__digits;
-
-      if constexpr (_Nd <= _Nd_u)
- return __builtin_ctz(__x);
-      else if constexpr (_Nd <= _Nd_ul)
- return __builtin_ctzl(__x);
-      else if constexpr (_Nd <= _Nd_ull)
- return __builtin_ctzll(__x);
-      else
- {
-   static_assert(_Nd <= (2 * _Nd_ull),
-   "Maximum supported integer size is 128-bit");
-
-   constexpr auto __max_ull = __int_traits<unsigned long long>::__max;
-   unsigned long long __low = __x & __max_ull;
-   if (__low != 0)
-     return __builtin_ctzll(__low);
-   unsigned long long __high = __x >> _Nd_ull;
-   return __builtin_ctzll(__high) + _Nd_ull;
- }
-    }
-
-  template<typename _Tp>
-    constexpr int
-    __countr_one(_Tp __x) noexcept
-    {
-      return std::__countr_zero((_Tp)~__x);
-    }
-
-  template<typename _Tp>
-    constexpr int
-    __popcount(_Tp __x) noexcept
-    {
-      using __gnu_cxx::__int_traits;
-      constexpr auto _Nd = __int_traits<_Tp>::__digits;
-
-      constexpr auto _Nd_ull = __int_traits<unsigned long long>::__digits;
-      constexpr auto _Nd_ul = __int_traits<unsigned long>::__digits;
-      constexpr auto _Nd_u = __int_traits<unsigned>::__digits;
-
-      if constexpr (_Nd <= _Nd_u)
- return __builtin_popcount(__x);
-      else if constexpr (_Nd <= _Nd_ul)
- return __builtin_popcountl(__x);
-      else if constexpr (_Nd <= _Nd_ull)
- return __builtin_popcountll(__x);
-      else
- {
-   static_assert(_Nd <= (2 * _Nd_ull),
-   "Maximum supported integer size is 128-bit");
-
-   constexpr auto __max_ull = __int_traits<unsigned long long>::__max;
-   unsigned long long __low = __x & __max_ull;
-   unsigned long long __high = __x >> _Nd_ull;
-   return __builtin_popcountll(__low) + __builtin_popcountll(__high);
- }
-    }
-
-  template<typename _Tp>
-    constexpr bool
-    __has_single_bit(_Tp __x) noexcept
-    { return std::__popcount(__x) == 1; }
-
-  template<typename _Tp>
-    constexpr _Tp
-    __bit_ceil(_Tp __x) noexcept
-    {
-      using __gnu_cxx::__int_traits;
-      constexpr auto _Nd = __int_traits<_Tp>::__digits;
-      if (__x == 0 || __x == 1)
-        return 1;
-      auto __shift_exponent = _Nd - std::__countl_zero((_Tp)(__x - 1u));
-
-
-
-
-      if (!std::__is_constant_evaluated())
- {
-   do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(__shift_exponent != __int_traits<_Tp>::__digits), false)) std::__glibcxx_assert_fail(); } while (false);
- }
-
-      using __promoted_type = decltype(__x << 1);
-      if constexpr (!is_same<__promoted_type, _Tp>::value)
- {
-
-
-
-
-
-   const int __extra_exp = sizeof(__promoted_type) / sizeof(_Tp) / 2;
-   __shift_exponent |= (__shift_exponent & _Nd) << __extra_exp;
- }
-      return (_Tp)1u << __shift_exponent;
-    }
-
-  template<typename _Tp>
-    constexpr _Tp
-    __bit_floor(_Tp __x) noexcept
-    {
-      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
-      if (__x == 0)
-        return 0;
-      return (_Tp)1u << (_Nd - std::__countl_zero((_Tp)(__x >> 1)));
-    }
-
-  template<typename _Tp>
-    constexpr int
-    __bit_width(_Tp __x) noexcept
-    {
-      constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
-      return _Nd - std::__countl_zero(__x);
-    }
-
-
-
-
-
-
-  template<typename _Tp>
-    concept __unsigned_integer = __is_unsigned_integer<_Tp>::value;
-
-
-
-
-
-  template<__unsigned_integer _Tp>
-    [[nodiscard]] constexpr _Tp
-    rotl(_Tp __x, int __s) noexcept
-    { return std::__rotl(__x, __s); }
-
-
-  template<__unsigned_integer _Tp>
-    [[nodiscard]] constexpr _Tp
-    rotr(_Tp __x, int __s) noexcept
-    { return std::__rotr(__x, __s); }
-
-
-
-
-  template<__unsigned_integer _Tp>
-    constexpr int
-    countl_zero(_Tp __x) noexcept
-    { return std::__countl_zero(__x); }
-
-
-  template<__unsigned_integer _Tp>
-    constexpr int
-    countl_one(_Tp __x) noexcept
-    { return std::__countl_one(__x); }
-
-
-  template<__unsigned_integer _Tp>
-    constexpr int
-    countr_zero(_Tp __x) noexcept
-    { return std::__countr_zero(__x); }
-
-
-  template<__unsigned_integer _Tp>
-    constexpr int
-    countr_one(_Tp __x) noexcept
-    { return std::__countr_one(__x); }
-
-
-  template<__unsigned_integer _Tp>
-    constexpr int
-    popcount(_Tp __x) noexcept
-    { return std::__popcount(__x); }
-
-
-
-
-
-
-  template<__unsigned_integer _Tp>
-    constexpr bool
-    has_single_bit(_Tp __x) noexcept
-    { return std::__has_single_bit(__x); }
-
-
-  template<__unsigned_integer _Tp>
-    constexpr _Tp
-    bit_ceil(_Tp __x) noexcept
-    { return std::__bit_ceil(__x); }
-
-
-  template<__unsigned_integer _Tp>
-    constexpr _Tp
-    bit_floor(_Tp __x) noexcept
-    { return std::__bit_floor(__x); }
-
-
-
-
-  template<__unsigned_integer _Tp>
-    constexpr int
-    bit_width(_Tp __x) noexcept
-    { return std::__bit_width(__x); }
-# 472 "/usr/include/c++/14/bit" 3
-  enum class endian
-  {
-    little = 1234,
-    big = 4321,
-    native = 1234
-  };
-
-
-
-
-
-}
-# 77 "/usr/include/c++/14/bits/stl_algobase.h" 2 3
-
-
-
-
-
+# 82 "/usr/include/c++/14/bits/stl_algobase.h" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
@@ -22447,7 +26060,79 @@ template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_t
 # 34 "/usr/include/c++/14/bits/range_access.h" 3
 
 
+# 1 "/usr/include/c++/14/initializer_list" 1 3
+# 33 "/usr/include/c++/14/initializer_list" 3
+       
+# 34 "/usr/include/c++/14/initializer_list" 3
 
+
+
+
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+  template<class _E>
+    class initializer_list
+    {
+    public:
+      typedef _E value_type;
+      typedef const _E& reference;
+      typedef const _E& const_reference;
+      typedef size_t size_type;
+      typedef const _E* iterator;
+      typedef const _E* const_iterator;
+
+    private:
+      iterator _M_array;
+      size_type _M_len;
+
+
+      constexpr initializer_list(const_iterator __a, size_type __l)
+      : _M_array(__a), _M_len(__l) { }
+
+    public:
+      constexpr initializer_list() noexcept
+      : _M_array(0), _M_len(0) { }
+
+
+      constexpr size_type
+      size() const noexcept { return _M_len; }
+
+
+      constexpr const_iterator
+      begin() const noexcept { return _M_array; }
+
+
+      constexpr const_iterator
+      end() const noexcept { return begin() + size(); }
+    };
+
+
+
+
+
+
+
+  template<class _Tp>
+    constexpr const _Tp*
+    begin(initializer_list<_Tp> __ils) noexcept
+    { return __ils.begin(); }
+
+
+
+
+
+
+
+  template<class _Tp>
+    constexpr const _Tp*
+    end(initializer_list<_Tp> __ils) noexcept
+    { return __ils.end(); }
+}
+# 37 "/usr/include/c++/14/bits/range_access.h" 2 3
 
 
 
@@ -29529,13 +33214,7 @@ typedef unsigned int uint;
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
-typedef __int8_t int8_t;
-typedef __int16_t int16_t;
-typedef __int32_t int32_t;
-typedef __int64_t int64_t;
-# 156 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
+
 
 
 typedef __uint8_t u_int8_t;
@@ -43975,7 +47654,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
        
 # 48 "/usr/include/c++/14/bits/version.h" 3
 # 50 "/usr/include/c++/14/ios" 2 3
-# 41 "/usr/include/c++/14/ostream" 2 3
+# 41 "/usr/include/c++/14/istream" 2 3
+# 1 "/usr/include/c++/14/ostream" 1 3
+# 36 "/usr/include/c++/14/ostream" 3
+       
+# 37 "/usr/include/c++/14/ostream" 3
+
+
+
+
 
 
 # 1 "/usr/include/c++/14/format" 1 3
@@ -45199,1730 +48886,7 @@ namespace __detail
 }
 # 45 "/usr/include/c++/14/format" 2 3
 
-# 1 "/usr/include/c++/14/limits" 1 3
-# 40 "/usr/include/c++/14/limits" 3
-       
-# 41 "/usr/include/c++/14/limits" 3
-# 158 "/usr/include/c++/14/limits" 3
-namespace std __attribute__ ((__visibility__ ("default")))
-{
 
-
-
-
-
-
-
-  enum float_round_style
-  {
-    round_indeterminate = -1,
-    round_toward_zero = 0,
-    round_to_nearest = 1,
-    round_toward_infinity = 2,
-    round_toward_neg_infinity = 3
-  };
-
-
-
-
-
-
-
-  enum float_denorm_style
-  {
-
-    denorm_indeterminate = -1,
-
-    denorm_absent = 0,
-
-    denorm_present = 1
-  };
-# 202 "/usr/include/c++/14/limits" 3
-  struct __numeric_limits_base
-  {
-
-
-    static constexpr bool is_specialized = false;
-
-
-
-
-    static constexpr int digits = 0;
-
-
-    static constexpr int digits10 = 0;
-
-
-
-
-    static constexpr int max_digits10 = 0;
-
-
-
-    static constexpr bool is_signed = false;
-
-
-    static constexpr bool is_integer = false;
-
-
-
-
-    static constexpr bool is_exact = false;
-
-
-
-    static constexpr int radix = 0;
-
-
-
-    static constexpr int min_exponent = 0;
-
-
-
-    static constexpr int min_exponent10 = 0;
-
-
-
-
-    static constexpr int max_exponent = 0;
-
-
-
-    static constexpr int max_exponent10 = 0;
-
-
-    static constexpr bool has_infinity = false;
-
-
-
-    static constexpr bool has_quiet_NaN = false;
-
-
-
-    static constexpr bool has_signaling_NaN = false;
-
-
-    static constexpr float_denorm_style has_denorm = denorm_absent;
-
-
-
-    static constexpr bool has_denorm_loss = false;
-
-
-
-    static constexpr bool is_iec559 = false;
-
-
-
-
-    static constexpr bool is_bounded = false;
-# 288 "/usr/include/c++/14/limits" 3
-    static constexpr bool is_modulo = false;
-
-
-    static constexpr bool traps = false;
-
-
-    static constexpr bool tinyness_before = false;
-
-
-
-
-    static constexpr float_round_style round_style =
-          round_toward_zero;
-  };
-# 311 "/usr/include/c++/14/limits" 3
-  template<typename _Tp>
-    struct numeric_limits : public __numeric_limits_base
-    {
-
-
-      static constexpr _Tp
-      min() noexcept { return _Tp(); }
-
-
-      static constexpr _Tp
-      max() noexcept { return _Tp(); }
-
-
-
-
-      static constexpr _Tp
-      lowest() noexcept { return _Tp(); }
-
-
-
-
-      static constexpr _Tp
-      epsilon() noexcept { return _Tp(); }
-
-
-      static constexpr _Tp
-      round_error() noexcept { return _Tp(); }
-
-
-      static constexpr _Tp
-      infinity() noexcept { return _Tp(); }
-
-
-
-      static constexpr _Tp
-      quiet_NaN() noexcept { return _Tp(); }
-
-
-
-      static constexpr _Tp
-      signaling_NaN() noexcept { return _Tp(); }
-
-
-
-
-      static constexpr _Tp
-      denorm_min() noexcept { return _Tp(); }
-    };
-
-
-
-
-  template<typename _Tp>
-    struct numeric_limits<const _Tp>
-    : public numeric_limits<_Tp> { };
-
-  template<typename _Tp>
-    struct numeric_limits<volatile _Tp>
-    : public numeric_limits<_Tp> { };
-
-  template<typename _Tp>
-    struct numeric_limits<const volatile _Tp>
-    : public numeric_limits<_Tp> { };
-# 383 "/usr/include/c++/14/limits" 3
-  template<>
-    struct numeric_limits<bool>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr bool
-      min() noexcept { return false; }
-
-      static constexpr bool
-      max() noexcept { return true; }
-
-
-      static constexpr bool
-      lowest() noexcept { return min(); }
-
-      static constexpr int digits = 1;
-      static constexpr int digits10 = 0;
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = false;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr bool
-      epsilon() noexcept { return false; }
-
-      static constexpr bool
-      round_error() noexcept { return false; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr bool
-      infinity() noexcept { return false; }
-
-      static constexpr bool
-      quiet_NaN() noexcept { return false; }
-
-      static constexpr bool
-      signaling_NaN() noexcept { return false; }
-
-      static constexpr bool
-      denorm_min() noexcept { return false; }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-
-
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<char>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr char
-      min() noexcept { return (((char)(-1) < 0) ? -(((char)(-1) < 0) ? (((((char)1 << ((sizeof(char) * 8 - ((char)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char)0) - 1 : (char)0); }
-
-      static constexpr char
-      max() noexcept { return (((char)(-1) < 0) ? (((((char)1 << ((sizeof(char) * 8 - ((char)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char)0); }
-
-
-      static constexpr char
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits = (sizeof(char) * 8 - ((char)(-1) < 0));
-      static constexpr int digits10 = ((sizeof(char) * 8 - ((char)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = ((char)(-1) < 0);
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr char
-      epsilon() noexcept { return 0; }
-
-      static constexpr char
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr
-      char infinity() noexcept { return char(); }
-
-      static constexpr char
-      quiet_NaN() noexcept { return char(); }
-
-      static constexpr char
-      signaling_NaN() noexcept { return char(); }
-
-      static constexpr char
-      denorm_min() noexcept { return static_cast<char>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = !is_signed;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<signed char>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr signed char
-      min() noexcept { return -0x7f - 1; }
-
-      static constexpr signed char
-      max() noexcept { return 0x7f; }
-
-
-      static constexpr signed char
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits = (sizeof(signed char) * 8 - ((signed char)(-1) < 0));
-      static constexpr int digits10
-       = ((sizeof(signed char) * 8 - ((signed char)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr signed char
-      epsilon() noexcept { return 0; }
-
-      static constexpr signed char
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr signed char
-      infinity() noexcept { return static_cast<signed char>(0); }
-
-      static constexpr signed char
-      quiet_NaN() noexcept { return static_cast<signed char>(0); }
-
-      static constexpr signed char
-      signaling_NaN() noexcept
-      { return static_cast<signed char>(0); }
-
-      static constexpr signed char
-      denorm_min() noexcept
-      { return static_cast<signed char>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<unsigned char>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr unsigned char
-      min() noexcept { return 0; }
-
-      static constexpr unsigned char
-      max() noexcept { return 0x7f * 2U + 1; }
-
-
-      static constexpr unsigned char
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits
-       = (sizeof(unsigned char) * 8 - ((unsigned char)(-1) < 0));
-      static constexpr int digits10
-       = ((sizeof(unsigned char) * 8 - ((unsigned char)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = false;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr unsigned char
-      epsilon() noexcept { return 0; }
-
-      static constexpr unsigned char
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr unsigned char
-      infinity() noexcept
-      { return static_cast<unsigned char>(0); }
-
-      static constexpr unsigned char
-      quiet_NaN() noexcept
-      { return static_cast<unsigned char>(0); }
-
-      static constexpr unsigned char
-      signaling_NaN() noexcept
-      { return static_cast<unsigned char>(0); }
-
-      static constexpr unsigned char
-      denorm_min() noexcept
-      { return static_cast<unsigned char>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = true;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<wchar_t>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr wchar_t
-      min() noexcept { return (((wchar_t)(-1) < 0) ? -(((wchar_t)(-1) < 0) ? (((((wchar_t)1 << ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(wchar_t)0) - 1 : (wchar_t)0); }
-
-      static constexpr wchar_t
-      max() noexcept { return (((wchar_t)(-1) < 0) ? (((((wchar_t)1 << ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(wchar_t)0); }
-
-
-      static constexpr wchar_t
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits = (sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0));
-      static constexpr int digits10
-       = ((sizeof(wchar_t) * 8 - ((wchar_t)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = ((wchar_t)(-1) < 0);
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr wchar_t
-      epsilon() noexcept { return 0; }
-
-      static constexpr wchar_t
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr wchar_t
-      infinity() noexcept { return wchar_t(); }
-
-      static constexpr wchar_t
-      quiet_NaN() noexcept { return wchar_t(); }
-
-      static constexpr wchar_t
-      signaling_NaN() noexcept { return wchar_t(); }
-
-      static constexpr wchar_t
-      denorm_min() noexcept { return wchar_t(); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = !is_signed;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-
-  template<>
-    struct numeric_limits<char8_t>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr char8_t
-      min() noexcept { return (((char8_t)(-1) < 0) ? -(((char8_t)(-1) < 0) ? (((((char8_t)1 << ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char8_t)0) - 1 : (char8_t)0); }
-
-      static constexpr char8_t
-      max() noexcept { return (((char8_t)(-1) < 0) ? (((((char8_t)1 << ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char8_t)0); }
-
-      static constexpr char8_t
-      lowest() noexcept { return min(); }
-
-      static constexpr int digits = (sizeof(char8_t) * 8 - ((char8_t)(-1) < 0));
-      static constexpr int digits10 = ((sizeof(char8_t) * 8 - ((char8_t)(-1) < 0)) * 643L / 2136);
-      static constexpr int max_digits10 = 0;
-      static constexpr bool is_signed = ((char8_t)(-1) < 0);
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr char8_t
-      epsilon() noexcept { return 0; }
-
-      static constexpr char8_t
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
- = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr char8_t
-      infinity() noexcept { return char8_t(); }
-
-      static constexpr char8_t
-      quiet_NaN() noexcept { return char8_t(); }
-
-      static constexpr char8_t
-      signaling_NaN() noexcept { return char8_t(); }
-
-      static constexpr char8_t
-      denorm_min() noexcept { return char8_t(); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = !is_signed;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
- = round_toward_zero;
-    };
-
-
-
-
-  template<>
-    struct numeric_limits<char16_t>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr char16_t
-      min() noexcept { return (((char16_t)(-1) < 0) ? -(((char16_t)(-1) < 0) ? (((((char16_t)1 << ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char16_t)0) - 1 : (char16_t)0); }
-
-      static constexpr char16_t
-      max() noexcept { return (((char16_t)(-1) < 0) ? (((((char16_t)1 << ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char16_t)0); }
-
-      static constexpr char16_t
-      lowest() noexcept { return min(); }
-
-      static constexpr int digits = (sizeof(char16_t) * 8 - ((char16_t)(-1) < 0));
-      static constexpr int digits10 = ((sizeof(char16_t) * 8 - ((char16_t)(-1) < 0)) * 643L / 2136);
-      static constexpr int max_digits10 = 0;
-      static constexpr bool is_signed = ((char16_t)(-1) < 0);
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr char16_t
-      epsilon() noexcept { return 0; }
-
-      static constexpr char16_t
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr char16_t
-      infinity() noexcept { return char16_t(); }
-
-      static constexpr char16_t
-      quiet_NaN() noexcept { return char16_t(); }
-
-      static constexpr char16_t
-      signaling_NaN() noexcept { return char16_t(); }
-
-      static constexpr char16_t
-      denorm_min() noexcept { return char16_t(); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = !is_signed;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<char32_t>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr char32_t
-      min() noexcept { return (((char32_t)(-1) < 0) ? -(((char32_t)(-1) < 0) ? (((((char32_t)1 << ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char32_t)0) - 1 : (char32_t)0); }
-
-      static constexpr char32_t
-      max() noexcept { return (((char32_t)(-1) < 0) ? (((((char32_t)1 << ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(char32_t)0); }
-
-      static constexpr char32_t
-      lowest() noexcept { return min(); }
-
-      static constexpr int digits = (sizeof(char32_t) * 8 - ((char32_t)(-1) < 0));
-      static constexpr int digits10 = ((sizeof(char32_t) * 8 - ((char32_t)(-1) < 0)) * 643L / 2136);
-      static constexpr int max_digits10 = 0;
-      static constexpr bool is_signed = ((char32_t)(-1) < 0);
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr char32_t
-      epsilon() noexcept { return 0; }
-
-      static constexpr char32_t
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr char32_t
-      infinity() noexcept { return char32_t(); }
-
-      static constexpr char32_t
-      quiet_NaN() noexcept { return char32_t(); }
-
-      static constexpr char32_t
-      signaling_NaN() noexcept { return char32_t(); }
-
-      static constexpr char32_t
-      denorm_min() noexcept { return char32_t(); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = !is_signed;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style = round_toward_zero;
-    };
-
-
-
-  template<>
-    struct numeric_limits<short>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr short
-      min() noexcept { return -0x7fff - 1; }
-
-      static constexpr short
-      max() noexcept { return 0x7fff; }
-
-
-      static constexpr short
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits = (sizeof(short) * 8 - ((short)(-1) < 0));
-      static constexpr int digits10 = ((sizeof(short) * 8 - ((short)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr short
-      epsilon() noexcept { return 0; }
-
-      static constexpr short
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr short
-      infinity() noexcept { return short(); }
-
-      static constexpr short
-      quiet_NaN() noexcept { return short(); }
-
-      static constexpr short
-      signaling_NaN() noexcept { return short(); }
-
-      static constexpr short
-      denorm_min() noexcept { return short(); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<unsigned short>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr unsigned short
-      min() noexcept { return 0; }
-
-      static constexpr unsigned short
-      max() noexcept { return 0x7fff * 2U + 1; }
-
-
-      static constexpr unsigned short
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits
-       = (sizeof(unsigned short) * 8 - ((unsigned short)(-1) < 0));
-      static constexpr int digits10
-       = ((sizeof(unsigned short) * 8 - ((unsigned short)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = false;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr unsigned short
-      epsilon() noexcept { return 0; }
-
-      static constexpr unsigned short
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr unsigned short
-      infinity() noexcept
-      { return static_cast<unsigned short>(0); }
-
-      static constexpr unsigned short
-      quiet_NaN() noexcept
-      { return static_cast<unsigned short>(0); }
-
-      static constexpr unsigned short
-      signaling_NaN() noexcept
-      { return static_cast<unsigned short>(0); }
-
-      static constexpr unsigned short
-      denorm_min() noexcept
-      { return static_cast<unsigned short>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = true;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<int>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr int
-      min() noexcept { return -0x7fffffff - 1; }
-
-      static constexpr int
-      max() noexcept { return 0x7fffffff; }
-
-
-      static constexpr int
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits = (sizeof(int) * 8 - ((int)(-1) < 0));
-      static constexpr int digits10 = ((sizeof(int) * 8 - ((int)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr int
-      epsilon() noexcept { return 0; }
-
-      static constexpr int
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr int
-      infinity() noexcept { return static_cast<int>(0); }
-
-      static constexpr int
-      quiet_NaN() noexcept { return static_cast<int>(0); }
-
-      static constexpr int
-      signaling_NaN() noexcept { return static_cast<int>(0); }
-
-      static constexpr int
-      denorm_min() noexcept { return static_cast<int>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<unsigned int>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr unsigned int
-      min() noexcept { return 0; }
-
-      static constexpr unsigned int
-      max() noexcept { return 0x7fffffff * 2U + 1; }
-
-
-      static constexpr unsigned int
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits
-       = (sizeof(unsigned int) * 8 - ((unsigned int)(-1) < 0));
-      static constexpr int digits10
-       = ((sizeof(unsigned int) * 8 - ((unsigned int)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = false;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr unsigned int
-      epsilon() noexcept { return 0; }
-
-      static constexpr unsigned int
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr unsigned int
-      infinity() noexcept { return static_cast<unsigned int>(0); }
-
-      static constexpr unsigned int
-      quiet_NaN() noexcept
-      { return static_cast<unsigned int>(0); }
-
-      static constexpr unsigned int
-      signaling_NaN() noexcept
-      { return static_cast<unsigned int>(0); }
-
-      static constexpr unsigned int
-      denorm_min() noexcept
-      { return static_cast<unsigned int>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = true;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<long>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr long
-      min() noexcept { return -0x7fffffffffffffffL - 1; }
-
-      static constexpr long
-      max() noexcept { return 0x7fffffffffffffffL; }
-
-
-      static constexpr long
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits = (sizeof(long) * 8 - ((long)(-1) < 0));
-      static constexpr int digits10 = ((sizeof(long) * 8 - ((long)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr long
-      epsilon() noexcept { return 0; }
-
-      static constexpr long
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr long
-      infinity() noexcept { return static_cast<long>(0); }
-
-      static constexpr long
-      quiet_NaN() noexcept { return static_cast<long>(0); }
-
-      static constexpr long
-      signaling_NaN() noexcept { return static_cast<long>(0); }
-
-      static constexpr long
-      denorm_min() noexcept { return static_cast<long>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<unsigned long>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr unsigned long
-      min() noexcept { return 0; }
-
-      static constexpr unsigned long
-      max() noexcept { return 0x7fffffffffffffffL * 2UL + 1; }
-
-
-      static constexpr unsigned long
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits
-       = (sizeof(unsigned long) * 8 - ((unsigned long)(-1) < 0));
-      static constexpr int digits10
-       = ((sizeof(unsigned long) * 8 - ((unsigned long)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = false;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr unsigned long
-      epsilon() noexcept { return 0; }
-
-      static constexpr unsigned long
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr unsigned long
-      infinity() noexcept
-      { return static_cast<unsigned long>(0); }
-
-      static constexpr unsigned long
-      quiet_NaN() noexcept
-      { return static_cast<unsigned long>(0); }
-
-      static constexpr unsigned long
-      signaling_NaN() noexcept
-      { return static_cast<unsigned long>(0); }
-
-      static constexpr unsigned long
-      denorm_min() noexcept
-      { return static_cast<unsigned long>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = true;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<long long>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr long long
-      min() noexcept { return -0x7fffffffffffffffLL - 1; }
-
-      static constexpr long long
-      max() noexcept { return 0x7fffffffffffffffLL; }
-
-
-      static constexpr long long
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits
-       = (sizeof(long long) * 8 - ((long long)(-1) < 0));
-      static constexpr int digits10
-       = ((sizeof(long long) * 8 - ((long long)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr long long
-      epsilon() noexcept { return 0; }
-
-      static constexpr long long
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr long long
-      infinity() noexcept { return static_cast<long long>(0); }
-
-      static constexpr long long
-      quiet_NaN() noexcept { return static_cast<long long>(0); }
-
-      static constexpr long long
-      signaling_NaN() noexcept
-      { return static_cast<long long>(0); }
-
-      static constexpr long long
-      denorm_min() noexcept { return static_cast<long long>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-
-
-  template<>
-    struct numeric_limits<unsigned long long>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr unsigned long long
-      min() noexcept { return 0; }
-
-      static constexpr unsigned long long
-      max() noexcept { return 0x7fffffffffffffffLL * 2ULL + 1; }
-
-
-      static constexpr unsigned long long
-      lowest() noexcept { return min(); }
-
-
-      static constexpr int digits
-       = (sizeof(unsigned long long) * 8 - ((unsigned long long)(-1) < 0));
-      static constexpr int digits10
-       = ((sizeof(unsigned long long) * 8 - ((unsigned long long)(-1) < 0)) * 643L / 2136);
-
-      static constexpr int max_digits10 = 0;
-
-      static constexpr bool is_signed = false;
-      static constexpr bool is_integer = true;
-      static constexpr bool is_exact = true;
-      static constexpr int radix = 2;
-
-      static constexpr unsigned long long
-      epsilon() noexcept { return 0; }
-
-      static constexpr unsigned long long
-      round_error() noexcept { return 0; }
-
-      static constexpr int min_exponent = 0;
-      static constexpr int min_exponent10 = 0;
-      static constexpr int max_exponent = 0;
-      static constexpr int max_exponent10 = 0;
-
-      static constexpr bool has_infinity = false;
-      static constexpr bool has_quiet_NaN = false;
-      static constexpr bool has_signaling_NaN = false;
-      static constexpr float_denorm_style has_denorm
-       = denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr unsigned long long
-      infinity() noexcept
-      { return static_cast<unsigned long long>(0); }
-
-      static constexpr unsigned long long
-      quiet_NaN() noexcept
-      { return static_cast<unsigned long long>(0); }
-
-      static constexpr unsigned long long
-      signaling_NaN() noexcept
-      { return static_cast<unsigned long long>(0); }
-
-      static constexpr unsigned long long
-      denorm_min() noexcept
-      { return static_cast<unsigned long long>(0); }
-
-      static constexpr bool is_iec559 = false;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = true;
-
-      static constexpr bool traps = true;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
-       = round_toward_zero;
-    };
-# 1637 "/usr/include/c++/14/limits" 3
-  __extension__ template<> struct numeric_limits<__int128> { static constexpr bool is_specialized = true; static constexpr __int128 min() noexcept { return (((__int128)(-1) < 0) ? -(((__int128)(-1) < 0) ? (((((__int128)1 << ((128 - ((__int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(__int128)0) - 1 : (__int128)0); } static constexpr __int128 max() noexcept { return (((__int128)(-1) < 0) ? (((((__int128)1 << ((128 - ((__int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(__int128)0); } static constexpr int digits = 128 - 1; static constexpr int digits10 = (128 - 1) * 643L / 2136; static constexpr bool is_signed = true; static constexpr bool is_integer = true; static constexpr bool is_exact = true; static constexpr int radix = 2; static constexpr __int128 epsilon() noexcept { return 0; } static constexpr __int128 round_error() noexcept { return 0; } static constexpr __int128 lowest() noexcept { return min(); } static constexpr int max_digits10 = 0; static constexpr int min_exponent = 0; static constexpr int min_exponent10 = 0; static constexpr int max_exponent = 0; static constexpr int max_exponent10 = 0; static constexpr bool has_infinity = false; static constexpr bool has_quiet_NaN = false; static constexpr bool has_signaling_NaN = false; static constexpr float_denorm_style has_denorm = denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr __int128 infinity() noexcept { return static_cast<__int128>(0); } static constexpr __int128 quiet_NaN() noexcept { return static_cast<__int128>(0); } static constexpr __int128 signaling_NaN() noexcept { return static_cast<__int128>(0); } static constexpr __int128 denorm_min() noexcept { return static_cast<__int128>(0); } static constexpr bool is_iec559 = false; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = true; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_toward_zero; }; __extension__ template<> struct numeric_limits<unsigned __int128> { static constexpr bool is_specialized = true; static constexpr unsigned __int128 min() noexcept { return 0; } static constexpr unsigned __int128 max() noexcept { return (((unsigned __int128)(-1) < 0) ? (((((unsigned __int128)1 << ((128 - ((unsigned __int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(unsigned __int128)0); } static constexpr unsigned __int128 lowest() noexcept { return min(); } static constexpr int max_digits10 = 0; static constexpr int digits = 128; static constexpr int digits10 = 128 * 643L / 2136; static constexpr bool is_signed = false; static constexpr bool is_integer = true; static constexpr bool is_exact = true; static constexpr int radix = 2; static constexpr unsigned __int128 epsilon() noexcept { return 0; } static constexpr unsigned __int128 round_error() noexcept { return 0; } static constexpr int min_exponent = 0; static constexpr int min_exponent10 = 0; static constexpr int max_exponent = 0; static constexpr int max_exponent10 = 0; static constexpr bool has_infinity = false; static constexpr bool has_quiet_NaN = false; static constexpr bool has_signaling_NaN = false; static constexpr float_denorm_style has_denorm = denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr unsigned __int128 infinity() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 quiet_NaN() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 signaling_NaN() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 denorm_min() noexcept { return static_cast<unsigned __int128>(0); } static constexpr bool is_iec559 = false; static constexpr bool is_bounded = true; static constexpr bool is_modulo = true; static constexpr bool traps = true; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_toward_zero; };
-# 1669 "/usr/include/c++/14/limits" 3
-  template<>
-    struct numeric_limits<float>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr float
-      min() noexcept { return 1.17549435082228750796873653722224568e-38F; }
-
-      static constexpr float
-      max() noexcept { return 3.40282346638528859811704183484516925e+38F; }
-
-
-      static constexpr float
-      lowest() noexcept { return -3.40282346638528859811704183484516925e+38F; }
-
-
-      static constexpr int digits = 24;
-      static constexpr int digits10 = 6;
-
-      static constexpr int max_digits10
-  = (2 + (24) * 643L / 2136);
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = false;
-      static constexpr bool is_exact = false;
-      static constexpr int radix = 2;
-
-      static constexpr float
-      epsilon() noexcept { return 1.19209289550781250000000000000000000e-7F; }
-
-      static constexpr float
-      round_error() noexcept { return 0.5F; }
-
-      static constexpr int min_exponent = (-125);
-      static constexpr int min_exponent10 = (-37);
-      static constexpr int max_exponent = 128;
-      static constexpr int max_exponent10 = 38;
-
-      static constexpr bool has_infinity = 1;
-      static constexpr bool has_quiet_NaN = 1;
-      static constexpr bool has_signaling_NaN = has_quiet_NaN;
-      static constexpr float_denorm_style has_denorm
- = bool(1) ? denorm_present : denorm_absent;
-      static constexpr bool has_denorm_loss
-       = false;
-
-      static constexpr float
-      infinity() noexcept { return __builtin_huge_valf(); }
-
-      static constexpr float
-      quiet_NaN() noexcept { return __builtin_nanf(""); }
-
-      static constexpr float
-      signaling_NaN() noexcept { return __builtin_nansf(""); }
-
-      static constexpr float
-      denorm_min() noexcept { return 1.40129846432481707092372958328991613e-45F; }
-
-      static constexpr bool is_iec559
- = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = false;
-      static constexpr bool tinyness_before
-       = false;
-      static constexpr float_round_style round_style
-       = round_to_nearest;
-    };
-
-
-
-
-
-
-  template<>
-    struct numeric_limits<double>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr double
-      min() noexcept { return double(2.22507385850720138309023271733240406e-308L); }
-
-      static constexpr double
-      max() noexcept { return double(1.79769313486231570814527423731704357e+308L); }
-
-
-      static constexpr double
-      lowest() noexcept { return -double(1.79769313486231570814527423731704357e+308L); }
-
-
-      static constexpr int digits = 53;
-      static constexpr int digits10 = 15;
-
-      static constexpr int max_digits10
-  = (2 + (53) * 643L / 2136);
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = false;
-      static constexpr bool is_exact = false;
-      static constexpr int radix = 2;
-
-      static constexpr double
-      epsilon() noexcept { return double(2.22044604925031308084726333618164062e-16L); }
-
-      static constexpr double
-      round_error() noexcept { return 0.5; }
-
-      static constexpr int min_exponent = (-1021);
-      static constexpr int min_exponent10 = (-307);
-      static constexpr int max_exponent = 1024;
-      static constexpr int max_exponent10 = 308;
-
-      static constexpr bool has_infinity = 1;
-      static constexpr bool has_quiet_NaN = 1;
-      static constexpr bool has_signaling_NaN = has_quiet_NaN;
-      static constexpr float_denorm_style has_denorm
- = bool(1) ? denorm_present : denorm_absent;
-      static constexpr bool has_denorm_loss
-        = false;
-
-      static constexpr double
-      infinity() noexcept { return __builtin_huge_val(); }
-
-      static constexpr double
-      quiet_NaN() noexcept { return __builtin_nan(""); }
-
-      static constexpr double
-      signaling_NaN() noexcept { return __builtin_nans(""); }
-
-      static constexpr double
-      denorm_min() noexcept { return double(4.94065645841246544176568792868221372e-324L); }
-
-      static constexpr bool is_iec559
- = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = false;
-      static constexpr bool tinyness_before
-       = false;
-      static constexpr float_round_style round_style
-       = round_to_nearest;
-    };
-
-
-
-
-
-
-  template<>
-    struct numeric_limits<long double>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr long double
-      min() noexcept { return 3.36210314311209350626267781732175260e-4932L; }
-
-      static constexpr long double
-      max() noexcept { return 1.18973149535723176502126385303097021e+4932L; }
-
-
-      static constexpr long double
-      lowest() noexcept { return -1.18973149535723176502126385303097021e+4932L; }
-
-
-      static constexpr int digits = 64;
-      static constexpr int digits10 = 18;
-
-      static constexpr int max_digits10
-  = (2 + (64) * 643L / 2136);
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = false;
-      static constexpr bool is_exact = false;
-      static constexpr int radix = 2;
-
-      static constexpr long double
-      epsilon() noexcept { return 1.08420217248550443400745280086994171e-19L; }
-
-      static constexpr long double
-      round_error() noexcept { return 0.5L; }
-
-      static constexpr int min_exponent = (-16381);
-      static constexpr int min_exponent10 = (-4931);
-      static constexpr int max_exponent = 16384;
-      static constexpr int max_exponent10 = 4932;
-
-      static constexpr bool has_infinity = 1;
-      static constexpr bool has_quiet_NaN = 1;
-      static constexpr bool has_signaling_NaN = has_quiet_NaN;
-      static constexpr float_denorm_style has_denorm
- = bool(1) ? denorm_present : denorm_absent;
-      static constexpr bool has_denorm_loss
- = false;
-
-      static constexpr long double
-      infinity() noexcept { return __builtin_huge_vall(); }
-
-      static constexpr long double
-      quiet_NaN() noexcept { return __builtin_nanl(""); }
-
-      static constexpr long double
-      signaling_NaN() noexcept { return __builtin_nansl(""); }
-
-      static constexpr long double
-      denorm_min() noexcept { return 3.64519953188247460252840593361941982e-4951L; }
-
-      static constexpr bool is_iec559
- = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = false;
-      static constexpr bool tinyness_before =
-      false;
-      static constexpr float_round_style round_style =
-            round_to_nearest;
-    };
-# 1986 "/usr/include/c++/14/limits" 3
-__extension__ template<> struct numeric_limits<_Float16> { static constexpr bool is_specialized = true; static constexpr _Float16 min() noexcept { return 6.10351562500000000000000000000000000e-5F16; } static constexpr _Float16 max() noexcept { return 6.55040000000000000000000000000000000e+4F16; } static constexpr _Float16 lowest() noexcept { return -6.55040000000000000000000000000000000e+4F16; } static constexpr int digits = 11; static constexpr int digits10 = 3; static constexpr int max_digits10 = (2 + (11) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float16 epsilon() noexcept { return 9.76562500000000000000000000000000000e-4F16; } static constexpr _Float16 round_error() noexcept { return 0.5F16; } static constexpr int min_exponent = (-13); static constexpr int min_exponent10 = (-4); static constexpr int max_exponent = 16; static constexpr int max_exponent10 = 4; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float16 infinity() noexcept { return __builtin_huge_valf16(); } static constexpr _Float16 quiet_NaN() noexcept { return __builtin_nanf16(""); } static constexpr _Float16 signaling_NaN() noexcept { return __builtin_nansf16(""); } static constexpr _Float16 denorm_min() noexcept { return 5.96046447753906250000000000000000000e-8F16; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
-
-
-__extension__ template<> struct numeric_limits<_Float32> { static constexpr bool is_specialized = true; static constexpr _Float32 min() noexcept { return 1.17549435082228750796873653722224568e-38F32; } static constexpr _Float32 max() noexcept { return 3.40282346638528859811704183484516925e+38F32; } static constexpr _Float32 lowest() noexcept { return -3.40282346638528859811704183484516925e+38F32; } static constexpr int digits = 24; static constexpr int digits10 = 6; static constexpr int max_digits10 = (2 + (24) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float32 epsilon() noexcept { return 1.19209289550781250000000000000000000e-7F32; } static constexpr _Float32 round_error() noexcept { return 0.5F32; } static constexpr int min_exponent = (-125); static constexpr int min_exponent10 = (-37); static constexpr int max_exponent = 128; static constexpr int max_exponent10 = 38; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float32 infinity() noexcept { return __builtin_huge_valf32(); } static constexpr _Float32 quiet_NaN() noexcept { return __builtin_nanf32(""); } static constexpr _Float32 signaling_NaN() noexcept { return __builtin_nansf32(""); } static constexpr _Float32 denorm_min() noexcept { return 1.40129846432481707092372958328991613e-45F32; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
-
-
-__extension__ template<> struct numeric_limits<_Float64> { static constexpr bool is_specialized = true; static constexpr _Float64 min() noexcept { return 2.22507385850720138309023271733240406e-308F64; } static constexpr _Float64 max() noexcept { return 1.79769313486231570814527423731704357e+308F64; } static constexpr _Float64 lowest() noexcept { return -1.79769313486231570814527423731704357e+308F64; } static constexpr int digits = 53; static constexpr int digits10 = 15; static constexpr int max_digits10 = (2 + (53) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float64 epsilon() noexcept { return 2.22044604925031308084726333618164062e-16F64; } static constexpr _Float64 round_error() noexcept { return 0.5F64; } static constexpr int min_exponent = (-1021); static constexpr int min_exponent10 = (-307); static constexpr int max_exponent = 1024; static constexpr int max_exponent10 = 308; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float64 infinity() noexcept { return __builtin_huge_valf64(); } static constexpr _Float64 quiet_NaN() noexcept { return __builtin_nanf64(""); } static constexpr _Float64 signaling_NaN() noexcept { return __builtin_nansf64(""); } static constexpr _Float64 denorm_min() noexcept { return 4.94065645841246544176568792868221372e-324F64; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
-
-
-__extension__ template<> struct numeric_limits<_Float128> { static constexpr bool is_specialized = true; static constexpr _Float128 min() noexcept { return 3.36210314311209350626267781732175260e-4932F128; } static constexpr _Float128 max() noexcept { return 1.18973149535723176508575932662800702e+4932F128; } static constexpr _Float128 lowest() noexcept { return -1.18973149535723176508575932662800702e+4932F128; } static constexpr int digits = 113; static constexpr int digits10 = 33; static constexpr int max_digits10 = (2 + (113) * 643L / 2136); static constexpr bool is_signed = true; static constexpr bool is_integer = false; static constexpr bool is_exact = false; static constexpr int radix = 2; static constexpr _Float128 epsilon() noexcept { return 1.92592994438723585305597794258492732e-34F128; } static constexpr _Float128 round_error() noexcept { return 0.5F128; } static constexpr int min_exponent = (-16381); static constexpr int min_exponent10 = (-4931); static constexpr int max_exponent = 16384; static constexpr int max_exponent10 = 4932; static constexpr bool has_infinity = 1; static constexpr bool has_quiet_NaN = 1; static constexpr bool has_signaling_NaN = has_quiet_NaN; static constexpr float_denorm_style has_denorm = bool(1) ? denorm_present : denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr _Float128 infinity() noexcept { return __builtin_huge_valf128(); } static constexpr _Float128 quiet_NaN() noexcept { return __builtin_nanf128(""); } static constexpr _Float128 signaling_NaN() noexcept { return __builtin_nansf128(""); } static constexpr _Float128 denorm_min() noexcept { return 6.47517511943802511092443895822764655e-4966F128; } static constexpr bool is_iec559 = has_infinity && has_quiet_NaN && has_denorm == denorm_present; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = false; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_to_nearest; };
-# 2006 "/usr/include/c++/14/limits" 3
-  __extension__
-  template<>
-    struct numeric_limits<__gnu_cxx::__bfloat16_t>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      min() noexcept
-      { return 1.17549435082228750796873653722224568e-38BF16; }
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      max() noexcept
-      { return 3.38953138925153547590470800371487867e+38BF16; }
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      lowest() noexcept
-      { return -3.38953138925153547590470800371487867e+38BF16; }
-
-      static constexpr int digits = 8;
-      static constexpr int digits10 = 2;
-
-      static constexpr int max_digits10
- = (2 + (8) * 643L / 2136);
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = false;
-      static constexpr bool is_exact = false;
-      static constexpr int radix = 2;
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      epsilon() noexcept
-      { return 7.81250000000000000000000000000000000e-3BF16; }
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      round_error() noexcept { return 0.5BF16; }
-
-      static constexpr int min_exponent = (-125);
-      static constexpr int min_exponent10 = (-37);
-      static constexpr int max_exponent = 128;
-      static constexpr int max_exponent10 = 38;
-
-      static constexpr bool has_infinity
- = 1;
-      static constexpr bool has_quiet_NaN
- = 1;
-      static constexpr bool has_signaling_NaN = has_quiet_NaN;
-      static constexpr float_denorm_style has_denorm
- = bool(1) ? denorm_present : denorm_absent;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      infinity() noexcept
-      { return __gnu_cxx::__bfloat16_t(__builtin_huge_valf()); }
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      quiet_NaN() noexcept
-      { return __gnu_cxx::__bfloat16_t(__builtin_nanf("")); }
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      signaling_NaN() noexcept
-      { return __builtin_nansf16b(""); }
-
-      static constexpr __gnu_cxx::__bfloat16_t
-      denorm_min() noexcept
-      { return 9.18354961579912115600575419704879436e-41BF16; }
-
-      static constexpr bool is_iec559
- = has_infinity && has_quiet_NaN && has_denorm == denorm_present;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = false;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
- = round_to_nearest;
-    };
-
-
-
-
-
-  __extension__
-  template<>
-    struct numeric_limits<__float128>
-    {
-      static constexpr bool is_specialized = true;
-
-      static constexpr __float128
-      min() noexcept
-      {
-
-
-
-
- return __extension__ 0x1.0p-16382Q;
-
-      }
-
-      static constexpr __float128
-      max() noexcept
-      {
-
-
-
-
-
-
-
- return __extension__ 0x1.ffffffffffffffffffffffffffffp+16383Q;
-
-      }
-
-      static constexpr __float128
-      lowest() noexcept
-      { return -max(); }
-
-      static constexpr int digits = 113;
-      static constexpr int digits10 = 33;
-
-      static constexpr int max_digits10 = 35;
-
-      static constexpr bool is_signed = true;
-      static constexpr bool is_integer = false;
-      static constexpr bool is_exact = false;
-      static constexpr int radix = 2;
-
-      static constexpr __float128
-      epsilon() noexcept
-      { return double(1.9259299443872359e-34); }
-
-      static constexpr __float128
-      round_error() noexcept { return 0.5; }
-
-      static constexpr int min_exponent = -16381;
-      static constexpr int min_exponent10 = -4931;
-      static constexpr int max_exponent = 16384;
-      static constexpr int max_exponent10 = 4932;
-
-      static constexpr bool has_infinity = 1;
-      static constexpr bool has_quiet_NaN = 1;
-
-
-      static constexpr bool has_signaling_NaN = true;
-
-
-
-      static constexpr float_denorm_style has_denorm
- = denorm_present;
-      static constexpr bool has_denorm_loss = false;
-
-      static constexpr __float128
-      infinity() noexcept
-      { return __builtin_huge_val(); }
-
-      static constexpr __float128
-      quiet_NaN() noexcept
-      { return __builtin_nan(""); }
-
-      static constexpr __float128
-      signaling_NaN() noexcept
-      {
-
- return __builtin_nansq("");
-
-
-
-
-
-      }
-
-      static constexpr __float128
-      denorm_min() noexcept
-      {
-
-
-
-
- return __extension__ 0x1.0p-16494Q;
-
-      }
-
-      static constexpr bool is_iec559 = has_signaling_NaN;
-      static constexpr bool is_bounded = true;
-      static constexpr bool is_modulo = false;
-
-      static constexpr bool traps = false;
-      static constexpr bool tinyness_before = false;
-      static constexpr float_round_style round_style
- = round_to_nearest;
-# 2218 "/usr/include/c++/14/limits" 3
-    };
-
-
-
-
-}
-# 47 "/usr/include/c++/14/format" 2 3
 # 1 "/usr/include/c++/14/locale" 1 3
 # 36 "/usr/include/c++/14/locale" 3
        
@@ -46942,31 +48906,6 @@ __extension__ template<> struct numeric_limits<_Float128> { static constexpr boo
 # 39 "/usr/include/c++/14/ctime" 3
        
 # 40 "/usr/include/c++/14/ctime" 3
-# 58 "/usr/include/c++/14/ctime" 3
-namespace std
-{
-  using ::clock_t;
-  using ::time_t;
-  using ::tm;
-
-  using ::clock;
-  using ::difftime;
-  using ::mktime;
-  using ::time;
-  using ::asctime;
-  using ::ctime;
-  using ::gmtime;
-  using ::localtime;
-  using ::strftime;
-}
-
-
-
-namespace std
-{
-  using ::timespec;
-  using ::timespec_get;
-}
 # 40 "/usr/include/c++/14/bits/locale_facets_nonio.h" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
@@ -53504,263 +55443,6 @@ namespace std __attribute__ ((__visibility__ ("default")))
        
 # 48 "/usr/include/c++/14/bits/version.h" 3
 # 37 "/usr/include/c++/14/variant" 2 3
-# 45 "/usr/include/c++/14/variant" 3
-# 1 "/usr/include/c++/14/bits/parse_numbers.h" 1 3
-# 33 "/usr/include/c++/14/bits/parse_numbers.h" 3
-       
-# 34 "/usr/include/c++/14/bits/parse_numbers.h" 3
-# 42 "/usr/include/c++/14/bits/parse_numbers.h" 3
-namespace std __attribute__ ((__visibility__ ("default")))
-{
-
-
-namespace __parse_int
-{
-  template<unsigned _Base, char _Dig>
-    struct _Digit;
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '0'> : integral_constant<unsigned, 0>
-    {
-      using __valid = true_type;
-    };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '1'> : integral_constant<unsigned, 1>
-    {
-      using __valid = true_type;
-    };
-
-  template<unsigned _Base, unsigned _Val>
-    struct _Digit_impl : integral_constant<unsigned, _Val>
-    {
-      static_assert(_Base > _Val, "invalid digit");
-      using __valid = true_type;
-    };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '2'> : _Digit_impl<_Base, 2>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '3'> : _Digit_impl<_Base, 3>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '4'> : _Digit_impl<_Base, 4>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '5'> : _Digit_impl<_Base, 5>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '6'> : _Digit_impl<_Base, 6>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '7'> : _Digit_impl<_Base, 7>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '8'> : _Digit_impl<_Base, 8>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '9'> : _Digit_impl<_Base, 9>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'a'> : _Digit_impl<_Base, 0xa>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'A'> : _Digit_impl<_Base, 0xa>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'b'> : _Digit_impl<_Base, 0xb>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'B'> : _Digit_impl<_Base, 0xb>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'c'> : _Digit_impl<_Base, 0xc>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'C'> : _Digit_impl<_Base, 0xc>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'd'> : _Digit_impl<_Base, 0xd>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'D'> : _Digit_impl<_Base, 0xd>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'e'> : _Digit_impl<_Base, 0xe>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'E'> : _Digit_impl<_Base, 0xe>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'f'> : _Digit_impl<_Base, 0xf>
-    { };
-
-  template<unsigned _Base>
-    struct _Digit<_Base, 'F'> : _Digit_impl<_Base, 0xf>
-    { };
-
-
-  template<unsigned _Base>
-    struct _Digit<_Base, '\''> : integral_constant<unsigned, 0>
-    {
-      using __valid = false_type;
-    };
-
-
-
-  template<unsigned long long _Val>
-    using __ull_constant = integral_constant<unsigned long long, _Val>;
-
-  template<unsigned _Base, char _Dig, char... _Digs>
-    struct _Power_help
-    {
-      using __next = typename _Power_help<_Base, _Digs...>::type;
-      using __valid_digit = typename _Digit<_Base, _Dig>::__valid;
-      using type
- = __ull_constant<__next::value * (__valid_digit{} ? _Base : 1ULL)>;
-    };
-
-  template<unsigned _Base, char _Dig>
-    struct _Power_help<_Base, _Dig>
-    {
-      using __valid_digit = typename _Digit<_Base, _Dig>::__valid;
-      using type = __ull_constant<__valid_digit::value>;
-    };
-
-  template<unsigned _Base, char... _Digs>
-    struct _Power : _Power_help<_Base, _Digs...>::type
-    { };
-
-  template<unsigned _Base>
-    struct _Power<_Base> : __ull_constant<0>
-    { };
-
-
-
-  template<unsigned _Base, unsigned long long _Pow, char _Dig, char... _Digs>
-    struct _Number_help
-    {
-      using __digit = _Digit<_Base, _Dig>;
-      using __valid_digit = typename __digit::__valid;
-      using __next = _Number_help<_Base,
-      __valid_digit::value ? _Pow / _Base : _Pow,
-      _Digs...>;
-      using type = __ull_constant<_Pow * __digit::value + __next::type::value>;
-      static_assert((type::value / _Pow) == __digit::value,
-      "integer literal does not fit in unsigned long long");
-    };
-
-
-  template<unsigned _Base, unsigned long long _Pow, char _Dig, char..._Digs>
-    struct _Number_help<_Base, _Pow, '\'', _Dig, _Digs...>
-    : _Number_help<_Base, _Pow, _Dig, _Digs...>
-    { };
-
-
-  template<unsigned _Base, char _Dig>
-    struct _Number_help<_Base, 1ULL, _Dig>
-    {
-      using type = __ull_constant<_Digit<_Base, _Dig>::value>;
-    };
-
-  template<unsigned _Base, char... _Digs>
-    struct _Number
-    : _Number_help<_Base, _Power<_Base, _Digs...>::value, _Digs...>::type
-    { };
-
-  template<unsigned _Base>
-    struct _Number<_Base>
-    : __ull_constant<0>
-    { };
-
-
-
-  template<char... _Digs>
-    struct _Parse_int;
-
-  template<char... _Digs>
-    struct _Parse_int<'0', 'b', _Digs...>
-    : _Number<2U, _Digs...>::type
-    { };
-
-  template<char... _Digs>
-    struct _Parse_int<'0', 'B', _Digs...>
-    : _Number<2U, _Digs...>::type
-    { };
-
-  template<char... _Digs>
-    struct _Parse_int<'0', 'x', _Digs...>
-    : _Number<16U, _Digs...>::type
-    { };
-
-  template<char... _Digs>
-    struct _Parse_int<'0', 'X', _Digs...>
-    : _Number<16U, _Digs...>::type
-    { };
-
-  template<char... _Digs>
-    struct _Parse_int<'0', _Digs...>
-    : _Number<8U, _Digs...>::type
-    { };
-
-  template<char... _Digs>
-    struct _Parse_int
-    : _Number<10U, _Digs...>::type
-    { };
-
-}
-
-
-namespace __select_int
-{
-  template<unsigned long long _Val, typename... _Ints>
-    struct _Select_int_base;
-
-  template<unsigned long long _Val, typename _IntType, typename... _Ints>
-    struct _Select_int_base<_Val, _IntType, _Ints...>
-    : __conditional_t<(_Val <= __gnu_cxx::__int_traits<_IntType>::__max),
-        integral_constant<_IntType, (_IntType)_Val>,
-        _Select_int_base<_Val, _Ints...>>
-    { };
-
-  template<unsigned long long _Val>
-    struct _Select_int_base<_Val>
-    { };
-
-  template<char... _Digs>
-    using _Select_int = typename _Select_int_base<
- __parse_int::_Parse_int<_Digs...>::value,
- unsigned char,
- unsigned short,
- unsigned int,
- unsigned long,
- unsigned long long
-      >::type;
-
-}
-
-
-}
-# 46 "/usr/include/c++/14/variant" 2 3
 # 59 "/usr/include/c++/14/variant" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -56113,121 +57795,7 @@ namespace ranges
 
 
 # 1 "/usr/include/c++/14/bits/unicode.h" 1 3
-# 37 "/usr/include/c++/14/bits/unicode.h" 3
-# 1 "/usr/include/c++/14/cstdint" 1 3
-# 32 "/usr/include/c++/14/cstdint" 3
-       
-# 33 "/usr/include/c++/14/cstdint" 3
-# 45 "/usr/include/c++/14/cstdint" 3
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h" 1 3 4
-# 9 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h" 3 4
-# 1 "/usr/include/stdint.h" 1 3 4
-# 26 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 27 "/usr/include/stdint.h" 2 3 4
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 30 "/usr/include/stdint.h" 2 3 4
-
-
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
-typedef __uint8_t uint8_t;
-typedef __uint16_t uint16_t;
-typedef __uint32_t uint32_t;
-typedef __uint64_t uint64_t;
-# 38 "/usr/include/stdint.h" 2 3 4
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/stdint-least.h" 3 4
-typedef __int_least8_t int_least8_t;
-typedef __int_least16_t int_least16_t;
-typedef __int_least32_t int_least32_t;
-typedef __int_least64_t int_least64_t;
-
-
-typedef __uint_least8_t uint_least8_t;
-typedef __uint_least16_t uint_least16_t;
-typedef __uint_least32_t uint_least32_t;
-typedef __uint_least64_t uint_least64_t;
-# 42 "/usr/include/stdint.h" 2 3 4
-
-
-
-
-
-typedef signed char int_fast8_t;
-
-typedef long int int_fast16_t;
-typedef long int int_fast32_t;
-typedef long int int_fast64_t;
-# 60 "/usr/include/stdint.h" 3 4
-typedef unsigned char uint_fast8_t;
-
-typedef unsigned long int uint_fast16_t;
-typedef unsigned long int uint_fast32_t;
-typedef unsigned long int uint_fast64_t;
-# 76 "/usr/include/stdint.h" 3 4
-typedef long int intptr_t;
-
-
-typedef unsigned long int uintptr_t;
-# 90 "/usr/include/stdint.h" 3 4
-typedef __intmax_t intmax_t;
-typedef __uintmax_t uintmax_t;
-# 10 "/usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h" 2 3 4
-# 46 "/usr/include/c++/14/cstdint" 2 3
-
-
-namespace std
-{
-
-  using ::int8_t;
-  using ::int16_t;
-  using ::int32_t;
-  using ::int64_t;
-
-  using ::int_fast8_t;
-  using ::int_fast16_t;
-  using ::int_fast32_t;
-  using ::int_fast64_t;
-
-  using ::int_least8_t;
-  using ::int_least16_t;
-  using ::int_least32_t;
-  using ::int_least64_t;
-
-  using ::intmax_t;
-  using ::intptr_t;
-
-  using ::uint8_t;
-  using ::uint16_t;
-  using ::uint32_t;
-  using ::uint64_t;
-
-  using ::uint_fast8_t;
-  using ::uint_fast16_t;
-  using ::uint_fast32_t;
-  using ::uint_fast64_t;
-
-  using ::uint_least8_t;
-  using ::uint_least16_t;
-  using ::uint_least32_t;
-  using ::uint_least64_t;
-
-  using ::uintmax_t;
-  using ::uintptr_t;
-# 142 "/usr/include/c++/14/cstdint" 3
-}
-# 38 "/usr/include/c++/14/bits/unicode.h" 2 3
+# 38 "/usr/include/c++/14/bits/unicode.h" 3
 # 1 "/usr/include/c++/14/bits/stl_algo.h" 1 3
 # 59 "/usr/include/c++/14/bits/stl_algo.h" 3
 # 1 "/usr/include/c++/14/bits/algorithmfwd.h" 1 3
@@ -68764,16 +70332,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1006 "/usr/include/c++/14/ostream" 2 3
-# 42 "/usr/include/c++/14/iostream" 2 3
-# 1 "/usr/include/c++/14/istream" 1 3
-# 36 "/usr/include/c++/14/istream" 3
-       
-# 37 "/usr/include/c++/14/istream" 3
-
-
-
-
-
+# 42 "/usr/include/c++/14/istream" 2 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
@@ -70393,29 +71952,1185 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1107 "/usr/include/c++/14/istream" 2 3
-# 43 "/usr/include/c++/14/iostream" 2 3
+# 41 "/usr/include/c++/14/sstream" 2 3
+# 55 "/usr/include/c++/14/sstream" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+namespace __cxx11 {
+# 78 "/usr/include/c++/14/sstream" 3
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    class basic_stringbuf : public basic_streambuf<_CharT, _Traits>
+    {
+      struct __xfer_bufptrs;
+
+
+      using allocator_traits = std::allocator_traits<_Alloc>;
+      using _Noexcept_swap
+ = __or_<typename allocator_traits::propagate_on_container_swap,
+  typename allocator_traits::is_always_equal>;
+
+
+    public:
+
+      typedef _CharT char_type;
+      typedef _Traits traits_type;
+
+
+      typedef _Alloc allocator_type;
+      typedef typename traits_type::int_type int_type;
+      typedef typename traits_type::pos_type pos_type;
+      typedef typename traits_type::off_type off_type;
+
+      typedef basic_streambuf<char_type, traits_type> __streambuf_type;
+      typedef basic_string<char_type, _Traits, _Alloc> __string_type;
+      typedef typename __string_type::size_type __size_type;
+
+    protected:
+
+      ios_base::openmode _M_mode;
+
+
+      __string_type _M_string;
+
+    public:
+# 121 "/usr/include/c++/14/sstream" 3
+      basic_stringbuf()
+      : __streambuf_type(), _M_mode(ios_base::in | ios_base::out), _M_string()
+      { }
+# 132 "/usr/include/c++/14/sstream" 3
+      explicit
+      basic_stringbuf(ios_base::openmode __mode)
+      : __streambuf_type(), _M_mode(__mode), _M_string()
+      { }
+# 145 "/usr/include/c++/14/sstream" 3
+      explicit
+      basic_stringbuf(const __string_type& __str,
+        ios_base::openmode __mode = ios_base::in | ios_base::out)
+      : __streambuf_type(), _M_mode(),
+ _M_string(__str.data(), __str.size(), __str.get_allocator())
+      { _M_stringbuf_init(__mode); }
+
+
+      basic_stringbuf(const basic_stringbuf&) = delete;
+
+      basic_stringbuf(basic_stringbuf&& __rhs)
+      : basic_stringbuf(std::move(__rhs), __xfer_bufptrs(__rhs, this))
+      { __rhs._M_sync(const_cast<char_type*>(__rhs._M_string.data()), 0, 0); }
+
+
+      explicit
+      basic_stringbuf(const allocator_type& __a)
+      : basic_stringbuf(ios_base::in | std::ios_base::out, __a)
+      { }
+
+      basic_stringbuf(ios_base::openmode __mode,
+        const allocator_type& __a)
+      : __streambuf_type(), _M_mode(__mode), _M_string(__a)
+      { }
+
+      explicit
+      basic_stringbuf(__string_type&& __s,
+        ios_base::openmode __mode = ios_base::in
+        | ios_base::out)
+      : __streambuf_type(), _M_mode(__mode), _M_string(std::move(__s))
+      { _M_stringbuf_init(__mode); }
+
+      template<typename _SAlloc>
+ basic_stringbuf(const basic_string<_CharT, _Traits, _SAlloc>& __s,
+   const allocator_type& __a)
+ : basic_stringbuf(__s, ios_base::in | std::ios_base::out, __a)
+ { }
+
+      template<typename _SAlloc>
+ basic_stringbuf(const basic_string<_CharT, _Traits, _SAlloc>& __s,
+   ios_base::openmode __mode,
+   const allocator_type& __a)
+ : __streambuf_type(), _M_mode(__mode),
+   _M_string(__s.data(), __s.size(), __a)
+ { _M_stringbuf_init(__mode); }
+
+      template<typename _SAlloc>
+ explicit
+ basic_stringbuf(const basic_string<_CharT, _Traits, _SAlloc>& __s,
+   ios_base::openmode __mode = ios_base::in
+          | ios_base::out)
+ : basic_stringbuf(__s, __mode, allocator_type{})
+ { }
+
+      basic_stringbuf(basic_stringbuf&& __rhs, const allocator_type& __a)
+      : basic_stringbuf(std::move(__rhs), __a, __xfer_bufptrs(__rhs, this))
+      { __rhs._M_sync(const_cast<char_type*>(__rhs._M_string.data()), 0, 0); }
+
+      allocator_type get_allocator() const noexcept
+      { return _M_string.get_allocator(); }
+
+
+
+
+      basic_stringbuf&
+      operator=(const basic_stringbuf&) = delete;
+
+      basic_stringbuf&
+      operator=(basic_stringbuf&& __rhs)
+      {
+ __xfer_bufptrs __st{__rhs, this};
+ const __streambuf_type& __base = __rhs;
+ __streambuf_type::operator=(__base);
+ this->pubimbue(__rhs.getloc());
+ _M_mode = __rhs._M_mode;
+ _M_string = std::move(__rhs._M_string);
+ __rhs._M_sync(const_cast<char_type*>(__rhs._M_string.data()), 0, 0);
+ return *this;
+      }
+
+      void
+      swap(basic_stringbuf& __rhs) noexcept(_Noexcept_swap::value)
+      {
+ __xfer_bufptrs __l_st{*this, std::__addressof(__rhs)};
+ __xfer_bufptrs __r_st{__rhs, this};
+ __streambuf_type& __base = __rhs;
+ __streambuf_type::swap(__base);
+ __rhs.pubimbue(this->pubimbue(__rhs.getloc()));
+ std::swap(_M_mode, __rhs._M_mode);
+ std::swap(_M_string, __rhs._M_string);
+      }
+# 248 "/usr/include/c++/14/sstream" 3
+      __string_type
+      str() const &
+      {
+ __string_type __ret(_M_string.get_allocator());
+ if (char_type* __hi = _M_high_mark())
+   __ret.assign(this->pbase(), __hi);
+ else
+   __ret = _M_string;
+ return __ret;
+      }
+
+
+
+
+      template<__allocator_like _SAlloc>
+ basic_string<_CharT, _Traits, _SAlloc>
+ str(const _SAlloc& __sa) const
+ {
+   auto __sv = view();
+   return { __sv.data(), __sv.size(), __sa };
+ }
+
+
+      __string_type
+      str() &&
+      {
+ if (char_type* __hi = _M_high_mark())
+   {
+
+     _M_string._M_set_length(_M_high_mark() - this->pbase());
+   }
+ auto __str = std::move(_M_string);
+ _M_string.clear();
+ _M_sync(_M_string.data(), 0, 0);
+ return __str;
+      }
+
+
+     
+      basic_string_view<char_type, traits_type>
+      view() const noexcept
+      {
+ if (char_type* __hi = _M_high_mark())
+   return { this->pbase(), __hi };
+ else
+   return _M_string;
+      }
+# 304 "/usr/include/c++/14/sstream" 3
+      void
+      str(const __string_type& __s)
+      {
+
+
+ _M_string.assign(__s.data(), __s.size());
+ _M_stringbuf_init(_M_mode);
+      }
+
+
+
+      template<__allocator_like _SAlloc>
+ requires (!is_same_v<_SAlloc, _Alloc>)
+ void
+ str(const basic_string<_CharT, _Traits, _SAlloc>& __s)
+ {
+   _M_string.assign(__s.data(), __s.size());
+   _M_stringbuf_init(_M_mode);
+ }
+
+
+      void
+      str(__string_type&& __s)
+      {
+ _M_string = std::move(__s);
+ _M_stringbuf_init(_M_mode);
+      }
+
+
+    protected:
+
+      void
+      _M_stringbuf_init(ios_base::openmode __mode)
+      {
+ _M_mode = __mode;
+ __size_type __len = 0;
+ if (_M_mode & (ios_base::ate | ios_base::app))
+   __len = _M_string.size();
+ _M_sync(const_cast<char_type*>(_M_string.data()), 0, __len);
+      }
+
+      virtual streamsize
+      showmanyc()
+      {
+ streamsize __ret = -1;
+ if (_M_mode & ios_base::in)
+   {
+     _M_update_egptr();
+     __ret = this->egptr() - this->gptr();
+   }
+ return __ret;
+      }
+
+      virtual int_type
+      underflow();
+
+      virtual int_type
+      pbackfail(int_type __c = traits_type::eof());
+
+      virtual int_type
+      overflow(int_type __c = traits_type::eof());
+# 377 "/usr/include/c++/14/sstream" 3
+      virtual __streambuf_type*
+      setbuf(char_type* __s, streamsize __n)
+      {
+ if (__s && __n >= 0)
+   {
+
+
+
+
+
+
+     _M_string.clear();
+
+
+     _M_sync(__s, __n, 0);
+   }
+ return this;
+      }
+
+      virtual pos_type
+      seekoff(off_type __off, ios_base::seekdir __way,
+       ios_base::openmode __mode = ios_base::in | ios_base::out);
+
+      virtual pos_type
+      seekpos(pos_type __sp,
+       ios_base::openmode __mode = ios_base::in | ios_base::out);
+
+
+
+
+      void
+      _M_sync(char_type* __base, __size_type __i, __size_type __o);
+
+
+
+      void
+      _M_update_egptr()
+      {
+ if (char_type* __pptr = this->pptr())
+   {
+     char_type* __egptr = this->egptr();
+     if (!__egptr || __pptr > __egptr)
+       {
+  if (_M_mode & ios_base::in)
+    this->setg(this->eback(), this->gptr(), __pptr);
+  else
+    this->setg(__pptr, __pptr, __pptr);
+       }
+   }
+      }
+
+
+
+      void
+      _M_pbump(char_type* __pbeg, char_type* __pend, off_type __off);
+
+    private:
+
+
+
+
+      __attribute__((__always_inline__))
+      char_type*
+      _M_high_mark() const noexcept
+      {
+ if (char_type* __pptr = this->pptr())
+   {
+     char_type* __egptr = this->egptr();
+     if (!__egptr || __pptr > __egptr)
+       return __pptr;
+     else
+       return __egptr;
+   }
+ return 0;
+      }
+
+
+
+
+
+      struct __xfer_bufptrs
+      {
+ __xfer_bufptrs(const basic_stringbuf& __from, basic_stringbuf* __to)
+ : _M_to{__to}, _M_goff{-1, -1, -1}, _M_poff{-1, -1, -1}
+ {
+   const _CharT* const __str = __from._M_string.data();
+   const _CharT* __end = nullptr;
+   if (__from.eback())
+     {
+       _M_goff[0] = __from.eback() - __str;
+       _M_goff[1] = __from.gptr() - __str;
+       _M_goff[2] = __from.egptr() - __str;
+       __end = __from.egptr();
+     }
+   if (__from.pbase())
+     {
+       _M_poff[0] = __from.pbase() - __str;
+       _M_poff[1] = __from.pptr() - __from.pbase();
+       _M_poff[2] = __from.epptr() - __str;
+       if (!__end || __from.pptr() > __end)
+  __end = __from.pptr();
+     }
+
+
+   if (__end)
+     {
+
+
+       auto& __mut_from = const_cast<basic_stringbuf&>(__from);
+       __mut_from._M_string._M_length(__end - __str);
+     }
+ }
+
+ ~__xfer_bufptrs()
+ {
+   char_type* __str = const_cast<char_type*>(_M_to->_M_string.data());
+   if (_M_goff[0] != -1)
+     _M_to->setg(__str+_M_goff[0], __str+_M_goff[1], __str+_M_goff[2]);
+   if (_M_poff[0] != -1)
+     _M_to->_M_pbump(__str+_M_poff[0], __str+_M_poff[2], _M_poff[1]);
+ }
+
+ basic_stringbuf* _M_to;
+ off_type _M_goff[3];
+ off_type _M_poff[3];
+      };
+# 513 "/usr/include/c++/14/sstream" 3
+      basic_stringbuf(basic_stringbuf&& __rhs, __xfer_bufptrs&&)
+      : __streambuf_type(static_cast<const __streambuf_type&>(__rhs)),
+      _M_mode(__rhs._M_mode), _M_string(std::move(__rhs._M_string))
+      { }
+
+
+
+
+      basic_stringbuf(basic_stringbuf&& __rhs, const allocator_type& __a,
+        __xfer_bufptrs&&)
+      : __streambuf_type(static_cast<const __streambuf_type&>(__rhs)),
+      _M_mode(__rhs._M_mode), _M_string(std::move(__rhs._M_string), __a)
+      { }
+
+
+    };
+# 546 "/usr/include/c++/14/sstream" 3
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    class basic_istringstream : public basic_istream<_CharT, _Traits>
+    {
+    public:
+
+      typedef _CharT char_type;
+      typedef _Traits traits_type;
+
+
+      typedef _Alloc allocator_type;
+      typedef typename traits_type::int_type int_type;
+      typedef typename traits_type::pos_type pos_type;
+      typedef typename traits_type::off_type off_type;
+
+
+      typedef basic_string<_CharT, _Traits, _Alloc> __string_type;
+      typedef basic_stringbuf<_CharT, _Traits, _Alloc> __stringbuf_type;
+      typedef basic_istream<char_type, traits_type> __istream_type;
+
+    private:
+      __stringbuf_type _M_stringbuf;
+
+    public:
+# 580 "/usr/include/c++/14/sstream" 3
+      basic_istringstream()
+      : __istream_type(), _M_stringbuf(ios_base::in)
+      { this->init(&_M_stringbuf); }
+# 596 "/usr/include/c++/14/sstream" 3
+      explicit
+      basic_istringstream(ios_base::openmode __mode)
+      : __istream_type(), _M_stringbuf(__mode | ios_base::in)
+      { this->init(&_M_stringbuf); }
+# 614 "/usr/include/c++/14/sstream" 3
+      explicit
+      basic_istringstream(const __string_type& __str,
+     ios_base::openmode __mode = ios_base::in)
+      : __istream_type(), _M_stringbuf(__str, __mode | ios_base::in)
+      { this->init(&_M_stringbuf); }
+
+
+
+
+
+
+
+      ~basic_istringstream()
+      { }
+
+
+      basic_istringstream(const basic_istringstream&) = delete;
+
+      basic_istringstream(basic_istringstream&& __rhs)
+      : __istream_type(std::move(__rhs)),
+      _M_stringbuf(std::move(__rhs._M_stringbuf))
+      { __istream_type::set_rdbuf(&_M_stringbuf); }
+
+
+      basic_istringstream(ios_base::openmode __mode, const allocator_type& __a)
+      : __istream_type(), _M_stringbuf(__mode | ios_base::in, __a)
+      { this->init(std::__addressof(_M_stringbuf)); }
+
+      explicit
+      basic_istringstream(__string_type&& __str,
+     ios_base::openmode __mode = ios_base::in)
+      : __istream_type(), _M_stringbuf(std::move(__str), __mode | ios_base::in)
+      { this->init(std::__addressof(_M_stringbuf)); }
+
+      template<typename _SAlloc>
+ basic_istringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+       const allocator_type& __a)
+ : basic_istringstream(__str, ios_base::in, __a)
+ { }
+
+      template<typename _SAlloc>
+ basic_istringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+       ios_base::openmode __mode,
+       const allocator_type& __a)
+ : __istream_type(), _M_stringbuf(__str, __mode | ios_base::in, __a)
+ { this->init(std::__addressof(_M_stringbuf)); }
+
+      template<typename _SAlloc>
+ explicit
+ basic_istringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+       ios_base::openmode __mode = ios_base::in)
+ : basic_istringstream(__str, __mode, allocator_type())
+ { }
+
+
+
+
+      basic_istringstream&
+      operator=(const basic_istringstream&) = delete;
+
+      basic_istringstream&
+      operator=(basic_istringstream&& __rhs)
+      {
+ __istream_type::operator=(std::move(__rhs));
+ _M_stringbuf = std::move(__rhs._M_stringbuf);
+ return *this;
+      }
+
+      void
+      swap(basic_istringstream& __rhs)
+      {
+ __istream_type::swap(__rhs);
+ _M_stringbuf.swap(__rhs._M_stringbuf);
+      }
+# 697 "/usr/include/c++/14/sstream" 3
+      __stringbuf_type*
+      rdbuf() const
+      { return const_cast<__stringbuf_type*>(&_M_stringbuf); }
+
+
+
+
+
+      __string_type
+      str() const &
+      { return _M_stringbuf.str(); }
+
+
+
+
+      template<__allocator_like _SAlloc>
+ basic_string<_CharT, _Traits, _SAlloc>
+ str(const _SAlloc& __sa) const
+ { return _M_stringbuf.str(__sa); }
+
+
+      __string_type
+      str() &&
+      { return std::move(_M_stringbuf).str(); }
+
+
+     
+      basic_string_view<char_type, traits_type>
+      view() const noexcept
+      { return _M_stringbuf.view(); }
+# 735 "/usr/include/c++/14/sstream" 3
+      void
+      str(const __string_type& __s)
+      { _M_stringbuf.str(__s); }
+
+
+
+      template<__allocator_like _SAlloc>
+ requires (!is_same_v<_SAlloc, _Alloc>)
+ void
+ str(const basic_string<_CharT, _Traits, _SAlloc>& __s)
+ { _M_stringbuf.str(__s); }
+
+
+      void
+      str(__string_type&& __s)
+      { _M_stringbuf.str(std::move(__s)); }
+
+    };
+# 770 "/usr/include/c++/14/sstream" 3
+  template <typename _CharT, typename _Traits, typename _Alloc>
+    class basic_ostringstream : public basic_ostream<_CharT, _Traits>
+    {
+    public:
+
+      typedef _CharT char_type;
+      typedef _Traits traits_type;
+
+
+      typedef _Alloc allocator_type;
+      typedef typename traits_type::int_type int_type;
+      typedef typename traits_type::pos_type pos_type;
+      typedef typename traits_type::off_type off_type;
+
+
+      typedef basic_string<_CharT, _Traits, _Alloc> __string_type;
+      typedef basic_stringbuf<_CharT, _Traits, _Alloc> __stringbuf_type;
+      typedef basic_ostream<char_type, traits_type> __ostream_type;
+
+    private:
+      __stringbuf_type _M_stringbuf;
+
+    public:
+# 804 "/usr/include/c++/14/sstream" 3
+      basic_ostringstream()
+      : __ostream_type(), _M_stringbuf(ios_base::out)
+      { this->init(&_M_stringbuf); }
+# 820 "/usr/include/c++/14/sstream" 3
+      explicit
+      basic_ostringstream(ios_base::openmode __mode)
+      : __ostream_type(), _M_stringbuf(__mode | ios_base::out)
+      { this->init(&_M_stringbuf); }
+# 838 "/usr/include/c++/14/sstream" 3
+      explicit
+      basic_ostringstream(const __string_type& __str,
+     ios_base::openmode __mode = ios_base::out)
+      : __ostream_type(), _M_stringbuf(__str, __mode | ios_base::out)
+      { this->init(&_M_stringbuf); }
+
+
+
+
+
+
+
+      ~basic_ostringstream()
+      { }
+
+
+      basic_ostringstream(const basic_ostringstream&) = delete;
+
+      basic_ostringstream(basic_ostringstream&& __rhs)
+      : __ostream_type(std::move(__rhs)),
+      _M_stringbuf(std::move(__rhs._M_stringbuf))
+      { __ostream_type::set_rdbuf(&_M_stringbuf); }
+
+
+      basic_ostringstream(ios_base::openmode __mode, const allocator_type& __a)
+      : __ostream_type(), _M_stringbuf(__mode | ios_base::out, __a)
+      { this->init(std::__addressof(_M_stringbuf)); }
+
+      explicit
+      basic_ostringstream(__string_type&& __str,
+     ios_base::openmode __mode = ios_base::out)
+      : __ostream_type(), _M_stringbuf(std::move(__str), __mode | ios_base::out)
+      { this->init(std::__addressof(_M_stringbuf)); }
+
+      template<typename _SAlloc>
+ basic_ostringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+       const allocator_type& __a)
+ : basic_ostringstream(__str, ios_base::out, __a)
+ { }
+
+      template<typename _SAlloc>
+ basic_ostringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+       ios_base::openmode __mode,
+       const allocator_type& __a)
+ : __ostream_type(), _M_stringbuf(__str, __mode | ios_base::out, __a)
+ { this->init(std::__addressof(_M_stringbuf)); }
+
+      template<typename _SAlloc>
+ explicit
+ basic_ostringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+       ios_base::openmode __mode = ios_base::out)
+ : basic_ostringstream(__str, __mode, allocator_type())
+ { }
+
+
+
+
+      basic_ostringstream&
+      operator=(const basic_ostringstream&) = delete;
+
+      basic_ostringstream&
+      operator=(basic_ostringstream&& __rhs)
+      {
+ __ostream_type::operator=(std::move(__rhs));
+ _M_stringbuf = std::move(__rhs._M_stringbuf);
+ return *this;
+      }
+
+      void
+      swap(basic_ostringstream& __rhs)
+      {
+ __ostream_type::swap(__rhs);
+ _M_stringbuf.swap(__rhs._M_stringbuf);
+      }
+# 921 "/usr/include/c++/14/sstream" 3
+      __stringbuf_type*
+      rdbuf() const
+      { return const_cast<__stringbuf_type*>(&_M_stringbuf); }
+
+
+
+
+
+      __string_type
+      str() const &
+      { return _M_stringbuf.str(); }
+
+
+
+
+      template<__allocator_like _SAlloc>
+ basic_string<_CharT, _Traits, _SAlloc>
+ str(const _SAlloc& __sa) const
+ { return _M_stringbuf.str(__sa); }
+
+
+      __string_type
+      str() &&
+      { return std::move(_M_stringbuf).str(); }
+
+
+     
+      basic_string_view<char_type, traits_type>
+      view() const noexcept
+      { return _M_stringbuf.view(); }
+# 959 "/usr/include/c++/14/sstream" 3
+      void
+      str(const __string_type& __s)
+      { _M_stringbuf.str(__s); }
+
+
+
+      template<__allocator_like _SAlloc>
+ requires (!is_same_v<_SAlloc, _Alloc>)
+ void
+ str(const basic_string<_CharT, _Traits, _SAlloc>& __s)
+ { _M_stringbuf.str(__s); }
+
+
+      void
+      str(__string_type&& __s)
+      { _M_stringbuf.str(std::move(__s)); }
+
+    };
+# 994 "/usr/include/c++/14/sstream" 3
+  template <typename _CharT, typename _Traits, typename _Alloc>
+    class basic_stringstream : public basic_iostream<_CharT, _Traits>
+    {
+    public:
+
+      typedef _CharT char_type;
+      typedef _Traits traits_type;
+
+
+      typedef _Alloc allocator_type;
+      typedef typename traits_type::int_type int_type;
+      typedef typename traits_type::pos_type pos_type;
+      typedef typename traits_type::off_type off_type;
+
+
+      typedef basic_string<_CharT, _Traits, _Alloc> __string_type;
+      typedef basic_stringbuf<_CharT, _Traits, _Alloc> __stringbuf_type;
+      typedef basic_iostream<char_type, traits_type> __iostream_type;
+
+    private:
+      __stringbuf_type _M_stringbuf;
+
+    public:
+# 1028 "/usr/include/c++/14/sstream" 3
+      basic_stringstream()
+      : __iostream_type(), _M_stringbuf(ios_base::out | ios_base::in)
+      { this->init(&_M_stringbuf); }
+# 1042 "/usr/include/c++/14/sstream" 3
+      explicit
+      basic_stringstream(ios_base::openmode __m)
+      : __iostream_type(), _M_stringbuf(__m)
+      { this->init(&_M_stringbuf); }
+# 1058 "/usr/include/c++/14/sstream" 3
+      explicit
+      basic_stringstream(const __string_type& __str,
+    ios_base::openmode __m = ios_base::out | ios_base::in)
+      : __iostream_type(), _M_stringbuf(__str, __m)
+      { this->init(&_M_stringbuf); }
+
+
+
+
+
+
+
+      ~basic_stringstream()
+      { }
+
+
+      basic_stringstream(const basic_stringstream&) = delete;
+
+      basic_stringstream(basic_stringstream&& __rhs)
+      : __iostream_type(std::move(__rhs)),
+      _M_stringbuf(std::move(__rhs._M_stringbuf))
+      { __iostream_type::set_rdbuf(&_M_stringbuf); }
+
+
+      basic_stringstream(ios_base::openmode __mode, const allocator_type& __a)
+      : __iostream_type(), _M_stringbuf(__mode, __a)
+      { this->init(&_M_stringbuf); }
+
+      explicit
+      basic_stringstream(__string_type&& __str,
+    ios_base::openmode __mode = ios_base::in
+           | ios_base::out)
+      : __iostream_type(), _M_stringbuf(std::move(__str), __mode)
+      { this->init(std::__addressof(_M_stringbuf)); }
+
+      template<typename _SAlloc>
+ basic_stringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+      const allocator_type& __a)
+ : basic_stringstream(__str, ios_base::in | ios_base::out, __a)
+ { }
+
+      template<typename _SAlloc>
+ basic_stringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+      ios_base::openmode __mode,
+      const allocator_type& __a)
+ : __iostream_type(), _M_stringbuf(__str, __mode, __a)
+ { this->init(std::__addressof(_M_stringbuf)); }
+
+      template<typename _SAlloc>
+ explicit
+ basic_stringstream(const basic_string<_CharT, _Traits, _SAlloc>& __str,
+      ios_base::openmode __mode = ios_base::in
+             | ios_base::out)
+ : basic_stringstream(__str, __mode, allocator_type())
+ { }
+
+
+
+
+      basic_stringstream&
+      operator=(const basic_stringstream&) = delete;
+
+      basic_stringstream&
+      operator=(basic_stringstream&& __rhs)
+      {
+ __iostream_type::operator=(std::move(__rhs));
+ _M_stringbuf = std::move(__rhs._M_stringbuf);
+ return *this;
+      }
+
+      void
+      swap(basic_stringstream& __rhs)
+      {
+ __iostream_type::swap(__rhs);
+ _M_stringbuf.swap(__rhs._M_stringbuf);
+      }
+# 1143 "/usr/include/c++/14/sstream" 3
+      __stringbuf_type*
+      rdbuf() const
+      { return const_cast<__stringbuf_type*>(&_M_stringbuf); }
+
+
+
+
+
+      __string_type
+      str() const &
+      { return _M_stringbuf.str(); }
+
+
+
+
+      template<__allocator_like _SAlloc>
+ basic_string<_CharT, _Traits, _SAlloc>
+ str(const _SAlloc& __sa) const
+ { return _M_stringbuf.str(__sa); }
+
+
+      __string_type
+      str() &&
+      { return std::move(_M_stringbuf).str(); }
+
+
+     
+      basic_string_view<char_type, traits_type>
+      view() const noexcept
+      { return _M_stringbuf.view(); }
+# 1181 "/usr/include/c++/14/sstream" 3
+      void
+      str(const __string_type& __s)
+      { _M_stringbuf.str(__s); }
+
+
+
+      template<__allocator_like _SAlloc>
+ requires (!is_same_v<_SAlloc, _Alloc>)
+ void
+ str(const basic_string<_CharT, _Traits, _SAlloc>& __s)
+ { _M_stringbuf.str(__s); }
+
+
+      void
+      str(__string_type&& __s)
+      { _M_stringbuf.str(std::move(__s)); }
+
+    };
+
+
+
+  template <class _CharT, class _Traits, class _Allocator>
+    inline void
+    swap(basic_stringbuf<_CharT, _Traits, _Allocator>& __x,
+  basic_stringbuf<_CharT, _Traits, _Allocator>& __y)
+    noexcept(noexcept(__x.swap(__y)))
+    { __x.swap(__y); }
+
+
+  template <class _CharT, class _Traits, class _Allocator>
+    inline void
+    swap(basic_istringstream<_CharT, _Traits, _Allocator>& __x,
+  basic_istringstream<_CharT, _Traits, _Allocator>& __y)
+    { __x.swap(__y); }
+
+
+  template <class _CharT, class _Traits, class _Allocator>
+    inline void
+    swap(basic_ostringstream<_CharT, _Traits, _Allocator>& __x,
+  basic_ostringstream<_CharT, _Traits, _Allocator>& __y)
+    { __x.swap(__y); }
+
+
+  template <class _CharT, class _Traits, class _Allocator>
+    inline void
+    swap(basic_stringstream<_CharT, _Traits, _Allocator>& __x,
+  basic_stringstream<_CharT, _Traits, _Allocator>& __y)
+    { __x.swap(__y); }
+
+
+}
+
+}
+
+
+
+
+# 1 "/usr/include/c++/14/bits/sstream.tcc" 1 3
+# 37 "/usr/include/c++/14/bits/sstream.tcc" 3
+       
+# 38 "/usr/include/c++/14/bits/sstream.tcc" 3
 
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
-# 62 "/usr/include/c++/14/iostream" 3
-  extern istream cin;
-  extern ostream cout;
-  extern ostream cerr;
-  extern ostream clog;
+
+  template <class _CharT, class _Traits, class _Alloc>
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::int_type
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+    pbackfail(int_type __c)
+    {
+      int_type __ret = traits_type::eof();
+      if (this->eback() < this->gptr())
+ {
 
 
-  extern wistream wcin;
-  extern wostream wcout;
-  extern wostream wcerr;
-  extern wostream wclog;
-# 82 "/usr/include/c++/14/iostream" 3
-  __extension__ __asm (".globl _ZSt21ios_base_library_initv");
+   const bool __testeof = traits_type::eq_int_type(__c, __ret);
+   if (!__testeof)
+     {
+       const bool __testeq = traits_type::eq(traits_type::
+          to_char_type(__c),
+          this->gptr()[-1]);
+       const bool __testout = this->_M_mode & ios_base::out;
+       if (__testeq || __testout)
+  {
+    this->gbump(-1);
+    if (!__testeq)
+      *this->gptr() = traits_type::to_char_type(__c);
+    __ret = __c;
+  }
+     }
+   else
+     {
+       this->gbump(-1);
+       __ret = traits_type::not_eof(__c);
+     }
+ }
+      return __ret;
+    }
+
+  template <class _CharT, class _Traits, class _Alloc>
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::int_type
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+    overflow(int_type __c)
+    {
+      const bool __testout = this->_M_mode & ios_base::out;
+      if (__builtin_expect(!__testout, false))
+ return traits_type::eof();
+
+      const bool __testeof = traits_type::eq_int_type(__c, traits_type::eof());
+      if (__builtin_expect(__testeof, false))
+ return traits_type::not_eof(__c);
+
+      const __size_type __capacity = _M_string.capacity();
+
+
+      if (size_t(this->epptr() - this->pbase()) < __capacity)
+ {
+
+   char_type* __base = const_cast<char_type*>(_M_string.data());
+   _M_pbump(__base, __base + __capacity, this->pptr() - this->pbase());
+   if (_M_mode & ios_base::in)
+     {
+       const __size_type __nget = this->gptr() - this->eback();
+       const __size_type __eget = this->egptr() - this->eback();
+       this->setg(__base, __base + __nget, __base + __eget + 1);
+     }
+   *this->pptr() = traits_type::to_char_type(__c);
+   this->pbump(1);
+   return __c;
+ }
+
+
+      const __size_type __max_size = _M_string.max_size();
+      const bool __testput = this->pptr() < this->epptr();
+      if (__builtin_expect(!__testput && __capacity == __max_size, false))
+ return traits_type::eof();
+
+
+
+      const char_type __conv = traits_type::to_char_type(__c);
+      if (!__testput)
+ {
+# 129 "/usr/include/c++/14/bits/sstream.tcc" 3
+   const __size_type __opt_len = std::max(__size_type(2 * __capacity),
+       __size_type(512));
+   const __size_type __len = std::min(__opt_len, __max_size);
+   __string_type __tmp(_M_string.get_allocator());
+   __tmp.reserve(__len);
+   if (this->pbase())
+     __tmp.assign(this->pbase(), this->epptr() - this->pbase());
+   __tmp.push_back(__conv);
+   _M_string.swap(__tmp);
+   _M_sync(const_cast<char_type*>(_M_string.data()),
+    this->gptr() - this->eback(), this->pptr() - this->pbase());
+ }
+      else
+ *this->pptr() = __conv;
+      this->pbump(1);
+      return __c;
+    }
+
+  template <class _CharT, class _Traits, class _Alloc>
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::int_type
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+    underflow()
+    {
+      int_type __ret = traits_type::eof();
+      const bool __testin = this->_M_mode & ios_base::in;
+      if (__testin)
+ {
+
+   _M_update_egptr();
+
+   if (this->gptr() < this->egptr())
+     __ret = traits_type::to_int_type(*this->gptr());
+ }
+      return __ret;
+    }
+
+  template <class _CharT, class _Traits, class _Alloc>
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::pos_type
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+    seekoff(off_type __off, ios_base::seekdir __way, ios_base::openmode __mode)
+    {
+      pos_type __ret = pos_type(off_type(-1));
+      bool __testin = (ios_base::in & this->_M_mode & __mode) != 0;
+      bool __testout = (ios_base::out & this->_M_mode & __mode) != 0;
+      const bool __testboth = __testin && __testout && __way != ios_base::cur;
+      __testin &= !(__mode & ios_base::out);
+      __testout &= !(__mode & ios_base::in);
+
+
+
+      const char_type* __beg = __testin ? this->eback() : this->pbase();
+      if ((__beg || !__off) && (__testin || __testout || __testboth))
+ {
+   _M_update_egptr();
+
+   off_type __newoffi = __off;
+   off_type __newoffo = __newoffi;
+   if (__way == ios_base::cur)
+     {
+       __newoffi += this->gptr() - __beg;
+       __newoffo += this->pptr() - __beg;
+     }
+   else if (__way == ios_base::end)
+     __newoffo = __newoffi += this->egptr() - __beg;
+
+   if ((__testin || __testboth)
+       && __newoffi >= 0
+       && this->egptr() - __beg >= __newoffi)
+     {
+       this->setg(this->eback(), this->eback() + __newoffi,
+    this->egptr());
+       __ret = pos_type(__newoffi);
+     }
+   if ((__testout || __testboth)
+       && __newoffo >= 0
+       && this->egptr() - __beg >= __newoffo)
+     {
+       _M_pbump(this->pbase(), this->epptr(), __newoffo);
+       __ret = pos_type(__newoffo);
+     }
+ }
+      return __ret;
+    }
+
+  template <class _CharT, class _Traits, class _Alloc>
+    typename basic_stringbuf<_CharT, _Traits, _Alloc>::pos_type
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+    seekpos(pos_type __sp, ios_base::openmode __mode)
+    {
+      pos_type __ret = pos_type(off_type(-1));
+      const bool __testin = (ios_base::in & this->_M_mode & __mode) != 0;
+      const bool __testout = (ios_base::out & this->_M_mode & __mode) != 0;
+
+      const char_type* __beg = __testin ? this->eback() : this->pbase();
+      if ((__beg || !off_type(__sp)) && (__testin || __testout))
+ {
+   _M_update_egptr();
+
+   const off_type __pos(__sp);
+   const bool __testpos = (0 <= __pos
+      && __pos <= this->egptr() - __beg);
+   if (__testpos)
+     {
+       if (__testin)
+  this->setg(this->eback(), this->eback() + __pos,
+      this->egptr());
+       if (__testout)
+  _M_pbump(this->pbase(), this->epptr(), __pos);
+       __ret = __sp;
+     }
+ }
+      return __ret;
+    }
+
+  template <class _CharT, class _Traits, class _Alloc>
+    void
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+    _M_sync(char_type* __base, __size_type __i, __size_type __o)
+    {
+      const bool __testin = _M_mode & ios_base::in;
+      const bool __testout = _M_mode & ios_base::out;
+      char_type* __endg = __base + _M_string.size();
+      char_type* __endp = __base + _M_string.capacity();
+
+      if (__base != _M_string.data())
+ {
+
+   __endg += __i;
+   __i = 0;
+   __endp = __endg;
+ }
+
+      if (__testin)
+ this->setg(__base, __base + __i, __endg);
+      if (__testout)
+ {
+   _M_pbump(__base, __endp, __o);
+
+
+
+   if (!__testin)
+     this->setg(__endg, __endg, __endg);
+ }
+    }
+
+  template <class _CharT, class _Traits, class _Alloc>
+    void
+    basic_stringbuf<_CharT, _Traits, _Alloc>::
+    _M_pbump(char_type* __pbeg, char_type* __pend, off_type __off)
+    {
+      this->setp(__pbeg, __pend);
+      while (__off > __gnu_cxx::__numeric_traits<int>::__max)
+ {
+   this->pbump(__gnu_cxx::__numeric_traits<int>::__max);
+   __off -= __gnu_cxx::__numeric_traits<int>::__max;
+ }
+      this->pbump(__off);
+    }
+
+
+
+
+  extern template class basic_stringbuf<char>;
+  extern template class basic_istringstream<char>;
+  extern template class basic_ostringstream<char>;
+  extern template class basic_stringstream<char>;
+
+
+  extern template class basic_stringbuf<wchar_t>;
+  extern template class basic_istringstream<wchar_t>;
+  extern template class basic_ostringstream<wchar_t>;
+  extern template class basic_stringstream<wchar_t>;
+
 
 
 
 }
-# 8 "/home/bktivadar/CLionProjects/mankala/BoardState.h" 2
+# 1239 "/usr/include/c++/14/sstream" 2 3
+# 46 "/usr/include/c++/14/chrono" 2 3
+
 # 1 "/usr/include/c++/14/vector" 1 3
 # 58 "/usr/include/c++/14/vector" 3
        
@@ -75331,7 +78046,12501 @@ namespace std __attribute__ ((__visibility__ ("default")))
     }
 
 }
-# 9 "/home/bktivadar/CLionProjects/mankala/BoardState.h" 2
+# 48 "/usr/include/c++/14/chrono" 2 3
+
+# 1 "/usr/include/c++/14/bits/shared_ptr.h" 1 3
+# 53 "/usr/include/c++/14/bits/shared_ptr.h" 3
+# 1 "/usr/include/c++/14/bits/shared_ptr_base.h" 1 3
+# 53 "/usr/include/c++/14/bits/shared_ptr_base.h" 3
+# 1 "/usr/include/c++/14/bits/allocated_ptr.h" 1 3
+# 40 "/usr/include/c++/14/bits/allocated_ptr.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+  template<typename _Alloc>
+    struct __allocated_ptr
+    {
+      using pointer = typename allocator_traits<_Alloc>::pointer;
+      using value_type = typename allocator_traits<_Alloc>::value_type;
+
+
+      __allocated_ptr(_Alloc& __a, pointer __ptr) noexcept
+      : _M_alloc(std::__addressof(__a)), _M_ptr(__ptr)
+      { }
+
+
+      template<typename _Ptr,
+        typename _Req = _Require<is_same<_Ptr, value_type*>>>
+      __allocated_ptr(_Alloc& __a, _Ptr __ptr)
+      : _M_alloc(std::__addressof(__a)),
+ _M_ptr(pointer_traits<pointer>::pointer_to(*__ptr))
+      { }
+
+
+      __allocated_ptr(__allocated_ptr&& __gd) noexcept
+      : _M_alloc(__gd._M_alloc), _M_ptr(__gd._M_ptr)
+      { __gd._M_ptr = nullptr; }
+
+
+      ~__allocated_ptr()
+      {
+ if (_M_ptr != nullptr)
+   std::allocator_traits<_Alloc>::deallocate(*_M_alloc, _M_ptr, 1);
+      }
+
+
+      __allocated_ptr&
+      operator=(std::nullptr_t) noexcept
+      {
+ _M_ptr = nullptr;
+ return *this;
+      }
+
+
+      value_type* get() { return std::__to_address(_M_ptr); }
+
+    private:
+      _Alloc* _M_alloc;
+      pointer _M_ptr;
+    };
+
+
+  template<typename _Alloc>
+    __allocated_ptr<_Alloc>
+    __allocate_guarded(_Alloc& __a)
+    {
+      return { __a, std::allocator_traits<_Alloc>::allocate(__a, 1) };
+    }
+
+
+
+}
+# 54 "/usr/include/c++/14/bits/shared_ptr_base.h" 2 3
+
+
+
+
+
+# 1 "/usr/include/c++/14/bits/unique_ptr.h" 1 3
+# 47 "/usr/include/c++/14/bits/unique_ptr.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+
+
+
+
+ 
+# 57 "/usr/include/c++/14/bits/unique_ptr.h" 3
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+  template<typename> class auto_ptr;
+#pragma GCC diagnostic pop
+
+
+
+
+
+
+
+  template<typename _Tp>
+    struct default_delete
+    {
+
+      constexpr default_delete() noexcept = default;
+
+
+
+
+
+
+      template<typename _Up,
+        typename = _Require<is_convertible<_Up*, _Tp*>>>
+ constexpr
+        default_delete(const default_delete<_Up>&) noexcept { }
+
+
+      constexpr
+      void
+      operator()(_Tp* __ptr) const
+      {
+ static_assert(!is_void<_Tp>::value,
+        "can't delete pointer to incomplete type");
+ static_assert(sizeof(_Tp)>0,
+        "can't delete pointer to incomplete type");
+ delete __ptr;
+      }
+    };
+# 105 "/usr/include/c++/14/bits/unique_ptr.h" 3
+  template<typename _Tp>
+    struct default_delete<_Tp[]>
+    {
+    public:
+
+      constexpr default_delete() noexcept = default;
+# 121 "/usr/include/c++/14/bits/unique_ptr.h" 3
+      template<typename _Up,
+        typename = _Require<is_convertible<_Up(*)[], _Tp(*)[]>>>
+ constexpr
+        default_delete(const default_delete<_Up[]>&) noexcept { }
+
+
+      template<typename _Up>
+ constexpr
+ typename enable_if<is_convertible<_Up(*)[], _Tp(*)[]>::value>::type
+ operator()(_Up* __ptr) const
+ {
+   static_assert(sizeof(_Tp)>0,
+   "can't delete pointer to incomplete type");
+   delete [] __ptr;
+ }
+    };
+
+
+
+
+  template <typename _Tp, typename _Dp>
+    class __uniq_ptr_impl
+    {
+      template <typename _Up, typename _Ep, typename = void>
+ struct _Ptr
+ {
+   using type = _Up*;
+ };
+
+      template <typename _Up, typename _Ep>
+ struct
+ _Ptr<_Up, _Ep, __void_t<typename remove_reference<_Ep>::type::pointer>>
+ {
+   using type = typename remove_reference<_Ep>::type::pointer;
+ };
+
+    public:
+      using _DeleterConstraint = enable_if<
+        __and_<__not_<is_pointer<_Dp>>,
+        is_default_constructible<_Dp>>::value>;
+
+      using pointer = typename _Ptr<_Tp, _Dp>::type;
+
+      static_assert( !is_rvalue_reference<_Dp>::value,
+       "unique_ptr's deleter type must be a function object type"
+       " or an lvalue reference type" );
+
+      __uniq_ptr_impl() = default;
+      constexpr
+      __uniq_ptr_impl(pointer __p) : _M_t() { _M_ptr() = __p; }
+
+      template<typename _Del>
+ constexpr
+ __uniq_ptr_impl(pointer __p, _Del&& __d)
+ : _M_t(__p, std::forward<_Del>(__d)) { }
+
+      constexpr
+      __uniq_ptr_impl(__uniq_ptr_impl&& __u) noexcept
+      : _M_t(std::move(__u._M_t))
+      { __u._M_ptr() = nullptr; }
+
+      constexpr
+      __uniq_ptr_impl& operator=(__uniq_ptr_impl&& __u) noexcept
+      {
+ reset(__u.release());
+ _M_deleter() = std::forward<_Dp>(__u._M_deleter());
+ return *this;
+      }
+
+      constexpr
+      pointer& _M_ptr() noexcept { return std::get<0>(_M_t); }
+      constexpr
+      pointer _M_ptr() const noexcept { return std::get<0>(_M_t); }
+      constexpr
+      _Dp& _M_deleter() noexcept { return std::get<1>(_M_t); }
+      constexpr
+      const _Dp& _M_deleter() const noexcept { return std::get<1>(_M_t); }
+
+      constexpr
+      void reset(pointer __p) noexcept
+      {
+ const pointer __old_p = _M_ptr();
+ _M_ptr() = __p;
+ if (__old_p)
+   _M_deleter()(__old_p);
+      }
+
+      constexpr
+      pointer release() noexcept
+      {
+ pointer __p = _M_ptr();
+ _M_ptr() = nullptr;
+ return __p;
+      }
+
+      constexpr
+      void
+      swap(__uniq_ptr_impl& __rhs) noexcept
+      {
+ using std::swap;
+ swap(this->_M_ptr(), __rhs._M_ptr());
+ swap(this->_M_deleter(), __rhs._M_deleter());
+      }
+
+    private:
+      tuple<pointer, _Dp> _M_t;
+    };
+
+
+  template <typename _Tp, typename _Dp,
+     bool = is_move_constructible<_Dp>::value,
+     bool = is_move_assignable<_Dp>::value>
+    struct __uniq_ptr_data : __uniq_ptr_impl<_Tp, _Dp>
+    {
+      using __uniq_ptr_impl<_Tp, _Dp>::__uniq_ptr_impl;
+      __uniq_ptr_data(__uniq_ptr_data&&) = default;
+      __uniq_ptr_data& operator=(__uniq_ptr_data&&) = default;
+    };
+
+  template <typename _Tp, typename _Dp>
+    struct __uniq_ptr_data<_Tp, _Dp, true, false> : __uniq_ptr_impl<_Tp, _Dp>
+    {
+      using __uniq_ptr_impl<_Tp, _Dp>::__uniq_ptr_impl;
+      __uniq_ptr_data(__uniq_ptr_data&&) = default;
+      __uniq_ptr_data& operator=(__uniq_ptr_data&&) = delete;
+    };
+
+  template <typename _Tp, typename _Dp>
+    struct __uniq_ptr_data<_Tp, _Dp, false, true> : __uniq_ptr_impl<_Tp, _Dp>
+    {
+      using __uniq_ptr_impl<_Tp, _Dp>::__uniq_ptr_impl;
+      __uniq_ptr_data(__uniq_ptr_data&&) = delete;
+      __uniq_ptr_data& operator=(__uniq_ptr_data&&) = default;
+    };
+
+  template <typename _Tp, typename _Dp>
+    struct __uniq_ptr_data<_Tp, _Dp, false, false> : __uniq_ptr_impl<_Tp, _Dp>
+    {
+      using __uniq_ptr_impl<_Tp, _Dp>::__uniq_ptr_impl;
+      __uniq_ptr_data(__uniq_ptr_data&&) = delete;
+      __uniq_ptr_data& operator=(__uniq_ptr_data&&) = delete;
+    };
+
+
+
+
+
+
+
+  template <typename _Tp, typename _Dp = default_delete<_Tp>>
+    class unique_ptr
+    {
+      template <typename _Up>
+ using _DeleterConstraint =
+   typename __uniq_ptr_impl<_Tp, _Up>::_DeleterConstraint::type;
+
+      __uniq_ptr_data<_Tp, _Dp> _M_t;
+
+    public:
+      using pointer = typename __uniq_ptr_impl<_Tp, _Dp>::pointer;
+      using element_type = _Tp;
+      using deleter_type = _Dp;
+
+    private:
+
+
+      template<typename _Up, typename _Ep>
+ using __safe_conversion_up = __and_<
+   is_convertible<typename unique_ptr<_Up, _Ep>::pointer, pointer>,
+   __not_<is_array<_Up>>
+        >;
+
+    public:
+
+
+
+      template<typename _Del = _Dp, typename = _DeleterConstraint<_Del>>
+ constexpr unique_ptr() noexcept
+ : _M_t()
+ { }
+
+
+
+
+
+
+
+      template<typename _Del = _Dp, typename = _DeleterConstraint<_Del>>
+ constexpr
+ explicit
+ unique_ptr(pointer __p) noexcept
+ : _M_t(__p)
+        { }
+# 322 "/usr/include/c++/14/bits/unique_ptr.h" 3
+      template<typename _Del = deleter_type,
+        typename = _Require<is_copy_constructible<_Del>>>
+ constexpr
+ unique_ptr(pointer __p, const deleter_type& __d) noexcept
+ : _M_t(__p, __d) { }
+# 335 "/usr/include/c++/14/bits/unique_ptr.h" 3
+      template<typename _Del = deleter_type,
+        typename = _Require<is_move_constructible<_Del>>>
+ constexpr
+ unique_ptr(pointer __p,
+     __enable_if_t<!is_lvalue_reference<_Del>::value,
+     _Del&&> __d) noexcept
+ : _M_t(__p, std::move(__d))
+ { }
+
+      template<typename _Del = deleter_type,
+        typename _DelUnref = typename remove_reference<_Del>::type>
+ constexpr
+ unique_ptr(pointer,
+     __enable_if_t<is_lvalue_reference<_Del>::value,
+     _DelUnref&&>) = delete;
+
+
+      template<typename _Del = _Dp, typename = _DeleterConstraint<_Del>>
+ constexpr unique_ptr(nullptr_t) noexcept
+ : _M_t()
+ { }
+
+
+
+
+      unique_ptr(unique_ptr&&) = default;
+
+
+
+
+
+
+
+      template<typename _Up, typename _Ep, typename = _Require<
+               __safe_conversion_up<_Up, _Ep>,
+        __conditional_t<is_reference<_Dp>::value,
+          is_same<_Ep, _Dp>,
+          is_convertible<_Ep, _Dp>>>>
+ constexpr
+ unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
+ : _M_t(__u.release(), std::forward<_Ep>(__u.get_deleter()))
+ { }
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
+      template<typename _Up, typename = _Require<
+        is_convertible<_Up*, _Tp*>, is_same<_Dp, default_delete<_Tp>>>>
+ unique_ptr(auto_ptr<_Up>&& __u) noexcept;
+#pragma GCC diagnostic pop
+
+
+
+
+      constexpr
+
+      ~unique_ptr() noexcept
+      {
+ static_assert(__is_invocable<deleter_type&, pointer>::value,
+        "unique_ptr's deleter must be invocable with a pointer");
+ auto& __ptr = _M_t._M_ptr();
+ if (__ptr != nullptr)
+   get_deleter()(std::move(__ptr));
+ __ptr = pointer();
+      }
+
+
+
+
+
+
+
+      unique_ptr& operator=(unique_ptr&&) = default;
+# 417 "/usr/include/c++/14/bits/unique_ptr.h" 3
+      template<typename _Up, typename _Ep>
+ constexpr
+        typename enable_if< __and_<
+          __safe_conversion_up<_Up, _Ep>,
+          is_assignable<deleter_type&, _Ep&&>
+          >::value,
+          unique_ptr&>::type
+ operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+ {
+   reset(__u.release());
+   get_deleter() = std::forward<_Ep>(__u.get_deleter());
+   return *this;
+ }
+
+
+      constexpr
+      unique_ptr&
+      operator=(nullptr_t) noexcept
+      {
+ reset();
+ return *this;
+      }
+
+
+
+
+      constexpr
+      typename add_lvalue_reference<element_type>::type
+      operator*() const noexcept(noexcept(*std::declval<pointer>()))
+      {
+ do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(get() != pointer()), false)) std::__glibcxx_assert_fail(); } while (false);
+ return *get();
+      }
+
+
+      constexpr
+      pointer
+      operator->() const noexcept
+      {
+ ;
+ return get();
+      }
+
+
+      constexpr
+      pointer
+      get() const noexcept
+      { return _M_t._M_ptr(); }
+
+
+      constexpr
+      deleter_type&
+      get_deleter() noexcept
+      { return _M_t._M_deleter(); }
+
+
+      constexpr
+      const deleter_type&
+      get_deleter() const noexcept
+      { return _M_t._M_deleter(); }
+
+
+      constexpr
+      explicit operator bool() const noexcept
+      { return get() == pointer() ? false : true; }
+
+
+
+
+      constexpr
+      pointer
+      release() noexcept
+      { return _M_t.release(); }
+
+
+
+
+
+
+
+      constexpr
+      void
+      reset(pointer __p = pointer()) noexcept
+      {
+ static_assert(__is_invocable<deleter_type&, pointer>::value,
+        "unique_ptr's deleter must be invocable with a pointer");
+ _M_t.reset(std::move(__p));
+      }
+
+
+      constexpr
+      void
+      swap(unique_ptr& __u) noexcept
+      {
+ static_assert(__is_swappable<_Dp>::value, "deleter must be swappable");
+ _M_t.swap(__u._M_t);
+      }
+
+
+      unique_ptr(const unique_ptr&) = delete;
+      unique_ptr& operator=(const unique_ptr&) = delete;
+
+    private:
+
+      template<typename, typename, typename...>
+ friend class out_ptr_t;
+      template<typename, typename, typename...>
+ friend class inout_ptr_t;
+
+  };
+# 536 "/usr/include/c++/14/bits/unique_ptr.h" 3
+  template<typename _Tp, typename _Dp>
+    class unique_ptr<_Tp[], _Dp>
+    {
+      template <typename _Up>
+      using _DeleterConstraint =
+ typename __uniq_ptr_impl<_Tp, _Up>::_DeleterConstraint::type;
+
+      __uniq_ptr_data<_Tp, _Dp> _M_t;
+
+
+      template<typename _Up>
+ using __is_derived_Tp
+   = __and_< is_base_of<_Tp, _Up>,
+      __not_<is_same<__remove_cv_t<_Tp>, __remove_cv_t<_Up>>> >;
+
+    public:
+      using pointer = typename __uniq_ptr_impl<_Tp, _Dp>::pointer;
+      using element_type = _Tp;
+      using deleter_type = _Dp;
+
+
+
+      template<typename _Up, typename _Ep,
+               typename _UPtr = unique_ptr<_Up, _Ep>,
+        typename _UP_pointer = typename _UPtr::pointer,
+        typename _UP_element_type = typename _UPtr::element_type>
+ using __safe_conversion_up = __and_<
+          is_array<_Up>,
+          is_same<pointer, element_type*>,
+          is_same<_UP_pointer, _UP_element_type*>,
+          is_convertible<_UP_element_type(*)[], element_type(*)[]>
+        >;
+
+
+      template<typename _Up>
+        using __safe_conversion_raw = __and_<
+          __or_<__or_<is_same<_Up, pointer>,
+                      is_same<_Up, nullptr_t>>,
+                __and_<is_pointer<_Up>,
+                       is_same<pointer, element_type*>,
+                       is_convertible<
+                         typename remove_pointer<_Up>::type(*)[],
+                         element_type(*)[]>
+                >
+          >
+        >;
+
+
+
+
+      template<typename _Del = _Dp, typename = _DeleterConstraint<_Del>>
+ constexpr unique_ptr() noexcept
+ : _M_t()
+ { }
+# 598 "/usr/include/c++/14/bits/unique_ptr.h" 3
+      template<typename _Up,
+        typename _Vp = _Dp,
+        typename = _DeleterConstraint<_Vp>,
+        typename = typename enable_if<
+                 __safe_conversion_raw<_Up>::value, bool>::type>
+ constexpr
+ explicit
+ unique_ptr(_Up __p) noexcept
+ : _M_t(__p)
+        { }
+# 617 "/usr/include/c++/14/bits/unique_ptr.h" 3
+      template<typename _Up, typename _Del = deleter_type,
+        typename = _Require<__safe_conversion_raw<_Up>,
+       is_copy_constructible<_Del>>>
+ constexpr
+ unique_ptr(_Up __p, const deleter_type& __d) noexcept
+ : _M_t(__p, __d) { }
+# 632 "/usr/include/c++/14/bits/unique_ptr.h" 3
+      template<typename _Up, typename _Del = deleter_type,
+        typename = _Require<__safe_conversion_raw<_Up>,
+       is_move_constructible<_Del>>>
+ constexpr
+ unique_ptr(_Up __p,
+     __enable_if_t<!is_lvalue_reference<_Del>::value,
+     _Del&&> __d) noexcept
+ : _M_t(std::move(__p), std::move(__d))
+ { }
+
+      template<typename _Up, typename _Del = deleter_type,
+        typename _DelUnref = typename remove_reference<_Del>::type,
+        typename = _Require<__safe_conversion_raw<_Up>>>
+ unique_ptr(_Up,
+     __enable_if_t<is_lvalue_reference<_Del>::value,
+     _DelUnref&&>) = delete;
+
+
+      unique_ptr(unique_ptr&&) = default;
+
+
+      template<typename _Del = _Dp, typename = _DeleterConstraint<_Del>>
+ constexpr unique_ptr(nullptr_t) noexcept
+ : _M_t()
+        { }
+
+      template<typename _Up, typename _Ep, typename = _Require<
+        __safe_conversion_up<_Up, _Ep>,
+        __conditional_t<is_reference<_Dp>::value,
+          is_same<_Ep, _Dp>,
+          is_convertible<_Ep, _Dp>>>>
+ constexpr
+ unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
+ : _M_t(__u.release(), std::forward<_Ep>(__u.get_deleter()))
+ { }
+
+
+
+      constexpr
+
+      ~unique_ptr()
+      {
+ auto& __ptr = _M_t._M_ptr();
+ if (__ptr != nullptr)
+   get_deleter()(__ptr);
+ __ptr = pointer();
+      }
+
+
+
+
+
+
+
+      unique_ptr&
+      operator=(unique_ptr&&) = default;
+# 696 "/usr/include/c++/14/bits/unique_ptr.h" 3
+      template<typename _Up, typename _Ep>
+ constexpr
+ typename
+ enable_if<__and_<__safe_conversion_up<_Up, _Ep>,
+                         is_assignable<deleter_type&, _Ep&&>
+                  >::value,
+                  unique_ptr&>::type
+ operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+ {
+   reset(__u.release());
+   get_deleter() = std::forward<_Ep>(__u.get_deleter());
+   return *this;
+ }
+
+
+      constexpr
+      unique_ptr&
+      operator=(nullptr_t) noexcept
+      {
+ reset();
+ return *this;
+      }
+
+
+
+
+      constexpr
+      typename std::add_lvalue_reference<element_type>::type
+      operator[](size_t __i) const
+      {
+ do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(get() != pointer()), false)) std::__glibcxx_assert_fail(); } while (false);
+ return get()[__i];
+      }
+
+
+      constexpr
+      pointer
+      get() const noexcept
+      { return _M_t._M_ptr(); }
+
+
+      constexpr
+      deleter_type&
+      get_deleter() noexcept
+      { return _M_t._M_deleter(); }
+
+
+      constexpr
+      const deleter_type&
+      get_deleter() const noexcept
+      { return _M_t._M_deleter(); }
+
+
+      constexpr
+      explicit operator bool() const noexcept
+      { return get() == pointer() ? false : true; }
+
+
+
+
+      constexpr
+      pointer
+      release() noexcept
+      { return _M_t.release(); }
+
+
+
+
+
+
+
+      template <typename _Up,
+                typename = _Require<
+                  __or_<is_same<_Up, pointer>,
+                        __and_<is_same<pointer, element_type*>,
+                               is_pointer<_Up>,
+                               is_convertible<
+                                 typename remove_pointer<_Up>::type(*)[],
+                                 element_type(*)[]
+                               >
+                        >
+                  >
+               >>
+      constexpr
+      void
+      reset(_Up __p) noexcept
+      { _M_t.reset(std::move(__p)); }
+
+      constexpr
+      void reset(nullptr_t = nullptr) noexcept
+      { reset(pointer()); }
+
+
+      constexpr
+      void
+      swap(unique_ptr& __u) noexcept
+      {
+ static_assert(__is_swappable<_Dp>::value, "deleter must be swappable");
+ _M_t.swap(__u._M_t);
+      }
+
+
+      unique_ptr(const unique_ptr&) = delete;
+      unique_ptr& operator=(const unique_ptr&) = delete;
+
+    private:
+
+      template<typename, typename, typename...> friend class out_ptr_t;
+      template<typename, typename, typename...> friend class inout_ptr_t;
+
+    };
+
+
+
+
+
+  template<typename _Tp, typename _Dp>
+    inline
+
+
+    constexpr
+    typename enable_if<__is_swappable<_Dp>::value>::type
+
+
+
+    swap(unique_ptr<_Tp, _Dp>& __x,
+  unique_ptr<_Tp, _Dp>& __y) noexcept
+    { __x.swap(__y); }
+
+
+  template<typename _Tp, typename _Dp>
+    typename enable_if<!__is_swappable<_Dp>::value>::type
+    swap(unique_ptr<_Tp, _Dp>&,
+  unique_ptr<_Tp, _Dp>&) = delete;
+
+
+
+  template<typename _Tp, typename _Dp,
+    typename _Up, typename _Ep>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator==(const unique_ptr<_Tp, _Dp>& __x,
+        const unique_ptr<_Up, _Ep>& __y)
+    { return __x.get() == __y.get(); }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator==(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+    { return !__x; }
+# 881 "/usr/include/c++/14/bits/unique_ptr.h" 3
+  template<typename _Tp, typename _Dp,
+    typename _Up, typename _Ep>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator<(const unique_ptr<_Tp, _Dp>& __x,
+       const unique_ptr<_Up, _Ep>& __y)
+    {
+      typedef typename
+ std::common_type<typename unique_ptr<_Tp, _Dp>::pointer,
+                  typename unique_ptr<_Up, _Ep>::pointer>::type _CT;
+      return std::less<_CT>()(__x.get(), __y.get());
+    }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+    {
+      return std::less<typename unique_ptr<_Tp, _Dp>::pointer>()(__x.get(),
+         nullptr);
+    }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+    {
+      return std::less<typename unique_ptr<_Tp, _Dp>::pointer>()(nullptr,
+         __x.get());
+    }
+
+
+  template<typename _Tp, typename _Dp,
+    typename _Up, typename _Ep>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator<=(const unique_ptr<_Tp, _Dp>& __x,
+        const unique_ptr<_Up, _Ep>& __y)
+    { return !(__y < __x); }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator<=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+    { return !(nullptr < __x); }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator<=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+    { return !(__x < nullptr); }
+
+
+  template<typename _Tp, typename _Dp,
+    typename _Up, typename _Ep>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator>(const unique_ptr<_Tp, _Dp>& __x,
+       const unique_ptr<_Up, _Ep>& __y)
+    { return (__y < __x); }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+    {
+      return std::less<typename unique_ptr<_Tp, _Dp>::pointer>()(nullptr,
+         __x.get());
+    }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator>(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+    {
+      return std::less<typename unique_ptr<_Tp, _Dp>::pointer>()(__x.get(),
+         nullptr);
+    }
+
+
+  template<typename _Tp, typename _Dp,
+    typename _Up, typename _Ep>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator>=(const unique_ptr<_Tp, _Dp>& __x,
+        const unique_ptr<_Up, _Ep>& __y)
+    { return !(__x < __y); }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] constexpr
+    inline bool
+    operator>=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+    { return !(__x < nullptr); }
+
+
+  template<typename _Tp, typename _Dp>
+    [[__nodiscard__]] inline bool
+    operator>=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+    { return !(nullptr < __x); }
+
+
+  template<typename _Tp, typename _Dp, typename _Up, typename _Ep>
+    requires three_way_comparable_with<typename unique_ptr<_Tp, _Dp>::pointer,
+           typename unique_ptr<_Up, _Ep>::pointer>
+    constexpr
+    inline
+    compare_three_way_result_t<typename unique_ptr<_Tp, _Dp>::pointer,
+          typename unique_ptr<_Up, _Ep>::pointer>
+    operator<=>(const unique_ptr<_Tp, _Dp>& __x,
+  const unique_ptr<_Up, _Ep>& __y)
+    { return compare_three_way()(__x.get(), __y.get()); }
+
+  template<typename _Tp, typename _Dp>
+    requires three_way_comparable<typename unique_ptr<_Tp, _Dp>::pointer>
+    constexpr
+    inline
+    compare_three_way_result_t<typename unique_ptr<_Tp, _Dp>::pointer>
+    operator<=>(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+    {
+      using pointer = typename unique_ptr<_Tp, _Dp>::pointer;
+      return compare_three_way()(__x.get(), static_cast<pointer>(nullptr));
+    }
+
+
+
+
+  template<typename _Up, typename _Ptr = typename _Up::pointer,
+    bool = __poison_hash<_Ptr>::__enable_hash_call>
+    struct __uniq_ptr_hash
+
+    : private __poison_hash<_Ptr>
+
+    {
+      size_t
+      operator()(const _Up& __u) const
+      noexcept(noexcept(std::declval<hash<_Ptr>>()(std::declval<_Ptr>())))
+      { return hash<_Ptr>()(__u.get()); }
+    };
+
+  template<typename _Up, typename _Ptr>
+    struct __uniq_ptr_hash<_Up, _Ptr, false>
+    : private __poison_hash<_Ptr>
+    { };
+
+
+
+  template<typename _Tp, typename _Dp>
+    struct hash<unique_ptr<_Tp, _Dp>>
+    : public __hash_base<size_t, unique_ptr<_Tp, _Dp>>,
+      public __uniq_ptr_hash<unique_ptr<_Tp, _Dp>>
+    { };
+
+
+
+namespace __detail
+{
+  template<typename _Tp>
+    struct _MakeUniq
+    { typedef unique_ptr<_Tp> __single_object; };
+
+  template<typename _Tp>
+    struct _MakeUniq<_Tp[]>
+    { typedef unique_ptr<_Tp[]> __array; };
+
+  template<typename _Tp, size_t _Bound>
+    struct _MakeUniq<_Tp[_Bound]>
+    { struct __invalid_type { }; };
+
+  template<typename _Tp>
+    using __unique_ptr_t = typename _MakeUniq<_Tp>::__single_object;
+  template<typename _Tp>
+    using __unique_ptr_array_t = typename _MakeUniq<_Tp>::__array;
+  template<typename _Tp>
+    using __invalid_make_unique_t = typename _MakeUniq<_Tp>::__invalid_type;
+}
+# 1072 "/usr/include/c++/14/bits/unique_ptr.h" 3
+  template<typename _Tp, typename... _Args>
+    constexpr
+    inline __detail::__unique_ptr_t<_Tp>
+    make_unique(_Args&&... __args)
+    { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+# 1087 "/usr/include/c++/14/bits/unique_ptr.h" 3
+  template<typename _Tp>
+    constexpr
+    inline __detail::__unique_ptr_array_t<_Tp>
+    make_unique(size_t __num)
+    { return unique_ptr<_Tp>(new remove_extent_t<_Tp>[__num]()); }
+
+
+
+
+
+
+  template<typename _Tp, typename... _Args>
+    __detail::__invalid_make_unique_t<_Tp>
+    make_unique(_Args&&...) = delete;
+# 1109 "/usr/include/c++/14/bits/unique_ptr.h" 3
+  template<typename _Tp>
+    constexpr
+    inline __detail::__unique_ptr_t<_Tp>
+    make_unique_for_overwrite()
+    { return unique_ptr<_Tp>(new _Tp); }
+# 1122 "/usr/include/c++/14/bits/unique_ptr.h" 3
+  template<typename _Tp>
+    constexpr
+    inline __detail::__unique_ptr_array_t<_Tp>
+    make_unique_for_overwrite(size_t __num)
+    { return unique_ptr<_Tp>(new remove_extent_t<_Tp>[__num]); }
+
+
+
+
+
+
+  template<typename _Tp, typename... _Args>
+    __detail::__invalid_make_unique_t<_Tp>
+    make_unique_for_overwrite(_Args&&...) = delete;
+# 1146 "/usr/include/c++/14/bits/unique_ptr.h" 3
+  template<typename _CharT, typename _Traits, typename _Tp, typename _Dp>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const unique_ptr<_Tp, _Dp>& __p)
+    requires requires { __os << __p.get(); }
+    {
+      __os << __p.get();
+      return __os;
+    }
+
+
+
+  template<typename _Tp>
+    static constexpr bool __is_unique_ptr = false;
+  template<typename _Tp, typename _Del>
+    static constexpr bool __is_unique_ptr<unique_ptr<_Tp, _Del>> = true;
+
+
+
+
+
+  namespace __detail::__variant
+  {
+    template<typename> struct _Never_valueless_alt;
+
+
+
+    template<typename _Tp, typename _Del>
+      struct _Never_valueless_alt<std::unique_ptr<_Tp, _Del>>
+      : std::true_type
+      { };
+  }
+
+
+
+}
+# 60 "/usr/include/c++/14/bits/shared_ptr_base.h" 2 3
+# 1 "/usr/include/c++/14/ext/aligned_buffer.h" 1 3
+# 32 "/usr/include/c++/14/ext/aligned_buffer.h" 3
+       
+# 33 "/usr/include/c++/14/ext/aligned_buffer.h" 3
+
+
+
+
+
+
+
+namespace __gnu_cxx
+{
+
+
+
+
+  template<typename _Tp>
+    struct __aligned_membuf
+    {
+
+
+
+
+
+      struct _Tp2 { _Tp _M_t; };
+
+      alignas(__alignof__(_Tp2::_M_t)) unsigned char _M_storage[sizeof(_Tp)];
+
+      __aligned_membuf() = default;
+
+
+      __aligned_membuf(std::nullptr_t) { }
+
+      void*
+      _M_addr() noexcept
+      { return static_cast<void*>(&_M_storage); }
+
+      const void*
+      _M_addr() const noexcept
+      { return static_cast<const void*>(&_M_storage); }
+
+      _Tp*
+      _M_ptr() noexcept
+      { return static_cast<_Tp*>(_M_addr()); }
+
+      const _Tp*
+      _M_ptr() const noexcept
+      { return static_cast<const _Tp*>(_M_addr()); }
+    };
+
+
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
+
+
+
+
+  template<typename _Tp>
+    struct __aligned_buffer
+    : std::aligned_storage<sizeof(_Tp), __alignof__(_Tp)>
+    {
+      typename
+ std::aligned_storage<sizeof(_Tp), __alignof__(_Tp)>::type _M_storage;
+
+      __aligned_buffer() = default;
+
+
+      __aligned_buffer(std::nullptr_t) { }
+
+      void*
+      _M_addr() noexcept
+      {
+        return static_cast<void*>(&_M_storage);
+      }
+
+      const void*
+      _M_addr() const noexcept
+      {
+        return static_cast<const void*>(&_M_storage);
+      }
+
+      _Tp*
+      _M_ptr() noexcept
+      { return static_cast<_Tp*>(_M_addr()); }
+
+      const _Tp*
+      _M_ptr() const noexcept
+      { return static_cast<const _Tp*>(_M_addr()); }
+    };
+#pragma GCC diagnostic pop
+
+
+}
+# 61 "/usr/include/c++/14/bits/shared_ptr_base.h" 2 3
+
+# 1 "/usr/include/c++/14/ext/concurrence.h" 1 3
+# 32 "/usr/include/c++/14/ext/concurrence.h" 3
+       
+# 33 "/usr/include/c++/14/ext/concurrence.h" 3
+
+
+
+
+
+
+
+namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+
+
+
+  enum _Lock_policy { _S_single, _S_mutex, _S_atomic };
+
+
+
+  inline const _Lock_policy __default_lock_policy =
+
+
+
+  _S_atomic;
+
+
+
+
+
+
+  class __concurrence_lock_error : public std::exception
+  {
+  public:
+    virtual char const*
+    what() const throw()
+    { return "__gnu_cxx::__concurrence_lock_error"; }
+  };
+
+  class __concurrence_unlock_error : public std::exception
+  {
+  public:
+    virtual char const*
+    what() const throw()
+    { return "__gnu_cxx::__concurrence_unlock_error"; }
+  };
+
+  class __concurrence_broadcast_error : public std::exception
+  {
+  public:
+    virtual char const*
+    what() const throw()
+    { return "__gnu_cxx::__concurrence_broadcast_error"; }
+  };
+
+  class __concurrence_wait_error : public std::exception
+  {
+  public:
+    virtual char const*
+    what() const throw()
+    { return "__gnu_cxx::__concurrence_wait_error"; }
+  };
+
+
+  inline void
+  __throw_concurrence_lock_error()
+  { (throw (__concurrence_lock_error())); }
+
+  inline void
+  __throw_concurrence_unlock_error()
+  { (throw (__concurrence_unlock_error())); }
+
+
+  inline void
+  __throw_concurrence_broadcast_error()
+  { (throw (__concurrence_broadcast_error())); }
+
+  inline void
+  __throw_concurrence_wait_error()
+  { (throw (__concurrence_wait_error())); }
+
+
+  class __mutex
+  {
+  private:
+
+    __gthread_mutex_t _M_mutex = { { 0, 0, 0, 0, PTHREAD_MUTEX_TIMED_NP, 0, 0, { 0, 0 } } };
+
+
+
+
+    __mutex(const __mutex&);
+    __mutex& operator=(const __mutex&);
+
+  public:
+    __mutex()
+    {
+
+
+
+
+    }
+# 144 "/usr/include/c++/14/ext/concurrence.h" 3
+    void lock()
+    {
+
+      if (__gthread_active_p())
+ {
+   if (__gthread_mutex_lock(&_M_mutex) != 0)
+     __throw_concurrence_lock_error();
+ }
+
+    }
+
+    void unlock()
+    {
+
+      if (__gthread_active_p())
+ {
+   if (__gthread_mutex_unlock(&_M_mutex) != 0)
+     __throw_concurrence_unlock_error();
+ }
+
+    }
+
+    __gthread_mutex_t* gthread_mutex(void)
+      { return &_M_mutex; }
+  };
+
+  class __recursive_mutex
+  {
+  private:
+
+    __gthread_recursive_mutex_t _M_mutex = { { 0, 0, 0, 0, PTHREAD_MUTEX_RECURSIVE_NP, 0, 0, { 0, 0 } } };
+
+
+
+
+    __recursive_mutex(const __recursive_mutex&);
+    __recursive_mutex& operator=(const __recursive_mutex&);
+
+  public:
+    __recursive_mutex()
+    {
+
+
+
+
+    }
+# 199 "/usr/include/c++/14/ext/concurrence.h" 3
+    void lock()
+    {
+
+      if (__gthread_active_p())
+ {
+   if (__gthread_recursive_mutex_lock(&_M_mutex) != 0)
+     __throw_concurrence_lock_error();
+ }
+
+    }
+
+    void unlock()
+    {
+
+      if (__gthread_active_p())
+ {
+   if (__gthread_recursive_mutex_unlock(&_M_mutex) != 0)
+     __throw_concurrence_unlock_error();
+ }
+
+    }
+
+    __gthread_recursive_mutex_t* gthread_recursive_mutex(void)
+    { return &_M_mutex; }
+  };
+
+
+
+
+  class __scoped_lock
+  {
+  public:
+    typedef __mutex __mutex_type;
+
+  private:
+    __mutex_type& _M_device;
+
+    __scoped_lock(const __scoped_lock&);
+    __scoped_lock& operator=(const __scoped_lock&);
+
+  public:
+    explicit __scoped_lock(__mutex_type& __name) : _M_device(__name)
+    { _M_device.lock(); }
+
+    ~__scoped_lock() throw()
+    { _M_device.unlock(); }
+  };
+
+
+  class __cond
+  {
+  private:
+
+    __gthread_cond_t _M_cond = { { {0}, {0}, {0, 0}, {0, 0}, 0, 0, {0, 0} } };
+
+
+
+
+    __cond(const __cond&);
+    __cond& operator=(const __cond&);
+
+  public:
+    __cond()
+    {
+
+
+
+
+    }
+# 277 "/usr/include/c++/14/ext/concurrence.h" 3
+    void broadcast()
+    {
+
+      if (__gthread_active_p())
+ {
+   if (__gthread_cond_broadcast(&_M_cond) != 0)
+     __throw_concurrence_broadcast_error();
+ }
+
+    }
+
+    void wait(__mutex *mutex)
+    {
+
+      {
+   if (__gthread_cond_wait(&_M_cond, mutex->gthread_mutex()) != 0)
+     __throw_concurrence_wait_error();
+      }
+
+    }
+
+    void wait_recursive(__recursive_mutex *mutex)
+    {
+
+      {
+   if (__gthread_cond_wait_recursive(&_M_cond,
+         mutex->gthread_recursive_mutex())
+       != 0)
+     __throw_concurrence_wait_error();
+      }
+
+    }
+  };
+
+
+
+}
+# 63 "/usr/include/c++/14/bits/shared_ptr_base.h" 2 3
+
+
+
+# 1 "/usr/include/c++/14/bits/align.h" 1 3
+# 36 "/usr/include/c++/14/bits/align.h" 3
+# 1 "/usr/include/c++/14/bits/version.h" 1 3
+# 47 "/usr/include/c++/14/bits/version.h" 3
+       
+# 48 "/usr/include/c++/14/bits/version.h" 3
+# 37 "/usr/include/c++/14/bits/align.h" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 60 "/usr/include/c++/14/bits/align.h" 3
+inline void*
+align(size_t __align, size_t __size, void*& __ptr, size_t& __space) noexcept
+{
+  if (__space < __size)
+    return nullptr;
+  const auto __intptr = reinterpret_cast<uintptr_t>(__ptr);
+  const auto __aligned = (__intptr - 1u + __align) & -__align;
+  const auto __diff = __aligned - __intptr;
+  if (__diff > (__space - __size))
+    return nullptr;
+  else
+    {
+      __space -= __diff;
+      return __ptr = reinterpret_cast<void*>(__aligned);
+    }
+}
+# 88 "/usr/include/c++/14/bits/align.h" 3
+  template<size_t _Align, class _Tp>
+    [[nodiscard,__gnu__::__always_inline__]]
+    constexpr _Tp*
+    assume_aligned(_Tp* __ptr) noexcept
+    {
+      static_assert(std::has_single_bit(_Align));
+      if (std::is_constant_evaluated())
+ return __ptr;
+      else
+ {
+
+
+   ;
+   return static_cast<_Tp*>(__builtin_assume_aligned(__ptr, _Align));
+ }
+    }
+
+
+
+}
+# 67 "/usr/include/c++/14/bits/shared_ptr_base.h" 2 3
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+ 
+# 75 "/usr/include/c++/14/bits/shared_ptr_base.h" 3
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+  template<typename> class auto_ptr;
+#pragma GCC diagnostic pop
+
+
+
+
+
+
+  class bad_weak_ptr : public std::exception
+  {
+  public:
+    virtual char const* what() const noexcept;
+
+    virtual ~bad_weak_ptr() noexcept;
+  };
+
+
+  inline void
+  __throw_bad_weak_ptr()
+  { (throw (bad_weak_ptr())); }
+
+  using __gnu_cxx::_Lock_policy;
+  using __gnu_cxx::__default_lock_policy;
+  using __gnu_cxx::_S_single;
+  using __gnu_cxx::_S_mutex;
+  using __gnu_cxx::_S_atomic;
+
+
+  template<_Lock_policy _Lp>
+    class _Mutex_base
+    {
+    protected:
+
+      enum { _S_need_barriers = 0 };
+    };
+
+  template<>
+    class _Mutex_base<_S_mutex>
+    : public __gnu_cxx::__mutex
+    {
+    protected:
+
+
+
+      enum { _S_need_barriers = 1 };
+    };
+
+  template<_Lock_policy _Lp = __default_lock_policy>
+    class _Sp_counted_base
+    : public _Mutex_base<_Lp>
+    {
+    public:
+      _Sp_counted_base() noexcept
+      : _M_use_count(1), _M_weak_count(1) { }
+
+      virtual
+      ~_Sp_counted_base() noexcept
+      { }
+
+
+
+      virtual void
+      _M_dispose() noexcept = 0;
+
+
+      virtual void
+      _M_destroy() noexcept
+      { delete this; }
+
+      virtual void*
+      _M_get_deleter(const std::type_info&) noexcept = 0;
+
+
+      void
+      _M_add_ref_copy()
+      { __gnu_cxx::__atomic_add_dispatch(&_M_use_count, 1); }
+
+
+      void
+      _M_add_ref_lock()
+      {
+ if (!_M_add_ref_lock_nothrow())
+   __throw_bad_weak_ptr();
+      }
+
+
+      bool
+      _M_add_ref_lock_nothrow() noexcept;
+
+
+      void
+      _M_release() noexcept;
+
+
+      void
+      _M_release_last_use() noexcept
+      {
+ ;
+ _M_dispose();
+
+
+
+
+ if (_Mutex_base<_Lp>::_S_need_barriers)
+   {
+     __atomic_thread_fence (4);
+   }
+
+
+ ;
+ if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count,
+         -1) == 1)
+   {
+     ;
+     _M_destroy();
+   }
+      }
+
+
+      __attribute__((__noinline__))
+      void
+      _M_release_last_use_cold() noexcept
+      { _M_release_last_use(); }
+
+
+      void
+      _M_weak_add_ref() noexcept
+      { __gnu_cxx::__atomic_add_dispatch(&_M_weak_count, 1); }
+
+
+      void
+      _M_weak_release() noexcept
+      {
+
+        ;
+ if (__gnu_cxx::__exchange_and_add_dispatch(&_M_weak_count, -1) == 1)
+   {
+            ;
+     if (_Mutex_base<_Lp>::_S_need_barriers)
+       {
+
+
+  __atomic_thread_fence (4);
+       }
+     _M_destroy();
+   }
+      }
+
+      long
+      _M_get_use_count() const noexcept
+      {
+
+
+        return __atomic_load_n(&_M_use_count, 0);
+      }
+
+    private:
+      _Sp_counted_base(_Sp_counted_base const&) = delete;
+      _Sp_counted_base& operator=(_Sp_counted_base const&) = delete;
+
+      _Atomic_word _M_use_count;
+      _Atomic_word _M_weak_count;
+    };
+
+  template<>
+    inline bool
+    _Sp_counted_base<_S_single>::
+    _M_add_ref_lock_nothrow() noexcept
+    {
+      if (_M_use_count == 0)
+ return false;
+      ++_M_use_count;
+      return true;
+    }
+
+  template<>
+    inline bool
+    _Sp_counted_base<_S_mutex>::
+    _M_add_ref_lock_nothrow() noexcept
+    {
+      __gnu_cxx::__scoped_lock sentry(*this);
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, 1) == 0)
+ {
+   _M_use_count = 0;
+   return false;
+ }
+      return true;
+    }
+
+  template<>
+    inline bool
+    _Sp_counted_base<_S_atomic>::
+    _M_add_ref_lock_nothrow() noexcept
+    {
+
+      _Atomic_word __count = _M_get_use_count();
+      do
+ {
+   if (__count == 0)
+     return false;
+
+
+ }
+      while (!__atomic_compare_exchange_n(&_M_use_count, &__count, __count + 1,
+       true, 4,
+       0));
+      return true;
+    }
+
+  template<>
+    inline void
+    _Sp_counted_base<_S_single>::_M_add_ref_copy()
+    { ++_M_use_count; }
+
+  template<>
+    inline void
+    _Sp_counted_base<_S_single>::_M_release() noexcept
+    {
+      if (--_M_use_count == 0)
+        {
+          _M_dispose();
+          if (--_M_weak_count == 0)
+            _M_destroy();
+        }
+    }
+
+  template<>
+    inline void
+    _Sp_counted_base<_S_mutex>::_M_release() noexcept
+    {
+
+      ;
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ {
+   _M_release_last_use();
+ }
+    }
+
+  template<>
+    inline void
+    _Sp_counted_base<_S_atomic>::_M_release() noexcept
+    {
+      ;
+
+      constexpr bool __lock_free
+ = __atomic_always_lock_free(sizeof(long long), 0)
+ && __atomic_always_lock_free(sizeof(_Atomic_word), 0);
+      constexpr bool __double_word
+ = sizeof(long long) == 2 * sizeof(_Atomic_word);
+
+
+      constexpr bool __aligned = __alignof(long long) <= alignof(void*);
+      if constexpr (__lock_free && __double_word && __aligned)
+ {
+   constexpr int __wordbits = 8 * sizeof(_Atomic_word);
+   constexpr int __shiftbits = __double_word ? __wordbits : 0;
+   constexpr long long __unique_ref = 1LL + (1LL << __shiftbits);
+   auto __both_counts = reinterpret_cast<long long*>(&_M_use_count);
+
+   ;
+   if (__atomic_load_n(__both_counts, 2) == __unique_ref)
+     {
+
+
+
+
+       _M_weak_count = _M_use_count = 0;
+       ;
+       ;
+       _M_dispose();
+       _M_destroy();
+       return;
+     }
+   if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+     [[__unlikely__]]
+     {
+       _M_release_last_use_cold();
+       return;
+     }
+ }
+      else
+
+      if (__gnu_cxx::__exchange_and_add_dispatch(&_M_use_count, -1) == 1)
+ {
+   _M_release_last_use();
+ }
+    }
+
+  template<>
+    inline void
+    _Sp_counted_base<_S_single>::_M_weak_add_ref() noexcept
+    { ++_M_weak_count; }
+
+  template<>
+    inline void
+    _Sp_counted_base<_S_single>::_M_weak_release() noexcept
+    {
+      if (--_M_weak_count == 0)
+        _M_destroy();
+    }
+
+  template<>
+    inline long
+    _Sp_counted_base<_S_single>::_M_get_use_count() const noexcept
+    { return _M_use_count; }
+
+
+
+  template<typename _Tp, _Lock_policy _Lp = __default_lock_policy>
+    class __shared_ptr;
+
+  template<typename _Tp, _Lock_policy _Lp = __default_lock_policy>
+    class __weak_ptr;
+
+  template<typename _Tp, _Lock_policy _Lp = __default_lock_policy>
+    class __enable_shared_from_this;
+
+  template<typename _Tp>
+    class shared_ptr;
+
+  template<typename _Tp>
+    class weak_ptr;
+
+  template<typename _Tp>
+    struct owner_less;
+
+  template<typename _Tp>
+    class enable_shared_from_this;
+
+  template<_Lock_policy _Lp = __default_lock_policy>
+    class __weak_count;
+
+  template<_Lock_policy _Lp = __default_lock_policy>
+    class __shared_count;
+
+
+  template<typename>
+    class _Sp_atomic;
+
+
+
+  template<typename _Ptr, _Lock_policy _Lp>
+    class _Sp_counted_ptr final : public _Sp_counted_base<_Lp>
+    {
+    public:
+      explicit
+      _Sp_counted_ptr(_Ptr __p) noexcept
+      : _M_ptr(__p) { }
+
+      virtual void
+      _M_dispose() noexcept
+      { delete _M_ptr; }
+
+      virtual void
+      _M_destroy() noexcept
+      { delete this; }
+
+      virtual void*
+      _M_get_deleter(const std::type_info&) noexcept
+      { return nullptr; }
+
+      _Sp_counted_ptr(const _Sp_counted_ptr&) = delete;
+      _Sp_counted_ptr& operator=(const _Sp_counted_ptr&) = delete;
+
+    private:
+      _Ptr _M_ptr;
+    };
+
+  template<>
+    inline void
+    _Sp_counted_ptr<nullptr_t, _S_single>::_M_dispose() noexcept { }
+
+  template<>
+    inline void
+    _Sp_counted_ptr<nullptr_t, _S_mutex>::_M_dispose() noexcept { }
+
+  template<>
+    inline void
+    _Sp_counted_ptr<nullptr_t, _S_atomic>::_M_dispose() noexcept { }
+
+
+
+
+
+
+  template<int _Nm, typename _Tp,
+    bool __use_ebo = !__is_final(_Tp) && __is_empty(_Tp)>
+    struct _Sp_ebo_helper;
+
+
+  template<int _Nm, typename _Tp>
+    struct _Sp_ebo_helper<_Nm, _Tp, true> : private _Tp
+    {
+      explicit _Sp_ebo_helper(const _Tp& __tp) : _Tp(__tp) { }
+      explicit _Sp_ebo_helper(_Tp&& __tp) : _Tp(std::move(__tp)) { }
+
+      static _Tp&
+      _S_get(_Sp_ebo_helper& __eboh) { return static_cast<_Tp&>(__eboh); }
+    };
+
+
+  template<int _Nm, typename _Tp>
+    struct _Sp_ebo_helper<_Nm, _Tp, false>
+    {
+      explicit _Sp_ebo_helper(const _Tp& __tp) : _M_tp(__tp) { }
+      explicit _Sp_ebo_helper(_Tp&& __tp) : _M_tp(std::move(__tp)) { }
+
+      static _Tp&
+      _S_get(_Sp_ebo_helper& __eboh)
+      { return __eboh._M_tp; }
+
+    private:
+      _Tp _M_tp;
+    };
+
+
+  template<typename _Ptr, typename _Deleter, typename _Alloc, _Lock_policy _Lp>
+    class _Sp_counted_deleter final : public _Sp_counted_base<_Lp>
+    {
+      class _Impl : _Sp_ebo_helper<0, _Deleter>, _Sp_ebo_helper<1, _Alloc>
+      {
+ typedef _Sp_ebo_helper<0, _Deleter> _Del_base;
+ typedef _Sp_ebo_helper<1, _Alloc> _Alloc_base;
+
+      public:
+ _Impl(_Ptr __p, _Deleter __d, const _Alloc& __a) noexcept
+ : _Del_base(std::move(__d)), _Alloc_base(__a), _M_ptr(__p)
+ { }
+
+ _Deleter& _M_del() noexcept { return _Del_base::_S_get(*this); }
+ _Alloc& _M_alloc() noexcept { return _Alloc_base::_S_get(*this); }
+
+ _Ptr _M_ptr;
+      };
+
+    public:
+      using __allocator_type = __alloc_rebind<_Alloc, _Sp_counted_deleter>;
+
+
+      _Sp_counted_deleter(_Ptr __p, _Deleter __d) noexcept
+      : _M_impl(__p, std::move(__d), _Alloc()) { }
+
+
+      _Sp_counted_deleter(_Ptr __p, _Deleter __d, const _Alloc& __a) noexcept
+      : _M_impl(__p, std::move(__d), __a) { }
+
+      ~_Sp_counted_deleter() noexcept { }
+
+      virtual void
+      _M_dispose() noexcept
+      { _M_impl._M_del()(_M_impl._M_ptr); }
+
+      virtual void
+      _M_destroy() noexcept
+      {
+ __allocator_type __a(_M_impl._M_alloc());
+ __allocated_ptr<__allocator_type> __guard_ptr{ __a, this };
+ this->~_Sp_counted_deleter();
+      }
+
+      virtual void*
+      _M_get_deleter(const type_info& __ti [[__gnu__::__unused__]]) noexcept
+      {
+
+
+
+        return __ti == typeid(_Deleter)
+   ? std::__addressof(_M_impl._M_del())
+   : nullptr;
+
+
+
+      }
+
+    private:
+
+      template<typename, typename, typename...> friend class out_ptr_t;
+
+      _Impl _M_impl;
+    };
+
+
+
+  struct _Sp_make_shared_tag
+  {
+  private:
+    template<typename _Tp, typename _Alloc, _Lock_policy _Lp>
+      friend class _Sp_counted_ptr_inplace;
+
+    static const type_info&
+    _S_ti() noexcept __attribute__ ((__visibility__ ("default")))
+    {
+      alignas(type_info) static constexpr char __tag[sizeof(type_info)] = { };
+      return reinterpret_cast<const type_info&>(__tag);
+    }
+
+    static bool _S_eq(const type_info&) noexcept;
+  };
+
+  template<typename _Alloc>
+    struct _Sp_alloc_shared_tag
+    {
+      const _Alloc& _M_a;
+    };
+
+  template<typename _Tp, typename _Alloc, _Lock_policy _Lp>
+    class _Sp_counted_ptr_inplace final : public _Sp_counted_base<_Lp>
+    {
+      class _Impl : _Sp_ebo_helper<0, _Alloc>
+      {
+ typedef _Sp_ebo_helper<0, _Alloc> _A_base;
+
+      public:
+ explicit _Impl(_Alloc __a) noexcept : _A_base(__a) { }
+
+ _Alloc& _M_alloc() noexcept { return _A_base::_S_get(*this); }
+
+ __gnu_cxx::__aligned_buffer<_Tp> _M_storage;
+      };
+
+    public:
+      using __allocator_type = __alloc_rebind<_Alloc, _Sp_counted_ptr_inplace>;
+
+
+      template<typename... _Args>
+ _Sp_counted_ptr_inplace(_Alloc __a, _Args&&... __args)
+ : _M_impl(__a)
+ {
+
+
+   allocator_traits<_Alloc>::construct(__a, _M_ptr(),
+       std::forward<_Args>(__args)...);
+ }
+
+      ~_Sp_counted_ptr_inplace() noexcept { }
+
+      virtual void
+      _M_dispose() noexcept
+      {
+ allocator_traits<_Alloc>::destroy(_M_impl._M_alloc(), _M_ptr());
+      }
+
+
+      virtual void
+      _M_destroy() noexcept
+      {
+ __allocator_type __a(_M_impl._M_alloc());
+ __allocated_ptr<__allocator_type> __guard_ptr{ __a, this };
+ this->~_Sp_counted_ptr_inplace();
+      }
+
+    private:
+      friend class __shared_count<_Lp>;
+
+
+
+      virtual void*
+      _M_get_deleter(const std::type_info& __ti) noexcept override
+      {
+ auto __ptr = const_cast<typename remove_cv<_Tp>::type*>(_M_ptr());
+
+
+
+
+ if (&__ti == &_Sp_make_shared_tag::_S_ti()
+     ||
+
+     __ti == typeid(_Sp_make_shared_tag)
+
+
+
+    )
+   return __ptr;
+ return nullptr;
+      }
+
+      _Tp* _M_ptr() noexcept { return _M_impl._M_storage._M_ptr(); }
+
+      _Impl _M_impl;
+    };
+
+
+  struct _Sp_overwrite_tag { };
+
+
+
+
+
+  template<typename _Tp, typename _Alloc, _Lock_policy _Lp>
+    requires is_same_v<typename _Alloc::value_type, _Sp_overwrite_tag>
+    class _Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp> final
+
+
+
+
+    : public _Sp_counted_base<_Lp>
+    {
+      [[no_unique_address]] _Alloc _M_alloc;
+
+      union {
+ _Tp _M_obj;
+ char _M_unused;
+      };
+
+      friend class __shared_count<_Lp>;
+
+      _Tp* _M_ptr() noexcept { return std::__addressof(_M_obj); }
+
+    public:
+      using __allocator_type = __alloc_rebind<_Alloc, _Sp_counted_ptr_inplace>;
+
+      _Sp_counted_ptr_inplace(const _Alloc& __a)
+      : _M_alloc(__a)
+      {
+ ::new((void*)_M_ptr()) _Tp;
+      }
+
+      ~_Sp_counted_ptr_inplace() noexcept { }
+
+      virtual void
+      _M_dispose() noexcept
+      {
+ _M_obj.~_Tp();
+      }
+
+
+      virtual void
+      _M_destroy() noexcept
+      {
+ using pointer = typename allocator_traits<__allocator_type>::pointer;
+ __allocator_type __a(_M_alloc);
+ auto __p = pointer_traits<pointer>::pointer_to(*this);
+ __allocated_ptr<__allocator_type> __guard_ptr{ __a, __p };
+ this->~_Sp_counted_ptr_inplace();
+      }
+
+      void*
+      _M_get_deleter(const std::type_info&) noexcept override
+      { return nullptr; }
+    };
+
+
+
+  struct _Sp_overwrite_tag;
+
+
+  template<typename _Alloc>
+    struct _Sp_counted_array_base
+    {
+      [[no_unique_address]] _Alloc _M_alloc{};
+      size_t _M_n = 0;
+      bool _M_overwrite = false;
+
+      typename allocator_traits<_Alloc>::pointer
+      _M_alloc_array(size_t __tail)
+      {
+ return allocator_traits<_Alloc>::allocate(_M_alloc, _M_n + __tail);
+      }
+
+      void
+      _M_dealloc_array(typename allocator_traits<_Alloc>::pointer __p,
+         size_t __tail)
+      {
+ allocator_traits<_Alloc>::deallocate(_M_alloc, __p, _M_n + __tail);
+      }
+
+
+      template<typename _Init>
+ void
+ _M_init(typename allocator_traits<_Alloc>::value_type* __p,
+  _Init __init)
+ {
+   using _Tp = remove_pointer_t<_Init>;
+   using _Up = typename allocator_traits<_Alloc>::value_type;
+
+   if constexpr (is_same_v<_Init, _Sp_overwrite_tag>)
+     {
+       std::uninitialized_default_construct_n(__p, _M_n);
+       _M_overwrite = true;
+     }
+   else if (__init == nullptr)
+     std::__uninitialized_default_n_a(__p, _M_n, _M_alloc);
+   else if constexpr (!is_array_v<_Tp>)
+     std::__uninitialized_fill_n_a(__p, _M_n, *__init, _M_alloc);
+   else
+     {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
+       struct _Iter
+       {
+  using value_type = _Up;
+  using difference_type = ptrdiff_t;
+  using pointer = const _Up*;
+  using reference = const _Up&;
+  using iterator_category = forward_iterator_tag;
+
+  const _Up* _M_p;
+  size_t _M_len;
+  size_t _M_pos;
+
+  _Iter& operator++() { ++_M_pos; return *this; }
+  _Iter operator++(int) { auto __i(*this); ++_M_pos; return __i; }
+
+  reference operator*() const { return _M_p[_M_pos % _M_len]; }
+  pointer operator->() const { return _M_p + (_M_pos % _M_len); }
+
+  bool operator==(const _Iter& __i) const
+  { return _M_pos == __i._M_pos; }
+       };
+#pragma GCC diagnostic pop
+
+       _Iter __first{_S_first_elem(__init), sizeof(_Tp) / sizeof(_Up)};
+       _Iter __last = __first;
+       __last._M_pos = _M_n;
+       std::__uninitialized_copy_a(__first, __last, __p, _M_alloc);
+     }
+ }
+
+    protected:
+
+      void
+      _M_dispose_array(typename allocator_traits<_Alloc>::value_type* __p)
+      {
+ if (_M_overwrite)
+   std::destroy_n(__p, _M_n);
+ else
+   {
+     size_t __n = _M_n;
+     while (__n--)
+       allocator_traits<_Alloc>::destroy(_M_alloc, __p + __n);
+   }
+      }
+
+    private:
+      template<typename _Tp>
+ static _Tp*
+ _S_first_elem(_Tp* __p) { return __p; }
+
+      template<typename _Tp, size_t _Nm>
+ static auto
+ _S_first_elem(_Tp (*__p)[_Nm]) { return _S_first_elem(*__p); }
+    };
+
+
+
+  template<typename _Alloc, _Lock_policy _Lp>
+    class _Sp_counted_array final
+    : public _Sp_counted_base<_Lp>, _Sp_counted_array_base<_Alloc>
+    {
+      using pointer = typename allocator_traits<_Alloc>::pointer;
+
+      pointer _M_alloc_ptr;
+
+      auto _M_ptr() const noexcept { return std::to_address(_M_alloc_ptr); }
+
+      friend class __shared_count<_Lp>;
+
+    public:
+      _Sp_counted_array(const _Sp_counted_array_base<_Alloc>& __a,
+   pointer __p) noexcept
+      : _Sp_counted_array_base<_Alloc>(__a), _M_alloc_ptr(__p)
+      { }
+
+      ~_Sp_counted_array() = default;
+
+      virtual void
+      _M_dispose() noexcept
+      {
+ if (this->_M_n)
+   this->_M_dispose_array(_M_ptr());
+      }
+
+
+      virtual void
+      _M_destroy() noexcept
+      {
+ _Sp_counted_array_base<_Alloc> __a = *this;
+ pointer __p = _M_alloc_ptr;
+ this->~_Sp_counted_array();
+ __a._M_dealloc_array(__p, _S_tail());
+      }
+
+
+
+      static constexpr size_t
+      _S_tail()
+      {
+
+ using _Tp = typename allocator_traits<_Alloc>::value_type;
+
+
+ size_t __bytes = sizeof(_Sp_counted_array);
+
+
+ if constexpr (alignof(_Tp) < alignof(_Sp_counted_array))
+   __bytes += alignof(_Sp_counted_array) - alignof(_Tp);
+
+ return (__bytes + sizeof(_Tp) - 1) / sizeof(_Tp);
+      }
+
+      void*
+      _M_get_deleter(const std::type_info&) noexcept override
+      { return nullptr; }
+    };
+
+
+
+  struct __sp_array_delete
+  {
+    template<typename _Yp>
+      void operator()(_Yp* __p) const { delete[] __p; }
+  };
+
+  template<_Lock_policy _Lp>
+    class __shared_count
+    {
+
+      template<typename _Tp>
+ struct __not_alloc_shared_tag { using type = void; };
+
+      template<typename _Tp>
+ struct __not_alloc_shared_tag<_Sp_alloc_shared_tag<_Tp>> { };
+
+
+      template<typename _Alloc>
+ struct __not_alloc_shared_tag<_Sp_counted_array_base<_Alloc>> { };
+
+
+    public:
+      constexpr __shared_count() noexcept : _M_pi(0)
+      { }
+
+      template<typename _Ptr>
+        explicit
+ __shared_count(_Ptr __p) : _M_pi(0)
+ {
+   try
+     {
+       _M_pi = new _Sp_counted_ptr<_Ptr, _Lp>(__p);
+     }
+   catch(...)
+     {
+       delete __p;
+       throw;
+     }
+ }
+
+      template<typename _Ptr>
+ __shared_count(_Ptr __p, false_type)
+ : __shared_count(__p)
+ { }
+
+      template<typename _Ptr>
+ __shared_count(_Ptr __p, true_type)
+ : __shared_count(__p, __sp_array_delete{}, allocator<void>())
+ { }
+
+      template<typename _Ptr, typename _Deleter,
+        typename = typename __not_alloc_shared_tag<_Deleter>::type>
+ __shared_count(_Ptr __p, _Deleter __d)
+ : __shared_count(__p, std::move(__d), allocator<void>())
+ { }
+
+      template<typename _Ptr, typename _Deleter, typename _Alloc,
+        typename = typename __not_alloc_shared_tag<_Deleter>::type>
+ __shared_count(_Ptr __p, _Deleter __d, _Alloc __a) : _M_pi(0)
+ {
+   typedef _Sp_counted_deleter<_Ptr, _Deleter, _Alloc, _Lp> _Sp_cd_type;
+   try
+     {
+       typename _Sp_cd_type::__allocator_type __a2(__a);
+       auto __guard = std::__allocate_guarded(__a2);
+       _Sp_cd_type* __mem = __guard.get();
+       ::new (__mem) _Sp_cd_type(__p, std::move(__d), std::move(__a));
+       _M_pi = __mem;
+       __guard = nullptr;
+     }
+   catch(...)
+     {
+       __d(__p);
+       throw;
+     }
+ }
+
+      template<typename _Tp, typename _Alloc, typename... _Args>
+ __shared_count(_Tp*& __p, _Sp_alloc_shared_tag<_Alloc> __a,
+         _Args&&... __args)
+ {
+   typedef _Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp> _Sp_cp_type;
+   typename _Sp_cp_type::__allocator_type __a2(__a._M_a);
+   auto __guard = std::__allocate_guarded(__a2);
+   _Sp_cp_type* __mem = __guard.get();
+   auto __pi = ::new (__mem)
+     _Sp_cp_type(__a._M_a, std::forward<_Args>(__args)...);
+   __guard = nullptr;
+   _M_pi = __pi;
+   __p = __pi->_M_ptr();
+ }
+
+
+      template<typename _Tp, typename _Alloc, typename _Init>
+ __shared_count(_Tp*& __p, const _Sp_counted_array_base<_Alloc>& __a,
+         _Init __init)
+ {
+   using _Up = remove_all_extents_t<_Tp>;
+   static_assert(is_same_v<_Up, typename _Alloc::value_type>);
+
+   using _Sp_ca_type = _Sp_counted_array<_Alloc, _Lp>;
+   const size_t __tail = _Sp_ca_type::_S_tail();
+
+   struct _Guarded_ptr : _Sp_counted_array_base<_Alloc>
+   {
+     typename allocator_traits<_Alloc>::pointer _M_ptr;
+
+     _Guarded_ptr(_Sp_counted_array_base<_Alloc> __a)
+     : _Sp_counted_array_base<_Alloc>(__a),
+       _M_ptr(this->_M_alloc_array(_Sp_ca_type::_S_tail()))
+     { }
+
+     ~_Guarded_ptr()
+     {
+       if (_M_ptr)
+  this->_M_dealloc_array(_M_ptr, _Sp_ca_type::_S_tail());
+     }
+   };
+
+   _Guarded_ptr __guard{__a};
+   _Up* const __raw = std::to_address(__guard._M_ptr);
+   __guard._M_init(__raw, __init);
+
+   void* __c = __raw + __a._M_n;
+   if constexpr (alignof(_Up) < alignof(_Sp_ca_type))
+     {
+       size_t __space = sizeof(_Up) * __tail;
+       __c = std::align(alignof(_Sp_ca_type), sizeof(_Sp_ca_type),
+          __c, __space);
+     }
+   auto __pi = ::new(__c) _Sp_ca_type(__guard, __guard._M_ptr);
+   __guard._M_ptr = nullptr;
+   _M_pi = __pi;
+   __p = reinterpret_cast<_Tp*>(__raw);
+ }
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
+      template<typename _Tp>
+        explicit
+ __shared_count(std::auto_ptr<_Tp>&& __r);
+#pragma GCC diagnostic pop
+
+
+
+      template<typename _Tp, typename _Del>
+        explicit
+ __shared_count(std::unique_ptr<_Tp, _Del>&& __r) : _M_pi(0)
+ {
+
+
+   if (__r.get() == nullptr)
+     return;
+
+   using _Ptr = typename unique_ptr<_Tp, _Del>::pointer;
+   using _Del2 = __conditional_t<is_reference<_Del>::value,
+       reference_wrapper<typename remove_reference<_Del>::type>,
+       _Del>;
+   using _Sp_cd_type
+     = _Sp_counted_deleter<_Ptr, _Del2, allocator<void>, _Lp>;
+   using _Alloc = allocator<_Sp_cd_type>;
+   using _Alloc_traits = allocator_traits<_Alloc>;
+   _Alloc __a;
+   _Sp_cd_type* __mem = _Alloc_traits::allocate(__a, 1);
+
+
+
+   _Alloc_traits::construct(__a, __mem, __r.release(),
+       std::forward<_Del>(__r.get_deleter()));
+   _M_pi = __mem;
+ }
+
+
+      explicit __shared_count(const __weak_count<_Lp>& __r);
+
+
+      explicit
+      __shared_count(const __weak_count<_Lp>& __r, std::nothrow_t) noexcept;
+
+      ~__shared_count() noexcept
+      {
+ if (_M_pi != nullptr)
+   _M_pi->_M_release();
+      }
+
+      __shared_count(const __shared_count& __r) noexcept
+      : _M_pi(__r._M_pi)
+      {
+ if (_M_pi != nullptr)
+   _M_pi->_M_add_ref_copy();
+      }
+
+      __shared_count&
+      operator=(const __shared_count& __r) noexcept
+      {
+ _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+ if (__tmp != _M_pi)
+   {
+     if (__tmp != nullptr)
+       __tmp->_M_add_ref_copy();
+     if (_M_pi != nullptr)
+       _M_pi->_M_release();
+     _M_pi = __tmp;
+   }
+ return *this;
+      }
+
+      void
+      _M_swap(__shared_count& __r) noexcept
+      {
+ _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+ __r._M_pi = _M_pi;
+ _M_pi = __tmp;
+      }
+
+      long
+      _M_get_use_count() const noexcept
+      { return _M_pi ? _M_pi->_M_get_use_count() : 0; }
+
+      bool
+      _M_unique() const noexcept
+      { return this->_M_get_use_count() == 1; }
+
+      void*
+      _M_get_deleter(const std::type_info& __ti) const noexcept
+      { return _M_pi ? _M_pi->_M_get_deleter(__ti) : nullptr; }
+
+      bool
+      _M_less(const __shared_count& __rhs) const noexcept
+      { return std::less<_Sp_counted_base<_Lp>*>()(this->_M_pi, __rhs._M_pi); }
+
+      bool
+      _M_less(const __weak_count<_Lp>& __rhs) const noexcept
+      { return std::less<_Sp_counted_base<_Lp>*>()(this->_M_pi, __rhs._M_pi); }
+
+
+      friend inline bool
+      operator==(const __shared_count& __a, const __shared_count& __b) noexcept
+      { return __a._M_pi == __b._M_pi; }
+
+    private:
+      friend class __weak_count<_Lp>;
+
+      template<typename> friend class _Sp_atomic;
+
+
+      template<typename, typename, typename...> friend class out_ptr_t;
+
+
+      _Sp_counted_base<_Lp>* _M_pi;
+    };
+
+
+  template<_Lock_policy _Lp>
+    class __weak_count
+    {
+    public:
+      constexpr __weak_count() noexcept : _M_pi(nullptr)
+      { }
+
+      __weak_count(const __shared_count<_Lp>& __r) noexcept
+      : _M_pi(__r._M_pi)
+      {
+ if (_M_pi != nullptr)
+   _M_pi->_M_weak_add_ref();
+      }
+
+      __weak_count(const __weak_count& __r) noexcept
+      : _M_pi(__r._M_pi)
+      {
+ if (_M_pi != nullptr)
+   _M_pi->_M_weak_add_ref();
+      }
+
+      __weak_count(__weak_count&& __r) noexcept
+      : _M_pi(__r._M_pi)
+      { __r._M_pi = nullptr; }
+
+      ~__weak_count() noexcept
+      {
+ if (_M_pi != nullptr)
+   _M_pi->_M_weak_release();
+      }
+
+      __weak_count&
+      operator=(const __shared_count<_Lp>& __r) noexcept
+      {
+ _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+ if (__tmp != nullptr)
+   __tmp->_M_weak_add_ref();
+ if (_M_pi != nullptr)
+   _M_pi->_M_weak_release();
+ _M_pi = __tmp;
+ return *this;
+      }
+
+      __weak_count&
+      operator=(const __weak_count& __r) noexcept
+      {
+ _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+ if (__tmp != nullptr)
+   __tmp->_M_weak_add_ref();
+ if (_M_pi != nullptr)
+   _M_pi->_M_weak_release();
+ _M_pi = __tmp;
+ return *this;
+      }
+
+      __weak_count&
+      operator=(__weak_count&& __r) noexcept
+      {
+ if (_M_pi != nullptr)
+   _M_pi->_M_weak_release();
+ _M_pi = __r._M_pi;
+        __r._M_pi = nullptr;
+ return *this;
+      }
+
+      void
+      _M_swap(__weak_count& __r) noexcept
+      {
+ _Sp_counted_base<_Lp>* __tmp = __r._M_pi;
+ __r._M_pi = _M_pi;
+ _M_pi = __tmp;
+      }
+
+      long
+      _M_get_use_count() const noexcept
+      { return _M_pi != nullptr ? _M_pi->_M_get_use_count() : 0; }
+
+      bool
+      _M_less(const __weak_count& __rhs) const noexcept
+      { return std::less<_Sp_counted_base<_Lp>*>()(this->_M_pi, __rhs._M_pi); }
+
+      bool
+      _M_less(const __shared_count<_Lp>& __rhs) const noexcept
+      { return std::less<_Sp_counted_base<_Lp>*>()(this->_M_pi, __rhs._M_pi); }
+
+
+      friend inline bool
+      operator==(const __weak_count& __a, const __weak_count& __b) noexcept
+      { return __a._M_pi == __b._M_pi; }
+
+    private:
+      friend class __shared_count<_Lp>;
+
+      template<typename> friend class _Sp_atomic;
+
+
+      _Sp_counted_base<_Lp>* _M_pi;
+    };
+
+
+  template<_Lock_policy _Lp>
+    inline
+    __shared_count<_Lp>::__shared_count(const __weak_count<_Lp>& __r)
+    : _M_pi(__r._M_pi)
+    {
+      if (_M_pi == nullptr || !_M_pi->_M_add_ref_lock_nothrow())
+ __throw_bad_weak_ptr();
+    }
+
+
+  template<_Lock_policy _Lp>
+    inline
+    __shared_count<_Lp>::
+    __shared_count(const __weak_count<_Lp>& __r, std::nothrow_t) noexcept
+    : _M_pi(__r._M_pi)
+    {
+      if (_M_pi && !_M_pi->_M_add_ref_lock_nothrow())
+ _M_pi = nullptr;
+    }
+
+
+
+
+
+  template<typename _Yp_ptr, typename _Tp_ptr>
+    struct __sp_compatible_with
+    : false_type
+    { };
+
+  template<typename _Yp, typename _Tp>
+    struct __sp_compatible_with<_Yp*, _Tp*>
+    : is_convertible<_Yp*, _Tp*>::type
+    { };
+
+  template<typename _Up, size_t _Nm>
+    struct __sp_compatible_with<_Up(*)[_Nm], _Up(*)[]>
+    : true_type
+    { };
+
+  template<typename _Up, size_t _Nm>
+    struct __sp_compatible_with<_Up(*)[_Nm], const _Up(*)[]>
+    : true_type
+    { };
+
+  template<typename _Up, size_t _Nm>
+    struct __sp_compatible_with<_Up(*)[_Nm], volatile _Up(*)[]>
+    : true_type
+    { };
+
+  template<typename _Up, size_t _Nm>
+    struct __sp_compatible_with<_Up(*)[_Nm], const volatile _Up(*)[]>
+    : true_type
+    { };
+
+
+  template<typename _Up, size_t _Nm, typename _Yp, typename = void>
+    struct __sp_is_constructible_arrN
+    : false_type
+    { };
+
+  template<typename _Up, size_t _Nm, typename _Yp>
+    struct __sp_is_constructible_arrN<_Up, _Nm, _Yp, __void_t<_Yp[_Nm]>>
+    : is_convertible<_Yp(*)[_Nm], _Up(*)[_Nm]>::type
+    { };
+
+
+  template<typename _Up, typename _Yp, typename = void>
+    struct __sp_is_constructible_arr
+    : false_type
+    { };
+
+  template<typename _Up, typename _Yp>
+    struct __sp_is_constructible_arr<_Up, _Yp, __void_t<_Yp[]>>
+    : is_convertible<_Yp(*)[], _Up(*)[]>::type
+    { };
+
+
+  template<typename _Tp, typename _Yp>
+    struct __sp_is_constructible;
+
+
+  template<typename _Up, size_t _Nm, typename _Yp>
+    struct __sp_is_constructible<_Up[_Nm], _Yp>
+    : __sp_is_constructible_arrN<_Up, _Nm, _Yp>::type
+    { };
+
+
+  template<typename _Up, typename _Yp>
+    struct __sp_is_constructible<_Up[], _Yp>
+    : __sp_is_constructible_arr<_Up, _Yp>::type
+    { };
+
+
+  template<typename _Tp, typename _Yp>
+    struct __sp_is_constructible
+    : is_convertible<_Yp*, _Tp*>::type
+    { };
+
+
+
+  template<typename _Tp, _Lock_policy _Lp,
+    bool = is_array<_Tp>::value, bool = is_void<_Tp>::value>
+    class __shared_ptr_access
+    {
+    public:
+      using element_type = _Tp;
+
+      element_type&
+      operator*() const noexcept
+      {
+ do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(_M_get() != nullptr), false)) std::__glibcxx_assert_fail(); } while (false);
+ return *_M_get();
+      }
+
+      element_type*
+      operator->() const noexcept
+      {
+ ;
+ return _M_get();
+      }
+
+    private:
+      element_type*
+      _M_get() const noexcept
+      { return static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get(); }
+    };
+
+
+  template<typename _Tp, _Lock_policy _Lp>
+    class __shared_ptr_access<_Tp, _Lp, false, true>
+    {
+    public:
+      using element_type = _Tp;
+
+      element_type*
+      operator->() const noexcept
+      {
+ auto __ptr = static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get();
+ ;
+ return __ptr;
+      }
+    };
+
+
+  template<typename _Tp, _Lock_policy _Lp>
+    class __shared_ptr_access<_Tp, _Lp, true, false>
+    {
+    public:
+      using element_type = typename remove_extent<_Tp>::type;
+# 1408 "/usr/include/c++/14/bits/shared_ptr_base.h" 3
+      element_type&
+      operator[](ptrdiff_t __i) const noexcept
+      {
+ do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(_M_get() != nullptr), false)) std::__glibcxx_assert_fail(); } while (false);
+ do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(!extent<_Tp>::value || __i < extent<_Tp>::value), false)) std::__glibcxx_assert_fail(); } while (false);
+ return _M_get()[__i];
+      }
+
+    private:
+      element_type*
+      _M_get() const noexcept
+      { return static_cast<const __shared_ptr<_Tp, _Lp>*>(this)->get(); }
+    };
+
+  template<typename _Tp, _Lock_policy _Lp>
+    class __shared_ptr
+    : public __shared_ptr_access<_Tp, _Lp>
+    {
+    public:
+      using element_type = typename remove_extent<_Tp>::type;
+
+    private:
+
+      template<typename _Yp>
+ using _SafeConv
+   = typename enable_if<__sp_is_constructible<_Tp, _Yp>::value>::type;
+
+
+      template<typename _Yp, typename _Res = void>
+ using _Compatible = typename
+   enable_if<__sp_compatible_with<_Yp*, _Tp*>::value, _Res>::type;
+
+
+      template<typename _Yp>
+ using _Assignable = _Compatible<_Yp, __shared_ptr&>;
+
+
+      template<typename _Yp, typename _Del, typename _Res = void,
+        typename _Ptr = typename unique_ptr<_Yp, _Del>::pointer>
+ using _UniqCompatible = __enable_if_t<__and_<
+   __sp_compatible_with<_Yp*, _Tp*>,
+   is_convertible<_Ptr, element_type*>,
+   is_move_constructible<_Del>
+   >::value, _Res>;
+
+
+      template<typename _Yp, typename _Del>
+ using _UniqAssignable = _UniqCompatible<_Yp, _Del, __shared_ptr&>;
+
+    public:
+
+
+      using weak_type = __weak_ptr<_Tp, _Lp>;
+
+
+      constexpr __shared_ptr() noexcept
+      : _M_ptr(0), _M_refcount()
+      { }
+
+      template<typename _Yp, typename = _SafeConv<_Yp>>
+ explicit
+ __shared_ptr(_Yp* __p)
+ : _M_ptr(__p), _M_refcount(__p, typename is_array<_Tp>::type())
+ {
+   static_assert( !is_void<_Yp>::value, "incomplete type" );
+   static_assert( sizeof(_Yp) > 0, "incomplete type" );
+   _M_enable_shared_from_this_with(__p);
+ }
+
+      template<typename _Yp, typename _Deleter, typename = _SafeConv<_Yp>>
+ __shared_ptr(_Yp* __p, _Deleter __d)
+ : _M_ptr(__p), _M_refcount(__p, std::move(__d))
+ {
+   static_assert(__is_invocable<_Deleter&, _Yp*&>::value,
+       "deleter expression d(p) is well-formed");
+   _M_enable_shared_from_this_with(__p);
+ }
+
+      template<typename _Yp, typename _Deleter, typename _Alloc,
+        typename = _SafeConv<_Yp>>
+ __shared_ptr(_Yp* __p, _Deleter __d, _Alloc __a)
+ : _M_ptr(__p), _M_refcount(__p, std::move(__d), std::move(__a))
+ {
+   static_assert(__is_invocable<_Deleter&, _Yp*&>::value,
+       "deleter expression d(p) is well-formed");
+   _M_enable_shared_from_this_with(__p);
+ }
+
+      template<typename _Deleter>
+ __shared_ptr(nullptr_t __p, _Deleter __d)
+ : _M_ptr(0), _M_refcount(__p, std::move(__d))
+ { }
+
+      template<typename _Deleter, typename _Alloc>
+        __shared_ptr(nullptr_t __p, _Deleter __d, _Alloc __a)
+ : _M_ptr(0), _M_refcount(__p, std::move(__d), std::move(__a))
+ { }
+
+
+      template<typename _Yp>
+ __shared_ptr(const __shared_ptr<_Yp, _Lp>& __r,
+       element_type* __p) noexcept
+ : _M_ptr(__p), _M_refcount(__r._M_refcount)
+ { }
+
+
+      template<typename _Yp>
+ __shared_ptr(__shared_ptr<_Yp, _Lp>&& __r,
+       element_type* __p) noexcept
+ : _M_ptr(__p), _M_refcount()
+ {
+   _M_refcount._M_swap(__r._M_refcount);
+   __r._M_ptr = nullptr;
+ }
+
+      __shared_ptr(const __shared_ptr&) noexcept = default;
+      __shared_ptr& operator=(const __shared_ptr&) noexcept = default;
+      ~__shared_ptr() = default;
+
+      template<typename _Yp, typename = _Compatible<_Yp>>
+ __shared_ptr(const __shared_ptr<_Yp, _Lp>& __r) noexcept
+ : _M_ptr(__r._M_ptr), _M_refcount(__r._M_refcount)
+ { }
+
+      __shared_ptr(__shared_ptr&& __r) noexcept
+      : _M_ptr(__r._M_ptr), _M_refcount()
+      {
+ _M_refcount._M_swap(__r._M_refcount);
+ __r._M_ptr = nullptr;
+      }
+
+      template<typename _Yp, typename = _Compatible<_Yp>>
+ __shared_ptr(__shared_ptr<_Yp, _Lp>&& __r) noexcept
+ : _M_ptr(__r._M_ptr), _M_refcount()
+ {
+   _M_refcount._M_swap(__r._M_refcount);
+   __r._M_ptr = nullptr;
+ }
+
+      template<typename _Yp, typename = _Compatible<_Yp>>
+ explicit __shared_ptr(const __weak_ptr<_Yp, _Lp>& __r)
+ : _M_refcount(__r._M_refcount)
+ {
+
+
+   _M_ptr = __r._M_ptr;
+ }
+
+
+      template<typename _Yp, typename _Del,
+        typename = _UniqCompatible<_Yp, _Del>>
+ __shared_ptr(unique_ptr<_Yp, _Del>&& __r)
+ : _M_ptr(__r.get()), _M_refcount()
+ {
+   auto __raw = __to_address(__r.get());
+   _M_refcount = __shared_count<_Lp>(std::move(__r));
+   _M_enable_shared_from_this_with(__raw);
+ }
+# 1586 "/usr/include/c++/14/bits/shared_ptr_base.h" 3
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
+      template<typename _Yp, typename = _Compatible<_Yp>>
+ __shared_ptr(auto_ptr<_Yp>&& __r);
+#pragma GCC diagnostic pop
+
+
+      constexpr __shared_ptr(nullptr_t) noexcept : __shared_ptr() { }
+
+      template<typename _Yp>
+ _Assignable<_Yp>
+ operator=(const __shared_ptr<_Yp, _Lp>& __r) noexcept
+ {
+   _M_ptr = __r._M_ptr;
+   _M_refcount = __r._M_refcount;
+   return *this;
+ }
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+      template<typename _Yp>
+ _Assignable<_Yp>
+ operator=(auto_ptr<_Yp>&& __r)
+ {
+   __shared_ptr(std::move(__r)).swap(*this);
+   return *this;
+ }
+#pragma GCC diagnostic pop
+
+
+      __shared_ptr&
+      operator=(__shared_ptr&& __r) noexcept
+      {
+ __shared_ptr(std::move(__r)).swap(*this);
+ return *this;
+      }
+
+      template<class _Yp>
+ _Assignable<_Yp>
+ operator=(__shared_ptr<_Yp, _Lp>&& __r) noexcept
+ {
+   __shared_ptr(std::move(__r)).swap(*this);
+   return *this;
+ }
+
+      template<typename _Yp, typename _Del>
+ _UniqAssignable<_Yp, _Del>
+ operator=(unique_ptr<_Yp, _Del>&& __r)
+ {
+   __shared_ptr(std::move(__r)).swap(*this);
+   return *this;
+ }
+
+      void
+      reset() noexcept
+      { __shared_ptr().swap(*this); }
+
+      template<typename _Yp>
+ _SafeConv<_Yp>
+ reset(_Yp* __p)
+ {
+
+   do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(__p == nullptr || __p != _M_ptr), false)) std::__glibcxx_assert_fail(); } while (false);
+   __shared_ptr(__p).swap(*this);
+ }
+
+      template<typename _Yp, typename _Deleter>
+ _SafeConv<_Yp>
+ reset(_Yp* __p, _Deleter __d)
+ { __shared_ptr(__p, std::move(__d)).swap(*this); }
+
+      template<typename _Yp, typename _Deleter, typename _Alloc>
+ _SafeConv<_Yp>
+ reset(_Yp* __p, _Deleter __d, _Alloc __a)
+        { __shared_ptr(__p, std::move(__d), std::move(__a)).swap(*this); }
+
+
+      element_type*
+      get() const noexcept
+      { return _M_ptr; }
+
+
+      explicit operator bool() const noexcept
+      { return _M_ptr != nullptr; }
+
+
+      bool
+      unique() const noexcept
+      { return _M_refcount._M_unique(); }
+
+
+      long
+      use_count() const noexcept
+      { return _M_refcount._M_get_use_count(); }
+
+
+      void
+      swap(__shared_ptr<_Tp, _Lp>& __other) noexcept
+      {
+ std::swap(_M_ptr, __other._M_ptr);
+ _M_refcount._M_swap(__other._M_refcount);
+      }
+# 1698 "/usr/include/c++/14/bits/shared_ptr_base.h" 3
+      template<typename _Tp1>
+ bool
+ owner_before(__shared_ptr<_Tp1, _Lp> const& __rhs) const noexcept
+ { return _M_refcount._M_less(__rhs._M_refcount); }
+
+      template<typename _Tp1>
+ bool
+ owner_before(__weak_ptr<_Tp1, _Lp> const& __rhs) const noexcept
+ { return _M_refcount._M_less(__rhs._M_refcount); }
+
+
+    protected:
+
+      template<typename _Alloc, typename... _Args>
+ __shared_ptr(_Sp_alloc_shared_tag<_Alloc> __tag, _Args&&... __args)
+ : _M_ptr(), _M_refcount(_M_ptr, __tag, std::forward<_Args>(__args)...)
+ { _M_enable_shared_from_this_with(_M_ptr); }
+
+      template<typename _Tp1, _Lock_policy _Lp1, typename _Alloc,
+        typename... _Args>
+ friend __shared_ptr<_Tp1, _Lp1>
+ __allocate_shared(const _Alloc& __a, _Args&&... __args);
+
+
+
+      template<typename _Alloc, typename _Init = const remove_extent_t<_Tp>*>
+ __shared_ptr(const _Sp_counted_array_base<_Alloc>& __a,
+       _Init __init = nullptr)
+ : _M_ptr(), _M_refcount(_M_ptr, __a, __init)
+ { }
+
+
+
+
+      __shared_ptr(const __weak_ptr<_Tp, _Lp>& __r, std::nothrow_t) noexcept
+      : _M_refcount(__r._M_refcount, std::nothrow)
+      {
+ _M_ptr = _M_refcount._M_get_use_count() ? __r._M_ptr : nullptr;
+      }
+
+      friend class __weak_ptr<_Tp, _Lp>;
+
+    private:
+
+      template<typename _Yp>
+ using __esft_base_t = decltype(__enable_shared_from_this_base(
+       std::declval<const __shared_count<_Lp>&>(),
+       std::declval<_Yp*>()));
+
+
+      template<typename _Yp, typename = void>
+ struct __has_esft_base
+ : false_type { };
+
+      template<typename _Yp>
+ struct __has_esft_base<_Yp, __void_t<__esft_base_t<_Yp>>>
+ : __not_<is_array<_Tp>> { };
+
+      template<typename _Yp, typename _Yp2 = typename remove_cv<_Yp>::type>
+ typename enable_if<__has_esft_base<_Yp2>::value>::type
+ _M_enable_shared_from_this_with(_Yp* __p) noexcept
+ {
+   if (auto __base = __enable_shared_from_this_base(_M_refcount, __p))
+     __base->_M_weak_assign(const_cast<_Yp2*>(__p), _M_refcount);
+ }
+
+      template<typename _Yp, typename _Yp2 = typename remove_cv<_Yp>::type>
+ typename enable_if<!__has_esft_base<_Yp2>::value>::type
+ _M_enable_shared_from_this_with(_Yp*) noexcept
+ { }
+
+      void*
+      _M_get_deleter(const std::type_info& __ti) const noexcept
+      { return _M_refcount._M_get_deleter(__ti); }
+
+      template<typename _Tp1, _Lock_policy _Lp1> friend class __shared_ptr;
+      template<typename _Tp1, _Lock_policy _Lp1> friend class __weak_ptr;
+
+      template<typename _Del, typename _Tp1, _Lock_policy _Lp1>
+ friend _Del* get_deleter(const __shared_ptr<_Tp1, _Lp1>&) noexcept;
+
+      template<typename _Del, typename _Tp1>
+ friend _Del* get_deleter(const shared_ptr<_Tp1>&) noexcept;
+
+
+      friend _Sp_atomic<shared_ptr<_Tp>>;
+
+
+      template<typename, typename, typename...> friend class out_ptr_t;
+
+
+      element_type* _M_ptr;
+      __shared_count<_Lp> _M_refcount;
+    };
+
+
+
+  template<typename _Tp1, typename _Tp2, _Lock_policy _Lp>
+    inline bool
+    operator==(const __shared_ptr<_Tp1, _Lp>& __a,
+        const __shared_ptr<_Tp2, _Lp>& __b) noexcept
+    { return __a.get() == __b.get(); }
+
+  template<typename _Tp, _Lock_policy _Lp>
+    inline bool
+    operator==(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+    { return !__a; }
+
+
+  template<typename _Tp, typename _Up, _Lock_policy _Lp>
+    inline strong_ordering
+    operator<=>(const __shared_ptr<_Tp, _Lp>& __a,
+  const __shared_ptr<_Up, _Lp>& __b) noexcept
+    { return compare_three_way()(__a.get(), __b.get()); }
+
+  template<typename _Tp, _Lock_policy _Lp>
+    inline strong_ordering
+    operator<=>(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+    {
+      using pointer = typename __shared_ptr<_Tp, _Lp>::element_type*;
+      return compare_three_way()(__a.get(), static_cast<pointer>(nullptr));
+    }
+# 1919 "/usr/include/c++/14/bits/shared_ptr_base.h" 3
+  template<typename _Tp, _Lock_policy _Lp>
+    inline void
+    swap(__shared_ptr<_Tp, _Lp>& __a, __shared_ptr<_Tp, _Lp>& __b) noexcept
+    { __a.swap(__b); }
+# 1931 "/usr/include/c++/14/bits/shared_ptr_base.h" 3
+  template<typename _Tp, typename _Tp1, _Lock_policy _Lp>
+    inline __shared_ptr<_Tp, _Lp>
+    static_pointer_cast(const __shared_ptr<_Tp1, _Lp>& __r) noexcept
+    {
+      using _Sp = __shared_ptr<_Tp, _Lp>;
+      return _Sp(__r, static_cast<typename _Sp::element_type*>(__r.get()));
+    }
+
+
+
+
+
+
+  template<typename _Tp, typename _Tp1, _Lock_policy _Lp>
+    inline __shared_ptr<_Tp, _Lp>
+    const_pointer_cast(const __shared_ptr<_Tp1, _Lp>& __r) noexcept
+    {
+      using _Sp = __shared_ptr<_Tp, _Lp>;
+      return _Sp(__r, const_cast<typename _Sp::element_type*>(__r.get()));
+    }
+
+
+
+
+
+
+  template<typename _Tp, typename _Tp1, _Lock_policy _Lp>
+    inline __shared_ptr<_Tp, _Lp>
+    dynamic_pointer_cast(const __shared_ptr<_Tp1, _Lp>& __r) noexcept
+    {
+      using _Sp = __shared_ptr<_Tp, _Lp>;
+      if (auto* __p = dynamic_cast<typename _Sp::element_type*>(__r.get()))
+ return _Sp(__r, __p);
+      return _Sp();
+    }
+
+
+  template<typename _Tp, typename _Tp1, _Lock_policy _Lp>
+    inline __shared_ptr<_Tp, _Lp>
+    reinterpret_pointer_cast(const __shared_ptr<_Tp1, _Lp>& __r) noexcept
+    {
+      using _Sp = __shared_ptr<_Tp, _Lp>;
+      return _Sp(__r, reinterpret_cast<typename _Sp::element_type*>(__r.get()));
+    }
+
+
+  template<typename _Tp, _Lock_policy _Lp>
+    class __weak_ptr
+    {
+      template<typename _Yp, typename _Res = void>
+ using _Compatible = typename
+   enable_if<__sp_compatible_with<_Yp*, _Tp*>::value, _Res>::type;
+
+
+      template<typename _Yp>
+ using _Assignable = _Compatible<_Yp, __weak_ptr&>;
+
+    public:
+      using element_type = typename remove_extent<_Tp>::type;
+
+      constexpr __weak_ptr() noexcept
+      : _M_ptr(nullptr), _M_refcount()
+      { }
+
+      __weak_ptr(const __weak_ptr&) noexcept = default;
+
+      ~__weak_ptr() = default;
+# 2013 "/usr/include/c++/14/bits/shared_ptr_base.h" 3
+      template<typename _Yp, typename = _Compatible<_Yp>>
+ __weak_ptr(const __weak_ptr<_Yp, _Lp>& __r) noexcept
+ : _M_refcount(__r._M_refcount)
+        { _M_ptr = __r.lock().get(); }
+
+      template<typename _Yp, typename = _Compatible<_Yp>>
+ __weak_ptr(const __shared_ptr<_Yp, _Lp>& __r) noexcept
+ : _M_ptr(__r._M_ptr), _M_refcount(__r._M_refcount)
+ { }
+
+      __weak_ptr(__weak_ptr&& __r) noexcept
+      : _M_ptr(__r._M_ptr), _M_refcount(std::move(__r._M_refcount))
+      { __r._M_ptr = nullptr; }
+
+      template<typename _Yp, typename = _Compatible<_Yp>>
+ __weak_ptr(__weak_ptr<_Yp, _Lp>&& __r) noexcept
+ : _M_ptr(__r.lock().get()), _M_refcount(std::move(__r._M_refcount))
+        { __r._M_ptr = nullptr; }
+
+      __weak_ptr&
+      operator=(const __weak_ptr& __r) noexcept = default;
+
+      template<typename _Yp>
+ _Assignable<_Yp>
+ operator=(const __weak_ptr<_Yp, _Lp>& __r) noexcept
+ {
+   _M_ptr = __r.lock().get();
+   _M_refcount = __r._M_refcount;
+   return *this;
+ }
+
+      template<typename _Yp>
+ _Assignable<_Yp>
+ operator=(const __shared_ptr<_Yp, _Lp>& __r) noexcept
+ {
+   _M_ptr = __r._M_ptr;
+   _M_refcount = __r._M_refcount;
+   return *this;
+ }
+
+      __weak_ptr&
+      operator=(__weak_ptr&& __r) noexcept
+      {
+ __weak_ptr(std::move(__r)).swap(*this);
+ return *this;
+      }
+
+      template<typename _Yp>
+ _Assignable<_Yp>
+ operator=(__weak_ptr<_Yp, _Lp>&& __r) noexcept
+ {
+   _M_ptr = __r.lock().get();
+   _M_refcount = std::move(__r._M_refcount);
+   __r._M_ptr = nullptr;
+   return *this;
+ }
+
+      __shared_ptr<_Tp, _Lp>
+      lock() const noexcept
+      { return __shared_ptr<element_type, _Lp>(*this, std::nothrow); }
+
+      long
+      use_count() const noexcept
+      { return _M_refcount._M_get_use_count(); }
+
+      bool
+      expired() const noexcept
+      { return _M_refcount._M_get_use_count() == 0; }
+
+      template<typename _Tp1>
+ bool
+ owner_before(const __shared_ptr<_Tp1, _Lp>& __rhs) const noexcept
+ { return _M_refcount._M_less(__rhs._M_refcount); }
+
+      template<typename _Tp1>
+ bool
+ owner_before(const __weak_ptr<_Tp1, _Lp>& __rhs) const noexcept
+ { return _M_refcount._M_less(__rhs._M_refcount); }
+
+      void
+      reset() noexcept
+      { __weak_ptr().swap(*this); }
+
+      void
+      swap(__weak_ptr& __s) noexcept
+      {
+ std::swap(_M_ptr, __s._M_ptr);
+ _M_refcount._M_swap(__s._M_refcount);
+      }
+
+    private:
+
+      void
+      _M_assign(_Tp* __ptr, const __shared_count<_Lp>& __refcount) noexcept
+      {
+ if (use_count() == 0)
+   {
+     _M_ptr = __ptr;
+     _M_refcount = __refcount;
+   }
+      }
+
+      template<typename _Tp1, _Lock_policy _Lp1> friend class __shared_ptr;
+      template<typename _Tp1, _Lock_policy _Lp1> friend class __weak_ptr;
+      friend class __enable_shared_from_this<_Tp, _Lp>;
+      friend class enable_shared_from_this<_Tp>;
+
+      friend _Sp_atomic<weak_ptr<_Tp>>;
+
+
+      element_type* _M_ptr;
+      __weak_count<_Lp> _M_refcount;
+    };
+
+
+  template<typename _Tp, _Lock_policy _Lp>
+    inline void
+    swap(__weak_ptr<_Tp, _Lp>& __a, __weak_ptr<_Tp, _Lp>& __b) noexcept
+    { __a.swap(__b); }
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+  template<typename _Tp, typename _Tp1>
+    struct _Sp_owner_less : public binary_function<_Tp, _Tp, bool>
+    {
+      bool
+      operator()(const _Tp& __lhs, const _Tp& __rhs) const noexcept
+      { return __lhs.owner_before(__rhs); }
+
+      bool
+      operator()(const _Tp& __lhs, const _Tp1& __rhs) const noexcept
+      { return __lhs.owner_before(__rhs); }
+
+      bool
+      operator()(const _Tp1& __lhs, const _Tp& __rhs) const noexcept
+      { return __lhs.owner_before(__rhs); }
+    };
+#pragma GCC diagnostic pop
+
+  template<>
+    struct _Sp_owner_less<void, void>
+    {
+      template<typename _Tp, typename _Up>
+ auto
+ operator()(const _Tp& __lhs, const _Up& __rhs) const noexcept
+ -> decltype(__lhs.owner_before(__rhs))
+ { return __lhs.owner_before(__rhs); }
+
+      using is_transparent = void;
+    };
+
+  template<typename _Tp, _Lock_policy _Lp>
+    struct owner_less<__shared_ptr<_Tp, _Lp>>
+    : public _Sp_owner_less<__shared_ptr<_Tp, _Lp>, __weak_ptr<_Tp, _Lp>>
+    { };
+
+  template<typename _Tp, _Lock_policy _Lp>
+    struct owner_less<__weak_ptr<_Tp, _Lp>>
+    : public _Sp_owner_less<__weak_ptr<_Tp, _Lp>, __shared_ptr<_Tp, _Lp>>
+    { };
+
+
+  template<typename _Tp, _Lock_policy _Lp>
+    class __enable_shared_from_this
+    {
+    protected:
+      constexpr __enable_shared_from_this() noexcept { }
+
+      __enable_shared_from_this(const __enable_shared_from_this&) noexcept { }
+
+      __enable_shared_from_this&
+      operator=(const __enable_shared_from_this&) noexcept
+      { return *this; }
+
+      ~__enable_shared_from_this() { }
+
+    public:
+      __shared_ptr<_Tp, _Lp>
+      shared_from_this()
+      { return __shared_ptr<_Tp, _Lp>(this->_M_weak_this); }
+
+      __shared_ptr<const _Tp, _Lp>
+      shared_from_this() const
+      { return __shared_ptr<const _Tp, _Lp>(this->_M_weak_this); }
+
+
+      __weak_ptr<_Tp, _Lp>
+      weak_from_this() noexcept
+      { return this->_M_weak_this; }
+
+      __weak_ptr<const _Tp, _Lp>
+      weak_from_this() const noexcept
+      { return this->_M_weak_this; }
+
+
+    private:
+      template<typename _Tp1>
+ void
+ _M_weak_assign(_Tp1* __p, const __shared_count<_Lp>& __n) const noexcept
+ { _M_weak_this._M_assign(__p, __n); }
+
+      friend const __enable_shared_from_this*
+      __enable_shared_from_this_base(const __shared_count<_Lp>&,
+         const __enable_shared_from_this* __p)
+      { return __p; }
+
+      template<typename, _Lock_policy>
+ friend class __shared_ptr;
+
+      mutable __weak_ptr<_Tp, _Lp> _M_weak_this;
+    };
+
+  template<typename _Tp, _Lock_policy _Lp = __default_lock_policy,
+    typename _Alloc, typename... _Args>
+    inline __shared_ptr<_Tp, _Lp>
+    __allocate_shared(const _Alloc& __a, _Args&&... __args)
+    {
+      static_assert(!is_array<_Tp>::value, "make_shared<T[]> not supported");
+
+      return __shared_ptr<_Tp, _Lp>(_Sp_alloc_shared_tag<_Alloc>{__a},
+        std::forward<_Args>(__args)...);
+    }
+
+  template<typename _Tp, _Lock_policy _Lp = __default_lock_policy,
+    typename... _Args>
+    inline __shared_ptr<_Tp, _Lp>
+    __make_shared(_Args&&... __args)
+    {
+      typedef typename std::remove_const<_Tp>::type _Tp_nc;
+      return std::__allocate_shared<_Tp, _Lp>(std::allocator<_Tp_nc>(),
+           std::forward<_Args>(__args)...);
+    }
+
+
+  template<typename _Tp, _Lock_policy _Lp>
+    struct hash<__shared_ptr<_Tp, _Lp>>
+    : public __hash_base<size_t, __shared_ptr<_Tp, _Lp>>
+    {
+      size_t
+      operator()(const __shared_ptr<_Tp, _Lp>& __s) const noexcept
+      {
+ return hash<typename __shared_ptr<_Tp, _Lp>::element_type*>()(
+     __s.get());
+      }
+    };
+
+
+}
+# 54 "/usr/include/c++/14/bits/shared_ptr.h" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 68 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Ch, typename _Tr, typename _Tp, _Lock_policy _Lp>
+    inline std::basic_ostream<_Ch, _Tr>&
+    operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+        const __shared_ptr<_Tp, _Lp>& __p)
+    {
+      __os << __p.get();
+      return __os;
+    }
+
+  template<typename _Del, typename _Tp, _Lock_policy _Lp>
+    inline _Del*
+    get_deleter(const __shared_ptr<_Tp, _Lp>& __p) noexcept
+    {
+
+      return static_cast<_Del*>(__p._M_get_deleter(typeid(_Del)));
+
+
+
+    }
+
+
+
+
+
+  template<typename _Del, typename _Tp>
+    inline _Del*
+    get_deleter(const shared_ptr<_Tp>& __p) noexcept
+    {
+
+      return static_cast<_Del*>(__p._M_get_deleter(typeid(_Del)));
+
+
+
+    }
+
+
+
+
+
+  template<typename _Tp>
+    requires (!is_array_v<_Tp>)
+    using _NonArray = _Tp;
+# 118 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Tp>
+    requires is_array_v<_Tp> && (extent_v<_Tp> == 0)
+    using _UnboundedArray = _Tp;
+# 129 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Tp>
+    requires (extent_v<_Tp> != 0)
+    using _BoundedArray = _Tp;
+# 141 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Tp>
+    requires (!is_array_v<_Tp>) || (extent_v<_Tp> != 0)
+    using _NotUnboundedArray = _Tp;
+# 174 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Tp>
+    class shared_ptr : public __shared_ptr<_Tp>
+    {
+      template<typename... _Args>
+ using _Constructible = typename enable_if<
+   is_constructible<__shared_ptr<_Tp>, _Args...>::value
+ >::type;
+
+      template<typename _Arg>
+ using _Assignable = typename enable_if<
+   is_assignable<__shared_ptr<_Tp>&, _Arg>::value, shared_ptr&
+ >::type;
+
+    public:
+
+
+      using element_type = typename __shared_ptr<_Tp>::element_type;
+
+
+
+
+      using weak_type = weak_ptr<_Tp>;
+
+
+
+
+
+      constexpr shared_ptr() noexcept : __shared_ptr<_Tp>() { }
+
+      shared_ptr(const shared_ptr&) noexcept = default;
+
+
+
+
+
+
+
+      template<typename _Yp, typename = _Constructible<_Yp*>>
+ explicit
+ shared_ptr(_Yp* __p) : __shared_ptr<_Tp>(__p) { }
+# 228 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      template<typename _Yp, typename _Deleter,
+        typename = _Constructible<_Yp*, _Deleter>>
+ shared_ptr(_Yp* __p, _Deleter __d)
+        : __shared_ptr<_Tp>(__p, std::move(__d)) { }
+# 246 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      template<typename _Deleter>
+ shared_ptr(nullptr_t __p, _Deleter __d)
+        : __shared_ptr<_Tp>(__p, std::move(__d)) { }
+# 265 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      template<typename _Yp, typename _Deleter, typename _Alloc,
+        typename = _Constructible<_Yp*, _Deleter, _Alloc>>
+ shared_ptr(_Yp* __p, _Deleter __d, _Alloc __a)
+ : __shared_ptr<_Tp>(__p, std::move(__d), std::move(__a)) { }
+# 285 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      template<typename _Deleter, typename _Alloc>
+ shared_ptr(nullptr_t __p, _Deleter __d, _Alloc __a)
+ : __shared_ptr<_Tp>(__p, std::move(__d), std::move(__a)) { }
+# 309 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      template<typename _Yp>
+ shared_ptr(const shared_ptr<_Yp>& __r, element_type* __p) noexcept
+ : __shared_ptr<_Tp>(__r, __p) { }
+# 337 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      template<typename _Yp>
+ shared_ptr(shared_ptr<_Yp>&& __r, element_type* __p) noexcept
+ : __shared_ptr<_Tp>(std::move(__r), __p) { }
+# 348 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      template<typename _Yp,
+        typename = _Constructible<const shared_ptr<_Yp>&>>
+ shared_ptr(const shared_ptr<_Yp>& __r) noexcept
+        : __shared_ptr<_Tp>(__r) { }
+
+
+
+
+
+
+      shared_ptr(shared_ptr&& __r) noexcept
+      : __shared_ptr<_Tp>(std::move(__r)) { }
+
+
+
+
+
+
+      template<typename _Yp, typename = _Constructible<shared_ptr<_Yp>>>
+ shared_ptr(shared_ptr<_Yp>&& __r) noexcept
+ : __shared_ptr<_Tp>(std::move(__r)) { }
+# 378 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      template<typename _Yp, typename = _Constructible<const weak_ptr<_Yp>&>>
+ explicit shared_ptr(const weak_ptr<_Yp>& __r)
+ : __shared_ptr<_Tp>(__r) { }
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+      template<typename _Yp, typename = _Constructible<auto_ptr<_Yp>>>
+ shared_ptr(auto_ptr<_Yp>&& __r);
+#pragma GCC diagnostic pop
+
+
+
+
+      template<typename _Yp, typename _Del,
+        typename = _Constructible<unique_ptr<_Yp, _Del>>>
+ shared_ptr(unique_ptr<_Yp, _Del>&& __r)
+ : __shared_ptr<_Tp>(std::move(__r)) { }
+# 411 "/usr/include/c++/14/bits/shared_ptr.h" 3
+      constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() { }
+
+      shared_ptr& operator=(const shared_ptr&) noexcept = default;
+
+      template<typename _Yp>
+ _Assignable<const shared_ptr<_Yp>&>
+ operator=(const shared_ptr<_Yp>& __r) noexcept
+ {
+   this->__shared_ptr<_Tp>::operator=(__r);
+   return *this;
+ }
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+      template<typename _Yp>
+ _Assignable<auto_ptr<_Yp>>
+ operator=(auto_ptr<_Yp>&& __r)
+ {
+   this->__shared_ptr<_Tp>::operator=(std::move(__r));
+   return *this;
+ }
+#pragma GCC diagnostic pop
+
+
+      shared_ptr&
+      operator=(shared_ptr&& __r) noexcept
+      {
+ this->__shared_ptr<_Tp>::operator=(std::move(__r));
+ return *this;
+      }
+
+      template<class _Yp>
+ _Assignable<shared_ptr<_Yp>>
+ operator=(shared_ptr<_Yp>&& __r) noexcept
+ {
+   this->__shared_ptr<_Tp>::operator=(std::move(__r));
+   return *this;
+ }
+
+      template<typename _Yp, typename _Del>
+ _Assignable<unique_ptr<_Yp, _Del>>
+ operator=(unique_ptr<_Yp, _Del>&& __r)
+ {
+   this->__shared_ptr<_Tp>::operator=(std::move(__r));
+   return *this;
+ }
+
+    private:
+
+      template<typename _Alloc, typename... _Args>
+ shared_ptr(_Sp_alloc_shared_tag<_Alloc> __tag, _Args&&... __args)
+ : __shared_ptr<_Tp>(__tag, std::forward<_Args>(__args)...)
+ { }
+
+      template<typename _Yp, typename _Alloc, typename... _Args>
+ friend shared_ptr<_NonArray<_Yp>>
+ allocate_shared(const _Alloc&, _Args&&...);
+
+      template<typename _Yp, typename... _Args>
+ friend shared_ptr<_NonArray<_Yp>>
+ make_shared(_Args&&...);
+
+
+
+      template<typename _Alloc, typename _Init = const remove_extent_t<_Tp>*>
+ shared_ptr(const _Sp_counted_array_base<_Alloc>& __a,
+     _Init __init = nullptr)
+ : __shared_ptr<_Tp>(__a, __init)
+ { }
+
+      template<typename _Yp, typename _Alloc>
+ friend shared_ptr<_UnboundedArray<_Yp>>
+ allocate_shared(const _Alloc&, size_t);
+
+      template<typename _Yp>
+ friend shared_ptr<_UnboundedArray<_Yp>>
+ make_shared(size_t);
+
+      template<typename _Yp, typename _Alloc>
+ friend shared_ptr<_UnboundedArray<_Yp>>
+ allocate_shared(const _Alloc&, size_t, const remove_extent_t<_Yp>&);
+
+      template<typename _Yp>
+ friend shared_ptr<_UnboundedArray<_Yp>>
+ make_shared(size_t, const remove_extent_t<_Yp>&);
+
+      template<typename _Yp, typename _Alloc>
+ friend shared_ptr<_BoundedArray<_Yp>>
+ allocate_shared(const _Alloc&);
+
+      template<typename _Yp>
+ friend shared_ptr<_BoundedArray<_Yp>>
+ make_shared();
+
+      template<typename _Yp, typename _Alloc>
+ friend shared_ptr<_BoundedArray<_Yp>>
+ allocate_shared(const _Alloc&, const remove_extent_t<_Yp>&);
+
+      template<typename _Yp>
+ friend shared_ptr<_BoundedArray<_Yp>>
+ make_shared(const remove_extent_t<_Yp>&);
+
+
+      template<typename _Yp, typename _Alloc>
+ friend shared_ptr<_NotUnboundedArray<_Yp>>
+ allocate_shared_for_overwrite(const _Alloc&);
+
+      template<typename _Yp>
+ friend shared_ptr<_NotUnboundedArray<_Yp>>
+ make_shared_for_overwrite();
+
+      template<typename _Yp, typename _Alloc>
+ friend shared_ptr<_UnboundedArray<_Yp>>
+ allocate_shared_for_overwrite(const _Alloc&, size_t);
+
+      template<typename _Yp>
+ friend shared_ptr<_UnboundedArray<_Yp>>
+ make_shared_for_overwrite(size_t);
+
+
+
+
+      shared_ptr(const weak_ptr<_Tp>& __r, std::nothrow_t) noexcept
+      : __shared_ptr<_Tp>(__r, std::nothrow) { }
+
+      friend class weak_ptr<_Tp>;
+    };
+
+
+  template<typename _Tp>
+    shared_ptr(weak_ptr<_Tp>) -> shared_ptr<_Tp>;
+  template<typename _Tp, typename _Del>
+    shared_ptr(unique_ptr<_Tp, _Del>) -> shared_ptr<_Tp>;
+
+
+
+
+
+
+
+  template<typename _Tp, typename _Up>
+    [[__nodiscard__]] inline bool
+    operator==(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+    { return __a.get() == __b.get(); }
+
+
+  template<typename _Tp>
+    [[__nodiscard__]] inline bool
+    operator==(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+    { return !__a; }
+
+
+  template<typename _Tp, typename _Up>
+    inline strong_ordering
+    operator<=>(const shared_ptr<_Tp>& __a,
+  const shared_ptr<_Up>& __b) noexcept
+    { return compare_three_way()(__a.get(), __b.get()); }
+
+  template<typename _Tp>
+    inline strong_ordering
+    operator<=>(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+    {
+      using pointer = typename shared_ptr<_Tp>::element_type*;
+      return compare_three_way()(__a.get(), static_cast<pointer>(nullptr));
+    }
+# 689 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Tp>
+    inline void
+    swap(shared_ptr<_Tp>& __a, shared_ptr<_Tp>& __b) noexcept
+    { __a.swap(__b); }
+
+
+
+
+  template<typename _Tp, typename _Up>
+    inline shared_ptr<_Tp>
+    static_pointer_cast(const shared_ptr<_Up>& __r) noexcept
+    {
+      using _Sp = shared_ptr<_Tp>;
+      return _Sp(__r, static_cast<typename _Sp::element_type*>(__r.get()));
+    }
+
+
+  template<typename _Tp, typename _Up>
+    inline shared_ptr<_Tp>
+    const_pointer_cast(const shared_ptr<_Up>& __r) noexcept
+    {
+      using _Sp = shared_ptr<_Tp>;
+      return _Sp(__r, const_cast<typename _Sp::element_type*>(__r.get()));
+    }
+
+
+  template<typename _Tp, typename _Up>
+    inline shared_ptr<_Tp>
+    dynamic_pointer_cast(const shared_ptr<_Up>& __r) noexcept
+    {
+      using _Sp = shared_ptr<_Tp>;
+      if (auto* __p = dynamic_cast<typename _Sp::element_type*>(__r.get()))
+ return _Sp(__r, __p);
+      return _Sp();
+    }
+
+
+
+
+  template<typename _Tp, typename _Up>
+    inline shared_ptr<_Tp>
+    reinterpret_pointer_cast(const shared_ptr<_Up>& __r) noexcept
+    {
+      using _Sp = shared_ptr<_Tp>;
+      return _Sp(__r, reinterpret_cast<typename _Sp::element_type*>(__r.get()));
+    }
+
+
+
+
+
+
+
+  template<typename _Tp, typename _Up>
+    inline shared_ptr<_Tp>
+    static_pointer_cast(shared_ptr<_Up>&& __r) noexcept
+    {
+      using _Sp = shared_ptr<_Tp>;
+      return _Sp(std::move(__r),
+   static_cast<typename _Sp::element_type*>(__r.get()));
+    }
+
+
+
+  template<typename _Tp, typename _Up>
+    inline shared_ptr<_Tp>
+    const_pointer_cast(shared_ptr<_Up>&& __r) noexcept
+    {
+      using _Sp = shared_ptr<_Tp>;
+      return _Sp(std::move(__r),
+   const_cast<typename _Sp::element_type*>(__r.get()));
+    }
+
+
+
+  template<typename _Tp, typename _Up>
+    inline shared_ptr<_Tp>
+    dynamic_pointer_cast(shared_ptr<_Up>&& __r) noexcept
+    {
+      using _Sp = shared_ptr<_Tp>;
+      if (auto* __p = dynamic_cast<typename _Sp::element_type*>(__r.get()))
+ return _Sp(std::move(__r), __p);
+      return _Sp();
+    }
+
+
+
+  template<typename _Tp, typename _Up>
+    inline shared_ptr<_Tp>
+    reinterpret_pointer_cast(shared_ptr<_Up>&& __r) noexcept
+    {
+      using _Sp = shared_ptr<_Tp>;
+      return _Sp(std::move(__r),
+   reinterpret_cast<typename _Sp::element_type*>(__r.get()));
+    }
+# 809 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Tp>
+    class weak_ptr : public __weak_ptr<_Tp>
+    {
+      template<typename _Arg>
+ using _Constructible = typename enable_if<
+   is_constructible<__weak_ptr<_Tp>, _Arg>::value
+ >::type;
+
+      template<typename _Arg>
+ using _Assignable = typename enable_if<
+   is_assignable<__weak_ptr<_Tp>&, _Arg>::value, weak_ptr&
+ >::type;
+
+    public:
+      constexpr weak_ptr() noexcept = default;
+
+      template<typename _Yp,
+        typename = _Constructible<const shared_ptr<_Yp>&>>
+ weak_ptr(const shared_ptr<_Yp>& __r) noexcept
+ : __weak_ptr<_Tp>(__r) { }
+
+      weak_ptr(const weak_ptr&) noexcept = default;
+
+      template<typename _Yp, typename = _Constructible<const weak_ptr<_Yp>&>>
+ weak_ptr(const weak_ptr<_Yp>& __r) noexcept
+ : __weak_ptr<_Tp>(__r) { }
+
+      weak_ptr(weak_ptr&&) noexcept = default;
+
+      template<typename _Yp, typename = _Constructible<weak_ptr<_Yp>>>
+ weak_ptr(weak_ptr<_Yp>&& __r) noexcept
+ : __weak_ptr<_Tp>(std::move(__r)) { }
+
+      weak_ptr&
+      operator=(const weak_ptr& __r) noexcept = default;
+
+      template<typename _Yp>
+ _Assignable<const weak_ptr<_Yp>&>
+ operator=(const weak_ptr<_Yp>& __r) noexcept
+ {
+   this->__weak_ptr<_Tp>::operator=(__r);
+   return *this;
+ }
+
+      template<typename _Yp>
+ _Assignable<const shared_ptr<_Yp>&>
+ operator=(const shared_ptr<_Yp>& __r) noexcept
+ {
+   this->__weak_ptr<_Tp>::operator=(__r);
+   return *this;
+ }
+
+      weak_ptr&
+      operator=(weak_ptr&& __r) noexcept = default;
+
+      template<typename _Yp>
+ _Assignable<weak_ptr<_Yp>>
+ operator=(weak_ptr<_Yp>&& __r) noexcept
+ {
+   this->__weak_ptr<_Tp>::operator=(std::move(__r));
+   return *this;
+ }
+
+      shared_ptr<_Tp>
+      lock() const noexcept
+      { return shared_ptr<_Tp>(*this, std::nothrow); }
+    };
+
+
+  template<typename _Tp>
+    weak_ptr(shared_ptr<_Tp>) -> weak_ptr<_Tp>;
+
+
+
+
+
+  template<typename _Tp>
+    inline void
+    swap(weak_ptr<_Tp>& __a, weak_ptr<_Tp>& __b) noexcept
+    { __a.swap(__b); }
+
+
+
+  template<typename _Tp = void>
+    struct owner_less;
+
+
+  template<>
+    struct owner_less<void> : _Sp_owner_less<void, void>
+    { };
+
+
+  template<typename _Tp>
+    struct owner_less<shared_ptr<_Tp>>
+    : public _Sp_owner_less<shared_ptr<_Tp>, weak_ptr<_Tp>>
+    { };
+
+
+  template<typename _Tp>
+    struct owner_less<weak_ptr<_Tp>>
+    : public _Sp_owner_less<weak_ptr<_Tp>, shared_ptr<_Tp>>
+    { };
+
+
+
+
+
+
+  template<typename _Tp>
+    class enable_shared_from_this
+    {
+    protected:
+      constexpr enable_shared_from_this() noexcept { }
+
+      enable_shared_from_this(const enable_shared_from_this&) noexcept { }
+
+      enable_shared_from_this&
+      operator=(const enable_shared_from_this&) noexcept
+      { return *this; }
+
+      ~enable_shared_from_this() { }
+
+    public:
+      shared_ptr<_Tp>
+      shared_from_this()
+      { return shared_ptr<_Tp>(this->_M_weak_this); }
+
+      shared_ptr<const _Tp>
+      shared_from_this() const
+      { return shared_ptr<const _Tp>(this->_M_weak_this); }
+
+
+
+
+
+
+      weak_ptr<_Tp>
+      weak_from_this() noexcept
+      { return this->_M_weak_this; }
+
+      weak_ptr<const _Tp>
+      weak_from_this() const noexcept
+      { return this->_M_weak_this; }
+
+
+
+    private:
+      template<typename _Tp1>
+ void
+ _M_weak_assign(_Tp1* __p, const __shared_count<>& __n) const noexcept
+ { _M_weak_this._M_assign(__p, __n); }
+
+
+      friend const enable_shared_from_this*
+      __enable_shared_from_this_base(const __shared_count<>&,
+         const enable_shared_from_this* __p)
+      { return __p; }
+
+      template<typename, _Lock_policy>
+ friend class __shared_ptr;
+
+      mutable weak_ptr<_Tp> _M_weak_this;
+    };
+# 986 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Tp, typename _Alloc, typename... _Args>
+    inline shared_ptr<_NonArray<_Tp>>
+    allocate_shared(const _Alloc& __a, _Args&&... __args)
+    {
+      return shared_ptr<_Tp>(_Sp_alloc_shared_tag<_Alloc>{__a},
+        std::forward<_Args>(__args)...);
+    }
+# 1001 "/usr/include/c++/14/bits/shared_ptr.h" 3
+  template<typename _Tp, typename... _Args>
+    inline shared_ptr<_NonArray<_Tp>>
+    make_shared(_Args&&... __args)
+    {
+      using _Alloc = allocator<void>;
+      _Alloc __a;
+      return shared_ptr<_Tp>(_Sp_alloc_shared_tag<_Alloc>{__a},
+        std::forward<_Args>(__args)...);
+    }
+
+
+
+  template<typename _Tp, typename _Alloc = allocator<void>>
+    auto
+    __make_shared_arr_tag(size_t __n, const _Alloc& __a = _Alloc()) noexcept
+    {
+      using _Up = remove_all_extents_t<_Tp>;
+      using _UpAlloc = __alloc_rebind<_Alloc, _Up>;
+      size_t __s = sizeof(remove_extent_t<_Tp>) / sizeof(_Up);
+      if (__builtin_mul_overflow(__s, __n, &__n))
+ std::__throw_bad_array_new_length();
+      return _Sp_counted_array_base<_UpAlloc>{_UpAlloc(__a), __n};
+    }
+
+
+  template<typename _Tp, typename _Alloc>
+    inline shared_ptr<_UnboundedArray<_Tp>>
+    allocate_shared(const _Alloc& __a, size_t __n)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arr_tag<_Tp>(__n, __a));
+    }
+
+  template<typename _Tp>
+    inline shared_ptr<_UnboundedArray<_Tp>>
+    make_shared(size_t __n)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arr_tag<_Tp>(__n));
+    }
+
+  template<typename _Tp, typename _Alloc>
+    inline shared_ptr<_UnboundedArray<_Tp>>
+    allocate_shared(const _Alloc& __a, size_t __n,
+      const remove_extent_t<_Tp>& __u)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arr_tag<_Tp>(__n, __a),
+        std::__addressof(__u));
+    }
+
+  template<typename _Tp>
+    inline shared_ptr<_UnboundedArray<_Tp>>
+    make_shared(size_t __n, const remove_extent_t<_Tp>& __u)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arr_tag<_Tp>(__n),
+        std::__addressof(__u));
+    }
+
+
+  template<typename _Tp, typename _Alloc = allocator<void>>
+    auto
+    __make_shared_arrN_tag(const _Alloc& __a = _Alloc()) noexcept
+    {
+      using _Up = remove_all_extents_t<_Tp>;
+      using _UpAlloc = __alloc_rebind<_Alloc, _Up>;
+      size_t __n = sizeof(_Tp) / sizeof(_Up);
+      return _Sp_counted_array_base<_UpAlloc>{_UpAlloc(__a), __n};
+    }
+
+
+  template<typename _Tp, typename _Alloc>
+    inline shared_ptr<_BoundedArray<_Tp>>
+    allocate_shared(const _Alloc& __a)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arrN_tag<_Tp>(__a));
+    }
+
+  template<typename _Tp>
+    inline shared_ptr<_BoundedArray<_Tp>>
+    make_shared()
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arrN_tag<_Tp>());
+    }
+
+  template<typename _Tp, typename _Alloc>
+    inline shared_ptr<_BoundedArray<_Tp>>
+    allocate_shared(const _Alloc& __a, const remove_extent_t<_Tp>& __u)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arrN_tag<_Tp>(__a),
+        std::__addressof(__u));
+    }
+
+  template<typename _Tp>
+    inline shared_ptr<_BoundedArray<_Tp>>
+    make_shared(const remove_extent_t<_Tp>& __u)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arrN_tag<_Tp>(),
+        std::__addressof(__u));
+    }
+
+
+  template<typename _Tp, typename _Alloc>
+    inline shared_ptr<_NotUnboundedArray<_Tp>>
+    allocate_shared_for_overwrite(const _Alloc& __a)
+    {
+      if constexpr (is_array_v<_Tp>)
+ return shared_ptr<_Tp>(std::__make_shared_arrN_tag<_Tp>(__a),
+          _Sp_overwrite_tag{});
+      else
+ {
+
+
+   using _Alloc2 = __alloc_rebind<_Alloc, _Sp_overwrite_tag>;
+   _Alloc2 __a2 = __a;
+   return shared_ptr<_Tp>(_Sp_alloc_shared_tag<_Alloc2>{__a2});
+ }
+    }
+
+  template<typename _Tp>
+    inline shared_ptr<_NotUnboundedArray<_Tp>>
+    make_shared_for_overwrite()
+    {
+      if constexpr (is_array_v<_Tp>)
+ return shared_ptr<_Tp>(std::__make_shared_arrN_tag<_Tp>(),
+          _Sp_overwrite_tag{});
+      else
+ {
+   using _Alloc = allocator<_Sp_overwrite_tag>;
+   return shared_ptr<_Tp>(_Sp_alloc_shared_tag<_Alloc>{{}});
+ }
+    }
+
+  template<typename _Tp, typename _Alloc>
+    inline shared_ptr<_UnboundedArray<_Tp>>
+    allocate_shared_for_overwrite(const _Alloc& __a, size_t __n)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arr_tag<_Tp>(__n, __a),
+        _Sp_overwrite_tag{});
+    }
+
+  template<typename _Tp>
+    inline shared_ptr<_UnboundedArray<_Tp>>
+    make_shared_for_overwrite(size_t __n)
+    {
+      return shared_ptr<_Tp>(std::__make_shared_arr_tag<_Tp>(__n),
+        _Sp_overwrite_tag{});
+    }
+
+
+
+
+  template<typename _Tp>
+    struct hash<shared_ptr<_Tp>>
+    : public __hash_base<size_t, shared_ptr<_Tp>>
+    {
+      size_t
+      operator()(const shared_ptr<_Tp>& __s) const noexcept
+      {
+ return std::hash<typename shared_ptr<_Tp>::element_type*>()(__s.get());
+      }
+    };
+
+
+  template<typename _Tp>
+    static constexpr bool __is_shared_ptr = false;
+  template<typename _Tp>
+    static constexpr bool __is_shared_ptr<shared_ptr<_Tp>> = true;
+
+
+
+
+
+
+  namespace __detail::__variant
+  {
+    template<typename> struct _Never_valueless_alt;
+
+
+
+    template<typename _Tp>
+      struct _Never_valueless_alt<std::shared_ptr<_Tp>>
+      : std::true_type
+      { };
+
+
+
+    template<typename _Tp>
+      struct _Never_valueless_alt<std::weak_ptr<_Tp>>
+      : std::true_type
+      { };
+  }
+
+
+
+}
+# 50 "/usr/include/c++/14/chrono" 2 3
+
+
+
+
+
+# 1 "/usr/include/c++/14/bits/version.h" 1 3
+# 47 "/usr/include/c++/14/bits/version.h" 3
+       
+# 48 "/usr/include/c++/14/bits/version.h" 3
+# 56 "/usr/include/c++/14/chrono" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 74 "/usr/include/c++/14/chrono" 3
+  namespace chrono
+  {
+
+
+
+    struct local_t { };
+    template<typename _Duration>
+      using local_time = time_point<local_t, _Duration>;
+    using local_seconds = local_time<seconds>;
+    using local_days = local_time<days>;
+
+    class utc_clock;
+    class tai_clock;
+    class gps_clock;
+
+    template<typename _Duration>
+      using utc_time = time_point<utc_clock, _Duration>;
+    using utc_seconds = utc_time<seconds>;
+
+    template<typename _Duration>
+      using tai_time = time_point<tai_clock, _Duration>;
+    using tai_seconds = tai_time<seconds>;
+
+    template<typename _Duration>
+      using gps_time = time_point<gps_clock, _Duration>;
+    using gps_seconds = gps_time<seconds>;
+
+    template<> struct is_clock<utc_clock> : true_type { };
+    template<> struct is_clock<tai_clock> : true_type { };
+    template<> struct is_clock<gps_clock> : true_type { };
+
+    template<> inline constexpr bool is_clock_v<utc_clock> = true;
+    template<> inline constexpr bool is_clock_v<tai_clock> = true;
+    template<> inline constexpr bool is_clock_v<gps_clock> = true;
+
+    struct leap_second_info
+    {
+      bool is_leap_second;
+      seconds elapsed;
+    };
+
+    template<typename _Duration>
+      leap_second_info
+      get_leap_second_info(const utc_time<_Duration>& __ut);
+
+
+
+
+
+
+
+    class utc_clock
+    {
+    public:
+      using rep = system_clock::rep;
+      using period = system_clock::period;
+      using duration = chrono::duration<rep, period>;
+      using time_point = chrono::time_point<utc_clock>;
+      static constexpr bool is_steady = false;
+
+      [[nodiscard]]
+      static time_point
+      now()
+      { return from_sys(system_clock::now()); }
+
+      template<typename _Duration>
+ [[nodiscard]]
+ static sys_time<common_type_t<_Duration, seconds>>
+ to_sys(const utc_time<_Duration>& __t)
+ {
+   using _CDur = common_type_t<_Duration, seconds>;
+   const auto __li = chrono::get_leap_second_info(__t);
+   sys_time<_CDur> __s{__t.time_since_epoch() - __li.elapsed};
+   if (__li.is_leap_second)
+     __s = chrono::floor<seconds>(__s) + seconds{1} - _CDur{1};
+   return __s;
+ }
+
+      template<typename _Duration>
+ [[nodiscard]]
+ static utc_time<common_type_t<_Duration, seconds>>
+ from_sys(const sys_time<_Duration>& __t);
+    };
+
+
+
+
+
+
+
+    class tai_clock
+    {
+    public:
+      using rep = system_clock::rep;
+      using period = system_clock::period;
+      using duration = chrono::duration<rep, period>;
+      using time_point = chrono::time_point<tai_clock>;
+      static constexpr bool is_steady = false;
+
+
+      [[nodiscard]]
+      static time_point
+      now()
+      { return from_utc(utc_clock::now()); }
+
+      template<typename _Duration>
+ [[nodiscard]]
+ static utc_time<common_type_t<_Duration, seconds>>
+ to_utc(const tai_time<_Duration>& __t)
+ {
+   using _CDur = common_type_t<_Duration, seconds>;
+   return utc_time<_CDur>{__t.time_since_epoch()} - 378691210s;
+ }
+
+      template<typename _Duration>
+ [[nodiscard]]
+ static tai_time<common_type_t<_Duration, seconds>>
+ from_utc(const utc_time<_Duration>& __t)
+ {
+   using _CDur = common_type_t<_Duration, seconds>;
+   return tai_time<_CDur>{__t.time_since_epoch()} + 378691210s;
+ }
+    };
+
+
+
+
+
+
+
+    class gps_clock
+    {
+    public:
+      using rep = system_clock::rep;
+      using period = system_clock::period;
+      using duration = chrono::duration<rep, period>;
+      using time_point = chrono::time_point<gps_clock>;
+      static constexpr bool is_steady = false;
+
+
+      [[nodiscard]]
+      static time_point
+      now()
+      { return from_utc(utc_clock::now()); }
+
+      template<typename _Duration>
+ [[nodiscard]]
+ static utc_time<common_type_t<_Duration, seconds>>
+ to_utc(const gps_time<_Duration>& __t)
+ {
+   using _CDur = common_type_t<_Duration, seconds>;
+   return utc_time<_CDur>{__t.time_since_epoch()} + 315964809s;
+ }
+
+      template<typename _Duration>
+ [[nodiscard]]
+ static gps_time<common_type_t<_Duration, seconds>>
+ from_utc(const utc_time<_Duration>& __t)
+ {
+   using _CDur = common_type_t<_Duration, seconds>;
+   return gps_time<_CDur>{__t.time_since_epoch()} - 315964809s;
+ }
+    };
+
+
+    template<typename _DestClock, typename _SourceClock>
+      struct clock_time_conversion
+      { };
+
+
+
+    template<typename _Clock>
+      struct clock_time_conversion<_Clock, _Clock>
+      {
+ template<typename _Duration>
+   time_point<_Clock, _Duration>
+   operator()(const time_point<_Clock, _Duration>& __t) const
+   { return __t; }
+      };
+
+    template<>
+      struct clock_time_conversion<system_clock, system_clock>
+      {
+ template<typename _Duration>
+   sys_time<_Duration>
+   operator()(const sys_time<_Duration>& __t) const
+   { return __t; }
+      };
+
+    template<>
+      struct clock_time_conversion<utc_clock, utc_clock>
+      {
+ template<typename _Duration>
+   utc_time<_Duration>
+   operator()(const utc_time<_Duration>& __t) const
+   { return __t; }
+      };
+
+
+
+    template<>
+      struct clock_time_conversion<utc_clock, system_clock>
+      {
+ template<typename _Duration>
+   utc_time<common_type_t<_Duration, seconds>>
+   operator()(const sys_time<_Duration>& __t) const
+   { return utc_clock::from_sys(__t); }
+      };
+
+    template<>
+      struct clock_time_conversion<system_clock, utc_clock>
+      {
+ template<typename _Duration>
+   sys_time<common_type_t<_Duration, seconds>>
+   operator()(const utc_time<_Duration>& __t) const
+   { return utc_clock::to_sys(__t); }
+      };
+
+    template<typename _Tp, typename _Clock>
+      inline constexpr bool __is_time_point_for_v = false;
+
+    template<typename _Clock, typename _Duration>
+      inline constexpr bool
+       __is_time_point_for_v<time_point<_Clock, _Duration>, _Clock> = true;
+
+
+
+    template<typename _SourceClock>
+      struct clock_time_conversion<system_clock, _SourceClock>
+      {
+ template<typename _Duration, typename _Src = _SourceClock>
+   auto
+   operator()(const time_point<_SourceClock, _Duration>& __t) const
+   -> decltype(_Src::to_sys(__t))
+   {
+     using _Ret = decltype(_SourceClock::to_sys(__t));
+     static_assert(__is_time_point_for_v<_Ret, system_clock>);
+     return _SourceClock::to_sys(__t);
+   }
+      };
+
+    template<typename _DestClock>
+      struct clock_time_conversion<_DestClock, system_clock>
+      {
+ template<typename _Duration, typename _Dest = _DestClock>
+   auto
+   operator()(const sys_time<_Duration>& __t) const
+   -> decltype(_Dest::from_sys(__t))
+   {
+     using _Ret = decltype(_DestClock::from_sys(__t));
+     static_assert(__is_time_point_for_v<_Ret, _DestClock>);
+     return _DestClock::from_sys(__t);
+   }
+      };
+
+
+
+    template<typename _SourceClock>
+      struct clock_time_conversion<utc_clock, _SourceClock>
+      {
+ template<typename _Duration, typename _Src = _SourceClock>
+   auto
+   operator()(const time_point<_SourceClock, _Duration>& __t) const
+   -> decltype(_Src::to_utc(__t))
+   {
+     using _Ret = decltype(_SourceClock::to_utc(__t));
+     static_assert(__is_time_point_for_v<_Ret, utc_clock>);
+     return _SourceClock::to_utc(__t);
+   }
+      };
+
+    template<typename _DestClock>
+      struct clock_time_conversion<_DestClock, utc_clock>
+      {
+ template<typename _Duration, typename _Dest = _DestClock>
+   auto
+   operator()(const utc_time<_Duration>& __t) const
+   -> decltype(_Dest::from_utc(__t))
+   {
+     using _Ret = decltype(_DestClock::from_utc(__t));
+     static_assert(__is_time_point_for_v<_Ret, _DestClock>);
+     return _DestClock::from_utc(__t);
+   }
+      };
+
+
+    namespace __detail
+    {
+      template<typename _DestClock, typename _SourceClock, typename _Duration>
+       concept __clock_convs
+   = requires (const time_point<_SourceClock, _Duration>& __t) {
+     clock_time_conversion<_DestClock, _SourceClock>{}(__t);
+   };
+
+      template<typename _DestClock, typename _SourceClock, typename _Duration>
+       concept __clock_convs_sys
+   = requires (const time_point<_SourceClock, _Duration>& __t) {
+     clock_time_conversion<_DestClock, system_clock>{}(
+       clock_time_conversion<system_clock, _SourceClock>{}(__t));
+   };
+
+      template<typename _DestClock, typename _SourceClock, typename _Duration>
+       concept __clock_convs_utc
+   = requires (const time_point<_SourceClock, _Duration>& __t) {
+     clock_time_conversion<_DestClock, utc_clock>{}(
+       clock_time_conversion<utc_clock, _SourceClock>{}(__t));
+   };
+
+      template<typename _DestClock, typename _SourceClock, typename _Duration>
+ concept __clock_convs_sys_utc
+   = requires (const time_point<_SourceClock, _Duration>& __t) {
+     clock_time_conversion<_DestClock, utc_clock>{}(
+       clock_time_conversion<utc_clock, system_clock>{}(
+  clock_time_conversion<system_clock, _SourceClock>{}(__t)));
+   };
+
+      template<typename _DestClock, typename _SourceClock, typename _Duration>
+       concept __clock_convs_utc_sys
+   = requires (const time_point<_SourceClock, _Duration>& __t) {
+     clock_time_conversion<_DestClock, system_clock>{}(
+       clock_time_conversion<system_clock, utc_clock>{}(
+  clock_time_conversion<utc_clock, _SourceClock>{}(__t)));
+   };
+
+    }
+
+
+
+    template<typename _DestClock, typename _SourceClock, typename _Duration>
+      [[nodiscard]]
+      inline auto
+      clock_cast(const time_point<_SourceClock, _Duration>& __t)
+      requires __detail::__clock_convs<_DestClock, _SourceClock, _Duration>
+ || __detail::__clock_convs_sys<_DestClock, _SourceClock, _Duration>
+ || __detail::__clock_convs_utc<_DestClock, _SourceClock, _Duration>
+ || __detail::__clock_convs_sys_utc<_DestClock, _SourceClock, _Duration>
+ || __detail::__clock_convs_utc_sys<_DestClock, _SourceClock, _Duration>
+      {
+       constexpr bool __direct
+  = __detail::__clock_convs<_DestClock, _SourceClock, _Duration>;
+       if constexpr (__direct)
+  {
+    return clock_time_conversion<_DestClock, _SourceClock>{}(__t);
+  }
+       else
+  {
+    constexpr bool __convert_via_sys_clock
+      = __detail::__clock_convs_sys<_DestClock, _SourceClock, _Duration>;
+    constexpr bool __convert_via_utc_clock
+      = __detail::__clock_convs_utc<_DestClock, _SourceClock, _Duration>;
+    if constexpr (__convert_via_sys_clock)
+      {
+        static_assert(!__convert_via_utc_clock,
+   "clock_cast requires a unique best conversion, but "
+   "conversion is possible via system_clock and also via"
+   "utc_clock");
+        return clock_time_conversion<_DestClock, system_clock>{}(
+   clock_time_conversion<system_clock, _SourceClock>{}(__t));
+      }
+    else if constexpr (__convert_via_utc_clock)
+      {
+        return clock_time_conversion<_DestClock, utc_clock>{}(
+   clock_time_conversion<utc_clock, _SourceClock>{}(__t));
+      }
+    else
+      {
+        constexpr bool __convert_via_sys_and_utc_clocks
+   = __detail::__clock_convs_sys_utc<_DestClock,
+         _SourceClock,
+         _Duration>;
+
+        if constexpr (__convert_via_sys_and_utc_clocks)
+   {
+     constexpr bool __convert_via_utc_and_sys_clocks
+       = __detail::__clock_convs_utc_sys<_DestClock,
+             _SourceClock,
+             _Duration>;
+     static_assert(!__convert_via_utc_and_sys_clocks,
+       "clock_cast requires a unique best conversion, but "
+       "conversion is possible via system_clock followed by "
+       "utc_clock, and also via utc_clock followed by "
+       "system_clock");
+     return clock_time_conversion<_DestClock, utc_clock>{}(
+       clock_time_conversion<utc_clock, system_clock>{}(
+         clock_time_conversion<system_clock, _SourceClock>{}(__t)));
+   }
+        else
+   {
+     return clock_time_conversion<_DestClock, system_clock>{}(
+       clock_time_conversion<system_clock, utc_clock>{}(
+         clock_time_conversion<utc_clock, _SourceClock>{}(__t)));
+   }
+      }
+  }
+      }
+
+
+
+
+    class day;
+    class month;
+    class year;
+    class weekday;
+    class weekday_indexed;
+    class weekday_last;
+    class month_day;
+    class month_day_last;
+    class month_weekday;
+    class month_weekday_last;
+    class year_month;
+    class year_month_day;
+    class year_month_day_last;
+    class year_month_weekday;
+    class year_month_weekday_last;
+
+    struct last_spec
+    {
+      explicit last_spec() = default;
+
+      friend constexpr month_day_last
+      operator/(int __m, last_spec) noexcept;
+
+      friend constexpr month_day_last
+      operator/(last_spec, int __m) noexcept;
+    };
+
+    inline constexpr last_spec last{};
+
+    namespace __detail
+    {
+
+      template <unsigned __d, typename _Tp>
+      consteval auto
+      __modulo_offset()
+      {
+ using _Up = make_unsigned_t<_Tp>;
+ auto constexpr __a = _Up(-1) - _Up(255 + __d - 2);
+ auto constexpr __b = _Up(__d * (__a / __d) - 1);
+
+ return _Up(-1) - __b;
+      }
+
+
+
+
+      template <unsigned __d, typename _Tp>
+      constexpr unsigned
+      __add_modulo(unsigned __x, _Tp __y)
+      {
+ using _Up = make_unsigned_t<_Tp>;
+# 533 "/usr/include/c++/14/chrono" 3
+ auto const __offset = __y >= 0 ? _Up(0) : __modulo_offset<__d, _Tp>();
+ return (__x + _Up(__y) - __offset) % __d;
+      }
+
+
+      template <unsigned __d, typename _Tp>
+      constexpr unsigned
+      __sub_modulo(unsigned __x, _Tp __y)
+      {
+ using _Up = make_unsigned_t<_Tp>;
+ auto const __offset = __y <= 0 ? _Up(0) : __modulo_offset<__d, _Tp>();
+ return (__x - _Up(__y) - __offset) % __d;
+      }
+
+      inline constexpr unsigned __days_per_month[12]
+ = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    }
+
+
+
+    class day
+    {
+    private:
+      unsigned char _M_d;
+
+    public:
+      day() = default;
+
+      explicit constexpr
+      day(unsigned __d) noexcept
+      : _M_d(__d)
+      { }
+
+      constexpr day&
+      operator++() noexcept
+      {
+ ++_M_d;
+ return *this;
+      }
+
+      constexpr day
+      operator++(int) noexcept
+      {
+ auto __ret = *this;
+ ++(*this);
+ return __ret;
+      }
+
+      constexpr day&
+      operator--() noexcept
+      {
+ --_M_d;
+ return *this;
+      }
+
+      constexpr day
+      operator--(int) noexcept
+      {
+ auto __ret = *this;
+ --(*this);
+ return __ret;
+      }
+
+      constexpr day&
+      operator+=(const days& __d) noexcept
+      {
+ *this = *this + __d;
+ return *this;
+      }
+
+      constexpr day&
+      operator-=(const days& __d) noexcept
+      {
+ *this = *this - __d;
+ return *this;
+      }
+
+      constexpr explicit
+      operator unsigned() const noexcept
+      { return _M_d; }
+
+      constexpr bool
+      ok() const noexcept
+      { return 1 <= _M_d && _M_d <= 31; }
+
+      friend constexpr bool
+      operator==(const day& __x, const day& __y) noexcept
+      { return unsigned{__x} == unsigned{__y}; }
+
+      friend constexpr strong_ordering
+      operator<=>(const day& __x, const day& __y) noexcept
+      { return unsigned{__x} <=> unsigned{__y}; }
+
+      friend constexpr day
+      operator+(const day& __x, const days& __y) noexcept
+      { return day(unsigned{__x} + __y.count()); }
+
+      friend constexpr day
+      operator+(const days& __x, const day& __y) noexcept
+      { return __y + __x; }
+
+      friend constexpr day
+      operator-(const day& __x, const days& __y) noexcept
+      { return __x + -__y; }
+
+      friend constexpr days
+      operator-(const day& __x, const day& __y) noexcept
+      { return days{int(unsigned{__x}) - int(unsigned{__y})}; }
+
+      friend constexpr month_day
+      operator/(const month& __m, const day& __d) noexcept;
+
+      friend constexpr month_day
+      operator/(int __m, const day& __d) noexcept;
+
+      friend constexpr month_day
+      operator/(const day& __d, const month& __m) noexcept;
+
+      friend constexpr month_day
+      operator/(const day& __d, int __m) noexcept;
+
+      friend constexpr year_month_day
+      operator/(const year_month& __ym, const day& __d) noexcept;
+    };
+
+
+
+    class month
+    {
+    private:
+      unsigned char _M_m;
+
+    public:
+      month() = default;
+
+      explicit constexpr
+      month(unsigned __m) noexcept
+      : _M_m(__m)
+      { }
+
+      constexpr month&
+      operator++() noexcept
+      {
+ *this += months{1};
+ return *this;
+      }
+
+      constexpr month
+      operator++(int) noexcept
+      {
+ auto __ret = *this;
+ ++(*this);
+ return __ret;
+      }
+
+      constexpr month&
+      operator--() noexcept
+      {
+ *this -= months{1};
+ return *this;
+      }
+
+      constexpr month
+      operator--(int) noexcept
+      {
+ auto __ret = *this;
+ --(*this);
+ return __ret;
+      }
+
+      constexpr month&
+      operator+=(const months& __m) noexcept
+      {
+ *this = *this + __m;
+ return *this;
+      }
+
+      constexpr month&
+      operator-=(const months& __m) noexcept
+      {
+ *this = *this - __m;
+ return *this;
+      }
+
+      explicit constexpr
+      operator unsigned() const noexcept
+      { return _M_m; }
+
+      constexpr bool
+      ok() const noexcept
+      { return 1 <= _M_m && _M_m <= 12; }
+
+      friend constexpr bool
+      operator==(const month& __x, const month& __y) noexcept
+      { return unsigned{__x} == unsigned{__y}; }
+
+      friend constexpr strong_ordering
+      operator<=>(const month& __x, const month& __y) noexcept
+      { return unsigned{__x} <=> unsigned{__y}; }
+
+      friend constexpr month
+      operator+(const month& __x, const months& __y) noexcept
+      {
+
+
+ return month{1 + __detail::__add_modulo<12>(
+   unsigned{__x} + 11, __y.count())};
+      }
+
+      friend constexpr month
+      operator+(const months& __x, const month& __y) noexcept
+      { return __y + __x; }
+
+      friend constexpr month
+      operator-(const month& __x, const months& __y) noexcept
+      {
+
+
+ return month{1 + __detail::__sub_modulo<12>(
+   unsigned{__x} + 11, __y.count())};
+      }
+
+      friend constexpr months
+      operator-(const month& __x, const month& __y) noexcept
+      {
+ const auto __dm = int(unsigned(__x)) - int(unsigned(__y));
+ return months{__dm < 0 ? 12 + __dm : __dm};
+      }
+
+      friend constexpr year_month
+      operator/(const year& __y, const month& __m) noexcept;
+
+      friend constexpr month_day
+      operator/(const month& __m, int __d) noexcept;
+
+      friend constexpr month_day_last
+      operator/(const month& __m, last_spec) noexcept;
+
+      friend constexpr month_day_last
+      operator/(last_spec, const month& __m) noexcept;
+
+      friend constexpr month_weekday
+      operator/(const month& __m, const weekday_indexed& __wdi) noexcept;
+
+      friend constexpr month_weekday
+      operator/(const weekday_indexed& __wdi, const month& __m) noexcept;
+
+      friend constexpr month_weekday_last
+      operator/(const month& __m, const weekday_last& __wdl) noexcept;
+
+      friend constexpr month_weekday_last
+      operator/(const weekday_last& __wdl, const month& __m) noexcept;
+    };
+
+    inline constexpr month January{1};
+    inline constexpr month February{2};
+    inline constexpr month March{3};
+    inline constexpr month April{4};
+    inline constexpr month May{5};
+    inline constexpr month June{6};
+    inline constexpr month July{7};
+    inline constexpr month August{8};
+    inline constexpr month September{9};
+    inline constexpr month October{10};
+    inline constexpr month November{11};
+    inline constexpr month December{12};
+
+
+
+    class year
+    {
+    private:
+      short _M_y;
+
+    public:
+      year() = default;
+
+      explicit constexpr
+      year(int __y) noexcept
+      : _M_y{static_cast<short>(__y)}
+      { }
+
+      static constexpr year
+      min() noexcept
+      { return year{-32767}; }
+
+      static constexpr year
+      max() noexcept
+      { return year{32767}; }
+
+      constexpr year&
+      operator++() noexcept
+      {
+ ++_M_y;
+ return *this;
+      }
+
+      constexpr year
+      operator++(int) noexcept
+      {
+ auto __ret = *this;
+ ++(*this);
+ return __ret;
+      }
+
+      constexpr year&
+      operator--() noexcept
+      {
+ --_M_y;
+ return *this;
+      }
+
+      constexpr year
+      operator--(int) noexcept
+      {
+ auto __ret = *this;
+ --(*this);
+ return __ret;
+      }
+
+      constexpr year&
+      operator+=(const years& __y) noexcept
+      {
+ *this = *this + __y;
+ return *this;
+      }
+
+      constexpr year&
+      operator-=(const years& __y) noexcept
+      {
+ *this = *this - __y;
+ return *this;
+      }
+
+      constexpr year
+      operator+() const noexcept
+      { return *this; }
+
+      constexpr year
+      operator-() const noexcept
+      { return year{-_M_y}; }
+
+      constexpr bool
+      is_leap() const noexcept
+      {
+# 900 "/usr/include/c++/14/chrono" 3
+ return (_M_y & (_M_y % 25 == 0 ? 15 : 3)) == 0;
+      }
+
+      explicit constexpr
+      operator int() const noexcept
+      { return _M_y; }
+
+      constexpr bool
+      ok() const noexcept
+      { return min()._M_y <= _M_y && _M_y <= max()._M_y; }
+
+      friend constexpr bool
+      operator==(const year& __x, const year& __y) noexcept
+      { return int{__x} == int{__y}; }
+
+      friend constexpr strong_ordering
+      operator<=>(const year& __x, const year& __y) noexcept
+      { return int{__x} <=> int{__y}; }
+
+      friend constexpr year
+      operator+(const year& __x, const years& __y) noexcept
+      { return year{int{__x} + static_cast<int>(__y.count())}; }
+
+      friend constexpr year
+      operator+(const years& __x, const year& __y) noexcept
+      { return __y + __x; }
+
+      friend constexpr year
+      operator-(const year& __x, const years& __y) noexcept
+      { return __x + -__y; }
+
+      friend constexpr years
+      operator-(const year& __x, const year& __y) noexcept
+      { return years{int{__x} - int{__y}}; }
+
+      friend constexpr year_month
+      operator/(const year& __y, int __m) noexcept;
+
+      friend constexpr year_month_day
+      operator/(const year& __y, const month_day& __md) noexcept;
+
+      friend constexpr year_month_day
+      operator/(const month_day& __md, const year& __y) noexcept;
+
+      friend constexpr year_month_day_last
+      operator/(const year& __y, const month_day_last& __mdl) noexcept;
+
+      friend constexpr year_month_day_last
+      operator/(const month_day_last& __mdl, const year& __y) noexcept;
+
+      friend constexpr year_month_weekday
+      operator/(const year& __y, const month_weekday& __mwd) noexcept;
+
+      friend constexpr year_month_weekday
+      operator/(const month_weekday& __mwd, const year& __y) noexcept;
+
+      friend constexpr year_month_weekday_last
+      operator/(const year& __y, const month_weekday_last& __mwdl) noexcept;
+
+      friend constexpr year_month_weekday_last
+      operator/(const month_weekday_last& __mwdl, const year& __y) noexcept;
+    };
+
+
+
+    class weekday
+    {
+    private:
+      unsigned char _M_wd;
+
+      static constexpr weekday
+      _S_from_days(const days& __d)
+      {
+ return weekday{__detail::__add_modulo<7>(4, __d.count())};
+      }
+
+    public:
+      weekday() = default;
+
+      explicit constexpr
+      weekday(unsigned __wd) noexcept
+      : _M_wd(__wd == 7 ? 0 : __wd)
+      { }
+
+      constexpr
+      weekday(const sys_days& __dp) noexcept
+      : weekday{_S_from_days(__dp.time_since_epoch())}
+      { }
+
+      explicit constexpr
+      weekday(const local_days& __dp) noexcept
+      : weekday{sys_days{__dp.time_since_epoch()}}
+      { }
+
+      constexpr weekday&
+      operator++() noexcept
+      {
+ *this += days{1};
+ return *this;
+      }
+
+      constexpr weekday
+      operator++(int) noexcept
+      {
+ auto __ret = *this;
+ ++(*this);
+ return __ret;
+      }
+
+      constexpr weekday&
+      operator--() noexcept
+      {
+ *this -= days{1};
+ return *this;
+      }
+
+      constexpr weekday
+      operator--(int) noexcept
+      {
+ auto __ret = *this;
+ --(*this);
+ return __ret;
+      }
+
+      constexpr weekday&
+      operator+=(const days& __d) noexcept
+      {
+ *this = *this + __d;
+ return *this;
+      }
+
+      constexpr weekday&
+      operator-=(const days& __d) noexcept
+      {
+ *this = *this - __d;
+ return *this;
+      }
+
+      constexpr unsigned
+      c_encoding() const noexcept
+      { return _M_wd; }
+
+      constexpr unsigned
+      iso_encoding() const noexcept
+      { return _M_wd == 0u ? 7u : _M_wd; }
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_wd <= 6; }
+
+      constexpr weekday_indexed
+      operator[](unsigned __index) const noexcept;
+
+      constexpr weekday_last
+      operator[](last_spec) const noexcept;
+
+      friend constexpr bool
+      operator==(const weekday& __x, const weekday& __y) noexcept
+      { return __x._M_wd == __y._M_wd; }
+
+      friend constexpr weekday
+      operator+(const weekday& __x, const days& __y) noexcept
+      {
+ return weekday{__detail::__add_modulo<7>(__x._M_wd, __y.count())};
+      }
+
+      friend constexpr weekday
+      operator+(const days& __x, const weekday& __y) noexcept
+      { return __y + __x; }
+
+      friend constexpr weekday
+      operator-(const weekday& __x, const days& __y) noexcept
+      {
+ return weekday{__detail::__sub_modulo<7>(__x._M_wd, __y.count())};
+      }
+
+      friend constexpr days
+      operator-(const weekday& __x, const weekday& __y) noexcept
+      {
+ const auto __n = __x.c_encoding() - __y.c_encoding();
+ return static_cast<int>(__n) >= 0 ? days{__n} : days{__n + 7};
+      }
+    };
+
+    inline constexpr weekday Sunday{0};
+    inline constexpr weekday Monday{1};
+    inline constexpr weekday Tuesday{2};
+    inline constexpr weekday Wednesday{3};
+    inline constexpr weekday Thursday{4};
+    inline constexpr weekday Friday{5};
+    inline constexpr weekday Saturday{6};
+
+
+
+    class weekday_indexed
+    {
+    private:
+      chrono::weekday _M_wd;
+      unsigned char _M_index;
+
+    public:
+      weekday_indexed() = default;
+
+      constexpr
+      weekday_indexed(const chrono::weekday& __wd, unsigned __index) noexcept
+      : _M_wd(__wd), _M_index(__index)
+      { }
+
+      constexpr chrono::weekday
+      weekday() const noexcept
+      { return _M_wd; }
+
+      constexpr unsigned
+      index() const noexcept
+      { return _M_index; };
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_wd.ok() && 1 <= _M_index && _M_index <= 5; }
+
+      friend constexpr bool
+      operator==(const weekday_indexed& __x, const weekday_indexed& __y) noexcept
+      { return __x.weekday() == __y.weekday() && __x.index() == __y.index(); }
+
+      friend constexpr month_weekday
+      operator/(const month& __m, const weekday_indexed& __wdi) noexcept;
+
+      friend constexpr month_weekday
+      operator/(int __m, const weekday_indexed& __wdi) noexcept;
+
+      friend constexpr month_weekday
+      operator/(const weekday_indexed& __wdi, const month& __m) noexcept;
+
+      friend constexpr month_weekday
+      operator/(const weekday_indexed& __wdi, int __m) noexcept;
+
+      friend constexpr year_month_weekday
+      operator/(const year_month& __ym, const weekday_indexed& __wdi) noexcept;
+    };
+
+    constexpr weekday_indexed
+    weekday::operator[](unsigned __index) const noexcept
+    { return {*this, __index}; }
+
+
+
+    class weekday_last
+    {
+    private:
+      chrono::weekday _M_wd;
+
+    public:
+      explicit constexpr
+      weekday_last(const chrono::weekday& __wd) noexcept
+      : _M_wd{__wd}
+      { }
+
+      constexpr chrono::weekday
+      weekday() const noexcept
+      { return _M_wd; }
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_wd.ok(); }
+
+      friend constexpr bool
+      operator==(const weekday_last& __x, const weekday_last& __y) noexcept
+      { return __x.weekday() == __y.weekday(); }
+
+      friend constexpr month_weekday_last
+      operator/(int __m, const weekday_last& __wdl) noexcept;
+
+      friend constexpr month_weekday_last
+      operator/(const weekday_last& __wdl, int __m) noexcept;
+
+      friend constexpr year_month_weekday_last
+      operator/(const year_month& __ym, const weekday_last& __wdl) noexcept;
+    };
+
+    constexpr weekday_last
+    weekday::operator[](last_spec) const noexcept
+    { return weekday_last{*this}; }
+
+
+
+    class month_day
+    {
+    private:
+      chrono::month _M_m;
+      chrono::day _M_d;
+
+    public:
+      month_day() = default;
+
+      constexpr
+      month_day(const chrono::month& __m, const chrono::day& __d) noexcept
+      : _M_m{__m}, _M_d{__d}
+      { }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_m; }
+
+      constexpr chrono::day
+      day() const noexcept
+      { return _M_d; }
+
+      constexpr bool
+      ok() const noexcept
+      {
+ return _M_m.ok()
+   && 1u <= unsigned(_M_d)
+   && unsigned(_M_d) <= __detail::__days_per_month[unsigned(_M_m) - 1];
+      }
+
+      friend constexpr bool
+      operator==(const month_day& __x, const month_day& __y) noexcept
+      { return __x.month() == __y.month() && __x.day() == __y.day(); }
+
+      friend constexpr strong_ordering
+      operator<=>(const month_day& __x, const month_day& __y) noexcept
+ = default;
+
+      friend constexpr month_day
+      operator/(const chrono::month& __m, const chrono::day& __d) noexcept
+      { return {__m, __d}; }
+
+      friend constexpr month_day
+      operator/(const chrono::month& __m, int __d) noexcept
+      { return {__m, chrono::day(unsigned(__d))}; }
+
+      friend constexpr month_day
+      operator/(int __m, const chrono::day& __d) noexcept
+      { return {chrono::month(unsigned(__m)), __d}; }
+
+      friend constexpr month_day
+      operator/(const chrono::day& __d, const chrono::month& __m) noexcept
+      { return {__m, __d}; }
+
+      friend constexpr month_day
+      operator/(const chrono::day& __d, int __m) noexcept
+      { return {chrono::month(unsigned(__m)), __d}; }
+
+      friend constexpr year_month_day
+      operator/(int __y, const month_day& __md) noexcept;
+
+      friend constexpr year_month_day
+      operator/(const month_day& __md, int __y) noexcept;
+    };
+
+
+
+    class month_day_last
+    {
+    private:
+      chrono::month _M_m;
+
+    public:
+      explicit constexpr
+      month_day_last(const chrono::month& __m) noexcept
+      : _M_m{__m}
+      { }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_m; }
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_m.ok(); }
+
+      friend constexpr bool
+      operator==(const month_day_last& __x, const month_day_last& __y) noexcept
+      { return __x.month() == __y.month(); }
+
+      friend constexpr strong_ordering
+      operator<=>(const month_day_last& __x, const month_day_last& __y) noexcept
+ = default;
+
+      friend constexpr month_day_last
+      operator/(const chrono::month& __m, last_spec) noexcept
+      { return month_day_last{__m}; }
+
+      friend constexpr month_day_last
+      operator/(int __m, last_spec) noexcept
+      { return chrono::month(unsigned(__m)) / last; }
+
+      friend constexpr month_day_last
+      operator/(last_spec, const chrono::month& __m) noexcept
+      { return __m / last; }
+
+      friend constexpr month_day_last
+      operator/(last_spec, int __m) noexcept
+      { return __m / last; }
+
+      friend constexpr year_month_day_last
+      operator/(int __y, const month_day_last& __mdl) noexcept;
+
+      friend constexpr year_month_day_last
+      operator/(const month_day_last& __mdl, int __y) noexcept;
+    };
+
+
+
+    class month_weekday
+    {
+    private:
+      chrono::month _M_m;
+      chrono::weekday_indexed _M_wdi;
+
+    public:
+      constexpr
+      month_weekday(const chrono::month& __m,
+      const chrono::weekday_indexed& __wdi) noexcept
+      : _M_m{__m}, _M_wdi{__wdi}
+      { }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_m; }
+
+      constexpr chrono::weekday_indexed
+      weekday_indexed() const noexcept
+      { return _M_wdi; }
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_m.ok() && _M_wdi.ok(); }
+
+      friend constexpr bool
+      operator==(const month_weekday& __x, const month_weekday& __y) noexcept
+      {
+ return __x.month() == __y.month()
+   && __x.weekday_indexed() == __y.weekday_indexed();
+      }
+
+      friend constexpr month_weekday
+      operator/(const chrono::month& __m,
+  const chrono::weekday_indexed& __wdi) noexcept
+      { return {__m, __wdi}; }
+
+      friend constexpr month_weekday
+      operator/(int __m, const chrono::weekday_indexed& __wdi) noexcept
+      { return chrono::month(unsigned(__m)) / __wdi; }
+
+      friend constexpr month_weekday
+      operator/(const chrono::weekday_indexed& __wdi,
+  const chrono::month& __m) noexcept
+      { return __m / __wdi; }
+
+      friend constexpr month_weekday
+      operator/(const chrono::weekday_indexed& __wdi, int __m) noexcept
+      { return __m / __wdi; }
+
+      friend constexpr year_month_weekday
+      operator/(int __y, const month_weekday& __mwd) noexcept;
+
+      friend constexpr year_month_weekday
+      operator/(const month_weekday& __mwd, int __y) noexcept;
+    };
+
+
+
+    class month_weekday_last
+    {
+    private:
+      chrono::month _M_m;
+      chrono::weekday_last _M_wdl;
+
+    public:
+      constexpr
+      month_weekday_last(const chrono::month& __m,
+    const chrono::weekday_last& __wdl) noexcept
+      :_M_m{__m}, _M_wdl{__wdl}
+      { }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_m; }
+
+      constexpr chrono::weekday_last
+      weekday_last() const noexcept
+      { return _M_wdl; }
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_m.ok() && _M_wdl.ok(); }
+
+      friend constexpr bool
+      operator==(const month_weekday_last& __x,
+   const month_weekday_last& __y) noexcept
+      {
+ return __x.month() == __y.month()
+   && __x.weekday_last() == __y.weekday_last();
+      }
+
+      friend constexpr month_weekday_last
+      operator/(const chrono::month& __m,
+  const chrono::weekday_last& __wdl) noexcept
+      { return {__m, __wdl}; }
+
+      friend constexpr month_weekday_last
+      operator/(int __m, const chrono::weekday_last& __wdl) noexcept
+      { return chrono::month(unsigned(__m)) / __wdl; }
+
+      friend constexpr month_weekday_last
+      operator/(const chrono::weekday_last& __wdl,
+  const chrono::month& __m) noexcept
+      { return __m / __wdl; }
+
+      friend constexpr month_weekday_last
+      operator/(const chrono::weekday_last& __wdl, int __m) noexcept
+      { return chrono::month(unsigned(__m)) / __wdl; }
+
+      friend constexpr year_month_weekday_last
+      operator/(int __y, const month_weekday_last& __mwdl) noexcept;
+
+      friend constexpr year_month_weekday_last
+      operator/(const month_weekday_last& __mwdl, int __y) noexcept;
+    };
+
+
+
+    namespace __detail
+    {
+# 1437 "/usr/include/c++/14/chrono" 3
+      using __months_years_conversion_disambiguator = void;
+    }
+
+    class year_month
+    {
+    private:
+      chrono::year _M_y;
+      chrono::month _M_m;
+
+    public:
+      year_month() = default;
+
+      constexpr
+      year_month(const chrono::year& __y, const chrono::month& __m) noexcept
+      : _M_y{__y}, _M_m{__m}
+      { }
+
+      constexpr chrono::year
+      year() const noexcept
+      { return _M_y; }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_m; }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month&
+ operator+=(const months& __dm) noexcept
+ {
+   *this = *this + __dm;
+   return *this;
+ }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month&
+ operator-=(const months& __dm) noexcept
+ {
+   *this = *this - __dm;
+   return *this;
+ }
+
+      constexpr year_month&
+      operator+=(const years& __dy) noexcept
+      {
+ *this = *this + __dy;
+ return *this;
+      }
+
+      constexpr year_month&
+      operator-=(const years& __dy) noexcept
+      {
+ *this = *this - __dy;
+ return *this;
+      }
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_y.ok() && _M_m.ok(); }
+
+      friend constexpr bool
+      operator==(const year_month& __x, const year_month& __y) noexcept
+      { return __x.year() == __y.year() && __x.month() == __y.month(); }
+
+      friend constexpr strong_ordering
+      operator<=>(const year_month& __x, const year_month& __y) noexcept
+ = default;
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month
+ operator+(const year_month& __ym, const months& __dm) noexcept
+ {
+
+   auto __m = __ym.month() + __dm;
+   auto __i = int(unsigned(__ym.month())) - 1 + __dm.count();
+   auto __y = (__i < 0
+        ? __ym.year() + years{(__i - 11) / 12}
+        : __ym.year() + years{__i / 12});
+   return __y / __m;
+ }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month
+ operator+(const months& __dm, const year_month& __ym) noexcept
+ { return __ym + __dm; }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month
+ operator-(const year_month& __ym, const months& __dm) noexcept
+ { return __ym + -__dm; }
+
+      friend constexpr months
+      operator-(const year_month& __x, const year_month& __y) noexcept
+      {
+ return (__x.year() - __y.year()
+  + months{static_cast<int>(unsigned{__x.month()})
+    - static_cast<int>(unsigned{__y.month()})});
+      }
+
+      friend constexpr year_month
+      operator+(const year_month& __ym, const years& __dy) noexcept
+      { return (__ym.year() + __dy) / __ym.month(); }
+
+      friend constexpr year_month
+      operator+(const years& __dy, const year_month& __ym) noexcept
+      { return __ym + __dy; }
+
+      friend constexpr year_month
+      operator-(const year_month& __ym, const years& __dy) noexcept
+      { return __ym + -__dy; }
+
+      friend constexpr year_month
+      operator/(const chrono::year& __y, const chrono::month& __m) noexcept
+      { return {__y, __m}; }
+
+      friend constexpr year_month
+      operator/(const chrono::year& __y, int __m) noexcept
+      { return {__y, chrono::month(unsigned(__m))}; }
+
+      friend constexpr year_month_day
+      operator/(const year_month& __ym, int __d) noexcept;
+
+      friend constexpr year_month_day_last
+      operator/(const year_month& __ym, last_spec) noexcept;
+    };
+
+
+
+    class year_month_day
+    {
+    private:
+      chrono::year _M_y;
+      chrono::month _M_m;
+      chrono::day _M_d;
+
+      static constexpr year_month_day _S_from_days(const days& __dp) noexcept;
+
+      constexpr days _M_days_since_epoch() const noexcept;
+
+    public:
+      year_month_day() = default;
+
+      constexpr
+      year_month_day(const chrono::year& __y, const chrono::month& __m,
+       const chrono::day& __d) noexcept
+      : _M_y{__y}, _M_m{__m}, _M_d{__d}
+      { }
+
+      constexpr
+      year_month_day(const year_month_day_last& __ymdl) noexcept;
+
+      constexpr
+      year_month_day(const sys_days& __dp) noexcept
+      : year_month_day(_S_from_days(__dp.time_since_epoch()))
+      { }
+
+      explicit constexpr
+      year_month_day(const local_days& __dp) noexcept
+      : year_month_day(sys_days{__dp.time_since_epoch()})
+      { }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month_day&
+ operator+=(const months& __m) noexcept
+ {
+   *this = *this + __m;
+   return *this;
+ }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month_day&
+ operator-=(const months& __m) noexcept
+ {
+   *this = *this - __m;
+   return *this;
+ }
+
+      constexpr year_month_day&
+      operator+=(const years& __y) noexcept
+      {
+ *this = *this + __y;
+ return *this;
+      }
+
+      constexpr year_month_day&
+      operator-=(const years& __y) noexcept
+      {
+ *this = *this - __y;
+ return *this;
+      }
+
+      constexpr chrono::year
+      year() const noexcept
+      { return _M_y; }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_m; }
+
+      constexpr chrono::day
+      day() const noexcept
+      { return _M_d; }
+
+      constexpr
+      operator sys_days() const noexcept
+      { return sys_days{_M_days_since_epoch()}; }
+
+      explicit constexpr
+      operator local_days() const noexcept
+      { return local_days{sys_days{*this}.time_since_epoch()}; }
+
+      constexpr bool ok() const noexcept;
+
+      friend constexpr bool
+      operator==(const year_month_day& __x, const year_month_day& __y) noexcept
+      {
+ return __x.year() == __y.year()
+   && __x.month() == __y.month()
+   && __x.day() == __y.day();
+      }
+
+      friend constexpr strong_ordering
+      operator<=>(const year_month_day& __x, const year_month_day& __y) noexcept
+ = default;
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_day
+ operator+(const year_month_day& __ymd, const months& __dm) noexcept
+ { return (__ymd.year() / __ymd.month() + __dm) / __ymd.day(); }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_day
+ operator+(const months& __dm, const year_month_day& __ymd) noexcept
+ { return __ymd + __dm; }
+
+      friend constexpr year_month_day
+      operator+(const year_month_day& __ymd, const years& __dy) noexcept
+      { return (__ymd.year() + __dy) / __ymd.month() / __ymd.day(); }
+
+      friend constexpr year_month_day
+      operator+(const years& __dy, const year_month_day& __ymd) noexcept
+      { return __ymd + __dy; }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_day
+ operator-(const year_month_day& __ymd, const months& __dm) noexcept
+ { return __ymd + -__dm; }
+
+      friend constexpr year_month_day
+      operator-(const year_month_day& __ymd, const years& __dy) noexcept
+      { return __ymd + -__dy; }
+
+      friend constexpr year_month_day
+      operator/(const year_month& __ym, const chrono::day& __d) noexcept
+      { return {__ym.year(), __ym.month(), __d}; }
+
+      friend constexpr year_month_day
+      operator/(const year_month& __ym, int __d) noexcept
+      { return __ym / chrono::day{unsigned(__d)}; }
+
+      friend constexpr year_month_day
+      operator/(const chrono::year& __y, const month_day& __md) noexcept
+      { return __y / __md.month() / __md.day(); }
+
+      friend constexpr year_month_day
+      operator/(int __y, const month_day& __md) noexcept
+      { return chrono::year{__y} / __md; }
+
+      friend constexpr year_month_day
+      operator/(const month_day& __md, const chrono::year& __y) noexcept
+      { return __y / __md; }
+
+      friend constexpr year_month_day
+      operator/(const month_day& __md, int __y) noexcept
+      { return chrono::year(__y) / __md; }
+    };
+
+
+
+
+
+    constexpr year_month_day
+    year_month_day::_S_from_days(const days& __dp) noexcept
+    {
+      constexpr auto __z2 = static_cast<uint32_t>(-1468000);
+      constexpr auto __r2_e3 = static_cast<uint32_t>(536895458);
+
+      const auto __r0 = static_cast<uint32_t>(__dp.count()) + __r2_e3;
+
+      const auto __n1 = 4 * __r0 + 3;
+      const auto __q1 = __n1 / 146097;
+      const auto __r1 = __n1 % 146097 / 4;
+
+      constexpr auto __p32 = static_cast<uint64_t>(1) << 32;
+      const auto __n2 = 4 * __r1 + 3;
+      const auto __u2 = static_cast<uint64_t>(2939745) * __n2;
+      const auto __q2 = static_cast<uint32_t>(__u2 / __p32);
+      const auto __r2 = static_cast<uint32_t>(__u2 % __p32) / 2939745 / 4;
+
+      constexpr auto __p16 = static_cast<uint32_t>(1) << 16;
+      const auto __n3 = 2141 * __r2 + 197913;
+      const auto __q3 = __n3 / __p16;
+      const auto __r3 = __n3 % __p16 / 2141;
+
+      const auto __y0 = 100 * __q1 + __q2;
+      const auto __m0 = __q3;
+      const auto __d0 = __r3;
+
+      const auto __j = __r2 >= 306;
+      const auto __y1 = __y0 + __j;
+      const auto __m1 = __j ? __m0 - 12 : __m0;
+      const auto __d1 = __d0 + 1;
+
+      return year_month_day{chrono::year{static_cast<int>(__y1 + __z2)},
+       chrono::month{__m1}, chrono::day{__d1}};
+    }
+
+
+
+
+
+    constexpr days
+    year_month_day::_M_days_since_epoch() const noexcept
+    {
+      auto constexpr __z2 = static_cast<uint32_t>(-1468000);
+      auto constexpr __r2_e3 = static_cast<uint32_t>(536895458);
+
+      const auto __y1 = static_cast<uint32_t>(static_cast<int>(_M_y)) - __z2;
+      const auto __m1 = static_cast<uint32_t>(static_cast<unsigned>(_M_m));
+      const auto __d1 = static_cast<uint32_t>(static_cast<unsigned>(_M_d));
+
+      const auto __j = static_cast<uint32_t>(__m1 < 3);
+      const auto __y0 = __y1 - __j;
+      const auto __m0 = __j ? __m1 + 12 : __m1;
+      const auto __d0 = __d1 - 1;
+
+      const auto __q1 = __y0 / 100;
+      const auto __yc = 1461 * __y0 / 4 - __q1 + __q1 / 4;
+      const auto __mc = (979 *__m0 - 2919) / 32;
+      const auto __dc = __d0;
+
+      return days{static_cast<int32_t>(__yc + __mc + __dc - __r2_e3)};
+    }
+
+
+
+    class year_month_day_last
+    {
+    private:
+      chrono::year _M_y;
+      chrono::month_day_last _M_mdl;
+
+    public:
+      constexpr
+      year_month_day_last(const chrono::year& __y,
+     const chrono::month_day_last& __mdl) noexcept
+      : _M_y{__y}, _M_mdl{__mdl}
+      { }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month_day_last&
+ operator+=(const months& __m) noexcept
+ {
+   *this = *this + __m;
+   return *this;
+ }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month_day_last&
+ operator-=(const months& __m) noexcept
+ {
+   *this = *this - __m;
+   return *this;
+ }
+
+      constexpr year_month_day_last&
+      operator+=(const years& __y) noexcept
+      {
+ *this = *this + __y;
+ return *this;
+      }
+
+      constexpr year_month_day_last&
+      operator-=(const years& __y) noexcept
+      {
+ *this = *this - __y;
+ return *this;
+      }
+
+      constexpr chrono::year
+      year() const noexcept
+      { return _M_y; }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_mdl.month(); }
+
+      constexpr chrono::month_day_last
+      month_day_last() const noexcept
+      { return _M_mdl; }
+
+
+      constexpr chrono::day
+      day() const noexcept
+      {
+ const auto __m = static_cast<unsigned>(month());
+# 1861 "/usr/include/c++/14/chrono" 3
+ return chrono::day{__m != 2 ? (__m ^ (__m >> 3)) | 30
+   : _M_y.is_leap() ? 29 : 28};
+      }
+
+      constexpr
+      operator sys_days() const noexcept
+      { return sys_days{year() / month() / day()}; }
+
+      explicit constexpr
+      operator local_days() const noexcept
+      { return local_days{sys_days{*this}.time_since_epoch()}; }
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_y.ok() && _M_mdl.ok(); }
+
+      friend constexpr bool
+      operator==(const year_month_day_last& __x,
+   const year_month_day_last& __y) noexcept
+      {
+ return __x.year() == __y.year()
+   && __x.month_day_last() == __y.month_day_last();
+      }
+
+      friend constexpr strong_ordering
+      operator<=>(const year_month_day_last& __x,
+    const year_month_day_last& __y) noexcept
+ = default;
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_day_last
+ operator+(const year_month_day_last& __ymdl,
+    const months& __dm) noexcept
+ { return (__ymdl.year() / __ymdl.month() + __dm) / last; }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_day_last
+ operator+(const months& __dm,
+    const year_month_day_last& __ymdl) noexcept
+ { return __ymdl + __dm; }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_day_last
+ operator-(const year_month_day_last& __ymdl,
+    const months& __dm) noexcept
+ { return __ymdl + -__dm; }
+
+      friend constexpr year_month_day_last
+      operator+(const year_month_day_last& __ymdl,
+  const years& __dy) noexcept
+      { return {__ymdl.year() + __dy, __ymdl.month_day_last()}; }
+
+      friend constexpr year_month_day_last
+      operator+(const years& __dy,
+  const year_month_day_last& __ymdl) noexcept
+      { return __ymdl + __dy; }
+
+      friend constexpr year_month_day_last
+      operator-(const year_month_day_last& __ymdl,
+  const years& __dy) noexcept
+      { return __ymdl + -__dy; }
+
+      friend constexpr year_month_day_last
+      operator/(const year_month& __ym, last_spec) noexcept
+      { return {__ym.year(), chrono::month_day_last{__ym.month()}}; }
+
+      friend constexpr year_month_day_last
+      operator/(const chrono::year& __y,
+  const chrono::month_day_last& __mdl) noexcept
+      { return {__y, __mdl}; }
+
+      friend constexpr year_month_day_last
+      operator/(int __y, const chrono::month_day_last& __mdl) noexcept
+      { return chrono::year(__y) / __mdl; }
+
+      friend constexpr year_month_day_last
+      operator/(const chrono::month_day_last& __mdl,
+  const chrono::year& __y) noexcept
+      { return __y / __mdl; }
+
+      friend constexpr year_month_day_last
+      operator/(const chrono::month_day_last& __mdl, int __y) noexcept
+      { return chrono::year(__y) / __mdl; }
+    };
+
+
+    constexpr
+    year_month_day::year_month_day(const year_month_day_last& __ymdl) noexcept
+    : _M_y{__ymdl.year()}, _M_m{__ymdl.month()}, _M_d{__ymdl.day()}
+    { }
+
+    constexpr bool
+    year_month_day::ok() const noexcept
+    {
+      if (!_M_y.ok() || !_M_m.ok())
+ return false;
+      return chrono::day{1} <= _M_d && _M_d <= (_M_y / _M_m / last).day();
+    }
+
+
+
+    class year_month_weekday
+    {
+    private:
+      chrono::year _M_y;
+      chrono::month _M_m;
+      chrono::weekday_indexed _M_wdi;
+
+      static constexpr year_month_weekday
+      _S_from_sys_days(const sys_days& __dp)
+      {
+ year_month_day __ymd{__dp};
+ chrono::weekday __wd{__dp};
+ auto __index = __wd[(unsigned{__ymd.day()} - 1) / 7 + 1];
+ return {__ymd.year(), __ymd.month(), __index};
+      }
+
+    public:
+      year_month_weekday() = default;
+
+      constexpr
+      year_month_weekday(const chrono::year& __y, const chrono::month& __m,
+    const chrono::weekday_indexed& __wdi) noexcept
+      : _M_y{__y}, _M_m{__m}, _M_wdi{__wdi}
+      { }
+
+      constexpr
+      year_month_weekday(const sys_days& __dp) noexcept
+      : year_month_weekday{_S_from_sys_days(__dp)}
+      { }
+
+      explicit constexpr
+      year_month_weekday(const local_days& __dp) noexcept
+      : year_month_weekday{sys_days{__dp.time_since_epoch()}}
+      { }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month_weekday&
+ operator+=(const months& __m) noexcept
+ {
+   *this = *this + __m;
+   return *this;
+ }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month_weekday&
+ operator-=(const months& __m) noexcept
+ {
+   *this = *this - __m;
+   return *this;
+ }
+
+      constexpr year_month_weekday&
+      operator+=(const years& __y) noexcept
+      {
+ *this = *this + __y;
+ return *this;
+      }
+
+      constexpr year_month_weekday&
+      operator-=(const years& __y) noexcept
+      {
+ *this = *this - __y;
+ return *this;
+      }
+
+      constexpr chrono::year
+      year() const noexcept
+      { return _M_y; }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_m; }
+
+      constexpr chrono::weekday
+      weekday() const noexcept
+      { return _M_wdi.weekday(); }
+
+      constexpr unsigned
+      index() const noexcept
+      { return _M_wdi.index(); }
+
+      constexpr chrono::weekday_indexed
+      weekday_indexed() const noexcept
+      { return _M_wdi; }
+
+      constexpr
+      operator sys_days() const noexcept
+      {
+ auto __d = sys_days{year() / month() / 1};
+ return __d + (weekday() - chrono::weekday(__d)
+        + days{(static_cast<int>(index())-1)*7});
+      }
+
+      explicit constexpr
+      operator local_days() const noexcept
+      { return local_days{sys_days{*this}.time_since_epoch()}; }
+
+      constexpr bool
+      ok() const noexcept
+      {
+ if (!_M_y.ok() || !_M_m.ok() || !_M_wdi.ok())
+   return false;
+ if (_M_wdi.index() <= 4)
+   return true;
+ days __d = (_M_wdi.weekday()
+      - chrono::weekday{sys_days{_M_y / _M_m / 1}}
+      + days((_M_wdi.index()-1)*7 + 1));
+ do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(__d.count() >= 1), false)) std::__glibcxx_assert_fail(); } while (false);
+ return (unsigned)__d.count() <= (unsigned)(_M_y / _M_m / last).day();
+      }
+
+      friend constexpr bool
+      operator==(const year_month_weekday& __x,
+   const year_month_weekday& __y) noexcept
+      {
+ return __x.year() == __y.year()
+   && __x.month() == __y.month()
+   && __x.weekday_indexed() == __y.weekday_indexed();
+      }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_weekday
+ operator+(const year_month_weekday& __ymwd, const months& __dm) noexcept
+ {
+   return ((__ymwd.year() / __ymwd.month() + __dm)
+    / __ymwd.weekday_indexed());
+ }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_weekday
+ operator+(const months& __dm, const year_month_weekday& __ymwd) noexcept
+ { return __ymwd + __dm; }
+
+      friend constexpr year_month_weekday
+      operator+(const year_month_weekday& __ymwd, const years& __dy) noexcept
+      { return {__ymwd.year() + __dy, __ymwd.month(), __ymwd.weekday_indexed()}; }
+
+      friend constexpr year_month_weekday
+      operator+(const years& __dy, const year_month_weekday& __ymwd) noexcept
+      { return __ymwd + __dy; }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_weekday
+ operator-(const year_month_weekday& __ymwd, const months& __dm) noexcept
+ { return __ymwd + -__dm; }
+
+      friend constexpr year_month_weekday
+      operator-(const year_month_weekday& __ymwd, const years& __dy) noexcept
+      { return __ymwd + -__dy; }
+
+      friend constexpr year_month_weekday
+      operator/(const year_month& __ym,
+  const chrono::weekday_indexed& __wdi) noexcept
+      { return {__ym.year(), __ym.month(), __wdi}; }
+
+      friend constexpr year_month_weekday
+      operator/(const chrono::year& __y, const month_weekday& __mwd) noexcept
+      { return {__y, __mwd.month(), __mwd.weekday_indexed()}; }
+
+      friend constexpr year_month_weekday
+      operator/(int __y, const month_weekday& __mwd) noexcept
+      { return chrono::year(__y) / __mwd; }
+
+      friend constexpr year_month_weekday
+      operator/(const month_weekday& __mwd, const chrono::year& __y) noexcept
+      { return __y / __mwd; }
+
+      friend constexpr year_month_weekday
+      operator/(const month_weekday& __mwd, int __y) noexcept
+      { return chrono::year(__y) / __mwd; }
+    };
+
+
+
+    class year_month_weekday_last
+    {
+    private:
+      chrono::year _M_y;
+      chrono::month _M_m;
+      chrono::weekday_last _M_wdl;
+
+    public:
+      constexpr
+      year_month_weekday_last(const chrono::year& __y, const chrono::month& __m,
+         const chrono::weekday_last& __wdl) noexcept
+      : _M_y{__y}, _M_m{__m}, _M_wdl{__wdl}
+      { }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month_weekday_last&
+ operator+=(const months& __m) noexcept
+ {
+   *this = *this + __m;
+   return *this;
+ }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ constexpr year_month_weekday_last&
+ operator-=(const months& __m) noexcept
+ {
+   *this = *this - __m;
+   return *this;
+ }
+
+      constexpr year_month_weekday_last&
+      operator+=(const years& __y) noexcept
+      {
+ *this = *this + __y;
+ return *this;
+      }
+
+      constexpr year_month_weekday_last&
+      operator-=(const years& __y) noexcept
+      {
+ *this = *this - __y;
+ return *this;
+      }
+
+      constexpr chrono::year
+      year() const noexcept
+      { return _M_y; }
+
+      constexpr chrono::month
+      month() const noexcept
+      { return _M_m; }
+
+      constexpr chrono::weekday
+      weekday() const noexcept
+      { return _M_wdl.weekday(); }
+
+      constexpr chrono::weekday_last
+      weekday_last() const noexcept
+      { return _M_wdl; }
+
+      constexpr
+      operator sys_days() const noexcept
+      {
+ const auto __d = sys_days{_M_y / _M_m / last};
+ return sys_days{(__d - (chrono::weekday{__d}
+    - _M_wdl.weekday())).time_since_epoch()};
+      }
+
+      explicit constexpr
+      operator local_days() const noexcept
+      { return local_days{sys_days{*this}.time_since_epoch()}; }
+
+      constexpr bool
+      ok() const noexcept
+      { return _M_y.ok() && _M_m.ok() && _M_wdl.ok(); }
+
+      friend constexpr bool
+      operator==(const year_month_weekday_last& __x,
+   const year_month_weekday_last& __y) noexcept
+      {
+ return __x.year() == __y.year()
+   && __x.month() == __y.month()
+   && __x.weekday_last() == __y.weekday_last();
+      }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_weekday_last
+ operator+(const year_month_weekday_last& __ymwdl,
+    const months& __dm) noexcept
+ {
+   return ((__ymwdl.year() / __ymwdl.month() + __dm)
+    / __ymwdl.weekday_last());
+ }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_weekday_last
+ operator+(const months& __dm,
+    const year_month_weekday_last& __ymwdl) noexcept
+ { return __ymwdl + __dm; }
+
+      friend constexpr year_month_weekday_last
+      operator+(const year_month_weekday_last& __ymwdl,
+  const years& __dy) noexcept
+      { return {__ymwdl.year() + __dy, __ymwdl.month(), __ymwdl.weekday_last()}; }
+
+      friend constexpr year_month_weekday_last
+      operator+(const years& __dy,
+  const year_month_weekday_last& __ymwdl) noexcept
+      { return __ymwdl + __dy; }
+
+      template<typename = __detail::__months_years_conversion_disambiguator>
+ friend constexpr year_month_weekday_last
+ operator-(const year_month_weekday_last& __ymwdl,
+    const months& __dm) noexcept
+ { return __ymwdl + -__dm; }
+
+      friend constexpr year_month_weekday_last
+      operator-(const year_month_weekday_last& __ymwdl,
+  const years& __dy) noexcept
+      { return __ymwdl + -__dy; }
+
+      friend constexpr year_month_weekday_last
+      operator/(const year_month& __ym,
+  const chrono::weekday_last& __wdl) noexcept
+      { return {__ym.year(), __ym.month(), __wdl}; }
+
+      friend constexpr year_month_weekday_last
+      operator/(const chrono::year& __y,
+  const chrono::month_weekday_last& __mwdl) noexcept
+      { return {__y, __mwdl.month(), __mwdl.weekday_last()}; }
+
+      friend constexpr year_month_weekday_last
+      operator/(int __y, const chrono::month_weekday_last& __mwdl) noexcept
+      { return chrono::year(__y) / __mwdl; }
+
+      friend constexpr year_month_weekday_last
+      operator/(const chrono::month_weekday_last& __mwdl,
+  const chrono::year& __y) noexcept
+      { return __y / __mwdl; }
+
+      friend constexpr year_month_weekday_last
+      operator/(const chrono::month_weekday_last& __mwdl, int __y) noexcept
+      { return chrono::year(__y) / __mwdl; }
+    };
+
+
+
+
+    namespace __detail
+    {
+      consteval long long
+      __pow10(unsigned __n)
+      {
+ long long __r = 1;
+ while (__n-- > 0)
+   __r *= 10;
+ return __r;
+      }
+
+      template<typename _Duration> struct __utc_leap_second;
+    }
+# 2306 "/usr/include/c++/14/chrono" 3
+    template<typename _Duration>
+      class hh_mm_ss
+      {
+ static_assert( __is_duration<_Duration>::value );
+
+      private:
+ static consteval int
+ _S_fractional_width()
+ {
+   auto __den = _Duration::period::den;
+   const int __multiplicity_2 = std::__countr_zero((uintmax_t)__den);
+   __den >>= __multiplicity_2;
+   int __multiplicity_5 = 0;
+   while ((__den % 5) == 0)
+     {
+       ++__multiplicity_5;
+       __den /= 5;
+     }
+   if (__den != 1)
+     return 6;
+
+   int __width = (__multiplicity_2 > __multiplicity_5
+    ? __multiplicity_2 : __multiplicity_5);
+   if (__width > 18)
+     __width = 18;
+   return __width;
+ }
+
+ constexpr
+ hh_mm_ss(_Duration __d, bool __is_neg)
+ : _M_h (duration_cast<chrono::hours>(__d)),
+   _M_m (duration_cast<chrono::minutes>(__d - hours())),
+   _M_s (duration_cast<chrono::seconds>(__d - hours() - minutes())),
+   _M_is_neg(__is_neg)
+ {
+   auto __ss = __d - hours() - minutes() - seconds();
+   if constexpr (treat_as_floating_point_v<typename precision::rep>)
+     _M_ss._M_r = __ss.count();
+   else if constexpr (precision::period::den != 1)
+     _M_ss._M_r = duration_cast<precision>(__ss).count();
+ }
+
+ static constexpr _Duration
+ _S_abs(_Duration __d)
+ {
+   if constexpr (numeric_limits<typename _Duration::rep>::is_signed)
+     return chrono::abs(__d);
+   else
+     return __d;
+ }
+
+      public:
+ static constexpr unsigned fractional_width = {_S_fractional_width()};
+
+ using precision
+   = duration<common_type_t<typename _Duration::rep,
+       chrono::seconds::rep>,
+       ratio<1, __detail::__pow10(fractional_width)>>;
+
+ constexpr hh_mm_ss() noexcept = default;
+
+ constexpr explicit
+ hh_mm_ss(_Duration __d)
+ : hh_mm_ss(_S_abs(__d), __d < _Duration::zero())
+ { }
+
+ constexpr bool
+ is_negative() const noexcept
+ {
+   if constexpr (!_S_is_unsigned)
+     return _M_is_neg;
+   else
+     return false;
+ }
+
+ constexpr chrono::hours
+ hours() const noexcept
+ { return _M_h; }
+
+ constexpr chrono::minutes
+ minutes() const noexcept
+ { return _M_m; }
+
+ constexpr chrono::seconds
+ seconds() const noexcept
+ { return _M_s; }
+
+ constexpr precision
+ subseconds() const noexcept
+ { return static_cast<precision>(_M_ss); }
+
+ constexpr explicit
+ operator precision() const noexcept
+ { return to_duration(); }
+
+ constexpr precision
+ to_duration() const noexcept
+ {
+   if constexpr (!_S_is_unsigned)
+     if (_M_is_neg)
+       return -(_M_h + _M_m + _M_s + subseconds());
+   return _M_h + _M_m + _M_s + subseconds();
+ }
+
+      private:
+ static constexpr bool _S_is_unsigned
+   = __and_v<is_integral<typename _Duration::rep>,
+      is_unsigned<typename _Duration::rep>>;
+
+ template<typename _Ratio>
+   using __byte_duration = duration<unsigned char, _Ratio>;
+
+
+ template<typename _Dur>
+   struct __subseconds
+   {
+     typename _Dur::rep _M_r{};
+
+     constexpr explicit
+     operator _Dur() const noexcept
+     { return _Dur(_M_r); }
+   };
+
+
+ template<typename _Rep>
+   requires (!treat_as_floating_point_v<_Rep>)
+   struct __subseconds<duration<_Rep, ratio<1>>>
+   {
+     constexpr explicit
+     operator duration<_Rep, ratio<1>>() const noexcept
+     { return {}; }
+   };
+
+ template<typename _Rep, typename _Period>
+   requires (!treat_as_floating_point_v<_Rep>)
+     && ratio_less_v<_Period, ratio<1, 1>>
+     && ratio_greater_equal_v<_Period, ratio<1, 250>>
+   struct __subseconds<duration<_Rep, _Period>>
+   {
+     unsigned char _M_r{};
+
+     constexpr explicit
+     operator duration<_Rep, _Period>() const noexcept
+     { return duration<_Rep, _Period>(_M_r); }
+   };
+
+ template<typename _Rep, typename _Period>
+   requires (!treat_as_floating_point_v<_Rep>)
+     && ratio_less_v<_Period, ratio<1, 250>>
+     && ratio_greater_equal_v<_Period, ratio<1, 4000000000>>
+   struct __subseconds<duration<_Rep, _Period>>
+   {
+     uint_least32_t _M_r{};
+
+     constexpr explicit
+     operator duration<_Rep, _Period>() const noexcept
+     { return duration<_Rep, _Period>(_M_r); }
+   };
+
+ chrono::hours _M_h{};
+ __byte_duration<ratio<60>> _M_m{};
+ __byte_duration<ratio<1>> _M_s{};
+ bool _M_is_neg{};
+ __subseconds<precision> _M_ss{};
+
+ template<typename> friend struct __detail::__utc_leap_second;
+      };
+
+
+    namespace __detail
+    {
+
+      template<typename _Duration>
+ struct __utc_leap_second
+ {
+   explicit
+   __utc_leap_second(const sys_time<_Duration>& __s)
+   : _M_date(chrono::floor<days>(__s)), _M_time(__s - _M_date)
+   {
+     ++_M_time._M_s;
+   }
+
+   sys_days _M_date;
+   hh_mm_ss<common_type_t<_Duration, days>> _M_time;
+ };
+    }
+
+
+
+
+    constexpr bool
+    is_am(const hours& __h) noexcept
+    { return 0h <= __h && __h <= 11h; }
+
+    constexpr bool
+    is_pm(const hours& __h) noexcept
+    { return 12h <= __h && __h <= 23h; }
+
+    constexpr hours
+    make12(const hours& __h) noexcept
+    {
+      if (__h == 0h)
+ return 12h;
+      else if (__h > 12h)
+ return __h - 12h;
+      return __h;
+    }
+
+    constexpr hours
+    make24(const hours& __h, bool __is_pm) noexcept
+    {
+      if (!__is_pm)
+ {
+   if (__h == 12h)
+     return 0h;
+   else
+     return __h;
+ }
+      else
+ {
+   if (__h == 12h)
+     return __h;
+   else
+     return __h + 12h;
+ }
+    }
+
+
+
+
+    struct tzdb;
+
+    struct sys_info
+    {
+      sys_seconds begin;
+      sys_seconds end;
+      seconds offset;
+      minutes save;
+      string abbrev;
+    };
+
+    struct local_info
+    {
+      static constexpr int unique = 0;
+      static constexpr int nonexistent = 1;
+      static constexpr int ambiguous = 2;
+
+      int result;
+      sys_info first;
+      sys_info second;
+    };
+
+    class nonexistent_local_time : public runtime_error
+    {
+    public:
+      template<typename _Duration>
+ nonexistent_local_time(const local_time<_Duration>& __tp,
+          const local_info& __i)
+ : runtime_error(_S_make_what_str(__tp, __i))
+ { do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(__i.result == local_info::nonexistent), false)) std::__glibcxx_assert_fail(); } while (false); }
+
+    private:
+      template<typename _Duration>
+ static string
+ _S_make_what_str(const local_time<_Duration>& __tp,
+    const local_info& __i)
+ {
+   std::ostringstream __os;
+   __os << __tp << " is in a gap between\n"
+        << local_seconds(__i.first.end.time_since_epoch())
+        + __i.first.offset << ' ' << __i.first.abbrev << " and\n"
+        << local_seconds(__i.second.begin.time_since_epoch())
+        + __i.second.offset << ' ' << __i.second.abbrev
+        << " which are both equivalent to\n"
+        << __i.first.end << " UTC";
+   return std::move(__os).str();
+ }
+    };
+
+    class ambiguous_local_time : public runtime_error
+    {
+    public:
+      template<typename _Duration>
+ ambiguous_local_time(const local_time<_Duration>& __tp,
+        const local_info& __i)
+ : runtime_error(_S_make_what_str(__tp, __i))
+ { do { if (std::__is_constant_evaluated()) if (__builtin_expect(!bool(__i.result == local_info::ambiguous), false)) std::__glibcxx_assert_fail(); } while (false); }
+
+    private:
+      template<typename _Duration>
+ static string
+ _S_make_what_str(const local_time<_Duration>& __tp,
+    const local_info& __i)
+ {
+   std::ostringstream __os;
+   __os << __tp << " is ambiguous.  It could be\n"
+        << __tp << ' ' << __i.first.abbrev << " == "
+        << __tp - __i.first.offset << " UTC or\n"
+        << __tp << ' ' << __i.second.abbrev << " == "
+        << __tp - __i.second.offset << " UTC";
+   return std::move(__os).str();
+ }
+    };
+
+    template<typename _Duration>
+      [[noreturn]] void
+      __throw_bad_local_time(const local_time<_Duration>& __tp,
+        const local_info& __i)
+      {
+
+ if (__i.result == local_info::nonexistent)
+   throw nonexistent_local_time(__tp, __i);
+ throw ambiguous_local_time(__tp, __i);
+
+
+
+      }
+
+    enum class choose { earliest, latest };
+
+    class time_zone
+    {
+    public:
+      time_zone(time_zone&&) = default;
+      time_zone& operator=(time_zone&&) = default;
+
+      ~time_zone();
+
+      [[nodiscard]]
+      string_view name() const noexcept { return _M_name; }
+
+      template<typename _Duration>
+ sys_info
+ get_info(const sys_time<_Duration>& __st) const
+ { return _M_get_sys_info(chrono::floor<seconds>(__st)); }
+
+      template<typename _Duration>
+ local_info
+ get_info(const local_time<_Duration>& __tp) const
+ { return _M_get_local_info(chrono::floor<seconds>(__tp)); }
+
+      template<typename _Duration>
+ sys_time<common_type_t<_Duration, seconds>>
+ to_sys(const local_time<_Duration>& __tp) const
+ {
+   local_info __info = get_info(__tp);
+
+   if (__info.result != local_info::unique)
+     __throw_bad_local_time(__tp, __info);
+
+   return sys_time<_Duration>(__tp.time_since_epoch())
+     - __info.first.offset;
+ }
+
+      template<typename _Duration>
+ sys_time<common_type_t<_Duration, seconds>>
+ to_sys(const local_time<_Duration>& __tp, choose __z) const
+ {
+   local_info __info = get_info(__tp);
+
+   if (__info.result == local_info::nonexistent)
+     return __info.first.end;
+
+   sys_time<_Duration> __st(__tp.time_since_epoch());
+
+   if (__info.result == local_info::ambiguous && __z == choose::latest)
+     return __st - __info.second.offset;
+
+
+   return __st - __info.first.offset;
+ }
+
+      template<typename _Duration>
+ local_time<common_type_t<_Duration, seconds>>
+ to_local(const sys_time<_Duration>& __tp) const
+ {
+   auto __d = (__tp + get_info(__tp).offset).time_since_epoch();
+   return local_time<common_type_t<_Duration, seconds>>(__d);
+ }
+
+      [[nodiscard]] friend bool
+      operator==(const time_zone& __x, const time_zone& __y) noexcept
+      { return __x._M_name == __y._M_name; }
+
+      [[nodiscard]] friend strong_ordering
+      operator<=>(const time_zone& __x, const time_zone& __y) noexcept
+      { return __x._M_name <=> __y._M_name; }
+
+    private:
+      sys_info _M_get_sys_info(sys_seconds) const;
+      local_info _M_get_local_info(local_seconds) const;
+
+      friend const tzdb& reload_tzdb();
+      friend struct tzdb;
+      friend class tzdb_list;
+
+      struct _Impl;
+
+      explicit time_zone(unique_ptr<_Impl> __p);
+      string _M_name;
+      unique_ptr<_Impl> _M_impl;
+    };
+
+    const time_zone* locate_zone(string_view __tz_name);
+    const time_zone* current_zone();
+# 2726 "/usr/include/c++/14/chrono" 3
+    class tzdb_list
+    {
+      struct _Node;
+
+    public:
+      tzdb_list(const tzdb_list&) = delete;
+      tzdb_list& operator=(const tzdb_list&) = delete;
+# 2741 "/usr/include/c++/14/chrono" 3
+      class const_iterator
+      {
+      public:
+ using value_type = tzdb;
+ using reference = const tzdb&;
+ using pointer = const tzdb*;
+ using difference_type = ptrdiff_t;
+ using iterator_category = forward_iterator_tag;
+
+ constexpr const_iterator() = default;
+ const_iterator(const const_iterator&) = default;
+ const_iterator(const_iterator&&) = default;
+ const_iterator& operator=(const const_iterator&) = default;
+ const_iterator& operator=(const_iterator&&) = default;
+
+ reference operator*() const noexcept;
+ pointer operator->() const noexcept { return &**this; }
+ const_iterator& operator++();
+ const_iterator operator++(int);
+
+ bool operator==(const const_iterator&) const noexcept = default;
+
+      private:
+ explicit const_iterator(const shared_ptr<_Node>&) noexcept;
+
+ friend class tzdb_list;
+
+ shared_ptr<_Node> _M_node;
+ void* _M_reserved = nullptr;
+      };
+# 2779 "/usr/include/c++/14/chrono" 3
+      const tzdb& front() const noexcept;
+# 2795 "/usr/include/c++/14/chrono" 3
+      const_iterator erase_after(const_iterator __p);
+
+      const_iterator begin() const noexcept;
+      const_iterator end() const noexcept { return {}; }
+      const_iterator cbegin() const noexcept { return begin(); }
+      const_iterator cend() const noexcept { return end(); }
+
+    private:
+      constexpr explicit tzdb_list(nullptr_t);
+
+      friend tzdb_list& get_tzdb_list();
+      friend const tzdb& get_tzdb();
+      friend const tzdb& reload_tzdb();
+      friend struct tzdb;
+      friend class leap_second;
+      friend struct time_zone::_Impl;
+      friend class time_zone_link;
+    };
+
+    class time_zone_link
+    {
+    public:
+      time_zone_link(time_zone_link&&) = default;
+      time_zone_link& operator=(time_zone_link&&) = default;
+
+      string_view name() const noexcept { return _M_name; }
+      string_view target() const noexcept { return _M_target; }
+
+      friend bool
+      operator==(const time_zone_link& __x, const time_zone_link& __y) noexcept
+      { return __x.name() == __y.name(); }
+
+      friend strong_ordering
+      operator<=>(const time_zone_link& __x, const time_zone_link& __y) noexcept
+      { return __x.name() <=> __y.name(); }
+
+    private:
+      friend const tzdb& reload_tzdb();
+      friend struct tzdb_list::_Node;
+
+      explicit time_zone_link(nullptr_t) { }
+
+      string _M_name;
+      string _M_target;
+    };
+
+    class leap_second
+    {
+    public:
+      leap_second(const leap_second&) = default;
+      leap_second& operator=(const leap_second&) = default;
+
+      [[nodiscard]]
+      constexpr sys_seconds
+      date() const noexcept
+      {
+ if (_M_s >= _M_s.zero()) [[likely]]
+   return sys_seconds(_M_s);
+ return sys_seconds(-_M_s);
+      }
+
+      [[nodiscard]]
+      constexpr seconds
+      value() const noexcept
+      {
+ if (_M_s >= _M_s.zero()) [[likely]]
+   return seconds(1);
+ return seconds(-1);
+      }
+
+
+
+      [[nodiscard]] friend constexpr bool
+      operator==(const leap_second&, const leap_second&) noexcept = default;
+
+      [[nodiscard]] friend constexpr strong_ordering
+      operator<=>(const leap_second& __x, const leap_second& __y) noexcept
+      { return __x.date() <=> __y.date(); }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator==(const leap_second& __x,
+     const sys_time<_Duration>& __y) noexcept
+ { return __x.date() == __y; }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator<(const leap_second& __x,
+    const sys_time<_Duration>& __y) noexcept
+ { return __x.date() < __y; }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator<(const sys_time<_Duration>& __x,
+    const leap_second& __y) noexcept
+ { return __x < __y.date(); }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator>(const leap_second& __x,
+    const sys_time<_Duration>& __y) noexcept
+ { return __y < __x.date(); }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator>(const sys_time<_Duration>& __x,
+    const leap_second& __y) noexcept
+ { return __y.date() < __x; }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator<=(const leap_second& __x,
+     const sys_time<_Duration>& __y) noexcept
+ { return !(__y < __x.date()); }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator<=(const sys_time<_Duration>& __x,
+     const leap_second& __y) noexcept
+ { return !(__y.date() < __x); }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator>=(const leap_second& __x,
+     const sys_time<_Duration>& __y) noexcept
+ { return !(__x.date() < __y); }
+
+      template<typename _Duration>
+ [[nodiscard]] friend constexpr bool
+ operator>=(const sys_time<_Duration>& __x,
+     const leap_second& __y) noexcept
+ { return !(__x < __y.date()); }
+
+      template<three_way_comparable_with<seconds> _Duration>
+ [[nodiscard]] friend constexpr auto
+ operator<=>(const leap_second& __x,
+      const sys_time<_Duration>& __y) noexcept
+ { return __x.date() <=> __y; }
+
+    private:
+      explicit leap_second(seconds::rep __s) : _M_s(__s) { }
+
+      friend struct tzdb_list::_Node;
+
+      friend const tzdb& reload_tzdb();
+
+      template<typename _Duration>
+ friend leap_second_info
+ get_leap_second_info(const utc_time<_Duration>&);
+
+      seconds _M_s;
+    };
+
+    template<class _Tp> struct zoned_traits { };
+
+    template<>
+      struct zoned_traits<const time_zone*>
+      {
+ static const time_zone*
+ default_zone()
+ { return std::chrono::locate_zone("UTC"); }
+
+ static const time_zone*
+ locate_zone(string_view __name)
+ { return std::chrono::locate_zone(__name); }
+      };
+
+    struct tzdb
+    {
+      string version;
+      std::vector<time_zone> zones;
+      std::vector<time_zone_link> links;
+      std::vector<leap_second> leap_seconds;
+
+      const time_zone*
+      locate_zone(string_view __tz_name) const;
+
+      const time_zone*
+      current_zone() const;
+
+    private:
+      friend const tzdb& reload_tzdb();
+      friend class time_zone;
+      friend struct tzdb_list::_Node;
+    };
+
+    tzdb_list& get_tzdb_list();
+    const tzdb& get_tzdb();
+
+    const tzdb& reload_tzdb();
+    string remote_version();
+
+    template<typename _Duration, typename _TimeZonePtr = const time_zone*>
+      class zoned_time
+      {
+ static_assert(__is_duration_v<_Duration>);
+
+ using _Traits = zoned_traits<_TimeZonePtr>;
+
+
+
+ using string_view = type_identity_t<std::string_view>;
+
+      public:
+ using duration = common_type_t<_Duration, seconds>;
+
+ zoned_time() requires requires { _Traits::default_zone(); }
+ { }
+
+ zoned_time(const zoned_time&) = default;
+ zoned_time& operator=(const zoned_time&) = default;
+
+ zoned_time(const sys_time<_Duration>& __st)
+   requires requires { _Traits::default_zone(); }
+ : _M_tp(__st)
+ { }
+
+ explicit
+ zoned_time(_TimeZonePtr __z) : _M_zone(std::move(__z)) { }
+
+ explicit
+ zoned_time(string_view __name)
+   requires requires {
+     _TimeZonePtr{_Traits::locate_zone(std::string_view{})};
+   }
+ : _M_zone(_Traits::locate_zone(__name))
+ { }
+
+ template<typename _Duration2>
+   zoned_time(const zoned_time<_Duration2, _TimeZonePtr>& __zt)
+   requires is_convertible_v<sys_time<_Duration2>, sys_time<_Duration>>
+   : _M_zone(__zt._M_zone), _M_tp(__zt._M_tp)
+   { }
+
+ zoned_time(_TimeZonePtr __z, const sys_time<_Duration>& __st)
+ : _M_zone(std::move(__z)), _M_tp(__st)
+ { }
+
+ zoned_time(string_view __name, const sys_time<_Duration>& __st)
+ : zoned_time(_Traits::locate_zone(__name), __st)
+ { }
+
+ zoned_time(_TimeZonePtr __z, const local_time<_Duration>& __tp)
+ requires requires {
+   { __z->to_sys(__tp) } -> convertible_to<sys_time<_Duration>>;
+ }
+ : _M_zone(std::move(__z)), _M_tp(_M_zone->to_sys(__tp))
+ { }
+
+ zoned_time(string_view __name, const local_time<_Duration>& __tp)
+ requires requires (_TimeZonePtr __z) {
+   { _Traits::locate_zone(__name) } -> convertible_to<_TimeZonePtr>;
+   { __z->to_sys(__tp) } -> convertible_to<sys_time<_Duration>>;
+ }
+ : zoned_time(_Traits::locate_zone(__name), __tp)
+ { }
+
+ zoned_time(_TimeZonePtr __z, const local_time<_Duration>& __tp,
+     choose __c)
+ requires requires {
+   { __z->to_sys(__tp, __c) } -> convertible_to<sys_time<_Duration>>;
+ }
+ : _M_zone(std::move(__z)), _M_tp(_M_zone->to_sys(__tp, __c))
+ { }
+
+ zoned_time(string_view __name, const local_time<_Duration>& __tp,
+     choose __c)
+ requires requires (_TimeZonePtr __z) {
+   { _Traits::locate_zone(__name) } -> convertible_to<_TimeZonePtr>;
+   { __z->to_sys(__tp, __c) } -> convertible_to<sys_time<_Duration>>;
+ }
+ : _M_zone(_Traits::locate_zone(__name)),
+   _M_tp(_M_zone->to_sys(__tp, __c))
+ { }
+
+ template<typename _Duration2, typename _TimeZonePtr2>
+   zoned_time(_TimeZonePtr __z,
+       const zoned_time<_Duration2, _TimeZonePtr2>& __zt)
+   requires is_convertible_v<sys_time<_Duration2>, sys_time<_Duration>>
+   : _M_zone(__z), _M_tp(__zt._M_tp)
+   { }
+
+ template<typename _Duration2, typename _TimeZonePtr2>
+   zoned_time(_TimeZonePtr __z,
+       const zoned_time<_Duration2, _TimeZonePtr2>& __zt,
+       choose)
+   requires is_convertible_v<sys_time<_Duration2>, sys_time<_Duration>>
+   : _M_zone(__z), _M_tp(__zt._M_tp)
+   { }
+
+ template<typename _Duration2, typename _TimeZonePtr2>
+   zoned_time(string_view __name,
+       const zoned_time<_Duration2, _TimeZonePtr2>& __zt)
+   requires is_convertible_v<sys_time<_Duration2>, sys_time<_Duration>>
+   && requires {
+     { _Traits::locate_zone(__name) } -> convertible_to<_TimeZonePtr>;
+   }
+   : _M_zone(_Traits::locate_zone(__name)), _M_tp(__zt._M_tp)
+   { }
+
+ template<typename _Duration2, typename _TimeZonePtr2>
+   zoned_time(string_view __name,
+       const zoned_time<_Duration2, _TimeZonePtr2>& __zt,
+       choose)
+   requires is_convertible_v<sys_time<_Duration2>, sys_time<_Duration>>
+   && requires {
+     { _Traits::locate_zone(__name) } -> convertible_to<_TimeZonePtr>;
+   }
+   : _M_zone(_Traits::locate_zone(__name)), _M_tp(__zt._M_tp)
+   { }
+
+ zoned_time&
+ operator=(const sys_time<_Duration>& __st)
+ {
+   _M_tp = __st;
+   return *this;
+ }
+
+ zoned_time&
+ operator=(const local_time<_Duration>& __lt)
+ {
+   _M_tp = _M_zone->to_sys(__lt);
+   return *this;
+ }
+
+ [[nodiscard]]
+ operator sys_time<duration>() const { return _M_tp; }
+
+ [[nodiscard]]
+ explicit operator local_time<duration>() const
+ { return get_local_time(); }
+
+ [[nodiscard]]
+ _TimeZonePtr
+ get_time_zone() const
+ { return _M_zone; }
+
+ [[nodiscard]]
+ local_time<duration>
+ get_local_time() const
+ { return _M_zone->to_local(_M_tp); }
+
+ [[nodiscard]]
+ sys_time<duration>
+ get_sys_time() const
+ { return _M_tp; }
+
+ [[nodiscard]]
+ sys_info
+ get_info() const
+ { return _M_zone->get_info(_M_tp); }
+
+ [[nodiscard]] friend bool
+ operator==(const zoned_time&, const zoned_time&) = default;
+
+      private:
+ _TimeZonePtr _M_zone{ _Traits::default_zone() };
+ sys_time<duration> _M_tp{};
+
+ template<typename _Duration2, typename _TimeZonePtr2>
+   friend class zoned_time;
+      };
+
+    zoned_time() -> zoned_time<seconds>;
+
+    template<typename _Duration>
+    zoned_time(sys_time<_Duration>)
+      -> zoned_time<common_type_t<_Duration, seconds>>;
+
+
+  template<typename _TimeZonePtrOrName>
+    using __time_zone_representation
+      = __conditional_t<is_convertible_v<_TimeZonePtrOrName, string_view>,
+   const time_zone*,
+   remove_cvref_t<_TimeZonePtrOrName>>;
+
+
+  template<typename _TimeZonePtrOrName>
+    zoned_time(_TimeZonePtrOrName&&)
+      -> zoned_time<seconds, __time_zone_representation<_TimeZonePtrOrName>>;
+
+  template<typename _TimeZonePtrOrName, typename _Duration>
+    zoned_time(_TimeZonePtrOrName&&, sys_time<_Duration>)
+      -> zoned_time<common_type_t<_Duration, seconds>,
+                    __time_zone_representation<_TimeZonePtrOrName>>;
+
+  template<typename _TimeZonePtrOrName, typename _Duration>
+    zoned_time(_TimeZonePtrOrName&&, local_time<_Duration>,
+               choose = choose::earliest)
+      -> zoned_time<common_type_t<_Duration, seconds>,
+                    __time_zone_representation<_TimeZonePtrOrName>>;
+
+  template<typename _Duration, typename _TimeZonePtrOrName,
+    typename _TimeZonePtr2>
+    zoned_time(_TimeZonePtrOrName&&, zoned_time<_Duration, _TimeZonePtr2>,
+               choose = choose::earliest)
+      -> zoned_time<common_type_t<_Duration, seconds>,
+                    __time_zone_representation<_TimeZonePtrOrName>>;
+
+  template<typename _Dur1, typename _TZPtr1, typename _Dur2, typename _TZPtr2>
+    [[nodiscard]]
+    inline bool
+    operator==(const zoned_time<_Dur1, _TZPtr1>& __x,
+        const zoned_time<_Dur2, _TZPtr2>& __y)
+    {
+      return __x.get_time_zone() == __y.get_time_zone()
+        && __x.get_sys_time() == __y.get_sys_time();
+    }
+
+    using zoned_seconds = zoned_time<seconds>;
+
+
+namespace __detail
+{
+    inline leap_second_info
+    __get_leap_second_info(sys_seconds __ss, bool __is_utc)
+    {
+      if (__ss < sys_seconds{}) [[unlikely]]
+ return {};
+
+      const seconds::rep __leaps[] {
+   78796800,
+   94694400,
+  126230400,
+  157766400,
+  189302400,
+  220924800,
+  252460800,
+  283996800,
+  315532800,
+  362793600,
+  394329600,
+  425865600,
+  489024000,
+  567993600,
+  631152000,
+  662688000,
+  709948800,
+  741484800,
+  773020800,
+  820454400,
+  867715200,
+  915148800,
+ 1136073600,
+ 1230768000,
+ 1341100800,
+ 1435708800,
+ 1483228800,
+      };
+
+
+      const sys_seconds __expires(1735344000s);
+
+
+      if (__ss > __expires)
+ {
+
+   size_t __n = std::size(__leaps);
+
+   auto __db = get_tzdb_list().begin();
+   auto __first = __db->leap_seconds.begin() + __n;
+   auto __last = __db->leap_seconds.end();
+   auto __pos = std::upper_bound(__first, __last, __ss);
+   seconds __elapsed(__n);
+   for (auto __i = __first; __i != __pos; ++__i)
+     __elapsed += __i->value();
+
+   if (__is_utc)
+     {
+
+       __ss -= __elapsed;
+
+       if (__pos != __first && __ss < __pos[-1])
+  {
+    if ((__ss + 1s) >= __pos[-1])
+      return {true, __elapsed};
+    __elapsed -= __pos[-1].value();
+  }
+     }
+   return {false, __elapsed};
+ }
+      else
+
+ {
+   seconds::rep __s = __ss.time_since_epoch().count();
+   const seconds::rep* __first = std::begin(__leaps);
+   const seconds::rep* __last = std::end(__leaps);
+
+
+   if (__s > (__last[-1] + (__last - __first) + 1))
+     return { false, seconds(__last - __first) };
+
+   auto __pos = std::upper_bound(__first, __last, __s);
+   seconds __elapsed{__pos - __first};
+   if (__is_utc)
+     {
+
+       __s -= __elapsed.count();
+
+       if (__pos != __first && __s < __pos[-1])
+  {
+    if ((__s + 1) >= __pos[-1])
+      return {true, __elapsed};
+    --__elapsed;
+  }
+     }
+   return {false, __elapsed};
+ }
+    }
+}
+
+    template<typename _Duration>
+      [[nodiscard]]
+      inline leap_second_info
+      get_leap_second_info(const utc_time<_Duration>& __ut)
+      {
+ auto __s = chrono::duration_cast<seconds>(__ut.time_since_epoch());
+ return __detail::__get_leap_second_info(sys_seconds(__s), true);
+      }
+
+    template<typename _Duration>
+      [[nodiscard]]
+      inline utc_time<common_type_t<_Duration, seconds>>
+      utc_clock::from_sys(const sys_time<_Duration>& __t)
+      {
+ using _CDur = common_type_t<_Duration, seconds>;
+ auto __s = chrono::time_point_cast<seconds>(__t);
+ const auto __li = __detail::__get_leap_second_info(__s, false);
+ return utc_time<_CDur>{__t.time_since_epoch()} + __li.elapsed;
+      }
+
+
+
+  }
+
+
+  inline namespace literals
+  {
+  inline namespace chrono_literals
+  {
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wliteral-suffix"
+
+
+    constexpr chrono::day
+    operator""d(unsigned long long __d) noexcept
+    { return chrono::day{static_cast<unsigned>(__d)}; }
+
+
+
+    constexpr chrono::year
+    operator""y(unsigned long long __y) noexcept
+    { return chrono::year{static_cast<int>(__y)}; }
+#pragma GCC diagnostic pop
+
+  }
+  }
+
+
+
+}
+
+
+# 1 "/usr/include/c++/14/bits/chrono_io.h" 1 3
+# 33 "/usr/include/c++/14/bits/chrono_io.h" 3
+       
+# 34 "/usr/include/c++/14/bits/chrono_io.h" 3
+
+
+
+
+# 1 "/usr/include/c++/14/iomanip" 1 3
+# 36 "/usr/include/c++/14/iomanip" 3
+       
+# 37 "/usr/include/c++/14/iomanip" 3
+# 45 "/usr/include/c++/14/iomanip" 3
+# 1 "/usr/include/c++/14/bits/version.h" 1 3
+# 47 "/usr/include/c++/14/bits/version.h" 3
+       
+# 48 "/usr/include/c++/14/bits/version.h" 3
+# 46 "/usr/include/c++/14/iomanip" 2 3
+
+
+
+
+# 1 "/usr/include/c++/14/bits/quoted_string.h" 1 3
+# 33 "/usr/include/c++/14/bits/quoted_string.h" 3
+       
+# 34 "/usr/include/c++/14/bits/quoted_string.h" 3
+
+
+
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  namespace __detail {
+
+
+
+    template<typename _String, typename _CharT>
+      struct _Quoted_string
+      {
+ static_assert(is_reference<_String>::value
+     || is_pointer<_String>::value,
+        "String type must be pointer or reference");
+
+ _Quoted_string(_String __str, _CharT __del, _CharT __esc)
+ : _M_string(__str), _M_delim{__del}, _M_escape{__esc}
+ { }
+
+ _Quoted_string&
+ operator=(_Quoted_string&) = delete;
+
+ _String _M_string;
+ _CharT _M_delim;
+ _CharT _M_escape;
+      };
+
+
+    template<typename _CharT, typename _Traits>
+      struct _Quoted_string<basic_string_view<_CharT, _Traits>, _CharT>
+      {
+ _Quoted_string(basic_string_view<_CharT, _Traits> __str,
+         _CharT __del, _CharT __esc)
+ : _M_string(__str), _M_delim{__del}, _M_escape{__esc}
+ { }
+
+ _Quoted_string&
+ operator=(_Quoted_string&) = delete;
+
+ basic_string_view<_CharT, _Traits> _M_string;
+ _CharT _M_delim;
+ _CharT _M_escape;
+      };
+
+
+
+
+
+
+
+    template<typename _CharT, typename _Traits>
+      std::basic_ostream<_CharT, _Traits>&
+      operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+   const _Quoted_string<const _CharT*, _CharT>& __str)
+      {
+
+
+ std::basic_ostringstream<_CharT, _Traits> __ostr;
+ __ostr << __str._M_delim;
+ for (const _CharT* __c = __str._M_string; *__c; ++__c)
+   {
+     if (*__c == __str._M_delim || *__c == __str._M_escape)
+       __ostr << __str._M_escape;
+     __ostr << *__c;
+   }
+ __ostr << __str._M_delim;
+
+ return __os << __ostr.str();
+      }
+
+
+
+
+
+
+    template<typename _CharT, typename _Traits, typename _String>
+      std::basic_ostream<_CharT, _Traits>&
+      operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+   const _Quoted_string<_String, _CharT>& __str)
+      {
+
+
+ std::basic_ostringstream<_CharT, _Traits> __ostr;
+ __ostr << __str._M_delim;
+ for (auto __c : __str._M_string)
+   {
+     if (__c == __str._M_delim || __c == __str._M_escape)
+       __ostr << __str._M_escape;
+     __ostr << __c;
+   }
+ __ostr << __str._M_delim;
+
+ return __os << __ostr.str();
+      }
+
+
+
+
+
+
+
+    template<typename _CharT, typename _Traits, typename _Alloc>
+      std::basic_istream<_CharT, _Traits>&
+      operator>>(std::basic_istream<_CharT, _Traits>& __is,
+   const _Quoted_string<basic_string<_CharT, _Traits, _Alloc>&,
+          _CharT>& __str)
+      {
+ _CharT __c;
+ __is >> __c;
+ if (!__is.good())
+   return __is;
+ if (__c != __str._M_delim)
+   {
+     __is.unget();
+     __is >> __str._M_string;
+     return __is;
+   }
+ __str._M_string.clear();
+ std::ios_base::fmtflags __flags
+   = __is.flags(__is.flags() & ~std::ios_base::skipws);
+ do
+   {
+     __is >> __c;
+     if (!__is.good())
+       break;
+     if (__c == __str._M_escape)
+       {
+  __is >> __c;
+  if (!__is.good())
+    break;
+       }
+     else if (__c == __str._M_delim)
+       break;
+     __str._M_string += __c;
+   }
+ while (true);
+ __is.setf(__flags);
+
+ return __is;
+      }
+  }
+
+
+}
+# 51 "/usr/include/c++/14/iomanip" 2 3
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+
+  struct _Resetiosflags { ios_base::fmtflags _M_mask; };
+# 70 "/usr/include/c++/14/iomanip" 3
+  inline _Resetiosflags
+  resetiosflags(ios_base::fmtflags __mask)
+  { return { __mask }; }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __is, _Resetiosflags __f)
+    {
+      __is.setf(ios_base::fmtflags(0), __f._M_mask);
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+    {
+      __os.setf(ios_base::fmtflags(0), __f._M_mask);
+      return __os;
+    }
+
+
+  struct _Setiosflags { ios_base::fmtflags _M_mask; };
+# 100 "/usr/include/c++/14/iomanip" 3
+  inline _Setiosflags
+  setiosflags(ios_base::fmtflags __mask)
+  { return { __mask }; }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __is, _Setiosflags __f)
+    {
+      __is.setf(__f._M_mask);
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+    {
+      __os.setf(__f._M_mask);
+      return __os;
+    }
+
+
+  struct _Setbase { int _M_base; };
+# 131 "/usr/include/c++/14/iomanip" 3
+  inline _Setbase
+  setbase(int __base)
+  { return { __base }; }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __is, _Setbase __f)
+    {
+      __is.setf(__f._M_base == 8 ? ios_base::oct :
+  __f._M_base == 10 ? ios_base::dec :
+  __f._M_base == 16 ? ios_base::hex :
+  ios_base::fmtflags(0), ios_base::basefield);
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+    {
+      __os.setf(__f._M_base == 8 ? ios_base::oct :
+  __f._M_base == 10 ? ios_base::dec :
+  __f._M_base == 16 ? ios_base::hex :
+  ios_base::fmtflags(0), ios_base::basefield);
+      return __os;
+    }
+
+
+  template<typename _CharT>
+    struct _Setfill { _CharT _M_c; };
+# 168 "/usr/include/c++/14/iomanip" 3
+  template<typename _CharT>
+    inline _Setfill<_CharT>
+    setfill(_CharT __c)
+    { return { __c }; }
+
+  template<typename _CharT, typename _Traits>
+    __attribute__((__deprecated__("'std::setfill' should only be used with "
+      "output streams")))
+    inline basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __is, _Setfill<_CharT> __f)
+    {
+      __is.fill(__f._M_c);
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+    {
+      __os.fill(__f._M_c);
+      return __os;
+    }
+
+
+  struct _Setprecision { int _M_n; };
+# 201 "/usr/include/c++/14/iomanip" 3
+  inline _Setprecision
+  setprecision(int __n)
+  { return { __n }; }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __is, _Setprecision __f)
+    {
+      __is.precision(__f._M_n);
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+    {
+      __os.precision(__f._M_n);
+      return __os;
+    }
+
+
+  struct _Setw { int _M_n; };
+# 231 "/usr/include/c++/14/iomanip" 3
+  inline _Setw
+  setw(int __n)
+  { return { __n }; }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __is, _Setw __f)
+    {
+      __is.width(__f._M_n);
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+    {
+      __os.width(__f._M_n);
+      return __os;
+    }
+
+
+
+  template<typename _MoneyT>
+    struct _Get_money { _MoneyT& _M_mon; bool _M_intl; };
+# 264 "/usr/include/c++/14/iomanip" 3
+  template<typename _MoneyT>
+    inline _Get_money<_MoneyT>
+    get_money(_MoneyT& __mon, bool __intl = false)
+    { return { __mon, __intl }; }
+
+  template<typename _CharT, typename _Traits, typename _MoneyT>
+    basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __is, _Get_money<_MoneyT> __f)
+    {
+      typename basic_istream<_CharT, _Traits>::sentry __cerb(__is, false);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       typedef istreambuf_iterator<_CharT, _Traits> _Iter;
+       typedef money_get<_CharT, _Iter> _MoneyGet;
+
+       const _MoneyGet& __mg = use_facet<_MoneyGet>(__is.getloc());
+       __mg.get(_Iter(__is.rdbuf()), _Iter(), __f._M_intl,
+         __is, __err, __f._M_mon);
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       __is._M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { __is._M_setstate(ios_base::badbit); }
+   if (__err)
+     __is.setstate(__err);
+ }
+      return __is;
+    }
+
+
+  template<typename _MoneyT>
+    struct _Put_money { const _MoneyT& _M_mon; bool _M_intl; };
+# 311 "/usr/include/c++/14/iomanip" 3
+  template<typename _MoneyT>
+    inline _Put_money<_MoneyT>
+    put_money(const _MoneyT& __mon, bool __intl = false)
+    { return { __mon, __intl }; }
+
+  template<typename _CharT, typename _Traits, typename _MoneyT>
+    basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+    {
+      typename basic_ostream<_CharT, _Traits>::sentry __cerb(__os);
+      if (__cerb)
+ {
+   ios_base::iostate __err = ios_base::goodbit;
+   try
+     {
+       typedef ostreambuf_iterator<_CharT, _Traits> _Iter;
+       typedef money_put<_CharT, _Iter> _MoneyPut;
+
+       const _MoneyPut& __mp = use_facet<_MoneyPut>(__os.getloc());
+       if (__mp.put(_Iter(__os.rdbuf()), __f._M_intl, __os,
+      __os.fill(), __f._M_mon).failed())
+  __err |= ios_base::badbit;
+     }
+   catch(__cxxabiv1::__forced_unwind&)
+     {
+       __os._M_setstate(ios_base::badbit);
+       throw;
+     }
+   catch(...)
+     { __os._M_setstate(ios_base::badbit); }
+   if (__err)
+     __os.setstate(__err);
+ }
+      return __os;
+    }
+
+  template<typename _CharT>
+    struct _Put_time
+    {
+      const std::tm* _M_tmb;
+      const _CharT* _M_fmt;
+    };
+# 363 "/usr/include/c++/14/iomanip" 3
+  template<typename _CharT>
+    inline _Put_time<_CharT>
+    put_time(const std::tm* __tmb, const _CharT* __fmt)
+    { return { __tmb, __fmt }; }
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+    {
+      typename basic_ostream<_CharT, _Traits>::sentry __cerb(__os);
+      if (__cerb)
+        {
+          ios_base::iostate __err = ios_base::goodbit;
+          try
+            {
+              typedef ostreambuf_iterator<_CharT, _Traits> _Iter;
+              typedef time_put<_CharT, _Iter> _TimePut;
+
+              const _CharT* const __fmt_end = __f._M_fmt +
+                _Traits::length(__f._M_fmt);
+
+              const _TimePut& __mp = use_facet<_TimePut>(__os.getloc());
+              if (__mp.put(_Iter(__os.rdbuf()), __os, __os.fill(),
+                           __f._M_tmb, __f._M_fmt, __fmt_end).failed())
+                __err |= ios_base::badbit;
+            }
+          catch(__cxxabiv1::__forced_unwind&)
+            {
+              __os._M_setstate(ios_base::badbit);
+              throw;
+            }
+          catch(...)
+            { __os._M_setstate(ios_base::badbit); }
+          if (__err)
+            __os.setstate(__err);
+        }
+      return __os;
+    }
+
+  template<typename _CharT>
+    struct _Get_time
+    {
+      std::tm* _M_tmb;
+      const _CharT* _M_fmt;
+    };
+# 418 "/usr/include/c++/14/iomanip" 3
+  template<typename _CharT>
+    inline _Get_time<_CharT>
+    get_time(std::tm* __tmb, const _CharT* __fmt)
+    { return { __tmb, __fmt }; }
+
+  template<typename _CharT, typename _Traits>
+    basic_istream<_CharT, _Traits>&
+    operator>>(basic_istream<_CharT, _Traits>& __is, _Get_time<_CharT> __f)
+    {
+      typename basic_istream<_CharT, _Traits>::sentry __cerb(__is, false);
+      if (__cerb)
+        {
+          ios_base::iostate __err = ios_base::goodbit;
+          try
+            {
+              typedef istreambuf_iterator<_CharT, _Traits> _Iter;
+              typedef time_get<_CharT, _Iter> _TimeGet;
+
+              const _CharT* const __fmt_end = __f._M_fmt +
+                _Traits::length(__f._M_fmt);
+
+              const _TimeGet& __mg = use_facet<_TimeGet>(__is.getloc());
+              __mg.get(_Iter(__is.rdbuf()), _Iter(), __is,
+                       __err, __f._M_tmb, __f._M_fmt, __fmt_end);
+            }
+          catch(__cxxabiv1::__forced_unwind&)
+            {
+              __is._M_setstate(ios_base::badbit);
+              throw;
+            }
+          catch(...)
+            { __is._M_setstate(ios_base::badbit); }
+          if (__err)
+            __is.setstate(__err);
+        }
+      return __is;
+    }
+# 465 "/usr/include/c++/14/iomanip" 3
+  template<typename _CharT>
+    inline auto
+    quoted(const _CharT* __string,
+    _CharT __delim = _CharT('"'), _CharT __escape = _CharT('\\'))
+    {
+      return __detail::_Quoted_string<const _CharT*, _CharT>(__string, __delim,
+            __escape);
+    }
+
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    inline auto
+    quoted(const basic_string<_CharT, _Traits, _Alloc>& __string,
+    _CharT __delim = _CharT('"'), _CharT __escape = _CharT('\\'))
+    {
+      return __detail::_Quoted_string<
+ const basic_string<_CharT, _Traits, _Alloc>&, _CharT>(
+     __string, __delim, __escape);
+    }
+
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    inline auto
+    quoted(basic_string<_CharT, _Traits, _Alloc>& __string,
+    _CharT __delim = _CharT('"'), _CharT __escape = _CharT('\\'))
+    {
+      return __detail::_Quoted_string<
+ basic_string<_CharT, _Traits, _Alloc>&, _CharT>(
+     __string, __delim, __escape);
+    }
+
+
+
+
+  template<typename _CharT, typename _Traits>
+    inline auto
+    quoted(basic_string_view<_CharT, _Traits> __sv,
+    _CharT __delim = _CharT('"'), _CharT __escape = _CharT('\\'))
+    {
+      return __detail::_Quoted_string<
+ basic_string_view<_CharT, _Traits>, _CharT>(__sv, __delim, __escape);
+    }
+# 514 "/usr/include/c++/14/iomanip" 3
+  extern template ostream& operator<<(ostream&, _Setfill<char>);
+  extern template ostream& operator<<(ostream&, _Setiosflags);
+  extern template ostream& operator<<(ostream&, _Resetiosflags);
+  extern template ostream& operator<<(ostream&, _Setbase);
+  extern template ostream& operator<<(ostream&, _Setprecision);
+  extern template ostream& operator<<(ostream&, _Setw);
+  extern template istream& operator>>(istream&, _Setfill<char>);
+  extern template istream& operator>>(istream&, _Setiosflags);
+  extern template istream& operator>>(istream&, _Resetiosflags);
+  extern template istream& operator>>(istream&, _Setbase);
+  extern template istream& operator>>(istream&, _Setprecision);
+  extern template istream& operator>>(istream&, _Setw);
+
+
+  extern template wostream& operator<<(wostream&, _Setfill<wchar_t>);
+  extern template wostream& operator<<(wostream&, _Setiosflags);
+  extern template wostream& operator<<(wostream&, _Resetiosflags);
+  extern template wostream& operator<<(wostream&, _Setbase);
+  extern template wostream& operator<<(wostream&, _Setprecision);
+  extern template wostream& operator<<(wostream&, _Setw);
+  extern template wistream& operator>>(wistream&, _Setfill<wchar_t>);
+  extern template wistream& operator>>(wistream&, _Setiosflags);
+  extern template wistream& operator>>(wistream&, _Resetiosflags);
+  extern template wistream& operator>>(wistream&, _Setbase);
+  extern template wistream& operator>>(wistream&, _Setprecision);
+  extern template wistream& operator>>(wistream&, _Setw);
+
+
+
+
+}
+# 39 "/usr/include/c++/14/bits/chrono_io.h" 2 3
+
+
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+namespace chrono
+{
+
+
+
+
+namespace __detail
+{
+
+
+
+
+
+  template<typename _CharT>
+    consteval auto
+    _Widen(const char* __narrow, const wchar_t* __wide)
+    {
+      if constexpr (is_same_v<_CharT, wchar_t>)
+ return __wide;
+      else
+ return __narrow;
+    }
+
+
+
+  template<typename _Period, typename _CharT>
+    constexpr basic_string_view<_CharT>
+    __units_suffix() noexcept
+    {
+# 85 "/usr/include/c++/14/bits/chrono_io.h" 3
+      if constexpr (is_same_v<_Period, atto>) return ::std::chrono::__detail::_Widen<_CharT>("as", L"as"); else
+      if constexpr (is_same_v<_Period, femto>) return ::std::chrono::__detail::_Widen<_CharT>("fs", L"fs"); else
+      if constexpr (is_same_v<_Period, pico>) return ::std::chrono::__detail::_Widen<_CharT>("ps", L"ps"); else
+      if constexpr (is_same_v<_Period, nano>) return ::std::chrono::__detail::_Widen<_CharT>("ns", L"ns"); else
+      if constexpr (is_same_v<_Period, milli>) return ::std::chrono::__detail::_Widen<_CharT>("ms", L"ms"); else
+
+
+
+
+
+      if constexpr (is_same_v<_Period, micro>) return ::std::chrono::__detail::_Widen<_CharT>("us", L"us"); else
+
+      if constexpr (is_same_v<_Period, centi>) return ::std::chrono::__detail::_Widen<_CharT>("cs", L"cs"); else
+      if constexpr (is_same_v<_Period, deci>) return ::std::chrono::__detail::_Widen<_CharT>("ds", L"ds"); else
+      if constexpr (is_same_v<_Period, ratio<1> >) return ::std::chrono::__detail::_Widen<_CharT>("s", L"s"); else
+      if constexpr (is_same_v<_Period, deca>) return ::std::chrono::__detail::_Widen<_CharT>("das", L"das"); else
+      if constexpr (is_same_v<_Period, hecto>) return ::std::chrono::__detail::_Widen<_CharT>("hs", L"hs"); else
+      if constexpr (is_same_v<_Period, kilo>) return ::std::chrono::__detail::_Widen<_CharT>("ks", L"ks"); else
+      if constexpr (is_same_v<_Period, mega>) return ::std::chrono::__detail::_Widen<_CharT>("Ms", L"Ms"); else
+      if constexpr (is_same_v<_Period, giga>) return ::std::chrono::__detail::_Widen<_CharT>("Gs", L"Gs"); else
+      if constexpr (is_same_v<_Period, tera>) return ::std::chrono::__detail::_Widen<_CharT>("Ts", L"Ts"); else
+      if constexpr (is_same_v<_Period, tera>) return ::std::chrono::__detail::_Widen<_CharT>("Ts", L"Ts"); else
+      if constexpr (is_same_v<_Period, peta>) return ::std::chrono::__detail::_Widen<_CharT>("Ps", L"Ps"); else
+      if constexpr (is_same_v<_Period, exa>) return ::std::chrono::__detail::_Widen<_CharT>("Es", L"Es"); else
+      if constexpr (is_same_v<_Period, ratio<60> >) return ::std::chrono::__detail::_Widen<_CharT>("min", L"min"); else
+      if constexpr (is_same_v<_Period, ratio<3600> >) return ::std::chrono::__detail::_Widen<_CharT>("h", L"h"); else
+      if constexpr (is_same_v<_Period, ratio<86400> >) return ::std::chrono::__detail::_Widen<_CharT>("d", L"d"); else
+
+ return {};
+    }
+
+  template<typename _Period, typename _CharT, typename _Out>
+    inline _Out
+    __fmt_units_suffix(_Out __out) noexcept
+    {
+      if (auto __s = __detail::__units_suffix<_Period, _CharT>(); __s.size())
+ return __format::__write(std::move(__out), __s);
+      else if constexpr (_Period::den == 1)
+ return std::format_to(std::move(__out), ::std::chrono::__detail::_Widen<_CharT>("[{}]s", L"[{}]s"),
+         (uintmax_t)_Period::num);
+      else
+ return std::format_to(std::move(__out), ::std::chrono::__detail::_Widen<_CharT>("[{}/{}]s", L"[{}/{}]s"),
+         (uintmax_t)_Period::num,
+         (uintmax_t)_Period::den);
+    }
+}
+
+
+
+
+
+
+  template<typename _CharT, typename _Traits,
+    typename _Rep, typename _Period>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+        const duration<_Rep, _Period>& __d)
+    {
+      using _Out = ostreambuf_iterator<_CharT, _Traits>;
+      using period = typename _Period::type;
+      std::basic_ostringstream<_CharT, _Traits> __s;
+      __s.flags(__os.flags());
+      __s.imbue(__os.getloc());
+      __s.precision(__os.precision());
+      __s << __d.count();
+      __detail::__fmt_units_suffix<period, _CharT>(_Out(__s));
+      __os << std::move(__s).str();
+      return __os;
+    }
+
+
+namespace __detail
+{
+
+  template<typename _Duration>
+    struct __local_time_fmt
+    {
+      local_time<_Duration> _M_time;
+      const string* _M_abbrev;
+      const seconds* _M_offset_sec;
+    };
+
+  struct __local_fmt_t;
+}
+# 180 "/usr/include/c++/14/bits/chrono_io.h" 3
+  template<typename _Duration>
+    inline __detail::__local_time_fmt<_Duration>
+    local_time_format(local_time<_Duration> __time,
+        const string* __abbrev = nullptr,
+        const seconds* __offset_sec = nullptr)
+    { return {__time, __abbrev, __offset_sec}; }
+
+
+}
+
+
+namespace __format
+{
+  [[noreturn,__gnu__::__always_inline__]]
+  inline void
+  __no_timezone_available()
+  { __throw_format_error("format error: no timezone available for %Z or %z"); }
+
+  [[noreturn,__gnu__::__always_inline__]]
+  inline void
+  __not_valid_for_duration()
+  { __throw_format_error("format error: chrono-format-spec not valid for "
+    "chrono::duration"); }
+
+  [[noreturn,__gnu__::__always_inline__]]
+  inline void
+  __invalid_chrono_spec()
+  { __throw_format_error("format error: chrono-format-spec not valid for "
+    "argument type"); }
+
+  template<typename _CharT>
+    struct _ChronoSpec : _Spec<_CharT>
+    {
+      basic_string_view<_CharT> _M_chrono_specs;
+    };
+
+
+
+
+  enum _ChronoParts {
+    _Year = 1, _Month = 2, _Day = 4, _Weekday = 8, _TimeOfDay = 16,
+    _TimeZone = 32,
+    _Date = _Year | _Month | _Day | _Weekday,
+    _DateTime = _Date | _TimeOfDay,
+    _ZonedDateTime = _DateTime | _TimeZone,
+    _Duration = 128
+  };
+
+  constexpr _ChronoParts
+  operator|(_ChronoParts __x, _ChronoParts __y) noexcept
+  { return static_cast<_ChronoParts>((int)__x | (int)__y); }
+
+  constexpr _ChronoParts&
+  operator|=(_ChronoParts& __x, _ChronoParts __y) noexcept
+  { return __x = __x | __y; }
+
+
+  template<typename _CharT>
+    struct __formatter_chrono
+    {
+      using __string_view = basic_string_view<_CharT>;
+      using __string = basic_string<_CharT>;
+
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ _M_parse(_ParseContext& __pc, _ChronoParts __parts)
+ {
+   auto __first = __pc.begin();
+   auto __last = __pc.end();
+
+   _ChronoSpec<_CharT> __spec{};
+
+   auto __finalize = [this, &__spec] {
+     _M_spec = __spec;
+   };
+
+   auto __finished = [&] {
+     if (__first == __last || *__first == '}')
+       {
+  __finalize();
+  return true;
+       }
+     return false;
+   };
+
+   if (__finished())
+     return __first;
+
+   __first = __spec._M_parse_fill_and_align(__first, __last);
+   if (__finished())
+     return __first;
+
+   __first = __spec._M_parse_width(__first, __last, __pc);
+   if (__finished())
+     return __first;
+
+   if (__parts & _ChronoParts::_Duration)
+     {
+       __first = __spec._M_parse_precision(__first, __last, __pc);
+       if (__finished())
+  return __first;
+     }
+
+   __first = __spec._M_parse_locale(__first, __last);
+   if (__finished())
+     return __first;
+
+
+
+   {
+     __string_view __str(__first, __last - __first);
+     auto __end = __str.find('}');
+     if (__end != __str.npos)
+       {
+  __str.remove_suffix(__str.length() - __end);
+  __last = __first + __end;
+       }
+     if (__str.find('{') != __str.npos)
+       __throw_format_error("chrono format error: '{' in chrono-specs");
+   }
+
+
+
+
+
+   const auto __chrono_specs = __first++;
+   if (*__chrono_specs != '%')
+     __throw_format_error("chrono format error: no '%' at start of "
+         "chrono-specs");
+
+   _CharT __mod{};
+   bool __conv = true;
+   int __needed = 0;
+
+   while (__first != __last)
+     {
+       enum _Mods { _Mod_none, _Mod_E, _Mod_O, _Mod_E_O };
+       _Mods __allowed_mods = _Mod_none;
+
+       _CharT __c = *__first++;
+       switch (__c)
+  {
+  case 'a':
+  case 'A':
+    __needed = _Weekday;
+    break;
+  case 'b':
+  case 'h':
+  case 'B':
+    __needed = _Month;
+    break;
+  case 'c':
+    __needed = _DateTime;
+    __allowed_mods = _Mod_E;
+    break;
+  case 'C':
+    __needed = _Year;
+    __allowed_mods = _Mod_E;
+    break;
+  case 'd':
+  case 'e':
+    __needed = _Day;
+    __allowed_mods = _Mod_O;
+    break;
+  case 'D':
+  case 'F':
+    __needed = _Date;
+    break;
+  case 'g':
+  case 'G':
+    __needed = _Date;
+    break;
+  case 'H':
+  case 'I':
+    __needed = _TimeOfDay;
+    __allowed_mods = _Mod_O;
+    break;
+  case 'j':
+    if (!(__parts & _Duration))
+      __needed = _Date;
+    break;
+  case 'm':
+    __needed = _Month;
+    __allowed_mods = _Mod_O;
+    break;
+  case 'M':
+    __needed = _TimeOfDay;
+    __allowed_mods = _Mod_O;
+    break;
+  case 'p':
+  case 'r':
+  case 'R':
+  case 'T':
+    __needed = _TimeOfDay;
+    break;
+  case 'q':
+  case 'Q':
+    __needed = _Duration;
+    break;
+  case 'S':
+    __needed = _TimeOfDay;
+    __allowed_mods = _Mod_O;
+    break;
+  case 'u':
+  case 'w':
+    __needed = _Weekday;
+    __allowed_mods = _Mod_O;
+    break;
+  case 'U':
+  case 'V':
+  case 'W':
+    __needed = _Date;
+    __allowed_mods = _Mod_O;
+    break;
+  case 'x':
+    __needed = _Date;
+    __allowed_mods = _Mod_E;
+    break;
+  case 'X':
+    __needed = _TimeOfDay;
+    __allowed_mods = _Mod_E;
+    break;
+  case 'y':
+    __needed = _Year;
+    __allowed_mods = _Mod_E_O;
+    break;
+  case 'Y':
+    __needed = _Year;
+    __allowed_mods = _Mod_E;
+    break;
+  case 'z':
+    __needed = _TimeZone;
+    __allowed_mods = _Mod_E_O;
+    break;
+  case 'Z':
+    __needed = _TimeZone;
+    break;
+  case 'n':
+  case 't':
+  case '%':
+    break;
+  case 'O':
+  case 'E':
+    if (__mod) [[unlikely]]
+      {
+        __allowed_mods = _Mod_none;
+        break;
+      }
+    __mod = __c;
+    continue;
+  default:
+    __throw_format_error("chrono format error: invalid "
+           " specifier in chrono-specs");
+  }
+
+       if ((__mod == 'E' && !(__allowed_mods & _Mod_E))
+      || (__mod == 'O' && !(__allowed_mods & _Mod_O)))
+  __throw_format_error("chrono format error: invalid "
+         " modifier in chrono-specs");
+       __mod = _CharT();
+
+       if ((__parts & __needed) != __needed)
+  __throw_format_error("chrono format error: format argument "
+         "does not contain the information "
+         "required by the chrono-specs");
+
+
+       size_t __pos = __string_view(__first, __last - __first).find('%');
+       if (__pos == 0)
+  ++__first;
+       else
+  {
+    if (__pos == __string_view::npos)
+      {
+        __first = __last;
+        __conv = false;
+      }
+    else
+      __first += __pos + 1;
+  }
+     }
+
+
+   if (__conv || __mod != _CharT())
+     __throw_format_error("chrono format error: unescaped '%' in "
+     "chrono-specs");
+
+   _M_spec = __spec;
+   _M_spec._M_chrono_specs
+   = __string_view(__chrono_specs, __first - __chrono_specs);
+
+   return __first;
+ }
+
+
+
+
+
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_format(const _Tp& __t, _FormatContext& __fc,
+    bool __is_neg = false) const
+ {
+   auto __first = _M_spec._M_chrono_specs.begin();
+   const auto __last = _M_spec._M_chrono_specs.end();
+   if (__first == __last)
+     return _M_format_to_ostream(__t, __fc, __is_neg);
+
+   _Sink_iter<_CharT> __out;
+   __format::_Str_sink<_CharT> __sink;
+   bool __write_direct = false;
+   if constexpr (is_same_v<typename _FormatContext::iterator,
+      _Sink_iter<_CharT>>)
+     {
+       if (_M_spec._M_width_kind == __format::_WP_none)
+  {
+    __out = __fc.out();
+    __write_direct = true;
+  }
+       else
+  __out = __sink.out();
+     }
+   else
+     __out = __sink.out();
+
+
+
+   if constexpr (__is_specialization_of<_Tp, chrono::hh_mm_ss>)
+     __is_neg = __t.is_negative();
+
+   auto __print_sign = [&__is_neg, &__out] {
+     if constexpr (chrono::__is_duration_v<_Tp>
+       || __is_specialization_of<_Tp, chrono::hh_mm_ss>)
+       if (__is_neg)
+  {
+    *__out++ = _S_plus_minus[1];
+    __is_neg = false;
+  }
+     return std::move(__out);
+   };
+
+
+   constexpr const _CharT* __literals = ::std::chrono::__detail::_Widen<_CharT>("\n\t%", L"\n\t%");
+
+   ++__first;
+
+   _CharT __mod{};
+   do
+     {
+       _CharT __c = *__first++;
+       switch (__c)
+  {
+  case 'a':
+  case 'A':
+    __out = _M_a_A(__t, std::move(__out), __fc, __c == 'A');
+    break;
+  case 'b':
+  case 'h':
+  case 'B':
+    __out = _M_b_B(__t, std::move(__out), __fc, __c == 'B');
+    break;
+  case 'c':
+    __out = _M_c(__t, std::move(__out), __fc, __mod == 'E');
+    break;
+  case 'C':
+  case 'y':
+  case 'Y':
+    __out = _M_C_y_Y(__t, std::move(__out), __fc, __c, __mod);
+    break;
+  case 'd':
+  case 'e':
+    __out = _M_d_e(__t, std::move(__out), __fc, __c, __mod == 'O');
+    break;
+  case 'D':
+    __out = _M_D(__t, std::move(__out), __fc);
+    break;
+  case 'F':
+    __out = _M_F(__t, std::move(__out), __fc);
+    break;
+  case 'g':
+  case 'G':
+    __out = _M_g_G(__t, std::move(__out), __fc, __c == 'G');
+    break;
+  case 'H':
+  case 'I':
+    __out = _M_H_I(__t, __print_sign(), __fc, __c, __mod == 'O');
+    break;
+  case 'j':
+    __out = _M_j(__t, __print_sign(), __fc);
+    break;
+  case 'm':
+    __out = _M_m(__t, std::move(__out), __fc, __mod == 'O');
+    break;
+  case 'M':
+    __out = _M_M(__t, __print_sign(), __fc, __mod == 'O');
+    break;
+  case 'p':
+    __out = _M_p(__t, std::move(__out), __fc);
+    break;
+  case 'q':
+    __out = _M_q(__t, std::move(__out), __fc);
+    break;
+  case 'Q':
+
+    if constexpr (chrono::__is_duration_v<_Tp>)
+      __out = std::format_to(__print_sign(), _S_empty_spec,
+        __t.count());
+    else
+      __throw_format_error("chrono format error: argument is "
+      "not a duration");
+    break;
+  case 'r':
+    __out = _M_r(__t, __print_sign(), __fc);
+    break;
+  case 'R':
+  case 'T':
+    __out = _M_R_T(__t, __print_sign(), __fc, __c == 'T');
+    break;
+  case 'S':
+    __out = _M_S(__t, __print_sign(), __fc, __mod == 'O');
+    break;
+  case 'u':
+  case 'w':
+    __out = _M_u_w(__t, std::move(__out), __fc, __c, __mod == 'O');
+    break;
+  case 'U':
+  case 'V':
+  case 'W':
+    __out = _M_U_V_W(__t, std::move(__out), __fc, __c,
+       __mod == 'O');
+    break;
+  case 'x':
+    __out = _M_x(__t, std::move(__out), __fc, __mod == 'E');
+    break;
+  case 'X':
+    __out = _M_X(__t, __print_sign(), __fc, __mod == 'E');
+    break;
+  case 'z':
+    __out = _M_z(__t, std::move(__out), __fc, (bool)__mod);
+    break;
+  case 'Z':
+    __out = _M_Z(__t, std::move(__out), __fc);
+    break;
+  case 'n':
+    *__out++ = __literals[0];
+    break;
+  case 't':
+    *__out++ = __literals[1];
+    break;
+  case '%':
+    *__out++ = __literals[2];
+    break;
+  case 'O':
+  case 'E':
+    __mod = __c;
+    continue;
+  case '}':
+    __first = __last;
+    break;
+  }
+       __mod = _CharT();
+
+       __string_view __str(__first, __last - __first);
+       size_t __pos = __str.find('%');
+       if (__pos == 0)
+  ++__first;
+       else
+  {
+    if (__pos == __str.npos)
+      __first = __last;
+    else
+      {
+        __str.remove_suffix(__str.length() - __pos);
+        __first += __pos + 1;
+      }
+    __out = __format::__write(std::move(__out), __str);
+  }
+     }
+   while (__first != __last);
+
+   if constexpr (is_same_v<typename _FormatContext::iterator,
+      _Sink_iter<_CharT>>)
+     if (__write_direct)
+       return __out;
+
+   auto __str = std::move(__sink).get();
+   return __format::__write_padded_as_spec(__str, __str.size(),
+        __fc, _M_spec);
+ }
+
+      _ChronoSpec<_CharT> _M_spec;
+
+    private:
+
+      template<typename _FormatContext>
+ std::locale
+ _M_locale(_FormatContext& __fc) const
+ {
+   if (!_M_spec._M_localized)
+     return std::locale::classic();
+   else
+     return __fc.locale();
+ }
+
+
+
+
+
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_format_to_ostream(const _Tp& __t, _FormatContext& __fc,
+        bool __is_neg) const
+ {
+   using ::std::chrono::__detail::__utc_leap_second;
+   using ::std::chrono::__detail::__local_time_fmt;
+
+   if constexpr (__is_specialization_of<_Tp, __local_time_fmt>)
+     return _M_format_to_ostream(__t._M_time, __fc, false);
+   else
+     {
+       basic_ostringstream<_CharT> __os;
+       __os.imbue(_M_locale(__fc));
+
+       if constexpr (__is_specialization_of<_Tp, __utc_leap_second>)
+  __os << __t._M_date << ' ' << __t._M_time;
+       else if constexpr (chrono::__is_time_point_v<_Tp>)
+  {
+
+
+
+
+
+    if constexpr (is_convertible_v<_Tp, chrono::sys_days>)
+      __os << _S_date(__t);
+    else
+      {
+        auto __days = chrono::floor<chrono::days>(__t);
+        __os << chrono::year_month_day(__days) << ' '
+    << chrono::hh_mm_ss(__t - __days);
+      }
+  }
+       else
+  {
+    if constexpr (chrono::__is_duration_v<_Tp>)
+      if (__is_neg) [[unlikely]]
+        __os << _S_plus_minus[1];
+    __os << __t;
+  }
+
+       auto __str = std::move(__os).str();
+       return __format::__write_padded_as_spec(__str, __str.size(),
+            __fc, _M_spec);
+     }
+ }
+
+      static constexpr const _CharT* _S_chars
+ = ::std::chrono::__detail::_Widen<_CharT>("0123456789+-:/ {}", L"0123456789+-:/ {}");
+      static constexpr const _CharT* _S_plus_minus = _S_chars + 10;
+      static constexpr _CharT _S_colon = _S_chars[12];
+      static constexpr _CharT _S_slash = _S_chars[13];
+      static constexpr _CharT _S_space = _S_chars[14];
+      static constexpr const _CharT* _S_empty_spec = _S_chars + 15;
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_a_A(const _Tp& __t, typename _FormatContext::iterator __out,
+        _FormatContext& __ctx, bool __full) const
+ {
+
+
+   chrono::weekday __wd = _S_weekday(__t);
+   if (!__wd.ok())
+     __throw_format_error("format error: invalid weekday");
+
+   locale __loc = _M_locale(__ctx);
+   const auto& __tp = use_facet<__timepunct<_CharT>>(__loc);
+   const _CharT* __days[7];
+   if (__full)
+     __tp._M_days(__days);
+   else
+     __tp._M_days_abbreviated(__days);
+   __string_view __str(__days[__wd.c_encoding()]);
+   return __format::__write(std::move(__out), __str);
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_b_B(const _Tp& __t, typename _FormatContext::iterator __out,
+        _FormatContext& __ctx, bool __full) const
+ {
+
+
+   chrono::month __m = _S_month(__t);
+   if (!__m.ok())
+     __throw_format_error("format error: invalid month");
+   locale __loc = _M_locale(__ctx);
+   const auto& __tp = use_facet<__timepunct<_CharT>>(__loc);
+   const _CharT* __months[12];
+   if (__full)
+     __tp._M_months(__months);
+   else
+     __tp._M_months_abbreviated(__months);
+   __string_view __str(__months[(unsigned)__m - 1]);
+   return __format::__write(std::move(__out), __str);
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_c(const _Tp& __tt, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx, bool __mod = false) const
+ {
+
+
+
+   auto __t = _S_floor_seconds(__tt);
+   locale __loc = _M_locale(__ctx);
+   const auto& __tp = use_facet<__timepunct<_CharT>>(__loc);
+   const _CharT* __formats[2];
+   __tp._M_date_time_formats(__formats);
+   const _CharT* __rep = __formats[__mod];
+   if (!*__rep)
+     __rep = ::std::chrono::__detail::_Widen<_CharT>("%a %b %e %H:%M:%S %Y", L"%a %b %e %H:%M:%S %Y");
+   basic_string<_CharT> __fmt(_S_empty_spec);
+   __fmt.insert(1u, 1u, _S_colon);
+   __fmt.insert(2u, __rep);
+   return std::vformat_to(std::move(__out), __loc, __fmt,
+     std::make_format_args<_FormatContext>(__t));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_C_y_Y(const _Tp& __t, typename _FormatContext::iterator __out,
+        _FormatContext& __ctx, _CharT __conv, _CharT __mod = 0) const
+ {
+# 824 "/usr/include/c++/14/bits/chrono_io.h" 3
+   chrono::year __y = _S_year(__t);
+
+   if (__mod) [[unlikely]]
+     {
+       struct tm __tm{};
+       __tm.tm_year = (int)__y - 1900;
+       return _M_locale_fmt(std::move(__out), _M_locale(__ctx), __tm,
+       __conv, __mod);
+     }
+
+   basic_string<_CharT> __s;
+   int __yi = (int)__y;
+   const bool __is_neg = __yi < 0;
+   __yi = __builtin_abs(__yi);
+
+   if (__conv == 'Y' || __conv == 'C')
+     {
+       int __ci = __yi / 100;
+       if (__is_neg) [[unlikely]]
+  {
+    __s.assign(1, _S_plus_minus[1]);
+
+    if (__conv == 'C' && (__ci * 100) != __yi)
+      ++__ci;
+  }
+       if (__ci >= 100) [[unlikely]]
+  {
+    __s += std::format(_S_empty_spec, __ci / 100);
+    __ci %= 100;
+  }
+       __s += _S_two_digits(__ci);
+     }
+
+   if (__conv == 'Y' || __conv == 'y')
+     __s += _S_two_digits(__yi % 100);
+
+   return __format::__write(std::move(__out), __string_view(__s));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_D(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext&) const
+ {
+   auto __ymd = _S_date(__t);
+   basic_string<_CharT> __s;
+
+
+
+   __s = _S_two_digits((unsigned)__ymd.month());
+   __s += _S_slash;
+   __s += _S_two_digits((unsigned)__ymd.day());
+   __s += _S_slash;
+   __s += _S_two_digits(__builtin_abs((int)__ymd.year()) % 100);
+   return __format::__write(std::move(__out), __string_view(__s));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_d_e(const _Tp& __t, typename _FormatContext::iterator __out,
+        _FormatContext& __ctx, _CharT __conv, bool __mod = false) const
+ {
+
+
+
+
+
+   chrono::day __d = _S_day(__t);
+   unsigned __i = (unsigned)__d;
+
+   if (__mod) [[unlikely]]
+     {
+       struct tm __tm{};
+       __tm.tm_mday = __i;
+       return _M_locale_fmt(std::move(__out), _M_locale(__ctx), __tm,
+       (char)__conv, 'O');
+     }
+
+   auto __sv = _S_two_digits(__i);
+   _CharT __buf[2];
+   if (__conv == _CharT('e') && __i < 10)
+     {
+       __buf[0] = _S_space;
+       __buf[1] = __sv[1];
+       __sv = {__buf, 2};
+     }
+   return __format::__write(std::move(__out), __sv);
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_F(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext&) const
+ {
+   auto __ymd = _S_date(__t);
+   auto __s = std::format(::std::chrono::__detail::_Widen<_CharT>("{:04d}-  -  ", L"{:04d}-  -  "),
+     (int)__ymd.year());
+   auto __sv = _S_two_digits((unsigned)__ymd.month());
+   __s[__s.size() - 5] = __sv[0];
+   __s[__s.size() - 4] = __sv[1];
+   __sv = _S_two_digits((unsigned)__ymd.day());
+   __s[__s.size() - 2] = __sv[0];
+   __s[__s.size() - 1] = __sv[1];
+   __sv = __s;
+   return __format::__write(std::move(__out), __sv);
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_g_G(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx, bool __full) const
+ {
+
+
+   using namespace chrono;
+   auto __d = _S_days(__t);
+
+   __d -= (weekday(__d) - Monday) - days(3);
+
+   year __y = year_month_day(__d).year();
+   return _M_C_y_Y(__y, std::move(__out), __ctx, "yY"[__full]);
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_H_I(const _Tp& __t, typename _FormatContext::iterator __out,
+        _FormatContext& __ctx, _CharT __conv, bool __mod = false) const
+ {
+
+
+
+
+
+   const auto __hms = _S_hms(__t);
+   int __i = __hms.hours().count();
+
+   if (__mod) [[unlikely]]
+     {
+       struct tm __tm{};
+       __tm.tm_hour = __i;
+       return _M_locale_fmt(std::move(__out), _M_locale(__ctx), __tm,
+       (char)__conv, 'O');
+     }
+
+   if (__conv == _CharT('I'))
+     {
+       if (__i == 0)
+  __i = 12;
+       else if (__i > 12)
+  __i -= 12;
+     }
+   return __format::__write(std::move(__out), _S_two_digits(__i));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_j(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext&) const
+ {
+   if constexpr (chrono::__is_duration_v<_Tp>)
+     {
+
+       unsigned __d = chrono::duration_cast<chrono::days>(__t).count();
+       return std::format_to(std::move(__out), _S_empty_spec, __d);
+     }
+   else
+     {
+
+       using namespace chrono;
+       auto __day = _S_days(__t);
+       auto __ymd = _S_date(__t);
+       days __d;
+
+
+       if constexpr (is_same_v<typename decltype(__day)::clock, local_t>)
+  __d = __day - local_days(__ymd.year()/January/0);
+       else
+  __d = __day - sys_days(__ymd.year()/January/0);
+       return std::format_to(std::move(__out), ::std::chrono::__detail::_Widen<_CharT>("{:03d}", L"{:03d}"),
+        __d.count());
+     }
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_m(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx, bool __mod) const
+ {
+
+
+
+   auto __m = _S_month(__t);
+   auto __i = (unsigned)__m;
+
+   if (__mod) [[unlikely]]
+     {
+       struct tm __tm{};
+       __tm.tm_mon = __i - 1;
+       return _M_locale_fmt(std::move(__out), _M_locale(__ctx), __tm,
+       'm', 'O');
+     }
+
+   return __format::__write(std::move(__out), _S_two_digits(__i));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_M(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx, bool __mod) const
+ {
+
+
+
+   auto __m = _S_hms(__t).minutes();
+   auto __i = __m.count();
+
+   if (__mod) [[unlikely]]
+     {
+       struct tm __tm{};
+       __tm.tm_min = __i;
+       return _M_locale_fmt(std::move(__out), _M_locale(__ctx), __tm,
+       'M', 'O');
+     }
+
+   return __format::__write(std::move(__out), _S_two_digits(__i));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_p(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx) const
+ {
+
+   auto __hms = _S_hms(__t);
+   locale __loc = _M_locale(__ctx);
+   const auto& __tp = use_facet<__timepunct<_CharT>>(__loc);
+   const _CharT* __ampm[2];
+   __tp._M_am_pm(__ampm);
+   return std::format_to(std::move(__out), _S_empty_spec,
+    __ampm[__hms.hours().count() >= 12]);
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_q(const _Tp&, typename _FormatContext::iterator __out,
+      _FormatContext&) const
+ {
+
+   if constexpr (!chrono::__is_duration_v<_Tp>)
+     __throw_format_error("format error: argument is not a duration");
+   else
+     {
+       namespace __d = chrono::__detail;
+       using period = typename _Tp::period;
+       return __d::__fmt_units_suffix<period, _CharT>(std::move(__out));
+     }
+ }
+
+
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_r(const _Tp& __tt, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx) const
+ {
+
+   auto __t = _S_floor_seconds(__tt);
+   locale __loc = _M_locale(__ctx);
+   const auto& __tp = use_facet<__timepunct<_CharT>>(__loc);
+   const _CharT* __ampm_fmt;
+   __tp._M_am_pm_format(&__ampm_fmt);
+   basic_string<_CharT> __fmt(_S_empty_spec);
+   __fmt.insert(1u, 1u, _S_colon);
+   __fmt.insert(2u, __ampm_fmt);
+   return std::vformat_to(std::move(__out), __fmt,
+     std::make_format_args<_FormatContext>(__t));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_R_T(const _Tp& __t, typename _FormatContext::iterator __out,
+        _FormatContext& __ctx, bool __secs) const
+ {
+
+
+   auto __hms = _S_hms(__t);
+
+   auto __s = std::format(::std::chrono::__detail::_Widen<_CharT>("{:02d}:00", L"{:02d}:00"),
+     __hms.hours().count());
+   auto __sv = _S_two_digits(__hms.minutes().count());
+   __s[__s.size() - 2] = __sv[0];
+   __s[__s.size() - 1] = __sv[1];
+   __sv = __s;
+   __out = __format::__write(std::move(__out), __sv);
+   if (__secs)
+     {
+       *__out++ = _S_colon;
+       __out = _M_S(__hms, std::move(__out), __ctx);
+     }
+   return __out;
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_S(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx, bool __mod = false) const
+ {
+
+
+   auto __hms = _S_hms(__t);
+
+   if (__mod) [[unlikely]]
+     {
+       struct tm __tm{};
+       __tm.tm_sec = (int)__hms.seconds().count();
+       return _M_locale_fmt(std::move(__out), _M_locale(__ctx), __tm,
+       'S', 'O');
+     }
+
+   if constexpr (__hms.fractional_width == 0)
+     __out = __format::__write(std::move(__out),
+          _S_two_digits(__hms.seconds().count()));
+   else
+     {
+       locale __loc = _M_locale(__ctx);
+       auto __s = __hms.seconds();
+       auto __ss = __hms.subseconds();
+       using rep = typename decltype(__ss)::rep;
+       if constexpr (is_floating_point_v<rep>)
+  {
+    chrono::duration<rep> __fs = __s + __ss;
+    __out = std::format_to(std::move(__out), __loc,
+      ::std::chrono::__detail::_Widen<_CharT>("{:#0{}.{}Lf}", L"{:#0{}.{}Lf}"),
+      __fs.count(),
+      3 + __hms.fractional_width,
+      __hms.fractional_width);
+  }
+       else
+  {
+    const auto& __np
+      = use_facet<numpunct<_CharT>>(__loc);
+    __out = __format::__write(std::move(__out),
+         _S_two_digits(__s.count()));
+    *__out++ = __np.decimal_point();
+    if constexpr (is_integral_v<rep>)
+      __out = std::format_to(std::move(__out),
+        ::std::chrono::__detail::_Widen<_CharT>("{:0{}}", L"{:0{}}"),
+        __ss.count(),
+        __hms.fractional_width);
+    else
+      {
+        auto __str = std::format(_S_empty_spec, __ss.count());
+        __out = std::format_to(::std::chrono::__detail::_Widen<_CharT>("{:0>{}s}", L"{:0>{}s}"),
+          __str,
+          __hms.fractional_width);
+      }
+  }
+     }
+   return __out;
+ }
+
+
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_u_w(const _Tp& __t, typename _FormatContext::iterator __out,
+        _FormatContext& __ctx, _CharT __conv, bool __mod = false) const
+ {
+
+
+
+
+
+   chrono::weekday __wd = _S_weekday(__t);
+
+   if (__mod) [[unlikely]]
+     {
+       struct tm __tm{};
+       __tm.tm_wday = __wd.c_encoding();
+       return _M_locale_fmt(std::move(__out), _M_locale(__ctx), __tm,
+       (char)__conv, 'O');
+     }
+
+   unsigned __wdi = __conv == 'u' ? __wd.iso_encoding()
+      : __wd.c_encoding();
+   const _CharT __d = _S_digit(__wdi);
+   return __format::__write(std::move(__out), __string_view(&__d, 1));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_U_V_W(const _Tp& __t, typename _FormatContext::iterator __out,
+   _FormatContext& __ctx, _CharT __conv, bool __mod = false) const
+ {
+
+
+
+
+
+
+   using namespace chrono;
+   auto __d = _S_days(__t);
+   using _TDays = decltype(__d);
+
+   if (__mod) [[unlikely]]
+     {
+       const year_month_day __ymd(__d);
+       const year __y = __ymd.year();
+       struct tm __tm{};
+       __tm.tm_year = (int)__y - 1900;
+       __tm.tm_yday = (__d - _TDays(__y/January/1)).count();
+       __tm.tm_wday = weekday(__d).c_encoding();
+       return _M_locale_fmt(std::move(__out), _M_locale(__ctx), __tm,
+       (char)__conv, 'O');
+     }
+
+   _TDays __first;
+   if (__conv == 'V')
+     {
+
+       __d -= (weekday(__d) - Monday) - days(3);
+
+
+       __first = _TDays(year_month_day(__d).year()/January/1);
+     }
+   else
+     {
+       year __y;
+       if constexpr (requires { __t.year(); })
+  __y = __t.year();
+       else
+  __y = year_month_day(__d).year();
+       const weekday __weekstart = __conv == 'U' ? Sunday : Monday;
+       __first = _TDays(__y/January/__weekstart[1]);
+     }
+   auto __weeks = chrono::floor<weeks>(__d - __first);
+   __string_view __sv = _S_two_digits(__weeks.count() + 1);
+   return __format::__write(std::move(__out), __sv);
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_x(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx, bool __mod = false) const
+ {
+
+
+   locale __loc = _M_locale(__ctx);
+   const auto& __tp = use_facet<__timepunct<_CharT>>(__loc);
+   const _CharT* __date_reps[2];
+   __tp._M_date_formats(__date_reps);
+   const _CharT* __rep = __date_reps[__mod];
+   if (!*__rep)
+     return _M_D(__t, std::move(__out), __ctx);
+
+   basic_string<_CharT> __fmt(_S_empty_spec);
+   __fmt.insert(1u, 1u, _S_colon);
+   __fmt.insert(2u, __rep);
+   return std::vformat_to(std::move(__out), __fmt,
+     std::make_format_args<_FormatContext>(__t));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_X(const _Tp& __tt, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx, bool __mod = false) const
+ {
+
+
+   auto __t = _S_floor_seconds(__tt);
+   locale __loc = _M_locale(__ctx);
+   const auto& __tp = use_facet<__timepunct<_CharT>>(__loc);
+   const _CharT* __time_reps[2];
+   __tp._M_time_formats(__time_reps);
+   const _CharT* __rep = __time_reps[__mod];
+   if (!*__rep)
+     return _M_R_T(__t, std::move(__out), __ctx, true);
+
+   basic_string<_CharT> __fmt(_S_empty_spec);
+   __fmt.insert(1u, 1u, _S_colon);
+   __fmt.insert(2u, __rep);
+   return std::vformat_to(std::move(__out), __fmt,
+     std::make_format_args<_FormatContext>(__t));
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_z(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext&, bool __mod = false) const
+ {
+   using ::std::chrono::__detail::__utc_leap_second;
+   using ::std::chrono::__detail::__local_time_fmt;
+
+   auto __utc = __mod ? __string_view(::std::chrono::__detail::_Widen<_CharT>("+00:00", L"+00:00"), 6)
+        : __string_view(::std::chrono::__detail::_Widen<_CharT>("+0000", L"+0000"), 5);
+
+   if constexpr (chrono::__is_time_point_v<_Tp>)
+     {
+       if constexpr (is_same_v<typename _Tp::clock,
+          chrono::system_clock>)
+  return __format::__write(std::move(__out), __utc);
+     }
+   else if constexpr (__is_specialization_of<_Tp, __local_time_fmt>)
+     {
+       if (__t._M_offset_sec)
+  {
+    auto __sv = __utc;
+    basic_string<_CharT> __s;
+    if (*__t._M_offset_sec != 0s)
+      {
+        chrono:: hh_mm_ss __hms(*__t._M_offset_sec);
+        __s = _S_plus_minus[__hms.is_negative()];
+        __s += _S_two_digits(__hms.hours().count());
+        if (__mod)
+   __s += _S_colon;
+        __s += _S_two_digits(__hms.minutes().count());
+        __sv = __s;
+      }
+    return __format::__write(std::move(__out), __sv);
+  }
+     }
+   else if constexpr (__is_specialization_of<_Tp, __utc_leap_second>)
+     return __format::__write(std::move(__out), __utc);
+
+   __no_timezone_available();
+ }
+
+      template<typename _Tp, typename _FormatContext>
+ typename _FormatContext::iterator
+ _M_Z(const _Tp& __t, typename _FormatContext::iterator __out,
+      _FormatContext& __ctx) const
+ {
+   using ::std::chrono::__detail::__utc_leap_second;
+   using ::std::chrono::__detail::__local_time_fmt;
+
+   __string_view __utc(::std::chrono::__detail::_Widen<_CharT>("UTC", L"UTC"), 3);
+   if constexpr (chrono::__is_time_point_v<_Tp>)
+     {
+       if constexpr (is_same_v<typename _Tp::clock,
+          chrono::system_clock>)
+  return __format::__write(std::move(__out), __utc);
+     }
+   else if constexpr (__is_specialization_of<_Tp, __local_time_fmt>)
+     {
+       if (__t._M_abbrev)
+  {
+    string_view __sv = *__t._M_abbrev;
+    if constexpr (is_same_v<_CharT, char>)
+      return __format::__write(std::move(__out), __sv);
+    else
+      {
+
+        basic_string<_CharT> __ws(__sv.size(), _CharT());
+        auto& __ct = use_facet<ctype<_CharT>>(_M_locale(__ctx));
+        __ct.widen(__sv.begin(), __sv.end(), __ws.data());
+        __string_view __wsv = __ws;
+        return __format::__write(std::move(__out), __wsv);
+      }
+  }
+     }
+   else if constexpr (__is_specialization_of<_Tp, __utc_leap_second>)
+     return __format::__write(std::move(__out), __utc);
+
+   __no_timezone_available();
+ }
+
+
+
+
+      static _CharT
+      _S_digit(int __n) noexcept
+      {
+
+ return ::std::chrono::__detail::_Widen<_CharT>("0123456789999999", L"0123456789999999")[__n & 0xf];
+      }
+
+
+      static basic_string_view<_CharT>
+      _S_two_digits(int __n) noexcept
+      {
+ return {
+   ::std::chrono::__detail::_Widen<_CharT>("0001020304050607080910111213141516171819" "2021222324252627282930313233343536373839" "4041424344454647484950515253545556575859" "6061626364656667686970717273747576777879" "8081828384858687888990919293949596979899" "9999999999999999999999999999999999999999" "9999999999999999", L"0001020304050607080910111213141516171819" "2021222324252627282930313233343536373839" "4041424344454647484950515253545556575859" "6061626364656667686970717273747576777879" "8081828384858687888990919293949596979899" "9999999999999999999999999999999999999999" "9999999999999999")
+
+
+
+
+
+                        + 2 * (__n & 0x7f),
+   2
+ };
+      }
+
+
+
+
+      template<typename _Tp>
+ static decltype(auto)
+ _S_hms(const _Tp& __t)
+ {
+   using ::std::chrono::__detail::__utc_leap_second;
+   using ::std::chrono::__detail::__local_time_fmt;
+
+   if constexpr (__is_specialization_of<_Tp, chrono::hh_mm_ss>)
+     return __t;
+   else if constexpr (__is_specialization_of<_Tp, __utc_leap_second>)
+     return __t._M_time;
+   else if constexpr (chrono::__is_duration_v<_Tp>)
+     return chrono::hh_mm_ss<_Tp>(__t);
+   else if constexpr (chrono::__is_time_point_v<_Tp>)
+     return chrono::hh_mm_ss(__t - chrono::floor<chrono::days>(__t));
+   else if constexpr (__is_specialization_of<_Tp, __local_time_fmt>)
+     return _S_hms(__t._M_time);
+   else
+     {
+       __invalid_chrono_spec();
+       return chrono::hh_mm_ss<chrono::seconds>();
+     }
+ }
+
+
+      template<typename _Tp>
+ static auto
+ _S_days(const _Tp& __t)
+ {
+   using namespace chrono;
+   using ::std::chrono::__detail::__utc_leap_second;
+   using ::std::chrono::__detail::__local_time_fmt;
+
+   if constexpr (__is_time_point_v<_Tp>)
+     return chrono::floor<days>(__t);
+   else if constexpr (__is_specialization_of<_Tp, __utc_leap_second>)
+     return __t._M_date;
+   else if constexpr (__is_specialization_of<_Tp, __local_time_fmt>)
+     return chrono::floor<days>(__t._M_time);
+   else if constexpr (is_same_v<_Tp, year_month_day>
+          || is_same_v<_Tp, year_month_day_last>
+          || is_same_v<_Tp, year_month_weekday>
+          || is_same_v<_Tp, year_month_weekday_last>)
+     return sys_days(__t);
+   else
+     {
+       if constexpr (__is_duration_v<_Tp>)
+  __not_valid_for_duration();
+       else
+  __invalid_chrono_spec();
+       return chrono::sys_days();
+     }
+ }
+
+
+      template<typename _Tp>
+ static chrono::year_month_day
+ _S_date(const _Tp& __t)
+ {
+   if constexpr (is_same_v<_Tp, chrono::year_month_day>)
+     return __t;
+   else
+     return chrono::year_month_day(_S_days(__t));
+ }
+
+      template<typename _Tp>
+ static chrono::day
+ _S_day(const _Tp& __t)
+ {
+   using namespace chrono;
+
+   if constexpr (is_same_v<_Tp, day>)
+     return __t;
+   else if constexpr (requires { __t.day(); })
+     return __t.day();
+   else
+     return _S_date(__t).day();
+ }
+
+      template<typename _Tp>
+ static chrono::month
+ _S_month(const _Tp& __t)
+ {
+   using namespace chrono;
+
+   if constexpr (is_same_v<_Tp, month>)
+     return __t;
+   else if constexpr (requires { __t.month(); })
+     return __t.month();
+   else
+     return _S_date(__t).month();
+ }
+
+      template<typename _Tp>
+ static chrono::year
+ _S_year(const _Tp& __t)
+ {
+   using namespace chrono;
+
+   if constexpr (is_same_v<_Tp, year>)
+     return __t;
+   else if constexpr (requires { __t.year(); })
+     return __t.year();
+   else
+     return _S_date(__t).year();
+ }
+
+      template<typename _Tp>
+ static chrono::weekday
+ _S_weekday(const _Tp& __t)
+ {
+   using namespace ::std::chrono;
+   using ::std::chrono::__detail::__local_time_fmt;
+
+   if constexpr (is_same_v<_Tp, weekday>)
+     return __t;
+   else if constexpr (requires { __t.weekday(); })
+     return __t.weekday();
+   else if constexpr (is_same_v<_Tp, month_weekday>)
+     return __t.weekday_indexed().weekday();
+   else if constexpr (is_same_v<_Tp, month_weekday_last>)
+     return __t.weekday_last().weekday();
+   else
+     return weekday(_S_days(__t));
+ }
+
+
+      template<typename _Tp>
+ static auto
+ _S_floor_seconds(const _Tp& __t)
+ {
+   using chrono::__detail::__local_time_fmt;
+   if constexpr (chrono::__is_time_point_v<_Tp>
+     || chrono::__is_duration_v<_Tp>)
+     {
+       if constexpr (_Tp::period::den != 1)
+  return chrono::floor<chrono::seconds>(__t);
+       else
+  return __t;
+     }
+   else if constexpr (__is_specialization_of<_Tp, chrono::hh_mm_ss>)
+     {
+       if constexpr (_Tp::fractional_width != 0)
+  return chrono::floor<chrono::seconds>(__t.to_duration());
+       else
+  return __t;
+     }
+   else if constexpr (__is_specialization_of<_Tp, __local_time_fmt>)
+     return _S_floor_seconds(__t._M_time);
+   else
+     return __t;
+ }
+
+
+
+      template<typename _Iter>
+ _Iter
+ _M_locale_fmt(_Iter __out, const locale& __loc, const struct tm& __tm,
+        char __fmt, char __mod) const
+ {
+   basic_ostringstream<_CharT> __os;
+   const auto& __tp = use_facet<time_put<_CharT>>(__loc);
+   __tp.put(__os, __os, _S_space, &__tm, __fmt, __mod);
+   if (__os)
+     __out = __format::__write(std::move(__out), __os.view());
+   return __out;
+ }
+    };
+
+}
+
+
+  template<typename _Rep, typename _Period, typename _CharT>
+    struct formatter<chrono::duration<_Rep, _Period>, _CharT>
+    {
+      constexpr typename basic_format_parse_context<_CharT>::iterator
+      parse(basic_format_parse_context<_CharT>& __pc)
+      {
+ using namespace __format;
+ auto __it = _M_f._M_parse(__pc, _Duration|_TimeOfDay);
+ if constexpr (!is_floating_point_v<_Rep>)
+   if (_M_f._M_spec._M_prec_kind != __format::_WP_none)
+     __throw_format_error("format error: invalid precision for duration");
+ return __it;
+      }
+
+      template<typename _Out>
+ typename basic_format_context<_Out, _CharT>::iterator
+ format(const chrono::duration<_Rep, _Period>& __d,
+        basic_format_context<_Out, _CharT>& __fc) const
+ {
+   return _M_f._M_format(chrono::abs(__d), __fc, __d < __d.zero());
+ }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::day, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Day); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::day& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::month, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Month); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::month& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::year, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Year); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::year& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::weekday, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Weekday); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::weekday& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::weekday_indexed, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Weekday); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::weekday_indexed& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::weekday_last, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Weekday); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::weekday_last& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::month_day, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Month|__format::_Day); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::month_day& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::month_day_last, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Month|__format::_Day); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::month_day_last& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::month_weekday, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Month|__format::_Weekday); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::month_weekday& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::month_weekday_last, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Month|__format::_Weekday); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::month_weekday_last& __t,
+        _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::year_month, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Year|__format::_Month); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::year_month& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::year_month_day, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Date); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::year_month_day& __t, _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::year_month_day_last, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Date); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::year_month_day_last& __t,
+        _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::year_month_weekday, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Date); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::year_month_weekday& __t,
+        _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::year_month_weekday_last, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_Date); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::year_month_weekday_last& __t,
+        _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _Rep, typename _Period, typename _CharT>
+    struct formatter<chrono::hh_mm_ss<chrono::duration<_Rep, _Period>>, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_TimeOfDay); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::hh_mm_ss<chrono::duration<_Rep, _Period>>& __t,
+        _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+
+  template<typename _CharT>
+    struct formatter<chrono::sys_info, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_ChronoParts{}); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::sys_info& __i, _FormatContext& __fc) const
+ { return _M_f._M_format(__i, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _CharT>
+    struct formatter<chrono::local_info, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_ChronoParts{}); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::local_info& __i, _FormatContext& __fc) const
+ { return _M_f._M_format(__i, __fc); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+
+  template<typename _Duration, typename _CharT>
+    struct formatter<chrono::sys_time<_Duration>, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ {
+   auto __next = _M_f._M_parse(__pc, __format::_ZonedDateTime);
+   if constexpr (!__stream_insertable)
+     if (_M_f._M_spec._M_chrono_specs.empty())
+       __format::__invalid_chrono_spec();
+   return __next;
+ }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::sys_time<_Duration>& __t,
+        _FormatContext& __fc) const
+ { return _M_f._M_format(__t, __fc); }
+
+    private:
+      static constexpr bool __stream_insertable
+ = requires (basic_ostream<_CharT>& __os,
+      chrono::sys_time<_Duration> __t) { __os << __t; };
+
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _Duration, typename _CharT>
+    struct formatter<chrono::utc_time<_Duration>, _CharT>
+    : __format::__formatter_chrono<_CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_ZonedDateTime); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::utc_time<_Duration>& __t,
+        _FormatContext& __fc) const
+ {
+
+
+
+   using chrono::__detail::__utc_leap_second;
+   using chrono::seconds;
+   using chrono::sys_time;
+   using _CDur = common_type_t<_Duration, seconds>;
+   const auto __li = chrono::get_leap_second_info(__t);
+   sys_time<_CDur> __s{__t.time_since_epoch() - __li.elapsed};
+   if (!__li.is_leap_second) [[likely]]
+     return _M_f._M_format(__s, __fc);
+   else
+     return _M_f._M_format(__utc_leap_second(__s), __fc);
+ }
+
+    private:
+      friend formatter<chrono::__detail::__utc_leap_second<_Duration>, _CharT>;
+
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _Duration, typename _CharT>
+    struct formatter<chrono::tai_time<_Duration>, _CharT>
+    : __format::__formatter_chrono<_CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_ZonedDateTime); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::tai_time<_Duration>& __t,
+        _FormatContext& __fc) const
+ {
+
+
+
+   constexpr chrono::days __tai_offset = chrono::days(4383);
+   using _CDur = common_type_t<_Duration, chrono::days>;
+   chrono::local_time<_CDur> __lt(__t.time_since_epoch() - __tai_offset);
+   const string __abbrev("TAI", 3);
+   const chrono::seconds __off = 0s;
+   const auto __lf = chrono::local_time_format(__lt, &__abbrev, &__off);
+   return _M_f._M_format(__lf, __fc);
+ }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _Duration, typename _CharT>
+    struct formatter<chrono::gps_time<_Duration>, _CharT>
+    : __format::__formatter_chrono<_CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_ZonedDateTime); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::gps_time<_Duration>& __t,
+        _FormatContext& __fc) const
+ {
+
+
+
+   constexpr chrono::days __gps_offset = chrono::days(3657);
+   using _CDur = common_type_t<_Duration, chrono::days>;
+   chrono::local_time<_CDur> __lt(__t.time_since_epoch() + __gps_offset);
+   const string __abbrev("GPS", 3);
+   const chrono::seconds __off = 0s;
+   const auto __lf = chrono::local_time_format(__lt, &__abbrev, &__off);
+   return _M_f._M_format(__lf, __fc);
+ }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _Duration, typename _CharT>
+    struct formatter<chrono::file_time<_Duration>, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_ZonedDateTime); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::file_time<_Duration>& __t,
+        _FormatContext& __ctx) const
+ {
+   using namespace chrono;
+   return _M_f._M_format(chrono::clock_cast<system_clock>(__t), __ctx);
+ }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _Duration, typename _CharT>
+    struct formatter<chrono::local_time<_Duration>, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_DateTime); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::local_time<_Duration>& __t,
+        _FormatContext& __ctx) const
+ { return _M_f._M_format(__t, __ctx); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+  template<typename _Duration, typename _CharT>
+    struct formatter<chrono::__detail::__local_time_fmt<_Duration>, _CharT>
+    {
+      template<typename _ParseContext>
+ constexpr typename _ParseContext::iterator
+ parse(_ParseContext& __pc)
+ { return _M_f._M_parse(__pc, __format::_ZonedDateTime); }
+
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::__detail::__local_time_fmt<_Duration>& __t,
+        _FormatContext& __ctx) const
+ { return _M_f._M_format(__t, __ctx); }
+
+    private:
+      __format::__formatter_chrono<_CharT> _M_f;
+    };
+
+
+  template<typename _Duration, typename _TimeZonePtr, typename _CharT>
+    struct formatter<chrono::zoned_time<_Duration, _TimeZonePtr>, _CharT>
+    : formatter<chrono::__detail::__local_time_fmt<_Duration>, _CharT>
+    {
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::zoned_time<_Duration, _TimeZonePtr>& __tp,
+        _FormatContext& __ctx) const
+ {
+   using chrono::__detail::__local_time_fmt;
+   using _Base = formatter<__local_time_fmt<_Duration>, _CharT>;
+   const chrono::sys_info __info = __tp.get_info();
+   const auto __lf = chrono::local_time_format(__tp.get_local_time(),
+            &__info.abbrev,
+            &__info.offset);
+   return _Base::format(__lf, __ctx);
+ }
+    };
+
+
+
+  template<typename _Duration, typename _CharT>
+    struct formatter<chrono::__detail::__utc_leap_second<_Duration>, _CharT>
+    : formatter<chrono::utc_time<_Duration>, _CharT>
+    {
+      template<typename _FormatContext>
+ typename _FormatContext::iterator
+ format(const chrono::__detail::__utc_leap_second<_Duration>& __t,
+        _FormatContext& __fc) const
+ { return this->_M_f._M_format(__t, __fc); }
+    };
+
+namespace chrono
+{
+
+
+
+
+namespace __detail
+{
+  template<typename _Duration = seconds>
+    struct _Parser
+    {
+      static_assert(is_same_v<common_type_t<_Duration, seconds>, _Duration>);
+
+      explicit
+      _Parser(__format::_ChronoParts __need) : _M_need(__need) { }
+
+      _Parser(_Parser&&) = delete;
+      void operator=(_Parser&&) = delete;
+
+      _Duration _M_time{};
+      sys_days _M_sys_days{};
+      year_month_day _M_ymd{};
+      weekday _M_wd{};
+      __format::_ChronoParts _M_need;
+      unsigned _M_is_leap_second : 1 {};
+      unsigned _M_reserved : 15 {};
+
+      template<typename _CharT, typename _Traits, typename _Alloc>
+ basic_istream<_CharT, _Traits>&
+ operator()(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+     basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+     minutes* __offset = nullptr);
+
+    private:
+
+
+      template<typename _CharT, typename _Traits>
+ static int_least32_t
+ _S_read_unsigned(basic_istream<_CharT, _Traits>& __is,
+    ios_base::iostate& __err, int __n)
+ {
+   int_least32_t __val = _S_try_read_digit(__is, __err);
+   if (__val == -1) [[unlikely]]
+     __err |= ios_base::failbit;
+   else
+     {
+       int __n1 = (std::min)(__n, 9);
+
+       for (int __i = 1; __i < __n1; ++__i)
+  if (auto __dig = _S_try_read_digit(__is, __err); __dig != -1)
+    {
+      __val *= 10;
+      __val += __dig;
+    }
+
+       while (__n1++ < __n) [[unlikely]]
+  if (auto __dig = _S_try_read_digit(__is, __err); __dig != -1)
+    {
+      if (__builtin_mul_overflow(__val, 10, &__val)
+     || __builtin_add_overflow(__val, __dig, &__val))
+        {
+   __err |= ios_base::failbit;
+   return -1;
+        }
+    }
+     }
+   return __val;
+ }
+
+
+
+      template<typename _CharT, typename _Traits>
+ static int_least32_t
+ _S_read_signed(basic_istream<_CharT, _Traits>& __is,
+    ios_base::iostate& __err, int __n)
+ {
+   auto __sign = __is.peek();
+   if (__sign == '-' || __sign == '+')
+     (void) __is.get();
+   int_least32_t __val = _S_read_unsigned(__is, __err, __n);
+   if (__err & ios_base::failbit)
+     {
+       if (__sign == '-') [[unlikely]]
+  __val *= -1;
+     }
+   return __val;
+ }
+
+
+
+      template<typename _CharT, typename _Traits>
+ static int_least32_t
+ _S_try_read_digit(basic_istream<_CharT, _Traits>& __is,
+     ios_base::iostate& __err)
+ {
+   int_least32_t __val = -1;
+   auto __i = __is.peek();
+   if (!_Traits::eq_int_type(__i, _Traits::eof())) [[likely]]
+     {
+       _CharT __c = _Traits::to_char_type(__i);
+       if (_CharT('0') <= __c && __c <= _CharT('9')) [[likely]]
+  {
+    (void) __is.get();
+    __val = __c - _CharT('0');
+  }
+     }
+   else
+     __err |= ios_base::eofbit;
+   return __val;
+ }
+
+
+
+      template<typename _CharT, typename _Traits>
+ static bool
+ _S_read_chr(basic_istream<_CharT, _Traits>& __is,
+      ios_base::iostate& __err, _CharT __c)
+ {
+   auto __i = __is.peek();
+   if (_Traits::eq_int_type(__i, _Traits::eof()))
+     __err |= ios_base::eofbit;
+   else if (_Traits::to_char_type(__i) == __c) [[likely]]
+     {
+       (void) __is.get();
+       return true;
+     }
+   __err |= ios_base::failbit;
+   return false;
+ }
+    };
+
+  template<typename _Duration>
+    using _Parser_t = _Parser<common_type_t<_Duration, seconds>>;
+
+}
+
+
+  template<typename _CharT, typename _Traits, typename _Rep, typename _Period,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  duration<_Rep, _Period>& __d,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      auto __need = __format::_ChronoParts::_TimeOfDay;
+      __detail::_Parser_t<duration<_Rep, _Period>> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ __d = chrono::duration_cast<duration<_Rep, _Period>>(__p._M_time);
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const day& __d)
+    {
+      using _Ctx = __format::__format_context<_CharT>;
+      using _Str = basic_string_view<_CharT>;
+      _Str __s = ::std::chrono::__detail::_Widen<_CharT>("{:02d} is not a valid day", L"{:02d} is not a valid day");
+      if (__d.ok())
+ __s = __s.substr(0, 6);
+      auto __u = (unsigned)__d;
+      __os << std::vformat(__s, make_format_args<_Ctx>(__u));
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  day& __d,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      __detail::_Parser<> __p(__format::_ChronoParts::_Day);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ __d = __p._M_ymd.day();
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const month& __m)
+    {
+      using _Ctx = __format::__format_context<_CharT>;
+      using _Str = basic_string_view<_CharT>;
+      _Str __s = ::std::chrono::__detail::_Widen<_CharT>("{:L%b}{} is not a valid month", L"{:L%b}{} is not a valid month");
+      if (__m.ok())
+ __os << std::vformat(__os.getloc(), __s.substr(0, 6),
+        make_format_args<_Ctx>(__m));
+      else
+ {
+   auto __u = (unsigned)__m;
+   __os << std::vformat(__s.substr(6), make_format_args<_Ctx>(__u));
+ }
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  month& __m,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      __detail::_Parser<> __p(__format::_ChronoParts::_Month);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ __m = __p._M_ymd.month();
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const year& __y)
+    {
+      using _Ctx = __format::__format_context<_CharT>;
+      using _Str = basic_string_view<_CharT>;
+      _Str __s = ::std::chrono::__detail::_Widen<_CharT>("-{:04d} is not a valid year", L"-{:04d} is not a valid year");
+      if (__y.ok())
+ __s = __s.substr(0, 7);
+      int __i = (int)__y;
+      if (__i >= 0) [[likely]]
+ __s.remove_prefix(1);
+      else
+ __i = -__i;
+      __os << std::vformat(__s, make_format_args<_Ctx>(__i));
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  year& __y,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      __detail::_Parser<> __p(__format::_ChronoParts::_Year);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ __y = __p._M_ymd.year();
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const weekday& __wd)
+    {
+      using _Ctx = __format::__format_context<_CharT>;
+      using _Str = basic_string_view<_CharT>;
+      _Str __s = ::std::chrono::__detail::_Widen<_CharT>("{:L%a}{} is not a valid weekday", L"{:L%a}{} is not a valid weekday");
+      if (__wd.ok())
+ __os << std::vformat(__os.getloc(), __s.substr(0, 6),
+        make_format_args<_Ctx>(__wd));
+      else
+ {
+   auto __c = __wd.c_encoding();
+   __os << std::vformat(__s.substr(6), make_format_args<_Ctx>(__c));
+ }
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  weekday& __wd,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      __detail::_Parser<> __p(__format::_ChronoParts::_Weekday);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ __wd = __p._M_wd;
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const weekday_indexed& __wdi)
+    {
+
+
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      __os2 << __wdi.weekday();
+      const auto __i = __wdi.index();
+      basic_string_view<_CharT> __s
+ = ::std::chrono::__detail::_Widen<_CharT>("[ is not a valid index]", L"[ is not a valid index]");
+      __os2 << __s[0];
+      __os2 << std::format(::std::chrono::__detail::_Widen<_CharT>("{}", L"{}"), __i);
+      if (__i >= 1 && __i <= 5)
+ __os2 << __s.back();
+      else
+ __os2 << __s.substr(1);
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const weekday_last& __wdl)
+    {
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      __os2 << __wdl.weekday() << ::std::chrono::__detail::_Widen<_CharT>("[last]", L"[last]");
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const month_day& __md)
+    {
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      __os2 << __md.month();
+      if constexpr (is_same_v<_CharT, char>)
+ __os2 << '/';
+      else
+ __os2 << L'/';
+      __os2 << __md.day();
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  month_day& __md,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      using __format::_ChronoParts;
+      auto __need = _ChronoParts::_Month | _ChronoParts::_Day;
+      __detail::_Parser<> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ __md = month_day(__p._M_ymd.month(), __p._M_ymd.day());
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const month_day_last& __mdl)
+    {
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      __os2 << __mdl.month() << ::std::chrono::__detail::_Widen<_CharT>("/last", L"/last");
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const month_weekday& __mwd)
+    {
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      __os2 << __mwd.month();
+      if constexpr (is_same_v<_CharT, char>)
+ __os2 << '/';
+      else
+ __os2 << L'/';
+      __os2 << __mwd.weekday_indexed();
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const month_weekday_last& __mwdl)
+    {
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      __os2 << __mwdl.month();
+      if constexpr (is_same_v<_CharT, char>)
+ __os2 << '/';
+      else
+ __os2 << L'/';
+      __os2 << __mwdl.weekday_last();
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const year_month& __ym)
+    {
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      __os2 << __ym.year();
+      if constexpr (is_same_v<_CharT, char>)
+ __os2 << '/';
+      else
+ __os2 << L'/';
+      __os2 << __ym.month();
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  year_month& __ym,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      using __format::_ChronoParts;
+      auto __need = _ChronoParts::_Year | _ChronoParts::_Month;
+      __detail::_Parser<> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ __ym = year_month(__p._M_ymd.year(), __p._M_ymd.month());
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const year_month_day& __ymd)
+    {
+      using _Ctx = __format::__format_context<_CharT>;
+      using _Str = basic_string_view<_CharT>;
+      _Str __s = ::std::chrono::__detail::_Widen<_CharT>("{:%F} is not a valid date", L"{:%F} is not a valid date");
+      __os << std::vformat(__ymd.ok() ? __s.substr(0, 5) : __s,
+      make_format_args<_Ctx>(__ymd));
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  year_month_day& __ymd,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      using __format::_ChronoParts;
+      auto __need = _ChronoParts::_Year | _ChronoParts::_Month
+      | _ChronoParts::_Day;
+      __detail::_Parser<> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ __ymd = __p._M_ymd;
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const year_month_day_last& __ymdl)
+    {
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      __os2 << __ymdl.year();
+      if constexpr (is_same_v<_CharT, char>)
+ __os2 << '/';
+      else
+ __os2 << L'/';
+      __os2 << __ymdl.month_day_last();
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const year_month_weekday& __ymwd)
+    {
+
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      _CharT __slash;
+      if constexpr (is_same_v<_CharT, char>)
+ __slash = '/';
+      else
+ __slash = L'/';
+      __os2 << __ymwd.year() << __slash << __ymwd.month() << __slash
+     << __ymwd.weekday_indexed();
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const year_month_weekday_last& __ymwdl)
+    {
+
+
+      basic_stringstream<_CharT> __os2;
+      __os2.imbue(__os.getloc());
+      _CharT __slash;
+      if constexpr (is_same_v<_CharT, char>)
+ __slash = '/';
+      else
+ __slash = L'/';
+      __os2 << __ymwdl.year() << __slash << __ymwdl.month() << __slash
+     << __ymwdl.weekday_last();
+      __os << __os2.view();
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const hh_mm_ss<_Duration>& __hms)
+    {
+      return __os << format(__os.getloc(), ::std::chrono::__detail::_Widen<_CharT>("{:L%T}", L"{:L%T}"), __hms);
+    }
+
+
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const sys_info& __i)
+    {
+      __os << '[' << __i.begin << ',' << __i.end
+    << ',' << hh_mm_ss(__i.offset) << ',' << __i.save
+    << ',' << __i.abbrev << ']';
+      return __os;
+    }
+
+
+  template<typename _CharT, typename _Traits>
+    basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const local_info& __li)
+    {
+      __os << '[';
+      if (__li.result == local_info::unique)
+ __os << __li.first;
+      else
+ {
+   if (__li.result == local_info::nonexistent)
+     __os << "nonexistent";
+   else
+     __os << "ambiguous";
+   __os << " local time between " << __li.first;
+   __os << " and " << __li.second;
+ }
+      __os << ']';
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration,
+    typename _TimeZonePtr>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const zoned_time<_Duration, _TimeZonePtr>& __t)
+    {
+      __os << format(__os.getloc(), ::std::chrono::__detail::_Widen<_CharT>("{:L%F %T %Z}", L"{:L%F %T %Z}"), __t);
+      return __os;
+    }
+
+
+  template<typename _CharT, typename _Traits, typename _Duration>
+    requires (!treat_as_floating_point_v<typename _Duration::rep>)
+      && ratio_less_v<typename _Duration::period, days::period>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const sys_time<_Duration>& __tp)
+    {
+      __os << std::format(__os.getloc(), ::std::chrono::__detail::_Widen<_CharT>("{:L%F %T}", L"{:L%F %T}"), __tp);
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os, const sys_days& __dp)
+    {
+      __os << year_month_day{__dp};
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration,
+    typename _Alloc = allocator<_CharT>>
+    basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  sys_time<_Duration>& __tp,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      minutes __off{};
+      if (!__offset)
+ __offset = &__off;
+      using __format::_ChronoParts;
+      auto __need = _ChronoParts::_Year | _ChronoParts::_Month
+      | _ChronoParts::_Day | _ChronoParts::_TimeOfDay;
+      __detail::_Parser_t<_Duration> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ {
+   if (__p._M_is_leap_second)
+     __is.setstate(ios_base::failbit);
+   else
+     {
+       auto __st = __p._M_sys_days + __p._M_time - *__offset;
+       __tp = chrono::time_point_cast<_Duration>(__st);
+     }
+ }
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const utc_time<_Duration>& __t)
+    {
+      __os << std::format(__os.getloc(), ::std::chrono::__detail::_Widen<_CharT>("{:L%F %T}", L"{:L%F %T}"), __t);
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  utc_time<_Duration>& __tp,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      minutes __off{};
+      if (!__offset)
+ __offset = &__off;
+      using __format::_ChronoParts;
+      auto __need = _ChronoParts::_Year | _ChronoParts::_Month
+      | _ChronoParts::_Day | _ChronoParts::_TimeOfDay;
+      __detail::_Parser_t<_Duration> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ {
+
+
+   auto __ut = utc_clock::from_sys(__p._M_sys_days) + __p._M_time
+   - *__offset;
+   __tp = chrono::time_point_cast<_Duration>(__ut);
+ }
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const tai_time<_Duration>& __t)
+    {
+      __os << std::format(__os.getloc(), ::std::chrono::__detail::_Widen<_CharT>("{:L%F %T}", L"{:L%F %T}"), __t);
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  tai_time<_Duration>& __tp,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      minutes __off{};
+      if (!__offset)
+ __offset = &__off;
+      using __format::_ChronoParts;
+      auto __need = _ChronoParts::_Year | _ChronoParts::_Month
+      | _ChronoParts::_Day | _ChronoParts::_TimeOfDay;
+      __detail::_Parser_t<_Duration> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ {
+   if (__p._M_is_leap_second)
+     __is.setstate(ios_base::failbit);
+   else
+     {
+       auto __st = __p._M_sys_days + __p._M_time - *__offset;
+       auto __tt = tai_clock::from_utc(utc_clock::from_sys(__st));
+       __tp = chrono::time_point_cast<_Duration>(__tt);
+     }
+ }
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const gps_time<_Duration>& __t)
+    {
+      __os << std::format(__os.getloc(), ::std::chrono::__detail::_Widen<_CharT>("{:L%F %T}", L"{:L%F %T}"), __t);
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  gps_time<_Duration>& __tp,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      minutes __off{};
+      if (!__offset)
+ __offset = &__off;
+      using __format::_ChronoParts;
+      auto __need = _ChronoParts::_Year | _ChronoParts::_Month
+      | _ChronoParts::_Day | _ChronoParts::_TimeOfDay;
+      __detail::_Parser_t<_Duration> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ {
+   if (__p._M_is_leap_second)
+     __is.setstate(ios_base::failbit);
+   else
+     {
+       auto __st = __p._M_sys_days + __p._M_time - *__offset;
+       auto __tt = gps_clock::from_utc(utc_clock::from_sys(__st));
+       __tp = chrono::time_point_cast<_Duration>(__tt);
+     }
+ }
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const file_time<_Duration>& __t)
+    {
+      __os << std::format(__os.getloc(), ::std::chrono::__detail::_Widen<_CharT>("{:L%F %T}", L"{:L%F %T}"), __t);
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration,
+    typename _Alloc = allocator<_CharT>>
+    inline basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  file_time<_Duration>& __tp,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      sys_time<_Duration> __st;
+      if (chrono::from_stream(__is, __fmt, __st, __abbrev, __offset))
+ __tp = chrono::time_point_cast<_Duration>(file_clock::from_sys(__st));
+      return __is;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+        const local_time<_Duration>& __lt)
+    {
+      __os << sys_time<_Duration>{__lt.time_since_epoch()};
+      return __os;
+    }
+
+  template<typename _CharT, typename _Traits, typename _Duration,
+    typename _Alloc = allocator<_CharT>>
+    basic_istream<_CharT, _Traits>&
+    from_stream(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+  local_time<_Duration>& __tp,
+  basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+  minutes* __offset = nullptr)
+    {
+      using __format::_ChronoParts;
+      auto __need = _ChronoParts::_Year | _ChronoParts::_Month
+      | _ChronoParts::_Day | _ChronoParts::_TimeOfDay;
+      __detail::_Parser_t<_Duration> __p(__need);
+      if (__p(__is, __fmt, __abbrev, __offset))
+ {
+   days __d = __p._M_sys_days.time_since_epoch();
+   auto __t = local_days(__d) + __p._M_time;
+   __tp = chrono::time_point_cast<_Duration>(__t);
+ }
+      return __is;
+    }
+
+
+
+namespace __detail
+{
+  template<typename _Parsable, typename _CharT,
+    typename _Traits = std::char_traits<_CharT>,
+    typename... _OptArgs>
+    concept __parsable = requires (basic_istream<_CharT, _Traits>& __is,
+       const _CharT* __fmt, _Parsable& __tp,
+       _OptArgs*... __args)
+    { from_stream(__is, __fmt, __tp, __args...); };
+
+  template<typename _Parsable, typename _CharT,
+    typename _Traits = char_traits<_CharT>,
+    typename _Alloc = allocator<_CharT>>
+    struct _Parse
+    {
+    private:
+      using __string_type = basic_string<_CharT, _Traits, _Alloc>;
+
+    public:
+      _Parse(const _CharT* __fmt, _Parsable& __tp,
+      basic_string<_CharT, _Traits, _Alloc>* __abbrev = nullptr,
+      minutes* __offset = nullptr)
+      : _M_fmt(__fmt), _M_tp(std::__addressof(__tp)),
+ _M_abbrev(__abbrev), _M_offset(__offset)
+      { }
+
+      _Parse(_Parse&&) = delete;
+      _Parse& operator=(_Parse&&) = delete;
+
+    private:
+      using __stream_type = basic_istream<_CharT, _Traits>;
+
+      const _CharT* const _M_fmt;
+      _Parsable* const _M_tp;
+      __string_type* const _M_abbrev;
+      minutes* const _M_offset;
+
+      friend __stream_type&
+      operator>>(__stream_type& __is, _Parse&& __p)
+      {
+ if (__p._M_offset)
+   from_stream(__is, __p._M_fmt, *__p._M_tp, __p._M_abbrev,
+        __p._M_offset);
+ else if (__p._M_abbrev)
+   from_stream(__is, __p._M_fmt, *__p._M_tp, __p._M_abbrev);
+ else
+   from_stream(__is, __p._M_fmt, *__p._M_tp);
+ return __is;
+      }
+
+      friend void operator>>(__stream_type&, _Parse&) = delete;
+      friend void operator>>(__stream_type&, const _Parse&) = delete;
+    };
+}
+
+  template<typename _CharT, __detail::__parsable<_CharT> _Parsable>
+    [[nodiscard, __gnu__::__access__(__read_only__, 1)]]
+    inline auto
+    parse(const _CharT* __fmt, _Parsable& __tp)
+    { return __detail::_Parse<_Parsable, _CharT>(__fmt, __tp); }
+
+  template<typename _CharT, typename _Traits, typename _Alloc,
+    __detail::__parsable<_CharT, _Traits> _Parsable>
+    [[nodiscard]]
+    inline auto
+    parse(const basic_string<_CharT, _Traits, _Alloc>& __fmt, _Parsable& __tp)
+    {
+      return __detail::_Parse<_Parsable, _CharT, _Traits>(__fmt.c_str(), __tp);
+    }
+
+  template<typename _CharT, typename _Traits, typename _Alloc,
+    typename _StrT = basic_string<_CharT, _Traits, _Alloc>,
+    __detail::__parsable<_CharT, _Traits, _StrT> _Parsable>
+    [[nodiscard, __gnu__::__access__(__read_only__, 1)]]
+    inline auto
+    parse(const _CharT* __fmt, _Parsable& __tp,
+   basic_string<_CharT, _Traits, _Alloc>& __abbrev)
+    {
+      auto __pa = std::__addressof(__abbrev);
+      return __detail::_Parse<_Parsable, _CharT, _Traits, _Alloc>(__fmt, __tp,
+          __pa);
+    }
+
+  template<typename _CharT, typename _Traits, typename _Alloc,
+    typename _StrT = basic_string<_CharT, _Traits, _Alloc>,
+    __detail::__parsable<_CharT, _Traits, _StrT> _Parsable>
+    [[nodiscard]]
+    inline auto
+    parse(const basic_string<_CharT, _Traits, _Alloc>& __fmt, _Parsable& __tp,
+   basic_string<_CharT, _Traits, _Alloc>& __abbrev)
+    {
+      auto __pa = std::__addressof(__abbrev);
+      return __detail::_Parse<_Parsable, _CharT, _Traits, _Alloc>(__fmt.c_str(),
+          __tp, __pa);
+    }
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+    typename _StrT = basic_string<_CharT, _Traits>,
+    __detail::__parsable<_CharT, _Traits, _StrT, minutes> _Parsable>
+    [[nodiscard, __gnu__::__access__(__read_only__, 1)]]
+    inline auto
+    parse(const _CharT* __fmt, _Parsable& __tp, minutes& __offset)
+    {
+      return __detail::_Parse<_Parsable, _CharT>(__fmt, __tp, nullptr,
+       &__offset);
+    }
+
+  template<typename _CharT, typename _Traits, typename _Alloc,
+    typename _StrT = basic_string<_CharT, _Traits>,
+    __detail::__parsable<_CharT, _Traits, _StrT, minutes> _Parsable>
+    [[nodiscard]]
+    inline auto
+    parse(const basic_string<_CharT, _Traits, _Alloc>& __fmt, _Parsable& __tp,
+   minutes& __offset)
+    {
+      return __detail::_Parse<_Parsable, _CharT, _Traits, _Alloc>(__fmt.c_str(),
+          __tp, nullptr,
+          &__offset);
+    }
+
+  template<typename _CharT, typename _Traits, typename _Alloc,
+    typename _StrT = basic_string<_CharT, _Traits, _Alloc>,
+    __detail::__parsable<_CharT, _Traits, _StrT, minutes> _Parsable>
+    [[nodiscard, __gnu__::__access__(__read_only__, 1)]]
+    inline auto
+    parse(const _CharT* __fmt, _Parsable& __tp,
+   basic_string<_CharT, _Traits, _Alloc>& __abbrev, minutes& __offset)
+    {
+      auto __pa = std::__addressof(__abbrev);
+      return __detail::_Parse<_Parsable, _CharT, _Traits, _Alloc>(__fmt, __tp,
+          __pa,
+          &__offset);
+    }
+
+  template<typename _CharT, typename _Traits, typename _Alloc,
+    typename _StrT = basic_string<_CharT, _Traits, _Alloc>,
+    __detail::__parsable<_CharT, _Traits, _StrT, minutes> _Parsable>
+    [[nodiscard]]
+    inline auto
+    parse(const basic_string<_CharT, _Traits, _Alloc>& __fmt, _Parsable& __tp,
+   basic_string<_CharT, _Traits, _Alloc>& __abbrev, minutes& __offset)
+    {
+      auto __pa = std::__addressof(__abbrev);
+      return __detail::_Parse<_Parsable, _CharT, _Traits, _Alloc>(__fmt.c_str(),
+          __tp, __pa,
+          &__offset);
+    }
+
+
+  template<typename _Duration>
+  template<typename _CharT, typename _Traits, typename _Alloc>
+    basic_istream<_CharT, _Traits>&
+    __detail::_Parser<_Duration>::
+    operator()(basic_istream<_CharT, _Traits>& __is, const _CharT* __fmt,
+        basic_string<_CharT, _Traits, _Alloc>* __abbrev,
+        minutes* __offset)
+    {
+      using sentry = typename basic_istream<_CharT, _Traits>::sentry;
+      ios_base::iostate __err = ios_base::goodbit;
+      if (sentry __cerb(__is, true); __cerb)
+ {
+   locale __loc = __is.getloc();
+   auto& __tmget = std::use_facet<std::time_get<_CharT>>(__loc);
+   auto& __tmpunct = std::use_facet<std::__timepunct<_CharT>>(__loc);
+
+
+   struct _Stream_state
+   {
+     explicit
+     _Stream_state(basic_istream<_CharT, _Traits>& __i)
+     : _M_is(__i),
+       _M_flags(__i.flags(ios_base::skipws | ios_base::dec)),
+       _M_w(__i.width(0))
+     { }
+
+     ~_Stream_state()
+     {
+       _M_is.flags(_M_flags);
+       _M_is.width(_M_w);
+     }
+
+     _Stream_state(_Stream_state&&) = delete;
+
+     basic_istream<_CharT, _Traits>& _M_is;
+     ios_base::fmtflags _M_flags;
+     streamsize _M_w;
+   };
+
+   auto __is_failed = [](ios_base::iostate __e) {
+     return static_cast<bool>(__e & ios_base::failbit);
+   };
+
+
+
+   auto __read_unsigned = [&] (int __n) {
+     return _S_read_unsigned(__is, __err, __n);
+   };
+
+
+
+   auto __read_signed = [&] (int __n) {
+     return _S_read_signed(__is, __err, __n);
+   };
+
+
+   auto __read_chr = [&__is, &__err] (_CharT __c) {
+     return _S_read_chr(__is, __err, __c);
+   };
+
+   using __format::_ChronoParts;
+   _ChronoParts __parts{};
+
+   const year __bad_y = --year::min();
+   const month __bad_mon(255);
+   const day __bad_day(255);
+   const weekday __bad_wday(255);
+   const hours __bad_h(-1);
+   const minutes __bad_min(-9999);
+   const seconds __bad_sec(-1);
+
+   year __y = __bad_y, __yy = __bad_y;
+   year __iso_y = __bad_y, __iso_yy = __bad_y;
+   month __m = __bad_mon;
+   day __d = __bad_day;
+   weekday __wday = __bad_wday;
+   hours __h = __bad_h, __h12 = __bad_h;
+   minutes __min = __bad_min;
+   _Duration __s = __bad_sec;
+   int __ampm = 0;
+   int __iso_wk = -1, __sunday_wk = -1, __monday_wk = -1;
+   int __century = -1;
+   int __dayofyear = -1;
+
+   minutes __tz_offset = __bad_min;
+   basic_string<_CharT, _Traits> __tz_abbr;
+
+   if ((_M_need & _ChronoParts::_TimeOfDay)
+  && (_M_need & _ChronoParts::_Year))
+     {
+
+
+
+       __h = hours(0);
+       __parts = _ChronoParts::_TimeOfDay;
+     }
+
+
+
+   _CharT __mod{};
+   unsigned __num = 0;
+   bool __is_flag = false;
+
+   constexpr bool __is_floating
+     = treat_as_floating_point_v<typename _Duration::rep>;
+# 3194 "/usr/include/c++/14/bits/chrono_io.h" 3
+   while (*__fmt)
+     {
+       _CharT __c = *__fmt++;
+       if (!__is_flag)
+  {
+    if (__c == '%')
+      __is_flag = true;
+    else if (std::isspace(__c, __loc))
+      std::ws(__is);
+    else if (!__read_chr(__c)) [[unlikely]]
+      break;
+
+    continue;
+  }
+
+
+       switch (__c)
+       {
+  case 'a':
+  case 'A':
+    if (__mod || __num) [[unlikely]]
+      __err = ios_base::failbit;
+    else
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 2, __fmt);
+        if (!__is_failed(__err))
+   __wday = weekday(__tm.tm_wday);
+      }
+    __parts |= _ChronoParts::_Weekday;
+    break;
+
+  case 'b':
+  case 'h':
+  case 'B':
+    if (__mod || __num) [[unlikely]]
+      __err = ios_base::failbit;
+    else
+      {
+
+
+
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 2, __fmt);
+        if (!__is_failed(__err))
+   __m = month(__tm.tm_mon + 1);
+      }
+    __parts |= _ChronoParts::_Month;
+    break;
+
+  case 'c':
+    if (__mod == 'O' || __num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 2 - (__mod == 'E'), __fmt);
+        if (!__is_failed(__err))
+   {
+     __y = year(__tm.tm_year + 1900);
+     __m = month(__tm.tm_mon + 1);
+     __d = day(__tm.tm_mday);
+     __h = hours(__tm.tm_hour);
+     __min = minutes(__tm.tm_min);
+     __s = seconds(__tm.tm_sec);
+   }
+      }
+    __parts |= _ChronoParts::_DateTime;
+    break;
+
+  case 'C':
+    if (!__mod) [[likely]]
+      {
+        auto __v = __read_signed(__num ? __num : 2);
+        if (!__is_failed(__err))
+   {
+     int __cmin = (int)year::min() / 100;
+     int __cmax = (int)year::max() / 100;
+     if (__cmin <= __v && __v <= __cmax)
+       __century = __v * 100;
+     else
+       __century = -2;
+   }
+      }
+    else if (__mod == 'E')
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 3, __fmt);
+        if (!__is_failed(__err))
+   __century = __tm.tm_year;
+      }
+    else [[unlikely]]
+      __err |= ios_base::failbit;
+
+    break;
+
+  case 'd':
+  case 'e':
+    if (!__mod) [[likely]]
+      {
+        auto __v = __read_unsigned(__num ? __num : 2);
+        if (!__is_failed(__err))
+   __d = day(__v);
+      }
+    else if (__mod == 'O')
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 3, __fmt);
+        if (!__is_failed(__err))
+   __d = day(__tm.tm_mday);
+      }
+    else [[unlikely]]
+      __err |= ios_base::failbit;
+    __parts |= _ChronoParts::_Day;
+    break;
+
+  case 'D':
+    if (__mod || __num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        auto __month = __read_unsigned(2);
+        __read_chr('/');
+        auto __day = __read_unsigned(2);
+        __read_chr('/');
+        auto __year = __read_unsigned(2);
+        if (__is_failed(__err))
+   break;
+        __y = year(__year + 1900 + 100 * int(__year < 69));
+        __m = month(__month);
+        __d = day(__day);
+        if (!year_month_day(__y, __m, __d).ok())
+   {
+     __y = __yy = __iso_y = __iso_yy = __bad_y;
+     __m = __bad_mon;
+     __d = __bad_day;
+     break;
+   }
+      }
+    __parts |= _ChronoParts::_Date;
+    break;
+
+  case 'F':
+    if (__mod) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        auto __year = __read_signed(__num ? __num : 4);
+        __read_chr('-');
+        auto __month = __read_unsigned(2);
+        __read_chr('-');
+        auto __day = __read_unsigned(2);
+        if (__is_failed(__err))
+   break;
+        __y = year(__year);
+        __m = month(__month);
+        __d = day(__day);
+        if (!year_month_day(__y, __m, __d).ok())
+   {
+     __y = __yy = __iso_y = __iso_yy = __bad_y;
+     __m = __bad_mon;
+     __d = __bad_day;
+     break;
+   }
+      }
+    __parts |= _ChronoParts::_Date;
+    break;
+
+  case 'g':
+    if (__mod) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        auto __val = __read_unsigned(__num ? __num : 2);
+        if (__val >= 0 && __val <= 99)
+   {
+     __iso_yy = year(__val);
+     if (__century == -1)
+       __century = 2000;
+   }
+        else
+   __iso_yy = __iso_y = __y = __yy = __bad_y;
+      }
+    __parts |= _ChronoParts::_Year;
+    break;
+
+  case 'G':
+    if (__mod) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      __iso_y = year(__read_unsigned(__num ? __num : 4));
+    __parts |= _ChronoParts::_Year;
+    break;
+
+  case 'H':
+  case 'I':
+    if (__mod == 'E') [[unlikely]]
+      __err |= ios_base::failbit;
+    else if (__mod == 'O')
+      {
+# 3416 "/usr/include/c++/14/bits/chrono_io.h" 3
+        __err |= ios_base::failbit;
+
+      }
+    else
+      {
+        auto __val = __read_unsigned(__num ? __num : 2);
+        if (__c == 'I' && __val >= 1 && __val <= 12)
+   {
+     __h12 = hours(__val);
+     __h = __bad_h;
+   }
+        else if (__c == 'H' && __val >= 0 && __val <= 23)
+   {
+     __h = hours(__val);
+     __h12 = __bad_h;
+   }
+        else
+   {
+     if (_M_need & _ChronoParts::_TimeOfDay)
+       __err |= ios_base::failbit;
+     break;
+   }
+      }
+    __parts |= _ChronoParts::_TimeOfDay;
+    break;
+
+  case 'j':
+    if (__mod) [[unlikely]]
+      __err |= ios_base::failbit;
+    else if (_M_need == _ChronoParts::_TimeOfDay)
+      {
+        auto __val = __read_signed(__num ? __num : 3);
+        if (!__is_failed(__err))
+   {
+     __h = days(__val);
+     __parts |= _ChronoParts::_TimeOfDay;
+   }
+      }
+    else
+      {
+        __dayofyear = __read_unsigned(__num ? __num : 3);
+
+
+      }
+    break;
+
+  case 'm':
+    if (__mod == 'E') [[unlikely]]
+      __err |= ios_base::failbit;
+    else if (__mod == 'O')
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 2, __fmt);
+        if (!__is_failed(__err))
+   __m = month(__tm.tm_mon + 1);
+      }
+    else
+      {
+        auto __val = __read_unsigned(__num ? __num : 2);
+        if (__val >= 1 && __val <= 12)
+   __m = month(__val);
+        else
+   __m = __bad_mon;
+      }
+    __parts |= _ChronoParts::_Month;
+    break;
+
+  case 'M':
+    if (__mod == 'E') [[unlikely]]
+      __err |= ios_base::failbit;
+    else if (__mod == 'O')
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 2, __fmt);
+        if (!__is_failed(__err))
+   __min = minutes(__tm.tm_min);
+      }
+    else
+      {
+        auto __val = __read_unsigned(__num ? __num : 2);
+        if (0 <= __val && __val < 60)
+   __min = minutes(__val);
+        else
+   {
+     if (_M_need & _ChronoParts::_TimeOfDay)
+       __err |= ios_base::failbit;
+     break;
+   }
+      }
+    __parts |= _ChronoParts::_TimeOfDay;
+    break;
+
+  case 'p':
+    if (__mod || __num)
+      __err |= ios_base::failbit;
+    else
+      {
+
+
+        const _CharT* __ampms[2];
+        __tmpunct._M_am_pm(__ampms);
+        int __n = 0, __which = 3;
+        while (__which != 0)
+   {
+     auto __i = __is.peek();
+     if (_Traits::eq_int_type(__i, _Traits::eof()))
+       {
+         __err |= ios_base::eofbit | ios_base::failbit;
+         break;
+       }
+     __i = std::toupper(_Traits::to_char_type(__i), __loc);
+     if (__which & 1)
+       {
+         if (__i != std::toupper(__ampms[0][__n], __loc))
+    __which ^= 1;
+         else if (__ampms[0][__n + 1] == _CharT())
+    {
+      __which = 1;
+      (void) __is.get();
+      break;
+    }
+       }
+     if (__which & 2)
+       {
+         if (__i != std::toupper(__ampms[1][__n], __loc))
+    __which ^= 2;
+         else if (__ampms[1][__n + 1] == _CharT())
+    {
+      __which = 2;
+      (void) __is.get();
+      break;
+    }
+       }
+     if (__which)
+       (void) __is.get();
+     ++__n;
+   }
+        if (__which == 0 || __which == 3)
+   __err |= ios_base::failbit;
+        else
+   __ampm = __which;
+      }
+    break;
+
+  case 'r':
+    if (__mod || __num)
+      __err |= ios_base::failbit;
+    else
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 2, __fmt);
+        if (!__is_failed(__err))
+   {
+     __h = hours(__tm.tm_hour);
+     __min = minutes(__tm.tm_min);
+     __s = seconds(__tm.tm_sec);
+   }
+      }
+    __parts |= _ChronoParts::_TimeOfDay;
+    break;
+
+  case 'R':
+  case 'T':
+    if (__mod || __num) [[unlikely]]
+      {
+        __err |= ios_base::failbit;
+        break;
+      }
+    else
+      {
+        auto __val = __read_unsigned(2);
+        if (__val == -1 || __val > 23) [[unlikely]]
+   {
+     if (_M_need & _ChronoParts::_TimeOfDay)
+       __err |= ios_base::failbit;
+     break;
+   }
+        if (!__read_chr(':')) [[unlikely]]
+   break;
+        __h = hours(__val);
+
+        __val = __read_unsigned(2);
+        if (__val == -1 || __val > 60) [[unlikely]]
+   {
+     if (_M_need & _ChronoParts::_TimeOfDay)
+       __err |= ios_base::failbit;
+     break;
+   }
+        __min = minutes(__val);
+
+        if (__c == 'R')
+   {
+     __parts |= _ChronoParts::_TimeOfDay;
+     break;
+   }
+        else if (!__read_chr(':')) [[unlikely]]
+   break;
+      }
+    [[fallthrough]];
+
+  case 'S':
+    if (__mod == 'E') [[unlikely]]
+      __err |= ios_base::failbit;
+    else if (__mod == 'O')
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 3, __fmt);
+        if (!__is_failed(__err))
+   __s = seconds(__tm.tm_sec);
+      }
+    else if constexpr (_Duration::period::den == 1
+           && !__is_floating)
+      {
+        auto __val = __read_unsigned(__num ? __num : 2);
+        if (0 <= __val && __val <= 59) [[likely]]
+   __s = seconds(__val);
+        else
+   {
+     if (_M_need & _ChronoParts::_TimeOfDay)
+       __err |= ios_base::failbit;
+     break;
+   }
+      }
+    else
+      {
+        basic_stringstream<_CharT> __buf;
+        auto __digit = _S_try_read_digit(__is, __err);
+        if (__digit != -1)
+   {
+     __buf.put(_CharT('0') + __digit);
+     __digit = _S_try_read_digit(__is, __err);
+     if (__digit != -1)
+       __buf.put(_CharT('0') + __digit);
+   }
+
+        auto __i = __is.peek();
+        if (_Traits::eq_int_type(__i, _Traits::eof()))
+   __err |= ios_base::eofbit;
+        else
+   {
+     _CharT __dp = '.';
+     if (__loc != locale::classic())
+       {
+         auto& __np = use_facet<numpunct<_CharT>>(__loc);
+         __dp = __np.decimal_point();
+       }
+     _CharT __c = _Traits::to_char_type(__i);
+     if (__c == __dp)
+       {
+         (void) __is.get();
+         __buf.put('.');
+         int __prec
+    = hh_mm_ss<_Duration>::fractional_width;
+         do
+    {
+      __digit = _S_try_read_digit(__is, __err);
+      if (__digit != -1)
+        __buf.put(_CharT('0') + __digit);
+      else
+        break;
+    }
+         while (--__prec);
+       }
+   }
+
+        if (!__is_failed(__err)) [[likely]]
+   {
+     long double __val{};
+
+     string __str = std::move(__buf).str();
+     auto __first = __str.data();
+     auto __last = __first + __str.size();
+     using enum chars_format;
+     auto [ptr, ec] = std::from_chars(__first, __last,
+          __val, fixed);
+     if ((bool)ec || ptr != __last) [[unlikely]]
+       __err |= ios_base::failbit;
+     else
+
+
+
+       {
+         duration<long double> __fs(__val);
+         if constexpr (__is_floating)
+    __s = __fs;
+         else
+    __s = chrono::round<_Duration>(__fs);
+       }
+   }
+      }
+    __parts |= _ChronoParts::_TimeOfDay;
+    break;
+
+  case 'u':
+  case 'w':
+    if (__mod == 'E') [[unlikely]]
+      __err |= ios_base::failbit;
+    else if (__mod == 'O')
+      {
+        if (__c == 'w')
+   {
+     struct tm __tm{};
+     __tmget.get(__is, {}, __is, __err, &__tm,
+          __fmt - 3, __fmt);
+     if (!__is_failed(__err))
+       __wday = weekday(__tm.tm_wday);
+   }
+        else
+   __err |= ios_base::failbit;
+      }
+    else
+      {
+        const int __lo = __c == 'u' ? 1 : 0;
+        const int __hi = __lo + 6;
+        auto __val = __read_unsigned(__num ? __num : 1);
+        if (__lo <= __val && __val <= __hi)
+   __wday = weekday(__val);
+        else
+   {
+     __wday = __bad_wday;
+     break;
+   }
+      }
+    __parts |= _ChronoParts::_Weekday;
+    break;
+
+  case 'U':
+  case 'V':
+  case 'W':
+    if (__mod == 'E') [[unlikely]]
+      __err |= ios_base::failbit;
+    else if (__mod == 'O')
+      {
+        if (__c == 'V') [[unlikely]]
+   __err |= ios_base::failbit;
+        else
+   {
+
+
+   }
+      }
+    else
+      {
+        const int __lo = __c == 'V' ? 1 : 0;
+        const int __hi = 53;
+        auto __val = __read_unsigned(__num ? __num : 2);
+        if (__lo <= __val && __val <= __hi)
+   {
+     switch (__c)
+     {
+       case 'U':
+         __sunday_wk = __val;
+         break;
+       case 'V':
+         __iso_wk = __val;
+         break;
+       case 'W':
+         __monday_wk = __val;
+         break;
+     }
+   }
+        else
+   __iso_wk = __sunday_wk = __monday_wk = -1;
+      }
+
+    break;
+
+  case 'x':
+    if (__mod == 'O' || __num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 2 - (__mod == 'E'), __fmt);
+        if (!__is_failed(__err))
+   {
+     __y = year(__tm.tm_year + 1900);
+     __m = month(__tm.tm_mon + 1);
+     __d = day(__tm.tm_mday);
+   }
+      }
+    __parts |= _ChronoParts::_Date;
+    break;
+
+  case 'X':
+    if (__mod == 'O' || __num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 2 - (__mod == 'E'), __fmt);
+        if (!__is_failed(__err))
+   {
+     __h = hours(__tm.tm_hour);
+     __min = minutes(__tm.tm_min);
+     __s = seconds(__tm.tm_sec);
+   }
+      }
+    __parts |= _ChronoParts::_TimeOfDay;
+    break;
+
+  case 'y':
+    if (__mod) [[unlikely]]
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 3, __fmt);
+        if (!__is_failed(__err))
+   {
+     int __cent = __tm.tm_year < 2000 ? 1900 : 2000;
+     __yy = year(__tm.tm_year - __cent);
+     if (__century == -1)
+       __century = __cent;
+   }
+      }
+    else
+      {
+        auto __val = __read_unsigned(__num ? __num : 2);
+        if (__val >= 0 && __val <= 99)
+   {
+     __yy = year(__val);
+     if (__century == -1)
+       __century = __val < 69 ? 2000 : 1900;
+   }
+        else
+   __y = __yy = __iso_yy = __iso_y = __bad_y;
+      }
+    __parts |= _ChronoParts::_Year;
+    break;
+
+  case 'Y':
+    if (__mod == 'O') [[unlikely]]
+      __err |= ios_base::failbit;
+    else if (__mod == 'E')
+      {
+        struct tm __tm{};
+        __tmget.get(__is, {}, __is, __err, &__tm,
+      __fmt - 3, __fmt);
+        if (!__is_failed(__err))
+   __y = year(__tm.tm_year);
+      }
+    else
+      {
+        auto __val = __read_unsigned(__num ? __num : 4);
+        if (!__is_failed(__err))
+   __y = year(__val);
+      }
+    __parts |= _ChronoParts::_Year;
+    break;
+
+  case 'z':
+    if (__num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+
+
+
+        auto __i = __is.peek();
+        if (_Traits::eq_int_type(__i, _Traits::eof()))
+   {
+     __err |= ios_base::eofbit | ios_base::failbit;
+     break;
+   }
+        _CharT __ic = _Traits::to_char_type(__i);
+        const bool __neg = __ic == _CharT('-');
+        if (__ic == _CharT('-') || __ic == _CharT('+'))
+   (void) __is.get();
+
+        int_least32_t __hh;
+        if (__mod)
+   {
+
+     __hh = __read_unsigned(2);
+   }
+        else
+   {
+
+     __hh = 10 * _S_try_read_digit(__is, __err);
+     __hh += _S_try_read_digit(__is, __err);
+   }
+
+        if (__is_failed(__err))
+   break;
+
+        __i = __is.peek();
+        if (_Traits::eq_int_type(__i, _Traits::eof()))
+   {
+     __err |= ios_base::eofbit;
+     __tz_offset = minutes(__hh * (__neg ? -60 : 60));
+     break;
+   }
+        __ic = _Traits::to_char_type(__i);
+
+        bool __read_mm = false;
+        if (__mod)
+   {
+     if (__ic == ::std::chrono::__detail::_Widen<_CharT>(":", L":")[0])
+       {
+
+         (void) __is.get();
+         __read_mm = true;
+       }
+   }
+        else if (_CharT('0') <= __ic && __ic <= _CharT('9'))
+   {
+
+     __read_mm = true;
+   }
+
+        int_least32_t __mm = 0;
+        if (__read_mm)
+   {
+     __mm = 10 * _S_try_read_digit(__is, __err);
+     __mm += _S_try_read_digit(__is, __err);
+   }
+
+        if (!__is_failed(__err))
+   {
+     auto __z = __hh * 60 + __mm;
+     __tz_offset = minutes(__neg ? -__z : __z);
+   }
+      }
+    break;
+
+  case 'Z':
+    if (__mod || __num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        basic_string_view<_CharT> __x = ::std::chrono::__detail::_Widen<_CharT>("_/-+", L"_/-+");
+        __tz_abbr.clear();
+        while (true)
+   {
+     auto __i = __is.peek();
+     if (!_Traits::eq_int_type(__i, _Traits::eof()))
+       {
+         _CharT __a = _Traits::to_char_type(__i);
+         if (std::isalnum(__a, __loc)
+        || __x.find(__a) != __x.npos)
+    {
+      __tz_abbr.push_back(__a);
+      (void) __is.get();
+      continue;
+    }
+       }
+     else
+       __err |= ios_base::eofbit;
+     break;
+   }
+        if (__tz_abbr.empty())
+   __err |= ios_base::failbit;
+      }
+    break;
+
+  case 'n':
+    if (__mod || __num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        _CharT __i = __is.peek();
+        if (_Traits::eq_int_type(__i, _Traits::eof()))
+   __err |= ios_base::eofbit | ios_base::failbit;
+        else if (std::isspace(_Traits::to_char_type(__i), __loc))
+   (void) __is.get();
+        else
+   __err |= ios_base::failbit;
+      }
+    break;
+
+  case 't':
+    if (__mod || __num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      {
+        _CharT __i = __is.peek();
+        if (_Traits::eq_int_type(__i, _Traits::eof()))
+   __err |= ios_base::eofbit;
+        else if (std::isspace(_Traits::to_char_type(__i), __loc))
+   (void) __is.get();
+      }
+    break;
+
+  case '%':
+    if (__mod || __num) [[unlikely]]
+      __err |= ios_base::failbit;
+    else
+      __read_chr('%');
+    break;
+
+  case 'O':
+  case 'E':
+    if (__mod || __num) [[unlikely]]
+      {
+        __err |= ios_base::failbit;
+        break;
+      }
+    __mod = __c;
+    continue;
+
+  default:
+    if (_CharT('1') <= __c && __c <= _CharT('9'))
+      {
+        if (!__mod) [[likely]]
+   {
+
+     auto __end = __fmt + _Traits::length(__fmt);
+     auto [__v, __ptr]
+       = __format::__parse_integer(__fmt - 1, __end);
+     if (__ptr) [[likely]]
+       {
+         __num = __v;
+         __fmt = __ptr;
+         continue;
+       }
+   }
+      }
+    __err |= ios_base::failbit;
+  }
+
+       if (__is_failed(__err)) [[unlikely]]
+  break;
+
+       __is_flag = false;
+       __num = 0;
+       __mod = _CharT();
+     }
+
+   if (__century >= 0)
+     {
+       if (__yy != __bad_y && __y == __bad_y)
+  __y = years(__century) + __yy;
+       if (__iso_yy != __bad_y && __iso_y == __bad_y)
+  __iso_y = years(__century) + __iso_yy;
+     }
+
+   bool __can_use_doy = false;
+   bool __can_use_iso_wk = false;
+   bool __can_use_sun_wk = false;
+   bool __can_use_mon_wk = false;
+
+
+   if (__y != __bad_y && __dayofyear >= 0)
+     {
+       __can_use_doy = true;
+       __parts |= _ChronoParts::_Date;
+     }
+   else if (__y != __bad_y && __wday != __bad_wday && __sunday_wk >= 0)
+     {
+       __can_use_sun_wk = true;
+       __parts |= _ChronoParts::_Date;
+     }
+   else if (__y != __bad_y && __wday != __bad_wday && __monday_wk >= 0)
+     {
+       __can_use_mon_wk = true;
+       __parts |= _ChronoParts::_Date;
+     }
+   else if (__iso_y != __bad_y && __wday != __bad_wday && __iso_wk > 0)
+     {
+
+       __can_use_iso_wk = true;
+       __parts |= _ChronoParts::_Date;
+     }
+
+   if (__is_failed(__err)) [[unlikely]]
+     ;
+   else if (__is_flag) [[unlikely]]
+     __err |= ios_base::failbit;
+   else if ((_M_need & __parts) == _M_need) [[likely]]
+     {
+# 4112 "/usr/include/c++/14/bits/chrono_io.h" 3
+       const bool __need_wday = _M_need & _ChronoParts::_Weekday;
+
+
+
+       const bool __need_time = _M_need & _ChronoParts::_TimeOfDay;
+
+       if (__need_wday && __wday != __bad_wday)
+  _M_wd = __wday;
+       else if (_M_need & _ChronoParts::_Date)
+  {
+
+
+    const bool __need_ymd = !__need_wday && !__need_time;
+
+    if ((_M_need & _ChronoParts::_Year && __y == __bad_y)
+       || (_M_need & _ChronoParts::_Month && __m == __bad_mon)
+       || (_M_need & _ChronoParts::_Day && __d == __bad_day))
+      {
+
+
+
+        if (__can_use_doy)
+   {
+     if ((0 < __dayofyear && __dayofyear <= 365)
+    || (__dayofyear == 366 && __y.is_leap()))
+       [[likely]]
+       {
+         _M_sys_days = sys_days(__y/January/1)
+           + days(__dayofyear - 1);
+         if (__need_ymd)
+    _M_ymd = year_month_day(_M_sys_days);
+       }
+     else
+       __err |= ios_base::failbit;
+   }
+        else if (__can_use_iso_wk)
+   {
+
+
+     if (__iso_wk == 53)
+       {
+
+
+         const sys_days __jan4(__iso_y/January/4);
+         weekday __wd1(__jan4 - days(3));
+         if (__wd1 != Thursday)
+    if (__wd1 != Wednesday || !__iso_y.is_leap())
+      __err |= ios_base::failbit;
+       }
+
+     if (!__is_failed(__err)) [[likely]]
+       {
+
+         sys_days __w(Thursday[1]/January/__iso_y);
+
+         __w -= Thursday - Monday;
+         __w += days(weeks(__iso_wk - 1));
+         __w += __wday - Monday;
+         _M_sys_days = __w;
+
+         if (__need_ymd)
+    _M_ymd = year_month_day(_M_sys_days);
+       }
+   }
+        else if (__can_use_sun_wk)
+   {
+
+     sys_days __wk1(__y/January/Sunday[1]);
+     _M_sys_days = __wk1 + weeks(__sunday_wk - 1)
+     + days(__wday.c_encoding());
+     _M_ymd = year_month_day(_M_sys_days);
+     if (_M_ymd.year() != __y) [[unlikely]]
+       __err |= ios_base::failbit;
+   }
+        else if (__can_use_mon_wk)
+   {
+
+     sys_days __wk1(__y/January/Monday[1]);
+     _M_sys_days = __wk1 + weeks(__monday_wk - 1)
+     + days(__wday.c_encoding() - 1);
+     _M_ymd = year_month_day(_M_sys_days);
+     if (_M_ymd.year() != __y) [[unlikely]]
+       __err |= ios_base::failbit;
+   }
+        else
+   __err |= ios_base::failbit;
+      }
+    else
+      {
+
+
+
+
+        if (_M_need & _ChronoParts::_Year)
+   {
+     if (!__y.ok()) [[unlikely]]
+       __err |= ios_base::failbit;
+   }
+        else if (__y == __bad_y)
+   __y = 1972y;
+
+        if (_M_need & _ChronoParts::_Month)
+   {
+     if (!__m.ok()) [[unlikely]]
+       __err |= ios_base::failbit;
+   }
+        else if (__m == __bad_mon)
+   __m = January;
+
+        if (_M_need & _ChronoParts::_Day)
+   {
+     if (__d < day(1) || __d > (__y/__m/last).day())
+       __err |= ios_base::failbit;
+   }
+        else if (__d == __bad_day)
+   __d = 1d;
+
+        if (year_month_day __ymd(__y, __m, __d); __ymd.ok())
+   {
+     _M_ymd = __ymd;
+     if (__need_wday || __need_time)
+       _M_sys_days = sys_days(_M_ymd);
+   }
+        else [[unlikely]]
+   __err |= ios_base::failbit;
+      }
+
+    if (__need_wday)
+      _M_wd = weekday(_M_sys_days);
+  }
+
+
+       if (__need_time)
+  {
+    if (__h == __bad_h && __h12 != __bad_h)
+      {
+        if (__ampm == 1)
+   __h = __h12 == hours(12) ? hours(0) : __h12;
+        else if (__ampm == 2)
+   __h = __h12 == hours(12) ? __h12 : __h12 + hours(12);
+        else [[unlikely]]
+   __err |= ios_base::failbit;
+      }
+
+    auto __t = _M_time.zero();
+    bool __ok = false;
+
+    if (__h != __bad_h)
+      {
+        __ok = true;
+        __t += __h;
+      }
+
+    if (__min != __bad_min)
+      {
+        __ok = true;
+        __t += __min;
+      }
+
+    if (__s != __bad_sec)
+      {
+        __ok = true;
+        __t += __s;
+        _M_is_leap_second = __s >= seconds(60);
+      }
+
+    if (__ok)
+      _M_time = __t;
+    else
+      __err |= ios_base::failbit;
+  }
+
+       if (!__is_failed(__err)) [[likely]]
+  {
+    if (__offset && __tz_offset != __bad_min)
+      *__offset = __tz_offset;
+    if (__abbrev && !__tz_abbr.empty())
+      *__abbrev = std::move(__tz_abbr);
+  }
+     }
+   else
+     __err |= ios_base::failbit;
+ }
+      if (__err)
+ __is.setstate(__err);
+      return __is;
+    }
+
+
+
+
+}
+
+
+}
+# 3361 "/usr/include/c++/14/chrono" 2 3
+# 9 "/home/bktivadar/CLionProjects/mankala/Mankala.h" 2
+# 1 "/usr/include/c++/14/utility" 1 3
+# 58 "/usr/include/c++/14/utility" 3
+       
+# 59 "/usr/include/c++/14/utility" 3
+# 68 "/usr/include/c++/14/utility" 3
+# 1 "/usr/include/c++/14/bits/stl_relops.h" 1 3
+# 62 "/usr/include/c++/14/bits/stl_relops.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  namespace rel_ops
+  {
+# 86 "/usr/include/c++/14/bits/stl_relops.h" 3
+    template <class _Tp>
+      inline bool
+      operator!=(const _Tp& __x, const _Tp& __y)
+      { return !(__x == __y); }
+# 99 "/usr/include/c++/14/bits/stl_relops.h" 3
+    template <class _Tp>
+      inline bool
+      operator>(const _Tp& __x, const _Tp& __y)
+      { return __y < __x; }
+# 112 "/usr/include/c++/14/bits/stl_relops.h" 3
+    template <class _Tp>
+      inline bool
+      operator<=(const _Tp& __x, const _Tp& __y)
+      { return !(__y < __x); }
+# 125 "/usr/include/c++/14/bits/stl_relops.h" 3
+    template <class _Tp>
+      inline bool
+      operator>=(const _Tp& __x, const _Tp& __y)
+      { return !(__x < __y); }
+  }
+
+
+}
+# 69 "/usr/include/c++/14/utility" 2 3
+# 96 "/usr/include/c++/14/utility" 3
+# 1 "/usr/include/c++/14/bits/version.h" 1 3
+# 47 "/usr/include/c++/14/bits/version.h" 3
+       
+# 48 "/usr/include/c++/14/bits/version.h" 3
+# 97 "/usr/include/c++/14/utility" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+
+
+  template <typename _Tp, typename _Up = _Tp>
+    constexpr
+    inline _Tp
+    exchange(_Tp& __obj, _Up&& __new_val)
+    noexcept(__and_<is_nothrow_move_constructible<_Tp>,
+      is_nothrow_assignable<_Tp&, _Up>>::value)
+    { return std::__exchange(__obj, std::forward<_Up>(__new_val)); }
+
+
+
+  template<typename _Tp>
+    [[nodiscard]]
+    constexpr add_const_t<_Tp>&
+    as_const(_Tp& __t) noexcept
+    { return __t; }
+
+  template<typename _Tp>
+    void as_const(const _Tp&&) = delete;
+
+
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_equal(_Tp __t, _Up __u) noexcept
+    {
+      static_assert(__is_standard_integer<_Tp>::value);
+      static_assert(__is_standard_integer<_Up>::value);
+
+      if constexpr (is_signed_v<_Tp> == is_signed_v<_Up>)
+ return __t == __u;
+      else if constexpr (is_signed_v<_Tp>)
+ return __t >= 0 && make_unsigned_t<_Tp>(__t) == __u;
+      else
+ return __u >= 0 && __t == make_unsigned_t<_Up>(__u);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_not_equal(_Tp __t, _Up __u) noexcept
+    { return !std::cmp_equal(__t, __u); }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_less(_Tp __t, _Up __u) noexcept
+    {
+      static_assert(__is_standard_integer<_Tp>::value);
+      static_assert(__is_standard_integer<_Up>::value);
+
+      if constexpr (is_signed_v<_Tp> == is_signed_v<_Up>)
+ return __t < __u;
+      else if constexpr (is_signed_v<_Tp>)
+ return __t < 0 || make_unsigned_t<_Tp>(__t) < __u;
+      else
+ return __u >= 0 && __t < make_unsigned_t<_Up>(__u);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_greater(_Tp __t, _Up __u) noexcept
+    { return std::cmp_less(__u, __t); }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_less_equal(_Tp __t, _Up __u) noexcept
+    { return !std::cmp_less(__u, __t); }
+
+  template<typename _Tp, typename _Up>
+    constexpr bool
+    cmp_greater_equal(_Tp __t, _Up __u) noexcept
+    { return !std::cmp_less(__t, __u); }
+
+  template<typename _Res, typename _Tp>
+    constexpr bool
+    in_range(_Tp __t) noexcept
+    {
+      static_assert(__is_standard_integer<_Res>::value);
+      static_assert(__is_standard_integer<_Tp>::value);
+      using __gnu_cxx::__int_traits;
+
+      if constexpr (is_signed_v<_Tp> == is_signed_v<_Res>)
+ return __int_traits<_Res>::__min <= __t
+   && __t <= __int_traits<_Res>::__max;
+      else if constexpr (is_signed_v<_Tp>)
+ return __t >= 0
+   && make_unsigned_t<_Tp>(__t) <= __int_traits<_Res>::__max;
+      else
+ return __t <= make_unsigned_t<_Res>(__int_traits<_Res>::__max);
+    }
+
+
+
+
+  template<typename _Tp>
+    [[nodiscard]]
+    constexpr underlying_type_t<_Tp>
+    to_underlying(_Tp __value) noexcept
+    { return static_cast<underlying_type_t<_Tp>>(__value); }
+# 216 "/usr/include/c++/14/utility" 3
+  [[noreturn,__gnu__::__always_inline__]]
+  inline void
+  unreachable()
+  {
+
+
+
+
+
+    __builtin_unreachable();
+
+  }
+
+
+
+}
+# 10 "/home/bktivadar/CLionProjects/mankala/Mankala.h" 2
+# 1 "/home/bktivadar/CLionProjects/mankala/AI.h" 1
+
+
+
+
+
+
+# 1 "/home/bktivadar/CLionProjects/mankala/BoardState.h" 1
+
+
+
+
+
+
+# 1 "/usr/include/c++/14/iostream" 1 3
+# 36 "/usr/include/c++/14/iostream" 3
+       
+# 37 "/usr/include/c++/14/iostream" 3
+
+
+
+
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+# 62 "/usr/include/c++/14/iostream" 3
+  extern istream cin;
+  extern ostream cout;
+  extern ostream cerr;
+  extern ostream clog;
+
+
+  extern wistream wcin;
+  extern wostream wcout;
+  extern wostream wcerr;
+  extern wostream wclog;
+# 82 "/usr/include/c++/14/iostream" 3
+  __extension__ __asm (".globl _ZSt21ios_base_library_initv");
+
+
+
+}
+# 8 "/home/bktivadar/CLionProjects/mankala/BoardState.h" 2
+
 
 
 
@@ -75975,109 +91184,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 34 "/usr/include/c++/14/bits/hashtable.h" 3
 
 # 1 "/usr/include/c++/14/bits/hashtable_policy.h" 1 3
-# 38 "/usr/include/c++/14/bits/hashtable_policy.h" 3
-# 1 "/usr/include/c++/14/ext/aligned_buffer.h" 1 3
-# 32 "/usr/include/c++/14/ext/aligned_buffer.h" 3
-       
-# 33 "/usr/include/c++/14/ext/aligned_buffer.h" 3
-
-
-
-
-
-
-
-namespace __gnu_cxx
-{
-
-
-
-
-  template<typename _Tp>
-    struct __aligned_membuf
-    {
-
-
-
-
-
-      struct _Tp2 { _Tp _M_t; };
-
-      alignas(__alignof__(_Tp2::_M_t)) unsigned char _M_storage[sizeof(_Tp)];
-
-      __aligned_membuf() = default;
-
-
-      __aligned_membuf(std::nullptr_t) { }
-
-      void*
-      _M_addr() noexcept
-      { return static_cast<void*>(&_M_storage); }
-
-      const void*
-      _M_addr() const noexcept
-      { return static_cast<const void*>(&_M_storage); }
-
-      _Tp*
-      _M_ptr() noexcept
-      { return static_cast<_Tp*>(_M_addr()); }
-
-      const _Tp*
-      _M_ptr() const noexcept
-      { return static_cast<const _Tp*>(_M_addr()); }
-    };
-
-
-
-
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-
-
-
-
-
-  template<typename _Tp>
-    struct __aligned_buffer
-    : std::aligned_storage<sizeof(_Tp), __alignof__(_Tp)>
-    {
-      typename
- std::aligned_storage<sizeof(_Tp), __alignof__(_Tp)>::type _M_storage;
-
-      __aligned_buffer() = default;
-
-
-      __aligned_buffer(std::nullptr_t) { }
-
-      void*
-      _M_addr() noexcept
-      {
-        return static_cast<void*>(&_M_storage);
-      }
-
-      const void*
-      _M_addr() const noexcept
-      {
-        return static_cast<const void*>(&_M_storage);
-      }
-
-      _Tp*
-      _M_ptr() noexcept
-      { return static_cast<_Tp*>(_M_addr()); }
-
-      const _Tp*
-      _M_ptr() const noexcept
-      { return static_cast<const _Tp*>(_M_addr()); }
-    };
-#pragma GCC diagnostic pop
-
-
-}
-# 39 "/usr/include/c++/14/bits/hashtable_policy.h" 2 3
-
-
-
+# 42 "/usr/include/c++/14/bits/hashtable_policy.h" 3
 namespace std __attribute__ ((__visibility__ ("default")))
 {
 
@@ -108178,8 +123285,8 @@ public:
 };
 AI create_AI(BoardEval_logic&& evaluate);
 
-extern AI randy, randy2;
-# 12 "/home/bktivadar/CLionProjects/mankala/Mankala.h" 2
+extern AI randy, randy2, randy3, minimax;
+# 11 "/home/bktivadar/CLionProjects/mankala/Mankala.h" 2
 
 enum class Result{
     player1,
@@ -108198,6 +123305,8 @@ public:
     Result play();
     void makeStats(unsigned numOfPlays);
 };
+
+void tester(Mankala& mankala, unsigned numOfGames);
 # 6 "/home/bktivadar/CLionProjects/mankala/Mankala.cpp" 2
 Result Mankala::play() {
 
@@ -108235,4 +123344,13 @@ void Mankala::makeStats(const unsigned int numOfPlays) {
 
     std::cout<<"Player1 percentage: " << (double) p1_wins/numOfPlays << std::endl
              <<"Player2 percentage: " << (double) p2_wins/numOfPlays << std::endl;
+}
+
+void tester(Mankala& mankala, unsigned numOfGames){
+    auto start = std::chrono::high_resolution_clock::now();
+    mankala.makeStats(numOfGames);
+    auto end = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double, std::micro> duration = end - start;
+    std::cout << "A single game on average: " << duration.count()/numOfGames << " microseconds" << std::endl;
 }

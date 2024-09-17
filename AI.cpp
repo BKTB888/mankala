@@ -11,7 +11,7 @@ AI randy([](const BoardState& board) -> unsigned char{
 
 AI randy2([](const BoardState& board) -> unsigned char{
     auto vec=board.getValidChoices();
-    return Random::randomElement(std::span<unsigned char>(vec));
+    return Random::randomElement((vec));
 });
 
 void AI::setBoard(BoardState* const _board) {
@@ -39,3 +39,12 @@ AI create_AI(BoardEval_logic&& evaluate){
         return validChoices[max];
     });
 }
+
+AI minimax = create_AI([] [[gnu::const]](const BoardState& board) -> float {
+
+    const auto opSide=board.getOpponentSide();
+    const unsigned char ballsInPlay =72 - board.getMyTrash() - board.getOpponentsTrash();
+    const unsigned char opBalls = std::accumulate(opSide.begin(), opSide.end(), 0);
+
+    return (float) opBalls/ballsInPlay;
+});
