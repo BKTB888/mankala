@@ -123315,9 +123315,9 @@ void tester(Mankala& mankala, unsigned numOfGames){
     std::chrono::duration<double, std::micro> duration = end - start;
     std::cout << "A single game on average: " << duration.count()/numOfGames << " microseconds" << std::endl;
 }
-AI minimax = create_AI([] [[gnu::const]] (const BoardState& board) -> float {
+AI minimax = create_AI([] [[gnu::const]](const BoardState& board) -> float {
 
-    const auto& opSide=board.getOpponentSide();
+    const auto opSide=board.getOpponentSide();
     const unsigned char ballsInPlay =72 - board.getMyTrash() - board.getOpponentsTrash();
     const unsigned char opBalls = std::accumulate(opSide.begin(), opSide.end(), 0);
 
