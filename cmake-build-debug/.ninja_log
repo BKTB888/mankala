@@ -30,3 +30,12 @@
 288	293	1726568230425149338	CMakeFiles/mankala5.dir/Mankala.cpp.o.modmap	abbcf9b5cf4c1fc8
 293	3502	1726568230433149519	CMakeFiles/mankala5.dir/AI.cpp.o	d2c591898e92a01e
 3503	4381	1726568233641221954	mankala5	c2e6fe2193492b16
+8	751	1726568451814095015	CMakeFiles/mankala5.dir/BoardState.cpp.o.ddi	97f87f17e8ef4f
+751	788	1726568452558111477	CMakeFiles/mankala5.dir/CXX.dd	abbcf9b5cf4c1fc8
+751	788	1726568452558111477	/home/bktivadar/CLionProjects/mankala/cmake-build-debug/CMakeFiles/mankala5.dir/CXXModules.json	abbcf9b5cf4c1fc8
+751	788	1726568452558111477	CMakeFiles/mankala5.dir/main.cpp.o.modmap	abbcf9b5cf4c1fc8
+751	788	1726568452558111477	CMakeFiles/mankala5.dir/BoardState.cpp.o.modmap	abbcf9b5cf4c1fc8
+751	788	1726568452558111477	CMakeFiles/mankala5.dir/AI.cpp.o.modmap	abbcf9b5cf4c1fc8
+751	788	1726568452558111477	CMakeFiles/mankala5.dir/Mankala.cpp.o.modmap	abbcf9b5cf4c1fc8
+789	3545	1726568452594112274	CMakeFiles/mankala5.dir/BoardState.cpp.o	6015205110ca019b
+3546	4433	1726568455350173251	mankala5	c2e6fe2193492b16

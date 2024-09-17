@@ -75229,19 +75229,18 @@ std::vector<unsigned char> BoardState::getValidChoices() const {
     return getValidChoices(firstPlayersTurn);
 }
 
-unsigned char BoardState::choiceToIdx(const unsigned char choice, const bool isFirstPlayer) {
+unsigned char BoardState::choiceToIdx(unsigned char choice, const bool isFirstPlayer) {
 
     if (choice>6) [[unlikely]]
         throw std::invalid_argument("Must be between 1 and 6!");
 
-    unsigned char result=choice;
     if (choice<=3)
-        --result;
+        --choice;
 
     if (!isFirstPlayer)
-        result+=7;
+        choice+=7;
 
-    return result;
+    return choice;
 }
 
 std::array<unsigned char, 6> BoardState::getMySide() const {
