@@ -5,6 +5,7 @@
 #ifndef MANKALA5_AI_H
 #define MANKALA5_AI_H
 #include "BoardState.h"
+#include <functional>
 #include <random>
 #include <utility>
 

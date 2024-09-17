@@ -14,7 +14,7 @@ class BoardState {
 
     unsigned char& operator[](unsigned char idx);
 public:
-    consteval BoardState() noexcept : array{6, 6, 6, 0, 6, 6, 6, 6, 6, 6, 0, 6, 6, 6}, firstPlayersTurn(true){}
+    constexpr BoardState() noexcept : array{6, 6, 6, 0, 6, 6, 6, 6, 6, 6, 0, 6, 6, 6}, firstPlayersTurn(true){}
     constexpr void reset() noexcept {*this=BoardState();}
     [[nodiscard]] unsigned char choiceToIdx(unsigned char choice) const;
     [[gnu::const]][[nodiscard]] static unsigned char choiceToIdx(unsigned char choice, bool isFirstPlayer);

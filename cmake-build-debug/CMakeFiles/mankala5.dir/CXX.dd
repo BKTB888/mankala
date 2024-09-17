@@ -1,0 +1,9 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/mankala5.dir/main.cpp.o: dyndep
+
+build CMakeFiles/mankala5.dir/BoardState.cpp.o: dyndep
+
+build CMakeFiles/mankala5.dir/AI.cpp.o: dyndep
+
+build CMakeFiles/mankala5.dir/Mankala.cpp.o: dyndep
+

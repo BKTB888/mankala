@@ -1,4 +1,5 @@
 #include "Mankala.h"
+#include <chrono>
 void tester(Mankala& mankala, unsigned numOfGames){
     auto start = std::chrono::high_resolution_clock::now();
     mankala.makeStats(numOfGames);

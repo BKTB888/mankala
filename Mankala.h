@@ -20,7 +20,10 @@ class Mankala {
     BoardState board;
 
 public:
-    Mankala(AI player1, AI player2);
+    Mankala(AI player1, AI player2) : player1(std::move(player1)), player2(std::move(player2)){
+        this->player1.setBoard(&board);
+        this->player2.setBoard(&board);
+    }
     Result play();
     void makeStats(unsigned numOfPlays);
 };

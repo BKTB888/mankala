@@ -3,10 +3,6 @@
 //
 
 #include "Mankala.h"
-Mankala::Mankala(AI player1, AI player2) : player1(std::move(player1)), player2(std::move(player2)){
-    this->player1.setBoard(&board);
-    this->player2.setBoard(&board);
-}
 Result Mankala::play() {
     ///std::cout<<"No moves:"<<std::endl<<board<<std::endl;
     bool p1_won=false, p2_won=false;
