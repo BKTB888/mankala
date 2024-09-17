@@ -75181,11 +75181,12 @@ public:
     [[nodiscard]] std::vector<unsigned char> getValidChoices() const;
     [[nodiscard]] std::vector<unsigned char> getValidChoices(bool forFirstPlayer) const;
     [[nodiscard]] unsigned char getNumChoices(bool forFirstPlayer) const;
-
+    void endTurn();
+    void move(unsigned char choice);
     [[nodiscard]] unsigned char getNumChoices() const;
     [[nodiscard]] unsigned char getMyTrash() const;
     [[nodiscard]] unsigned char getOpponentsTrash() const;
-    void move(unsigned char choice);
+    void turn(unsigned char choice);
     [[nodiscard]] BoardState testMove(unsigned char choice) const;
 
 
@@ -108220,7 +108221,7 @@ void AI::setBoard(BoardState* const _board) {
 void AI::makeMove() {
     const unsigned char choice=function(*board);
 
-    board->move(choice);
+    board->turn(choice);
 }
 
 AI create_AI(BoardEval_logic&& evaluate){

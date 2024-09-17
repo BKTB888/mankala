@@ -5,26 +5,9 @@
 #include "BoardState.h"
 #include <stdexcept>
 
-void BoardState::move(const unsigned char choice) {
-    unsigned char idx=choiceToIdx(choice);
-    BoardState& board=*this;
-
-    if (board[idx]==0) [[unlikely]]
-        throw std::invalid_argument("Must choose a non 0 field!");
-
-    auto stops = [](BoardState b, size_t idx){ //could be capture by reference
-        idx%=14;
-        if (idx==3 || idx==10 || b[idx]==1) [[unlikely]]
-            return true;
-        else [[likely]]
-            return false;
-    };
-    do{
-        for(unsigned char& hand=board[idx];hand > 0;--hand) {
-            board[++idx]++;
-        }
-    }while(!stops(board, idx));
-    firstPlayersTurn=!firstPlayersTurn;
+void BoardState::turn(const unsigned char choice) {
+    move(choice);
+    endTurn();
 }
 
 unsigned char &BoardState::operator[](const unsigned char idx) {
@@ -120,22 +103,31 @@ unsigned char BoardState::getNumChoices() const {
 
 BoardState BoardState::testMove(const unsigned char choice) const {
     BoardState result=*this;
-    unsigned char idx=choiceToIdx(choice);
+    result.move(choice);
+    return result;
+}
 
-    if (result[idx]==0) [[unlikely]]
+void BoardState::endTurn() {
+    firstPlayersTurn=!firstPlayersTurn;
+}
+
+void BoardState::move(const unsigned char choice) {
+    unsigned char idx=choiceToIdx(choice);
+    BoardState& board=*this;
+
+    if (board[idx]==0) [[unlikely]]
                 throw std::invalid_argument("Must choose a non 0 field!");
 
-    auto stops = [](BoardState b, size_t idx){ //could be capture by reference
+    const auto stops = [][[gnu::const]](const BoardState& b, size_t idx)  { //could be capture by reference
         idx%=14;
-        if (idx==3 || idx==10 || b[idx]==1) [[unlikely]]
+        if (idx==3 || idx==10 || b.array[idx]==1) [[unlikely]]
             return true;
         else [[likely]]
             return false;
     };
     do{
-        for(unsigned char& hand=result[idx];hand > 0;--hand) {
-            result[++idx]++;
+        for(unsigned char& hand=board[idx];hand > 0;--hand) {
+            board[++idx]++;
         }
-    }while(!stops(result, idx));
-    return result;
+    }while(!stops(board, idx));
 }
