@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-Wall -Werror -Wextra -march=native -mtune=native -O3 -Ofast -flto -std=gnu++23 -fdiagnostics-color=always"
+					"fragment" : "-Wall -Werror -Wextra -march=native -mtune=native -g -std=gnu++23 -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -62,7 +62,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-Wall -Werror -Wextra -march=native -mtune=native -O3 -Ofast -flto",
+				"fragment" : "-Wall -Werror -Wextra -march=native -mtune=native -g",
 				"role" : "flags"
 			},
 			{

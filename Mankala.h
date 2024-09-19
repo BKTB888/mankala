@@ -25,6 +25,33 @@ public:
     }
     Result play();
     void makeStats(unsigned numOfPlays);
+
+    Result playTest() {
+        std::cout<<"No moves:"<<std::endl<<board<<std::endl;
+        bool p1_won=false, p2_won=false;
+        while(!p1_won and !p2_won){
+
+            std::cout<<"player1 moved: ";
+            player1.makeMove();
+            std::cout<<board<<std::endl;
+
+            std::cout<<"player2 moved: ";
+            player2.makeMove();
+            std::cout<<board<<std::endl;
+
+            p1_won=board.getNumChoices(true)==0;
+            p2_won=board.getNumChoices(false)==0;
+        }
+        board.reset();
+        if (p1_won) {
+            std::cout << "Player1 wins!";
+            return Result::player1;
+        }
+        else {
+            std::cout<<"Player2 wins!";
+            return Result::player2;
+        }
+    }
 };
 
 void tester(Mankala& mankala, unsigned numOfGames);

@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.29"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "mankala5::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mankala5-Release-0da19abe963313c39cfa.json",
+					"jsonFile" : "target-mankala5-Debug-63bbb687f94167ca7438.json",
 					"name" : "mankala5",
 					"projectIndex" : 0
 				}

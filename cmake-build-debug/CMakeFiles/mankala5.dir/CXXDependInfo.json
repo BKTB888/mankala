@@ -3,7 +3,7 @@
 	"compiler-frontend-variant" : "GNU",
 	"compiler-id" : "GNU",
 	"compiler-simulate-id" : "",
-	"config" : "Release",
+	"config" : "Debug",
 	"cxx-modules" : {},
 	"dir-cur-bld" : "/home/bktivadar/CLionProjects/mankala/cmake-build-debug",
 	"dir-cur-src" : "/home/bktivadar/CLionProjects/mankala",

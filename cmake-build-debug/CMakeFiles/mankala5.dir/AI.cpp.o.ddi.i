@@ -1,4 +1,5 @@
 # 0 "/home/bktivadar/CLionProjects/mankala/AI.cpp"
+# 1 "/home/bktivadar/CLionProjects/mankala/cmake-build-debug//"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
@@ -626,34 +627,7 @@ extern size_t __mbrlen (const char *__restrict __s, size_t __n,
    mbstate_t *__restrict __ps) noexcept (true);
 extern size_t mbrlen (const char *__restrict __s, size_t __n,
         mbstate_t *__restrict __ps) noexcept (true);
-
-
-
-
-
-
-
-extern wint_t __btowc_alias (int __c) __asm ("btowc");
-extern __inline __attribute__ ((__gnu_inline__)) wint_t
-__attribute__ ((__leaf__)) btowc (int __c) noexcept (true)
-{ return (__builtin_constant_p (__c) && __c >= '\0' && __c <= '\x7f'
-   ? (wint_t) __c : __btowc_alias (__c)); }
-
-extern int __wctob_alias (wint_t __c) __asm ("wctob");
-extern __inline __attribute__ ((__gnu_inline__)) int
-__attribute__ ((__leaf__)) wctob (wint_t __wc) noexcept (true)
-{ return (__builtin_constant_p (__wc) && __wc >= L'\0' && __wc <= L'\x7f'
-   ? (int) __wc : __wctob_alias (__wc)); }
-
-extern __inline __attribute__ ((__gnu_inline__)) size_t
-__attribute__ ((__leaf__)) mbrlen (const char *__restrict __s, size_t __n, mbstate_t *__restrict __ps) noexcept (true)
-
-{ return (__ps != __null
-   ? mbrtowc (__null, __s, __n, __ps) : __mbrlen (__s, __n, __null)); }
-
-
-
-
+# 362 "/usr/include/wchar.h" 3 4
 extern size_t mbsrtowcs (wchar_t *__restrict __dst,
     const char **__restrict __src, size_t __len,
     mbstate_t *__restrict __ps) noexcept (true);
@@ -1100,545 +1074,7 @@ extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
      const wchar_t *__restrict __format,
      const struct tm *__restrict __tp,
      locale_t __loc) noexcept (true);
-
-
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h" 3 4
-extern wchar_t *__wmemcpy_chk (wchar_t *__restrict __s1,
-          const wchar_t *__restrict __s2, size_t __n,
-          size_t __ns1) noexcept (true);
-extern wchar_t *__wmemcpy_alias (wchar_t *__restrict __s1, const wchar_t *__restrict __s2, size_t __n) noexcept (true) __asm__ ("" "wmemcpy")
-
-
-            ;
-extern wchar_t *__wmemcpy_chk_warn (wchar_t *__restrict __s1, const wchar_t *__restrict __s2, size_t __n, size_t __ns1) noexcept (true) __asm__ ("" "__wmemcpy_chk")
-
-
-
-     __attribute__((__warning__ ("wmemcpy called with length bigger than size of destination " "buffer")))
-            ;
-
-extern wchar_t *__wmemmove_chk (wchar_t *__s1, const wchar_t *__s2,
-    size_t __n, size_t __ns1) noexcept (true);
-extern wchar_t *__wmemmove_alias (wchar_t *__s1, const wchar_t *__s2, size_t __n) noexcept (true) __asm__ ("" "wmemmove")
-
-                               ;
-extern wchar_t *__wmemmove_chk_warn (wchar_t *__s1, const wchar_t *__s2, size_t __n, size_t __ns1) noexcept (true) __asm__ ("" "__wmemmove_chk")
-
-
-     __attribute__((__warning__ ("wmemmove called with length bigger than size of destination " "buffer")))
-            ;
-
-
-
-
-extern wchar_t *__wmempcpy_chk (wchar_t *__restrict __s1,
-    const wchar_t *__restrict __s2, size_t __n,
-    size_t __ns1) noexcept (true);
-extern wchar_t *__wmempcpy_alias (wchar_t *__restrict __s1, const wchar_t *__restrict __s2, size_t __n) noexcept (true) __asm__ ("" "wmempcpy")
-
-
-                           ;
-extern wchar_t *__wmempcpy_chk_warn (wchar_t *__restrict __s1, const wchar_t *__restrict __s2, size_t __n, size_t __ns1) noexcept (true) __asm__ ("" "__wmempcpy_chk")
-
-
-
-     __attribute__((__warning__ ("wmempcpy called with length bigger than size of destination " "buffer")))
-            ;
-
-
-
-
-extern wchar_t *__wmemset_chk (wchar_t *__s, wchar_t __c, size_t __n,
-          size_t __ns) noexcept (true);
-extern wchar_t *__wmemset_alias (wchar_t *__s, wchar_t __c, size_t __n) noexcept (true) __asm__ ("" "wmemset")
-                              ;
-extern wchar_t *__wmemset_chk_warn (wchar_t *__s, wchar_t __c, size_t __n, size_t __ns) noexcept (true) __asm__ ("" "__wmemset_chk")
-
-
-     __attribute__((__warning__ ("wmemset called with length bigger than size of destination " "buffer")))
-            ;
-
-extern wchar_t *__wcscpy_chk (wchar_t *__restrict __dest,
-         const wchar_t *__restrict __src,
-         size_t __n) noexcept (true);
-extern wchar_t *__wcscpy_alias (wchar_t *__restrict __dest, const wchar_t *__restrict __src) noexcept (true) __asm__ ("" "wcscpy")
-
-                                              ;
-
-extern wchar_t *__wcpcpy_chk (wchar_t *__restrict __dest,
-         const wchar_t *__restrict __src,
-         size_t __destlen) noexcept (true);
-extern wchar_t *__wcpcpy_alias (wchar_t *__restrict __dest, const wchar_t *__restrict __src) noexcept (true) __asm__ ("" "wcpcpy")
-
-                                              ;
-
-extern wchar_t *__wcsncpy_chk (wchar_t *__restrict __dest,
-          const wchar_t *__restrict __src, size_t __n,
-          size_t __destlen) noexcept (true);
-extern wchar_t *__wcsncpy_alias (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n) noexcept (true) __asm__ ("" "wcsncpy")
-
-
-                          ;
-extern wchar_t *__wcsncpy_chk_warn (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n, size_t __destlen) noexcept (true) __asm__ ("" "__wcsncpy_chk")
-
-
-
-     __attribute__((__warning__ ("wcsncpy called with length bigger than size of destination " "buffer")))
-            ;
-
-extern wchar_t *__wcpncpy_chk (wchar_t *__restrict __dest,
-          const wchar_t *__restrict __src, size_t __n,
-          size_t __destlen) noexcept (true);
-
-extern wchar_t *__wcpncpy_alias (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n) noexcept (true) __asm__ ("" "wcpncpy")
-
-
-                          ;
-extern wchar_t *__wcpncpy_chk_warn (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n, size_t __destlen) noexcept (true) __asm__ ("" "__wcpncpy_chk")
-
-
-
-     __attribute__((__warning__ ("wcpncpy called with length bigger than size of destination " "buffer")))
-            ;
-
-extern wchar_t *__wcscat_chk (wchar_t *__restrict __dest,
-         const wchar_t *__restrict __src,
-         size_t __destlen) noexcept (true);
-extern wchar_t *__wcscat_alias (wchar_t *__restrict __dest, const wchar_t *__restrict __src) noexcept (true) __asm__ ("" "wcscat")
-
-                                              ;
-
-extern wchar_t *__wcsncat_chk (wchar_t *__restrict __dest,
-          const wchar_t *__restrict __src,
-          size_t __n, size_t __destlen) noexcept (true);
-extern wchar_t *__wcsncat_alias (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n) noexcept (true) __asm__ ("" "wcsncat")
-
-
-                          ;
-
-extern int __swprintf_chk (wchar_t *__restrict __s, size_t __n,
-      int __flag, size_t __s_len,
-      const wchar_t *__restrict __format, ...)
-     noexcept (true) ;
-extern int __swprintf_alias (wchar_t *__restrict __s, size_t __n, const wchar_t *__restrict __fmt, ...) noexcept (true) __asm__ ("" "swprintf")
-
-
-             ;
-
-extern int __vswprintf_chk (wchar_t *__restrict __s, size_t __n,
-       int __flag, size_t __s_len,
-       const wchar_t *__restrict __format,
-       __gnuc_va_list __arg)
-     noexcept (true) ;
-extern int __vswprintf_alias (wchar_t *__restrict __s, size_t __n, const wchar_t *__restrict __fmt, __gnuc_va_list __ap) noexcept (true) __asm__ ("" "vswprintf")
-
-
-                                     ;
-
-
-
-
-extern int __fwprintf_chk (__FILE *__restrict __stream, int __flag,
-      const wchar_t *__restrict __format, ...);
-extern int __wprintf_chk (int __flag, const wchar_t *__restrict __format,
-     ...);
-extern int __vfwprintf_chk (__FILE *__restrict __stream, int __flag,
-       const wchar_t *__restrict __format,
-       __gnuc_va_list __ap);
-extern int __vwprintf_chk (int __flag, const wchar_t *__restrict __format,
-      __gnuc_va_list __ap);
-
-
-
-extern wchar_t *__fgetws_chk (wchar_t *__restrict __s, size_t __size, int __n,
-         __FILE *__restrict __stream) __attribute__ ((__warn_unused_result__));
-extern wchar_t *__fgetws_alias (wchar_t *__restrict __s, int __n, __FILE *__restrict __stream) __asm__ ("" "fgetws")
-
-                                              __attribute__ ((__warn_unused_result__));
-extern wchar_t *__fgetws_chk_warn (wchar_t *__restrict __s, size_t __size, int __n, __FILE *__restrict __stream) __asm__ ("" "__fgetws_chk")
-
-
-     __attribute__ ((__warn_unused_result__)) __attribute__((__warning__ ("fgetws called with bigger size than length " "of destination buffer")))
-                                 ;
-
-
-
-extern wchar_t *__fgetws_unlocked_chk (wchar_t *__restrict __s, size_t __size,
-           int __n, __FILE *__restrict __stream)
-       __attribute__ ((__warn_unused_result__));
-extern wchar_t *__fgetws_unlocked_alias (wchar_t *__restrict __s, int __n, __FILE *__restrict __stream) __asm__ ("" "fgetws_unlocked")
-
-
-  __attribute__ ((__warn_unused_result__));
-extern wchar_t *__fgetws_unlocked_chk_warn (wchar_t *__restrict __s, size_t __size, int __n, __FILE *__restrict __stream) __asm__ ("" "__fgetws_unlocked_chk")
-
-
-
-     __attribute__ ((__warn_unused_result__)) __attribute__((__warning__ ("fgetws_unlocked called with bigger size than length " "of destination buffer")))
-                                 ;
-
-
-
-extern size_t __wcrtomb_chk (char *__restrict __s, wchar_t __wchar,
-        mbstate_t *__restrict __p,
-        size_t __buflen) noexcept (true) __attribute__ ((__warn_unused_result__));
-extern size_t __wcrtomb_alias (char *__restrict __s, wchar_t __wchar, mbstate_t *__restrict __ps) noexcept (true) __asm__ ("" "wcrtomb")
-
-                                                __attribute__ ((__warn_unused_result__));
-
-extern size_t __mbsrtowcs_chk (wchar_t *__restrict __dst,
-          const char **__restrict __src,
-          size_t __len, mbstate_t *__restrict __ps,
-          size_t __dstlen) noexcept (true);
-extern size_t __mbsrtowcs_alias (wchar_t *__restrict __dst, const char **__restrict __src, size_t __len, mbstate_t *__restrict __ps) noexcept (true) __asm__ ("" "mbsrtowcs")
-
-
-
-                   ;
-extern size_t __mbsrtowcs_chk_warn (wchar_t *__restrict __dst, const char **__restrict __src, size_t __len, mbstate_t *__restrict __ps, size_t __dstlen) noexcept (true) __asm__ ("" "__mbsrtowcs_chk")
-
-
-
-
-     __attribute__((__warning__ ("mbsrtowcs called with dst buffer smaller than len " "* sizeof (wchar_t)")))
-                        ;
-
-extern size_t __wcsrtombs_chk (char *__restrict __dst,
-          const wchar_t **__restrict __src,
-          size_t __len, mbstate_t *__restrict __ps,
-          size_t __dstlen) noexcept (true);
-extern size_t __wcsrtombs_alias (char *__restrict __dst, const wchar_t **__restrict __src, size_t __len, mbstate_t *__restrict __ps) noexcept (true) __asm__ ("" "wcsrtombs")
-
-
-
-                   ;
-extern size_t __wcsrtombs_chk_warn (char *__restrict __dst, const wchar_t **__restrict __src, size_t __len, mbstate_t *__restrict __ps, size_t __dstlen) noexcept (true) __asm__ ("" "__wcsrtombs_chk")
-
-
-
-
-    __attribute__((__warning__ ("wcsrtombs called with dst buffer smaller than len")));
-
-
-
-extern size_t __mbsnrtowcs_chk (wchar_t *__restrict __dst,
-    const char **__restrict __src, size_t __nmc,
-    size_t __len, mbstate_t *__restrict __ps,
-    size_t __dstlen) noexcept (true);
-extern size_t __mbsnrtowcs_alias (wchar_t *__restrict __dst, const char **__restrict __src, size_t __nmc, size_t __len, mbstate_t *__restrict __ps) noexcept (true) __asm__ ("" "mbsnrtowcs")
-
-
-
-                    ;
-extern size_t __mbsnrtowcs_chk_warn (wchar_t *__restrict __dst, const char **__restrict __src, size_t __nmc, size_t __len, mbstate_t *__restrict __ps, size_t __dstlen) noexcept (true) __asm__ ("" "__mbsnrtowcs_chk")
-
-
-
-
-     __attribute__((__warning__ ("mbsnrtowcs called with dst buffer smaller than len " "* sizeof (wchar_t)")))
-                        ;
-
-extern size_t __wcsnrtombs_chk (char *__restrict __dst,
-    const wchar_t **__restrict __src,
-    size_t __nwc, size_t __len,
-    mbstate_t *__restrict __ps, size_t __dstlen)
-       noexcept (true);
-extern size_t __wcsnrtombs_alias (char *__restrict __dst, const wchar_t **__restrict __src, size_t __nwc, size_t __len, mbstate_t *__restrict __ps) noexcept (true) __asm__ ("" "wcsnrtombs")
-
-
-
-                                                  ;
-extern size_t __wcsnrtombs_chk_warn (char *__restrict __dst, const wchar_t **__restrict __src, size_t __nwc, size_t __len, mbstate_t *__restrict __ps, size_t __dstlen) noexcept (true) __asm__ ("" "__wcsnrtombs_chk")
-
-
-
-
-
-     __attribute__((__warning__ ("wcsnrtombs called with dst buffer smaller than len")));
-
-
-
-
-extern size_t __wcslcpy_chk (wchar_t *__dest, const wchar_t *__src, size_t __n,
-        size_t __destlen) noexcept (true);
-extern size_t __wcslcpy_alias (wchar_t *__dest, const wchar_t *__src, size_t __n) noexcept (true) __asm__ ("" "wcslcpy")
-
-                               ;
-
-extern size_t __wcslcat_chk (wchar_t *__dest, const wchar_t *__src, size_t __n,
-        size_t __destlen) noexcept (true);
-extern size_t __wcslcat_alias (wchar_t *__dest, const wchar_t *__src, size_t __n) noexcept (true) __asm__ ("" "wcslcat")
-
-                               ;
-# 1060 "/usr/include/wchar.h" 2 3 4
-# 1070 "/usr/include/wchar.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wchar2.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/wchar2.h" 3 4
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wmemcpy (wchar_t *__restrict __s1, const wchar_t *__restrict __s2, size_t __n) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__s1, 0)) && (__builtin_dynamic_object_size (__s1, 0)) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__s1, 0))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__s1, 0))) / ((sizeof (wchar_t)))))) ? __wmemcpy_alias (__s1, __s2, __n) : ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))) ? __wmemcpy_chk_warn (__s1, __s2, __n, (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t))) : __wmemcpy_chk (__s1, __s2, __n, (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))))
-
-                       ;
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wmemmove (wchar_t *__s1, const wchar_t *__s2, size_t __n) noexcept (true)
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__s1, 0)) && (__builtin_dynamic_object_size (__s1, 0)) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__s1, 0))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__s1, 0))) / ((sizeof (wchar_t)))))) ? __wmemmove_alias (__s1, __s2, __n) : ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))) ? __wmemmove_chk_warn (__s1, __s2, __n, (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t))) : __wmemmove_chk (__s1, __s2, __n, (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))))
-
-                       ;
-}
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wmempcpy (wchar_t *__restrict __s1, const wchar_t *__restrict __s2, size_t __n) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__s1, 0)) && (__builtin_dynamic_object_size (__s1, 0)) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__s1, 0))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__s1, 0))) / ((sizeof (wchar_t)))))) ? __wmempcpy_alias (__s1, __s2, __n) : ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))) ? __wmempcpy_chk_warn (__s1, __s2, __n, (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t))) : __wmempcpy_chk (__s1, __s2, __n, (__builtin_dynamic_object_size (__s1, 0)) / (sizeof (wchar_t)))))
-
-                       ;
-}
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wmemset (wchar_t *__s, wchar_t __c, size_t __n) noexcept (true)
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__s, 0)) && (__builtin_dynamic_object_size (__s, 0)) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__s, 0))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__s, 0))) / ((sizeof (wchar_t)))))) ? __wmemset_alias (__s, __c, __n) : ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__s, 0)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__s, 0)) / (sizeof (wchar_t)))) ? __wmemset_chk_warn (__s, __c, __n, (__builtin_dynamic_object_size (__s, 0)) / (sizeof (wchar_t))) : __wmemset_chk (__s, __c, __n, (__builtin_dynamic_object_size (__s, 0)) / (sizeof (wchar_t)))))
-
-                     ;
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wcscpy (wchar_t *__restrict __dest, const wchar_t *__restrict __src) noexcept (true)
-{
-  size_t sz = __builtin_dynamic_object_size (__dest, 1);
-  if (sz != (size_t) -1)
-    return __wcscpy_chk (__dest, __src, sz / sizeof (wchar_t));
-  return __wcscpy_alias (__dest, __src);
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wcpcpy (wchar_t *__restrict __dest, const wchar_t *__restrict __src) noexcept (true)
-{
-  size_t sz = __builtin_dynamic_object_size (__dest, 1);
-  if (sz != (size_t) -1)
-    return __wcpcpy_chk (__dest, __src, sz / sizeof (wchar_t));
-  return __wcpcpy_alias (__dest, __src);
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wcsncpy (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__dest, 1)) && (__builtin_dynamic_object_size (__dest, 1)) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__dest, 1))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__dest, 1))) / ((sizeof (wchar_t)))))) ? __wcsncpy_alias (__dest, __src, __n) : ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__dest, 1)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__dest, 1)) / (sizeof (wchar_t)))) ? __wcsncpy_chk_warn (__dest, __src, __n, (__builtin_dynamic_object_size (__dest, 1)) / (sizeof (wchar_t))) : __wcsncpy_chk (__dest, __src, __n, (__builtin_dynamic_object_size (__dest, 1)) / (sizeof (wchar_t)))))
-
-                          ;
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wcpncpy (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__dest, 1)) && (__builtin_dynamic_object_size (__dest, 1)) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__dest, 1))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__n)) <= ((__builtin_dynamic_object_size (__dest, 1))) / ((sizeof (wchar_t)))))) ? __wcpncpy_alias (__dest, __src, __n) : ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__dest, 1)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__n)) <= (__builtin_dynamic_object_size (__dest, 1)) / (sizeof (wchar_t)))) ? __wcpncpy_chk_warn (__dest, __src, __n, (__builtin_dynamic_object_size (__dest, 1)) / (sizeof (wchar_t))) : __wcpncpy_chk (__dest, __src, __n, (__builtin_dynamic_object_size (__dest, 1)) / (sizeof (wchar_t)))))
-
-                          ;
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wcscat (wchar_t *__restrict __dest, const wchar_t *__restrict __src) noexcept (true)
-{
-  size_t sz = __builtin_dynamic_object_size (__dest, 1);
-  if (sz != (size_t) -1)
-    return __wcscat_chk (__dest, __src, sz / sizeof (wchar_t));
-  return __wcscat_alias (__dest, __src);
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) wchar_t *
-__attribute__ ((__leaf__)) wcsncat (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n) noexcept (true)
-
-{
-  size_t sz = __builtin_dynamic_object_size (__dest, 1);
-  if (sz != (size_t) -1)
-    return __wcsncat_chk (__dest, __src, __n, sz / sizeof (wchar_t));
-  return __wcsncat_alias (__dest, __src, __n);
-}
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) size_t
-__attribute__ ((__leaf__)) wcslcpy (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n) noexcept (true)
-
-{
-  if (__builtin_dynamic_object_size (__dest, 1) != (size_t) -1
-      && (!__builtin_constant_p (__n
-     > __builtin_dynamic_object_size (__dest, 1) / sizeof (wchar_t))
-   || __n > __builtin_dynamic_object_size (__dest, 1) / sizeof (wchar_t)))
-    return __wcslcpy_chk (__dest, __src, __n,
-     __builtin_dynamic_object_size (__dest, 1) / sizeof (wchar_t));
-  return __wcslcpy_alias (__dest, __src, __n);
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) size_t
-__attribute__ ((__leaf__)) wcslcat (wchar_t *__restrict __dest, const wchar_t *__restrict __src, size_t __n) noexcept (true)
-
-{
-  if (__builtin_dynamic_object_size (__dest, 1) != (size_t) -1
-      && (!__builtin_constant_p (__n > __builtin_dynamic_object_size (__dest, 1)
-     / sizeof (wchar_t))
-   || __n > __builtin_dynamic_object_size (__dest, 1) / sizeof (wchar_t)))
-    return __wcslcat_chk (__dest, __src, __n,
-     __builtin_dynamic_object_size (__dest, 1) / sizeof (wchar_t));
-  return __wcslcat_alias (__dest, __src, __n);
-}
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) swprintf (wchar_t *__restrict __s, size_t __n, const wchar_t *__restrict __fmt, ...) noexcept (true)
-
-{
-  size_t sz = __builtin_dynamic_object_size (__s, 1);
-  if (sz != (size_t) -1 || 3 > 1)
-    return __swprintf_chk (__s, __n, 3 - 1,
-      sz / sizeof (wchar_t), __fmt, __builtin_va_arg_pack ());
-  return __swprintf_alias (__s, __n, __fmt, __builtin_va_arg_pack ());
-}
-# 162 "/usr/include/x86_64-linux-gnu/bits/wchar2.h" 3 4
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) vswprintf (wchar_t *__restrict __s, size_t __n, const wchar_t *__restrict __fmt, __gnuc_va_list __ap) noexcept (true)
-
-{
-  size_t sz = __builtin_dynamic_object_size (__s, 1);
-  if (sz != (size_t) -1 || 3 > 1)
-    return __vswprintf_chk (__s, __n, 3 - 1,
-       sz / sizeof (wchar_t), __fmt, __ap);
-  return __vswprintf_alias (__s, __n, __fmt, __ap);
-}
-
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-wprintf (const wchar_t *__restrict __fmt, ...)
-{
-  return __wprintf_chk (3 - 1, __fmt, __builtin_va_arg_pack ());
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-fwprintf (__FILE *__restrict __stream, const wchar_t *__restrict __fmt, ...)
-{
-  return __fwprintf_chk (__stream, 3 - 1, __fmt,
-    __builtin_va_arg_pack ());
-}
-
-
-
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-vwprintf (const wchar_t *__restrict __fmt, __gnuc_va_list __ap)
-{
-  return __vwprintf_chk (3 - 1, __fmt, __ap);
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-vfwprintf (__FILE *__restrict __stream,
-    const wchar_t *__restrict __fmt, __gnuc_va_list __ap)
-{
-  return __vfwprintf_chk (__stream, 3 - 1, __fmt, __ap);
-}
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) wchar_t *
-fgetws (wchar_t *__restrict __s, int __n, __FILE *__restrict __stream)
-{
-  size_t sz = __builtin_dynamic_object_size (__s, 1);
-  if (((__builtin_constant_p (sz) && (sz) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((sz)) / ((sizeof (wchar_t))))) && (((long unsigned int) (__n)) <= ((sz)) / ((sizeof (wchar_t)))))))
-    return __fgetws_alias (__s, __n, __stream);
-  if ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (sz) / (sizeof (wchar_t)))) && !(((long unsigned int) (__n)) <= (sz) / (sizeof (wchar_t)))))
-    return __fgetws_chk_warn (__s, sz / sizeof (wchar_t), __n, __stream);
-  return __fgetws_chk (__s, sz / sizeof (wchar_t), __n, __stream);
-}
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) wchar_t *
-fgetws_unlocked (wchar_t *__restrict __s, int __n, __FILE *__restrict __stream)
-{
-  size_t sz = __builtin_dynamic_object_size (__s, 1);
-  if (((__builtin_constant_p (sz) && (sz) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((sz)) / ((sizeof (wchar_t))))) && (((long unsigned int) (__n)) <= ((sz)) / ((sizeof (wchar_t)))))))
-    return __fgetws_unlocked_alias (__s, __n, __stream);
-  if ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (sz) / (sizeof (wchar_t)))) && !(((long unsigned int) (__n)) <= (sz) / (sizeof (wchar_t)))))
-    return __fgetws_unlocked_chk_warn (__s, sz / sizeof (wchar_t), __n,
-           __stream);
-  return __fgetws_unlocked_chk (__s, sz / sizeof (wchar_t), __n, __stream);
-}
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) size_t
-__attribute__ ((__leaf__)) wcrtomb (char *__restrict __s, wchar_t __wchar, mbstate_t *__restrict __ps) noexcept (true)
-
-{
-
-
-
-
-
-
-
-  if (__builtin_dynamic_object_size (__s, 1) != (size_t) -1
-      && 16 > __builtin_dynamic_object_size (__s, 1))
-    return __wcrtomb_chk (__s, __wchar, __ps, __builtin_dynamic_object_size (__s, 1));
-  return __wcrtomb_alias (__s, __wchar, __ps);
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) size_t
-__attribute__ ((__leaf__)) mbsrtowcs (wchar_t *__restrict __dst, const char **__restrict __src, size_t __len, mbstate_t *__restrict __ps) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__dst, 1)) && (__builtin_dynamic_object_size (__dst, 1)) == (long unsigned int) -1) || (((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (wchar_t)))))) ? __mbsrtowcs_alias (__dst, __src, __len, __ps) : ((((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))) ? __mbsrtowcs_chk_warn (__dst, __src, __len, __ps, (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t))) : __mbsrtowcs_chk (__dst, __src, __len, __ps, (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))))
-
-                                 ;
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) size_t
-__attribute__ ((__leaf__)) wcsrtombs (char *__restrict __dst, const wchar_t **__restrict __src, size_t __len, mbstate_t *__restrict __ps) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__dst, 1)) && (__builtin_dynamic_object_size (__dst, 1)) == (long unsigned int) -1) || (((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (char))))) && (((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (char)))))) ? __wcsrtombs_alias (__dst, __src, __len, __ps) : ((((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (char)))) && !(((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (char)))) ? __wcsrtombs_chk_warn (__dst, __src, __len, __ps, __builtin_dynamic_object_size (__dst, 1)) : __wcsrtombs_chk (__dst, __src, __len, __ps, __builtin_dynamic_object_size (__dst, 1))))
-
-                               ;
-}
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) size_t
-__attribute__ ((__leaf__)) mbsnrtowcs (wchar_t *__restrict __dst, const char **__restrict __src, size_t __nmc, size_t __len, mbstate_t *__restrict __ps) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__dst, 1)) && (__builtin_dynamic_object_size (__dst, 1)) == (long unsigned int) -1) || (((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (wchar_t)))))) ? __mbsnrtowcs_alias (__dst, __src, __nmc, __len, __ps) : ((((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))) ? __mbsnrtowcs_chk_warn (__dst, __src, __nmc, __len, __ps, (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t))) : __mbsnrtowcs_chk (__dst, __src, __nmc, __len, __ps, (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))))
-
-                                        ;
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) size_t
-__attribute__ ((__leaf__)) wcsnrtombs (char *__restrict __dst, const wchar_t **__restrict __src, size_t __nwc, size_t __len, mbstate_t *__restrict __ps) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__dst, 1)) && (__builtin_dynamic_object_size (__dst, 1)) == (long unsigned int) -1) || (((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (char))))) && (((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (char)))))) ? __wcsnrtombs_alias (__dst, __src, __nwc, __len, __ps) : ((((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (char)))) && !(((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (char)))) ? __wcsnrtombs_chk_warn (__dst, __src, __nwc, __len, __ps, __builtin_dynamic_object_size (__dst, 1)) : __wcsnrtombs_chk (__dst, __src, __nwc, __len, __ps, __builtin_dynamic_object_size (__dst, 1))))
-
-                                      ;
-}
-# 1071 "/usr/include/wchar.h" 2 3 4
-
-
+# 1073 "/usr/include/wchar.h" 3 4
 }
 # 45 "/usr/include/c++/14/cwchar" 2 3
 # 62 "/usr/include/c++/14/cwchar" 3
@@ -11438,7 +10874,7 @@ extern "C" {
 
 extern int __sched_cpucount (size_t __setsize, const cpu_set_t *__setp)
      noexcept (true);
-extern cpu_set_t *__sched_cpualloc (size_t __count) noexcept (true) __attribute__ ((__warn_unused_result__));
+extern cpu_set_t *__sched_cpualloc (size_t __count) noexcept (true) ;
 extern void __sched_cpufree (cpu_set_t *__set) noexcept (true);
 
 }
@@ -12882,17 +12318,7 @@ extern int pthread_getcpuclockid (pthread_t __thread_id,
 extern int pthread_atfork (void (*__prepare) (void),
       void (*__parent) (void),
       void (*__child) (void)) noexcept (true);
-
-
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-__attribute__ ((__leaf__)) pthread_equal (pthread_t __thread1, pthread_t __thread2) noexcept (true)
-{
-  return __thread1 == __thread2;
-}
-
-
+# 1346 "/usr/include/pthread.h" 3 4
 }
 # 36 "/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h" 2 3
 # 47 "/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h" 3
@@ -28950,23 +28376,23 @@ __extension__ typedef struct
     long long int rem;
   } lldiv_t;
 # 98 "/usr/include/stdlib.h" 3 4
-extern size_t __ctype_get_mb_cur_max (void) noexcept (true) __attribute__ ((__warn_unused_result__));
+extern size_t __ctype_get_mb_cur_max (void) noexcept (true) ;
 
 
 
 extern double atof (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 extern int atoi (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 extern long int atol (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 
 
 __extension__ extern long long int atoll (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 
 
@@ -29219,30 +28645,12 @@ extern _Float64x strtof64x_l (const char *__restrict __nptr,
          char **__restrict __endptr,
          locale_t __loc)
      noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 480 "/usr/include/stdlib.h" 3 4
-extern __inline __attribute__ ((__gnu_inline__)) int
-__attribute__ ((__leaf__)) atoi (const char *__nptr) noexcept (true)
-{
-  return (int) strtol (__nptr, (char **) __null, 10);
-}
-extern __inline __attribute__ ((__gnu_inline__)) long int
-__attribute__ ((__leaf__)) atol (const char *__nptr) noexcept (true)
-{
-  return strtol (__nptr, (char **) __null, 10);
-}
-
-
-__extension__ extern __inline __attribute__ ((__gnu_inline__)) long long int
-__attribute__ ((__leaf__)) atoll (const char *__nptr) noexcept (true)
-{
-  return strtoll (__nptr, (char **) __null, 10);
-}
 # 505 "/usr/include/stdlib.h" 3 4
-extern char *l64a (long int __n) noexcept (true) __attribute__ ((__warn_unused_result__));
+extern char *l64a (long int __n) noexcept (true) ;
 
 
 extern long int a64l (const char *__s)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 
 
@@ -29487,18 +28895,7 @@ extern int pselect (int __nfds, fd_set *__restrict __readfds,
       fd_set *__restrict __exceptfds,
       const struct timespec *__restrict __timeout,
       const __sigset_t *__restrict __sigmask);
-# 150 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/select2.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/select2.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/select-decl.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/select-decl.h" 3 4
-extern long int __fdelt_chk (long int __d);
-extern long int __fdelt_warn (long int __d)
-  __attribute__((__warning__ ("bit outside of fd_set selected")));
-# 24 "/usr/include/x86_64-linux-gnu/bits/select2.h" 2 3 4
-# 151 "/usr/include/x86_64-linux-gnu/sys/select.h" 2 3 4
-
-
+# 153 "/usr/include/x86_64-linux-gnu/sys/select.h" 3 4
 }
 # 180 "/usr/include/x86_64-linux-gnu/sys/types.h" 2 3 4
 
@@ -29672,7 +29069,7 @@ extern int lcong48_r (unsigned short int __param[7],
 
 
 extern __uint32_t arc4random (void)
-     noexcept (true) __attribute__ ((__warn_unused_result__));
+     noexcept (true) ;
 
 
 extern void arc4random_buf (void *__buf, size_t __size)
@@ -29681,16 +29078,16 @@ extern void arc4random_buf (void *__buf, size_t __size)
 
 
 extern __uint32_t arc4random_uniform (__uint32_t __upper_bound)
-     noexcept (true) __attribute__ ((__warn_unused_result__));
+     noexcept (true) ;
 
 
 
 
 extern void *malloc (size_t __size) noexcept (true) __attribute__ ((__malloc__))
-     __attribute__ ((__alloc_size__ (1))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__alloc_size__ (1))) ;
 
 extern void *calloc (size_t __nmemb, size_t __size)
-     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (1, 2))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__alloc_size__ (1, 2))) ;
 
 
 
@@ -29745,20 +29142,20 @@ extern void *alloca (size_t __size) noexcept (true);
 
 
 extern void *valloc (size_t __size) noexcept (true) __attribute__ ((__malloc__))
-     __attribute__ ((__alloc_size__ (1))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__alloc_size__ (1))) ;
 
 
 
 
 extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__nonnull__ (1))) ;
 
 
 
 
 extern void *aligned_alloc (size_t __alignment, size_t __size)
      noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__alloc_align__ (1)))
-     __attribute__ ((__alloc_size__ (2))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__alloc_size__ (2))) ;
 
 
 
@@ -29798,13 +29195,13 @@ extern void _Exit (int __status) noexcept (true) __attribute__ ((__noreturn__));
 
 
 
-extern char *getenv (const char *__name) noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+extern char *getenv (const char *__name) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
 
 
 
 
 extern char *secure_getenv (const char *__name)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__nonnull__ (1))) ;
 
 
 
@@ -29832,28 +29229,28 @@ extern int clearenv (void) noexcept (true);
 # 814 "/usr/include/stdlib.h" 3 4
 extern char *mktemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1)));
 # 827 "/usr/include/stdlib.h" 3 4
-extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
 # 837 "/usr/include/stdlib.h" 3 4
-extern int mkstemp64 (char *__template) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+extern int mkstemp64 (char *__template) __attribute__ ((__nonnull__ (1))) ;
 # 849 "/usr/include/stdlib.h" 3 4
-extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
 # 859 "/usr/include/stdlib.h" 3 4
 extern int mkstemps64 (char *__template, int __suffixlen)
-     __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__nonnull__ (1))) ;
 # 870 "/usr/include/stdlib.h" 3 4
-extern char *mkdtemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+extern char *mkdtemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
 # 881 "/usr/include/stdlib.h" 3 4
-extern int mkostemp (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+extern int mkostemp (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
 # 891 "/usr/include/stdlib.h" 3 4
-extern int mkostemp64 (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+extern int mkostemp64 (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
 # 901 "/usr/include/stdlib.h" 3 4
 extern int mkostemps (char *__template, int __suffixlen, int __flags)
-     __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__nonnull__ (1))) ;
 # 913 "/usr/include/stdlib.h" 3 4
 extern int mkostemps64 (char *__template, int __suffixlen, int __flags)
-     __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__nonnull__ (1))) ;
 # 923 "/usr/include/stdlib.h" 3 4
-extern int system (const char *__command) __attribute__ ((__warn_unused_result__));
+extern int system (const char *__command) ;
 
 
 
@@ -29861,10 +29258,10 @@ extern int system (const char *__command) __attribute__ ((__warn_unused_result__
 
 extern char *canonicalize_file_name (const char *__name)
      noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__malloc__))
-     __attribute__ ((__malloc__ (__builtin_free, 1))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__malloc__ (__builtin_free, 1))) ;
 # 940 "/usr/include/stdlib.h" 3 4
 extern char *realpath (const char *__restrict __name,
-         char *__restrict __resolved) noexcept (true) __attribute__ ((__warn_unused_result__));
+         char *__restrict __resolved) noexcept (true) ;
 
 
 
@@ -29885,46 +29282,10 @@ typedef int (*__compar_d_fn_t) (const void *, const void *, void *);
 
 extern void *bsearch (const void *__key, const void *__base,
         size_t __nmemb, size_t __size, __compar_fn_t __compar)
-     __attribute__ ((__nonnull__ (1, 2, 5))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__nonnull__ (1, 2, 5))) ;
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 1 3 4
-# 19 "/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h" 3 4
-extern __inline __attribute__ ((__gnu_inline__)) void *
-bsearch (const void *__key, const void *__base, size_t __nmemb, size_t __size,
-  __compar_fn_t __compar)
-{
-  size_t __l, __u, __idx;
-  const void *__p;
-  int __comparison;
 
-  __l = 0;
-  __u = __nmemb;
-  while (__l < __u)
-    {
-      __idx = (__l + __u) / 2;
-      __p = (const void *) (((const char *) __base) + (__idx * __size));
-      __comparison = (*__compar) (__key, __p);
-      if (__comparison < 0)
- __u = __idx;
-      else if (__comparison > 0)
- __l = __idx + 1;
-      else
- {
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wcast-qual"
-
-   return (void *) __p;
-
-#pragma GCC diagnostic pop
-
- }
-    }
-
-  return __null;
-}
-# 966 "/usr/include/stdlib.h" 2 3 4
 
 
 
@@ -29939,12 +29300,12 @@ extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
 
 
 
-extern int abs (int __x) noexcept (true) __attribute__ ((__const__)) __attribute__ ((__warn_unused_result__));
-extern long int labs (long int __x) noexcept (true) __attribute__ ((__const__)) __attribute__ ((__warn_unused_result__));
+extern int abs (int __x) noexcept (true) __attribute__ ((__const__)) ;
+extern long int labs (long int __x) noexcept (true) __attribute__ ((__const__)) ;
 
 
 __extension__ extern long long int llabs (long long int __x)
-     noexcept (true) __attribute__ ((__const__)) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__const__)) ;
 
 
 
@@ -29952,41 +29313,41 @@ __extension__ extern long long int llabs (long long int __x)
 
 
 extern div_t div (int __numer, int __denom)
-     noexcept (true) __attribute__ ((__const__)) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__const__)) ;
 extern ldiv_t ldiv (long int __numer, long int __denom)
-     noexcept (true) __attribute__ ((__const__)) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__const__)) ;
 
 
 __extension__ extern lldiv_t lldiv (long long int __numer,
         long long int __denom)
-     noexcept (true) __attribute__ ((__const__)) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__const__)) ;
 # 1012 "/usr/include/stdlib.h" 3 4
 extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) __attribute__ ((__warn_unused_result__));
+     int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
 
 
 
 
 extern char *fcvt (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) __attribute__ ((__warn_unused_result__));
+     int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
 
 
 
 
 extern char *gcvt (double __value, int __ndigit, char *__buf)
-     noexcept (true) __attribute__ ((__nonnull__ (3))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__nonnull__ (3))) ;
 
 
 
 
 extern char *qecvt (long double __value, int __ndigit,
       int *__restrict __decpt, int *__restrict __sign)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
 extern char *qfcvt (long double __value, int __ndigit,
       int *__restrict __decpt, int *__restrict __sign)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
 extern char *qgcvt (long double __value, int __ndigit, char *__buf)
-     noexcept (true) __attribute__ ((__nonnull__ (3))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__nonnull__ (3))) ;
 
 
 
@@ -30029,7 +29390,7 @@ extern size_t mbstowcs (wchar_t *__restrict __pwcs,
 extern size_t wcstombs (char *__restrict __s,
    const wchar_t *__restrict __pwcs, size_t __n)
      noexcept (true)
-  __attribute__ ((__access__ (__write_only__, 1)))
+  __attribute__ ((__access__ (__write_only__, 1, 3)))
   __attribute__ ((__access__ (__read_only__, 2)));
 
 
@@ -30037,12 +29398,12 @@ extern size_t wcstombs (char *__restrict __s,
 
 
 
-extern int rpmatch (const char *__response) noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__warn_unused_result__));
+extern int rpmatch (const char *__response) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
 # 1099 "/usr/include/stdlib.h" 3 4
 extern int getsubopt (char **__restrict __optionp,
         char *const *__restrict __tokens,
         char **__restrict __valuep)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2, 3))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__nonnull__ (1, 2, 3))) ;
 
 
 
@@ -30050,7 +29411,7 @@ extern int getsubopt (char **__restrict __optionp,
 
 
 
-extern int posix_openpt (int __oflag) __attribute__ ((__warn_unused_result__));
+extern int posix_openpt (int __oflag) ;
 
 
 
@@ -30067,7 +29428,7 @@ extern int unlockpt (int __fd) noexcept (true);
 
 
 
-extern char *ptsname (int __fd) noexcept (true) __attribute__ ((__warn_unused_result__));
+extern char *ptsname (int __fd) noexcept (true) ;
 
 
 
@@ -30075,7 +29436,7 @@ extern char *ptsname (int __fd) noexcept (true) __attribute__ ((__warn_unused_re
 
 
 extern int ptsname_r (int __fd, char *__buf, size_t __buflen)
-     noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 2)));
+     noexcept (true) __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 2, 3)));
 
 
 extern int getpt (void);
@@ -30089,153 +29450,8 @@ extern int getloadavg (double __loadavg[], int __nelem)
      noexcept (true) __attribute__ ((__nonnull__ (1)));
 # 1155 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdlib-float.h" 3 4
-extern __inline __attribute__ ((__gnu_inline__)) double
-__attribute__ ((__leaf__)) atof (const char *__nptr) noexcept (true)
-{
-  return strtod (__nptr, (char **) __null);
-}
 # 1156 "/usr/include/stdlib.h" 2 3 4
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdlib.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/stdlib.h" 3 4
-extern char *__realpath_chk (const char *__restrict __name,
-        char *__restrict __resolved,
-        size_t __resolvedlen) noexcept (true) __attribute__ ((__warn_unused_result__));
-extern char *__realpath_alias (const char *__restrict __name, char *__restrict __resolved) noexcept (true) __asm__ ("" "realpath")
-
-                                                 __attribute__ ((__warn_unused_result__));
-extern char *__realpath_chk_warn (const char *__restrict __name, char *__restrict __resolved, size_t __resolvedlen) noexcept (true) __asm__ ("" "__realpath_chk")
-
-
-                                                __attribute__ ((__warn_unused_result__))
-     __attribute__((__warning__ ("second argument of realpath must be either NULL or at " "least PATH_MAX bytes long buffer")))
-                                      ;
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) char *
-__attribute__ ((__leaf__)) realpath (const char *__restrict __name, char *__restrict __resolved) noexcept (true)
-{
-  size_t sz = __builtin_dynamic_object_size (__resolved, 1);
-
-  if (sz == (size_t) -1)
-    return __realpath_alias (__name, __resolved);
-
-
-
-
-
-  return __realpath_chk (__name, __resolved, sz);
-}
-
-
-extern int __ptsname_r_chk (int __fd, char *__buf, size_t __buflen,
-       size_t __nreal) noexcept (true) __attribute__ ((__nonnull__ (2)))
-    __attribute__ ((__access__ (__write_only__, 2, 3)));
-extern int __ptsname_r_alias (int __fd, char *__buf, size_t __buflen) noexcept (true) __asm__ ("" "ptsname_r")
-
-     __attribute__ ((__nonnull__ (2))) __attribute__ ((__access__ (__write_only__, 2, 3)));
-extern int __ptsname_r_chk_warn (int __fd, char *__buf, size_t __buflen, size_t __nreal) noexcept (true) __asm__ ("" "__ptsname_r_chk")
-
-
-     __attribute__ ((__nonnull__ (2))) __attribute__((__warning__ ("ptsname_r called with buflen bigger than " "size of buf")))
-                   ;
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) ptsname_r (int __fd, char *__buf, size_t __buflen) noexcept (true)
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__buf, 1)) && (__builtin_dynamic_object_size (__buf, 1)) == (long unsigned int) -1) || (((__typeof (__buflen)) 0 < (__typeof (__buflen)) -1 || (__builtin_constant_p (__buflen) && (__buflen) > 0)) && __builtin_constant_p ((((long unsigned int) (__buflen)) <= ((__builtin_dynamic_object_size (__buf, 1))) / ((sizeof (char))))) && (((long unsigned int) (__buflen)) <= ((__builtin_dynamic_object_size (__buf, 1))) / ((sizeof (char)))))) ? __ptsname_r_alias (__fd, __buf, __buflen) : ((((__typeof (__buflen)) 0 < (__typeof (__buflen)) -1 || (__builtin_constant_p (__buflen) && (__buflen) > 0)) && __builtin_constant_p ((((long unsigned int) (__buflen)) <= (__builtin_dynamic_object_size (__buf, 1)) / (sizeof (char)))) && !(((long unsigned int) (__buflen)) <= (__builtin_dynamic_object_size (__buf, 1)) / (sizeof (char)))) ? __ptsname_r_chk_warn (__fd, __buf, __buflen, __builtin_dynamic_object_size (__buf, 1)) : __ptsname_r_chk (__fd, __buf, __buflen, __builtin_dynamic_object_size (__buf, 1))))
-
-                           ;
-}
-
-
-extern int __wctomb_chk (char *__s, wchar_t __wchar, size_t __buflen)
-  noexcept (true) __attribute__ ((__warn_unused_result__));
-extern int __wctomb_alias (char *__s, wchar_t __wchar) noexcept (true) __asm__ ("" "wctomb")
-              __attribute__ ((__warn_unused_result__));
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) int
-__attribute__ ((__leaf__)) wctomb (char *__s, wchar_t __wchar) noexcept (true)
-{
-
-
-
-
-
-
-
-  if (__builtin_dynamic_object_size (__s, 1) != (size_t) -1
-      && 16 > __builtin_dynamic_object_size (__s, 1))
-    return __wctomb_chk (__s, __wchar, __builtin_dynamic_object_size (__s, 1));
-  return __wctomb_alias (__s, __wchar);
-}
-
-
-extern size_t __mbstowcs_chk (wchar_t *__restrict __dst,
-         const char *__restrict __src,
-         size_t __len, size_t __dstlen) noexcept (true)
-    __attribute__ ((__access__ (__write_only__, 1, 3))) __attribute__ ((__access__ (__read_only__, 2)));
-extern size_t __mbstowcs_nulldst (wchar_t *__restrict __dst, const char *__restrict __src, size_t __len) noexcept (true) __asm__ ("" "mbstowcs")
-
-
-
-    __attribute__ ((__access__ (__read_only__, 2)));
-extern size_t __mbstowcs_alias (wchar_t *__restrict __dst, const char *__restrict __src, size_t __len) noexcept (true) __asm__ ("" "mbstowcs")
-
-
-
-    __attribute__ ((__access__ (__write_only__, 1, 3))) __attribute__ ((__access__ (__read_only__, 2)));
-extern size_t __mbstowcs_chk_warn (wchar_t *__restrict __dst, const char *__restrict __src, size_t __len, size_t __dstlen) noexcept (true) __asm__ ("" "__mbstowcs_chk")
-
-
-
-     __attribute__((__warning__ ("mbstowcs called with dst buffer smaller than len " "* sizeof (wchar_t)")))
-                        ;
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) size_t
-__attribute__ ((__leaf__)) mbstowcs (wchar_t *__restrict __dst, const char *__restrict __src, size_t __len) noexcept (true)
-
-{
-  if (__builtin_constant_p (__dst == __null) && __dst == __null)
-    return __mbstowcs_nulldst (__dst, __src, __len);
-  else
-    return (((__builtin_constant_p (__builtin_dynamic_object_size (__dst, 1)) && (__builtin_dynamic_object_size (__dst, 1)) == (long unsigned int) -1) || (((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (wchar_t))))) && (((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (wchar_t)))))) ? __mbstowcs_alias (__dst, __src, __len) : ((((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))) && !(((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))) ? __mbstowcs_chk_warn (__dst, __src, __len, (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t))) : __mbstowcs_chk (__dst, __src, __len, (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (wchar_t)))))
-                                                      ;
-}
-
-extern size_t __wcstombs_chk (char *__restrict __dst,
-         const wchar_t *__restrict __src,
-         size_t __len, size_t __dstlen) noexcept (true)
-  __attribute__ ((__access__ (__write_only__, 1, 3))) __attribute__ ((__access__ (__read_only__, 2)));
-extern size_t __wcstombs_alias (char *__restrict __dst, const wchar_t *__restrict __src, size_t __len) noexcept (true) __asm__ ("" "wcstombs")
-
-
-
-  __attribute__ ((__access__ (__write_only__, 1, 3))) __attribute__ ((__access__ (__read_only__, 2)));
-extern size_t __wcstombs_chk_warn (char *__restrict __dst, const wchar_t *__restrict __src, size_t __len, size_t __dstlen) noexcept (true) __asm__ ("" "__wcstombs_chk")
-
-
-
-     __attribute__((__warning__ ("wcstombs called with dst buffer smaller than len")));
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) size_t
-__attribute__ ((__leaf__)) wcstombs (char *__restrict __dst, const wchar_t *__restrict __src, size_t __len) noexcept (true)
-
-{
-  return (((__builtin_constant_p (__builtin_dynamic_object_size (__dst, 1)) && (__builtin_dynamic_object_size (__dst, 1)) == (long unsigned int) -1) || (((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (char))))) && (((long unsigned int) (__len)) <= ((__builtin_dynamic_object_size (__dst, 1))) / ((sizeof (char)))))) ? __wcstombs_alias (__dst, __src, __len) : ((((__typeof (__len)) 0 < (__typeof (__len)) -1 || (__builtin_constant_p (__len) && (__len) > 0)) && __builtin_constant_p ((((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (char)))) && !(((long unsigned int) (__len)) <= (__builtin_dynamic_object_size (__dst, 1)) / (sizeof (char)))) ? __wcstombs_chk_warn (__dst, __src, __len, __builtin_dynamic_object_size (__dst, 1)) : __wcstombs_chk (__dst, __src, __len, __builtin_dynamic_object_size (__dst, 1))))
-
-                         ;
-}
-# 1160 "/usr/include/stdlib.h" 2 3 4
-
-
-
-
-
-
-
+# 1167 "/usr/include/stdlib.h" 3 4
 }
 # 80 "/usr/include/c++/14/cstdlib" 2 3
 
@@ -30642,22 +29858,22 @@ extern int renameat2 (int __oldfd, const char *__old, int __newfd,
 extern int fclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
 # 194 "/usr/include/stdio.h" 3 4
 extern FILE *tmpfile (void)
-  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) __attribute__ ((__warn_unused_result__));
+  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) ;
 # 206 "/usr/include/stdio.h" 3 4
 extern FILE *tmpfile64 (void)
-   __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) __attribute__ ((__warn_unused_result__));
+   __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) ;
 
 
 
-extern char *tmpnam (char[20]) noexcept (true) __attribute__ ((__warn_unused_result__));
+extern char *tmpnam (char[20]) noexcept (true) ;
 
 
 
 
-extern char *tmpnam_r (char __s[20]) noexcept (true) __attribute__ ((__warn_unused_result__));
+extern char *tmpnam_r (char __s[20]) noexcept (true) ;
 # 228 "/usr/include/stdio.h" 3 4
 extern char *tempnam (const char *__dir, const char *__pfx)
-   noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__warn_unused_result__)) __attribute__ ((__malloc__ (__builtin_free, 1)));
+   noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (__builtin_free, 1)));
 
 
 
@@ -30672,27 +29888,27 @@ extern int fcloseall (void);
 # 264 "/usr/include/stdio.h" 3 4
 extern FILE *fopen (const char *__restrict __filename,
       const char *__restrict __modes)
-  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) __attribute__ ((__warn_unused_result__));
+  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) ;
 
 
 
 
 extern FILE *freopen (const char *__restrict __filename,
         const char *__restrict __modes,
-        FILE *__restrict __stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (3)));
+        FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
 # 289 "/usr/include/stdio.h" 3 4
 extern FILE *fopen64 (const char *__restrict __filename,
         const char *__restrict __modes)
-  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) __attribute__ ((__warn_unused_result__));
+  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) ;
 extern FILE *freopen64 (const char *__restrict __filename,
    const char *__restrict __modes,
-   FILE *__restrict __stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (3)));
+   FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
 
 
 
 
 extern FILE *fdopen (int __fd, const char *__modes) noexcept (true)
-  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) __attribute__ ((__warn_unused_result__));
+  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) ;
 
 
 
@@ -30701,19 +29917,19 @@ extern FILE *fdopen (int __fd, const char *__modes) noexcept (true)
 extern FILE *fopencookie (void *__restrict __magic_cookie,
      const char *__restrict __modes,
      cookie_io_functions_t __io_funcs) noexcept (true)
-  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) __attribute__ ((__warn_unused_result__));
+  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) ;
 
 
 
 
 extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
-  noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) __attribute__ ((__warn_unused_result__));
+  noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) ;
 
 
 
 
 extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) noexcept (true)
-  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) __attribute__ ((__warn_unused_result__));
+  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (fclose, 1))) ;
 
 
 
@@ -30791,13 +30007,13 @@ extern int vsnprintf (char *__restrict __s, size_t __maxlen,
 
 extern int vasprintf (char **__restrict __ptr, const char *__restrict __f,
         __gnuc_va_list __arg)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 0))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 0))) ;
 extern int __asprintf (char **__restrict __ptr,
          const char *__restrict __fmt, ...)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 3))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 3))) ;
 extern int asprintf (char **__restrict __ptr,
        const char *__restrict __fmt, ...)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 3))) __attribute__ ((__warn_unused_result__));
+     noexcept (true) __attribute__ ((__format__ (__printf__, 2, 3))) ;
 
 
 
@@ -30815,35 +30031,35 @@ extern int dprintf (int __fd, const char *__restrict __fmt, ...)
 
 
 extern int fscanf (FILE *__restrict __stream,
-     const char *__restrict __format, ...) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+     const char *__restrict __format, ...) __attribute__ ((__nonnull__ (1)));
 
 
 
 
-extern int scanf (const char *__restrict __format, ...) __attribute__ ((__warn_unused_result__));
+extern int scanf (const char *__restrict __format, ...) ;
 
 extern int sscanf (const char *__restrict __s,
      const char *__restrict __format, ...) noexcept (true);
 # 442 "/usr/include/stdio.h" 3 4
 extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc23_fscanf")
 
-                          __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+                                __attribute__ ((__nonnull__ (1)));
 extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc23_scanf")
-                         __attribute__ ((__warn_unused_result__));
+                              ;
 extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) noexcept (true) __asm__ ("" "__isoc23_sscanf")
 
                       ;
 # 490 "/usr/include/stdio.h" 3 4
 extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
       __gnuc_va_list __arg)
-     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__nonnull__ (1)));
 
 
 
 
 
 extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
-     __attribute__ ((__format__ (__scanf__, 1, 0))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
 
 
 extern int vsscanf (const char *__restrict __s,
@@ -30859,10 +30075,10 @@ extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnu
 
 
 
-     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+     __attribute__ ((__format__ (__scanf__, 2, 0))) __attribute__ ((__nonnull__ (1)));
 extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc23_vscanf")
 
-     __attribute__ ((__format__ (__scanf__, 1, 0))) __attribute__ ((__warn_unused_result__));
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
 extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) noexcept (true) __asm__ ("" "__isoc23_vsscanf")
 
 
@@ -30925,18 +30141,18 @@ extern int putw (int __w, FILE *__stream) __attribute__ ((__nonnull__ (2)));
 
 
 extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
-     __attribute__ ((__warn_unused_result__)) __attribute__ ((__access__ (__write_only__, 1))) __attribute__ ((__nonnull__ (3)));
+     __attribute__ ((__access__ (__write_only__, 1, 2))) __attribute__ ((__nonnull__ (3)));
 # 677 "/usr/include/stdio.h" 3 4
 extern char *fgets_unlocked (char *__restrict __s, int __n,
-        FILE *__restrict __stream) __attribute__ ((__warn_unused_result__))
-    __attribute__ ((__access__ (__write_only__, 1))) __attribute__ ((__nonnull__ (3)));
+        FILE *__restrict __stream)
+    __attribute__ ((__access__ (__write_only__, 1, 2))) __attribute__ ((__nonnull__ (3)));
 # 694 "/usr/include/stdio.h" 3 4
 extern __ssize_t __getdelim (char **__restrict __lineptr,
                              size_t *__restrict __n, int __delimiter,
-                             FILE *__restrict __stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (4)));
+                             FILE *__restrict __stream) __attribute__ ((__nonnull__ (4)));
 extern __ssize_t getdelim (char **__restrict __lineptr,
                            size_t *__restrict __n, int __delimiter,
-                           FILE *__restrict __stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (4)));
+                           FILE *__restrict __stream) __attribute__ ((__nonnull__ (4)));
 
 
 
@@ -30946,7 +30162,7 @@ extern __ssize_t getdelim (char **__restrict __lineptr,
 
 extern __ssize_t getline (char **__restrict __lineptr,
                           size_t *__restrict __n,
-                          FILE *__restrict __stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (3)));
+                          FILE *__restrict __stream) __attribute__ ((__nonnull__ (3)));
 
 
 
@@ -30976,7 +30192,7 @@ extern int ungetc (int __c, FILE *__stream) __attribute__ ((__nonnull__ (2)));
 
 
 extern size_t fread (void *__restrict __ptr, size_t __size,
-       size_t __n, FILE *__restrict __stream) __attribute__ ((__warn_unused_result__))
+       size_t __n, FILE *__restrict __stream)
   __attribute__ ((__nonnull__ (4)));
 
 
@@ -30989,7 +30205,7 @@ extern int fputs_unlocked (const char *__restrict __s,
       FILE *__restrict __stream) __attribute__ ((__nonnull__ (2)));
 # 766 "/usr/include/stdio.h" 3 4
 extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
-         size_t __n, FILE *__restrict __stream) __attribute__ ((__warn_unused_result__))
+         size_t __n, FILE *__restrict __stream)
   __attribute__ ((__nonnull__ (4)));
 extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
           size_t __n, FILE *__restrict __stream)
@@ -31007,7 +30223,7 @@ extern int fseek (FILE *__stream, long int __off, int __whence)
 
 
 
-extern long int ftell (FILE *__stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern long int ftell (FILE *__stream) __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -31020,7 +30236,7 @@ extern int fseeko (FILE *__stream, __off_t __off, int __whence)
 
 
 
-extern __off_t ftello (FILE *__stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern __off_t ftello (FILE *__stream) __attribute__ ((__nonnull__ (1)));
 # 829 "/usr/include/stdio.h" 3 4
 extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos)
   __attribute__ ((__nonnull__ (1)));
@@ -31032,7 +30248,7 @@ extern int fsetpos (FILE *__stream, const fpos_t *__pos) __attribute__ ((__nonnu
 # 851 "/usr/include/stdio.h" 3 4
 extern int fseeko64 (FILE *__stream, __off64_t __off, int __whence)
   __attribute__ ((__nonnull__ (1)));
-extern __off64_t ftello64 (FILE *__stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern __off64_t ftello64 (FILE *__stream) __attribute__ ((__nonnull__ (1)));
 extern int fgetpos64 (FILE *__restrict __stream, fpos64_t *__restrict __pos)
   __attribute__ ((__nonnull__ (1)));
 extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos) __attribute__ ((__nonnull__ (1)));
@@ -31041,15 +30257,15 @@ extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos) __attribute__ ((__n
 
 extern void clearerr (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
 
-extern int feof (FILE *__stream) noexcept (true) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern int feof (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
 
-extern int ferror (FILE *__stream) noexcept (true) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern int ferror (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
 
 extern void clearerr_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
-extern int feof_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
-extern int ferror_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern int feof_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
+extern int ferror_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
 
@@ -31062,12 +30278,12 @@ extern void perror (const char *__s) __attribute__ ((__cold__));
 
 
 
-extern int fileno (FILE *__stream) noexcept (true) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern int fileno (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
 
 
-extern int fileno_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern int fileno_unlocked (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
 # 897 "/usr/include/stdio.h" 3 4
 extern int pclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
 
@@ -31076,7 +30292,7 @@ extern int pclose (FILE *__stream) __attribute__ ((__nonnull__ (1)));
 
 
 extern FILE *popen (const char *__command, const char *__modes)
-  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (pclose, 1))) __attribute__ ((__warn_unused_result__));
+  __attribute__ ((__malloc__)) __attribute__ ((__malloc__ (pclose, 1))) ;
 
 
 
@@ -31117,468 +30333,14 @@ extern void flockfile (FILE *__stream) noexcept (true) __attribute__ ((__nonnull
 
 
 
-extern int ftrylockfile (FILE *__stream) noexcept (true) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (1)));
+extern int ftrylockfile (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
 extern void funlockfile (FILE *__stream) noexcept (true) __attribute__ ((__nonnull__ (1)));
 # 959 "/usr/include/stdio.h" 3 4
 extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h" 1 3 4
-# 26 "/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h" 3 4
-extern int __sprintf_chk (char *__restrict __s, int __flag, size_t __slen,
-     const char *__restrict __format, ...) noexcept (true)
-    __attribute__ ((__access__ (__write_only__, 1, 3)));
-extern int __vsprintf_chk (char *__restrict __s, int __flag, size_t __slen,
-      const char *__restrict __format,
-      __gnuc_va_list __ap) noexcept (true)
-    __attribute__ ((__access__ (__write_only__, 1, 3)));
-
-
-
-extern int __snprintf_chk (char *__restrict __s, size_t __n, int __flag,
-      size_t __slen, const char *__restrict __format,
-      ...) noexcept (true)
-    __attribute__ ((__access__ (__write_only__, 1, 2)));
-extern int __vsnprintf_chk (char *__restrict __s, size_t __n, int __flag,
-       size_t __slen, const char *__restrict __format,
-       __gnuc_va_list __ap) noexcept (true)
-    __attribute__ ((__access__ (__write_only__, 1, 2)));
-
-
-
-
-
-extern int __fprintf_chk (FILE *__restrict __stream, int __flag,
-     const char *__restrict __format, ...)
-    __attribute__ ((__nonnull__ (1)));
-extern int __printf_chk (int __flag, const char *__restrict __format, ...);
-extern int __vfprintf_chk (FILE *__restrict __stream, int __flag,
-      const char *__restrict __format,
-      __gnuc_va_list __ap) __attribute__ ((__nonnull__ (1)));
-extern int __vprintf_chk (int __flag, const char *__restrict __format,
-     __gnuc_va_list __ap);
-
-
-extern int __dprintf_chk (int __fd, int __flag, const char *__restrict __fmt,
-     ...) __attribute__ ((__format__ (__printf__, 3, 4)));
-extern int __vdprintf_chk (int __fd, int __flag,
-      const char *__restrict __fmt, __gnuc_va_list __arg)
-     __attribute__ ((__format__ (__printf__, 3, 0)));
-
-
-
-
-extern int __asprintf_chk (char **__restrict __ptr, int __flag,
-      const char *__restrict __fmt, ...)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 3, 4))) __attribute__ ((__warn_unused_result__));
-extern int __vasprintf_chk (char **__restrict __ptr, int __flag,
-       const char *__restrict __fmt, __gnuc_va_list __arg)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 3, 0))) __attribute__ ((__warn_unused_result__));
-extern int __obstack_printf_chk (struct obstack *__restrict __obstack,
-     int __flag, const char *__restrict __format,
-     ...)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 3, 4)));
-extern int __obstack_vprintf_chk (struct obstack *__restrict __obstack,
-      int __flag,
-      const char *__restrict __format,
-      __gnuc_va_list __args)
-     noexcept (true) __attribute__ ((__format__ (__printf__, 3, 0)));
-# 96 "/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h" 3 4
-extern char *__fgets_alias (char *__restrict __s, int __n, FILE *__restrict __stream) __asm__ ("" "fgets")
-
-
-    __attribute__ ((__warn_unused_result__)) __attribute__ ((__access__ (__write_only__, 1, 2)));
-extern char *__fgets_chk_warn (char *__restrict __s, size_t __size, int __n, FILE *__restrict __stream) __asm__ ("" "__fgets_chk")
-
-
-     __attribute__ ((__warn_unused_result__)) __attribute__((__warning__ ("fgets called with bigger size than length " "of destination buffer")))
-                                 ;
-
-extern char *__fgets_chk (char *__restrict __s, size_t __size, int __n,
-     FILE *__restrict __stream)
-    __attribute__ ((__warn_unused_result__)) __attribute__ ((__access__ (__write_only__, 1, 3))) __attribute__ ((__nonnull__ (4)));
-
-extern size_t __fread_alias (void *__restrict __ptr, size_t __size, size_t __n, FILE *__restrict __stream) __asm__ ("" "fread")
-
-
-            __attribute__ ((__warn_unused_result__));
-extern size_t __fread_chk_warn (void *__restrict __ptr, size_t __ptrlen, size_t __size, size_t __n, FILE *__restrict __stream) __asm__ ("" "__fread_chk")
-
-
-
-
-     __attribute__ ((__warn_unused_result__)) __attribute__((__warning__ ("fread called with bigger size * nmemb than length " "of destination buffer")))
-                                 ;
-
-extern size_t __fread_chk (void *__restrict __ptr, size_t __ptrlen,
-      size_t __size, size_t __n,
-      FILE *__restrict __stream) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (5)));
-
-
-extern char *__fgets_unlocked_alias (char *__restrict __s, int __n, FILE *__restrict __stream) __asm__ ("" "fgets_unlocked")
-
-
-    __attribute__ ((__warn_unused_result__)) __attribute__ ((__access__ (__write_only__, 1, 2)));
-extern char *__fgets_unlocked_chk_warn (char *__restrict __s, size_t __size, int __n, FILE *__restrict __stream) __asm__ ("" "__fgets_unlocked_chk")
-
-
-     __attribute__ ((__warn_unused_result__)) __attribute__((__warning__ ("fgets_unlocked called with bigger size than length " "of destination buffer")))
-                                 ;
-
-
-extern char *__fgets_unlocked_chk (char *__restrict __s, size_t __size,
-       int __n, FILE *__restrict __stream)
-    __attribute__ ((__warn_unused_result__)) __attribute__ ((__access__ (__write_only__, 1, 3))) __attribute__ ((__nonnull__ (4)));
-
-
-
-
-extern size_t __fread_unlocked_alias (void *__restrict __ptr, size_t __size, size_t __n, FILE *__restrict __stream) __asm__ ("" "fread_unlocked")
-
-
-                     __attribute__ ((__warn_unused_result__));
-extern size_t __fread_unlocked_chk_warn (void *__restrict __ptr, size_t __ptrlen, size_t __size, size_t __n, FILE *__restrict __stream) __asm__ ("" "__fread_unlocked_chk")
-
-
-
-
-     __attribute__ ((__warn_unused_result__)) __attribute__((__warning__ ("fread_unlocked called with bigger size * nmemb than " "length of destination buffer")))
-                                        ;
-
-extern size_t __fread_unlocked_chk (void *__restrict __ptr, size_t __ptrlen,
-        size_t __size, size_t __n,
-        FILE *__restrict __stream)
-    __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (5)));
-# 965 "/usr/include/stdio.h" 2 3 4
-# 976 "/usr/include/stdio.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdio.h" 1 3 4
-# 46 "/usr/include/x86_64-linux-gnu/bits/stdio.h" 3 4
-extern __inline __attribute__ ((__gnu_inline__)) int
-getchar (void)
-{
-  return getc (stdin);
-}
-
-
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-fgetc_unlocked (FILE *__fp)
-{
-  return (__builtin_expect (((__fp)->_IO_read_ptr >= (__fp)->_IO_read_end), 0) ? __uflow (__fp) : *(unsigned char *) (__fp)->_IO_read_ptr++);
-}
-
-
-
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-getc_unlocked (FILE *__fp)
-{
-  return (__builtin_expect (((__fp)->_IO_read_ptr >= (__fp)->_IO_read_end), 0) ? __uflow (__fp) : *(unsigned char *) (__fp)->_IO_read_ptr++);
-}
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-getchar_unlocked (void)
-{
-  return (__builtin_expect (((stdin)->_IO_read_ptr >= (stdin)->_IO_read_end), 0) ? __uflow (stdin) : *(unsigned char *) (stdin)->_IO_read_ptr++);
-}
-
-
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-putchar (int __c)
-{
-  return putc (__c, stdout);
-}
-
-
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-fputc_unlocked (int __c, FILE *__stream)
-{
-  return (__builtin_expect (((__stream)->_IO_write_ptr >= (__stream)->_IO_write_end), 0) ? __overflow (__stream, (unsigned char) (__c)) : (unsigned char) (*(__stream)->_IO_write_ptr++ = (__c)));
-}
-
-
-
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-putc_unlocked (int __c, FILE *__stream)
-{
-  return (__builtin_expect (((__stream)->_IO_write_ptr >= (__stream)->_IO_write_end), 0) ? __overflow (__stream, (unsigned char) (__c)) : (unsigned char) (*(__stream)->_IO_write_ptr++ = (__c)));
-}
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-putchar_unlocked (int __c)
-{
-  return (__builtin_expect (((stdout)->_IO_write_ptr >= (stdout)->_IO_write_end), 0) ? __overflow (stdout, (unsigned char) (__c)) : (unsigned char) (*(stdout)->_IO_write_ptr++ = (__c)));
-}
-
-
-
-
-
-extern __inline __attribute__ ((__gnu_inline__)) __ssize_t
-getline (char **__lineptr, size_t *__n, FILE *__stream)
-{
-  return __getdelim (__lineptr, __n, '\n', __stream);
-}
-
-
-
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-__attribute__ ((__leaf__)) feof_unlocked (FILE *__stream) noexcept (true)
-{
-  return (((__stream)->_flags & 0x0010) != 0);
-}
-
-
-extern __inline __attribute__ ((__gnu_inline__)) int
-__attribute__ ((__leaf__)) ferror_unlocked (FILE *__stream) noexcept (true)
-{
-  return (((__stream)->_flags & 0x0020) != 0);
-}
-# 977 "/usr/include/stdio.h" 2 3 4
-
-
-
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdio2.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/stdio2.h" 3 4
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) sprintf (char *__restrict __s, const char *__restrict __fmt, ...) noexcept (true)
-{
-  return __builtin___sprintf_chk (__s, 3 - 1,
-      __builtin_dynamic_object_size (__s, 1), __fmt,
-      __builtin_va_arg_pack ());
-}
-
-
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) vsprintf (char *__restrict __s, const char *__restrict __fmt, __gnuc_va_list __ap) noexcept (true)
-
-{
-  return __builtin___vsprintf_chk (__s, 3 - 1,
-       __builtin_dynamic_object_size (__s, 1), __fmt, __ap);
-}
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) snprintf (char *__restrict __s, size_t __n, const char *__restrict __fmt, ...) noexcept (true)
-
-{
-  return __builtin___snprintf_chk (__s, __n, 3 - 1,
-       __builtin_dynamic_object_size (__s, 1), __fmt,
-       __builtin_va_arg_pack ());
-}
-
-
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) vsnprintf (char *__restrict __s, size_t __n, const char *__restrict __fmt, __gnuc_va_list __ap) noexcept (true)
-
-{
-  return __builtin___vsnprintf_chk (__s, __n, 3 - 1,
-        __builtin_dynamic_object_size (__s, 1), __fmt, __ap);
-}
-
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__nonnull__ (1))) int
-fprintf (FILE *__restrict __stream, const char *__restrict __fmt, ...)
-{
-  return __fprintf_chk (__stream, 3 - 1, __fmt,
-   __builtin_va_arg_pack ());
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-printf (const char *__restrict __fmt, ...)
-{
-  return __printf_chk (3 - 1, __fmt, __builtin_va_arg_pack ());
-}
-
-
-
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-vprintf (const char *__restrict __fmt, __gnuc_va_list __ap)
-{
-
-  return __vfprintf_chk (stdout, 3 - 1, __fmt, __ap);
-
-
-
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__nonnull__ (1))) int
-vfprintf (FILE *__restrict __stream,
-   const char *__restrict __fmt, __gnuc_va_list __ap)
-{
-  return __vfprintf_chk (__stream, 3 - 1, __fmt, __ap);
-}
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-dprintf (int __fd, const char *__restrict __fmt, ...)
-{
-  return __dprintf_chk (__fd, 3 - 1, __fmt,
-   __builtin_va_arg_pack ());
-}
-
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-vdprintf (int __fd, const char *__restrict __fmt, __gnuc_va_list __ap)
-{
-  return __vdprintf_chk (__fd, 3 - 1, __fmt, __ap);
-}
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) asprintf (char **__restrict __ptr, const char *__restrict __fmt, ...) noexcept (true)
-{
-  return __asprintf_chk (__ptr, 3 - 1, __fmt,
-    __builtin_va_arg_pack ());
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) __asprintf (char **__restrict __ptr, const char *__restrict __fmt, ...) noexcept (true)
-
-{
-  return __asprintf_chk (__ptr, 3 - 1, __fmt,
-    __builtin_va_arg_pack ());
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) obstack_printf (struct obstack *__restrict __obstack, const char *__restrict __fmt, ...) noexcept (true)
-
-{
-  return __obstack_printf_chk (__obstack, 3 - 1, __fmt,
-          __builtin_va_arg_pack ());
-}
-# 165 "/usr/include/x86_64-linux-gnu/bits/stdio2.h" 3 4
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) vasprintf (char **__restrict __ptr, const char *__restrict __fmt, __gnuc_va_list __ap) noexcept (true)
-
-{
-  return __vasprintf_chk (__ptr, 3 - 1, __fmt, __ap);
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) int
-__attribute__ ((__leaf__)) obstack_vprintf (struct obstack *__restrict __obstack, const char *__restrict __fmt, __gnuc_va_list __ap) noexcept (true)
-
-{
-  return __obstack_vprintf_chk (__obstack, 3 - 1, __fmt,
-    __ap);
-}
-# 194 "/usr/include/x86_64-linux-gnu/bits/stdio2.h" 3 4
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) __attribute__ ((__access__ (__write_only__, 1)))
-__attribute__ ((__nonnull__ (3))) char *
-fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
-{
-  size_t sz = __builtin_dynamic_object_size (__s, 1);
-  if (((__builtin_constant_p (sz) && (sz) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((sz)) / ((sizeof (char))))) && (((long unsigned int) (__n)) <= ((sz)) / ((sizeof (char)))))))
-    return __fgets_alias (__s, __n, __stream);
-  if ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (sz) / (sizeof (char)))) && !(((long unsigned int) (__n)) <= (sz) / (sizeof (char)))))
-    return __fgets_chk_warn (__s, sz, __n, __stream);
-  return __fgets_chk (__s, sz, __n, __stream);
-}
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (4))) size_t
-fread (void *__restrict __ptr, size_t __size, size_t __n,
-       FILE *__restrict __stream)
-{
-  size_t sz = __builtin_dynamic_object_size (__ptr, 0);
-  if (((__builtin_constant_p (sz) && (sz) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((sz)) / ((__size)))) && (((long unsigned int) (__n)) <= ((sz)) / ((__size))))))
-    return __fread_alias (__ptr, __size, __n, __stream);
-  if ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (sz) / (__size))) && !(((long unsigned int) (__n)) <= (sz) / (__size))))
-    return __fread_chk_warn (__ptr, sz, __size, __n, __stream);
-  return __fread_chk (__ptr, sz, __size, __n, __stream);
-}
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) __attribute__ ((__access__ (__write_only__, 1)))
-__attribute__ ((__nonnull__ (3))) char *
-fgets_unlocked (char *__restrict __s, int __n, FILE *__restrict __stream)
-{
-  size_t sz = __builtin_dynamic_object_size (__s, 1);
-  if (((__builtin_constant_p (sz) && (sz) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((sz)) / ((sizeof (char))))) && (((long unsigned int) (__n)) <= ((sz)) / ((sizeof (char)))))))
-    return __fgets_unlocked_alias (__s, __n, __stream);
-  if ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (sz) / (sizeof (char)))) && !(((long unsigned int) (__n)) <= (sz) / (sizeof (char)))))
-    return __fgets_unlocked_chk_warn (__s, sz, __n, __stream);
-  return __fgets_unlocked_chk (__s, sz, __n, __stream);
-}
-
-
-
-
-extern __inline __attribute__ ((__always_inline__)) __attribute__ ((__gnu_inline__)) __attribute__ ((__artificial__)) __attribute__ ((__warn_unused_result__)) __attribute__ ((__nonnull__ (4))) size_t
-fread_unlocked (void *__restrict __ptr, size_t __size, size_t __n,
-  FILE *__restrict __stream)
-{
-  size_t sz = __builtin_dynamic_object_size (__ptr, 0);
-  if (((__builtin_constant_p (sz) && (sz) == (long unsigned int) -1) || (((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= ((sz)) / ((__size)))) && (((long unsigned int) (__n)) <= ((sz)) / ((__size))))))
-    {
-
-      if (__builtin_constant_p (__size)
-   && __builtin_constant_p (__n)
-   && (__size | __n) < (((size_t) 1) << (8 * sizeof (size_t) / 2))
-   && __size * __n <= 8)
- {
-   size_t __cnt = __size * __n;
-   char *__cptr = (char *) __ptr;
-   if (__cnt == 0)
-     return 0;
-
-   for (; __cnt > 0; --__cnt)
-     {
-       int __c = getc_unlocked (__stream);
-       if (__c == (-1))
-  break;
-       *__cptr++ = __c;
-     }
-   return (__cptr - (char *) __ptr) / __size;
- }
-
-      return __fread_unlocked_alias (__ptr, __size, __n, __stream);
-    }
-  if ((((__typeof (__n)) 0 < (__typeof (__n)) -1 || (__builtin_constant_p (__n) && (__n) > 0)) && __builtin_constant_p ((((long unsigned int) (__n)) <= (sz) / (__size))) && !(((long unsigned int) (__n)) <= (sz) / (__size))))
-    return __fread_unlocked_chk_warn (__ptr, sz, __size, __n, __stream);
-  return __fread_unlocked_chk (__ptr, sz, __size, __n, __stream);
-
-}
-# 981 "/usr/include/stdio.h" 2 3 4
-
-
+# 983 "/usr/include/stdio.h" 3 4
 }
 # 43 "/usr/include/c++/14/cstdio" 2 3
 # 96 "/usr/include/c++/14/cstdio" 3
@@ -75166,10 +73928,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 # 11 "/home/bktivadar/CLionProjects/mankala/BoardState.h"
 class BoardState {
-    unsigned char array[14];
+    std::array<unsigned char, 14> array;
     bool firstPlayersTurn;
-
-    unsigned char& operator[](unsigned char idx);
 public:
     constexpr BoardState() noexcept : array{6, 6, 6, 0, 6, 6, 6, 6, 6, 6, 0, 6, 6, 6}, firstPlayersTurn(true){}
     constexpr void reset() noexcept {*this=BoardState();}
@@ -84830,49 +83590,49 @@ extern int __issignaling (double __value) noexcept (true)
 # 313 "/usr/include/math.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-__attribute__ ((__simd__ ("notinbranch"))) extern double acos (double __x) noexcept (true); extern double __acos (double __x) noexcept (true);
+ extern double acos (double __x) noexcept (true); extern double __acos (double __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double asin (double __x) noexcept (true); extern double __asin (double __x) noexcept (true);
+ extern double asin (double __x) noexcept (true); extern double __asin (double __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double atan (double __x) noexcept (true); extern double __atan (double __x) noexcept (true);
+ extern double atan (double __x) noexcept (true); extern double __atan (double __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double atan2 (double __y, double __x) noexcept (true); extern double __atan2 (double __y, double __x) noexcept (true);
-
-
-__attribute__ ((__simd__ ("notinbranch"))) extern double cos (double __x) noexcept (true); extern double __cos (double __x) noexcept (true);
-
-__attribute__ ((__simd__ ("notinbranch"))) extern double sin (double __x) noexcept (true); extern double __sin (double __x) noexcept (true);
-
-__attribute__ ((__simd__ ("notinbranch"))) extern double tan (double __x) noexcept (true); extern double __tan (double __x) noexcept (true);
+ extern double atan2 (double __y, double __x) noexcept (true); extern double __atan2 (double __y, double __x) noexcept (true);
 
 
+ extern double cos (double __x) noexcept (true); extern double __cos (double __x) noexcept (true);
 
+ extern double sin (double __x) noexcept (true); extern double __sin (double __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double cosh (double __x) noexcept (true); extern double __cosh (double __x) noexcept (true);
-
-__attribute__ ((__simd__ ("notinbranch"))) extern double sinh (double __x) noexcept (true); extern double __sinh (double __x) noexcept (true);
-
-__attribute__ ((__simd__ ("notinbranch"))) extern double tanh (double __x) noexcept (true); extern double __tanh (double __x) noexcept (true);
+ extern double tan (double __x) noexcept (true); extern double __tan (double __x) noexcept (true);
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern void sincos (double __x, double *__sinx, double *__cosx) noexcept (true); extern void __sincos (double __x, double *__sinx, double *__cosx) noexcept (true)
+
+ extern double cosh (double __x) noexcept (true); extern double __cosh (double __x) noexcept (true);
+
+ extern double sinh (double __x) noexcept (true); extern double __sinh (double __x) noexcept (true);
+
+ extern double tanh (double __x) noexcept (true); extern double __tanh (double __x) noexcept (true);
+
+
+
+ extern void sincos (double __x, double *__sinx, double *__cosx) noexcept (true); extern void __sincos (double __x, double *__sinx, double *__cosx) noexcept (true)
                                                         ;
 
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double acosh (double __x) noexcept (true); extern double __acosh (double __x) noexcept (true);
+ extern double acosh (double __x) noexcept (true); extern double __acosh (double __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double asinh (double __x) noexcept (true); extern double __asinh (double __x) noexcept (true);
+ extern double asinh (double __x) noexcept (true); extern double __asinh (double __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double atanh (double __x) noexcept (true); extern double __atanh (double __x) noexcept (true);
-
-
+ extern double atanh (double __x) noexcept (true); extern double __atanh (double __x) noexcept (true);
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double exp (double __x) noexcept (true); extern double __exp (double __x) noexcept (true);
+
+
+ extern double exp (double __x) noexcept (true); extern double __exp (double __x) noexcept (true);
 
 
 extern double frexp (double __x, int *__exponent) noexcept (true); extern double __frexp (double __x, int *__exponent) noexcept (true);
@@ -84881,25 +83641,25 @@ extern double frexp (double __x, int *__exponent) noexcept (true); extern double
 extern double ldexp (double __x, int __exponent) noexcept (true); extern double __ldexp (double __x, int __exponent) noexcept (true);
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double log (double __x) noexcept (true); extern double __log (double __x) noexcept (true);
+ extern double log (double __x) noexcept (true); extern double __log (double __x) noexcept (true);
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double log10 (double __x) noexcept (true); extern double __log10 (double __x) noexcept (true);
+ extern double log10 (double __x) noexcept (true); extern double __log10 (double __x) noexcept (true);
 
 
 extern double modf (double __x, double *__iptr) noexcept (true); extern double __modf (double __x, double *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double exp10 (double __x) noexcept (true); extern double __exp10 (double __x) noexcept (true);
+ extern double exp10 (double __x) noexcept (true); extern double __exp10 (double __x) noexcept (true);
 
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double expm1 (double __x) noexcept (true); extern double __expm1 (double __x) noexcept (true);
+ extern double expm1 (double __x) noexcept (true); extern double __expm1 (double __x) noexcept (true);
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double log1p (double __x) noexcept (true); extern double __log1p (double __x) noexcept (true);
+ extern double log1p (double __x) noexcept (true); extern double __log1p (double __x) noexcept (true);
 
 
 extern double logb (double __x) noexcept (true); extern double __logb (double __x) noexcept (true);
@@ -84907,29 +83667,29 @@ extern double logb (double __x) noexcept (true); extern double __logb (double __
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double exp2 (double __x) noexcept (true); extern double __exp2 (double __x) noexcept (true);
+ extern double exp2 (double __x) noexcept (true); extern double __exp2 (double __x) noexcept (true);
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double log2 (double __x) noexcept (true); extern double __log2 (double __x) noexcept (true);
-
-
-
+ extern double log2 (double __x) noexcept (true); extern double __log2 (double __x) noexcept (true);
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double pow (double __x, double __y) noexcept (true); extern double __pow (double __x, double __y) noexcept (true);
+
+
+
+ extern double pow (double __x, double __y) noexcept (true); extern double __pow (double __x, double __y) noexcept (true);
 
 
 extern double sqrt (double __x) noexcept (true); extern double __sqrt (double __x) noexcept (true);
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double hypot (double __x, double __y) noexcept (true); extern double __hypot (double __x, double __y) noexcept (true);
+ extern double hypot (double __x, double __y) noexcept (true); extern double __hypot (double __x, double __y) noexcept (true);
 
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double cbrt (double __x) noexcept (true); extern double __cbrt (double __x) noexcept (true);
+ extern double cbrt (double __x) noexcept (true); extern double __cbrt (double __x) noexcept (true);
 
 
 
@@ -84980,8 +83740,8 @@ extern double yn (int, double) noexcept (true); extern double __yn (int, double)
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern double erf (double) noexcept (true); extern double __erf (double) noexcept (true);
-__attribute__ ((__simd__ ("notinbranch"))) extern double erfc (double) noexcept (true); extern double __erfc (double) noexcept (true);
+ extern double erf (double) noexcept (true); extern double __erf (double) noexcept (true);
+ extern double erfc (double) noexcept (true); extern double __erfc (double) noexcept (true);
 extern double lgamma (double) noexcept (true); extern double __lgamma (double) noexcept (true);
 
 
@@ -85218,49 +83978,49 @@ extern int __issignalingf (float __value) noexcept (true)
 # 330 "/usr/include/math.h" 2 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
 # 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-__attribute__ ((__simd__ ("notinbranch"))) extern float acosf (float __x) noexcept (true); extern float __acosf (float __x) noexcept (true);
+ extern float acosf (float __x) noexcept (true); extern float __acosf (float __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float asinf (float __x) noexcept (true); extern float __asinf (float __x) noexcept (true);
+ extern float asinf (float __x) noexcept (true); extern float __asinf (float __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float atanf (float __x) noexcept (true); extern float __atanf (float __x) noexcept (true);
+ extern float atanf (float __x) noexcept (true); extern float __atanf (float __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float atan2f (float __y, float __x) noexcept (true); extern float __atan2f (float __y, float __x) noexcept (true);
-
-
-__attribute__ ((__simd__ ("notinbranch"))) extern float cosf (float __x) noexcept (true); extern float __cosf (float __x) noexcept (true);
-
-__attribute__ ((__simd__ ("notinbranch"))) extern float sinf (float __x) noexcept (true); extern float __sinf (float __x) noexcept (true);
-
-__attribute__ ((__simd__ ("notinbranch"))) extern float tanf (float __x) noexcept (true); extern float __tanf (float __x) noexcept (true);
+ extern float atan2f (float __y, float __x) noexcept (true); extern float __atan2f (float __y, float __x) noexcept (true);
 
 
+ extern float cosf (float __x) noexcept (true); extern float __cosf (float __x) noexcept (true);
 
+ extern float sinf (float __x) noexcept (true); extern float __sinf (float __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float coshf (float __x) noexcept (true); extern float __coshf (float __x) noexcept (true);
-
-__attribute__ ((__simd__ ("notinbranch"))) extern float sinhf (float __x) noexcept (true); extern float __sinhf (float __x) noexcept (true);
-
-__attribute__ ((__simd__ ("notinbranch"))) extern float tanhf (float __x) noexcept (true); extern float __tanhf (float __x) noexcept (true);
+ extern float tanf (float __x) noexcept (true); extern float __tanf (float __x) noexcept (true);
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern void sincosf (float __x, float *__sinx, float *__cosx) noexcept (true); extern void __sincosf (float __x, float *__sinx, float *__cosx) noexcept (true)
+
+ extern float coshf (float __x) noexcept (true); extern float __coshf (float __x) noexcept (true);
+
+ extern float sinhf (float __x) noexcept (true); extern float __sinhf (float __x) noexcept (true);
+
+ extern float tanhf (float __x) noexcept (true); extern float __tanhf (float __x) noexcept (true);
+
+
+
+ extern void sincosf (float __x, float *__sinx, float *__cosx) noexcept (true); extern void __sincosf (float __x, float *__sinx, float *__cosx) noexcept (true)
                                                         ;
 
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float acoshf (float __x) noexcept (true); extern float __acoshf (float __x) noexcept (true);
+ extern float acoshf (float __x) noexcept (true); extern float __acoshf (float __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float asinhf (float __x) noexcept (true); extern float __asinhf (float __x) noexcept (true);
+ extern float asinhf (float __x) noexcept (true); extern float __asinhf (float __x) noexcept (true);
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float atanhf (float __x) noexcept (true); extern float __atanhf (float __x) noexcept (true);
-
-
+ extern float atanhf (float __x) noexcept (true); extern float __atanhf (float __x) noexcept (true);
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float expf (float __x) noexcept (true); extern float __expf (float __x) noexcept (true);
+
+
+ extern float expf (float __x) noexcept (true); extern float __expf (float __x) noexcept (true);
 
 
 extern float frexpf (float __x, int *__exponent) noexcept (true); extern float __frexpf (float __x, int *__exponent) noexcept (true);
@@ -85269,25 +84029,25 @@ extern float frexpf (float __x, int *__exponent) noexcept (true); extern float _
 extern float ldexpf (float __x, int __exponent) noexcept (true); extern float __ldexpf (float __x, int __exponent) noexcept (true);
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float logf (float __x) noexcept (true); extern float __logf (float __x) noexcept (true);
+ extern float logf (float __x) noexcept (true); extern float __logf (float __x) noexcept (true);
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float log10f (float __x) noexcept (true); extern float __log10f (float __x) noexcept (true);
+ extern float log10f (float __x) noexcept (true); extern float __log10f (float __x) noexcept (true);
 
 
 extern float modff (float __x, float *__iptr) noexcept (true); extern float __modff (float __x, float *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float exp10f (float __x) noexcept (true); extern float __exp10f (float __x) noexcept (true);
+ extern float exp10f (float __x) noexcept (true); extern float __exp10f (float __x) noexcept (true);
 
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float expm1f (float __x) noexcept (true); extern float __expm1f (float __x) noexcept (true);
+ extern float expm1f (float __x) noexcept (true); extern float __expm1f (float __x) noexcept (true);
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float log1pf (float __x) noexcept (true); extern float __log1pf (float __x) noexcept (true);
+ extern float log1pf (float __x) noexcept (true); extern float __log1pf (float __x) noexcept (true);
 
 
 extern float logbf (float __x) noexcept (true); extern float __logbf (float __x) noexcept (true);
@@ -85295,29 +84055,29 @@ extern float logbf (float __x) noexcept (true); extern float __logbf (float __x)
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float exp2f (float __x) noexcept (true); extern float __exp2f (float __x) noexcept (true);
+ extern float exp2f (float __x) noexcept (true); extern float __exp2f (float __x) noexcept (true);
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float log2f (float __x) noexcept (true); extern float __log2f (float __x) noexcept (true);
-
-
-
+ extern float log2f (float __x) noexcept (true); extern float __log2f (float __x) noexcept (true);
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float powf (float __x, float __y) noexcept (true); extern float __powf (float __x, float __y) noexcept (true);
+
+
+
+ extern float powf (float __x, float __y) noexcept (true); extern float __powf (float __x, float __y) noexcept (true);
 
 
 extern float sqrtf (float __x) noexcept (true); extern float __sqrtf (float __x) noexcept (true);
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float hypotf (float __x, float __y) noexcept (true); extern float __hypotf (float __x, float __y) noexcept (true);
+ extern float hypotf (float __x, float __y) noexcept (true); extern float __hypotf (float __x, float __y) noexcept (true);
 
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float cbrtf (float __x) noexcept (true); extern float __cbrtf (float __x) noexcept (true);
+ extern float cbrtf (float __x) noexcept (true); extern float __cbrtf (float __x) noexcept (true);
 
 
 
@@ -85381,8 +84141,8 @@ extern float ynf (int, float) noexcept (true); extern float __ynf (int, float) n
 
 
 
-__attribute__ ((__simd__ ("notinbranch"))) extern float erff (float) noexcept (true); extern float __erff (float) noexcept (true);
-__attribute__ ((__simd__ ("notinbranch"))) extern float erfcf (float) noexcept (true); extern float __erfcf (float) noexcept (true);
+ extern float erff (float) noexcept (true); extern float __erff (float) noexcept (true);
+ extern float erfcf (float) noexcept (true); extern float __erfcf (float) noexcept (true);
 extern float lgammaf (float) noexcept (true); extern float __lgammaf (float) noexcept (true);
 
 
@@ -101031,16 +99791,6 @@ enum _mm_hint
   _MM_HINT_T2 = 1,
   _MM_HINT_NTA = 0
 };
-
-
-
-
-extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_prefetch (const void *__P, enum _mm_hint __I)
-{
-  __builtin_ia32_prefetch (__P, (__I & 0x4) >> 2,
-      __I & 0x3, (__I & 0x10) >> 4);
-}
 # 72 "/usr/lib/gcc/x86_64-linux-gnu/14/include/xmmintrin.h" 3 4
 typedef float __m128 __attribute__ ((__vector_size__ (16), __may_alias__));
 
@@ -101684,21 +100434,7 @@ _mm_cvtps_pi8(__m128 __A)
   __v4hi __tmp = (__v4hi) _mm_cvtps_pi16 (__A);
   return (__m64) __builtin_ia32_packsswb (__tmp, (__v4hi)0LL);
 }
-
-
-
-extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_shuffle_ps (__m128 __A, __m128 __B, int const __mask)
-{
-  return (__m128) __builtin_ia32_shufps ((__v4sf)__A, (__v4sf)__B, __mask);
-}
-
-
-
-
-
-
-
+# 761 "/usr/lib/gcc/x86_64-linux-gnu/14/include/xmmintrin.h" 3 4
 extern __inline __m128 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_unpackhi_ps (__m128 __A, __m128 __B)
 {
@@ -101963,32 +100699,6 @@ _mm_move_ss (__m128 __A, __m128 __B)
                                      (__attribute__((__vector_size__ (16))) int)
                                      {4,1,2,3});
 }
-
-
-
-extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_extract_pi16 (__m64 const __A, int const __N)
-{
-  return (unsigned short) __builtin_ia32_vec_ext_v4hi ((__v4hi)__A, __N);
-}
-
-extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pextrw (__m64 const __A, int const __N)
-{
-  return _mm_extract_pi16 (__A, __N);
-}
-# 1049 "/usr/lib/gcc/x86_64-linux-gnu/14/include/xmmintrin.h" 3 4
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_insert_pi16 (__m64 const __A, int const __D, int const __N)
-{
-  return (__m64) __builtin_ia32_vec_set_v4hi ((__v4hi)__A, __D, __N);
-}
-
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pinsrw (__m64 const __A, int const __D, int const __N)
-{
-  return _mm_insert_pi16 (__A, __D, __N);
-}
 # 1069 "/usr/lib/gcc/x86_64-linux-gnu/14/include/xmmintrin.h" 3 4
 extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_max_pi16 (__m64 __A, __m64 __B)
@@ -102066,21 +100776,6 @@ extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artifi
 _m_pmulhuw (__m64 __A, __m64 __B)
 {
   return _mm_mulhi_pu16 (__A, __B);
-}
-
-
-
-
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_shuffle_pi16 (__m64 __A, int const __N)
-{
-  return (__m64) __builtin_ia32_pshufw ((__v4hi)__A, __N);
-}
-
-extern __inline __m64 __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_m_pshufw (__m64 __A, int const __N)
-{
-  return _mm_shuffle_pi16 (__A, __N);
 }
 # 1171 "/usr/lib/gcc/x86_64-linux-gnu/14/include/xmmintrin.h" 3 4
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -103137,19 +101832,7 @@ _mm_cvtss_sd (__m128d __A, __m128 __B)
 {
   return (__m128d)__builtin_ia32_cvtss2sd ((__v2df) __A, (__v4sf)__B);
 }
-
-
-extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_shuffle_pd(__m128d __A, __m128d __B, const int __mask)
-{
-  return (__m128d)__builtin_ia32_shufpd ((__v2df)__A, (__v2df)__B, __mask);
-}
-
-
-
-
-
-
+# 961 "/usr/lib/gcc/x86_64-linux-gnu/14/include/emmintrin.h" 3 4
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_unpackhi_pd (__m128d __A, __m128d __B)
 {
@@ -103401,31 +102084,6 @@ _mm_srai_epi32 (__m128i __A, int __B)
 {
   return (__m128i)__builtin_ia32_psradi128 ((__v4si)__A, __B);
 }
-
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_bsrli_si128 (__m128i __A, const int __N)
-{
-  return (__m128i)__builtin_ia32_psrldqi128 (__A, __N * 8);
-}
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_bslli_si128 (__m128i __A, const int __N)
-{
-  return (__m128i)__builtin_ia32_pslldqi128 (__A, __N * 8);
-}
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_srli_si128 (__m128i __A, const int __N)
-{
-  return (__m128i)__builtin_ia32_psrldqi128 (__A, __N * 8);
-}
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_slli_si128 (__m128i __A, const int __N)
-{
-  return (__m128i)__builtin_ia32_pslldqi128 (__A, __N * 8);
-}
 # 1248 "/usr/lib/gcc/x86_64-linux-gnu/14/include/emmintrin.h" 3 4
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_srli_epi16 (__m128i __A, int __B)
@@ -103570,19 +102228,6 @@ _mm_cmpgt_epi32 (__m128i __A, __m128i __B)
 {
   return (__m128i) ((__v4si)__A > (__v4si)__B);
 }
-
-
-extern __inline int __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_extract_epi16 (__m128i const __A, int const __N)
-{
-  return (unsigned short) __builtin_ia32_vec_ext_v8hi ((__v8hi)__A, __N);
-}
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_insert_epi16 (__m128i const __A, int const __D, int const __N)
-{
-  return (__m128i) __builtin_ia32_vec_set_v8hi ((__v8hi)__A, __D, __N);
-}
 # 1412 "/usr/lib/gcc/x86_64-linux-gnu/14/include/emmintrin.h" 3 4
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_max_epi16 (__m128i __A, __m128i __B)
@@ -103618,25 +102263,6 @@ extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __arti
 _mm_mulhi_epu16 (__m128i __A, __m128i __B)
 {
   return (__m128i)__builtin_ia32_pmulhuw128 ((__v8hi)__A, (__v8hi)__B);
-}
-
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_shufflehi_epi16 (__m128i __A, const int __mask)
-{
-  return (__m128i)__builtin_ia32_pshufhw ((__v8hi)__A, __mask);
-}
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_shufflelo_epi16 (__m128i __A, const int __mask)
-{
-  return (__m128i)__builtin_ia32_pshuflw ((__v8hi)__A, __mask);
-}
-
-extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
-_mm_shuffle_epi32 (__m128i __A, const int __mask)
-{
-  return (__m128i)__builtin_ia32_pshufd ((__v4si)__A, __mask);
 }
 # 1475 "/usr/lib/gcc/x86_64-linux-gnu/14/include/emmintrin.h" 3 4
 extern __inline void __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -103850,7 +102476,7 @@ _mm_loaddup_pd (double const *__P)
 extern __inline __m128d __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 _mm_movedup_pd (__m128d __X)
 {
-  return _mm_shuffle_pd (__X, __X, (((0) << 1) | (0)));
+  return ((__m128d)__builtin_ia32_shufpd ((__v2df)(__m128d)(__X), (__v2df)(__m128d)(__X), (int)((((0) << 1) | (0)))));
 }
 
 extern __inline __m128i __attribute__((__gnu_inline__, __always_inline__, __artificial__))
@@ -108220,7 +106846,7 @@ void AI::setBoard(BoardState* const _board) {
 
 void AI::makeMove() {
     const unsigned char choice=function(*board);
-
+    std::cout<<choice<<std::endl;
     board->turn(choice);
 }
 

@@ -9,10 +9,8 @@
 #include <array>
 
 class BoardState {
-    unsigned char array[14];
+    std::array<unsigned char, 14> array;
     bool firstPlayersTurn; //0 is first 1 is second
-
-    unsigned char& operator[](unsigned char idx);
 public:
     constexpr BoardState() noexcept : array{6, 6, 6, 0, 6, 6, 6, 6, 6, 6, 0, 6, 6, 6}, firstPlayersTurn(true){}
     constexpr void reset() noexcept {*this=BoardState();}

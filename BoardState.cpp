@@ -10,17 +10,13 @@ void BoardState::turn(const unsigned char choice) {
     endTurn();
 }
 
-unsigned char &BoardState::operator[](const unsigned char idx) {
-    return array[idx%14];
-}
-
 unsigned char BoardState::choiceToIdx(const unsigned char choice) const {
     return choiceToIdx(choice, firstPlayersTurn);
 }
 std::ostream& operator<<(std::ostream& os,const BoardState& board){
-    for (unsigned char i : board.array)
-        std::cout<<i<<" ";
-    std::cout<<std::endl;
+    for (const unsigned char i : board.array)
+        os<<i<<" ";
+    os<<std::endl;
     return os;
 }
 
@@ -113,21 +109,21 @@ void BoardState::endTurn() {
 
 void BoardState::move(const unsigned char choice) {
     unsigned char idx=choiceToIdx(choice);
-    BoardState& board=*this;
+    auto& boardArray=this->array;
 
-    if (board[idx]==0) [[unlikely]]
+    if (boardArray[idx]==0) [[unlikely]]
                 throw std::invalid_argument("Must choose a non 0 field!");
 
-    const auto stops = [][[gnu::const]](const BoardState& b, size_t idx)  { //could be capture by reference
-        idx%=14;
-        if (idx==3 || idx==10 || b.array[idx]==1) [[unlikely]]
+    const auto endCondition = [][[gnu::const]](const auto& boardArray, size_t idx)  { //could be capture by reference
+        if (idx==3 || idx==10 || boardArray[idx]==1) [[unlikely]]
             return true;
         else [[likely]]
             return false;
     };
     do{
-        for(unsigned char& hand=board[idx];hand > 0;--hand) {
-            board[++idx]++;
+        for(unsigned char& hand=boardArray[idx];hand > 0;--hand) {
+            boardArray[++idx]++;
+            idx%=14;
         }
-    }while(!stops(board, idx));
+    }while(!endCondition(boardArray, idx));
 }
