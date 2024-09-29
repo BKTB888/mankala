@@ -14,7 +14,7 @@ unsigned char BoardState::choiceToIdx(const unsigned char choice) const {
     return choiceToIdx(choice, firstPlayersTurn);
 }
 std::ostream& operator<<(std::ostream& os,const BoardState& board){
-    for (const unsigned char i : board.array)
+    for (const unsigned short i : board.array)
         os<<i<<' ';
     os<<std::endl;
     return os;

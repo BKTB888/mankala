@@ -3,9 +3,7 @@
 
 int main() {
     Mankala test(randy, randy);
-    std::cout<<1<<std::endl;
-    BoardState testboard;
-    std::cout<<testboard;
+
     test.playTest();
     int numOfGames=100000;
 
