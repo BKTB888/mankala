@@ -1,3 +1,0 @@
-/home/bktivadar/CLionProjects/mankala/cmake-build-debug/CMakeFiles/mankala5.dir
-/home/bktivadar/CLionProjects/mankala/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/bktivadar/CLionProjects/mankala/cmake-build-debug/CMakeFiles/rebuild_cache.dir
