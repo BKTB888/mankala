@@ -112,9 +112,9 @@ void BoardState::move(const unsigned char choice) {
     auto& boardArray=this->array;
 
     if (boardArray[idx]==0) [[unlikely]]
-                throw std::invalid_argument("Must choose a non 0 field!");
+        throw std::invalid_argument("Must choose a non 0 field!");
 
-    const auto endCondition = [][[gnu::const]](const auto& boardArray, size_t idx)  { //could be capture by reference
+    const auto endCondition = [][[gnu::const]](const auto& boardArray, const unsigned char idx)  { //could be capture by reference
         if (idx==3 || idx==10 || boardArray[idx]==1) [[unlikely]]
             return true;
         else [[likely]]
@@ -122,8 +122,9 @@ void BoardState::move(const unsigned char choice) {
     };
     do{
         for(unsigned char& hand=boardArray[idx];hand > 0;--hand) {
-            boardArray[++idx]++;
+            ++idx;
             idx%=14;
+            boardArray[idx]++;
         }
     }while(!endCondition(boardArray, idx));
 }

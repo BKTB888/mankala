@@ -4,7 +4,6 @@
 int main() {
     Mankala test(randy, randy);
 
-    test.playTest();
     int numOfGames=100000;
 
     Mankala test2(randy2, randy2);

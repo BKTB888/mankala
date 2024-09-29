@@ -20,7 +20,7 @@ void AI::setBoard(BoardState* const _board) {
 
 void AI::makeMove() {
     const unsigned short choice=function(*board);
-    std::cout<<choice<<std::endl;
+    ///std::cout<<choice<<std::endl;
     board->turn(choice);
 }
 
