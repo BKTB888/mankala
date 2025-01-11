@@ -1,6 +1,7 @@
 #include "Mankala.h"
 #include <chrono>
 
+//tests time and game percent
 void tester(Mankala& mankala, const unsigned numOfGames){
     const auto start = std::chrono::high_resolution_clock::now();
     mankala.makeStats(numOfGames);
@@ -9,7 +10,7 @@ void tester(Mankala& mankala, const unsigned numOfGames){
     const std::chrono::duration<double, std::micro> duration = end - start;
     std::cout << "A single game on average: " << duration.count()/numOfGames << " microseconds" << std::endl;
 }
-const AI maxy = create_AI([] [[gnu::const]](const BoardState& board) -> float {
+const AI maxy = create_AI([] [[gnu::const]](const BoardState& board) {
 
     const auto opSide=board.getOpponentSide();
     const unsigned char ballsInPlay =72 - board.getMyTrash() - board.getOpponentsTrash();
